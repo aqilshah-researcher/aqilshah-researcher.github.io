@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMELA TPM Dashboard — Aqil Shah Ayaz</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0d1117; color: #e6edf3;
+  min-height: 100vh; overflow-x: hidden;
+}
+.topbar {
+  background: #161b22; border-bottom: 1px solid #30363d;
+  padding: 0 1.5rem; height: 48px;
+  display: flex; align-items: center; gap: 1rem;
+}
+.topbar-brand { font-size: 13px; font-weight: 600; color: #58a6ff; }
+.topbar-title { font-size: 13px; color: #8b949e; }
+.topbar-sep { width: 1px; height: 20px; background: #30363d; }
+.topbar-right { margin-left: auto; display: flex; gap: 0.75rem; align-items: center; }
+.topbar-btn {
+  background: #21262d; border: 1px solid #30363d; color: #c9d1d9;
+  padding: 4px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: background 0.2s;
+}
+.topbar-btn:hover { background: #30363d; }
+.topbar-btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+.last-refresh { font-size: 11px; color: #6e7681; }
+
+/* Filter bar */
+.filterbar {
+  background: #161b22; border-bottom: 1px solid #21262d;
+  padding: 8px 1.5rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+}
+.filter-label { font-size: 11px; color: #6e7681; text-transform: uppercase; letter-spacing: 1px; }
+.filter-select {
+  background: #0d1117; border: 1px solid #30363d; color: #c9d1d9;
+  padding: 4px 10px; border-radius: 6px; font-size: 12px; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+.filter-badge {
+  background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.3);
+  color: #58a6ff; padding: 3px 10px; border-radius: 99px; font-size: 11px;
+}
+
+/* Layout */
+.dashboard { padding: 1.25rem 1.5rem; }
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+.kpi-card {
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+.kpi-card:hover { border-color: #30363d; }
+.kpi-label { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+.kpi-value { font-size: 28px; font-weight: 600; line-height: 1; margin-bottom: 4px; }
+.kpi-trend { font-size: 12px; display: flex; align-items: center; gap: 4px; }
+.trend-up { color: #3fb950; }
+.trend-dn { color: #f85149; }
+.kpi-sub { font-size: 11px; color: #6e7681; }
+
+.charts-row { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
+.chart-card {
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 1.25rem;
+}
+.chart-title { font-size: 13px; font-weight: 500; margin-bottom: 0.25rem; }
+.chart-sub { font-size: 11px; color: #6e7681; margin-bottom: 1rem; }
+
+.bottom-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+
+/* Sector bars */
+.sector-item { margin-bottom: 1rem; }
+.sector-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.sector-name { font-size: 12px; color: #c9d1d9; }
+.sector-pct { font-size: 12px; font-weight: 500; }
+.sector-bar { height: 6px; background: #21262d; border-radius: 3px; overflow: hidden; }
+.sector-fill { height: 100%; border-radius: 3px; transition: width 1.2s cubic-bezier(0.16,1,0.3,1); }
+
+/* Province table */
+.prov-table { width: 100%; border-collapse: collapse; }
+.prov-table th {
+  font-size: 10px; color: #6e7681; text-transform: uppercase; letter-spacing: 1px;
+  text-align: left; padding: 4px 8px; border-bottom: 1px solid #21262d;
+}
+.prov-table td { font-size: 12px; color: #c9d1d9; padding: 6px 8px; border-bottom: 1px solid #161b22; }
+.prov-table tr:hover td { background: rgba(255,255,255,0.02); }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+.dot-green { background: #3fb950; }
+.dot-amber { background: #d29922; }
+.dot-red { background: #f85149; }
+
+/* Activity feed */
+.activity-item {
+  display: flex; gap: 10px; padding: 8px 0;
+  border-bottom: 1px solid #21262d;
+}
+.activity-item:last-child { border-bottom: none; }
+.act-icon {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 11px;
+}
+.ai-blue { background: rgba(88,166,255,0.15); color: #58a6ff; }
+.ai-green { background: rgba(63,185,80,0.15); color: #3fb950; }
+.ai-amber { background: rgba(210,153,34,0.15); color: #d29922; }
+.act-body { flex: 1; }
+.act-title { font-size: 12px; color: #c9d1d9; line-height: 1.4; }
+.act-time { font-size: 11px; color: #6e7681; }
+
+.back-link {
+  font-size: 12px; color: #58a6ff; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html" class="back-link">← Portfolio</a>
+  <div class="topbar-sep"></div>
+  <span class="topbar-brand">AMELA</span>
+  <span class="topbar-title">Third Party Monitoring — Performance Dashboard</span>
+  <div class="topbar-right">
+    <span class="last-refresh">Last refreshed: Today, 08:42 AM</span>
+    <button class="topbar-btn active">Overview</button>
+    <button class="topbar-btn">Education</button>
+    <button class="topbar-btn">Health</button>
+    <button class="topbar-btn">Agriculture</button>
+    <button class="topbar-btn">Governance</button>
+  </div>
+</div>
+
+<div class="filterbar">
+  <span class="filter-label">Filters:</span>
+  <select class="filter-select"><option>All Provinces (34)</option><option>Kabul</option><option>Nangarhar</option><option>Kandahar</option><option>Herat</option><option>Balkh</option></select>
+  <select class="filter-select"><option>Q4 2024</option><option>Q3 2024</option><option>Q2 2024</option><option>Q1 2024</option></select>
+  <select class="filter-select"><option>All Sectors</option><option>Education</option><option>Health</option><option>Agriculture</option><option>Governance</option></select>
+  <span class="filter-badge">USAID-funded · 34 Provinces</span>
+  <span class="filter-badge">TPM Round 7</span>
+</div>
+
+<div class="dashboard">
+  <!-- KPIs -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">Sites Monitored</div>
+      <div class="kpi-value" style="color:#58a6ff">847</div>
+      <div class="kpi-trend trend-up">↑ 12% vs last quarter</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Overall Compliance</div>
+      <div class="kpi-value" style="color:#3fb950">84%</div>
+      <div class="kpi-trend trend-up">↑ 7 pts improvement</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Data Quality Score</div>
+      <div class="kpi-value" style="color:#d29922">94%</div>
+      <div class="kpi-trend trend-up">↑ Automated QA pipeline</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Beneficiaries Reached</div>
+      <div class="kpi-value" style="color:#f0883e">21.5K</div>
+      <div class="kpi-trend trend-up">↑ 3,200 new this round</div>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">Monthly Site Visit Trend</div>
+      <div class="chart-sub">Visits completed vs target across all 4 sectors · Jan–Dec 2024</div>
+      <canvas id="trendChart" height="90"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Sector KPI Compliance</div>
+      <div class="chart-sub">% of KPIs meeting target thresholds</div>
+      <div style="margin-top:0.75rem;">
+        <div class="sector-item">
+          <div class="sector-header"><span class="sector-name">Health</span><span class="sector-pct" style="color:#3fb950">91%</span></div>
+          <div class="sector-bar"><div class="sector-fill" style="width:91%;background:#3fb950" id="b1"></div></div>
+        </div>
+        <div class="sector-item">
+          <div class="sector-header"><span class="sector-name">Governance</span><span class="sector-pct" style="color:#8957e5">83%</span></div>
+          <div class="sector-bar"><div class="sector-fill" style="width:83%;background:#8957e5" id="b2"></div></div>
+        </div>
+        <div class="sector-item">
+          <div class="sector-header"><span class="sector-name">Education</span><span class="sector-pct" style="color:#58a6ff">78%</span></div>
+          <div class="sector-bar"><div class="sector-fill" style="width:78%;background:#58a6ff" id="b3"></div></div>
+        </div>
+        <div class="sector-item">
+          <div class="sector-header"><span class="sector-name">Agriculture</span><span class="sector-pct" style="color:#d29922">65%</span></div>
+          <div class="sector-bar"><div class="sector-fill" style="width:65%;background:#d29922" id="b4"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom row -->
+  <div class="bottom-row">
+    <div class="chart-card">
+      <div class="chart-title">Province-Level Status</div>
+      <div class="chart-sub">Top reporting provinces this quarter</div>
+      <table class="prov-table" style="margin-top:0.5rem;">
+        <tr><th>Province</th><th>Sites</th><th>Score</th><th>Status</th></tr>
+        <tr><td>Kabul</td><td>124</td><td>92%</td><td><span class="status-dot dot-green"></span>On Track</td></tr>
+        <tr><td>Nangarhar</td><td>98</td><td>87%</td><td><span class="status-dot dot-green"></span>On Track</td></tr>
+        <tr><td>Herat</td><td>76</td><td>79%</td><td><span class="status-dot dot-green"></span>On Track</td></tr>
+        <tr><td>Kandahar</td><td>62</td><td>71%</td><td><span class="status-dot dot-amber"></span>At Risk</td></tr>
+        <tr><td>Balkh</td><td>58</td><td>68%</td><td><span class="status-dot dot-amber"></span>At Risk</td></tr>
+        <tr><td>Baghlan</td><td>41</td><td>54%</td><td><span class="status-dot dot-red"></span>Below Target</td></tr>
+      </table>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">Beneficiary Breakdown</div>
+      <div class="chart-sub">Disaggregated by gender & vulnerability</div>
+      <canvas id="donutChart" height="140"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">Recent Field Reports</div>
+      <div class="chart-sub">Live activity feed</div>
+      <div style="margin-top:0.75rem;">
+        <div class="activity-item">
+          <div class="act-icon ai-green">✓</div>
+          <div class="act-body">
+            <div class="act-title">Kabul health site #KBL-047 — field visit completed, 98% compliance</div>
+            <div class="act-time">2 hours ago</div>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="act-icon ai-amber">!</div>
+          <div class="act-body">
+            <div class="act-title">Kandahar education — delayed school visits, security constraints flagged</div>
+            <div class="act-time">5 hours ago</div>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="act-icon ai-blue">↑</div>
+          <div class="act-body">
+            <div class="act-title">Herat agriculture — 3 irrigation projects confirmed operational</div>
+            <div class="act-time">Yesterday</div>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="act-icon ai-green">✓</div>
+          <div class="act-body">
+            <div class="act-title">Monthly data pipeline ran successfully — 847 records processed</div>
+            <div class="act-time">Yesterday, 11 PM</div>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="act-icon ai-blue">📊</div>
+          <div class="act-body">
+            <div class="act-title">Q4 report submitted to USAID — 94% data quality score</div>
+            <div class="act-time">3 days ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Trend chart
+new Chart(document.getElementById('trendChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    datasets: [
+      {
+        label: 'Visits Completed',
+        data: [58,72,65,88,94,102,89,97,110,118,105,124],
+        backgroundColor: 'rgba(88,166,255,0.7)',
+        borderRadius: 4,
+      },
+      {
+        label: 'Target',
+        data: [70,70,80,85,90,100,95,100,105,115,110,120],
+        type: 'line',
+        borderColor: '#3fb950',
+        borderWidth: 2,
+        pointRadius: 3,
+        fill: false,
+        tension: 0.4,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { color: '#8b949e', font: { size: 11 }, boxWidth: 14 } } },
+    scales: {
+      x: { ticks: { color: '#6e7681', font: { size: 10 } }, grid: { color: '#21262d' } },
+      y: { ticks: { color: '#6e7681', font: { size: 10 } }, grid: { color: '#21262d' } }
+    }
+  }
+});
+
+// Donut chart
+new Chart(document.getElementById('donutChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Women','Men','Girls','Boys'],
+    datasets: [{
+      data: [34, 28, 22, 16],
+      backgroundColor: ['#f0883e','#58a6ff','#3fb950','#8957e5'],
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    responsive: true,
+    cutout: '65%',
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: { color: '#8b949e', font: { size: 11 }, boxWidth: 12, padding: 8 }
+      }
+    }
+  }
+});
+
+// Animate bars on load
+setTimeout(() => {
+  ['b1','b2','b3','b4'].forEach(id => {
+    const el = document.getElementById(id);
+    const w = el.style.width;
+    el.style.width = '0%';
+    setTimeout(() => { el.style.width = w; }, 200);
+  });
+}, 300);
+
+// Tab switching
+document.querySelectorAll('.topbar-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.topbar-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
