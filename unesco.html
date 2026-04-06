@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNESCO Literacy Evaluation — Aqil Shah Ayaz</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:#0a0e1a;color:#e2e8f0;line-height:1.7;}
+.back-bar{background:rgba(10,14,26,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 2rem;height:64px;position:fixed;top:0;left:0;right:0;display:flex;align-items:center;gap:1rem;z-index:100;}
+.back-bar a{font-size:14px;color:#58a6ff;text-decoration:none;}
+.page{max-width:1000px;margin:0 auto;padding:100px 2rem 80px;}
+.proj-header{margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+.proj-tag{font-size:11px;color:#f59e0b;letter-spacing:3px;text-transform:uppercase;margin-bottom:1rem;font-weight:500;}
+.proj-title{font-family:'DM Serif Display',serif;font-size:clamp(30px,5vw,50px);color:#f1f5f9;margin-bottom:1rem;line-height:1.15;}
+.proj-sub{font-size:16px;color:#94a3b8;max-width:700px;line-height:1.8;}
+.meta-row{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2rem;}
+.meta-item{display:flex;flex-direction:column;gap:3px;}
+.meta-label{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1px;}
+.meta-val{font-size:14px;color:#e2e8f0;font-weight:500;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2.5rem 0;}
+.kpi-card{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:1.25rem;text-align:center;}
+.kpi-n{font-size:26px;font-weight:600;line-height:1;margin-bottom:4px;}
+.kpi-l{font-size:12px;color:#64748b;}
+.section{margin-bottom:3rem;}
+.sh{font-size:11px;color:#f59e0b;letter-spacing:3px;text-transform:uppercase;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(245,158,11,0.2);}
+.body-text{font-size:15px;color:#94a3b8;line-height:1.9;margin-bottom:1.25rem;}
+.finding-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;}
+.finding-card{background:#161b22;border:1px solid #21262d;border-left:3px solid;border-radius:8px;padding:1rem 1.25rem;}
+.fc-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.fc-text{font-size:14px;color:#94a3b8;line-height:1.6;}
+.chart-card{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:1.5rem;margin:1.5rem 0;}
+.chart-title{font-size:13px;color:#8b949e;margin-bottom:1rem;}
+.quote{background:rgba(245,158,11,0.05);border-left:3px solid #f59e0b;padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;}
+.quote p{font-size:14px;color:#94a3b8;font-style:italic;line-height:1.8;}
+.role-badge{display:inline-block;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);color:#fcd34d;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:500;margin-bottom:1.5rem;}
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+.method-card{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:1rem;}
+.method-title{font-size:13px;font-weight:500;color:#f59e0b;margin-bottom:8px;}
+.method-list{list-style:none;}
+.method-list li{font-size:13px;color:#94a3b8;padding:3px 0;display:flex;gap:8px;}
+.method-list li::before{content:"→";color:#f59e0b;flex-shrink:0;}
+.tech-grid{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0;}
+.tech-badge{background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);color:#fcd34d;padding:5px 14px;border-radius:6px;font-size:13px;}
+</style>
+</head>
+<body>
+<div class="back-bar">
+  <a href="index.html">← Back to Portfolio</a>
+  <span style="color:#30363d;">|</span>
+  <span style="font-size:13px;color:#6e7681;">UNESCO Literacy Evaluation · Grant Thornton · April 2025</span>
+</div>
+
+<div class="page">
+  <div class="proj-header">
+    <div class="proj-tag">UNESCO · Mixed Methods · Education Evaluation</div>
+    <h1 class="proj-title">Enhanced Literacy & Alternative Learning<br>Opportunities — Final Evaluation</h1>
+    <p class="proj-sub">Final evaluation of UNESCO's radio-based education program targeting 40,000+ out-of-school adolescent girls and boys across 5 Afghan provinces. Role: Data Analyst & Reporting Specialist — responsible for cleaning, analyzing all field data, and preparing the final report submitted to UNESCO.</p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="meta-label">Client</span><span class="meta-val">UNESCO Kabul Office</span></div>
+      <div class="meta-item"><span class="meta-label">Evaluation Firm</span><span class="meta-val">Grant Thornton Afghanistan</span></div>
+      <div class="meta-item"><span class="meta-label">Completed</span><span class="meta-val">April 2025</span></div>
+      <div class="meta-item"><span class="meta-label">Provinces</span><span class="meta-val">Balkh, Helmand, Herat, Kandahar, Nangarhar</span></div>
+      <div class="meta-item"><span class="meta-label">Framework</span><span class="meta-val">OECD/DAC Criteria</span></div>
+    </div>
+  </div>
+
+  <div class="role-badge">My Role: Data Analyst & Reporting Specialist</div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="kpi-n" style="color:#f59e0b;">40,000+</div><div class="kpi-l">Target Learners</div></div>
+    <div class="kpi-card"><div class="kpi-n" style="color:#10b981;">400+</div><div class="kpi-l">Interviews Conducted</div></div>
+    <div class="kpi-card"><div class="kpi-n" style="color:#58a6ff;">5</div><div class="kpi-l">Provinces</div></div>
+    <div class="kpi-card"><div class="kpi-n" style="color:#8b5cf6;">4,600</div><div class="kpi-l">Adult Literacy Targets</div></div>
+    <div class="kpi-card"><div class="kpi-n" style="color:#ef4444;">6</div><div class="kpi-l">DAC Criteria Assessed</div></div>
+  </div>
+
+  <!-- Role -->
+  <div class="section">
+    <div class="sh">My Contribution</div>
+    <p class="body-text">As acknowledged in the official UNESCO evaluation report: <em>"Dr. Aqil Shah Ayaz, the Data Analyst and Reporting Specialist, for their continuous guidance and dedication to ensuring the quality of this assignment. Their hard work in cleaning, analyzing the data collected from the field, and preparing the report was invaluable."</em></p>
+    <p class="body-text">Responsibilities included: full data cleaning and validation of 400+ structured interviews across 5 provinces; quantitative analysis of learner performance assessments (literacy, numeracy, quizzes); qualitative data coding and thematic synthesis; and production of the final report with evidence-based findings and recommendations submitted directly to UNESCO.</p>
+  </div>
+
+  <!-- Project Overview -->
+  <div class="section">
+    <div class="sh">Program Overview</div>
+    <p class="body-text">UNESCO launched a radio-based learning program to address the urgent educational needs in Afghanistan — one of the most educationally deprived contexts in the world. The program provided Basic General Literacy (BGL) to 4,600 adults with limited literacy skills, and alternative secondary education (Grade 10–12) to approximately 40,000 out-of-school adolescent girls and boys who could not access formal schooling due to Taliban restrictions or geographic barriers.</p>
+    <p class="body-text">Radio-based delivery was chosen as the primary modality because it could reach learners in remote communities, was culturally acceptable, and could provide access to girls and women who faced Taliban-imposed restrictions on movement and formal education.</p>
+  </div>
+
+  <!-- Methodology -->
+  <div class="section">
+    <div class="sh">Evaluation Methodology</div>
+    <p class="body-text">A rigorous mixed-methods approach was applied, combining structured quantitative surveys with qualitative KIIs, IDIs, FGDs, and direct radio station observations.</p>
+    <div class="method-grid">
+      <div class="method-card">
+        <div class="method-title">Quantitative Methods</div>
+        <ul class="method-list">
+          <li>Structured on-site surveys with literacy learners</li>
+          <li>Remote surveys with Grade 10–12 learners</li>
+          <li>In-person radio station infrastructure observations</li>
+          <li>Learner quiz performance analysis (Math, Language, Quran, Sciences)</li>
+          <li>Gender and province-disaggregated analysis</li>
+        </ul>
+      </div>
+      <div class="method-card">
+        <div class="method-title">Qualitative Methods</div>
+        <ul class="method-list">
+          <li>Remote Key Informant Interviews (KIIs)</li>
+          <li>In-Depth Interviews (IDIs)</li>
+          <li>In-person Focus Group Discussions (FGDs)</li>
+          <li>Human-interest / change stories</li>
+          <li>Desk review of program documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Findings Charts -->
+  <div class="section">
+    <div class="sh">Key Findings — Data Analysis</div>
+
+    <div class="chart-card">
+      <div class="chart-title">Literacy Improvement: Self-Reported by Learners (Basic General Literacy Program)</div>
+      <canvas id="literacyChart" height="80"></canvas>
+    </div>
+
+    <div class="chart-card" style="margin-top:1rem;">
+      <div class="chart-title">Secondary Learner Performance by Subject (% scoring above threshold)</div>
+      <canvas id="subjectChart" height="80"></canvas>
+    </div>
+
+    <div class="chart-card" style="margin-top:1rem;">
+      <div class="chart-title">Life Skills Improvement — % of learners reporting change</div>
+      <canvas id="lifeskillsChart" height="70"></canvas>
+    </div>
+  </div>
+
+  <!-- DAC Criteria Findings -->
+  <div class="section">
+    <div class="sh">OECD/DAC Criteria Findings</div>
+    <div class="finding-grid">
+      <div class="finding-card" style="border-left-color:#10b981;">
+        <div class="fc-label" style="color:#10b981;">Relevance ✓ Strong</div>
+        <div class="fc-text">Reached the most vulnerable groups. Radio-based approach overcame cultural and geographic barriers. All learners confirmed lessons covered important subjects.</div>
+      </div>
+      <div class="finding-card" style="border-left-color:#58a6ff;">
+        <div class="fc-label" style="color:#58a6ff;">Coherence ✓ Strong</div>
+        <div class="fc-text">Complemented formal schooling without creating overlap. Flexible model accommodated women with household responsibilities. Filled critical gap where formal schooling was unavailable.</div>
+      </div>
+      <div class="finding-card" style="border-left-color:#f59e0b;">
+        <div class="fc-label" style="color:#f59e0b;">Effectiveness ✓ Moderate-Strong</div>
+        <div class="fc-text">1/3 of learners reported significant literacy improvement; 2/3 reported some improvement. Radio lessons proved effective even without in-person trainer support.</div>
+      </div>
+      <div class="finding-card" style="border-left-color:#8b5cf6;">
+        <div class="fc-label" style="color:#8b5cf6;">Efficiency ✓ Good</div>
+        <div class="fc-text">Successfully delivered educational content at scale. Majority found broadcast timings suitable. Most radio stations had good infrastructure and signal coverage.</div>
+      </div>
+      <div class="finding-card" style="border-left-color:#ef4444;">
+        <div class="fc-label" style="color:#ef4444;">Impact ✓ Positive</div>
+        <div class="fc-text">78% reported some life skills improvement; 22% significant improvement. Improved literacy helped men engage in business. More positive community attitude toward female education reported.</div>
+      </div>
+      <div class="finding-card" style="border-left-color:#64748b;">
+        <div class="fc-label" style="color:#64748b;">Sustainability ⚠ At Risk</div>
+        <div class="fc-text">Uncertain without support structures (books, in-person visits). Radio stations need financial support. Short project duration limited sustainable gains.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <p>"Radio-based delivery of education has proved to be an effective mechanism for meeting the educational needs of marginalized communities in Afghan provinces with restricted access to education, particularly for women and girls." — UNESCO Final Evaluation Report, April 2025</p>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="section">
+    <div class="sh">Tools & Methods Used</div>
+    <div class="tech-grid">
+      <span class="tech-badge">R (Data Analysis)</span>
+      <span class="tech-badge">SPSS</span>
+      <span class="tech-badge">Excel Power Query</span>
+      <span class="tech-badge">KoBo Toolbox</span>
+      <span class="tech-badge">ATLAS.ti</span>
+      <span class="tech-badge">Mixed Methods</span>
+      <span class="tech-badge">OECD/DAC Framework</span>
+      <span class="tech-badge">Gender Disaggregation</span>
+      <span class="tech-badge">Province-level Analysis</span>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="index.html#work" style="background:#f59e0b;color:#000;padding:13px 28px;border-radius:8px;font-size:15px;font-weight:500;text-decoration:none;display:inline-block;">← Back to All Projects</a>
+  </div>
+</div>
+
+<script>
+new Chart(document.getElementById('literacyChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Significant Improvement','Some Improvement','No Improvement'],
+    datasets:[{data:[33,67,0],backgroundColor:['#10b981','#f59e0b','#ef4444'],borderWidth:0}]
+  },
+  options:{responsive:true,cutout:'60%',plugins:{legend:{position:'right',labels:{color:'#8b949e',font:{size:12},boxWidth:14,padding:12}}}}
+});
+
+new Chart(document.getElementById('subjectChart'), {
+  type:'bar',
+  data:{
+    labels:['Chemistry','Physics','Biology','Mathematics','Language','Holy Quran'],
+    datasets:[
+      {label:'Male Learners',data:[76,71,68,69,65,72],backgroundColor:'#58a6ff99',borderRadius:4},
+      {label:'Female Learners',data:[71,65,63,61,64,67],backgroundColor:'#f59e0b99',borderRadius:4}
+    ]
+  },
+  options:{responsive:true,plugins:{legend:{labels:{color:'#8b949e',font:{size:11},boxWidth:12}}},scales:{x:{ticks:{color:'#6e7681',font:{size:10}},grid:{color:'#21262d'}},y:{ticks:{color:'#6e7681',font:{size:10},callback:v=>v+'%'},grid:{color:'#21262d'},max:100}}}
+});
+
+new Chart(document.getElementById('lifeskillsChart'), {
+  type:'bar',
+  data:{
+    labels:['Balkh','Helmand','Herat','Kandahar','Nangarhar'],
+    datasets:[
+      {label:'Significant Improvement',data:[16,22,21,28,23],backgroundColor:'#10b98199',borderRadius:4},
+      {label:'Some Improvement',data:[76,79,80,72,77],backgroundColor:'#58a6ff66',borderRadius:4}
+    ]
+  },
+  options:{responsive:true,plugins:{legend:{labels:{color:'#8b949e',font:{size:11},boxWidth:12}}},scales:{x:{ticks:{color:'#6e7681',font:{size:10}},grid:{color:'#21262d'}},y:{stacked:true,ticks:{color:'#6e7681',font:{size:10},callback:v=>v+'%'},grid:{color:'#21262d'},max:110}}}
+});
+</script>
+</body>
+</html>
