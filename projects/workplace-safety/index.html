@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workplace Safety (OSH): Before and After Training · Aqil Shah Ayaz</title>
+<meta name="description" content="Before-and-after dashboard of an occupational safety and health checklist in 24 sample small businesses, with McNemar tests by item.">
+<meta property="og:title" content="Workplace Safety (OSH): Before and After Training · Aqil Shah Ayaz">
+<meta property="og:description" content="Before-and-after dashboard of an occupational safety and health checklist in 24 sample small businesses, with McNemar tests by item.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Workplace Safety (OSH): Before and After Training</h1>
+    <p class="lede">Small businesses were observed against a 14-item safety checklist before and after an occupational safety and health (OSH) training. Which practices changed, and which did not?</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">McNemar test</span><span class="chip ">Observation checklist</span><span class="chip ">Qualitative + quantitative</span></div>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Sector<select id="f-sector"></select></label><label>Checklist category<select id="f-cat"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-sme">–</div><div class="l">Businesses observed</div></div><div class="kpi"><div class="v" id="k-before">–</div><div class="l">Compliance before training</div></div><div class="kpi"><div class="v" id="k-after">–</div><div class="l">Compliance after training</div></div><div class="kpi"><div class="v" id="k-change">–</div><div class="l">Change</div></div><div class="kpi"><div class="v" id="k-imp">–</div><div class="l">Businesses that improved</div></div></div>
+    <div class="charts"><div class="chart full"><h3>Checklist items: before and after</h3><div class="sub">% of businesses compliant</div><div class="plot tall" id="c-items" role="img" aria-label="Checklist items: before and after"></div></div><div class="chart "><h3>Each business, before and after</h3><div class="sub">Overall compliance score</div><div class="plot " id="c-sme" role="img" aria-label="Each business, before and after"></div></div><div class="chart "><h3>Compliance by sector</h3><div class="sub">Before and after training</div><div class="plot " id="c-sector" role="img" aria-label="Compliance by sector"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-items"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on an ILO-funded assessment of occupational safety and health good practices in small and medium businesses in Balkh that had been trained under a decent-jobs project (2022). The real assessment used semi-structured interviews and checklist-based observation with before and after comparisons (passageway marking, lighting and ventilation, fire safety, first aid, supervision).</p>
+<h3>Method shown here</h3>
+<ul><li>Each business is observed twice, so every checklist item is a paired yes/no outcome.</li>
+<li><b>McNemar's exact test</b> per item shows which changes are larger than chance.</li>
+<li>A business-level compliance score shows whether gains are broad or driven by a few businesses.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/workplace-safety/code/osh_before_after.py" target="_blank" rel="noopener"><b>osh_before_after.py</b><span>Paired analysis with McNemar's exact test</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/workplace-safety/data/osh_checklist_long.csv" target="_blank" rel="noopener"><b>osh_checklist_long.csv</b><span>Checklist data in long format</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/workplace-safety/data/osh_item_summary.csv" target="_blank" rel="noopener"><b>osh_item_summary.csv</b><span>Item-level results</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const rows = await ASA.loadCSV('data/osh_checklist_long.csv');
+  const el = id => document.getElementById(id);
+  const F = { sector: el('f-sector'), cat: el('f-cat') };
+  ASA.fillSelect(F.sector, ASA.uniq(rows, 'sector'), 'All sectors');
+  ASA.fillSelect(F.cat, ASA.uniq(rows, 'category'), 'All categories');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const filt = () => rows.filter(r => (!F.sector.value || r.sector === F.sector.value) && (!F.cat.value || r.category === F.cat.value));
+  const rate = v => ASA.pct(v.filter(r => r.compliant === 1).length, v.length);
+
+  function render() {
+    const d = filt(), C = ASA.colors(), B = d.filter(r => r.phase === 'Before training'), A = d.filter(r => r.phase === 'After training');
+    const smes = ASA.uniq(d, 'sme_id');
+    el('k-sme').textContent = smes.length;
+    el('k-before').textContent = ASA.fmt(rate(B), 0) + '%';
+    el('k-after').textContent = ASA.fmt(rate(A), 0) + '%';
+    el('k-change').textContent = '+' + ASA.fmt(rate(A) - rate(B), 0) + ' pts';
+    const improved = smes.filter(s => rate(A.filter(r => r.sme_id === s)) > rate(B.filter(r => r.sme_id === s))).length;
+    el('k-imp').textContent = improved + ' of ' + smes.length;
+
+    // 1. dumbbell by checklist item
+    const items = ASA.uniq(d, 'check_item').map(i => [i, rate(B.filter(r => r.check_item === i)), rate(A.filter(r => r.check_item === i))]).sort((a, b) => a[2] - b[2]);
+    const lx = [], ly = []; items.forEach(i => { lx.push(i[1], i[2], null); ly.push(i[0], i[0], null); });
+    Plotly.react('c-items', [
+      { type: 'scatter', mode: 'lines', x: lx, y: ly, line: { color: getComputedStyle(document.documentElement).getPropertyValue('--line'), width: 4 }, hoverinfo: 'skip', showlegend: false },
+      { type: 'scatter', mode: 'markers', name: 'Before training', x: items.map(i => i[1]), y: items.map(i => i[0]), marker: { size: 11, color: C.series[1] }, hovertemplate: 'Before <b>%{x:.0f}%</b><extra>%{y}</extra>' },
+      { type: 'scatter', mode: 'markers', name: 'After training', x: items.map(i => i[2]), y: items.map(i => i[0]), marker: { size: 11, color: C.series[0] }, hovertemplate: 'After <b>%{x:.0f}%</b><extra>%{y}</extra>' }
+    ], ASA.layout({ showlegend: true, xaxis: { ticksuffix: '%', range: [0, 105] }, margin: { l: 10 } }), ASA.config);
+
+    // 2. business-level scores (slope)
+    const sc = smes.map(s => [s, rate(B.filter(r => r.sme_id === s)), rate(A.filter(r => r.sme_id === s)), d.find(r => r.sme_id === s).sector]);
+    Plotly.react('c-sme', sc.map(s => ({ type: 'scatter', mode: 'lines+markers', x: ['Before', 'After'], y: [s[1], s[2]], line: { color: s[2] > s[1] ? C.series[0] : C.series[1], width: 1.5 },
+      marker: { size: 8 }, opacity: 0.75, hovertemplate: '<b>%{y:.0f}%</b> compliant<extra>' + s[0] + ' · ' + s[3] + '</extra>' })),
+      ASA.layout({ yaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 44 } }), ASA.config);
+
+    // 3. by sector after training
+    const secs = ASA.uniq(d, 'sector').map(s => [s, rate(B.filter(r => r.sector === s)), rate(A.filter(r => r.sector === s)), ASA.uniq(d.filter(r => r.sector === s), 'sme_id').length]).sort((a, b) => a[2] - b[2]);
+    Plotly.react('c-sector', [['Before training', 1, C.series[1]], ['After training', 2, C.series[0]]].map(([n, k, col]) => ({ type: 'bar', orientation: 'h', name: n, y: secs.map(s => s[0]), x: secs.map(s => s[k]),
+      marker: { color: col }, customdata: secs.map(s => s[3]), hovertemplate: '<b>%{x:.0f}%</b> ' + n.toLowerCase() + ' (%{customdata} businesses)<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+
+    ASA.table(el('t-items'), ['Checklist item', 'Before', 'After', 'Change'], items.slice().reverse().map(i => [i[0], ASA.fmt(i[1], 0) + '%', ASA.fmt(i[2], 0) + '%', '+' + ASA.fmt(i[2] - i[1], 0)]));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

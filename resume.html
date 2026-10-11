@@ -2,213 +2,129 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Aqil Shah Ayaz</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume · Aqil Shah Ayaz</title>
+<meta name="description" content="Resume of Aqil Shah Ayaz, Data Analyst and Monitoring, Evaluation & Learning (MEL) Specialist, Rockville, Maryland.">
+<meta property="og:title" content="Resume · Aqil Shah Ayaz">
+<meta property="og:description" content="Resume of Aqil Shah Ayaz, Data Analyst and Monitoring, Evaluation & Learning (MEL) Specialist, Rockville, Maryland.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'DM Sans',sans-serif;background:#0a0e1a;color:#e2e8f0;}
-.back-bar{background:rgba(10,14,26,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 2rem;height:64px;position:fixed;top:0;left:0;right:0;display:flex;align-items:center;gap:1rem;z-index:100;}
-.back-bar a{font-size:14px;color:#58a6ff;text-decoration:none;}
-.page{max-width:860px;margin:0 auto;padding:100px 2rem 80px;}
-.cv-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.08);}
-.cv-name{font-family:'DM Serif Display',serif;font-size:48px;color:#f1f5f9;margin-bottom:0.5rem;}
-.cv-title{font-size:16px;color:#94a3b8;margin-bottom:1rem;}
-.cv-contacts{display:flex;flex-direction:column;gap:4px;font-size:13px;color:#94a3b8;}
-.cv-contacts a{color:#58a6ff;text-decoration:none;}
-.cv-right{text-align:right;}
-.cv-section{margin-bottom:2.5rem;}
-.cv-sh{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#3b82f6;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(59,130,246,0.2);}
-.cv-item{margin-bottom:1.75rem;}
-.cv-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;}
-.cv-org{font-size:15px;font-weight:600;color:#f1f5f9;}
-.cv-date{font-size:12px;color:#94a3b8;white-space:nowrap;margin-left:1rem;}
-.cv-role{font-size:14px;color:#58a6ff;margin-bottom:0.5rem;}
-.cv-bullets{list-style:none;padding:0;}
-.cv-bullets li{font-size:13px;color:#94a3b8;padding:3px 0;display:flex;gap:8px;line-height:1.6;}
-.cv-bullets li::before{content:"•";color:#3b82f6;flex-shrink:0;}
-.skills-2col{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;}
-.sk-row{display:flex;gap:8px;align-items:flex-start;font-size:13px;}
-.sk-label{color:#94a3b8;min-width:120px;flex-shrink:0;}
-.sk-val{color:#e2e8f0;}
-.cert-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
-.cert-name{font-size:14px;color:#e2e8f0;}
-.cert-detail{font-size:12px;color:#94a3b8;}
-.cert-yr{font-size:13px;color:#3b82f6;font-weight:500;}
-.summary-text{font-size:15px;color:#94a3b8;line-height:1.9;max-width:700px;}
-.print-btn{background:#3b82f6;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:14px;cursor:pointer;font-family:'DM Sans',sans-serif;}
-.print-btn:hover{background:#2563eb;}
-@media print{.back-bar,.print-btn{display:none!important;}body{background:#fff;color:#1e293b;}  .cv-name{color:#1e293b;}.cv-org{color:#1e293b;}.cv-section{page-break-inside:avoid;}}
+.cv{max-width:860px;margin:0 auto;padding:28px 24px 60px}
+.cv-bar{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;margin-bottom:18px}
+.cv-paper{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:44px 48px;box-shadow:var(--shadow)}
+@media (max-width:640px){.cv-paper{padding:24px 18px}}
+.cv h1{font-family:var(--serif);font-size:40px;line-height:1.1}
+.cv .t{font-size:17px;font-weight:600;color:var(--accent);margin:6px 0 10px}
+.cv .ct{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--ink-2)}
+.cv .ct a{color:var(--ink-2)}
+.cv h2{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:6px;margin:26px 0 12px}
+.cv p,.cv li{font-size:14.5px;color:var(--ink)}
+.cv ul{padding-left:18px}
+.cv li{margin:3px 0}
+.job{margin-bottom:14px;break-inside:avoid}
+.job .h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px}
+.job .h b{font-size:15px}
+.job .h span{font-size:13.5px;color:var(--ink-3);white-space:nowrap}
+.job .o{font-size:14px;color:var(--ink-2);margin-bottom:4px}
+.sk{display:grid;grid-template-columns:170px 1fr;gap:4px 14px;font-size:14.5px}
+.sk dt{font-weight:600}
+.sk dd{color:var(--ink-2)}
+@media (max-width:560px){.sk{grid-template-columns:1fr}.sk dd{margin-bottom:6px}}
+.pf li a{font-weight:600}
+@media print{
+  @page{size:Letter;margin:0.5in 0.55in}
+  body{background:#fff;font-size:11px}
+  .cv{padding:0;max-width:none}
+  .cv-paper{border:0;box-shadow:none;padding:0;background:#fff}
+  .cv-bar,footer{display:none}
+  .cv h1{font-size:28px}.cv .t{font-size:13.5px;color:#0f6e6a}
+  .cv h2{font-size:10.5px;margin:13px 0 6px;color:#0f6e6a}
+  .cv p,.cv li,.sk{font-size:10.3px;line-height:1.42}
+  .cv .ct{font-size:10.3px}
+  .job .h b{font-size:11px}.job .h span,.job .o{font-size:10.3px}
+  .job{margin-bottom:8px}
+  a{color:#0f6e6a!important;text-decoration:none}
+  .sk{grid-template-columns:130px 1fr}
+}
 </style>
 </head>
 <body>
-<div class="back-bar">
-  <a href="index.html">← Portfolio</a>
-  <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
-</div>
-<div class="page">
-  <div class="cv-header">
-    <div>
-      <div class="cv-name">Aqil Shah Ayaz</div>
-      <div class="cv-title">Data Analyst · Power BI Developer · BI Specialist</div>
-      <div class="cv-contacts">
-        <span>Rockville, MD · (301) 300-5198</span>
-        <a href="mailto:aqilshah.researcher@gmail.com">aqilshah.researcher@gmail.com</a>
-        <a href="https://linkedin.com/in/aqil-shahayaz">linkedin.com/in/aqil-shahayaz</a>
-      </div>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="#dashboards">Dashboards</a>
+      <a href="#case-studies" class="hide-sm">Case studies</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience" class="hide-sm">Experience</a>
+      <a href="resume.html">Resume</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="cv-right">
-      <div style="font-size:13px;color:#94a3b8;margin-bottom:6px;">Microsoft Certified</div>
-      <div style="font-size:14px;color:#58a6ff;font-weight:500;">Power BI Data Analyst Associate</div>
-      <div style="font-size:12px;color:#64748b;margin-top:4px;">Valid until Feb 2027</div>
-    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
   </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Professional Summary</div>
-    <p class="summary-text">Data Analyst and BI professional with 10+ years of experience converting large, complex datasets into strategic insights for international development, health, education, and governance programs. Demonstrated ability to build automated data pipelines and dashboards used by USAID, DOD, State Department, UNHCR, UNDP, EU, FCDO, and SIDA. Expert in Python, R, SQL, Power BI, and geospatial analysis, with hands-on experience managing 40,000+ interview survey operations and training 500+ staff. MBA graduate (Quantic, 2025).</p>
+</nav>
+<main class="cv">
+  <div class="cv-bar no-print">
+    <a class="btn btn-ghost" href="index.html">← Portfolio</a>
+    <a class="btn btn-primary" href="Aqil-Shah-Ayaz-Resume.pdf" download>Download PDF</a>
+    <button class="btn btn-ghost" type="button" onclick="window.print()">Print</button>
   </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Technical Skills</div>
-    <div class="skills-2col">
-      <div class="sk-row"><span class="sk-label">Languages</span><span class="sk-val">Python (Pandas, NumPy, Scikit-learn, Matplotlib) · R · SQL (MySQL)</span></div>
-      <div class="sk-row"><span class="sk-label">BI & Reporting</span><span class="sk-val">Power BI (DAX, Data Modeling, Power Query) · Tableau · ArcGIS</span></div>
-      <div class="sk-row"><span class="sk-label">Data Platforms</span><span class="sk-val">KoBo Toolbox · SurveyCTO · Survey123 · ODK · DHIS2</span></div>
-      <div class="sk-row"><span class="sk-label">Analytics</span><span class="sk-val">Regression · Time Series · Clustering · Descriptive & Inferential Stats</span></div>
-      <div class="sk-row"><span class="sk-label">Research</span><span class="sk-val">Mixed-Methods · Geospatial Analysis · Survey Design · ATLAS.ti</span></div>
-      <div class="sk-row"><span class="sk-label">Other</span><span class="sk-val">Excel (Power Query, Pivot Tables, VBA) · Adobe Illustrator · SPSS</span></div>
+  <article class="cv-paper">
+    <h1>Aqil Shah Ayaz</h1>
+    <div class="t">Data Analyst · Monitoring, Evaluation &amp; Learning (MEL) Specialist</div>
+    <div class="ct">
+      <span>Rockville, Maryland</span>
+      <a href="tel:+13013005198">(301) 300-5198</a>
+      <a href="mailto:aqilshah.researcher@gmail.com">aqilshah.researcher@gmail.com</a>
+      <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">linkedin.com/in/aqil-shah-ayaz</a>
+      <a href="https://aqilshah-researcher.github.io/" target="_blank" rel="noopener">aqilshah-researcher.github.io</a>
     </div>
+
+    <h2>Summary</h2>
+    <p>Data analyst and MEL specialist with more than 10 years of experience turning program and field data into dashboards, evaluations and reports for USAID, UN agencies, the World Bank, FCDO, the EU, Sida and the U.S. Department of Defense. Builds end-to-end data systems from survey design and digital data collection through cleaning, statistical analysis and Power BI or Tableau reporting. Contributed to 55+ evaluation and third-party monitoring assignments, authored 100+ analytical reports, managed 40,000+ field interviews and trained 500+ staff. Certified in Power BI (PL-300) and SQL (Oracle). Holds an MBA and a Doctor of Medicine degree, with deep experience in health data.</p>
+
+    <h2>Skills</h2>
+    <dl class="sk">
+      <dt>Analysis</dt><dd>Python (pandas, NumPy, scikit-learn, statsmodels), R, SQL, MySQL, Stata, SPSS, SAS, Excel (Power Query, pivot tables); regression, sampling and weighting, hypothesis testing</dd>
+      <dt>BI and visualization</dt><dd>Power BI (DAX, Power Query, data modeling, row-level security), Tableau, ArcGIS, Adobe Illustrator, Adobe Photoshop, Canva, Napkin AI</dd>
+      <dt>MEL methods</dt><dd>MEL and MEAL frameworks, theory of change, logframes, indicator design (PIRS), OECD/DAC evaluation, third-party monitoring, data quality assessment, mixed methods</dd>
+      <dt>Qualitative</dt><dd>ATLAS.ti, NVivo, thematic coding, key informant interviews, focus group discussions</dd>
+      <dt>Data collection</dt><dd>KoBo Toolbox, SurveyCTO, ODK, Survey123, CommCare, DHIS2</dd>
+      <dt>Platforms and tools</dt><dd>Salesforce, dbt, SharePoint, Microsoft 365, Google Workspace, Jira, ClickUp, Basecamp, Slack, Miro</dd>
+    </dl>
+
+    <h2>Portfolio (interactive dashboards with code)</h2>
+    <ul class="pf">
+      <li><a href="https://aqilshah-researcher.github.io/projects/tpm-tracker/">Third-Party Monitoring Site-Visit Tracker</a>: Python ETL, SQL, DAX measures</li>
+      <li><a href="https://aqilshah-researcher.github.io/projects/livelihoods-resilience/">Food Security &amp; Resilience Evaluation</a>: R (FCS, rCSI, MDD-W, logistic regression)</li>
+      <li><a href="https://aqilshah-researcher.github.io/projects/radio-literacy/">Radio-Based Literacy Learning Assessment</a>: Python, SPSS (item analysis, KR-20)</li>
+      <li><a href="https://aqilshah-researcher.github.io/projects/girls-stem/">Girls in STEM Endline Evaluation</a>: Python, Stata (paired t-test, fixed effects)</li>
+      <li><a href="https://aqilshah-researcher.github.io/projects/workplace-safety/">Workplace Safety Before-and-After Assessment</a>: Python (McNemar test)</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <div class="job"><div class="h"><b>Senior Data Systems &amp; M&amp;E Advisor</b><span>Nov 2022 – Mar 2025</span></div><div class="o">Management Systems International (MSI) · Remote</div><ul><li>Built Python (pandas, NumPy) pipelines that cut monthly third-party monitoring processing by about 60 percent (20 to 8 analyst hours) across 10 active USAID projects.</li><li>Ran the full TPM data flow from Survey123 to Python ETL to Power BI with row-level security, surfacing yellow and red flags for USAID mission leadership.</li><li>Managed TPM assignments for USAID health projects AFIAT and UHI, using sampling to set monthly and weekly health facility visit schedules.</li><li>Trained and mentored 100+ MEAL officers and partner staff on Power BI, digital data collection and data quality.</li></ul></div><div class="job"><div class="h"><b>Senior Research, Data &amp; M&amp;E Project Manager</b><span>Nov 2021 – Sep 2022</span></div><div class="o">Adroit Associates · Kabul</div><ul><li>Managed collection of 40,000+ field interviews with automated R validation for FAO, ILO, UNDP and ACTED evaluations and TPM.</li><li>Coded about 124 interview transcripts a month in ATLAS.ti for mixed-methods reports; managed budgets, workplans and vendors.</li></ul></div><div class="job"><div class="h"><b>Power BI Data Analyst &amp; M&amp;E Manager</b><span>Oct 2019 – Aug 2021</span></div><div class="o">TAGHEER Mosbat Consultancy · Kabul</div><ul><li>Built Power BI dashboards for 17+ donor portfolios including the State Department, UNESCO, UNICEF, UNHCR, Save the Children and Oxfam.</li><li>Designed an organization-wide data governance framework and MySQL cleaning workflows; trained 56+ staff; delivered 18 evaluation, monitoring and research assignments.</li></ul></div><div class="job"><div class="h"><b>Data Management &amp; Regional M&amp;E Coordinator</b><span>Jan 2015 – May 2019</span></div><div class="o">Afghanistan Center for Excellence (ACE) · East Zone</div><ul><li>Designed monitoring systems and Power BI and Tableau dashboards for USAID, DOD, UNDP, ERRIN and DAI-subcontracted projects.</li><li>Coordinated monitoring of 12 job placement, training and women's economic empowerment programs; trained 50+ field staff.</li></ul></div><div class="job"><div class="h"><b>Data Management &amp; M&amp;E Assistant</b><span>Jul 2014 – Dec 2014</span></div><div class="o">Humanitarian Assistance and Development Association for Afghanistan (HADAAF) · Nangarhar</div><ul><li>Managed DHIS2 and Excel health facility data for WHO, IMC and BRAC-funded BPHS programs, with discrepancy analysis for reporting.</li></ul></div>
+
+    <h2>Consulting engagements</h2>
+    <ul><li><b>Data Analytics &amp; Lead Evaluation Consultant</b>, Search for Common Ground (Sida-funded evaluation) (Sep – Nov 2025)</li><li><b>Power BI Data Analyst &amp; Director of Research and M&amp;E</b>, Adroit Associates (Apr – Jul 2025)</li><li><b>Data Analyst &amp; Reporting Specialist</b>, Kudos Afghanistan (UNESCO program) (Feb – Apr 2025)</li><li><b>Quantitative Data Analysis Consultant</b>, Premium Performance Consulting (BMZ-funded evaluation) (Sep 2024 – Jan 2025)</li><li><b>TPM Data Analysis &amp; Reporting Consultant</b>, Premium Performance Consulting (Oct – Dec 2024)</li><li><b>Quantitative &amp; Qualitative Data Management Consultant</b>, Search for Common Ground (May – Dec 2024)</li><li><b>National Qualitative Data Collection &amp; Analysis Consultant</b>, Itad (FCDO mine action TPM) (Nov 2023 – Mar 2024)</li><li><b>Digital Data Collection (KoBo Toolbox) Consultant</b>, Grant Thornton Afghanistan (UNESCO literacy TPM) (Nov 2023 – Jan 2024)</li></ul>
+
+    <h2>Certifications and education</h2>
+    <ul><li><b>Oracle AI Database SQL Certified Associate</b>, Oracle · May 2026 · <a href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC8033782&trackId=DB23AISQLOCA&key=fd07f0322ed4582523365d8f607a7b9420c59e49" target="_blank" rel="noopener">verify</a></li><li><b>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</b>, Microsoft · Feb 2025 · valid to Feb 2027 · <a href="https://learn.microsoft.com/api/credentials/share/en-us/AqilSAyaz-3257/E9AA72058242953?sharingId=7AFEB7E17EEC32EE" target="_blank" rel="noopener">verify</a></li><li><b>MEAL DPro (Monitoring, Evaluation, Accountability and Learning)</b>, PM4NGOs · 2025 · <a href="https://openbadgefactory.com/v1/assertion/c21648ff194c35be601b0a768cd388e8335bfdbd" target="_blank" rel="noopener">verify</a></li><li><b>Master of Business Administration</b>, Quantic School of Business and Technology · 2025</li><li><b>Diploma in Data Science</b>, Intellipaat · 2023</li><li><b>Doctor of Medicine (MD)</b>, Rokhan University · 2020</li></ul>
+
+    <h2>Donors and clients</h2>
+    <p>USAID, U.S. Department of Defense, U.S. Department of State, World Bank, UNDP, UNESCO, UNICEF, UNHCR, FAO, ILO, WHO, European Union, FCDO, Sida, BMZ, Aga Khan Foundation, Save the Children, Oxfam, CARE, Islamic Relief Worldwide, DAI, Search for Common Ground, Freedom House, Grant Thornton, Itad</p>
+  </article>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
   </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Professional Experience</div>
-
-    <div class="cv-item">
-      <div class="cv-row"><span class="cv-org">Management Systems International — Washington, DC / Remote</span><span class="cv-date">Nov 2022 – Mar 2025</span></div>
-      <div class="cv-role">Data Systems & Performance Monitoring Advisor</div>
-      <ul class="cv-bullets">
-        <li>Automated monthly TPM data pipelines using Python (Pandas, NumPy), cutting manual processing time by ~60% and improving reproducibility across all reporting cycles.</li>
-        <li>Designed Power BI dashboards across 4 program sectors (education, health, agriculture, governance), giving USAID senior leadership real-time KPI visibility.</li>
-        <li>Produced analytical reports combining descriptive statistics, inferential analysis, and geospatial mapping — directly cited in USAID strategic decisions.</li>
-        <li>Trained 100+ MEAL officers and partner staff on digital data collection systems, statistical methods, and quality assurance workflows.</li>
-      </ul>
-    </div>
-
-    <div class="cv-item">
-      <div class="cv-row"><span class="cv-org">Adroit Associates</span><span class="cv-date">Nov 2021 – Sep 2022</span></div>
-      <div class="cv-role">R & ATLAS.ti Data Analyst</div>
-      <ul class="cv-bullets">
-        <li>Managed 40,000+ structured interviews via KoBo Toolbox with automated validation and skip logic.</li>
-        <li>Built data cleaning, merging, weighting, and harmonization pipelines in R, SPSS, and Excel Power Query for 4 donors: FAO, ILO, BBC Media Action, DARRTT.</li>
-        <li>Merged quantitative survey data with ATLAS.ti-coded qualitative datasets for mixed-methods outputs informing international policy.</li>
-      </ul>
-    </div>
-
-    <div class="cv-item">
-      <div class="cv-row"><span class="cv-org">Tagheer Mosbat Consultancy Services</span><span class="cv-date">Oct 2019 – Aug 2021</span></div>
-      <div class="cv-role">Power BI Data Analyst</div>
-      <ul class="cv-bullets">
-        <li>Built client-facing Power BI dashboards for 7 organizations: State Department, CARE, Counterpart International, Oxfam, DAI, AKF, Search Afghanistan.</li>
-        <li>Created automated MySQL data cleaning workflows with statistical verification checks.</li>
-        <li>Designed and deployed an organization-wide data management framework.</li>
-      </ul>
-    </div>
-
-    <div class="cv-item">
-      <div class="cv-row"><span class="cv-org">Afghanistan Centre for Excellence</span><span class="cv-date">Jan 2015 – May 2019</span></div>
-      <div class="cv-role">Data Management Officer</div>
-      <ul class="cv-bullets">
-        <li>Designed multi-district monitoring systems for USAID, DOD, UNDP, ERRIN, and DAI projects.</li>
-        <li>Developed Tableau dashboards tracking KPIs for youth empowerment, women's programs, and health initiatives.</li>
-        <li>Trained 400+ field staff and partners on data collection tools and reporting standards.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Education & Certifications</div>
-    <div class="cert-row">
-      <div><div class="cert-name">Microsoft Certified: Power BI Data Analyst Associate</div><div class="cert-detail">Credential ID: E9AA72058242953 · Cert #CDC4R4-D8F127 · Valid Feb 2027</div></div>
-      <div class="cert-yr">2025</div>
-    </div>
-    <div class="cert-row">
-      <div><div class="cert-name">Master of Business Administration (MBA)</div><div class="cert-detail">Quantic School of Business & Technology · Data-driven decision making, analytics, strategy</div></div>
-      <div class="cert-yr">2025</div>
-    </div>
-    <div class="cert-row">
-      <div><div class="cert-name">MEAL DPro — Monitoring, Evaluation, Accountability & Learning</div><div class="cert-detail">PM4NGOs · Certificate #81454-1351359636-33315</div></div>
-      <div class="cert-yr">2025</div>
-    </div>
-    <div class="cert-row">
-      <div><div class="cert-name">Diploma in Data Science</div><div class="cert-detail">Intellipaat · ML, Python, SQL, Statistical Modeling, Deep Learning</div></div>
-      <div class="cert-yr">2023</div>
-    </div>
-    <div class="cert-row">
-      <div><div class="cert-name">Doctor of Medicine (M.D.)</div><div class="cert-detail">Rokhan University, Nangarhar, Afghanistan · Clinical data management & health information systems</div></div>
-      <div class="cert-yr">2020</div>
-    </div>
-  </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Consulting Engagements</div>
-    <table style="width:100%;border-collapse:collapse;font-size:13px;">
-      <thead>
-        <tr style="border-bottom:1px solid rgba(59,130,246,0.3);">
-          <th style="text-align:left;padding:8px 10px;color:#3b82f6;font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:1px;">Role</th>
-          <th style="text-align:left;padding:8px 10px;color:#3b82f6;font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:1px;">Organization</th>
-          <th style="text-align:left;padding:8px 10px;color:#3b82f6;font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:1px;">Period</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Data Analytics Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Search for Common Ground</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Sep – Nov 2025</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Power BI Data Analyst</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Adroit Associates</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Apr – Jul 2025</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Data Analyst & Reporting Specialist</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Kudos Afghanistan (Grant Thornton)</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Feb – Apr 2025</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Quantitative Data Analysis Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Premium Performance Consulting</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Sep 2024 – Jan 2025</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Data Management Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Search for Common Ground</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">May – Dec 2024</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">TPM Data Analysis & Reporting Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Premium Performance Consulting</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Oct – Dec 2024</td>
-        </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-          <td style="padding:9px 10px;color:#e2e8f0;">Qualitative Data Collection & Analysis Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">ITAD</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Nov 2023 – Mar 2024</td>
-        </tr>
-        <tr>
-          <td style="padding:9px 10px;color:#e2e8f0;">Digital Data Collection Consultant</td>
-          <td style="padding:9px 10px;color:#94a3b8;">Grant Thornton</td>
-          <td style="padding:9px 10px;color:#94a3b8;white-space:nowrap;">Oct 2023 – Jan 2024</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="cv-section">
-    <div class="cv-sh">Key Clients & Donor Organizations</div>
-    <p style="font-size:14px;color:#94a3b8;line-height:2;">USAID · U.S. Department of Defense · State Department · UNHCR · UNDP · UNESCO · European Union · FCDO · SIDA · FAO · ILO · BBC Media Action · CARE · Oxfam · DAI · AKF · Search for Common Ground · Grant Thornton · ITAD · Counterpart International · Freedom House</p>
-  </div>
-</div>
+</footer>
 </body>
 </html>

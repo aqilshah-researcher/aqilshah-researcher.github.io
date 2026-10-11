@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Security & Resilience Evaluation · Aqil Shah Ayaz</title>
+<meta name="description" content="Baseline, midline and endline food security dashboard (FCS, rCSI, MDD-W) for a sample livelihoods and resilience program across six provinces.">
+<meta property="og:title" content="Food Security & Resilience Evaluation · Aqil Shah Ayaz">
+<meta property="og:description" content="Baseline, midline and endline food security dashboard (FCS, rCSI, MDD-W) for a sample livelihoods and resilience program across six provinces.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Food Security &amp; Resilience Evaluation</h1>
+    <p class="lede">Did households eat better and cope less harshly after cash-for-work, cash transfers, livestock, kitchen gardens and solar water systems? This dashboard tracks the three standard food security indicators across three survey rounds.</p>
+    <div class="p-meta chips"><span class="chip ">R</span><span class="chip ">FCS · rCSI · MDD-W</span><span class="chip ">Logistic regression</span><span class="chip ">Survey design</span></div>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Province<select id="f-prov"></select></label><label>Intervention<select id="f-int"></select></label><label>Household head<select id="f-sex"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-fcs">–</div><div class="l">Acceptable food consumption (endline)</div><div class="s" id="k-fcs-s"></div></div><div class="kpi"><div class="v" id="k-rcsi">–</div><div class="l">High coping strategies (endline)</div><div class="s" id="k-rcsi-s"></div></div><div class="kpi"><div class="v" id="k-mdd">–</div><div class="l">Women meeting MDD-W (endline)</div><div class="s" id="k-mdd-s"></div></div><div class="kpi"><div class="v" id="k-inc">–</div><div class="l">Report higher cash income (endline)</div></div><div class="kpi"><div class="v" id="k-n">–</div><div class="l">Household interviews</div><div class="s">3 rounds</div></div></div>
+    <div class="charts"><div class="chart full"><h3>Three indicators across survey rounds</h3><div class="sub">Midline dip reflects a drought shock in the sample scenario</div><div class="plot " id="c-trend" role="img" aria-label="Three indicators across survey rounds"></div></div><div class="chart "><h3>Food Consumption Score groups</h3><div class="sub">Poor ≤21 · Borderline 21.5–35 · Acceptable >35</div><div class="plot " id="c-fcs" role="img" aria-label="Food Consumption Score groups"></div></div><div class="chart "><h3>Acceptable FCS: baseline to endline</h3><div class="sub">By province</div><div class="plot " id="c-prov" role="img" aria-label="Acceptable FCS: baseline to endline"></div></div><div class="chart "><h3>Endline results by intervention</h3><div class="sub">Income and food consumption</div><div class="plot " id="c-int" role="img" aria-label="Endline results by intervention"></div></div><div class="chart "><h3>Female- vs male-headed households</h3><div class="sub">% with acceptable FCS</div><div class="plot " id="c-sex" role="img" aria-label="Female- vs male-headed households"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-round"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on the quantitative final evaluation I led as Quantitative Data Analysis Consultant for Premium Performance Consulting (2024 to 2025): a BMZ-funded livelihoods and resilience program in six provinces covering cash-for-work, unconditional cash transfers, livestock support, kitchen gardens and solar-powered water systems for more than 21,500 vulnerable households. I built the indicator framework, sampling and tools, and ran the disaggregated analysis.</p>
+<h3>Method shown here</h3>
+<ul><li><b>Food Consumption Score (FCS):</b> weighted days of eight food groups over 7 days, grouped Poor / Borderline / Acceptable using the WFP thresholds.</li>
+<li><b>Reduced Coping Strategies Index (rCSI):</b> five weighted coping behaviours; 19+ is treated as high coping.</li>
+<li><b>MDD-W:</b> share of women 15 to 49 eating at least 5 of 10 food groups.</li>
+<li><b>Tests:</b> Welch t-test and chi-square for baseline vs endline, and a logistic regression of acceptable FCS on sex of household head, province, intervention and household size. The R script and Python results match row for row.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/livelihoods-resilience/code/food_security_indicators.R" target="_blank" rel="noopener"><b>food_security_indicators.R</b><span>Indicator calculation and tests in base R</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/livelihoods-resilience/data/household_survey_raw.csv" target="_blank" rel="noopener"><b>household_survey_raw.csv</b><span>Raw household survey (1,290 interviews)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/livelihoods-resilience/data/household_indicators.csv" target="_blank" rel="noopener"><b>household_indicators.csv</b><span>Calculated indicators (Tableau source)</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const rows = await ASA.loadCSV('data/household_indicators.csv');
+  const el = id => document.getElementById(id);
+  const ROUNDS = ['Baseline', 'Midline', 'Endline'];
+  const F = { prov: el('f-prov'), int: el('f-int'), sex: el('f-sex') };
+  ASA.fillSelect(F.prov, ASA.uniq(rows, 'province'), 'All provinces');
+  ASA.fillSelect(F.int, ASA.uniq(rows, 'intervention'), 'All interventions');
+  ASA.fillSelect(F.sex, ['Female', 'Male'], 'All household heads');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const filt = () => rows.filter(r => (!F.prov.value || r.province === F.prov.value) && (!F.int.value || r.intervention === F.int.value) && (!F.sex.value || r.hh_head_sex === F.sex.value));
+  const share = (v, f) => { const n = v.filter(r => f(r) !== null); return ASA.pct(n.filter(f).length, n.length); };
+  const accF = r => r.fcs_group === 'Acceptable', highR = r => r.rcsi_group === 'High (19+)';
+  const mdd = v => { const x = v.filter(r => r.mdd_w_met !== null); return ASA.pct(x.filter(r => r.mdd_w_met === 1).length, x.length); };
+
+  function render() {
+    const d = filt(), C = ASA.colors();
+    const by = Object.fromEntries(ROUNDS.map(k => [k, d.filter(r => r.round === k)]));
+    const delta = (a, b) => (a - b >= 0 ? '+' : '') + ASA.fmt(a - b, 1) + ' pts vs baseline';
+    const e = by.Endline, b = by.Baseline;
+    el('k-fcs').textContent = ASA.fmt(share(e, accF), 1) + '%'; el('k-fcs-s').textContent = delta(share(e, accF), share(b, accF));
+    el('k-rcsi').textContent = ASA.fmt(share(e, highR), 1) + '%'; el('k-rcsi-s').textContent = delta(share(e, highR), share(b, highR));
+    el('k-mdd').textContent = ASA.fmt(mdd(e), 1) + '%'; el('k-mdd-s').textContent = delta(mdd(e), mdd(b));
+    const inc = e.filter(r => r.income_increased !== null);
+    el('k-inc').textContent = ASA.fmt(ASA.pct(inc.filter(r => r.income_increased === 1).length, inc.length), 1) + '%';
+    el('k-n').textContent = ASA.fmt(d.length);
+
+    // 1. FCS groups by round (ordinal ramp, 100% stacked)
+    const grp = ['Poor', 'Borderline', 'Acceptable'], ramp = ASA.isDark() ? ['#9ec5f4', '#3987e5', '#184f95'] : ['#86b6ef', '#3987e5', '#104281'];
+    Plotly.react('c-fcs', grp.map((g, i) => ({ type: 'bar', name: g, x: ROUNDS, y: ROUNDS.map(k => share(by[k], r => r.fcs_group === g)),
+      marker: { color: ramp[i] }, text: ROUNDS.map(k => ASA.fmt(share(by[k], r => r.fcs_group === g), 0) + '%'), textposition: 'inside', insidetextanchor: 'middle',
+      textfont: { color: i === 0 && !ASA.isDark() ? '#0d366b' : '#ffffff' }, hovertemplate: '<b>%{y:.1f}%</b> ' + g + '<extra>%{x}</extra>' })),
+      ASA.layout({ barmode: 'stack', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] }, legend: { traceorder: 'reversed' } }), ASA.config);
+
+    // 2. three indicators across rounds
+    const ind = [['Acceptable FCS', v => share(v, accF), C.series[0]], ['High coping (rCSI 19+)', v => share(v, highR), C.series[1]], ['MDD-W met', mdd, C.series[2]]];
+    Plotly.react('c-trend', ind.map(([n, f, col]) => ({ type: 'scatter', mode: 'lines+markers', name: n, x: ROUNDS, y: ROUNDS.map(k => f(by[k])),
+      line: { color: col, width: 2 }, marker: { size: 9, color: col, line: { width: 2, color: getComputedStyle(document.documentElement).getPropertyValue('--bg') } },
+      hovertemplate: '<b>%{y:.1f}%</b> ' + n + '<extra></extra>' })),
+      ASA.layout({ hovermode: 'x unified', showlegend: true, legend: { y: 1.14, x: 0 }, margin: { t: 30 }, yaxis: { ticksuffix: '%', rangemode: 'tozero' } }), ASA.config);
+
+    // 3. dumbbell: acceptable FCS baseline -> endline by province
+    const provs = ASA.uniq(d, 'province');
+    const pv = provs.map(p => [p, share(d.filter(r => r.province === p && r.round === 'Baseline'), accF), share(d.filter(r => r.province === p && r.round === 'Endline'), accF)]).sort((a, b) => a[2] - b[2]);
+    const lineX = [], lineY = [];
+    pv.forEach(p => { lineX.push(p[1], p[2], null); lineY.push(p[0], p[0], null); });
+    Plotly.react('c-prov', [
+      { type: 'scatter', mode: 'lines', x: lineX, y: lineY, line: { color: getComputedStyle(document.documentElement).getPropertyValue('--line'), width: 4 }, hoverinfo: 'skip', showlegend: false },
+      { type: 'scatter', mode: 'markers', name: 'Baseline', x: pv.map(p => p[1]), y: pv.map(p => p[0]), marker: { size: 11, color: C.series[1] }, hovertemplate: 'Baseline <b>%{x:.1f}%</b><extra>%{y}</extra>' },
+      { type: 'scatter', mode: 'markers', name: 'Endline', x: pv.map(p => p[2]), y: pv.map(p => p[0]), marker: { size: 11, color: C.series[0] }, hovertemplate: 'Endline <b>%{x:.1f}%</b><extra>%{y}</extra>' }
+    ], ASA.layout({ showlegend: true, xaxis: { ticksuffix: '%', rangemode: 'tozero' }, margin: { l: 10 } }), ASA.config);
+
+    // 4. by intervention (endline)
+    const ints = ASA.uniq(e, 'intervention').map(i => { const v = e.filter(r => r.intervention === i); return [i, share(v, accF), ASA.pct(v.filter(r => r.income_increased === 1).length, v.length), v.length]; }).sort((a, b) => a[2] - b[2]);
+    Plotly.react('c-int', [
+      { type: 'bar', orientation: 'h', name: 'Income increased', y: ints.map(i => i[0]), x: ints.map(i => i[2]), marker: { color: C.series[0] }, customdata: ints.map(i => i[3]), hovertemplate: '<b>%{x:.1f}%</b> report higher income (n=%{customdata})<extra>%{y}</extra>' },
+      { type: 'bar', orientation: 'h', name: 'Acceptable FCS', y: ints.map(i => i[0]), x: ints.map(i => i[1]), marker: { color: C.series[2] }, hovertemplate: '<b>%{x:.1f}%</b> acceptable FCS<extra>%{y}</extra>' }
+    ], ASA.layout({ barmode: 'group', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+
+    // 5. gender gap
+    const sexes = ['Female', 'Male'];
+    Plotly.react('c-sex', sexes.map((s, i) => ({ type: 'bar', name: s + '-headed', x: ROUNDS, y: ROUNDS.map(k => share(by[k].filter(r => r.hh_head_sex === s), accF)),
+      marker: { color: C.series[i === 0 ? 4 : 6] }, hovertemplate: '<b>%{y:.1f}%</b> acceptable FCS · ' + s + '-headed<extra>%{x}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, yaxis: { ticksuffix: '%', rangemode: 'tozero' } }), ASA.config);
+
+    ASA.table(el('t-round'), ['Round', 'Households', 'Mean FCS', '% acceptable FCS', 'Mean rCSI', '% high rCSI', '% MDD-W met'],
+      ROUNDS.map(k => { const v = by[k]; const m = (f) => v.length ? v.reduce((a, r) => a + r[f], 0) / v.length : NaN;
+        return [k, v.length, ASA.fmt(m('fcs'), 1), ASA.fmt(share(v, accF), 1), ASA.fmt(m('rcsi'), 1), ASA.fmt(share(v, highR), 1), ASA.fmt(mdd(v), 1)]; }));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

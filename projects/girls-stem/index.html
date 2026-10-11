@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girls in STEM: Endline Evaluation · Aqil Shah Ayaz</title>
+<meta name="description" content="Endline dashboard for a sample girls' science club program across 13 schools: learning gains, club vs non-club comparison, attitudes and parent support.">
+<meta property="og:title" content="Girls in STEM: Endline Evaluation · Aqil Shah Ayaz">
+<meta property="og:description" content="Endline dashboard for a sample girls' science club program across 13 schools: learning gains, club vs non-club comparison, attitudes and parent support.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Girls in STEM: Endline Evaluation</h1>
+    <p class="lede">Did girls who joined school science clubs learn more, and do they now see a future in science? This dashboard compares club members with other students across 13 schools.</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">Stata</span><span class="chip ">Paired t-test</span><span class="chip ">Fixed-effects regression</span><span class="chip ">Likert analysis</span></div>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>District<select id="f-dist"></select></label><label>Grade<select id="f-grade"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-n">–</div><div class="l">Students surveyed</div></div><div class="kpi"><div class="v" id="k-base">–</div><div class="l">Average science mark, baseline → endline</div></div><div class="kpi"><div class="v" id="k-gap">–</div><div class="l">Extra gain for club members</div><div class="s" id="k-gap-s"></div></div><div class="kpi"><div class="v" id="k-career">–</div><div class="l">Students who want a STEM career</div></div><div class="kpi"><div class="v" id="k-parent">–</div><div class="l">Parents who want daughters in STEM</div></div></div>
+    <div class="charts"><div class="chart "><h3>Change in science marks</h3><div class="sub">Each dot is one student</div><div class="plot " id="c-gain" role="img" aria-label="Change in science marks"></div></div><div class="chart "><h3>Attitudes to science</h3><div class="sub">% agree or strongly agree</div><div class="plot " id="c-att" role="img" aria-label="Attitudes to science"></div></div><div class="chart full"><h3>Average learning gain by school</h3><div class="sub">Hover for district and club share</div><div class="plot " id="c-school" role="img" aria-label="Average learning gain by school"></div></div><div class="chart full"><h3>Parents' preferred field for their daughter</h3><div class="sub">Share of parents</div><div class="plot " id="c-field" role="img" aria-label="Parents' preferred field for their daughter"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-school"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on the endline evaluation of a girls' science education pilot in 13 government schools, where I was the Data Analyst (TAGHEER, 2021): I trained the data collection team on the tools, then cleaned and analyzed the quantitative and qualitative data from 473 students, parents, teachers and officials and prepared the analysis datasets for the report.</p>
+<h3>Method shown here</h3>
+<ul><li><b>Paired t-test</b> on baseline and endline marks for the same students.</li>
+<li><b>Club vs non-club:</b> Welch t-test on gains with Cohen's d, then an OLS model with grade and school fixed effects and robust standard errors, so the club effect is not just a school effect.</li>
+<li><b>Attitudes:</b> top-2-box on five-point Likert items.</li>
+<li>The analysis is written in Python and again as a Stata do-file.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/girls-stem/code/stem_endline_analysis.py" target="_blank" rel="noopener"><b>stem_endline_analysis.py</b><span>Python analysis (scipy, statsmodels)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/girls-stem/code/stem_endline.do" target="_blank" rel="noopener"><b>stem_endline.do</b><span>Same analysis as a Stata do-file</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/girls-stem/data/student_survey.csv" target="_blank" rel="noopener"><b>student_survey.csv</b><span>Student survey (n=330)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/girls-stem/data/parent_survey.csv" target="_blank" rel="noopener"><b>parent_survey.csv</b><span>Parent survey (n=80)</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const st = await ASA.loadCSV('data/student_survey.csv');
+  const pa = await ASA.loadCSV('data/parent_survey.csv');
+  const el = id => document.getElementById(id);
+  st.forEach(r => { r.gain = r.science_mark_endline - r.science_mark_baseline; r.club = r.science_club_member === 1 ? 'Club member' : 'Non-member'; });
+  const F = { dist: el('f-dist'), grade: el('f-grade') };
+  ASA.fillSelect(F.dist, ASA.uniq(st, 'district'), 'All districts');
+  ASA.fillSelect(F.grade, ASA.uniq(st, 'grade').map(String), 'All grades');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const filt = () => st.filter(r => (!F.dist.value || r.district === F.dist.value) && (!F.grade.value || String(r.grade) === F.grade.value));
+  const mean = (v, k) => v.length ? v.reduce((a, r) => a + r[k], 0) / v.length : NaN;
+  const LK = [['enjoys_science', 'Enjoys science'], ['understands_lessons', 'Understands lessons'], ['wants_stem_career', 'Wants a STEM career'], ['family_supports_stem', 'Family supports STEM'], ['community_supports_stem', 'Community supports STEM']];
+
+  function render() {
+    const d = filt(), C = ASA.colors(), club = d.filter(r => r.science_club_member === 1), non = d.filter(r => r.science_club_member === 0);
+    const p = pa.filter(r => !F.dist.value || r.district === F.dist.value);
+    el('k-n').textContent = ASA.fmt(d.length);
+    el('k-base').textContent = ASA.fmt(mean(d, 'science_mark_baseline'), 1) + ' → ' + ASA.fmt(mean(d, 'science_mark_endline'), 1);
+    el('k-gap').textContent = '+' + ASA.fmt(mean(club, 'gain') - mean(non, 'gain'), 1) + ' pts';
+    el('k-gap-s').textContent = 'club ' + ASA.fmt(mean(club, 'gain'), 1) + ' vs non-member ' + ASA.fmt(mean(non, 'gain'), 1);
+    el('k-career').textContent = ASA.fmt(ASA.pct(d.filter(r => r.wants_stem_career >= 4).length, d.length), 1) + '%';
+    el('k-parent').textContent = ASA.fmt(ASA.pct(p.filter(r => r.wants_daughter_in_stem === 1).length, p.length), 0) + '%';
+
+    // 1. gain distribution by group (box)
+    Plotly.react('c-gain', [[non, 'Non-member', C.series[1]], [club, 'Club member', C.series[0]]].map(([v, n, col]) => ({
+      type: 'box', name: n, y: v.map(r => r.gain), boxpoints: 'all', jitter: 0.45, pointpos: 0, marker: { color: col, size: 5, opacity: 0.55 }, line: { color: col, width: 2 }, fillcolor: 'rgba(0,0,0,0)',
+      hovertemplate: '%{y:.1f} pts<extra>' + n + '</extra>' })), ASA.layout({ yaxis: { title: { text: 'Change in science mark (points)' }, zeroline: true } }), ASA.config);
+
+    // 2. attitudes top-2-box by group
+    Plotly.react('c-att', [[non, 'Non-member', C.series[1]], [club, 'Club member', C.series[0]]].map(([v, n, col]) => ({
+      type: 'bar', orientation: 'h', name: n, y: LK.map(l => l[1]), x: LK.map(l => ASA.pct(v.filter(r => r[l[0]] >= 4).length, v.length)),
+      marker: { color: col }, hovertemplate: '<b>%{x:.1f}%</b> agree · ' + n + '<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, yaxis: { autorange: 'reversed' }, margin: { l: 10 } }), ASA.config);
+
+    // 3. school-level average gain
+    const sch = ASA.uniq(d, 'school').map(s => { const v = d.filter(r => r.school === s); return [s, v[0].district, mean(v, 'gain'), v.length, ASA.pct(v.filter(r => r.science_club_member === 1).length, v.length)]; });
+    Plotly.react('c-school', [{ type: 'bar', x: sch.map(s => s[0]), y: sch.map(s => s[2]), marker: { color: C.series[0] }, customdata: sch.map(s => [s[1], s[3], s[4]]),
+      hovertemplate: '<b>%{y:.1f} pts</b> average gain<br>%{customdata[0]} · %{customdata[1]} students · %{customdata[2]:.0f}% in club<extra>%{x}</extra>' }],
+      ASA.layout({ yaxis: { title: { text: 'Average gain (points)' } }, xaxis: { tickangle: -40 } }), ASA.config);
+
+    // 4. parents' preferred field
+    const fields = ASA.group(p, 'preferred_field', v => v.length).sort((a, b) => a[1] - b[1]);
+    Plotly.react('c-field', [{ type: 'bar', orientation: 'h', y: fields.map(f => f[0]), x: fields.map(f => ASA.pct(f[1], p.length)), marker: { color: C.series[2] },
+      text: fields.map(f => ASA.fmt(ASA.pct(f[1], p.length), 0) + '%'), textposition: 'outside', cliponaxis: false, hovertemplate: '<b>%{x:.1f}%</b> of parents<extra>%{y}</extra>' }],
+      ASA.layout({ xaxis: { ticksuffix: '%', range: [0, 60] }, margin: { l: 10, r: 30 } }), ASA.config);
+
+    ASA.table(el('t-school'), ['School', 'District', 'Students', '% in club', 'Avg gain'], sch.map(s => [s[0], s[1], s[3], ASA.fmt(s[4], 0) + '%', ASA.fmt(s[2], 1)]));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

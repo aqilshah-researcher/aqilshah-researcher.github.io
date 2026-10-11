@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Third-Party Monitoring Site-Visit Tracker · Aqil Shah Ayaz</title>
+<meta name="description" content="Dashboard tracking 5,600 sample TPM site visits: completion, partner cancellations, red and yellow flags, and reporting time by province.">
+<meta property="og:title" content="Third-Party Monitoring Site-Visit Tracker · Aqil Shah Ayaz">
+<meta property="og:description" content="Dashboard tracking 5,600 sample TPM site visits: completion, partner cancellations, red and yellow flags, and reporting time by province.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Third-Party Monitoring Site-Visit Tracker</h1>
+    <p class="lede">One page that answers the questions a donor monitoring team asks every month: how many site visits were planned and done, where partners postponed or cancelled, and which sites raised red or yellow flags that need follow-up.</p>
+    <div class="p-meta chips"><span class="chip ">Python ETL</span><span class="chip ">SQL</span><span class="chip ">DAX measures</span><span class="chip ">Survey123</span><span class="chip ">Geospatial</span></div>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Year<select id="f-year"></select></label><label>Region<select id="f-region"></select></label><label>Technical office<select id="f-office"></select></label><label>Visit status<select id="f-status"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-planned">–</div><div class="l">Planned site visits</div></div><div class="kpi"><div class="v" id="k-done">–</div><div class="l">Completion rate</div><div class="s" id="k-done-s"></div></div><div class="kpi"><div class="v" id="k-ip">–</div><div class="l">Partner postponed or canceled</div><div class="s" id="k-ip-s"></div></div><div class="kpi"><div class="v" id="k-flag">–</div><div class="l">Completed visits flagged</div><div class="s" id="k-flag-s"></div></div><div class="kpi"><div class="v" id="k-days">–</div><div class="l">Average days to submit report</div><div class="s">target: 5 days or less</div></div></div>
+    <div class="charts"><div class="chart full"><h3>Planned and completed visits by month</h3><div class="sub">Hover any month to see both values</div><div class="plot " id="c-trend" role="img" aria-label="Planned and completed visits by month"></div></div><div class="chart "><h3>Where visits happen</h3><div class="sub">Bubble size = planned visits · color = % completed</div><div class="plot tall" id="c-map" role="img" aria-label="Where visits happen"></div></div><div class="chart "><h3>Visit status by region</h3><div class="sub">Share of planned visits</div><div class="plot tall" id="c-region" role="img" aria-label="Visit status by region"></div></div><div class="chart "><h3>Why sites were flagged</h3><div class="sub">Completed visits with a yellow or red flag</div><div class="plot " id="c-flags" role="img" aria-label="Why sites were flagged"></div></div><div class="chart "><h3>Planned visits by technical office</h3><div class="sub">Hover for completion rate</div><div class="plot " id="c-office" role="img" aria-label="Planned visits by technical office"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-prov"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>This dashboard is modeled on the third-party monitoring (TPM) trackers I designed and ran as Senior Data Systems &amp; M&amp;E Advisor at Management Systems International (2022 to 2025) for USAID-funded health, education, agriculture and governance programs across 34 provinces. In that role, field monitors submitted site-visit data in Survey123, my Python pipeline cleaned and validated it, and Power BI dashboards with row-level security showed yellow and red flags to mission leadership.</p>
+<p>The pipeline cut monthly processing from about 20 analyst hours to 8 (around 60 percent). The tracker covered thousands of visits across more than 40 awards.</p>
+<h3>How this sample version is built</h3>
+<ul><li><b>Raw export to clean table:</b> <code>clean_tpm.py</code> fixes province spellings (for example "Saripul", "Sar-e-Pul", "SAR-E POL" all become "Sar-e Pol"), mixed date formats and status labels, removes duplicate visits and writes a QA log of rule violations.</li>
+<li><b>Star schema and queries:</b> <code>tpm_model.sql</code> defines the fact and province tables and holds the queries behind each visual (completion by region, flag rate by office, 3-month rolling trend, provinces above the national red-flag rate, partners with repeated red flags).</li>
+<li><b>Power BI measures:</b> <code>measures.dax</code> holds the same KPIs I used in the original Power BI tracker (Planned, Completed, IP Postponed, IP Canceled, % of each, flag rates, rolling trend), ready to paste into a Power BI model built on these CSV files.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/code/clean_tpm.py" target="_blank" rel="noopener"><b>clean_tpm.py</b><span>Python cleaning and validation pipeline</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/code/tpm_model.sql" target="_blank" rel="noopener"><b>tpm_model.sql</b><span>Star schema and 7 analysis queries</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/data/raw/tpm_raw_export.csv" target="_blank" rel="noopener"><b>tpm_raw_export.csv</b><span>Messy raw export (input)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/data/tpm_site_visits_clean.csv" target="_blank" rel="noopener"><b>tpm_site_visits_clean.csv</b><span>Clean table (output)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/data/dim_province.csv" target="_blank" rel="noopener"><b>dim_province.csv</b><span>Province dimension with coordinates</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/tpm-tracker/powerbi/measures.dax" target="_blank" rel="noopener"><b>measures.dax</b><span>The same KPIs as Power BI DAX measures</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const rows = await ASA.loadCSV('data/tpm_site_visits_clean.csv');
+  const prov = await ASA.loadCSV('data/dim_province.csv');
+  rows.forEach(r => { r.year = String(r.planned_date).slice(0, 4); r.month = String(r.planned_date).slice(0, 7); });
+  const el = id => document.getElementById(id);
+  const F = { year: el('f-year'), region: el('f-region'), office: el('f-office'), status: el('f-status') };
+  ASA.fillSelect(F.year, ASA.uniq(rows, 'year'), 'All years');
+  ASA.fillSelect(F.region, ASA.uniq(rows, 'region'), 'All regions');
+  ASA.fillSelect(F.office, ASA.uniq(rows, 'technical_office'), 'All offices');
+  ASA.fillSelect(F.status, ['Completed', 'IP Postponed', 'IP Canceled', 'TPM Canceled'], 'All statuses');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+
+  function filtered() {
+    return rows.filter(r => (!F.year.value || r.year === F.year.value) && (!F.region.value || r.region === F.region.value)
+      && (!F.office.value || r.technical_office === F.office.value) && (!F.status.value || r.status === F.status.value));
+  }
+
+  function render() {
+    const d = filtered(), C = ASA.colors(), done = d.filter(r => r.status === 'Completed');
+    const red = done.filter(r => r.flag === 'Red').length, yel = done.filter(r => r.flag === 'Yellow').length;
+    const ipp = d.filter(r => r.status === 'IP Postponed').length, ipc = d.filter(r => r.status === 'IP Canceled').length;
+    const days = done.map(r => r.days_to_submit).filter(v => v !== null);
+    el('k-planned').textContent = ASA.fmt(d.length);
+    el('k-done').textContent = ASA.fmt(ASA.pct(done.length, d.length), 1) + '%';
+    el('k-done-s').textContent = ASA.fmt(done.length) + ' visits completed';
+    el('k-ip').textContent = ASA.fmt(ipp + ipc);
+    el('k-ip-s').textContent = ASA.fmt(ipp) + ' postponed · ' + ASA.fmt(ipc) + ' canceled';
+    el('k-flag').textContent = ASA.fmt(ASA.pct(red + yel, done.length), 1) + '%';
+    el('k-flag-s').textContent = ASA.fmt(red) + ' red · ' + ASA.fmt(yel) + ' yellow';
+    el('k-days').textContent = days.length ? ASA.fmt(days.reduce((a, b) => a + b, 0) / days.length, 1) : '–';
+
+    // 1. monthly trend
+    const months = ASA.uniq(d, 'month');
+    const byM = new Map(ASA.group(d, 'month', v => [v.length, v.filter(r => r.status === 'Completed').length]));
+    Plotly.react('c-trend', [
+      { x: months, y: months.map(m => byM.get(m)[0]), name: 'Planned', type: 'scatter', mode: 'lines', line: { color: C.series[0], width: 2, dash: 'dot' }, hovertemplate: '%{y:,} planned<extra></extra>' },
+      { x: months, y: months.map(m => byM.get(m)[1]), name: 'Completed', type: 'scatter', mode: 'lines', line: { color: C.series[2], width: 2 }, hovertemplate: '%{y:,} completed<extra></extra>' }
+    ], ASA.layout({ hovermode: 'x unified', showlegend: true, legend: { y: 1.12, x: 0 }, margin: { t: 26 }, xaxis: { type: 'date', tickformat: '%b %Y' }, yaxis: { title: { text: 'Site visits' }, rangemode: 'tozero' } }), ASA.config);
+
+    // 2. status by region (100% stacked)
+    const regions = ['Central', 'East', 'North', 'South', 'West'].filter(x => d.some(r => r.region === x));
+    const sts = [['Completed', C.series[2]], ['IP Postponed', C.series[3]], ['IP Canceled', C.series[1]], ['TPM Canceled', C.series[6]]];
+    Plotly.react('c-region', sts.map(([s, col]) => ({
+      type: 'bar', orientation: 'h', name: s, y: regions, marker: { color: col, line: { width: 1, color: getComputedStyle(document.documentElement).getPropertyValue('--bg') } },
+      x: regions.map(g => { const t = d.filter(r => r.region === g); return ASA.pct(t.filter(r => r.status === s).length, t.length); }),
+      customdata: regions.map(g => d.filter(r => r.region === g && r.status === s).length),
+      hovertemplate: '<b>%{x:.1f}%</b> ' + s + ' · %{customdata:,} visits<extra>%{y}</extra>'
+    })), ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 70 } }), ASA.config);
+
+    // 3. map
+    const pmap = new Map(ASA.group(d, 'province', v => v));
+    const pts = prov.filter(p => pmap.has(p.province)).map(p => { const v = pmap.get(p.province), c = v.filter(r => r.status === 'Completed'); return { ...p, n: v.length, rate: ASA.pct(c.length, v.length), red: c.filter(r => r.flag === 'Red').length }; });
+    const maxN = Math.max(1, ...pts.map(p => p.n));
+    const dark = ASA.isDark();
+    Plotly.react('c-map', [{
+      type: 'scattergeo', lat: pts.map(p => p.lat), lon: pts.map(p => p.lon), text: pts.map(p => p.province),
+      customdata: pts.map(p => [p.n, p.rate, p.red]),
+      marker: { size: pts.map(p => 8 + 34 * Math.sqrt(p.n / maxN)), color: pts.map(p => p.rate), cmin: 60, cmax: 100,
+        colorscale: [[0, C.seq[0]], [0.5, C.seq[2]], [1, C.seq[4]]], line: { width: 1.5, color: dark ? '#1a1d23' : '#ffffff' }, opacity: 0.9,
+        colorbar: { title: { text: '% done', side: 'top' }, thickness: 10, len: 0.6, ticksuffix: '%', outlinewidth: 0 } },
+      hovertemplate: '<b>%{text}</b><br>%{customdata[0]:,} planned visits<br>%{customdata[1]:.1f}% completed<br>%{customdata[2]} red flags<extra></extra>'
+    }], ASA.layout({ margin: { l: 0, r: 0, t: 0, b: 0 }, geo: {
+      projection: { type: 'mercator' }, lataxis: { range: [29, 38.8] }, lonaxis: { range: [60, 75.5] },
+      showcountries: true, countrycolor: dark ? '#4a505c' : '#b9b6ad', showland: true, landcolor: dark ? '#22262e' : '#f0eee8',
+      showocean: false, showlakes: false, bgcolor: 'rgba(0,0,0,0)', showframe: false, showcoastlines: false, resolution: 50 } }), ASA.config);
+
+    // 4. flags by category
+    const cats = ASA.group(done.filter(r => r.flag !== 'No flag'), 'flag_category', v => [v.filter(r => r.flag === 'Yellow').length, v.filter(r => r.flag === 'Red').length])
+      .sort((a, b) => (a[1][0] + a[1][1]) - (b[1][0] + b[1][1]));
+    Plotly.react('c-flags', [
+      { type: 'bar', orientation: 'h', name: 'Yellow flag', y: cats.map(c => c[0]), x: cats.map(c => c[1][0]), marker: { color: ASA.status.warning }, hovertemplate: '<b>%{x}</b> yellow<extra>%{y}</extra>' },
+      { type: 'bar', orientation: 'h', name: 'Red flag', y: cats.map(c => c[0]), x: cats.map(c => c[1][1]), marker: { color: ASA.status.critical }, hovertemplate: '<b>%{x}</b> red<extra>%{y}</extra>' }
+    ], ASA.layout({ barmode: 'stack', showlegend: true, margin: { l: 10 } }), ASA.config);
+
+    // 5. by technical office
+    const off = ASA.group(d, 'technical_office', v => [v.length, ASA.pct(v.filter(r => r.status === 'Completed').length, v.length)]).sort((a, b) => a[1][0] - b[1][0]);
+    Plotly.react('c-office', [{ type: 'bar', orientation: 'h', y: off.map(o => o[0]), x: off.map(o => o[1][0]), marker: { color: C.series[0] },
+      text: off.map(o => ASA.fmt(o[1][0])), textposition: 'outside', cliponaxis: false, customdata: off.map(o => o[1][1]),
+      hovertemplate: '<b>%{x:,}</b> planned · %{customdata:.1f}% completed<extra>%{y}</extra>' }],
+      ASA.layout({ margin: { l: 10, r: 40 } }), ASA.config);
+
+    // table view
+    const pr = pts.sort((a, b) => b.n - a.n).map(p => [p.province, p.region, ASA.fmt(p.n), ASA.fmt(p.rate, 1) + '%', p.red]);
+    ASA.table(el('t-prov'), ['Province', 'Region', 'Planned', 'Completed', 'Red flags'], pr);
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Never commit client data or Power BI / Tableau files that may contain it
+*.pbix
+*.pbit
+*.twbx
+*.hyper
+.DS_Store
+__pycache__/

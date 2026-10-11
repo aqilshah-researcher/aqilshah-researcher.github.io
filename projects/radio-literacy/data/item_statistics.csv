@@ -1,0 +1,13 @@
+item,domain,pct_correct,item_rest_r
+read_letter,Reading,85.4,0.24
+read_word,Reading,74.6,0.32
+read_sentence,Reading,58.7,0.28
+read_short_text,Reading,46.7,0.33
+write_letter,Writing,79.0,0.3
+write_word,Writing,73.8,0.35
+write_sentence,Writing,48.5,0.45
+count_objects,Numeracy,92.1,0.31
+add_numbers,Numeracy,77.9,0.4
+subtract_numbers,Numeracy,65.4,0.36
+tell_time,Numeracy,48.7,0.34
+read_price,Numeracy,54.9,0.35
