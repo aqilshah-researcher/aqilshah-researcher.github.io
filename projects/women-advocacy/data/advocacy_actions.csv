@@ -1,0 +1,241 @@
+action_id,quarter,hub,sector,action_type,outcome,verified_by_second_source
+A-0001,2025 Q3,Hub A (central),Health,Community awareness session,Change achieved,1
+A-0002,2025 Q1,Hub B (east),Business,Dialogue with local authorities,Change achieved,1
+A-0003,2024 Q4,Hub C (highlands),Business,Workplace negotiation,No change yet,0
+A-0004,2025 Q3,Hub B (east),Media,Dialogue with local authorities,Change achieved,1
+A-0005,2025 Q3,Hub A (central),Business,Radio or media message,Change achieved,1
+A-0006,2025 Q2,Hub C (highlands),Health,Community awareness session,Change achieved,1
+A-0007,2024 Q4,Hub A (central),Health,Workplace negotiation,No change yet,0
+A-0008,2025 Q1,Hub B (east),Business,Workplace negotiation,No change yet,1
+A-0009,2025 Q2,Hub B (east),Health,Peer support and referral,Change achieved,1
+A-0010,2025 Q2,Hub B (east),Health,Peer support and referral,Change achieved,1
+A-0011,2025 Q1,Hub A (central),Health,Community awareness session,Partial change,1
+A-0012,2025 Q1,Hub B (east),Business,Peer support and referral,Partial change,0
+A-0013,2025 Q1,Hub A (central),Health,Peer support and referral,Change achieved,0
+A-0014,2024 Q3,Hub A (central),Business,Workplace negotiation,Change achieved,0
+A-0015,2025 Q1,Hub A (central),Health,Workplace negotiation,Partial change,0
+A-0016,2025 Q3,Hub B (east),Health,Peer support and referral,Partial change,1
+A-0017,2025 Q1,Hub C (highlands),Business,Radio or media message,Change achieved,0
+A-0018,2025 Q3,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0019,2025 Q3,Hub A (central),Media,Workplace negotiation,Partial change,1
+A-0020,2025 Q1,Hub B (east),Health,Dialogue with local authorities,Change achieved,0
+A-0021,2024 Q3,Hub A (central),Health,Peer support and referral,Change achieved,0
+A-0022,2025 Q3,Hub A (central),Health,Community awareness session,No change yet,1
+A-0023,2025 Q3,Hub A (central),Business,Dialogue with local authorities,Partial change,0
+A-0024,2024 Q3,Hub C (highlands),Health,Peer support and referral,No change yet,0
+A-0025,2025 Q1,Hub C (highlands),Media,Dialogue with local authorities,Partial change,0
+A-0026,2024 Q3,Hub B (east),Business,Workplace negotiation,Partial change,1
+A-0027,2025 Q1,Hub C (highlands),Health,Peer support and referral,Change achieved,1
+A-0028,2025 Q1,Hub B (east),Business,Workplace negotiation,Partial change,1
+A-0029,2025 Q3,Hub A (central),Business,Community awareness session,Change achieved,1
+A-0030,2024 Q3,Hub C (highlands),Health,Community awareness session,Partial change,0
+A-0031,2025 Q2,Hub A (central),Health,Workplace negotiation,Partial change,0
+A-0032,2024 Q4,Hub B (east),Business,Dialogue with local authorities,Partial change,0
+A-0033,2024 Q4,Hub B (east),Health,Workplace negotiation,Change achieved,0
+A-0034,2024 Q4,Hub A (central),Health,Peer support and referral,No change yet,1
+A-0035,2025 Q3,Hub B (east),Business,Workplace negotiation,No change yet,1
+A-0036,2025 Q3,Hub C (highlands),Media,Community awareness session,Change achieved,1
+A-0037,2025 Q3,Hub B (east),Media,Peer support and referral,Change achieved,1
+A-0038,2025 Q3,Hub B (east),Health,Peer support and referral,No change yet,0
+A-0039,2025 Q1,Hub A (central),Business,Dialogue with local authorities,Partial change,0
+A-0040,2025 Q3,Hub C (highlands),Health,Radio or media message,Change achieved,0
+A-0041,2024 Q4,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0042,2025 Q1,Hub A (central),Business,Radio or media message,Partial change,1
+A-0043,2025 Q3,Hub A (central),Health,Community awareness session,Change achieved,0
+A-0044,2024 Q3,Hub A (central),Media,Workplace negotiation,No change yet,0
+A-0045,2025 Q2,Hub A (central),Media,Radio or media message,Change achieved,0
+A-0046,2025 Q3,Hub A (central),Health,Workplace negotiation,Change achieved,1
+A-0047,2025 Q1,Hub B (east),Business,Workplace negotiation,Change achieved,0
+A-0048,2024 Q4,Hub A (central),Health,Dialogue with local authorities,Change achieved,1
+A-0049,2025 Q3,Hub B (east),Business,Dialogue with local authorities,Change achieved,1
+A-0050,2025 Q2,Hub C (highlands),Health,Radio or media message,No change yet,1
+A-0051,2025 Q1,Hub B (east),Media,Dialogue with local authorities,Partial change,1
+A-0052,2025 Q1,Hub C (highlands),Health,Peer support and referral,No change yet,1
+A-0053,2025 Q2,Hub B (east),Business,Workplace negotiation,No change yet,1
+A-0054,2025 Q2,Hub A (central),Business,Dialogue with local authorities,Change achieved,1
+A-0055,2025 Q2,Hub C (highlands),Health,Radio or media message,Partial change,1
+A-0056,2024 Q4,Hub A (central),Business,Dialogue with local authorities,Change achieved,1
+A-0057,2025 Q2,Hub B (east),Media,Radio or media message,Change achieved,1
+A-0058,2024 Q4,Hub A (central),Media,Dialogue with local authorities,Change achieved,1
+A-0059,2025 Q1,Hub B (east),Business,Dialogue with local authorities,Change achieved,1
+A-0060,2025 Q3,Hub C (highlands),Media,Radio or media message,Partial change,1
+A-0061,2025 Q2,Hub B (east),Business,Dialogue with local authorities,Partial change,0
+A-0062,2025 Q1,Hub C (highlands),Media,Radio or media message,Change achieved,0
+A-0063,2024 Q4,Hub B (east),Media,Community awareness session,Change achieved,1
+A-0064,2024 Q4,Hub A (central),Media,Peer support and referral,Partial change,0
+A-0065,2025 Q2,Hub C (highlands),Health,Peer support and referral,Change achieved,1
+A-0066,2024 Q4,Hub A (central),Health,Radio or media message,Change achieved,0
+A-0067,2025 Q3,Hub A (central),Business,Dialogue with local authorities,Partial change,1
+A-0068,2025 Q2,Hub C (highlands),Media,Peer support and referral,Change achieved,0
+A-0069,2025 Q3,Hub A (central),Business,Workplace negotiation,No change yet,1
+A-0070,2025 Q2,Hub A (central),Health,Peer support and referral,Change achieved,1
+A-0071,2025 Q3,Hub B (east),Business,Dialogue with local authorities,No change yet,0
+A-0072,2025 Q3,Hub C (highlands),Business,Peer support and referral,Change achieved,1
+A-0073,2025 Q1,Hub A (central),Business,Dialogue with local authorities,No change yet,0
+A-0074,2025 Q1,Hub A (central),Business,Peer support and referral,Change achieved,1
+A-0075,2025 Q1,Hub B (east),Business,Dialogue with local authorities,Partial change,0
+A-0076,2025 Q2,Hub A (central),Business,Dialogue with local authorities,Partial change,0
+A-0077,2024 Q3,Hub B (east),Media,Workplace negotiation,No change yet,1
+A-0078,2025 Q3,Hub A (central),Health,Peer support and referral,Partial change,1
+A-0079,2025 Q2,Hub B (east),Media,Peer support and referral,Partial change,0
+A-0080,2025 Q3,Hub C (highlands),Health,Radio or media message,Partial change,0
+A-0081,2025 Q1,Hub A (central),Health,Radio or media message,No change yet,1
+A-0082,2024 Q4,Hub A (central),Business,Peer support and referral,Change achieved,1
+A-0083,2025 Q2,Hub A (central),Health,Workplace negotiation,No change yet,1
+A-0084,2024 Q4,Hub C (highlands),Health,Dialogue with local authorities,Change achieved,0
+A-0085,2025 Q1,Hub C (highlands),Business,Radio or media message,No change yet,1
+A-0086,2024 Q4,Hub A (central),Business,Community awareness session,Change achieved,1
+A-0087,2025 Q1,Hub B (east),Business,Radio or media message,Change achieved,1
+A-0088,2025 Q2,Hub C (highlands),Business,Dialogue with local authorities,Change achieved,1
+A-0089,2025 Q3,Hub A (central),Health,Peer support and referral,Change achieved,0
+A-0090,2025 Q2,Hub A (central),Media,Workplace negotiation,Change achieved,0
+A-0091,2024 Q3,Hub C (highlands),Health,Peer support and referral,Change achieved,0
+A-0092,2024 Q4,Hub C (highlands),Health,Peer support and referral,Partial change,1
+A-0093,2025 Q3,Hub A (central),Media,Peer support and referral,Change achieved,0
+A-0094,2024 Q4,Hub C (highlands),Health,Radio or media message,Change achieved,1
+A-0095,2025 Q1,Hub A (central),Health,Peer support and referral,Change achieved,0
+A-0096,2024 Q4,Hub B (east),Health,Dialogue with local authorities,Partial change,0
+A-0097,2024 Q3,Hub B (east),Business,Community awareness session,Change achieved,1
+A-0098,2025 Q1,Hub A (central),Media,Peer support and referral,Change achieved,0
+A-0099,2025 Q2,Hub A (central),Media,Dialogue with local authorities,Partial change,1
+A-0100,2025 Q2,Hub C (highlands),Health,Community awareness session,Partial change,1
+A-0101,2025 Q1,Hub C (highlands),Media,Community awareness session,No change yet,1
+A-0102,2025 Q1,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0103,2025 Q3,Hub B (east),Health,Peer support and referral,Change achieved,1
+A-0104,2025 Q1,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0105,2024 Q4,Hub B (east),Media,Community awareness session,Change achieved,0
+A-0106,2025 Q2,Hub B (east),Business,Radio or media message,Change achieved,0
+A-0107,2025 Q3,Hub A (central),Business,Radio or media message,Change achieved,1
+A-0108,2024 Q3,Hub B (east),Business,Community awareness session,Change achieved,1
+A-0109,2025 Q3,Hub A (central),Business,Community awareness session,Partial change,1
+A-0110,2025 Q3,Hub A (central),Media,Peer support and referral,Change achieved,0
+A-0111,2025 Q1,Hub C (highlands),Business,Peer support and referral,Change achieved,1
+A-0112,2024 Q3,Hub A (central),Health,Dialogue with local authorities,No change yet,0
+A-0113,2025 Q2,Hub C (highlands),Health,Peer support and referral,Change achieved,0
+A-0114,2025 Q3,Hub A (central),Health,Dialogue with local authorities,Partial change,1
+A-0115,2025 Q2,Hub A (central),Health,Dialogue with local authorities,No change yet,1
+A-0116,2024 Q4,Hub B (east),Business,Radio or media message,Change achieved,1
+A-0117,2025 Q3,Hub A (central),Health,Dialogue with local authorities,Partial change,0
+A-0118,2025 Q1,Hub C (highlands),Business,Workplace negotiation,Partial change,1
+A-0119,2025 Q1,Hub C (highlands),Health,Dialogue with local authorities,Change achieved,1
+A-0120,2024 Q4,Hub A (central),Health,Workplace negotiation,Partial change,0
+A-0121,2025 Q3,Hub B (east),Health,Dialogue with local authorities,Partial change,0
+A-0122,2025 Q1,Hub A (central),Health,Workplace negotiation,Change achieved,0
+A-0123,2025 Q3,Hub A (central),Health,Dialogue with local authorities,Partial change,0
+A-0124,2025 Q2,Hub B (east),Media,Community awareness session,No change yet,1
+A-0125,2025 Q1,Hub A (central),Media,Peer support and referral,No change yet,0
+A-0126,2024 Q4,Hub B (east),Health,Radio or media message,Partial change,0
+A-0127,2025 Q3,Hub B (east),Business,Peer support and referral,Change achieved,1
+A-0128,2024 Q4,Hub A (central),Media,Community awareness session,Change achieved,1
+A-0129,2025 Q3,Hub C (highlands),Media,Peer support and referral,Change achieved,1
+A-0130,2025 Q2,Hub A (central),Health,Peer support and referral,No change yet,1
+A-0131,2025 Q1,Hub A (central),Media,Peer support and referral,No change yet,0
+A-0132,2024 Q4,Hub B (east),Media,Peer support and referral,Change achieved,0
+A-0133,2024 Q4,Hub A (central),Business,Workplace negotiation,Change achieved,1
+A-0134,2025 Q3,Hub C (highlands),Health,Dialogue with local authorities,Partial change,1
+A-0135,2024 Q4,Hub A (central),Business,Dialogue with local authorities,No change yet,0
+A-0136,2024 Q3,Hub A (central),Business,Dialogue with local authorities,Change achieved,0
+A-0137,2024 Q4,Hub A (central),Health,Community awareness session,Change achieved,1
+A-0138,2025 Q1,Hub A (central),Health,Radio or media message,Change achieved,0
+A-0139,2025 Q2,Hub A (central),Business,Peer support and referral,Partial change,1
+A-0140,2025 Q3,Hub A (central),Business,Dialogue with local authorities,No change yet,1
+A-0141,2025 Q1,Hub B (east),Business,Peer support and referral,Partial change,1
+A-0142,2025 Q1,Hub A (central),Media,Community awareness session,Partial change,0
+A-0143,2024 Q4,Hub A (central),Business,Radio or media message,Partial change,1
+A-0144,2025 Q1,Hub B (east),Health,Peer support and referral,Partial change,0
+A-0145,2025 Q2,Hub A (central),Health,Community awareness session,Partial change,1
+A-0146,2025 Q3,Hub B (east),Health,Radio or media message,Change achieved,1
+A-0147,2024 Q4,Hub C (highlands),Media,Peer support and referral,Partial change,1
+A-0148,2024 Q4,Hub B (east),Media,Radio or media message,No change yet,0
+A-0149,2025 Q1,Hub C (highlands),Business,Workplace negotiation,No change yet,1
+A-0150,2025 Q2,Hub A (central),Business,Radio or media message,Partial change,0
+A-0151,2025 Q1,Hub B (east),Health,Dialogue with local authorities,Change achieved,0
+A-0152,2025 Q1,Hub B (east),Health,Radio or media message,No change yet,0
+A-0153,2025 Q2,Hub A (central),Media,Workplace negotiation,No change yet,0
+A-0154,2025 Q1,Hub A (central),Health,Dialogue with local authorities,No change yet,1
+A-0155,2024 Q4,Hub A (central),Health,Radio or media message,Change achieved,1
+A-0156,2024 Q3,Hub A (central),Health,Community awareness session,Change achieved,1
+A-0157,2025 Q2,Hub B (east),Business,Community awareness session,Change achieved,0
+A-0158,2025 Q1,Hub C (highlands),Health,Peer support and referral,Partial change,0
+A-0159,2024 Q4,Hub B (east),Business,Peer support and referral,Change achieved,1
+A-0160,2025 Q3,Hub B (east),Media,Peer support and referral,Partial change,1
+A-0161,2025 Q3,Hub A (central),Media,Workplace negotiation,Change achieved,1
+A-0162,2024 Q4,Hub A (central),Health,Community awareness session,Partial change,0
+A-0163,2025 Q3,Hub A (central),Media,Radio or media message,Change achieved,1
+A-0164,2025 Q3,Hub C (highlands),Health,Peer support and referral,Partial change,1
+A-0165,2024 Q4,Hub C (highlands),Health,Community awareness session,Partial change,0
+A-0166,2025 Q1,Hub A (central),Media,Peer support and referral,Change achieved,1
+A-0167,2024 Q4,Hub A (central),Media,Radio or media message,Change achieved,0
+A-0168,2024 Q4,Hub C (highlands),Health,Workplace negotiation,Change achieved,1
+A-0169,2025 Q3,Hub B (east),Health,Community awareness session,Change achieved,1
+A-0170,2025 Q3,Hub A (central),Business,Workplace negotiation,No change yet,1
+A-0171,2025 Q3,Hub C (highlands),Health,Peer support and referral,Change achieved,0
+A-0172,2025 Q3,Hub B (east),Media,Workplace negotiation,Partial change,0
+A-0173,2025 Q3,Hub A (central),Business,Dialogue with local authorities,Change achieved,1
+A-0174,2025 Q3,Hub A (central),Business,Radio or media message,Partial change,1
+A-0175,2025 Q1,Hub C (highlands),Media,Community awareness session,No change yet,1
+A-0176,2024 Q4,Hub C (highlands),Media,Community awareness session,Change achieved,0
+A-0177,2025 Q3,Hub A (central),Business,Community awareness session,Change achieved,0
+A-0178,2025 Q3,Hub C (highlands),Health,Dialogue with local authorities,Change achieved,1
+A-0179,2025 Q3,Hub A (central),Media,Community awareness session,Change achieved,0
+A-0180,2025 Q3,Hub A (central),Health,Workplace negotiation,Partial change,0
+A-0181,2025 Q1,Hub B (east),Business,Dialogue with local authorities,No change yet,0
+A-0182,2024 Q4,Hub C (highlands),Health,Community awareness session,No change yet,0
+A-0183,2025 Q2,Hub C (highlands),Health,Peer support and referral,No change yet,0
+A-0184,2025 Q3,Hub C (highlands),Health,Dialogue with local authorities,Partial change,0
+A-0185,2024 Q3,Hub A (central),Health,Peer support and referral,Partial change,0
+A-0186,2025 Q1,Hub C (highlands),Health,Workplace negotiation,No change yet,1
+A-0187,2025 Q3,Hub B (east),Health,Workplace negotiation,No change yet,0
+A-0188,2024 Q4,Hub A (central),Health,Dialogue with local authorities,Partial change,0
+A-0189,2025 Q2,Hub C (highlands),Business,Workplace negotiation,No change yet,0
+A-0190,2024 Q3,Hub C (highlands),Media,Community awareness session,Change achieved,0
+A-0191,2024 Q4,Hub A (central),Media,Radio or media message,Change achieved,1
+A-0192,2025 Q3,Hub B (east),Health,Dialogue with local authorities,No change yet,0
+A-0193,2024 Q4,Hub C (highlands),Business,Community awareness session,Change achieved,1
+A-0194,2025 Q1,Hub C (highlands),Business,Radio or media message,Partial change,0
+A-0195,2024 Q4,Hub B (east),Business,Dialogue with local authorities,Change achieved,1
+A-0196,2025 Q2,Hub A (central),Business,Workplace negotiation,Partial change,1
+A-0197,2025 Q2,Hub A (central),Media,Workplace negotiation,Change achieved,0
+A-0198,2025 Q3,Hub A (central),Health,Radio or media message,Change achieved,0
+A-0199,2024 Q3,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0200,2025 Q1,Hub A (central),Health,Dialogue with local authorities,Change achieved,0
+A-0201,2025 Q3,Hub C (highlands),Business,Workplace negotiation,Partial change,1
+A-0202,2024 Q4,Hub C (highlands),Media,Dialogue with local authorities,Change achieved,0
+A-0203,2025 Q1,Hub B (east),Media,Peer support and referral,Change achieved,1
+A-0204,2025 Q3,Hub B (east),Health,Peer support and referral,Partial change,1
+A-0205,2025 Q3,Hub C (highlands),Business,Dialogue with local authorities,Partial change,1
+A-0206,2025 Q2,Hub A (central),Business,Workplace negotiation,Change achieved,1
+A-0207,2025 Q1,Hub B (east),Business,Workplace negotiation,Partial change,1
+A-0208,2024 Q4,Hub A (central),Business,Radio or media message,Partial change,0
+A-0209,2025 Q3,Hub B (east),Media,Dialogue with local authorities,No change yet,0
+A-0210,2025 Q2,Hub C (highlands),Health,Workplace negotiation,Change achieved,1
+A-0211,2024 Q3,Hub A (central),Media,Peer support and referral,Partial change,0
+A-0212,2024 Q3,Hub A (central),Business,Peer support and referral,Change achieved,1
+A-0213,2025 Q1,Hub A (central),Health,Dialogue with local authorities,No change yet,1
+A-0214,2025 Q2,Hub B (east),Business,Dialogue with local authorities,Change achieved,1
+A-0215,2025 Q3,Hub A (central),Media,Dialogue with local authorities,No change yet,1
+A-0216,2025 Q1,Hub A (central),Health,Workplace negotiation,Partial change,0
+A-0217,2024 Q4,Hub B (east),Business,Workplace negotiation,Change achieved,1
+A-0218,2025 Q1,Hub B (east),Media,Workplace negotiation,Partial change,1
+A-0219,2025 Q3,Hub C (highlands),Business,Community awareness session,No change yet,1
+A-0220,2025 Q3,Hub B (east),Health,Radio or media message,Change achieved,1
+A-0221,2024 Q4,Hub A (central),Business,Radio or media message,Change achieved,1
+A-0222,2025 Q2,Hub B (east),Business,Radio or media message,Change achieved,1
+A-0223,2025 Q3,Hub C (highlands),Health,Peer support and referral,Partial change,1
+A-0224,2025 Q1,Hub A (central),Business,Dialogue with local authorities,Change achieved,1
+A-0225,2025 Q1,Hub B (east),Business,Workplace negotiation,Partial change,1
+A-0226,2024 Q3,Hub C (highlands),Media,Workplace negotiation,Partial change,1
+A-0227,2024 Q4,Hub B (east),Health,Community awareness session,No change yet,1
+A-0228,2025 Q1,Hub C (highlands),Health,Dialogue with local authorities,Change achieved,1
+A-0229,2025 Q1,Hub A (central),Media,Workplace negotiation,No change yet,1
+A-0230,2025 Q3,Hub B (east),Health,Peer support and referral,Partial change,1
+A-0231,2025 Q3,Hub C (highlands),Health,Dialogue with local authorities,No change yet,0
+A-0232,2024 Q4,Hub A (central),Media,Peer support and referral,Partial change,0
+A-0233,2025 Q3,Hub B (east),Health,Peer support and referral,Change achieved,0
+A-0234,2025 Q3,Hub A (central),Media,Community awareness session,Partial change,0
+A-0235,2025 Q1,Hub A (central),Business,Radio or media message,Partial change,0
+A-0236,2024 Q4,Hub A (central),Business,Peer support and referral,Change achieved,0
+A-0237,2025 Q3,Hub A (central),Media,Dialogue with local authorities,Partial change,0
+A-0238,2024 Q3,Hub C (highlands),Business,Peer support and referral,Change achieved,0
+A-0239,2024 Q4,Hub B (east),Business,Community awareness session,Change achieved,1
+A-0240,2025 Q3,Hub C (highlands),Media,Dialogue with local authorities,No change yet,0

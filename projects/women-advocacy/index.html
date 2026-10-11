@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Women's Advocacy Network: Outcome Tracking · Aqil Shah Ayaz</title>
+<meta name="description" content="Sample dashboard for a women professionals' advocacy network: change in an agency index from baseline to endline, and outcomes of advocacy actions.">
+<meta property="og:title" content="Women's Advocacy Network: Outcome Tracking · Aqil Shah Ayaz">
+<meta property="og:description" content="Sample dashboard for a women professionals' advocacy network: change in an agency index from baseline to endline, and outcomes of advocacy actions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Women's Advocacy Network: Outcome Tracking</h1>
+    <p class="lede">How do you show that a network of women professionals is gaining voice? This dashboard tracks a four-item agency index for members and logs every advocacy action with its outcome, the way outcome harvesting does.</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">Wilcoxon test</span><span class="chip ">Outcome harvesting</span><span class="chip ">Mixed methods</span><span class="chip ">ATLAS.ti coding frame</span></div>
+    <p style="margin-top:14px"><a class="btn btn-ghost" href="../../case-studies/women-advocacy.html">Read the case study →</a></p>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Regional hub<select id="f-hub"></select></label><label>Sector<select id="f-sec"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-n">–</div><div class="l">Members surveyed</div></div><div class="kpi"><div class="v" id="k-idx">–</div><div class="l">Agency index, baseline → endline</div><div class="s">mean of 4 items, 1 to 5</div></div><div class="kpi"><div class="v" id="k-imp">–</div><div class="l">Members whose index improved</div></div><div class="kpi"><div class="v" id="k-act">–</div><div class="l">Advocacy actions logged</div></div><div class="kpi"><div class="v" id="k-ach">–</div><div class="l">Actions with change achieved</div></div></div>
+    <div class="charts"><div class="chart "><h3>Agency items, baseline and endline</h3><div class="sub">Mean score from 1 to 5</div><div class="plot " id="c-items" role="img" aria-label="Agency items, baseline and endline"></div></div><div class="chart "><h3>Change in agency index by sector</h3><div class="sub">Endline minus baseline</div><div class="plot " id="c-sector" role="img" aria-label="Change in agency index by sector"></div></div><div class="chart full"><h3>Outcomes of advocacy actions</h3><div class="sub">Share of actions by type</div><div class="plot " id="c-out" role="img" aria-label="Outcomes of advocacy actions"></div></div><div class="chart full"><h3>Actions logged per quarter</h3><div class="sub">Across all hubs</div><div class="plot " id="c-q" role="img" aria-label="Actions logged per quarter"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-main"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on the final evaluation I led in 2025 as Data Analytics &amp; Lead Evaluation Consultant for Search for Common Ground, of a Sida-funded program supporting women professionals in health, media and business. The real report is confidential, so this page shows only the method with simulated data and generic hub names.</p>
+<h3>Method shown here</h3><ul><li><b>Agency index:</b> mean of four Likert items (confidence, voice in decisions, network support, advocacy skills), compared baseline to endline with a Wilcoxon signed-rank test.</li><li><b>Dose-response:</b> Spearman correlation between cluster sessions attended and gain.</li><li><b>Outcome harvesting:</b> each advocacy action is logged with type, outcome and whether a second source verified it.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/women-advocacy/code/agency_change.py" target="_blank" rel="noopener"><b>agency_change.py</b><span>Agency index, Wilcoxon and Spearman tests</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/women-advocacy/data/member_survey.csv" target="_blank" rel="noopener"><b>member_survey.csv</b><span>Member survey (n=360)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/women-advocacy/data/advocacy_actions.csv" target="_blank" rel="noopener"><b>advocacy_actions.csv</b><span>Advocacy action log (n=240)</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const m = await ASA.loadCSV('data/member_survey.csv');
+  const a = await ASA.loadCSV('data/advocacy_actions.csv');
+  const el = id => document.getElementById(id);
+  const IT = [['confidence', 'Confidence'], ['voice_in_decisions', 'Voice in decisions'], ['network_support', 'Network support'], ['advocacy_skills', 'Advocacy skills']];
+  m.forEach(r => { r.base = IT.reduce((s, i) => s + r[i[0] + '_baseline'], 0) / 4; r.end = IT.reduce((s, i) => s + r[i[0] + '_endline'], 0) / 4; });
+  const F = { hub: el('f-hub'), sec: el('f-sec') };
+  ASA.fillSelect(F.hub, ASA.uniq(m, 'hub'), 'All hubs');
+  ASA.fillSelect(F.sec, ASA.uniq(m, 'sector'), 'All sectors');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const ok = r => (!F.hub.value || r.hub === F.hub.value) && (!F.sec.value || r.sector === F.sec.value);
+  const mean = (v, k) => v.length ? v.reduce((s, r) => s + r[k], 0) / v.length : NaN;
+  function render() {
+    const d = m.filter(ok), ac = a.filter(ok), C = ASA.colors(), bg = getComputedStyle(document.documentElement).getPropertyValue('--bg');
+    el('k-n').textContent = ASA.fmt(d.length);
+    el('k-idx').textContent = ASA.fmt(mean(d, 'base'), 2) + ' → ' + ASA.fmt(mean(d, 'end'), 2);
+    el('k-imp').textContent = ASA.fmt(ASA.pct(d.filter(r => r.end > r.base).length, d.length), 0) + '%';
+    el('k-act').textContent = ASA.fmt(ac.length);
+    el('k-ach').textContent = ASA.fmt(ASA.pct(ac.filter(r => r.outcome === 'Change achieved').length, ac.length), 0) + '%';
+    Plotly.react('c-items', [['Baseline', '_baseline', C.series[1]], ['Endline', '_endline', C.series[0]]].map(([n, s, col]) => ({ type: 'bar', orientation: 'h', name: n,
+      y: IT.map(i => i[1]), x: IT.map(i => mean(d, i[0] + s)), marker: { color: col }, hovertemplate: '<b>%{x:.2f}</b> of 5 · ' + n + '<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, xaxis: { range: [1, 5], dtick: 1 }, yaxis: { autorange: 'reversed' }, margin: { l: 10 } }), ASA.config);
+    const secs = ASA.uniq(d, 'sector');
+    Plotly.react('c-sector', [{ type: 'bar', x: secs, y: secs.map(s => { const v = d.filter(r => r.sector === s); return mean(v, 'end') - mean(v, 'base'); }), marker: { color: C.series[0] },
+      text: secs.map(s => { const v = d.filter(r => r.sector === s); return '+' + ASA.fmt(mean(v, 'end') - mean(v, 'base'), 2); }), textposition: 'outside', cliponaxis: false,
+      hovertemplate: '<b>+%{y:.2f}</b> points on the agency index<extra>%{x}</extra>' }], ASA.layout({ yaxis: { title: { text: 'Change in agency index (1-5)' }, rangemode: 'tozero' } }), ASA.config);
+    const types = ASA.uniq(ac, 'action_type'), oc = [['Change achieved', ASA.isDark() ? '#184f95' : '#104281'], ['Partial change', '#3987e5'], ['No change yet', ASA.isDark() ? '#6b6f78' : '#b9b6ad']];
+    Plotly.react('c-out', oc.map(([o, col]) => ({ type: 'bar', orientation: 'h', name: o, y: types, x: types.map(t => { const v = ac.filter(r => r.action_type === t); return ASA.pct(v.filter(r => r.outcome === o).length, v.length); }),
+      marker: { color: col, line: { width: 1, color: bg } }, hovertemplate: '<b>%{x:.0f}%</b> ' + o.toLowerCase() + '<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+    const qs = ASA.uniq(ac, 'quarter');
+    Plotly.react('c-q', [{ type: 'scatter', mode: 'lines+markers', x: qs, y: qs.map(q => ac.filter(r => r.quarter === q).length), line: { color: C.series[0], width: 2 }, marker: { size: 8 },
+      hovertemplate: '<b>%{y}</b> actions<extra>%{x}</extra>' }], ASA.layout({ yaxis: { rangemode: 'tozero', title: { text: 'Advocacy actions logged' } } }), ASA.config);
+    ASA.table(el('t-main'), ['Action type', 'Actions', '% change achieved', '% verified by 2nd source'], types.map(t => { const v = ac.filter(r => r.action_type === t); return [t, v.length, ASA.fmt(ASA.pct(v.filter(r => r.outcome === 'Change achieved').length, v.length), 0), ASA.fmt(ASA.pct(v.filter(r => r.verified_by_second_source === 1).length, v.length), 0)]; }));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

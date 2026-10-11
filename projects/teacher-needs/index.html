@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teacher Training Needs Assessment: Topic Validation · Aqil Shah Ayaz</title>
+<meta name="description" content="Sample dashboard showing how 100 candidate training topics were scored by key informants and narrowed to 72 validated topics for teachers, principals and supervisors.">
+<meta property="og:title" content="Teacher Training Needs Assessment: Topic Validation · Aqil Shah Ayaz">
+<meta property="og:description" content="Sample dashboard showing how 100 candidate training topics were scored by key informants and narrowed to 72 validated topics for teachers, principals and supervisors.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Teacher Training Needs Assessment: Topic Validation</h1>
+    <p class="lede">Key informants scored every candidate topic for relevance and urgency. A clear, written rule then turned 100 candidate topics into 72 validated ones: 36 for teachers, 18 for principals and 18 for academic supervisors.</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">KII scoring</span><span class="chip ">Selection rule</span><span class="chip ">Agreement check</span><span class="chip ">KoBo Toolbox</span></div>
+    <p style="margin-top:14px"><a class="btn btn-ghost" href="../../case-studies/teacher-needs.html">Read the case study →</a></p>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Group<select id="f-grp"></select></label><label>Status<select id="f-val"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-cand">–</div><div class="l">Candidate topics</div></div><div class="kpi"><div class="v" id="k-val">–</div><div class="l">Validated topics</div></div><div class="kpi"><div class="v" id="k-score">–</div><div class="l">Average weighted score</div><div class="s">0.6 × relevance + 0.4 × urgency</div></div><div class="kpi"><div class="v" id="k-resp">–</div><div class="l">Key informants scoring</div><div class="s">teachers, principals, supervisors</div></div></div>
+    <div class="charts"><div class="chart full"><h3>Relevance and urgency of each topic</h3><div class="sub">Each dot is one topic</div><div class="plot tall" id="c-scatter" role="img" aria-label="Relevance and urgency of each topic"></div></div><div class="chart "><h3>Topics by subject domain</h3><div class="sub">Candidates and validated</div><div class="plot " id="c-dom" role="img" aria-label="Topics by subject domain"></div></div><div class="chart "><h3>Validated topics by group</h3><div class="sub">Against the agreed quota</div><div class="plot " id="c-grp" role="img" aria-label="Validated topics by group"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-main"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on the training needs assessment I worked on as Data Analyst at TAGHEER for the Aga Khan Foundation and the Ministry of Education (2021): a literature review produced 100 candidate topics, key informant interviews in five Kabul schools and group discussions scored them, and 72 priority topics were validated for digital teacher-training content in Dari and Pashto.</p>
+<h3>Method shown here</h3><ul><li>Weighted score per topic: 0.6 × mean relevance + 0.4 × mean urgency.</li><li>Agreement check: topics where informants disagree (SD of relevance 1.2 or more) are not validated.</li><li>Quota per group: the highest-scoring agreed topics fill 36 / 18 / 18 places.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/teacher-needs/code/score_topics.py" target="_blank" rel="noopener"><b>score_topics.py</b><span>Scoring and selection rule in Python</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/teacher-needs/data/candidate_topics.csv" target="_blank" rel="noopener"><b>candidate_topics.csv</b><span>100 candidate topics</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/teacher-needs/data/kii_topic_scores.csv" target="_blank" rel="noopener"><b>kii_topic_scores.csv</b><span>Key informant scores</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/teacher-needs/data/topics_scored.csv" target="_blank" rel="noopener"><b>topics_scored.csv</b><span>Scored and validated topics</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const t = await ASA.loadCSV('data/topics_scored.csv');
+  const el = id => document.getElementById(id);
+  const F = { grp: el('f-grp'), val: el('f-val') };
+  ASA.fillSelect(F.grp, ['Teacher', 'Principal', 'Academic supervisor'], 'All groups');
+  ASA.fillSelect(F.val, ['Validated', 'Not validated'], 'All topics');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  function render() {
+    const d = t.filter(r => (!F.grp.value || r.group === F.grp.value) && (!F.val.value || (F.val.value === 'Validated') === (r.validated === 1))), C = ASA.colors();
+    const v = d.filter(r => r.validated === 1);
+    el('k-cand').textContent = d.length; el('k-val').textContent = v.length;
+    el('k-score').textContent = ASA.fmt(d.reduce((s, r) => s + r.weighted_score, 0) / (d.length || 1), 2);
+    el('k-resp').textContent = '25';
+    const groups = ['Teacher', 'Principal', 'Academic supervisor'].filter(g => d.some(r => r.group === g));
+    Plotly.react('c-scatter', [['Validated', 1, C.series[0]], ['Not validated', 0, C.series[1]]].map(([n, k, col]) => { const x = d.filter(r => r.validated === k); return {
+      type: 'scatter', mode: 'markers', name: n, x: x.map(r => r.relevance), y: x.map(r => r.urgency), text: x.map(r => r.topic_title), customdata: x.map(r => [r.group, r.relevance_sd]),
+      marker: { size: 10, color: col, opacity: .85, line: { width: 1.5, color: getComputedStyle(document.documentElement).getPropertyValue('--bg') } },
+      hovertemplate: '<b>%{text}</b><br>%{customdata[0]}<br>Relevance %{x:.2f} · Urgency %{y:.2f}<br>Agreement SD %{customdata[1]:.2f}<extra>' + n + '</extra>' }; }),
+      ASA.layout({ showlegend: true, xaxis: { title: { text: 'Mean relevance (1-5)' }, range: [1.8, 5] }, yaxis: { title: { text: 'Mean urgency (1-5)' }, range: [1.5, 5] } }), ASA.config);
+    const doms = ASA.uniq(d, 'domain').map(dm => [dm, d.filter(r => r.domain === dm).length, d.filter(r => r.domain === dm && r.validated === 1).length]).sort((a, b) => a[2] - b[2]);
+    Plotly.react('c-dom', [['Candidate topics', 1, C.series[1]], ['Validated', 2, C.series[0]]].map(([n, k, col]) => ({ type: 'bar', orientation: 'h', name: n, y: doms.map(x => x[0]), x: doms.map(x => x[k]),
+      marker: { color: col }, hovertemplate: '<b>%{x}</b> ' + n.toLowerCase() + '<extra>%{y}</extra>' })), ASA.layout({ barmode: 'group', showlegend: true, margin: { l: 10 } }), ASA.config);
+    Plotly.react('c-grp', [{ type: 'bar', x: groups, y: groups.map(g => d.filter(r => r.group === g && r.validated === 1).length), marker: { color: C.series[0] },
+      text: groups.map(g => d.filter(r => r.group === g && r.validated === 1).length + ' of ' + d.filter(r => r.group === g).length), textposition: 'outside', cliponaxis: false,
+      hovertemplate: '<b>%{y}</b> validated<extra>%{x}</extra>' }], ASA.layout({ yaxis: { rangemode: 'tozero', title: { text: 'Validated topics' } } }), ASA.config);
+    ASA.table(el('t-main'), ['Topic', 'Group', 'Relevance', 'Urgency', 'Score', 'Validated'], d.slice().sort((a, b) => b.weighted_score - a.weighted_score).map(r => [r.topic_title, r.group, ASA.fmt(r.relevance, 2), ASA.fmt(r.urgency, 2), ASA.fmt(r.weighted_score, 2), r.validated ? 'Yes' : 'No']));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

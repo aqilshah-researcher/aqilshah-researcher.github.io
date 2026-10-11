@@ -1,0 +1,9 @@
+indicator,indicator_name,type,target,actual,n,achievement_pct,status
+CUS-1,Community-based classes operating,Output,4800,4629.0,8,96.4,On track
+CUS-2,% CBE learners transitioning to public school,Outcome,65,57.6125,8,88.6,Watch
+CUS-3,% learners meeting reading benchmark,Outcome,40,32.175,8,80.4,Watch
+CUS-4,% clients satisfied with services,Outcome,80,76.525,8,95.7,On track
+ES.1-3,Learners reached in primary education,Output,264000,259958.0,8,98.5,On track
+ES.1-4,Adolescent girls in secondary learning,Output,17600,17885.0,8,101.6,On track
+ES.1-6,Educators completing professional development,Output,12000,10995.0,8,91.6,On track
+SUPP-20,School management committees engaged,Output,720,692.0,8,96.1,On track

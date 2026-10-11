@@ -1,0 +1,101 @@
+topic_id,group,domain,topic_title,respondents,relevance,urgency,relevance_sd,share_rating_4plus,weighted_score,agreement_ok,rank_in_group,validated
+T001,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 1,14,3.286,2.5,0.469,0.286,2.971,True,41.0,0
+T002,Teacher,Inclusive teaching,Inclusive teaching: topic 2,14,3.357,3.5,1.082,0.571,3.414,True,27.0,1
+T003,Teacher,Mathematics,Mathematics: topic 3,14,3.071,2.714,0.917,0.357,2.929,True,42.0,0
+T004,Teacher,Mathematics,Mathematics: topic 4,14,3.714,3.571,0.825,0.643,3.657,True,16.0,1
+T005,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 5,14,4.286,4.429,0.611,0.929,4.343,True,3.0,1
+T006,Teacher,Science,Science: topic 6,14,3.214,3.571,1.051,0.429,3.357,True,31.0,1
+T007,Teacher,Inclusive teaching,Inclusive teaching: topic 7,14,2.214,1.929,0.579,0.0,2.1,True,48.0,0
+T008,Teacher,Inclusive teaching,Inclusive teaching: topic 8,14,2.357,2.214,0.929,0.071,2.3,True,46.0,0
+T009,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 9,14,3.929,3.071,0.616,0.786,3.586,True,20.0,1
+T010,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 10,14,3.214,3.786,0.893,0.5,3.443,True,25.0,1
+T011,Teacher,Science,Science: topic 11,14,2.571,2.929,0.852,0.143,2.714,True,44.0,0
+T012,Teacher,Inclusive teaching,Inclusive teaching: topic 12,14,3.857,3.786,0.663,0.714,3.829,True,11.0,1
+T013,Teacher,Science,Science: topic 13,14,3.929,3.786,1.072,0.571,3.871,True,8.0,1
+T014,Teacher,Mathematics,Mathematics: topic 14,14,4.643,4.5,0.497,1.0,4.586,True,1.0,1
+T015,Teacher,Inclusive teaching,Inclusive teaching: topic 15,14,3.643,3.714,0.633,0.571,3.671,True,14.0,1
+T016,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 16,14,3.357,3.429,1.082,0.429,3.386,True,29.0,1
+T017,Teacher,Mathematics,Mathematics: topic 17,14,3.571,3.286,1.089,0.571,3.457,True,24.0,1
+T018,Teacher,Inclusive teaching,Inclusive teaching: topic 18,14,3.143,3.214,0.77,0.357,3.171,True,36.0,1
+T019,Teacher,Science,Science: topic 19,14,3.214,3.714,0.975,0.429,3.414,True,28.0,1
+T020,Teacher,Mathematics,Mathematics: topic 20,14,3.5,3.714,0.76,0.5,3.586,True,19.0,1
+T021,Teacher,Mathematics,Mathematics: topic 21,14,3.929,3.286,0.997,0.643,3.671,True,15.0,1
+T022,Teacher,Classroom management,Classroom management: topic 22,14,3.357,2.643,0.842,0.571,3.071,True,40.0,0
+T023,Teacher,Science,Science: topic 23,14,3.286,3.143,0.825,0.357,3.229,True,35.0,1
+T024,Teacher,Science,Science: topic 24,14,4.071,4.357,0.73,0.786,4.186,True,5.0,1
+T025,Teacher,Mathematics,Mathematics: topic 25,14,3.857,3.643,0.77,0.643,3.771,True,13.0,1
+T026,Teacher,Science,Science: topic 26,14,4.071,3.786,0.73,0.786,3.957,True,6.0,1
+T027,Teacher,Classroom management,Classroom management: topic 27,14,3.357,3.714,0.633,0.429,3.5,True,23.0,1
+T028,Teacher,Inclusive teaching,Inclusive teaching: topic 28,14,2.214,2.286,0.975,0.071,2.243,True,47.0,0
+T029,Teacher,Science,Science: topic 29,14,4.0,3.143,0.877,0.643,3.657,True,17.0,1
+T030,Teacher,Inclusive teaching,Inclusive teaching: topic 30,14,4.143,3.643,0.864,0.857,3.943,True,7.0,1
+T031,Teacher,Science,Science: topic 31,14,3.786,3.214,0.802,0.571,3.557,True,22.0,1
+T032,Teacher,Mathematics,Mathematics: topic 32,14,3.286,3.0,0.611,0.357,3.171,True,37.0,0
+T033,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 33,14,4.071,3.5,0.616,0.857,3.843,True,9.0,1
+T034,Teacher,Classroom management,Classroom management: topic 34,14,3.929,3.571,0.616,0.786,3.786,True,12.0,1
+T035,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 35,14,3.357,3.214,0.842,0.429,3.3,True,34.0,1
+T036,Teacher,Mathematics,Mathematics: topic 36,14,3.286,3.429,0.469,0.286,3.343,True,33.0,1
+T037,Teacher,Classroom management,Classroom management: topic 37,14,3.429,3.286,0.646,0.357,3.371,True,30.0,1
+T038,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 38,14,4.643,4.143,0.497,1.0,4.443,True,2.0,1
+T039,Teacher,Classroom management,Classroom management: topic 39,14,4.286,4.429,0.825,0.929,4.343,True,4.0,1
+T040,Teacher,Mathematics,Mathematics: topic 40,14,3.571,3.571,0.852,0.357,3.571,True,21.0,1
+T041,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 41,14,3.571,3.214,0.756,0.571,3.429,True,26.0,1
+T042,Teacher,Inclusive teaching,Inclusive teaching: topic 42,14,3.0,2.5,0.784,0.286,2.8,True,43.0,0
+T043,Teacher,Inclusive teaching,Inclusive teaching: topic 43,14,3.643,3.571,0.842,0.571,3.614,True,18.0,1
+T044,Teacher,Classroom management,Classroom management: topic 44,14,2.857,3.429,0.949,0.286,3.086,True,39.0,0
+T045,Teacher,Classroom management,Classroom management: topic 45,14,3.929,3.714,1.072,0.571,3.843,True,10.0,1
+T046,Teacher,Mathematics,Mathematics: topic 46,14,3.214,3.571,0.893,0.357,3.357,True,32.0,1
+T047,Teacher,Classroom management,Classroom management: topic 47,14,3.214,3.071,0.975,0.429,3.157,True,38.0,0
+T048,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 48,14,2.786,2.429,1.188,0.286,2.643,True,45.0,0
+T049,Principal,School leadership,School leadership: topic 1,5,3.6,3.2,0.548,0.6,3.44,True,11.0,1
+T050,Principal,School leadership,School leadership: topic 2,5,4.0,4.0,1.0,0.6,4.0,True,4.0,1
+T051,Principal,Community engagement,Community engagement: topic 3,5,3.6,3.0,0.548,0.6,3.36,True,13.0,1
+T052,Principal,Community engagement,Community engagement: topic 4,5,3.0,3.0,1.0,0.4,3.0,True,17.0,1
+T053,Principal,School leadership,School leadership: topic 5,5,4.4,4.0,0.548,1.0,4.24,True,2.0,1
+T054,Principal,Staff development,Staff development: topic 6,5,2.6,2.8,0.894,0.0,2.68,True,24.0,0
+T055,Principal,School leadership,School leadership: topic 7,5,3.0,2.6,0.707,0.2,2.84,True,22.0,0
+T056,Principal,School planning,School planning: topic 8,5,3.0,2.6,1.414,0.4,2.84,False,,0
+T057,Principal,Community engagement,Community engagement: topic 9,5,3.4,4.2,0.894,0.6,3.72,True,9.0,1
+T058,Principal,Staff development,Staff development: topic 10,5,3.0,2.8,0.0,0.0,2.92,True,20.0,0
+T059,Principal,School planning,School planning: topic 11,5,3.6,3.6,0.548,0.6,3.6,True,10.0,1
+T060,Principal,School planning,School planning: topic 12,5,3.0,4.0,0.707,0.2,3.4,True,12.0,1
+T061,Principal,School leadership,School leadership: topic 13,5,3.2,2.6,0.447,0.2,2.96,True,19.0,0
+T062,Principal,Staff development,Staff development: topic 14,5,4.4,3.4,0.548,1.0,4.0,True,5.0,1
+T063,Principal,Community engagement,Community engagement: topic 15,5,2.8,2.6,0.837,0.2,2.72,True,23.0,0
+T064,Principal,School leadership,School leadership: topic 16,5,2.6,2.6,0.548,0.0,2.6,True,25.0,0
+T065,Principal,Community engagement,Community engagement: topic 17,5,2.6,3.2,0.894,0.2,2.84,True,21.0,0
+T066,Principal,Community engagement,Community engagement: topic 18,5,3.4,2.6,0.548,0.4,3.08,True,16.0,1
+T067,Principal,Staff development,Staff development: topic 19,5,3.2,3.2,0.447,0.2,3.2,True,15.0,1
+T068,Principal,Community engagement,Community engagement: topic 20,5,3.4,2.4,0.548,0.4,3.0,True,18.0,1
+T069,Principal,School leadership,School leadership: topic 21,5,4.4,4.4,0.894,0.8,4.4,True,1.0,1
+T070,Principal,School planning,School planning: topic 22,5,4.2,3.6,0.447,1.0,3.96,True,6.0,1
+T071,Principal,School planning,School planning: topic 23,5,4.2,3.6,0.837,0.8,3.96,True,7.0,1
+T072,Principal,School leadership,School leadership: topic 24,5,4.4,4.0,0.894,0.8,4.24,True,3.0,1
+T073,Principal,School leadership,School leadership: topic 25,5,3.4,3.0,0.548,0.4,3.24,True,14.0,1
+T074,Principal,School planning,School planning: topic 26,5,3.8,4.2,0.837,0.6,3.96,True,8.0,1
+T075,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 1,6,2.667,2.833,0.516,0.0,2.733,True,24.0,0
+T076,Academic supervisor,Classroom observation,Classroom observation: topic 2,6,4.0,3.0,0.632,0.833,3.6,True,14.0,1
+T077,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 3,6,3.0,2.667,0.0,0.0,2.867,True,21.0,0
+T078,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 4,6,4.0,4.167,0.632,0.833,4.067,True,6.0,1
+T079,Academic supervisor,Lesson planning support,Lesson planning support: topic 5,6,4.0,3.0,0.894,0.667,3.6,True,15.0,1
+T080,Academic supervisor,Assessment,Assessment: topic 6,6,3.833,3.667,0.408,0.833,3.767,True,9.0,1
+T081,Academic supervisor,Assessment,Assessment: topic 7,6,4.5,3.833,0.548,1.0,4.233,True,3.0,1
+T082,Academic supervisor,Classroom observation,Classroom observation: topic 8,6,3.333,3.333,0.516,0.333,3.333,True,18.0,1
+T083,Academic supervisor,Assessment,Assessment: topic 9,6,3.833,3.667,0.753,0.667,3.767,True,10.0,1
+T084,Academic supervisor,Lesson planning support,Lesson planning support: topic 10,6,3.167,2.5,0.408,0.167,2.9,True,20.0,0
+T085,Academic supervisor,Lesson planning support,Lesson planning support: topic 11,6,3.667,3.667,1.633,0.5,3.667,False,,0
+T086,Academic supervisor,Assessment,Assessment: topic 12,6,2.5,2.167,1.225,0.167,2.367,False,,0
+T087,Academic supervisor,Classroom observation,Classroom observation: topic 13,6,3.333,3.5,0.816,0.5,3.4,True,17.0,1
+T088,Academic supervisor,Lesson planning support,Lesson planning support: topic 14,6,4.5,4.667,0.837,0.833,4.567,True,1.0,1
+T089,Academic supervisor,Classroom observation,Classroom observation: topic 15,6,2.833,3.0,0.408,0.0,2.9,True,19.0,0
+T090,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 16,6,4.167,4.333,0.408,1.0,4.233,True,4.0,1
+T091,Academic supervisor,Assessment,Assessment: topic 17,6,3.667,3.333,0.816,0.5,3.533,True,16.0,1
+T092,Academic supervisor,Lesson planning support,Lesson planning support: topic 18,6,4.0,3.167,0.632,0.833,3.667,True,13.0,1
+T093,Academic supervisor,Classroom observation,Classroom observation: topic 19,6,2.667,3.167,0.816,0.167,2.867,True,22.0,0
+T094,Academic supervisor,Classroom observation,Classroom observation: topic 20,6,3.667,3.833,0.816,0.5,3.733,True,11.0,1
+T095,Academic supervisor,Assessment,Assessment: topic 21,6,3.667,4.167,0.816,0.5,3.867,True,8.0,1
+T096,Academic supervisor,Assessment,Assessment: topic 22,6,2.667,3.167,0.816,0.167,2.867,True,23.0,0
+T097,Academic supervisor,Classroom observation,Classroom observation: topic 23,6,4.167,3.0,0.753,0.833,3.7,True,12.0,1
+T098,Academic supervisor,Assessment,Assessment: topic 24,6,4.333,3.833,0.816,0.833,4.133,True,5.0,1
+T099,Academic supervisor,Lesson planning support,Lesson planning support: topic 25,6,4.667,4.333,0.516,1.0,4.533,True,2.0,1
+T100,Academic supervisor,Assessment,Assessment: topic 26,6,4.167,3.667,0.753,0.833,3.967,True,7.0,1
