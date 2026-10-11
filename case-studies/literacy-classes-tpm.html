@@ -29,6 +29,10 @@
 @media (max-width:900px){.side{position:static}}
 .side figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
 .side figcaption{font-size:13px;color:var(--ink-2);padding:8px 12px}
+.mapgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+@media (max-width:560px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.mapgrid figure{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.mapgrid figcaption{font-size:13px;color:var(--ink-2);padding:6px 10px}
 .conf{font-size:14px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--ink-2)}
 </style>
 </head>
@@ -63,6 +67,7 @@
       <ul><li>Reviewed the class monitoring tool and learner assessment question bank and gave feedback.</li><li>Built the forms in KoBo Toolbox with skip logic, validation rules, GPS location, live photos and enumerator IDs, then tested them.</li><li>Trained enumerators and supervisors on KoBo Collect, including offline collection, and solved issues during fieldwork.</li><li>Reviewed data validity and accuracy daily and made sure the data stayed complete and consistent, with daily backups and a dedicated UNESCO account for review.</li></ul>
       <h2>How the data flowed</h2>
       <ol class="steps"><li><b class="n">1</b><span>Tool review and KoBo form build</span></li><li><b class="n">2</b><span>Enumerator training on KoBo Collect</span></li><li><b class="n">3</b><span>Class visits with GPS, photos and learner tests (offline when needed)</span></li><li><b class="n">4</b><span>Daily review of submissions and feedback to enumerators</span></li><li><b class="n">5</b><span>Clean dataset and partner-level results for the report</span></li></ol>
+      
       <h2>Tools</h2>
       <div class="chips" style="margin-top:10px"><span class="chip">KoBo Toolbox</span><span class="chip">KoBo Collect</span><span class="chip">Excel</span><span class="chip">Python</span><span class="chip">Data quality assurance</span></div>
     </div>

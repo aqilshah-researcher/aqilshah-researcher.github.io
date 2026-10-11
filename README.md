@@ -17,7 +17,6 @@ Every dashboard uses **simulated sample data**. Client reports and datasets stay
 | [Workplace Safety Before/After](https://aqilshah-researcher.github.io/projects/workplace-safety/) | OSH checklist compliance with McNemar tests | [Python](projects/workplace-safety/code/osh_before_after.py) |
 | [Literacy Classes TPM](https://aqilshah-researcher.github.io/projects/literacy-classes-tpm/) | Spot checks, attendance, ghost classes, partner scorecard | [Python](projects/literacy-classes-tpm/code/ip_scorecard.py) |
 | [Mine Action MEL](https://aqilshah-researcher.github.io/projects/mine-action-mel/) | Clearance outputs, risk education reach, evidence matrix | [Python](projects/mine-action-mel/code/evidence_summary.py) |
-| [Education MEL Indicator Tracker](https://aqilshah-researcher.github.io/projects/education-mel/) | Achievement vs targets, province heatmap, DQA flags | [Python](projects/education-mel/code/indicator_performance.py) |
 | [Women's Advocacy Outcome Tracking](https://aqilshah-researcher.github.io/projects/women-advocacy/) | Agency index change, advocacy outcomes | [Python](projects/women-advocacy/code/agency_change.py) |
 | [Teacher Training Needs Assessment](https://aqilshah-researcher.github.io/projects/teacher-needs/) | KII scoring and topic validation rule | [Python](projects/teacher-needs/code/score_topics.py) |
 

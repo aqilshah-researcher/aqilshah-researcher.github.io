@@ -29,6 +29,10 @@
 @media (max-width:900px){.side{position:static}}
 .side figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
 .side figcaption{font-size:13px;color:var(--ink-2);padding:8px 12px}
+.mapgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+@media (max-width:560px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.mapgrid figure{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.mapgrid figcaption{font-size:13px;color:var(--ink-2);padding:6px 10px}
 .conf{font-size:14px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--ink-2)}
 </style>
 </head>
@@ -63,6 +67,7 @@
       <ul><li>Designed the interview guides with topic scoring, ranking and open questions for new topics.</li><li>Took part in the field interviews and group discussions.</li><li>Built the scoring and ranking that narrowed 100 candidate topics to 72, and agreed them with AKF and the ministry.</li></ul>
       <h2>How the data flowed</h2>
       <ol class="steps"><li><b class="n">1</b><span>Document review: 100 candidate topics</span></li><li><b class="n">2</b><span>Interview guides with scoring</span></li><li><b class="n">3</b><span>Interviews in five schools and group discussions</span></li><li><b class="n">4</b><span>Scoring, ranking and agreement check</span></li><li><b class="n">5</b><span>72 validated topics</span></li></ol>
+      
       <h2>Tools</h2>
       <div class="chips" style="margin-top:10px"><span class="chip">KoBo Toolbox</span><span class="chip">Excel Power Query</span><span class="chip">R</span><span class="chip">KII and FGD design</span></div>
     </div>
