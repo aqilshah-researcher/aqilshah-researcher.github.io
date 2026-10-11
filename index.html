@@ -175,23 +175,39 @@
         <a href="https://www.google.com/maps/place/Rockville,+MD" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Rockville, Maryland</a>
       </div>
     </div>
-    <form class="cform" id="cform">
-      <label class="muted" for="cf-name" style="font-size:14px">Send me a message (opens your email app)</label>
+    <form class="cform" id="cform" action="https://formsubmit.co/aqilshah.researcher@gmail.com" method="POST">
+      <label class="muted" for="cf-name" style="font-size:14px">Send me a message</label>
       <input id="cf-name" name="name" placeholder="Your name" required autocomplete="name">
-      <input id="cf-org" name="org" placeholder="Organization (optional)" autocomplete="organization">
+      <input id="cf-email" name="email" type="email" placeholder="Your email (so I can reply)" required autocomplete="email">
+      <input id="cf-org" name="organization" placeholder="Organization (optional)" autocomplete="organization">
       <input id="cf-subject" name="subject" placeholder="Subject" required>
       <textarea id="cf-msg" name="message" placeholder="Your message" required></textarea>
-      <button class="btn btn-primary" type="submit" style="align-self:flex-start">Write email</button>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-primary" id="cf-send" type="submit" style="align-self:flex-start">Send message</button>
+      <p id="cf-status" role="status" aria-live="polite" style="font-size:14.5px;margin:0"></p>
     </form>
   </div>
 </section>
 </main>
 <style>@media (max-width:900px){#exp-grid{grid-template-columns:minmax(0,1fr)!important}}</style>
 <script>
-document.getElementById('cform').addEventListener('submit', e => {
+document.getElementById('cform').addEventListener('submit', async e => {
   e.preventDefault();
-  const f = e.target, body = f.message.value + '\n\n' + f.name.value + (f.org.value ? ', ' + f.org.value : '');
-  window.location.href = 'mailto:aqilshah.researcher@gmail.com?subject=' + encodeURIComponent(f.subject.value) + '&body=' + encodeURIComponent(body);
+  const f = e.target, btn = document.getElementById('cf-send'), st = document.getElementById('cf-status');
+  if (f._honey.value) return;
+  btn.disabled = true; btn.textContent = 'Sending...'; st.textContent = ''; st.style.color = '';
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/aqilshah.researcher@gmail.com', {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: f.name.value, email: f.email.value, organization: f.organization.value,
+        message: f.message.value, _subject: 'Portfolio message: ' + f.subject.value, _replyto: f.email.value, _template: 'table' })
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || String(data.success) !== 'true') throw new Error(data.message || 'Send failed');
+    f.reset(); st.style.color = 'var(--accent)'; st.textContent = 'Thank you. Your message was sent and I will reply by email.';
+  } catch (err) {
+    st.style.color = '#d03b3b'; st.textContent = 'Sorry, the message could not be sent. Please email me directly at aqilshah.researcher@gmail.com.';
+  } finally { btn.disabled = false; btn.textContent = 'Send message'; }
 });
 </script>
 <footer>
