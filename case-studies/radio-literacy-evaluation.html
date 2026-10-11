@@ -29,6 +29,10 @@
 @media (max-width:900px){.side{position:static}}
 .side figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
 .side figcaption{font-size:13px;color:var(--ink-2);padding:8px 12px}
+.mapgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+@media (max-width:560px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.mapgrid figure{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.mapgrid figcaption{font-size:13px;color:var(--ink-2);padding:6px 10px}
 .conf{font-size:14px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--ink-2)}
 </style>
 </head>
@@ -63,6 +67,7 @@
       <ul><li>Cleaned and validated data from 400+ learner and stakeholder interviews across five provinces.</li><li>Analyzed the learner assessment (reading, writing, numeracy items) and survey results by province and sex.</li><li>Coded and summarized qualitative interviews alongside the survey results.</li><li>Prepared the evaluation report, tables and charts against the OECD/DAC criteria.</li></ul>
       <h2>How the data flowed</h2>
       <ol class="steps"><li><b class="n">1</b><span>Survey and assessment data from field teams</span></li><li><b class="n">2</b><span>Back-checks and cleaning</span></li><li><b class="n">3</b><span>Item and domain scores, disaggregation by province and sex</span></li><li><b class="n">4</b><span>Qualitative coding and triangulation</span></li><li><b class="n">5</b><span>Evaluation report</span></li></ol>
+      
       <h2>Tools</h2>
       <div class="chips" style="margin-top:10px"><span class="chip">KoBo Toolbox</span><span class="chip">Python</span><span class="chip">SPSS</span><span class="chip">Excel</span><span class="chip">Qualitative coding</span></div>
     </div>
