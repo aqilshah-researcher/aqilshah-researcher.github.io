@@ -1,0 +1,27 @@
+district,school,science_club_member,students,mean_gain
+District A,School 01,0,3,1.53
+District A,School 01,1,15,6.69
+District A,School 02,0,9,1.97
+District A,School 02,1,20,6.88
+District A,School 03,0,6,2.87
+District A,School 03,1,20,9.42
+District A,School 04,0,4,-0.6
+District A,School 04,1,17,9.27
+District B,School 05,0,5,0.1
+District B,School 05,1,31,8.44
+District B,School 06,0,9,3.56
+District B,School 06,1,16,7.69
+District B,School 07,0,10,-0.4
+District B,School 07,1,18,8.84
+District C,School 08,0,6,-0.7
+District C,School 08,1,23,6.19
+District C,School 09,0,2,3.9
+District C,School 09,1,17,8.65
+District C,School 10,0,5,1.0
+District C,School 10,1,21,8.6
+District D,School 11,0,10,-0.37
+District D,School 11,1,18,8.04
+District D,School 12,0,5,0.16
+District D,School 12,1,13,7.22
+District D,School 13,0,3,-1.7
+District D,School 13,1,24,7.9

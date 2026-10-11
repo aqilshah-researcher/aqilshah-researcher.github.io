@@ -1,0 +1,13 @@
+item,domain
+read_letter,Reading
+read_word,Reading
+read_sentence,Reading
+read_short_text,Reading
+write_letter,Writing
+write_word,Writing
+write_sentence,Writing
+count_objects,Numeracy
+add_numbers,Numeracy
+subtract_numbers,Numeracy
+tell_time,Numeracy
+read_price,Numeracy

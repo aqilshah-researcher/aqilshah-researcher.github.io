@@ -1,0 +1,1291 @@
+hh_id,round,province,intervention,hh_head_sex,hh_size,respondent_age,fcs_cereals_days,fcs_pulses_days,fcs_vegetables_days,fcs_fruit_days,fcs_meat_fish_days,fcs_dairy_days,fcs_sugar_days,fcs_oil_days,rcsi_less_preferred_food_days,rcsi_borrow_food_days,rcsi_limit_portions_days,rcsi_adult_restrict_days,rcsi_reduce_meals_days,mdd_grains,mdd_pulses,mdd_nuts,mdd_dairy,mdd_meat,mdd_eggs,mdd_dglv,mdd_vita,mdd_other_veg,mdd_other_fruit,woman_15_49_in_hh,income_increased,benefit_will_last
+B-0001,Baseline,Balkh,Cash for Work,Female,10,33,7,2,5,0,0,3,4,7,1,0,2,0,1,1,1,0,1,0,1,0,1,1,0,1,,
+B-0002,Baseline,Balkh,Kitchen Garden,Male,4,20,6,2,4,3,2,3,6,7,5,0,3,0,2,1,1,0,1,1,0,0,1,0,0,1,,
+B-0003,Baseline,Samangan,Kitchen Garden,Male,6,50,7,0,4,2,1,2,5,4,3,3,4,1,4,1,0,1,1,1,0,0,0,0,1,1,,
+B-0004,Baseline,Kabul,Livestock Package,Male,12,46,5,1,4,0,0,2,5,6,5,3,3,1,2,1,1,1,0,0,0,1,0,1,0,1,,
+B-0005,Baseline,Sar-e Pol,Kitchen Garden,Male,9,41,7,1,2,0,0,0,5,5,4,3,4,3,5,1,0,0,0,0,0,0,0,1,0,1,,
+B-0006,Baseline,Sar-e Pol,Livestock Package,Male,6,38,6,2,3,0,2,1,5,7,4,3,4,2,2,1,1,0,0,0,1,0,0,0,0,1,,
+B-0007,Baseline,Faryab,Cash for Work,Male,7,27,7,2,2,1,0,1,5,6,3,4,4,1,3,1,1,0,1,0,0,0,0,1,0,1,,
+B-0008,Baseline,Samangan,Livestock Package,Male,6,47,6,0,1,2,1,1,3,5,6,1,3,3,3,1,1,0,0,0,0,1,0,1,0,0,,
+B-0009,Baseline,Balkh,Cash for Work,Male,3,45,5,0,4,0,2,2,4,4,2,4,3,2,3,0,1,1,1,0,0,0,0,1,0,1,,
+B-0010,Baseline,Faryab,Livestock Package,Male,7,25,7,3,2,1,2,2,5,5,1,1,3,2,2,1,1,0,0,0,1,1,0,1,0,0,,
+B-0011,Baseline,Balkh,Unconditional Cash Transfer,Male,3,42,6,1,2,0,0,1,4,4,4,2,6,1,3,0,1,0,0,0,1,0,0,0,0,1,,
+B-0012,Baseline,Kabul,Cash for Work,Male,7,36,6,0,4,0,0,2,5,6,5,1,5,1,2,1,0,0,0,0,1,1,1,1,0,1,,
+B-0013,Baseline,Faryab,Cash for Work,Female,8,40,7,3,1,0,0,1,5,2,5,5,2,4,1,1,0,0,0,0,0,0,0,1,0,1,,
+B-0014,Baseline,Faryab,Kitchen Garden,Male,6,27,7,2,5,2,1,2,7,7,4,1,3,1,2,1,1,0,1,0,1,1,0,1,1,0,,
+B-0015,Baseline,Faryab,Unconditional Cash Transfer,Male,4,42,6,2,3,1,1,2,4,6,5,1,2,2,2,1,1,0,0,1,0,0,0,0,0,1,,
+B-0016,Baseline,Kabul,Cash for Work,Male,9,34,5,1,4,2,1,1,5,6,3,0,4,2,3,0,0,0,1,0,1,0,1,1,0,1,,
+B-0017,Baseline,Jawzjan,Livestock Package,Male,7,34,6,0,1,0,1,1,4,7,5,2,5,2,4,0,0,0,0,0,0,0,0,0,1,1,,
+B-0018,Baseline,Balkh,Unconditional Cash Transfer,Male,3,29,6,2,5,1,2,4,6,5,3,1,5,0,2,1,0,0,1,1,0,1,0,0,0,1,,
+B-0019,Baseline,Sar-e Pol,Livestock Package,Female,11,47,5,3,3,1,0,1,4,5,5,2,6,0,2,1,1,1,0,0,1,1,1,1,0,1,,
+B-0020,Baseline,Balkh,Livestock Package,Male,6,44,6,3,3,1,3,3,4,6,3,2,3,1,3,1,0,0,1,0,1,0,0,0,1,1,,
+B-0021,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,7,18,7,2,4,2,0,3,5,4,2,2,2,4,2,1,1,1,1,0,0,1,1,1,0,1,,
+B-0022,Baseline,Balkh,Cash for Work,Male,8,50,7,1,3,0,1,0,3,4,3,5,4,2,5,1,0,0,0,0,1,1,1,1,0,1,,
+B-0023,Baseline,Sar-e Pol,Unconditional Cash Transfer,Female,4,28,7,0,3,0,0,0,4,6,7,2,5,3,3,0,0,1,1,0,0,0,0,0,0,1,,
+B-0024,Baseline,Faryab,Livestock Package,Male,7,41,7,2,4,0,2,0,4,5,3,3,3,3,1,1,0,0,1,0,0,0,0,1,1,0,,
+B-0025,Baseline,Kabul,Kitchen Garden,Female,5,55,7,3,2,0,2,3,4,6,3,0,4,0,3,1,0,1,1,0,0,1,1,0,0,1,,
+B-0026,Baseline,Samangan,Solar Water System,Male,11,31,7,2,3,0,1,1,5,5,2,3,4,2,2,0,1,0,1,0,1,0,0,1,0,1,,
+B-0027,Baseline,Jawzjan,Unconditional Cash Transfer,Male,7,41,7,2,4,1,0,3,5,5,3,1,1,1,4,1,1,0,1,1,0,1,1,1,0,1,,
+B-0028,Baseline,Faryab,Kitchen Garden,Male,10,50,6,1,1,0,0,0,3,6,7,2,5,4,3,1,0,0,1,0,0,0,0,0,0,1,,
+B-0029,Baseline,Balkh,Unconditional Cash Transfer,Female,6,34,7,1,1,1,1,1,4,5,4,2,3,2,3,1,0,1,0,0,1,0,0,1,0,1,,
+B-0030,Baseline,Faryab,Solar Water System,Female,8,18,6,1,3,0,1,2,5,6,3,1,5,3,2,1,0,0,0,1,0,1,0,1,0,1,,
+B-0031,Baseline,Jawzjan,Cash for Work,Male,9,48,7,2,4,2,3,2,4,4,2,1,0,0,1,1,1,0,0,0,1,0,0,1,0,1,,
+B-0032,Baseline,Faryab,Kitchen Garden,Male,7,48,6,2,2,2,1,1,3,7,4,2,4,0,5,1,0,0,0,1,0,0,0,0,0,1,,
+B-0033,Baseline,Kabul,Livestock Package,Female,14,47,7,5,3,3,1,4,5,6,2,1,2,1,1,1,1,1,1,1,0,1,1,0,1,1,,
+B-0034,Baseline,Balkh,Cash for Work,Male,5,42,6,2,2,1,1,0,4,5,2,1,3,1,2,1,1,1,1,0,0,1,0,1,0,1,,
+B-0035,Baseline,Jawzjan,Unconditional Cash Transfer,Male,10,35,7,0,4,0,0,3,2,4,5,2,4,2,4,0,0,0,0,0,0,0,0,0,0,1,,
+B-0036,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,7,39,7,3,3,1,2,3,2,5,3,1,2,1,2,1,0,0,0,0,1,0,1,1,0,1,,
+B-0037,Baseline,Kabul,Cash for Work,Male,8,55,6,0,4,1,1,1,5,6,4,3,4,0,2,1,1,0,0,0,0,0,1,1,1,1,,
+B-0038,Baseline,Samangan,Unconditional Cash Transfer,Male,6,34,6,1,4,1,1,5,6,5,4,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,,
+B-0039,Baseline,Balkh,Cash for Work,Male,8,27,5,0,0,1,1,0,5,7,4,5,4,3,4,0,0,0,0,0,0,0,0,0,0,1,,
+B-0040,Baseline,Kabul,Kitchen Garden,Female,12,62,7,2,4,2,2,3,5,5,2,0,2,3,1,1,1,0,1,0,1,0,1,1,1,1,,
+B-0041,Baseline,Jawzjan,Cash for Work,Male,6,37,6,3,2,0,0,1,6,5,3,1,3,1,2,1,1,0,1,0,0,1,0,0,1,1,,
+B-0042,Baseline,Kabul,Unconditional Cash Transfer,Male,7,40,5,2,4,0,2,2,4,3,7,1,5,3,4,1,0,0,0,0,0,0,0,1,0,1,,
+B-0043,Baseline,Samangan,Unconditional Cash Transfer,Male,9,32,6,2,4,2,2,1,4,5,3,1,4,2,3,1,1,0,1,0,1,0,0,1,0,1,,
+B-0044,Baseline,Faryab,Cash for Work,Male,10,32,5,2,6,0,2,1,5,3,4,1,3,2,1,0,0,0,0,1,0,1,0,1,0,0,,
+B-0045,Baseline,Jawzjan,Unconditional Cash Transfer,Male,4,53,7,0,2,0,0,0,2,5,5,3,4,4,2,1,0,1,0,0,0,0,1,1,1,1,,
+B-0046,Baseline,Sar-e Pol,Livestock Package,Male,6,34,6,2,3,0,1,3,5,7,5,3,0,3,2,1,0,1,0,1,0,1,0,0,1,1,,
+B-0047,Baseline,Samangan,Unconditional Cash Transfer,Male,5,31,7,0,1,0,0,0,3,3,7,2,5,3,5,1,0,0,1,0,0,1,0,0,0,1,,
+B-0048,Baseline,Sar-e Pol,Unconditional Cash Transfer,Female,7,19,7,4,4,0,1,0,4,5,3,3,3,2,5,1,0,0,1,0,0,1,0,0,0,1,,
+B-0049,Baseline,Jawzjan,Kitchen Garden,Male,6,45,7,1,3,1,0,0,4,5,4,3,6,0,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0050,Baseline,Sar-e Pol,Cash for Work,Male,7,25,6,3,4,1,0,2,3,5,5,3,4,1,4,1,0,0,1,1,0,1,0,1,0,1,,
+B-0051,Baseline,Kabul,Kitchen Garden,Male,5,48,7,2,3,1,0,0,4,7,2,1,4,1,1,1,1,0,1,0,0,0,0,1,0,1,,
+B-0052,Baseline,Jawzjan,Cash for Work,Male,4,18,7,3,3,2,2,1,5,6,3,3,2,1,2,1,1,0,1,0,1,1,0,1,0,1,,
+B-0053,Baseline,Samangan,Livestock Package,Male,8,32,7,1,3,2,0,2,4,7,4,0,4,4,3,1,1,0,1,0,0,1,0,0,1,1,,
+B-0054,Baseline,Faryab,Livestock Package,Male,11,28,6,1,2,0,0,0,5,5,4,2,4,2,6,1,1,0,0,0,0,0,1,0,0,1,,
+B-0055,Baseline,Jawzjan,Livestock Package,Male,7,21,7,1,2,0,1,0,4,5,5,2,3,3,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0056,Baseline,Kabul,Unconditional Cash Transfer,Female,7,66,7,2,4,0,1,3,6,6,3,1,3,1,0,1,1,0,0,0,0,0,0,1,1,1,,
+B-0057,Baseline,Jawzjan,Unconditional Cash Transfer,Female,9,23,6,0,1,1,1,0,3,5,5,5,5,3,5,1,0,0,0,0,0,0,0,1,0,1,,
+B-0058,Baseline,Kabul,Livestock Package,Female,8,31,7,2,4,0,1,1,4,5,5,3,4,3,3,1,1,0,0,0,0,0,0,0,0,1,,
+B-0059,Baseline,Faryab,Livestock Package,Male,8,39,7,1,3,0,1,0,4,6,2,1,6,1,2,1,0,0,0,0,0,0,0,0,1,1,,
+B-0060,Baseline,Faryab,Kitchen Garden,Male,3,45,4,1,3,2,0,2,3,5,6,2,4,1,2,1,0,0,1,1,0,1,0,1,0,1,,
+B-0061,Baseline,Jawzjan,Livestock Package,Male,7,46,7,3,1,1,1,1,3,5,3,2,3,1,1,1,0,0,0,0,1,1,1,1,0,1,,
+B-0062,Baseline,Balkh,Livestock Package,Male,8,55,5,0,2,0,0,1,4,5,5,4,3,1,4,1,0,0,1,0,0,1,0,0,0,1,,
+B-0063,Baseline,Faryab,Cash for Work,Female,6,36,7,3,5,2,1,4,6,5,3,1,5,2,0,1,1,1,0,1,1,0,1,1,1,1,,
+B-0064,Baseline,Kabul,Unconditional Cash Transfer,Male,5,39,7,0,3,1,0,1,5,5,5,0,4,3,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0065,Baseline,Sar-e Pol,Livestock Package,Male,9,40,7,2,3,2,0,1,5,5,4,3,5,3,4,1,0,0,1,0,1,0,0,0,0,1,,
+B-0066,Baseline,Samangan,Unconditional Cash Transfer,Male,10,49,7,0,2,1,0,2,2,4,7,6,3,5,5,1,0,0,1,0,0,1,0,0,0,0,,
+B-0067,Baseline,Kabul,Unconditional Cash Transfer,Male,7,39,6,1,4,1,2,2,4,4,4,3,3,0,3,0,0,0,1,0,1,0,1,1,0,1,,
+B-0068,Baseline,Samangan,Unconditional Cash Transfer,Male,5,50,7,3,4,1,3,2,6,6,4,3,3,0,0,1,1,0,1,0,0,1,1,1,0,1,,
+B-0069,Baseline,Balkh,Cash for Work,Male,10,46,7,3,2,2,1,0,3,6,3,3,6,2,4,1,0,0,0,0,0,0,1,0,0,1,,
+B-0070,Baseline,Jawzjan,Livestock Package,Male,10,31,6,0,3,0,0,2,4,4,3,5,3,5,3,1,0,0,0,0,1,0,1,0,0,1,,
+B-0071,Baseline,Jawzjan,Kitchen Garden,Male,6,30,7,2,4,0,1,2,3,5,2,1,4,2,1,1,1,0,1,0,0,0,0,1,0,1,,
+B-0072,Baseline,Balkh,Livestock Package,Male,7,51,7,3,3,1,0,0,4,7,2,1,2,4,4,1,1,1,0,0,0,0,0,1,1,1,,
+B-0073,Baseline,Balkh,Livestock Package,Male,7,28,7,2,5,2,2,2,5,6,6,2,3,2,0,1,0,0,1,1,0,0,1,1,1,1,,
+B-0074,Baseline,Jawzjan,Kitchen Garden,Male,10,49,7,1,4,1,2,2,6,6,3,2,3,1,0,1,0,0,0,0,1,1,0,1,1,0,,
+B-0075,Baseline,Faryab,Unconditional Cash Transfer,Male,5,30,5,1,3,0,3,2,4,6,7,1,2,1,3,1,0,0,0,0,0,1,0,0,0,1,,
+B-0076,Baseline,Jawzjan,Cash for Work,Female,11,22,5,0,3,0,1,0,2,5,5,2,3,0,1,1,1,1,0,0,0,0,0,0,0,1,,
+B-0077,Baseline,Sar-e Pol,Solar Water System,Male,8,18,6,2,2,1,1,1,4,4,3,2,4,3,4,1,0,0,1,0,1,0,0,1,1,1,,
+B-0078,Baseline,Samangan,Cash for Work,Male,5,27,6,0,3,0,0,0,4,4,7,5,6,1,3,1,0,0,0,0,0,0,1,0,0,1,,
+B-0079,Baseline,Sar-e Pol,Kitchen Garden,Male,11,38,7,1,2,1,2,0,4,5,2,3,6,2,3,0,0,0,0,0,0,0,0,1,1,1,,
+B-0080,Baseline,Kabul,Livestock Package,Female,7,30,5,2,4,0,0,2,5,7,2,0,2,0,0,1,1,1,1,0,0,0,0,1,0,1,,
+B-0081,Baseline,Samangan,Livestock Package,Male,10,46,5,1,1,0,0,0,4,6,6,4,4,2,3,1,1,0,0,1,0,0,1,0,0,1,,
+B-0082,Baseline,Faryab,Unconditional Cash Transfer,Female,6,36,5,1,3,1,0,1,5,5,4,1,4,2,3,1,0,0,0,0,1,1,0,1,1,1,,
+B-0083,Baseline,Jawzjan,Livestock Package,Male,9,44,7,1,3,0,0,0,3,6,4,7,2,4,3,0,0,0,0,0,0,1,0,1,0,1,,
+B-0084,Baseline,Balkh,Livestock Package,Female,7,41,7,0,4,0,0,3,4,4,3,2,3,2,3,0,0,0,1,0,0,0,0,1,0,0,,
+B-0085,Baseline,Faryab,Kitchen Garden,Male,6,46,7,0,3,0,1,0,3,4,4,4,3,1,3,1,0,0,0,0,0,0,0,0,1,1,,
+B-0086,Baseline,Balkh,Unconditional Cash Transfer,Male,7,52,7,1,2,0,0,0,3,5,7,3,6,4,5,1,1,0,0,0,1,0,0,0,0,1,,
+B-0087,Baseline,Balkh,Livestock Package,Male,6,26,7,3,6,3,2,4,6,6,0,1,1,0,0,1,0,0,1,1,1,0,1,1,1,1,,
+B-0088,Baseline,Sar-e Pol,Unconditional Cash Transfer,Female,6,55,7,2,1,0,1,0,4,6,4,3,3,1,2,1,0,0,1,0,1,0,0,0,1,1,,
+B-0089,Baseline,Kabul,Cash for Work,Female,4,24,7,1,3,1,2,1,6,7,4,1,3,2,2,1,1,0,0,0,1,0,0,0,0,1,,
+B-0090,Baseline,Samangan,Kitchen Garden,Male,5,42,7,2,2,0,0,1,3,6,3,3,7,1,3,1,0,0,0,0,0,0,1,0,0,1,,
+B-0091,Baseline,Kabul,Livestock Package,Male,8,46,7,1,3,1,2,4,5,5,2,2,4,2,2,0,0,1,1,0,0,1,0,1,0,1,,
+B-0092,Baseline,Jawzjan,Unconditional Cash Transfer,Male,4,42,6,1,3,0,0,0,4,5,4,3,5,2,3,0,0,0,0,0,0,0,1,0,0,1,,
+B-0093,Baseline,Jawzjan,Livestock Package,Male,12,31,7,0,3,1,1,2,4,5,3,2,4,4,2,1,0,0,0,0,1,0,0,1,1,1,,
+B-0094,Baseline,Sar-e Pol,Solar Water System,Female,4,26,7,2,4,1,0,2,4,5,6,4,3,1,0,1,0,0,0,0,0,0,1,1,0,0,,
+B-0095,Baseline,Kabul,Unconditional Cash Transfer,Male,9,44,7,2,4,1,0,2,4,5,4,4,3,4,1,1,1,0,1,0,0,0,0,1,0,1,,
+B-0096,Baseline,Faryab,Livestock Package,Male,7,48,6,2,3,0,0,2,4,4,4,3,3,2,4,1,0,0,0,1,0,1,0,1,0,1,,
+B-0097,Baseline,Kabul,Unconditional Cash Transfer,Male,2,45,7,0,3,1,0,2,6,5,4,3,5,2,1,1,0,0,1,0,1,0,0,1,1,1,,
+B-0098,Baseline,Balkh,Livestock Package,Male,8,33,7,0,4,1,0,4,2,5,5,2,4,3,3,1,0,0,0,0,0,0,0,1,1,1,,
+B-0099,Baseline,Balkh,Unconditional Cash Transfer,Male,6,53,7,2,1,3,1,1,4,6,3,1,3,1,2,1,0,0,1,1,0,0,0,1,1,1,,
+B-0100,Baseline,Faryab,Kitchen Garden,Male,8,44,6,3,4,1,0,1,4,5,3,3,3,3,3,1,0,0,0,1,0,1,0,0,0,1,,
+B-0101,Baseline,Samangan,Unconditional Cash Transfer,Female,7,28,7,0,2,0,0,0,4,6,6,3,4,3,3,0,1,0,0,0,0,0,0,0,0,1,,
+B-0102,Baseline,Sar-e Pol,Livestock Package,Male,9,46,4,0,4,1,0,2,4,5,4,1,5,1,4,1,1,0,0,0,1,0,0,0,0,1,,
+B-0103,Baseline,Sar-e Pol,Cash for Work,Male,3,40,7,0,2,0,1,2,4,4,4,3,3,3,5,1,1,0,1,0,0,0,0,1,0,1,,
+B-0104,Baseline,Kabul,Unconditional Cash Transfer,Male,8,49,5,0,1,0,0,0,3,4,7,3,6,2,6,1,0,0,0,0,0,0,0,0,0,1,,
+B-0105,Baseline,Sar-e Pol,Cash for Work,Male,9,59,7,1,2,0,1,0,4,5,5,2,5,3,2,1,0,0,0,0,0,0,0,1,0,1,,
+B-0106,Baseline,Samangan,Solar Water System,Female,3,30,5,0,1,0,3,0,4,6,6,4,5,2,4,1,1,0,0,0,0,0,0,0,0,1,,
+B-0107,Baseline,Kabul,Kitchen Garden,Male,6,31,7,1,3,1,0,1,6,6,5,1,4,2,2,1,0,0,1,0,1,1,0,0,1,1,,
+B-0108,Baseline,Faryab,Unconditional Cash Transfer,Male,9,18,6,2,4,0,1,1,5,7,2,4,4,0,2,1,1,1,0,0,0,0,0,1,0,1,,
+B-0109,Baseline,Balkh,Unconditional Cash Transfer,Female,3,35,7,4,3,1,0,3,6,6,5,0,0,0,2,1,1,0,1,1,0,1,0,1,0,1,,
+B-0110,Baseline,Faryab,Livestock Package,Male,5,48,7,4,3,0,0,2,4,6,4,0,2,1,3,1,0,1,1,0,0,1,1,1,0,1,,
+B-0111,Baseline,Samangan,Cash for Work,Female,7,34,7,1,4,2,1,5,5,4,5,2,2,1,4,1,0,0,0,0,0,0,0,0,0,1,,
+B-0112,Baseline,Sar-e Pol,Livestock Package,Male,8,45,7,1,6,0,2,1,5,6,3,2,2,2,0,1,1,0,1,1,0,1,0,1,0,1,,
+B-0113,Baseline,Samangan,Kitchen Garden,Male,6,28,6,0,3,0,0,2,3,4,3,2,4,5,4,1,0,0,1,0,0,0,0,1,0,1,,
+B-0114,Baseline,Kabul,Cash for Work,Male,4,36,6,2,3,1,3,1,5,4,4,0,4,2,3,1,1,0,0,0,0,0,0,0,0,1,,
+B-0115,Baseline,Faryab,Livestock Package,Male,7,25,5,4,3,0,0,0,3,6,6,3,6,0,3,1,0,0,1,0,0,0,0,1,0,1,,
+B-0116,Baseline,Sar-e Pol,Cash for Work,Female,7,48,7,2,2,2,1,0,5,6,5,4,5,2,4,1,0,0,1,0,0,1,1,1,1,1,,
+B-0117,Baseline,Samangan,Unconditional Cash Transfer,Male,5,48,6,1,1,1,1,2,7,6,2,0,2,1,2,1,0,0,0,0,0,0,0,1,0,1,,
+B-0118,Baseline,Samangan,Cash for Work,Female,4,28,6,1,1,1,1,0,4,4,5,5,7,4,6,1,0,0,1,0,0,0,0,1,0,1,,
+B-0119,Baseline,Samangan,Kitchen Garden,Male,7,51,7,2,4,0,3,2,6,5,1,4,1,1,0,1,0,0,1,1,0,0,0,1,1,1,,
+B-0120,Baseline,Jawzjan,Cash for Work,Female,11,40,6,0,2,1,1,3,3,6,5,1,4,2,2,1,1,1,0,0,1,1,0,1,0,1,,
+B-0121,Baseline,Sar-e Pol,Solar Water System,Male,11,41,5,0,3,0,2,3,4,5,5,4,3,3,3,1,1,0,1,0,0,0,1,1,0,1,,
+B-0122,Baseline,Sar-e Pol,Kitchen Garden,Male,5,23,7,0,1,0,0,0,3,4,4,4,3,4,2,0,0,0,0,0,0,0,0,0,1,1,,
+B-0123,Baseline,Sar-e Pol,Kitchen Garden,Male,7,56,6,1,4,1,1,3,4,4,4,0,3,2,3,1,1,0,1,1,0,1,0,1,0,1,,
+B-0124,Baseline,Balkh,Cash for Work,Male,7,48,7,1,3,1,3,1,3,5,2,2,3,0,3,1,0,0,1,0,0,0,0,1,0,1,,
+B-0125,Baseline,Sar-e Pol,Kitchen Garden,Male,9,42,7,1,1,0,0,0,5,5,5,2,5,4,6,1,1,0,1,0,0,1,1,0,0,1,,
+B-0126,Baseline,Sar-e Pol,Kitchen Garden,Female,5,38,7,2,3,0,1,1,4,5,3,2,3,0,3,1,1,0,1,0,0,0,0,1,0,1,,
+B-0127,Baseline,Balkh,Cash for Work,Female,8,41,6,0,2,0,0,0,4,7,4,5,6,2,2,1,1,0,1,0,1,0,1,1,0,1,,
+B-0128,Baseline,Faryab,Kitchen Garden,Male,7,63,7,2,4,2,0,1,4,5,5,4,4,0,4,1,1,0,1,0,0,0,0,0,0,1,,
+B-0129,Baseline,Sar-e Pol,Cash for Work,Male,9,45,6,0,2,0,3,0,5,7,2,1,2,1,3,1,1,0,0,1,0,1,0,1,0,1,,
+B-0130,Baseline,Sar-e Pol,Kitchen Garden,Male,5,47,7,3,3,1,1,3,5,7,2,0,1,0,3,1,0,1,1,0,0,1,1,0,0,1,,
+B-0131,Baseline,Balkh,Kitchen Garden,Male,8,39,7,2,2,2,1,2,4,6,4,2,3,2,7,1,0,0,0,0,0,0,1,0,0,1,,
+B-0132,Baseline,Balkh,Livestock Package,Female,8,38,7,2,1,0,0,1,6,3,6,4,5,5,5,1,0,0,0,0,1,0,0,0,0,1,,
+B-0133,Baseline,Samangan,Livestock Package,Male,2,20,5,1,1,0,1,2,4,6,3,2,2,2,2,1,0,0,0,0,0,0,0,0,0,1,,
+B-0134,Baseline,Jawzjan,Kitchen Garden,Female,7,48,7,0,3,0,0,1,4,6,4,3,4,3,3,1,0,0,0,0,0,0,0,1,1,1,,
+B-0135,Baseline,Kabul,Cash for Work,Male,5,39,6,1,4,2,1,1,4,5,6,1,3,2,0,1,0,0,1,0,0,0,0,0,0,1,,
+B-0136,Baseline,Kabul,Unconditional Cash Transfer,Male,8,36,7,2,2,0,1,2,4,5,2,1,2,0,2,1,1,0,1,0,0,0,0,0,0,1,,
+B-0137,Baseline,Faryab,Cash for Work,Male,4,32,7,0,3,2,0,2,5,6,4,3,4,3,3,1,0,0,1,0,0,0,1,0,0,1,,
+B-0138,Baseline,Balkh,Unconditional Cash Transfer,Male,3,39,6,1,3,0,1,1,4,5,5,3,6,2,6,1,0,1,0,0,0,0,1,0,0,1,,
+B-0139,Baseline,Sar-e Pol,Cash for Work,Male,7,18,7,3,4,0,0,0,6,5,4,1,4,2,2,1,1,0,1,0,1,1,1,1,0,1,,
+B-0140,Baseline,Kabul,Cash for Work,Male,5,31,6,1,3,0,2,2,5,5,2,2,4,1,1,1,0,0,0,0,0,1,1,1,1,1,,
+B-0141,Baseline,Balkh,Solar Water System,Female,2,32,6,0,2,0,0,1,6,5,5,4,6,5,2,1,0,0,0,0,1,0,0,0,0,1,,
+B-0142,Baseline,Jawzjan,Cash for Work,Female,5,45,7,1,1,1,0,0,4,4,7,4,6,3,3,1,0,0,1,0,0,0,0,1,0,1,,
+B-0143,Baseline,Kabul,Cash for Work,Male,7,35,7,0,3,0,1,2,6,5,4,3,3,0,3,1,1,0,0,0,0,0,1,1,0,1,,
+B-0144,Baseline,Kabul,Cash for Work,Female,5,60,6,2,3,1,1,2,4,5,4,1,3,1,2,1,0,0,0,1,0,1,0,0,0,1,,
+B-0145,Baseline,Balkh,Kitchen Garden,Female,4,40,5,0,0,0,0,0,3,4,7,4,7,3,2,0,0,0,0,0,0,1,0,0,0,1,,
+B-0146,Baseline,Balkh,Unconditional Cash Transfer,Male,8,51,7,2,2,1,2,3,5,6,4,3,2,1,2,1,1,0,0,1,1,1,0,1,1,1,,
+B-0147,Baseline,Kabul,Cash for Work,Male,6,32,7,2,3,2,2,0,4,6,4,4,5,1,4,1,1,0,0,1,0,1,0,0,0,1,,
+B-0148,Baseline,Balkh,Solar Water System,Female,7,33,7,1,1,1,0,0,4,3,4,3,4,2,4,1,0,0,1,0,0,1,1,1,0,1,,
+B-0149,Baseline,Jawzjan,Kitchen Garden,Male,9,44,5,1,3,1,1,2,5,6,3,3,3,3,0,1,0,0,1,0,0,1,0,0,1,1,,
+B-0150,Baseline,Faryab,Cash for Work,Male,8,40,7,3,5,1,1,1,5,6,0,1,1,1,2,1,0,1,0,0,1,1,0,1,1,1,,
+B-0151,Baseline,Kabul,Kitchen Garden,Male,7,37,6,1,3,0,1,2,4,6,4,3,3,2,5,1,0,0,1,1,0,0,0,0,0,1,,
+B-0152,Baseline,Kabul,Livestock Package,Female,9,27,7,2,3,0,0,3,5,4,4,2,3,1,3,1,0,0,0,0,1,0,0,1,0,1,,
+B-0153,Baseline,Jawzjan,Unconditional Cash Transfer,Female,6,43,5,0,2,1,0,0,4,6,4,3,5,4,4,1,1,0,0,0,0,1,0,0,0,1,,
+B-0154,Baseline,Jawzjan,Kitchen Garden,Male,5,18,6,1,1,1,2,2,4,7,3,3,1,3,3,1,1,0,1,0,0,0,0,1,0,1,,
+B-0155,Baseline,Kabul,Kitchen Garden,Male,5,42,7,0,3,1,1,2,5,6,3,3,2,2,4,1,1,0,0,0,0,1,1,1,0,1,,
+B-0156,Baseline,Balkh,Cash for Work,Male,6,37,6,2,3,1,2,0,6,4,2,3,4,2,3,1,1,0,0,1,1,0,0,0,1,0,,
+B-0157,Baseline,Faryab,Unconditional Cash Transfer,Female,9,48,4,2,2,1,0,1,4,5,5,3,3,3,2,1,1,0,1,0,0,0,0,1,0,1,,
+B-0158,Baseline,Balkh,Unconditional Cash Transfer,Male,4,48,7,1,2,1,2,3,5,6,3,2,4,1,2,1,0,1,0,0,0,0,1,1,1,1,,
+B-0159,Baseline,Sar-e Pol,Solar Water System,Male,8,29,7,2,1,0,0,0,3,3,7,3,3,3,7,1,0,0,0,0,0,0,0,0,0,1,,
+B-0160,Baseline,Kabul,Kitchen Garden,Male,4,50,7,4,4,1,1,2,2,7,4,2,4,0,1,1,1,0,0,0,0,0,1,1,1,1,,
+B-0161,Baseline,Sar-e Pol,Cash for Work,Male,10,49,6,2,3,0,1,0,4,6,6,1,2,0,4,1,1,0,0,0,0,0,0,0,1,1,,
+B-0162,Baseline,Samangan,Kitchen Garden,Male,7,50,6,0,2,0,0,0,5,5,5,4,3,3,4,1,0,0,0,0,0,0,0,0,0,1,,
+B-0163,Baseline,Samangan,Cash for Work,Male,6,27,7,1,2,0,0,1,2,5,5,2,3,3,5,1,0,0,0,0,0,0,0,0,1,1,,
+B-0164,Baseline,Balkh,Cash for Work,Male,3,38,6,3,3,1,2,1,5,7,0,1,4,2,0,1,0,0,1,0,0,0,0,1,0,1,,
+B-0165,Baseline,Samangan,Cash for Work,Male,8,39,7,3,5,2,2,4,7,6,0,0,2,1,1,1,0,0,1,0,0,1,0,0,1,1,,
+B-0166,Baseline,Samangan,Livestock Package,Male,4,18,5,2,4,0,1,3,4,3,3,0,5,4,1,1,0,0,1,0,0,1,1,0,0,1,,
+B-0167,Baseline,Balkh,Solar Water System,Male,9,49,5,2,4,1,0,4,5,6,2,2,0,4,1,1,1,0,1,0,1,1,0,1,0,1,,
+B-0168,Baseline,Kabul,Unconditional Cash Transfer,Female,6,43,5,2,3,0,2,5,3,6,5,1,4,2,2,0,0,1,0,0,0,0,0,1,0,1,,
+B-0169,Baseline,Balkh,Unconditional Cash Transfer,Female,5,56,6,1,3,0,0,2,5,4,4,2,1,2,1,1,1,0,0,1,0,0,0,0,0,1,,
+B-0170,Baseline,Balkh,Unconditional Cash Transfer,Male,8,48,7,1,4,2,1,4,4,7,2,0,3,1,0,1,1,0,1,0,1,0,0,0,0,1,,
+B-0171,Baseline,Kabul,Cash for Work,Female,8,33,7,3,3,1,1,1,4,4,5,2,1,0,2,1,1,0,1,0,0,1,0,1,1,1,,
+B-0172,Baseline,Jawzjan,Cash for Work,Male,9,33,7,1,5,0,3,2,3,7,2,1,3,0,2,1,1,0,0,0,1,0,0,1,1,1,,
+B-0173,Baseline,Faryab,Livestock Package,Male,9,41,4,3,5,2,2,3,7,7,4,1,0,0,2,1,1,0,1,0,1,1,1,1,0,1,,
+B-0174,Baseline,Faryab,Livestock Package,Male,8,47,7,2,3,1,2,0,4,5,5,3,2,3,4,0,1,0,0,1,0,1,0,0,0,1,,
+B-0175,Baseline,Kabul,Livestock Package,Female,6,47,7,2,3,1,1,2,4,4,4,0,0,2,4,1,0,0,1,0,1,0,0,0,0,1,,
+B-0176,Baseline,Jawzjan,Cash for Work,Female,9,25,7,2,3,1,0,2,4,5,3,2,3,3,0,1,0,0,1,0,0,0,0,1,0,1,,
+B-0177,Baseline,Balkh,Unconditional Cash Transfer,Male,8,44,5,2,3,1,2,1,4,5,3,4,6,2,3,1,1,0,0,0,0,0,0,1,0,1,,
+B-0178,Baseline,Kabul,Unconditional Cash Transfer,Female,9,47,6,1,4,0,0,2,4,6,7,1,2,0,4,1,0,0,1,0,0,1,0,1,0,1,,
+B-0179,Baseline,Jawzjan,Livestock Package,Male,10,30,7,3,2,2,1,1,4,5,3,2,2,1,0,1,1,1,1,0,1,1,0,1,1,1,,
+B-0180,Baseline,Samangan,Cash for Work,Male,8,37,7,1,2,0,0,1,5,6,1,4,1,0,1,1,1,0,1,0,0,0,1,0,0,1,,
+B-0181,Baseline,Samangan,Cash for Work,Male,5,41,5,2,6,0,3,3,5,4,6,2,4,1,3,1,0,0,1,1,1,0,0,1,1,1,,
+B-0182,Baseline,Samangan,Cash for Work,Male,12,39,7,0,2,0,0,0,3,6,6,3,5,2,4,1,1,0,0,0,0,0,0,0,0,1,,
+B-0183,Baseline,Faryab,Solar Water System,Female,9,39,5,1,3,0,1,2,5,5,3,2,2,3,3,1,1,0,1,0,1,0,0,1,0,1,,
+B-0184,Baseline,Kabul,Solar Water System,Male,7,41,7,0,1,0,0,1,4,5,5,1,3,3,4,1,0,1,0,0,0,1,1,0,0,1,,
+B-0185,Baseline,Samangan,Cash for Work,Male,8,32,7,2,3,1,3,2,3,7,0,0,3,2,1,1,1,1,0,0,0,0,1,1,0,1,,
+B-0186,Baseline,Sar-e Pol,Livestock Package,Male,4,44,6,0,3,0,0,1,2,6,5,1,5,1,4,1,0,0,1,0,0,0,0,0,0,1,,
+B-0187,Baseline,Jawzjan,Kitchen Garden,Female,7,50,6,1,4,1,0,2,5,5,4,2,4,1,4,1,0,1,0,0,0,1,0,1,1,1,,
+B-0188,Baseline,Faryab,Livestock Package,Male,11,39,7,3,4,1,2,2,6,6,3,0,2,1,1,1,0,0,0,0,1,1,1,1,0,1,,
+B-0189,Baseline,Jawzjan,Cash for Work,Male,8,54,4,1,5,1,1,3,6,7,3,1,2,1,2,1,0,0,1,1,0,0,0,0,0,1,,
+B-0190,Baseline,Kabul,Kitchen Garden,Female,7,47,7,1,3,0,0,2,6,4,4,3,2,2,3,1,0,0,0,0,0,0,1,1,1,1,,
+B-0191,Baseline,Faryab,Unconditional Cash Transfer,Female,7,51,7,1,3,1,0,1,3,7,3,2,3,4,2,1,0,1,1,0,0,0,1,0,0,1,,
+B-0192,Baseline,Balkh,Cash for Work,Male,8,34,7,3,4,0,2,4,7,6,2,2,2,0,2,1,0,1,1,1,1,1,1,1,0,1,,
+B-0193,Baseline,Balkh,Cash for Work,Female,7,30,7,6,5,2,0,1,5,6,3,0,2,0,1,1,0,0,1,0,1,1,0,0,1,1,,
+B-0194,Baseline,Kabul,Kitchen Garden,Female,7,55,7,3,2,0,2,4,5,6,2,1,3,0,3,1,1,1,0,0,0,0,0,1,0,1,,
+B-0195,Baseline,Samangan,Cash for Work,Male,9,41,7,0,3,0,0,1,3,7,6,2,5,3,3,0,1,0,1,0,0,0,0,1,1,1,,
+B-0196,Baseline,Samangan,Cash for Work,Female,9,30,6,1,0,0,0,0,2,3,7,5,6,4,5,1,0,0,0,0,0,0,0,0,0,1,,
+B-0197,Baseline,Kabul,Cash for Work,Female,7,27,6,1,1,0,0,0,4,5,5,1,3,3,4,1,0,0,0,0,0,1,0,0,0,1,,
+B-0198,Baseline,Kabul,Unconditional Cash Transfer,Male,5,31,7,4,5,3,2,2,5,7,5,0,1,0,2,1,0,0,1,0,0,0,1,1,0,1,,
+B-0199,Baseline,Jawzjan,Unconditional Cash Transfer,Female,4,29,7,3,5,1,0,1,5,7,2,3,4,1,4,1,1,1,0,0,0,1,0,1,0,1,,
+B-0200,Baseline,Samangan,Solar Water System,Male,5,21,5,1,4,1,3,1,5,7,6,1,3,1,3,1,1,0,1,0,0,0,0,1,0,1,,
+B-0201,Baseline,Kabul,Kitchen Garden,Male,10,45,7,1,5,1,2,3,4,7,5,3,4,1,2,1,0,0,1,1,0,1,0,0,0,1,,
+B-0202,Baseline,Samangan,Kitchen Garden,Female,4,42,6,3,3,1,1,2,5,6,4,0,2,0,2,1,0,1,0,0,0,0,1,1,1,1,,
+B-0203,Baseline,Kabul,Kitchen Garden,Male,8,28,6,0,3,1,0,1,5,4,3,0,4,2,2,1,0,0,0,0,0,0,0,1,0,1,,
+B-0204,Baseline,Jawzjan,Livestock Package,Male,10,46,5,2,3,1,0,1,5,6,5,1,1,0,1,1,0,1,1,0,0,0,0,0,0,1,,
+B-0205,Baseline,Faryab,Cash for Work,Male,8,48,7,2,5,0,0,1,4,6,2,3,4,1,1,1,1,1,0,0,0,1,1,0,0,1,,
+B-0206,Baseline,Samangan,Kitchen Garden,Male,7,31,7,1,3,0,0,2,5,4,4,3,3,4,3,1,0,0,1,0,0,1,1,1,0,1,,
+B-0207,Baseline,Kabul,Unconditional Cash Transfer,Male,6,38,6,3,5,3,3,4,7,6,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,,
+B-0208,Baseline,Sar-e Pol,Cash for Work,Male,8,47,7,0,2,2,0,2,5,5,6,4,5,2,3,1,0,0,1,0,0,0,0,0,0,1,,
+B-0209,Baseline,Kabul,Unconditional Cash Transfer,Male,2,46,7,0,3,1,0,1,5,5,6,3,5,5,3,1,0,0,1,1,0,1,0,0,0,1,,
+B-0210,Baseline,Faryab,Cash for Work,Male,8,50,7,4,3,0,0,1,3,4,1,1,4,2,2,1,0,0,1,0,0,0,1,1,0,1,,
+B-0211,Baseline,Jawzjan,Livestock Package,Female,10,39,7,1,3,2,0,1,6,5,1,1,2,2,2,1,1,0,0,0,1,0,0,1,0,1,,
+B-0212,Baseline,Jawzjan,Cash for Work,Female,11,25,7,1,3,1,0,1,4,7,2,1,2,1,1,1,0,0,1,0,0,1,0,1,0,1,,
+B-0213,Baseline,Jawzjan,Unconditional Cash Transfer,Male,11,46,7,2,3,0,0,1,3,6,6,2,4,2,1,1,1,0,0,0,0,0,1,1,1,1,,
+B-0214,Baseline,Sar-e Pol,Unconditional Cash Transfer,Female,5,40,7,1,4,0,1,2,5,5,4,2,5,0,4,1,0,0,0,0,0,0,1,1,0,1,,
+B-0215,Baseline,Jawzjan,Livestock Package,Male,6,18,7,1,4,1,1,1,5,4,3,3,4,0,4,1,1,0,1,1,0,0,0,0,0,1,,
+B-0216,Baseline,Samangan,Kitchen Garden,Male,6,32,7,3,3,0,0,1,7,5,5,3,2,0,2,1,1,0,1,0,0,0,1,1,0,1,,
+B-0217,Baseline,Samangan,Cash for Work,Male,5,31,7,2,5,1,3,3,4,5,4,2,4,3,1,1,1,1,1,0,0,0,0,1,0,1,,
+B-0218,Baseline,Jawzjan,Solar Water System,Male,9,29,6,3,5,2,3,3,5,7,3,1,0,1,0,1,1,0,0,0,1,1,1,1,0,1,,
+B-0219,Baseline,Faryab,Livestock Package,Male,3,39,7,2,4,1,1,2,5,6,4,2,4,1,1,1,1,1,1,0,0,1,0,1,0,1,,
+B-0220,Baseline,Faryab,Cash for Work,Female,7,41,7,0,3,0,1,2,4,6,5,3,5,2,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0221,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,8,43,7,0,1,0,0,0,3,4,3,3,4,4,2,1,0,0,1,0,0,0,0,0,0,1,,
+B-0222,Baseline,Jawzjan,Kitchen Garden,Male,7,53,7,1,2,2,0,0,4,7,5,2,4,3,4,0,0,0,0,1,0,0,0,0,0,1,,
+B-0223,Baseline,Sar-e Pol,Kitchen Garden,Female,11,47,7,2,2,0,0,1,3,5,4,3,4,3,4,1,1,0,0,0,1,0,0,1,0,1,,
+B-0224,Baseline,Samangan,Unconditional Cash Transfer,Male,3,54,6,2,3,3,0,2,4,6,5,1,4,1,2,0,0,0,0,1,0,0,1,1,0,1,,
+B-0225,Baseline,Jawzjan,Solar Water System,Female,11,41,6,1,3,1,1,2,6,7,5,1,0,2,2,1,1,0,1,1,0,0,1,0,0,1,,
+B-0226,Baseline,Balkh,Kitchen Garden,Female,4,39,6,0,0,1,1,0,3,4,7,3,5,4,4,1,0,0,0,0,0,0,0,1,0,1,,
+B-0227,Baseline,Samangan,Livestock Package,Male,5,18,7,2,3,3,0,2,3,5,5,2,4,4,2,1,0,0,0,0,0,0,1,1,0,1,,
+B-0228,Baseline,Balkh,Solar Water System,Female,7,51,6,2,5,1,0,1,5,6,3,3,4,2,3,1,0,0,0,1,0,1,0,1,1,1,,
+B-0229,Baseline,Faryab,Cash for Work,Female,4,54,6,0,3,0,2,2,3,4,6,3,4,4,4,0,1,0,0,0,0,1,0,1,0,1,,
+B-0230,Baseline,Faryab,Cash for Work,Female,9,21,7,2,3,0,3,4,7,5,2,2,2,1,2,1,0,0,0,0,0,0,0,0,0,1,,
+B-0231,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,5,33,7,3,3,1,1,1,5,5,2,3,3,0,3,1,0,1,0,0,0,1,1,0,0,1,,
+B-0232,Baseline,Samangan,Cash for Work,Female,8,27,6,0,2,0,0,0,3,5,4,1,5,5,3,1,0,0,1,0,0,1,0,1,0,1,,
+B-0233,Baseline,Faryab,Livestock Package,Male,8,26,6,2,2,2,0,3,3,4,6,0,5,2,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0234,Baseline,Sar-e Pol,Livestock Package,Female,6,59,6,0,2,0,0,1,4,6,4,3,2,0,4,1,1,0,0,0,0,0,0,0,0,1,,
+B-0235,Baseline,Samangan,Cash for Work,Male,7,48,7,1,2,1,2,2,3,5,4,2,2,2,2,1,0,0,1,1,0,0,0,1,0,1,,
+B-0236,Baseline,Jawzjan,Cash for Work,Male,8,53,4,0,0,0,2,1,3,5,7,3,4,2,5,0,1,0,0,0,0,0,0,0,0,1,,
+B-0237,Baseline,Samangan,Kitchen Garden,Male,6,24,7,1,4,0,0,1,4,7,3,4,4,3,3,1,1,0,1,0,0,1,0,1,0,1,,
+B-0238,Baseline,Faryab,Livestock Package,Female,10,56,7,0,0,0,0,0,5,5,5,4,6,2,5,1,0,1,0,0,0,0,0,0,0,1,,
+B-0239,Baseline,Kabul,Unconditional Cash Transfer,Female,11,39,7,1,2,2,0,1,5,5,3,1,4,1,1,1,1,1,1,0,0,0,0,1,0,1,,
+B-0240,Baseline,Jawzjan,Solar Water System,Male,6,37,6,4,6,1,0,4,5,7,2,1,2,2,2,1,1,1,1,0,0,0,1,0,1,1,,
+B-0241,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,5,50,5,1,2,0,0,1,4,6,4,3,2,3,4,1,0,1,0,0,1,1,0,1,0,1,,
+B-0242,Baseline,Kabul,Cash for Work,Female,5,33,7,2,5,1,0,0,4,4,4,3,1,3,2,1,0,0,0,0,0,1,0,1,0,1,,
+B-0243,Baseline,Samangan,Kitchen Garden,Male,7,33,7,1,3,0,0,1,6,6,5,2,3,1,2,1,1,0,0,0,0,1,0,1,0,1,,
+B-0244,Baseline,Samangan,Solar Water System,Male,4,54,6,0,2,1,0,0,3,4,5,2,2,2,1,1,1,0,1,1,0,0,0,1,0,1,,
+B-0245,Baseline,Faryab,Kitchen Garden,Male,8,28,7,0,3,1,0,1,4,4,5,1,3,0,3,0,0,1,0,0,0,0,0,1,0,1,,
+B-0246,Baseline,Faryab,Livestock Package,Male,8,32,5,2,2,1,0,3,6,6,6,2,3,2,5,1,0,0,0,0,0,0,0,0,0,1,,
+B-0247,Baseline,Balkh,Solar Water System,Male,6,24,6,2,3,2,1,2,5,5,3,2,2,2,2,1,0,0,0,0,1,1,0,1,0,1,,
+B-0248,Baseline,Kabul,Cash for Work,Male,6,43,7,2,2,0,1,1,4,5,5,2,5,2,4,1,0,0,0,0,0,1,0,0,1,1,,
+B-0249,Baseline,Balkh,Kitchen Garden,Male,5,40,6,3,4,1,3,2,6,4,2,0,4,1,1,1,1,0,1,0,0,1,1,1,0,1,,
+B-0250,Baseline,Sar-e Pol,Livestock Package,Male,7,52,7,1,2,1,2,1,6,6,4,0,3,3,0,1,0,0,1,1,0,0,0,0,0,1,,
+B-0251,Baseline,Sar-e Pol,Cash for Work,Male,6,37,6,0,1,0,0,0,4,5,7,2,4,4,5,1,0,0,0,0,0,0,0,1,0,0,,
+B-0252,Baseline,Jawzjan,Unconditional Cash Transfer,Male,8,35,7,2,3,1,1,0,4,6,3,3,5,3,4,1,0,0,1,0,1,1,0,1,0,1,,
+B-0253,Baseline,Kabul,Unconditional Cash Transfer,Male,4,35,7,2,3,0,2,3,5,5,2,1,2,1,2,1,1,0,1,0,0,1,1,0,0,1,,
+B-0254,Baseline,Jawzjan,Kitchen Garden,Female,4,27,7,4,4,0,0,3,5,7,2,1,4,4,3,1,1,0,1,0,1,1,0,1,0,1,,
+B-0255,Baseline,Samangan,Cash for Work,Female,5,48,6,1,2,1,0,0,1,5,4,3,4,4,6,1,0,0,0,0,0,0,0,1,0,0,,
+B-0256,Baseline,Jawzjan,Kitchen Garden,Male,4,41,6,2,2,1,2,1,5,6,7,3,4,2,2,1,0,0,0,1,0,0,0,0,0,1,,
+B-0257,Baseline,Jawzjan,Livestock Package,Male,10,24,5,2,4,2,0,2,4,6,4,2,1,0,1,1,1,1,1,1,0,0,0,1,0,1,,
+B-0258,Baseline,Sar-e Pol,Cash for Work,Female,6,37,7,1,4,0,2,2,6,5,5,1,1,1,2,1,0,0,1,1,0,1,1,1,0,1,,
+B-0259,Baseline,Sar-e Pol,Kitchen Garden,Male,5,39,6,3,4,0,1,0,4,6,3,2,3,2,3,1,0,0,0,0,0,0,1,0,0,1,,
+B-0260,Baseline,Samangan,Cash for Work,Male,8,61,7,1,1,0,0,2,3,6,2,3,3,5,5,1,0,0,0,1,0,0,0,1,0,1,,
+B-0261,Baseline,Kabul,Cash for Work,Male,6,39,6,2,3,1,3,2,5,4,4,2,4,4,1,1,0,0,1,0,0,0,1,1,1,1,,
+B-0262,Baseline,Kabul,Cash for Work,Female,6,40,6,1,2,1,0,0,4,5,5,1,4,1,2,1,1,0,1,0,1,1,0,1,0,1,,
+B-0263,Baseline,Samangan,Cash for Work,Male,8,43,7,1,3,1,0,0,5,5,3,2,2,1,2,1,0,0,1,0,0,0,0,1,0,1,,
+B-0264,Baseline,Samangan,Solar Water System,Male,6,46,7,1,2,0,1,1,5,7,5,2,3,4,1,1,0,1,1,1,1,1,0,1,0,1,,
+B-0265,Baseline,Samangan,Kitchen Garden,Female,4,26,7,2,2,0,0,1,3,6,4,2,2,3,0,1,1,0,1,0,0,0,0,1,1,1,,
+B-0266,Baseline,Jawzjan,Livestock Package,Male,7,27,6,1,2,0,1,2,4,7,5,2,4,1,3,1,0,0,0,0,0,0,1,0,0,1,,
+B-0267,Baseline,Jawzjan,Livestock Package,Male,6,36,7,1,2,3,0,1,3,5,6,3,6,4,3,1,0,0,1,0,0,1,0,0,0,1,,
+B-0268,Baseline,Sar-e Pol,Livestock Package,Male,9,48,7,2,7,0,0,1,4,7,4,1,3,3,2,1,0,0,1,0,0,0,0,1,0,1,,
+B-0269,Baseline,Samangan,Livestock Package,Male,6,52,6,0,5,1,0,1,6,5,4,0,4,0,3,0,1,1,1,0,0,1,1,1,1,1,,
+B-0270,Baseline,Jawzjan,Unconditional Cash Transfer,Male,6,48,7,4,4,0,1,4,5,6,2,3,4,0,0,1,0,0,1,1,1,0,1,1,0,1,,
+B-0271,Baseline,Kabul,Cash for Work,Female,6,30,5,1,4,0,0,2,5,4,5,3,2,0,1,1,0,0,1,1,0,0,0,1,0,1,,
+B-0272,Baseline,Balkh,Livestock Package,Male,9,29,7,1,2,0,0,0,5,4,3,4,3,0,6,1,1,1,0,0,0,0,1,0,0,1,,
+B-0273,Baseline,Balkh,Livestock Package,Female,10,33,6,2,3,1,0,2,4,3,3,1,2,1,2,1,0,1,1,0,0,1,1,1,0,1,,
+B-0274,Baseline,Faryab,Unconditional Cash Transfer,Male,6,58,7,2,3,1,2,0,5,7,3,1,4,0,1,1,0,0,1,0,0,1,1,1,1,1,,
+B-0275,Baseline,Samangan,Livestock Package,Male,3,52,7,2,2,0,0,3,4,6,4,3,2,2,3,1,0,0,0,1,0,0,0,1,1,1,,
+B-0276,Baseline,Sar-e Pol,Cash for Work,Male,3,42,7,1,3,0,1,3,3,5,1,0,3,2,2,1,1,0,1,1,0,0,0,1,1,1,,
+B-0277,Baseline,Kabul,Livestock Package,Male,6,43,7,3,3,2,2,4,4,4,3,1,3,0,3,1,1,1,0,0,1,0,1,1,0,1,,
+B-0278,Baseline,Kabul,Livestock Package,Female,8,39,5,3,2,2,0,3,3,5,4,5,4,2,2,1,1,0,1,0,0,1,0,0,1,1,,
+B-0279,Baseline,Samangan,Solar Water System,Male,8,37,7,2,4,0,0,1,6,4,4,3,4,3,4,1,1,0,1,1,0,0,1,1,0,1,,
+B-0280,Baseline,Faryab,Solar Water System,Female,8,39,4,0,1,1,0,1,3,6,7,5,1,2,2,0,1,0,0,0,0,0,0,1,0,1,,
+B-0281,Baseline,Faryab,Unconditional Cash Transfer,Male,4,32,6,1,3,2,1,3,3,6,3,3,2,1,1,1,1,0,1,0,0,1,0,0,0,1,,
+B-0282,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,8,34,7,2,5,1,0,2,4,7,6,3,3,2,4,1,0,1,0,0,0,0,0,1,0,0,,
+B-0283,Baseline,Jawzjan,Cash for Work,Male,6,18,7,2,3,1,2,1,5,6,2,3,4,1,3,1,1,0,1,0,0,1,0,0,0,1,,
+B-0284,Baseline,Samangan,Unconditional Cash Transfer,Male,7,21,6,2,5,1,2,0,3,6,5,3,0,1,1,1,1,0,1,1,1,0,1,1,1,1,,
+B-0285,Baseline,Sar-e Pol,Cash for Work,Male,9,46,7,2,4,0,0,3,6,6,4,2,3,3,4,1,0,1,0,0,1,0,0,0,0,0,,
+B-0286,Baseline,Samangan,Unconditional Cash Transfer,Female,10,38,6,2,3,0,0,0,4,4,3,4,3,2,3,1,0,0,0,0,1,0,0,0,0,1,,
+B-0287,Baseline,Faryab,Livestock Package,Male,6,42,7,2,4,2,0,1,6,6,6,1,2,1,2,1,0,0,0,0,1,0,0,0,1,1,,
+B-0288,Baseline,Jawzjan,Kitchen Garden,Male,6,30,7,2,5,0,2,3,6,6,1,3,1,0,2,1,1,0,0,0,0,0,0,1,0,1,,
+B-0289,Baseline,Faryab,Cash for Work,Male,12,48,7,2,5,2,1,2,7,6,5,2,3,0,2,1,1,0,1,1,0,1,0,1,0,1,,
+B-0290,Baseline,Sar-e Pol,Cash for Work,Male,7,42,5,1,2,2,0,1,4,6,3,1,5,0,3,1,1,0,0,0,0,1,1,0,0,0,,
+B-0291,Baseline,Balkh,Unconditional Cash Transfer,Female,5,35,6,2,6,0,1,1,6,6,3,2,3,1,2,1,1,0,1,1,0,1,0,1,0,1,,
+B-0292,Baseline,Samangan,Kitchen Garden,Female,7,44,6,0,0,0,0,1,4,3,6,3,4,2,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0293,Baseline,Kabul,Livestock Package,Male,5,34,5,2,5,1,3,2,5,7,3,3,3,0,1,1,1,0,0,0,1,0,0,1,0,1,,
+B-0294,Baseline,Jawzjan,Solar Water System,Male,7,37,6,3,3,1,2,1,4,6,2,2,2,2,2,1,1,0,1,0,0,0,0,1,0,1,,
+B-0295,Baseline,Balkh,Livestock Package,Male,8,55,7,1,6,1,0,3,4,5,2,1,1,1,3,1,0,1,1,0,0,1,0,0,0,1,,
+B-0296,Baseline,Sar-e Pol,Livestock Package,Female,6,28,7,2,2,0,1,2,5,6,5,1,3,2,3,1,1,1,0,0,0,0,0,0,0,1,,
+B-0297,Baseline,Faryab,Kitchen Garden,Male,6,27,5,0,4,3,3,2,4,7,3,2,3,0,2,1,0,0,1,1,0,1,1,0,0,1,,
+B-0298,Baseline,Sar-e Pol,Livestock Package,Male,9,41,6,0,1,0,1,1,4,6,5,3,5,2,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0299,Baseline,Samangan,Unconditional Cash Transfer,Male,7,63,6,0,0,0,0,0,1,6,6,3,7,5,5,1,0,0,0,0,0,0,0,0,0,1,,
+B-0300,Baseline,Jawzjan,Solar Water System,Male,5,26,7,2,2,1,1,0,5,6,5,4,3,2,2,1,0,0,0,0,0,0,0,1,1,0,,
+B-0301,Baseline,Samangan,Unconditional Cash Transfer,Male,2,18,6,0,1,1,0,1,3,6,4,3,5,3,3,0,1,0,1,1,0,0,0,0,0,1,,
+B-0302,Baseline,Faryab,Livestock Package,Male,5,44,7,2,2,0,0,1,3,6,5,4,4,2,2,0,0,0,1,1,0,1,0,0,0,1,,
+B-0303,Baseline,Samangan,Unconditional Cash Transfer,Male,10,42,6,2,3,1,1,0,4,6,5,2,3,3,1,1,0,0,0,0,0,1,1,0,0,1,,
+B-0304,Baseline,Samangan,Solar Water System,Male,5,51,7,3,5,3,3,2,5,7,3,1,4,1,0,1,1,0,1,0,1,0,1,1,0,1,,
+B-0305,Baseline,Jawzjan,Kitchen Garden,Female,9,45,3,0,2,0,0,1,4,5,7,5,3,4,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0306,Baseline,Sar-e Pol,Solar Water System,Male,3,29,7,2,3,1,0,2,3,6,3,1,1,3,3,1,0,0,1,1,1,0,1,0,1,1,,
+B-0307,Baseline,Jawzjan,Cash for Work,Male,8,41,5,1,3,1,1,1,4,5,2,3,0,4,3,1,1,0,0,0,0,1,0,0,0,1,,
+B-0308,Baseline,Jawzjan,Solar Water System,Female,8,59,6,1,2,1,0,0,4,4,6,5,5,5,4,1,0,0,0,0,0,0,0,1,0,1,,
+B-0309,Baseline,Kabul,Cash for Work,Male,7,28,7,1,5,0,1,1,4,6,4,2,2,0,1,1,1,0,0,1,0,1,1,0,0,1,,
+B-0310,Baseline,Kabul,Kitchen Garden,Male,6,42,5,2,2,0,1,2,4,6,4,2,6,2,1,1,0,0,1,0,0,0,1,1,1,1,,
+B-0311,Baseline,Balkh,Kitchen Garden,Female,5,40,6,3,6,3,2,4,6,6,2,1,4,2,2,1,1,0,0,0,0,1,1,1,1,1,,
+B-0312,Baseline,Samangan,Cash for Work,Female,6,58,7,2,4,0,0,2,2,4,1,2,4,3,1,1,1,0,1,0,1,1,0,1,1,1,,
+B-0313,Baseline,Samangan,Unconditional Cash Transfer,Male,8,31,6,0,1,0,0,0,4,5,4,4,5,3,4,1,0,0,0,0,0,0,0,0,0,1,,
+B-0314,Baseline,Faryab,Cash for Work,Male,11,35,7,2,3,3,1,0,5,4,5,2,3,4,0,1,0,0,1,0,0,0,0,1,1,1,,
+B-0315,Baseline,Faryab,Cash for Work,Male,10,33,6,1,3,1,1,0,3,4,5,1,2,1,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0316,Baseline,Balkh,Kitchen Garden,Male,6,37,7,2,6,3,2,5,4,7,0,0,1,0,0,1,1,0,0,1,1,1,1,1,1,1,,
+B-0317,Baseline,Balkh,Unconditional Cash Transfer,Male,5,40,7,3,2,0,1,2,5,5,1,1,3,0,2,1,0,0,1,1,0,1,0,1,0,1,,
+B-0318,Baseline,Faryab,Livestock Package,Male,4,35,5,2,2,0,0,0,5,6,5,1,4,2,6,1,0,0,1,0,1,1,0,0,0,1,,
+B-0319,Baseline,Sar-e Pol,Solar Water System,Male,8,25,7,1,3,0,1,2,5,7,5,0,3,0,3,1,0,0,0,1,0,0,0,1,0,1,,
+B-0320,Baseline,Jawzjan,Livestock Package,Male,7,23,7,1,1,0,0,1,4,4,5,3,5,3,5,0,1,0,1,0,1,0,0,0,0,1,,
+B-0321,Baseline,Jawzjan,Cash for Work,Male,8,41,7,2,2,1,0,2,6,7,5,2,2,1,2,1,0,0,0,0,0,1,0,1,1,1,,
+B-0322,Baseline,Faryab,Solar Water System,Female,5,46,7,2,3,0,2,1,5,4,4,3,4,2,3,0,1,0,1,0,0,0,0,0,1,1,,
+B-0323,Baseline,Kabul,Unconditional Cash Transfer,Male,10,22,7,2,1,0,0,1,3,4,5,4,3,3,1,0,0,0,0,0,0,0,1,1,0,1,,
+B-0324,Baseline,Faryab,Livestock Package,Male,6,50,7,0,1,0,0,1,2,5,6,5,4,3,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0325,Baseline,Jawzjan,Kitchen Garden,Female,9,45,7,1,2,0,0,2,4,5,5,1,5,6,3,0,0,0,0,0,0,0,0,0,0,1,,
+B-0326,Baseline,Kabul,Unconditional Cash Transfer,Male,9,47,7,3,2,1,3,1,4,7,3,2,1,2,2,1,1,0,0,1,1,1,1,1,0,1,,
+B-0327,Baseline,Sar-e Pol,Solar Water System,Male,10,54,7,0,2,0,2,0,2,5,5,3,3,4,4,1,1,0,1,0,0,0,0,0,0,1,,
+B-0328,Baseline,Samangan,Kitchen Garden,Female,6,50,6,3,3,0,0,1,4,7,5,3,5,3,3,1,0,0,0,0,0,0,0,1,1,0,,
+B-0329,Baseline,Balkh,Livestock Package,Male,2,36,7,2,4,2,2,2,5,7,2,0,0,0,1,1,1,1,1,0,0,1,1,1,0,1,,
+B-0330,Baseline,Jawzjan,Unconditional Cash Transfer,Female,10,34,7,2,4,0,2,3,6,5,3,1,1,3,2,1,0,0,0,0,0,1,1,0,0,1,,
+B-0331,Baseline,Sar-e Pol,Kitchen Garden,Male,10,20,7,3,4,1,1,2,5,5,1,1,2,2,1,1,1,0,1,0,0,1,0,0,1,0,,
+B-0332,Baseline,Kabul,Solar Water System,Female,10,38,6,0,3,1,0,2,2,3,5,2,5,3,3,1,0,0,0,0,0,0,0,0,0,1,,
+B-0333,Baseline,Kabul,Cash for Work,Male,5,39,5,2,3,0,1,2,5,5,4,3,3,2,4,1,0,0,1,0,0,0,1,0,1,1,,
+B-0334,Baseline,Kabul,Unconditional Cash Transfer,Male,7,45,6,3,5,1,4,3,5,7,2,1,3,0,0,1,1,0,1,1,1,1,1,1,0,1,,
+B-0335,Baseline,Balkh,Unconditional Cash Transfer,Female,5,31,7,2,6,0,2,3,5,6,2,0,2,0,3,1,1,0,0,0,1,1,0,1,1,1,,
+B-0336,Baseline,Sar-e Pol,Solar Water System,Male,8,40,6,1,2,1,0,1,5,5,4,4,2,6,4,1,0,0,0,0,0,0,0,0,0,1,,
+B-0337,Baseline,Kabul,Unconditional Cash Transfer,Male,6,51,7,0,1,0,1,0,4,5,5,5,3,2,2,1,0,0,1,0,0,0,0,0,0,1,,
+B-0338,Baseline,Samangan,Kitchen Garden,Male,6,39,7,2,6,0,1,2,7,7,2,1,0,0,1,1,1,1,1,1,1,1,0,1,0,1,,
+B-0339,Baseline,Balkh,Cash for Work,Female,10,30,7,2,2,0,2,0,5,4,4,2,3,0,1,1,1,0,1,0,0,0,1,0,0,0,,
+B-0340,Baseline,Kabul,Solar Water System,Female,6,34,7,1,3,1,1,0,3,3,3,3,5,3,2,0,0,0,0,0,0,0,0,0,1,1,,
+B-0341,Baseline,Sar-e Pol,Cash for Work,Male,6,39,5,2,4,1,2,2,5,6,3,1,5,3,2,1,0,0,1,0,0,0,1,1,0,1,,
+B-0342,Baseline,Kabul,Kitchen Garden,Male,9,24,7,2,4,3,1,2,6,5,2,0,4,3,1,1,1,1,1,0,0,0,0,1,1,1,,
+B-0343,Baseline,Faryab,Cash for Work,Male,7,38,5,0,4,1,0,0,3,4,4,2,2,1,2,1,0,0,0,0,0,0,0,1,0,1,,
+B-0344,Baseline,Samangan,Kitchen Garden,Male,6,42,7,2,0,1,0,1,2,4,5,2,7,3,6,1,0,0,0,1,0,0,0,0,0,1,,
+B-0345,Baseline,Faryab,Livestock Package,Male,6,48,6,0,4,0,0,1,4,6,2,1,4,1,1,1,0,0,1,0,0,0,1,0,0,1,,
+B-0346,Baseline,Balkh,Unconditional Cash Transfer,Female,5,43,6,2,4,1,0,0,5,5,4,2,4,2,2,1,0,0,0,1,0,0,0,1,0,1,,
+B-0347,Baseline,Faryab,Cash for Work,Male,8,18,6,0,3,0,2,0,4,5,5,6,5,3,4,1,0,0,0,0,1,0,0,0,0,1,,
+B-0348,Baseline,Samangan,Kitchen Garden,Male,5,36,6,1,4,2,2,1,2,6,3,2,0,1,2,1,1,0,0,0,0,0,0,0,0,1,,
+B-0349,Baseline,Sar-e Pol,Solar Water System,Male,10,21,7,0,2,0,0,0,5,5,6,2,4,4,3,1,0,0,1,0,0,0,1,0,0,1,,
+B-0350,Baseline,Balkh,Cash for Work,Female,5,36,7,0,1,1,0,1,5,6,5,4,4,4,5,0,0,0,0,0,1,0,0,0,0,1,,
+B-0351,Baseline,Samangan,Cash for Work,Male,4,38,7,0,3,0,0,0,0,4,7,5,6,5,4,0,0,0,0,0,0,0,0,0,0,1,,
+B-0352,Baseline,Jawzjan,Unconditional Cash Transfer,Male,6,46,6,4,4,0,0,1,4,6,2,1,2,0,4,1,1,0,0,0,0,1,0,1,0,1,,
+B-0353,Baseline,Samangan,Unconditional Cash Transfer,Male,4,27,7,0,1,0,0,0,4,5,5,3,7,3,3,1,1,0,0,1,0,0,0,0,0,1,,
+B-0354,Baseline,Balkh,Unconditional Cash Transfer,Male,8,48,7,0,2,0,0,0,6,5,5,3,5,3,5,1,1,0,0,0,0,0,0,0,0,1,,
+B-0355,Baseline,Sar-e Pol,Cash for Work,Male,6,57,6,1,3,0,2,1,2,3,5,3,4,1,4,1,0,0,0,0,0,0,0,0,0,1,,
+B-0356,Baseline,Kabul,Solar Water System,Male,3,26,7,2,4,3,1,2,4,7,2,2,0,1,4,1,1,0,1,1,0,0,0,0,0,1,,
+B-0357,Baseline,Sar-e Pol,Kitchen Garden,Female,4,48,7,0,2,0,1,1,3,4,5,3,3,2,4,1,0,0,1,0,0,0,0,1,0,1,,
+B-0358,Baseline,Balkh,Cash for Work,Male,5,40,7,2,3,1,2,4,4,6,4,2,3,1,2,1,1,0,1,0,0,1,0,0,0,0,,
+B-0359,Baseline,Faryab,Livestock Package,Male,8,25,7,2,5,2,0,1,5,7,3,1,7,1,3,1,1,0,0,0,0,0,0,0,0,1,,
+B-0360,Baseline,Kabul,Unconditional Cash Transfer,Male,12,49,6,3,3,1,1,1,7,6,4,2,3,0,6,1,1,0,0,0,0,0,0,1,0,1,,
+B-0361,Baseline,Jawzjan,Cash for Work,Female,8,46,7,0,0,0,0,0,3,4,4,3,6,5,6,0,0,0,0,0,0,0,0,0,0,1,,
+B-0362,Baseline,Faryab,Cash for Work,Male,5,30,7,1,5,1,2,1,5,6,4,1,5,3,1,1,1,0,1,0,0,0,0,1,0,0,,
+B-0363,Baseline,Samangan,Livestock Package,Male,5,21,6,1,5,1,0,2,5,6,3,3,3,1,2,1,0,0,1,1,1,0,0,1,0,1,,
+B-0364,Baseline,Faryab,Solar Water System,Male,9,35,4,2,4,1,1,1,4,6,3,1,3,0,1,1,1,0,0,0,0,1,0,1,0,0,,
+B-0365,Baseline,Kabul,Livestock Package,Female,8,45,5,3,3,0,1,3,5,5,4,2,1,1,1,1,0,0,1,0,0,1,0,1,0,1,,
+B-0366,Baseline,Balkh,Cash for Work,Male,7,31,7,2,2,1,1,1,4,4,2,0,1,0,2,1,1,1,1,1,0,0,0,0,0,1,,
+B-0367,Baseline,Samangan,Cash for Work,Male,8,18,6,2,5,2,1,1,6,7,5,1,5,4,2,0,0,0,1,0,0,0,0,1,1,1,,
+B-0368,Baseline,Jawzjan,Livestock Package,Male,5,54,7,3,5,1,2,3,4,5,3,1,3,2,3,1,0,0,0,0,0,0,1,1,1,1,,
+B-0369,Baseline,Jawzjan,Cash for Work,Male,5,34,7,3,3,0,1,2,5,5,3,1,3,2,0,1,0,1,1,0,0,0,1,1,0,1,,
+B-0370,Baseline,Faryab,Unconditional Cash Transfer,Male,8,56,7,3,5,4,3,4,4,5,0,0,1,0,3,1,0,0,0,1,1,0,1,1,1,1,,
+B-0371,Baseline,Samangan,Cash for Work,Male,5,49,7,2,4,0,1,2,5,5,1,2,3,1,0,1,0,0,1,0,0,0,1,1,1,0,,
+B-0372,Baseline,Faryab,Unconditional Cash Transfer,Male,7,39,7,1,3,0,0,0,4,7,6,5,4,3,5,1,1,0,1,0,0,0,0,1,0,1,,
+B-0373,Baseline,Faryab,Kitchen Garden,Male,11,32,7,2,3,1,0,4,4,6,3,0,2,2,1,1,0,0,1,1,0,0,0,1,0,1,,
+B-0374,Baseline,Jawzjan,Solar Water System,Male,8,29,7,3,2,0,1,1,3,5,5,2,4,0,3,1,0,0,1,1,0,1,0,1,0,1,,
+B-0375,Baseline,Balkh,Kitchen Garden,Female,9,40,7,3,1,0,2,2,4,7,3,3,4,3,3,1,0,0,0,0,0,1,0,1,0,1,,
+B-0376,Baseline,Kabul,Kitchen Garden,Male,7,35,7,3,3,1,0,2,3,5,2,3,3,2,2,1,1,0,0,0,0,0,0,1,0,1,,
+B-0377,Baseline,Faryab,Unconditional Cash Transfer,Male,6,27,7,2,3,2,2,2,5,5,5,2,4,4,2,1,0,0,1,0,0,1,0,0,0,1,,
+B-0378,Baseline,Balkh,Unconditional Cash Transfer,Male,8,35,7,1,1,0,2,4,6,6,3,1,0,2,3,1,1,0,1,0,1,0,1,1,1,1,,
+B-0379,Baseline,Balkh,Unconditional Cash Transfer,Male,7,30,5,2,4,1,0,2,4,5,4,3,1,2,1,1,0,0,1,0,1,0,0,1,1,1,,
+B-0380,Baseline,Balkh,Solar Water System,Male,5,43,5,2,2,0,2,2,5,5,3,1,1,1,1,1,1,1,0,0,0,1,1,1,0,1,,
+B-0381,Baseline,Kabul,Cash for Work,Male,8,44,7,3,4,1,1,2,3,5,2,2,3,2,2,1,0,0,1,0,0,0,0,1,0,1,,
+B-0382,Baseline,Kabul,Cash for Work,Male,6,25,7,3,5,4,4,4,6,7,2,1,2,1,2,1,1,1,1,0,0,1,0,1,1,1,,
+B-0383,Baseline,Sar-e Pol,Kitchen Garden,Female,6,41,7,3,4,3,2,3,4,6,3,2,3,2,2,0,1,0,1,0,0,0,1,1,1,1,,
+B-0384,Baseline,Jawzjan,Unconditional Cash Transfer,Male,7,41,6,2,0,0,0,1,5,5,5,1,4,2,5,1,1,1,0,1,0,0,0,1,0,0,,
+B-0385,Baseline,Sar-e Pol,Kitchen Garden,Male,6,39,5,4,4,1,1,3,5,7,1,4,0,2,3,1,1,0,0,0,0,1,0,1,0,1,,
+B-0386,Baseline,Kabul,Cash for Work,Male,8,45,6,3,3,0,1,2,6,5,3,0,0,1,3,1,0,0,0,0,0,0,0,1,1,1,,
+B-0387,Baseline,Faryab,Unconditional Cash Transfer,Male,3,25,6,3,6,2,3,2,5,5,0,1,3,1,0,1,0,1,0,0,0,0,0,1,0,1,,
+B-0388,Baseline,Samangan,Kitchen Garden,Male,4,66,6,2,2,1,0,2,4,5,5,1,3,4,4,0,0,0,0,0,0,1,0,0,0,1,,
+B-0389,Baseline,Samangan,Cash for Work,Male,7,22,7,1,2,0,0,2,2,6,3,3,6,4,4,1,1,0,0,0,0,0,0,0,0,1,,
+B-0390,Baseline,Jawzjan,Unconditional Cash Transfer,Female,5,64,6,0,1,0,0,0,4,5,4,3,3,5,5,1,0,0,1,1,0,0,0,0,0,1,,
+B-0391,Baseline,Jawzjan,Cash for Work,Male,9,51,7,1,2,0,0,0,4,6,4,2,3,1,5,1,0,0,1,0,0,0,0,1,0,1,,
+B-0392,Baseline,Jawzjan,Cash for Work,Male,5,39,5,0,2,1,1,1,5,7,2,1,2,2,3,1,0,1,0,0,0,0,0,1,0,1,,
+B-0393,Baseline,Kabul,Cash for Work,Male,8,39,7,2,3,0,1,1,4,5,4,3,4,3,3,1,0,0,0,0,0,1,0,1,0,1,,
+B-0394,Baseline,Jawzjan,Kitchen Garden,Male,4,45,7,3,7,2,2,4,5,7,2,1,2,0,0,1,1,0,1,1,1,1,1,1,0,1,,
+B-0395,Baseline,Samangan,Cash for Work,Male,7,33,6,2,5,2,3,3,5,7,1,0,1,0,0,1,1,0,1,0,1,1,0,1,1,1,,
+B-0396,Baseline,Faryab,Livestock Package,Male,4,32,7,2,4,0,2,1,5,6,4,3,3,1,3,0,1,0,0,1,1,0,0,0,0,1,,
+B-0397,Baseline,Sar-e Pol,Solar Water System,Male,10,41,7,2,3,0,0,0,3,5,4,3,5,3,5,0,0,0,0,1,1,0,0,0,0,1,,
+B-0398,Baseline,Balkh,Kitchen Garden,Male,7,55,7,0,3,1,0,1,4,6,5,6,3,3,3,1,0,0,0,0,0,1,0,0,1,1,,
+B-0399,Baseline,Faryab,Cash for Work,Male,5,34,6,3,2,0,2,3,5,6,4,4,4,0,5,1,0,0,0,0,0,1,0,1,0,1,,
+B-0400,Baseline,Balkh,Cash for Work,Male,5,47,7,2,4,1,0,0,2,4,5,1,3,4,1,1,0,0,0,0,0,0,0,1,0,1,,
+B-0401,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,6,37,7,1,3,1,0,2,5,5,5,1,3,1,2,1,0,0,1,1,1,0,0,1,0,1,,
+B-0402,Baseline,Balkh,Cash for Work,Male,4,37,7,1,5,1,1,2,5,7,4,0,3,2,1,1,1,0,0,1,0,0,1,0,1,1,,
+B-0403,Baseline,Faryab,Unconditional Cash Transfer,Male,10,53,6,1,3,0,1,2,5,5,6,1,4,0,1,1,0,1,1,0,1,0,0,1,0,1,,
+B-0404,Baseline,Samangan,Cash for Work,Male,8,37,5,1,2,0,0,1,4,6,7,2,4,3,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0405,Baseline,Sar-e Pol,Solar Water System,Male,8,33,7,1,3,2,1,4,5,7,4,4,5,1,4,1,0,0,1,1,1,1,0,1,0,1,,
+B-0406,Baseline,Faryab,Cash for Work,Male,8,31,7,1,5,1,1,2,4,5,4,2,5,3,0,1,0,1,0,0,0,0,0,0,1,1,,
+B-0407,Baseline,Balkh,Livestock Package,Male,3,42,6,0,4,3,1,2,5,6,3,5,3,2,2,0,0,0,0,1,0,0,0,1,0,1,,
+B-0408,Baseline,Samangan,Cash for Work,Male,9,21,6,1,1,0,0,1,4,6,6,1,5,3,3,1,0,1,1,0,0,0,0,1,0,1,,
+B-0409,Baseline,Samangan,Unconditional Cash Transfer,Male,5,55,7,0,2,0,1,3,3,5,4,5,3,4,4,1,0,0,0,0,0,1,0,0,0,1,,
+B-0410,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,9,38,7,2,5,2,0,2,4,6,2,1,2,1,1,0,1,1,0,0,0,1,0,0,0,1,,
+B-0411,Baseline,Kabul,Solar Water System,Female,6,47,7,0,3,2,0,0,5,4,5,2,1,2,4,1,0,0,0,1,0,1,1,1,0,1,,
+B-0412,Baseline,Sar-e Pol,Cash for Work,Female,6,35,7,1,4,0,0,1,5,5,4,0,2,3,1,1,0,0,0,0,0,1,0,1,0,1,,
+B-0413,Baseline,Sar-e Pol,Livestock Package,Male,2,42,6,4,4,0,1,2,4,5,4,3,3,0,2,1,0,0,0,0,0,0,1,1,0,0,,
+B-0414,Baseline,Balkh,Cash for Work,Male,3,56,5,1,2,1,1,1,6,5,3,4,3,4,3,1,1,0,1,0,0,1,0,1,0,1,,
+B-0415,Baseline,Samangan,Cash for Work,Male,7,23,6,0,3,0,0,0,4,5,7,3,5,2,3,1,0,0,0,0,0,0,0,1,0,1,,
+B-0416,Baseline,Jawzjan,Cash for Work,Male,7,45,6,2,4,1,0,3,5,7,4,2,3,1,2,0,0,1,0,0,0,1,0,1,1,1,,
+B-0417,Baseline,Jawzjan,Unconditional Cash Transfer,Male,2,33,7,2,3,1,1,1,4,7,3,2,4,1,6,1,0,0,0,0,0,0,1,0,0,1,,
+B-0418,Baseline,Jawzjan,Livestock Package,Male,7,51,7,2,3,2,0,1,2,5,5,2,2,2,7,1,0,0,1,0,0,0,0,0,0,1,,
+B-0419,Baseline,Sar-e Pol,Kitchen Garden,Male,5,32,7,4,4,0,0,0,5,6,3,1,3,2,3,1,1,0,1,1,0,1,0,1,1,1,,
+B-0420,Baseline,Samangan,Kitchen Garden,Male,12,59,7,1,2,0,1,2,4,7,7,3,6,3,3,1,1,1,0,0,0,0,0,0,0,1,,
+B-0421,Baseline,Sar-e Pol,Kitchen Garden,Male,5,52,5,4,5,0,2,4,7,7,1,0,0,1,2,1,1,0,0,1,0,1,1,1,1,1,,
+B-0422,Baseline,Sar-e Pol,Unconditional Cash Transfer,Male,6,18,7,2,2,0,0,2,5,5,4,2,5,2,4,1,0,0,0,0,1,0,0,0,0,1,,
+B-0423,Baseline,Balkh,Unconditional Cash Transfer,Female,7,41,5,0,2,0,0,0,5,6,7,3,4,2,2,1,0,0,0,0,0,0,0,1,0,1,,
+B-0424,Baseline,Samangan,Solar Water System,Male,7,49,5,0,2,1,3,0,5,4,7,3,7,1,4,1,0,0,1,0,0,1,0,1,1,1,,
+B-0425,Baseline,Kabul,Solar Water System,Male,8,23,7,1,3,2,1,3,7,5,2,1,3,2,3,1,1,0,0,0,0,0,0,1,1,1,,
+B-0426,Baseline,Balkh,Cash for Work,Male,7,58,6,1,2,0,1,0,3,4,5,4,2,5,5,1,0,0,0,0,0,0,0,1,0,1,,
+B-0427,Baseline,Samangan,Kitchen Garden,Male,6,47,7,0,0,0,0,0,3,6,4,2,4,4,2,1,0,0,1,0,0,0,1,1,1,1,,
+B-0428,Baseline,Samangan,Unconditional Cash Transfer,Female,3,36,7,2,4,0,0,4,4,6,3,0,3,0,2,1,0,0,1,0,0,0,0,1,0,1,,
+B-0429,Baseline,Jawzjan,Solar Water System,Male,6,51,7,2,3,0,0,1,4,6,7,5,4,2,4,1,0,0,1,0,0,0,0,0,1,1,,
+B-0430,Baseline,Sar-e Pol,Cash for Work,Male,4,22,7,1,2,0,0,2,4,6,4,4,3,0,4,1,1,0,0,0,0,1,0,0,0,1,,
+M-0001,Midline,Samangan,Kitchen Garden,Male,3,48,6,0,1,0,1,0,4,5,5,2,6,2,4,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+M-0002,Midline,Balkh,Cash for Work,Female,8,47,7,2,4,1,0,3,3,5,3,0,4,1,2,1,0,0,1,0,0,1,1,1,0,1,0.0,A few years
+M-0003,Midline,Jawzjan,Livestock Package,Male,8,31,6,0,3,1,0,1,5,6,3,3,3,1,2,0,1,0,0,1,0,0,0,1,0,1,0.0,A few years
+M-0004,Midline,Jawzjan,Unconditional Cash Transfer,Male,8,42,6,2,4,1,0,1,4,5,5,4,3,3,3,1,1,0,0,0,0,1,0,0,0,1,0.0,A few years
+M-0005,Midline,Balkh,Kitchen Garden,Male,7,33,7,2,3,0,0,1,3,6,4,2,2,1,4,1,1,0,0,0,1,0,0,0,0,1,0.0,Less than a year
+M-0006,Midline,Balkh,Livestock Package,Male,4,24,7,2,2,1,0,0,4,5,4,2,3,2,3,1,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0007,Midline,Faryab,Unconditional Cash Transfer,Male,8,39,7,1,1,0,0,0,4,6,6,3,4,3,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0008,Midline,Jawzjan,Kitchen Garden,Female,4,39,5,0,0,1,0,0,4,4,7,4,6,4,6,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0009,Midline,Sar-e Pol,Solar Water System,Male,8,44,7,1,1,0,0,0,3,5,7,2,4,5,4,1,0,0,1,0,0,0,0,0,0,1,1.0,Less than a year
+M-0010,Midline,Kabul,Cash for Work,Male,7,22,7,2,2,0,0,1,4,6,6,3,3,3,2,1,0,0,0,0,0,0,0,1,0,0,1.0,Less than a year
+M-0011,Midline,Samangan,Solar Water System,Female,7,49,5,0,2,0,0,0,2,6,6,4,4,6,6,1,0,0,0,0,0,0,0,0,0,1,0.0,Not sure
+M-0012,Midline,Jawzjan,Kitchen Garden,Male,11,35,7,0,1,1,0,0,4,6,5,4,5,1,5,0,0,0,0,0,0,0,1,1,0,1,0.0,Not sure
+M-0013,Midline,Samangan,Cash for Work,Male,6,35,7,0,0,0,0,0,3,4,6,5,6,3,2,0,0,0,0,0,0,0,0,0,0,1,0.0,Long term
+M-0014,Midline,Kabul,Livestock Package,Female,8,32,5,0,2,0,0,1,6,6,6,3,4,3,4,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0015,Midline,Kabul,Cash for Work,Male,4,26,6,1,2,0,2,1,4,5,0,2,6,1,3,1,1,0,0,0,0,1,0,1,0,1,0.0,Less than a year
+M-0016,Midline,Sar-e Pol,Cash for Work,Male,6,50,7,0,1,0,0,0,5,5,7,2,3,4,3,0,0,0,0,0,0,0,0,0,0,1,0.0,Not sure
+M-0017,Midline,Balkh,Cash for Work,Male,7,36,6,1,5,0,1,2,3,3,5,6,4,2,2,1,0,0,1,1,0,1,0,0,0,1,0.0,Not sure
+M-0018,Midline,Sar-e Pol,Solar Water System,Male,5,26,7,0,2,0,0,0,3,5,7,3,4,4,5,0,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0019,Midline,Balkh,Kitchen Garden,Male,3,50,6,1,5,2,1,2,6,6,4,2,1,2,4,1,0,0,1,0,1,1,0,1,0,0,1.0,A few years
+M-0020,Midline,Faryab,Livestock Package,Male,7,39,7,1,4,1,0,0,5,6,3,2,2,0,5,1,0,0,0,0,0,0,0,0,0,1,0.0,Not sure
+M-0021,Midline,Jawzjan,Cash for Work,Male,6,51,7,0,5,1,0,0,3,6,4,1,5,2,3,1,1,0,1,0,1,0,0,0,0,1,1.0,A few years
+M-0022,Midline,Kabul,Kitchen Garden,Female,12,38,6,1,0,1,1,0,4,3,5,2,4,3,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0023,Midline,Kabul,Kitchen Garden,Male,7,32,7,2,2,0,0,1,4,3,3,3,3,4,4,1,0,0,0,0,0,0,0,0,0,1,0.0,Less than a year
+M-0024,Midline,Balkh,Cash for Work,Female,6,21,7,3,4,0,1,3,5,6,2,1,2,3,1,1,1,0,0,0,0,1,1,1,1,1,1.0,Less than a year
+M-0025,Midline,Kabul,Livestock Package,Male,9,45,7,2,4,0,3,1,5,5,1,1,4,1,3,1,1,1,1,0,0,0,0,1,0,1,0.0,Long term
+M-0026,Midline,Balkh,Livestock Package,Male,10,30,7,2,3,1,1,2,5,5,2,1,2,4,1,1,1,0,0,0,0,1,1,1,0,1,0.0,A few years
+M-0027,Midline,Faryab,Solar Water System,Male,7,27,5,1,2,2,1,0,6,4,5,3,3,4,3,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0028,Midline,Balkh,Unconditional Cash Transfer,Male,7,26,5,2,2,0,0,0,5,7,4,4,4,1,4,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0029,Midline,Samangan,Solar Water System,Male,4,36,6,0,2,0,0,0,3,4,6,2,6,4,5,0,1,0,1,0,0,1,0,0,1,1,0.0,Less than a year
+M-0030,Midline,Faryab,Cash for Work,Male,10,30,7,1,4,0,0,1,5,5,3,0,3,3,3,1,0,0,1,0,0,0,0,0,1,1,1.0,A few years
+M-0031,Midline,Kabul,Livestock Package,Male,7,57,6,0,3,1,0,3,5,6,2,1,4,3,1,0,0,0,1,0,0,1,1,1,0,1,1.0,Less than a year
+M-0032,Midline,Balkh,Livestock Package,Female,4,54,7,1,2,2,2,2,4,5,2,1,3,2,3,1,1,0,0,1,0,1,1,1,0,1,1.0,A few years
+M-0033,Midline,Faryab,Unconditional Cash Transfer,Female,10,37,5,3,4,0,1,3,3,5,2,2,3,1,1,1,0,0,1,0,0,0,1,1,0,1,0.0,Not sure
+M-0034,Midline,Balkh,Unconditional Cash Transfer,Male,9,44,7,1,3,2,1,2,4,4,4,0,3,2,1,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0035,Midline,Faryab,Cash for Work,Male,7,42,5,3,4,1,2,0,5,6,3,2,5,1,3,1,0,0,1,0,0,0,1,1,0,1,0.0,Long term
+M-0036,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,5,55,6,1,3,1,1,2,5,5,3,3,3,1,1,1,0,0,0,0,0,1,0,0,0,1,0.0,Not sure
+M-0037,Midline,Faryab,Kitchen Garden,Male,5,36,7,1,3,0,1,0,4,5,2,3,4,2,2,1,0,0,1,0,1,0,1,0,0,1,0.0,A few years
+M-0038,Midline,Kabul,Unconditional Cash Transfer,Male,7,45,7,0,3,1,0,1,3,3,7,3,4,4,4,0,0,0,1,0,0,0,1,1,0,1,0.0,Less than a year
+M-0039,Midline,Kabul,Cash for Work,Male,6,30,6,0,0,2,0,0,2,5,5,3,5,4,3,1,0,0,0,0,0,1,1,1,1,1,1.0,A few years
+M-0040,Midline,Sar-e Pol,Solar Water System,Female,4,43,4,2,0,1,0,0,3,4,6,4,5,2,2,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0041,Midline,Kabul,Cash for Work,Male,9,47,7,3,4,1,0,1,5,4,3,2,5,3,4,1,1,0,0,0,0,0,1,0,1,1,1.0,A few years
+M-0042,Midline,Sar-e Pol,Livestock Package,Male,4,29,7,2,3,0,0,1,5,5,3,4,3,3,3,0,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0043,Midline,Faryab,Unconditional Cash Transfer,Female,5,24,5,1,2,1,0,1,3,5,4,3,2,3,2,1,0,0,1,0,1,1,1,0,0,1,0.0,A few years
+M-0044,Midline,Samangan,Livestock Package,Male,7,45,7,0,0,1,0,0,1,4,7,4,7,5,6,1,0,0,0,0,0,0,0,1,0,1,0.0,Long term
+M-0045,Midline,Faryab,Solar Water System,Male,10,33,7,0,1,2,0,2,2,3,4,4,3,2,4,1,0,0,1,0,0,0,0,0,0,1,1.0,Less than a year
+M-0046,Midline,Jawzjan,Solar Water System,Male,6,43,7,2,4,1,1,3,5,5,5,4,3,1,3,1,0,0,1,0,0,0,0,1,0,1,0.0,A few years
+M-0047,Midline,Faryab,Kitchen Garden,Male,5,43,7,0,5,3,0,0,4,6,2,3,2,3,4,1,1,0,0,1,0,0,1,1,1,1,1.0,Long term
+M-0048,Midline,Sar-e Pol,Cash for Work,Male,6,40,7,1,3,0,1,2,3,5,4,2,4,3,5,1,1,0,0,0,0,0,0,1,0,1,0.0,Long term
+M-0049,Midline,Sar-e Pol,Cash for Work,Male,10,50,6,0,4,3,2,1,7,5,4,4,2,0,1,1,0,0,1,0,0,0,0,1,1,1,0.0,Not sure
+M-0050,Midline,Faryab,Cash for Work,Male,9,37,6,1,4,3,2,1,5,5,5,2,2,1,3,0,1,0,0,1,0,0,0,1,1,1,0.0,A few years
+M-0051,Midline,Balkh,Cash for Work,Female,6,33,7,2,2,0,2,1,5,4,5,3,1,0,3,1,0,0,0,0,0,1,1,1,0,1,1.0,Long term
+M-0052,Midline,Sar-e Pol,Livestock Package,Male,4,40,6,0,2,2,0,0,3,4,4,3,3,3,4,1,0,0,1,0,1,0,0,1,0,1,0.0,Long term
+M-0053,Midline,Samangan,Solar Water System,Male,8,60,7,2,3,0,0,1,4,5,3,3,4,5,5,0,0,0,0,0,1,1,0,1,0,1,0.0,Long term
+M-0054,Midline,Faryab,Solar Water System,Female,7,27,7,1,1,0,0,2,4,7,5,3,4,2,3,1,1,0,0,1,0,1,0,1,0,1,0.0,A few years
+M-0055,Midline,Balkh,Kitchen Garden,Male,6,65,7,1,3,0,0,0,5,4,3,1,2,3,4,1,0,0,1,0,0,1,0,0,0,1,1.0,A few years
+M-0056,Midline,Sar-e Pol,Livestock Package,Male,4,53,7,0,1,0,1,0,4,6,3,4,5,3,4,0,0,0,0,0,0,0,1,0,0,1,1.0,Long term
+M-0057,Midline,Kabul,Kitchen Garden,Male,10,50,6,0,2,0,1,1,3,4,6,3,4,3,6,1,0,0,0,1,0,1,0,0,0,1,0.0,Not sure
+M-0058,Midline,Kabul,Livestock Package,Male,7,33,7,3,5,1,0,2,5,6,6,3,7,3,2,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0059,Midline,Kabul,Unconditional Cash Transfer,Male,3,39,6,1,3,0,0,0,3,5,3,0,3,2,4,1,0,1,1,0,0,0,0,0,0,1,0.0,A few years
+M-0060,Midline,Samangan,Solar Water System,Male,6,32,5,0,0,0,0,1,4,4,7,4,4,4,1,1,1,0,0,0,1,0,1,0,0,1,1.0,Not sure
+M-0061,Midline,Jawzjan,Cash for Work,Male,9,44,6,1,3,0,0,1,4,6,2,4,5,1,1,1,1,0,1,0,0,0,0,1,0,1,1.0,Long term
+M-0062,Midline,Jawzjan,Kitchen Garden,Male,5,25,7,2,3,1,0,1,3,6,5,2,2,1,4,1,1,0,0,0,0,0,1,0,1,1,0.0,A few years
+M-0063,Midline,Sar-e Pol,Unconditional Cash Transfer,Female,8,39,6,2,3,1,0,1,4,5,4,1,5,1,5,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0064,Midline,Faryab,Unconditional Cash Transfer,Male,6,30,6,1,1,0,0,0,4,5,6,3,5,4,5,1,0,0,1,0,0,0,0,0,0,0,1.0,Less than a year
+M-0065,Midline,Balkh,Unconditional Cash Transfer,Female,6,41,7,1,2,1,1,1,5,6,5,4,5,2,4,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0066,Midline,Balkh,Cash for Work,Male,8,36,7,1,3,3,2,1,5,6,4,3,3,3,4,1,0,0,0,0,1,0,0,0,1,1,1.0,A few years
+M-0067,Midline,Samangan,Livestock Package,Male,8,50,7,1,1,0,0,0,3,4,7,6,6,4,5,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0068,Midline,Kabul,Cash for Work,Male,7,39,6,1,1,0,0,1,3,5,6,1,5,3,2,1,1,0,0,0,1,0,0,0,0,1,0.0,Less than a year
+M-0069,Midline,Kabul,Kitchen Garden,Male,4,45,6,0,3,0,0,2,4,6,4,3,3,2,3,1,1,0,0,1,0,1,0,1,1,1,1.0,A few years
+M-0070,Midline,Faryab,Cash for Work,Female,9,47,6,0,3,0,0,0,5,5,5,3,5,4,5,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0071,Midline,Balkh,Kitchen Garden,Male,6,40,7,1,2,0,1,3,3,6,3,2,3,2,2,1,0,1,1,0,0,1,0,1,1,1,0.0,A few years
+M-0072,Midline,Balkh,Cash for Work,Male,7,49,4,2,3,1,0,2,3,5,4,1,3,3,4,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0073,Midline,Balkh,Unconditional Cash Transfer,Male,8,46,7,0,1,0,0,0,5,5,3,4,6,3,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0074,Midline,Balkh,Unconditional Cash Transfer,Male,5,32,7,1,2,1,0,0,2,5,5,4,4,1,5,0,1,0,0,0,0,0,0,1,0,1,0.0,Less than a year
+M-0075,Midline,Balkh,Unconditional Cash Transfer,Male,3,37,7,2,0,1,2,0,5,5,5,2,1,6,2,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0076,Midline,Sar-e Pol,Cash for Work,Male,5,30,5,1,0,0,1,1,2,3,7,4,4,3,2,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0077,Midline,Samangan,Cash for Work,Male,5,47,6,0,1,0,0,0,3,5,7,3,6,5,3,0,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0078,Midline,Kabul,Cash for Work,Male,7,22,5,1,2,0,0,0,4,5,5,3,5,1,2,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0079,Midline,Balkh,Livestock Package,Male,8,33,7,2,4,1,1,1,6,6,2,4,4,3,4,1,0,1,0,0,0,0,0,0,0,1,1.0,Long term
+M-0080,Midline,Sar-e Pol,Livestock Package,Male,2,44,7,1,1,0,0,0,5,2,4,2,5,3,3,0,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0081,Midline,Balkh,Kitchen Garden,Male,3,42,7,1,2,0,1,2,5,6,3,3,1,3,4,0,0,0,1,0,0,1,0,0,0,1,1.0,Less than a year
+M-0082,Midline,Sar-e Pol,Cash for Work,Male,6,46,7,1,2,1,1,1,3,4,3,3,5,2,3,1,0,0,0,0,0,0,0,0,0,0,0.0,A few years
+M-0083,Midline,Kabul,Cash for Work,Female,10,39,7,0,2,1,0,0,5,6,5,3,4,4,3,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+M-0084,Midline,Balkh,Unconditional Cash Transfer,Male,4,37,6,1,3,1,0,0,5,6,3,2,4,3,1,1,0,0,0,0,0,0,1,0,1,1,0.0,A few years
+M-0085,Midline,Samangan,Unconditional Cash Transfer,Male,8,38,7,1,2,0,0,2,2,5,5,4,4,3,4,1,0,0,0,0,0,0,0,0,0,1,1.0,Not sure
+M-0086,Midline,Sar-e Pol,Kitchen Garden,Male,3,35,7,0,1,0,1,1,4,5,6,2,5,0,3,1,0,1,1,0,0,0,0,0,0,1,0.0,Less than a year
+M-0087,Midline,Jawzjan,Livestock Package,Female,7,22,6,3,5,0,2,3,5,6,3,2,1,1,1,1,0,0,1,1,1,0,0,0,1,1,1.0,A few years
+M-0088,Midline,Faryab,Kitchen Garden,Male,9,31,7,3,2,0,1,3,5,7,4,2,3,2,3,1,0,1,1,0,0,0,1,0,0,1,1.0,Long term
+M-0089,Midline,Samangan,Livestock Package,Male,9,20,7,1,3,1,0,0,4,3,5,2,3,4,5,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0090,Midline,Faryab,Unconditional Cash Transfer,Male,8,60,7,1,3,1,0,2,4,6,3,4,3,2,2,1,0,1,0,0,0,0,0,0,0,1,0.0,Long term
+M-0091,Midline,Jawzjan,Livestock Package,Male,9,23,7,2,4,0,0,0,3,4,3,3,4,1,2,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0092,Midline,Balkh,Kitchen Garden,Female,8,38,6,1,1,0,1,0,4,5,6,3,4,0,2,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0093,Midline,Balkh,Kitchen Garden,Male,9,35,6,2,2,1,0,2,4,5,5,2,6,2,2,1,1,0,1,0,0,0,1,0,0,1,0.0,Less than a year
+M-0094,Midline,Jawzjan,Kitchen Garden,Male,6,39,7,0,2,1,0,2,6,4,4,3,5,3,2,1,0,0,1,0,0,1,1,0,0,1,0.0,Long term
+M-0095,Midline,Samangan,Unconditional Cash Transfer,Male,6,43,6,2,3,2,1,0,4,4,4,3,4,1,2,1,1,0,1,0,0,0,1,0,0,1,1.0,Long term
+M-0096,Midline,Kabul,Cash for Work,Female,6,43,7,1,3,2,0,1,4,6,6,3,4,1,4,1,1,0,0,0,0,0,0,1,0,1,0.0,Long term
+M-0097,Midline,Kabul,Livestock Package,Female,7,19,6,1,3,0,1,1,3,3,4,4,5,4,5,1,0,0,0,0,0,1,0,1,0,1,0.0,A few years
+M-0098,Midline,Balkh,Livestock Package,Male,3,42,7,3,4,2,3,2,5,6,3,2,2,2,3,1,1,0,0,1,0,0,1,1,0,1,1.0,Not sure
+M-0099,Midline,Samangan,Kitchen Garden,Male,7,34,7,2,4,0,1,1,2,5,3,4,3,2,3,1,1,0,0,0,0,1,1,0,0,1,0.0,A few years
+M-0100,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,7,56,7,0,2,0,0,0,3,5,5,4,3,3,4,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0101,Midline,Balkh,Cash for Work,Male,6,20,7,1,5,0,1,2,5,4,4,1,5,1,2,1,0,0,0,1,0,0,1,1,0,1,0.0,Less than a year
+M-0102,Midline,Jawzjan,Livestock Package,Male,4,49,7,0,3,0,0,0,1,5,7,2,2,4,3,0,0,0,1,0,0,0,0,0,0,1,0.0,Long term
+M-0103,Midline,Balkh,Livestock Package,Male,6,30,6,1,3,1,0,2,4,4,3,1,3,4,4,1,0,0,1,0,0,1,1,1,0,1,1.0,Not sure
+M-0104,Midline,Kabul,Cash for Work,Male,7,42,7,3,2,2,2,1,3,7,3,2,3,0,2,0,1,0,1,0,0,1,0,1,1,1,1.0,A few years
+M-0105,Midline,Samangan,Kitchen Garden,Female,5,36,7,0,1,0,1,0,4,5,7,3,4,3,4,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0106,Midline,Sar-e Pol,Cash for Work,Male,8,43,7,2,2,2,2,5,4,6,3,4,3,1,1,1,1,0,1,1,0,1,0,1,0,1,0.0,A few years
+M-0107,Midline,Jawzjan,Unconditional Cash Transfer,Female,10,33,7,1,2,0,2,1,4,3,5,5,4,1,3,1,0,0,0,0,1,0,0,1,1,1,0.0,A few years
+M-0108,Midline,Kabul,Livestock Package,Male,7,51,7,2,5,1,2,1,5,6,3,2,1,5,0,1,1,0,1,0,1,0,0,0,0,1,0.0,Less than a year
+M-0109,Midline,Sar-e Pol,Kitchen Garden,Male,7,31,6,3,2,1,0,0,7,7,3,2,5,0,2,1,1,0,1,0,0,1,1,0,0,1,0.0,Long term
+M-0110,Midline,Samangan,Livestock Package,Male,8,33,6,3,4,1,2,1,4,5,5,1,4,1,1,1,1,0,1,0,0,1,1,0,0,1,0.0,A few years
+M-0111,Midline,Balkh,Unconditional Cash Transfer,Male,3,46,7,1,2,0,0,0,5,7,7,6,3,4,2,1,0,0,0,0,0,0,1,1,0,1,0.0,Less than a year
+M-0112,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,8,39,6,2,1,3,0,1,3,6,4,4,3,1,4,0,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0113,Midline,Balkh,Unconditional Cash Transfer,Male,5,54,7,3,3,0,1,3,5,5,4,2,2,0,2,1,1,0,1,0,0,1,1,0,1,1,0.0,Long term
+M-0114,Midline,Samangan,Unconditional Cash Transfer,Male,9,46,6,2,4,0,1,0,4,7,5,1,5,3,4,0,0,1,1,0,0,0,0,1,1,1,1.0,A few years
+M-0115,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,8,18,7,0,1,0,0,0,3,6,5,3,6,4,0,1,1,0,0,0,1,0,1,0,0,0,1.0,Not sure
+M-0116,Midline,Jawzjan,Livestock Package,Female,7,32,7,0,1,2,1,1,6,5,6,3,5,3,4,1,0,0,1,0,0,1,1,1,0,1,1.0,A few years
+M-0117,Midline,Faryab,Unconditional Cash Transfer,Female,7,34,5,1,2,0,0,0,1,3,6,4,6,2,3,1,0,0,0,0,1,0,0,0,0,1,1.0,A few years
+M-0118,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,12,37,7,1,2,0,0,3,6,6,6,2,3,0,4,1,0,0,0,0,0,0,0,0,0,1,1.0,Not sure
+M-0119,Midline,Kabul,Kitchen Garden,Male,2,49,7,2,4,1,1,4,5,7,3,0,2,2,0,1,0,0,0,0,0,0,1,1,0,1,0.0,A few years
+M-0120,Midline,Faryab,Kitchen Garden,Male,7,18,7,2,2,0,0,1,5,4,2,2,3,3,2,1,0,0,0,0,0,0,0,0,0,0,0.0,A few years
+M-0121,Midline,Balkh,Unconditional Cash Transfer,Male,6,49,7,3,1,1,0,2,5,6,4,0,4,2,3,1,1,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+M-0122,Midline,Samangan,Cash for Work,Male,9,42,6,0,2,1,0,2,2,6,6,3,3,2,2,0,0,0,0,0,1,0,0,1,0,1,0.0,Long term
+M-0123,Midline,Samangan,Unconditional Cash Transfer,Male,9,30,6,0,0,0,0,0,4,5,7,4,7,5,6,0,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0124,Midline,Jawzjan,Livestock Package,Female,5,28,6,0,2,0,0,3,2,5,4,3,3,3,4,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0125,Midline,Jawzjan,Livestock Package,Male,12,30,6,2,2,0,1,3,5,5,5,2,5,0,3,1,0,0,1,1,0,0,0,0,0,1,1.0,A few years
+M-0126,Midline,Samangan,Cash for Work,Female,8,34,5,0,5,2,1,4,6,6,3,1,3,3,3,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0127,Midline,Kabul,Kitchen Garden,Male,9,35,6,0,3,0,1,2,3,6,5,4,2,3,3,0,0,0,1,0,0,0,1,1,1,1,1.0,Less than a year
+M-0128,Midline,Samangan,Cash for Work,Male,5,23,7,1,2,1,1,0,4,5,5,4,2,4,7,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0129,Midline,Faryab,Solar Water System,Male,3,49,5,0,4,1,0,2,5,5,5,4,7,0,5,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0130,Midline,Samangan,Livestock Package,Male,10,37,5,0,0,0,0,0,3,5,7,4,5,6,7,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0131,Midline,Balkh,Livestock Package,Male,11,40,6,0,0,0,0,0,3,3,5,4,3,6,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0132,Midline,Jawzjan,Kitchen Garden,Male,6,38,6,0,0,0,0,0,4,4,7,5,6,5,5,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0133,Midline,Samangan,Solar Water System,Male,7,30,7,2,5,0,2,3,4,6,3,4,1,0,2,1,0,0,1,0,1,0,1,0,0,1,0.0,A few years
+M-0134,Midline,Samangan,Unconditional Cash Transfer,Male,7,31,7,2,3,2,0,1,4,6,6,2,5,3,2,1,0,0,0,0,0,1,1,0,0,1,1.0,Long term
+M-0135,Midline,Samangan,Kitchen Garden,Male,8,43,7,1,3,0,2,0,4,6,4,3,5,1,3,1,1,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0136,Midline,Balkh,Solar Water System,Male,8,30,7,0,2,2,0,0,4,4,7,5,3,3,4,1,0,0,1,1,0,0,0,0,0,1,0.0,A few years
+M-0137,Midline,Faryab,Cash for Work,Male,6,23,7,3,3,0,2,0,4,7,4,2,3,1,3,1,0,0,1,0,0,1,0,1,0,1,1.0,A few years
+M-0138,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,9,37,6,0,3,0,0,0,3,5,3,3,4,1,5,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0139,Midline,Faryab,Unconditional Cash Transfer,Male,6,27,5,1,3,1,1,2,5,4,3,3,3,4,1,1,1,0,1,0,0,0,0,1,0,1,0.0,A few years
+M-0140,Midline,Kabul,Livestock Package,Male,3,35,6,0,1,0,0,0,4,4,5,4,3,4,4,1,0,0,1,0,0,1,0,0,0,1,1.0,Less than a year
+M-0141,Midline,Sar-e Pol,Kitchen Garden,Female,10,29,7,1,3,0,1,0,2,3,6,4,5,4,3,1,0,0,0,0,0,1,0,0,0,1,1.0,A few years
+M-0142,Midline,Jawzjan,Cash for Work,Female,5,43,6,1,5,0,3,2,5,5,5,3,3,3,3,1,1,0,1,0,0,1,1,1,0,1,1.0,A few years
+M-0143,Midline,Balkh,Kitchen Garden,Male,3,48,7,0,0,0,0,0,3,5,4,5,6,2,5,1,0,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0144,Midline,Balkh,Cash for Work,Male,4,31,5,0,0,0,1,0,2,6,6,2,4,2,2,1,1,0,0,0,0,0,0,0,0,1,0.0,Long term
+M-0145,Midline,Samangan,Unconditional Cash Transfer,Male,9,43,6,0,2,1,1,1,4,5,5,4,4,2,3,0,1,1,0,0,0,0,0,0,1,1,0.0,Long term
+M-0146,Midline,Kabul,Kitchen Garden,Male,11,43,6,0,4,1,0,0,4,5,4,3,2,3,4,1,0,0,1,1,0,1,0,0,0,1,1.0,A few years
+M-0147,Midline,Faryab,Livestock Package,Male,8,33,6,2,4,0,1,2,4,5,3,1,3,1,3,1,1,0,1,0,0,1,0,1,1,1,0.0,A few years
+M-0148,Midline,Sar-e Pol,Livestock Package,Female,3,24,6,1,1,1,0,1,2,6,5,2,4,3,4,1,1,0,0,0,0,0,0,1,0,1,0.0,Long term
+M-0149,Midline,Samangan,Kitchen Garden,Female,5,35,7,0,2,1,1,3,5,6,3,2,4,0,2,1,1,0,0,1,0,0,0,1,1,1,0.0,Less than a year
+M-0150,Midline,Sar-e Pol,Unconditional Cash Transfer,Female,6,46,5,2,3,0,1,3,4,6,1,3,3,0,1,1,0,1,1,0,0,1,0,1,1,1,0.0,Less than a year
+M-0151,Midline,Kabul,Cash for Work,Male,8,43,6,0,0,0,0,1,3,5,6,1,3,1,4,0,1,0,1,1,0,0,0,1,0,1,1.0,A few years
+M-0152,Midline,Jawzjan,Unconditional Cash Transfer,Male,3,18,7,0,2,0,1,0,4,5,5,3,2,2,4,1,0,0,0,1,0,1,0,1,0,1,1.0,A few years
+M-0153,Midline,Balkh,Cash for Work,Male,7,18,6,3,4,0,0,1,3,5,2,3,5,1,2,1,0,1,1,0,0,0,1,1,0,1,1.0,A few years
+M-0154,Midline,Faryab,Kitchen Garden,Male,7,35,6,1,4,2,2,1,5,7,3,0,2,1,3,1,1,1,1,0,0,1,0,1,1,1,1.0,Long term
+M-0155,Midline,Jawzjan,Kitchen Garden,Male,7,31,6,1,1,0,0,0,4,6,5,4,5,1,2,1,0,0,0,0,0,0,0,0,1,1,1.0,Long term
+M-0156,Midline,Jawzjan,Livestock Package,Male,9,56,7,1,1,0,2,1,4,6,5,4,4,2,6,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0157,Midline,Jawzjan,Kitchen Garden,Male,5,32,5,3,5,0,0,3,6,7,5,2,3,1,3,1,0,1,1,0,1,1,0,1,0,1,0.0,Long term
+M-0158,Midline,Samangan,Unconditional Cash Transfer,Male,10,32,5,1,2,0,0,0,4,6,7,4,6,3,4,1,0,0,0,0,0,0,0,0,0,1,0.0,Not sure
+M-0159,Midline,Balkh,Kitchen Garden,Male,6,49,6,1,1,0,0,1,5,5,7,4,2,0,3,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0160,Midline,Kabul,Livestock Package,Male,4,56,6,0,0,1,0,0,1,5,5,4,7,4,6,1,0,0,0,0,0,1,0,0,0,1,0.0,Long term
+M-0161,Midline,Samangan,Cash for Work,Female,8,25,7,2,2,1,2,0,4,5,3,1,2,3,3,1,0,0,1,0,1,0,0,1,0,1,0.0,A few years
+M-0162,Midline,Balkh,Cash for Work,Male,3,20,6,0,4,1,0,1,4,5,7,2,7,3,2,1,0,0,1,0,0,0,0,0,0,1,0.0,Not sure
+M-0163,Midline,Faryab,Cash for Work,Male,8,35,7,2,2,2,0,0,6,5,5,4,6,2,3,1,0,0,0,0,0,0,0,0,0,0,0.0,Long term
+M-0164,Midline,Faryab,Cash for Work,Male,4,18,7,0,1,0,0,0,3,4,6,3,6,3,4,0,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+M-0165,Midline,Samangan,Unconditional Cash Transfer,Female,6,26,7,0,0,0,0,0,5,4,7,5,4,4,5,0,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0166,Midline,Faryab,Livestock Package,Male,10,50,7,0,1,0,0,0,4,6,3,2,2,1,0,1,0,0,0,0,0,1,0,1,1,1,0.0,A few years
+M-0167,Midline,Balkh,Livestock Package,Female,5,50,6,0,2,1,0,2,2,5,5,5,5,1,4,0,0,0,0,0,0,1,0,1,0,1,0.0,Long term
+M-0168,Midline,Jawzjan,Kitchen Garden,Male,9,44,7,2,4,1,1,0,3,5,2,0,1,0,2,1,0,0,0,1,0,0,0,0,1,1,1.0,Not sure
+M-0169,Midline,Faryab,Cash for Work,Male,6,52,5,0,0,2,0,0,3,5,7,5,5,4,3,0,0,0,0,0,0,0,1,0,0,1,1.0,Long term
+M-0170,Midline,Jawzjan,Cash for Work,Female,9,35,7,1,2,2,0,0,4,5,3,2,5,3,4,1,1,0,0,0,0,0,1,0,0,1,0.0,A few years
+M-0171,Midline,Balkh,Kitchen Garden,Male,8,54,7,2,5,0,2,2,5,4,5,2,5,3,2,1,1,1,0,1,0,1,0,0,0,1,0.0,Less than a year
+M-0172,Midline,Samangan,Solar Water System,Female,6,26,7,0,0,0,0,3,3,5,4,3,2,0,5,1,0,0,0,0,1,1,0,0,0,1,0.0,A few years
+M-0173,Midline,Faryab,Kitchen Garden,Male,8,26,6,0,1,0,1,0,4,5,6,3,6,5,3,1,1,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0174,Midline,Jawzjan,Unconditional Cash Transfer,Male,8,38,7,0,1,0,1,0,3,5,4,2,7,2,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0175,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,9,41,6,0,2,1,0,1,4,5,4,4,4,4,2,1,0,0,0,0,1,0,0,0,0,1,1.0,Long term
+M-0176,Midline,Samangan,Kitchen Garden,Male,8,34,5,0,1,1,0,3,5,4,4,1,4,2,1,1,0,0,1,0,0,0,1,0,0,1,0.0,A few years
+M-0177,Midline,Jawzjan,Unconditional Cash Transfer,Female,4,58,7,0,2,0,0,0,1,4,6,4,5,3,6,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0178,Midline,Samangan,Cash for Work,Female,9,18,7,0,3,1,0,1,4,5,3,1,3,1,4,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0179,Midline,Faryab,Livestock Package,Male,3,52,6,0,4,1,0,2,4,5,7,2,5,2,4,1,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0180,Midline,Faryab,Cash for Work,Male,2,49,7,2,5,1,0,2,5,5,3,3,4,0,2,1,1,0,1,1,0,1,1,1,0,1,0.0,Long term
+M-0181,Midline,Kabul,Kitchen Garden,Male,10,60,7,4,5,1,2,3,6,4,3,4,4,2,2,1,1,0,1,0,0,1,1,0,0,1,0.0,Less than a year
+M-0182,Midline,Faryab,Kitchen Garden,Male,4,50,6,1,1,0,0,0,6,5,5,2,5,6,5,1,0,0,1,0,0,1,0,1,0,1,1.0,Less than a year
+M-0183,Midline,Balkh,Unconditional Cash Transfer,Female,7,36,7,1,2,0,1,1,3,6,5,5,5,2,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0184,Midline,Balkh,Livestock Package,Male,12,48,7,0,1,0,0,0,3,7,5,5,6,4,4,0,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0185,Midline,Samangan,Livestock Package,Female,9,19,6,0,1,1,0,0,3,4,5,3,3,0,1,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0186,Midline,Kabul,Livestock Package,Female,8,42,7,2,7,1,3,1,6,5,3,0,3,0,0,1,0,0,1,1,1,0,0,1,0,1,0.0,Long term
+M-0187,Midline,Kabul,Cash for Work,Male,5,37,6,3,4,0,2,2,4,6,1,2,2,2,1,1,0,0,0,0,0,0,0,1,0,1,0.0,A few years
+M-0188,Midline,Faryab,Solar Water System,Male,9,56,7,4,5,0,0,1,3,7,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1.0,A few years
+M-0189,Midline,Kabul,Cash for Work,Male,9,39,5,3,3,1,0,1,4,6,4,3,2,3,3,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0190,Midline,Balkh,Solar Water System,Male,4,32,6,0,3,0,0,1,2,4,3,2,3,4,4,1,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0191,Midline,Kabul,Kitchen Garden,Female,8,63,7,1,4,0,1,1,4,6,4,3,4,1,4,1,0,0,0,0,0,1,0,1,1,1,1.0,A few years
+M-0192,Midline,Kabul,Cash for Work,Male,10,20,7,0,1,0,0,0,3,6,7,2,5,1,3,1,0,0,0,0,0,0,1,1,0,0,0.0,A few years
+M-0193,Midline,Balkh,Cash for Work,Female,8,28,7,1,4,1,0,1,4,7,6,1,5,2,3,1,0,0,1,0,0,0,0,0,0,1,0.0,Less than a year
+M-0194,Midline,Kabul,Unconditional Cash Transfer,Male,8,53,7,1,2,1,0,2,4,5,3,2,4,3,6,1,0,0,1,0,0,1,0,1,0,1,0.0,Not sure
+M-0195,Midline,Balkh,Cash for Work,Male,4,42,7,3,4,2,1,3,5,7,2,0,1,4,1,1,1,0,1,1,0,0,1,1,0,0,1.0,A few years
+M-0196,Midline,Jawzjan,Cash for Work,Male,8,43,7,0,0,0,0,0,1,4,7,6,7,2,7,1,1,0,0,0,0,0,1,0,0,1,1.0,Long term
+M-0197,Midline,Samangan,Solar Water System,Female,10,24,4,0,1,0,0,0,4,5,5,4,4,4,4,1,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0198,Midline,Kabul,Kitchen Garden,Male,5,43,7,3,3,2,3,2,5,5,2,2,3,4,2,1,0,0,1,0,1,1,1,0,0,1,1.0,A few years
+M-0199,Midline,Samangan,Kitchen Garden,Male,3,41,7,1,1,0,0,0,5,6,6,3,4,4,5,1,0,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0200,Midline,Jawzjan,Solar Water System,Male,6,49,5,2,3,0,0,1,4,5,7,3,5,3,4,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+M-0201,Midline,Sar-e Pol,Cash for Work,Male,9,25,7,0,2,0,0,0,5,4,6,5,5,4,5,1,1,0,0,0,0,0,0,0,1,1,1.0,Long term
+M-0202,Midline,Faryab,Kitchen Garden,Male,6,32,6,2,2,0,1,0,2,6,3,4,6,1,3,1,0,0,1,0,0,0,0,1,0,1,0.0,Long term
+M-0203,Midline,Samangan,Cash for Work,Male,2,23,5,0,5,0,1,0,4,5,3,4,7,1,4,1,0,0,1,0,0,0,0,1,0,1,0.0,Less than a year
+M-0204,Midline,Sar-e Pol,Kitchen Garden,Male,8,51,7,0,3,1,2,0,4,7,3,3,3,3,4,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0205,Midline,Sar-e Pol,Cash for Work,Male,6,54,6,2,4,2,0,1,3,5,3,3,2,1,4,1,0,0,0,0,0,0,1,0,0,1,1.0,Less than a year
+M-0206,Midline,Faryab,Kitchen Garden,Female,11,39,6,2,1,0,1,0,4,6,7,4,4,3,3,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0207,Midline,Faryab,Unconditional Cash Transfer,Male,3,42,7,1,2,0,1,3,4,6,2,0,3,1,3,1,0,0,1,1,0,1,0,1,0,1,0.0,Long term
+M-0208,Midline,Jawzjan,Cash for Work,Female,9,61,4,2,1,0,0,0,4,2,5,3,6,4,6,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0209,Midline,Balkh,Unconditional Cash Transfer,Male,4,49,7,2,3,2,2,2,4,6,3,1,2,2,4,1,1,0,1,0,1,1,1,0,0,0,1.0,Less than a year
+M-0210,Midline,Sar-e Pol,Kitchen Garden,Male,5,37,5,0,2,0,0,0,4,6,4,4,3,4,2,1,0,0,1,0,1,0,0,1,0,1,0.0,A few years
+M-0211,Midline,Balkh,Cash for Work,Male,8,31,6,2,4,0,0,1,4,4,2,1,5,2,4,1,0,1,1,1,0,0,0,1,0,1,0.0,Not sure
+M-0212,Midline,Samangan,Cash for Work,Female,8,40,7,1,1,0,0,0,1,6,5,5,4,3,3,1,0,0,1,0,0,0,0,0,0,0,0.0,Long term
+M-0213,Midline,Faryab,Kitchen Garden,Male,8,47,7,1,1,1,1,1,5,5,2,6,3,4,6,1,0,1,0,0,0,0,0,0,0,1,1.0,A few years
+M-0214,Midline,Sar-e Pol,Unconditional Cash Transfer,Female,7,42,5,1,2,0,0,0,5,6,4,3,5,0,5,1,0,1,0,0,0,0,0,0,0,1,1.0,A few years
+M-0215,Midline,Samangan,Livestock Package,Male,5,45,6,0,1,0,0,1,2,7,5,5,3,3,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0216,Midline,Sar-e Pol,Cash for Work,Male,7,36,7,1,4,1,1,2,5,6,2,3,3,2,3,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0217,Midline,Jawzjan,Livestock Package,Male,8,28,7,0,1,0,1,0,4,6,4,3,4,3,3,0,0,0,0,0,0,1,0,1,0,1,0.0,A few years
+M-0218,Midline,Jawzjan,Livestock Package,Male,11,65,6,2,4,1,2,0,5,3,5,4,5,1,1,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0219,Midline,Kabul,Cash for Work,Male,5,47,7,2,2,0,1,2,5,6,1,2,5,0,0,1,0,0,1,0,0,0,0,1,1,1,1.0,Not sure
+M-0220,Midline,Faryab,Kitchen Garden,Male,10,29,6,0,1,0,0,1,5,5,1,4,0,0,4,1,1,0,1,0,0,1,0,1,0,1,0.0,A few years
+M-0221,Midline,Faryab,Livestock Package,Female,8,35,6,0,0,0,1,1,3,4,7,5,4,3,3,1,0,0,0,0,0,0,1,1,0,1,1.0,A few years
+M-0222,Midline,Jawzjan,Livestock Package,Male,7,40,7,2,2,1,0,0,2,5,5,3,4,0,2,0,0,0,1,1,0,0,0,0,0,1,1.0,A few years
+M-0223,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,11,57,7,0,2,1,2,1,4,6,6,0,4,1,3,1,1,0,1,1,0,1,0,0,0,1,1.0,A few years
+M-0224,Midline,Faryab,Unconditional Cash Transfer,Male,7,27,7,1,0,0,0,0,4,4,7,4,3,6,5,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0225,Midline,Faryab,Cash for Work,Male,6,35,7,0,4,0,1,2,6,5,3,3,4,2,0,1,0,0,0,0,0,1,0,1,0,1,0.0,Long term
+M-0226,Midline,Faryab,Cash for Work,Male,6,24,7,3,5,1,1,3,6,7,3,0,4,2,4,1,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+M-0227,Midline,Balkh,Cash for Work,Male,6,41,6,4,3,0,0,2,6,5,2,2,2,1,2,1,1,1,1,0,0,1,0,1,0,1,1.0,A few years
+M-0228,Midline,Kabul,Kitchen Garden,Male,7,51,7,1,2,0,1,3,5,6,3,0,4,2,4,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0229,Midline,Jawzjan,Kitchen Garden,Male,7,45,6,2,3,0,2,0,5,4,4,1,5,2,2,0,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0230,Midline,Samangan,Kitchen Garden,Male,6,25,6,1,4,0,0,3,5,6,2,3,3,0,0,1,0,1,0,1,0,1,0,1,1,1,0.0,A few years
+M-0231,Midline,Jawzjan,Livestock Package,Male,11,20,6,0,3,0,0,0,2,3,5,5,6,2,5,1,0,0,1,0,0,0,0,0,0,1,0.0,Long term
+M-0232,Midline,Kabul,Solar Water System,Male,12,60,7,1,2,1,0,0,6,5,2,4,1,1,2,1,0,0,1,1,0,0,0,1,1,1,0.0,Less than a year
+M-0233,Midline,Sar-e Pol,Unconditional Cash Transfer,Female,10,25,6,1,4,1,4,1,2,6,5,2,1,0,3,1,1,1,1,0,0,0,0,1,0,1,0.0,A few years
+M-0234,Midline,Jawzjan,Unconditional Cash Transfer,Male,9,19,7,0,2,0,0,2,5,4,4,4,4,4,2,1,0,0,0,1,0,1,1,0,0,1,0.0,Long term
+M-0235,Midline,Balkh,Kitchen Garden,Male,8,36,7,1,2,0,1,0,4,5,4,4,2,3,3,1,1,0,1,0,0,0,0,1,1,1,1.0,A few years
+M-0236,Midline,Balkh,Unconditional Cash Transfer,Female,7,42,6,0,3,0,0,0,5,7,4,2,6,3,4,1,1,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0237,Midline,Sar-e Pol,Cash for Work,Male,8,50,6,1,2,1,0,2,3,6,4,1,3,0,2,1,0,0,1,0,0,1,0,0,0,1,1.0,Less than a year
+M-0238,Midline,Jawzjan,Cash for Work,Male,7,39,7,0,2,0,0,2,3,4,4,3,4,3,5,0,0,0,1,1,0,0,1,0,0,1,1.0,Long term
+M-0239,Midline,Balkh,Livestock Package,Male,6,31,5,3,2,2,0,0,5,5,3,2,2,2,3,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0240,Midline,Balkh,Livestock Package,Female,6,26,7,3,2,1,1,1,5,5,1,2,3,4,1,1,1,0,1,0,0,0,0,1,1,1,1.0,Long term
+M-0241,Midline,Kabul,Kitchen Garden,Male,6,65,6,0,3,0,2,2,5,3,5,4,3,2,3,1,1,0,1,0,0,0,1,1,0,1,1.0,A few years
+M-0242,Midline,Jawzjan,Unconditional Cash Transfer,Male,8,42,7,2,2,0,0,0,3,4,5,4,5,4,3,0,0,0,0,0,0,0,1,0,0,1,0.0,Less than a year
+M-0243,Midline,Balkh,Livestock Package,Male,9,32,7,0,2,0,1,0,4,5,4,2,4,0,3,1,1,1,1,0,0,0,0,1,0,1,1.0,Less than a year
+M-0244,Midline,Sar-e Pol,Cash for Work,Male,4,33,7,1,4,1,0,1,5,7,4,1,3,2,5,1,0,1,0,1,0,1,0,1,0,1,1.0,A few years
+M-0245,Midline,Samangan,Unconditional Cash Transfer,Male,7,39,5,0,0,0,0,0,1,3,5,5,6,3,5,0,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0246,Midline,Samangan,Cash for Work,Male,7,27,7,0,2,0,0,0,4,4,4,4,5,2,4,1,0,0,0,0,0,0,1,0,1,1,0.0,A few years
+M-0247,Midline,Jawzjan,Kitchen Garden,Male,12,27,6,0,2,0,0,0,4,5,5,5,4,5,2,0,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0248,Midline,Jawzjan,Unconditional Cash Transfer,Male,6,18,6,1,3,2,1,2,4,4,4,5,2,5,5,1,0,0,0,0,0,0,1,0,0,1,1.0,Less than a year
+M-0249,Midline,Samangan,Cash for Work,Male,7,29,7,0,2,0,1,0,4,4,6,3,4,3,3,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0250,Midline,Sar-e Pol,Solar Water System,Male,7,35,6,0,1,1,1,1,4,7,5,1,4,2,3,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0251,Midline,Jawzjan,Cash for Work,Male,8,49,5,2,3,0,0,0,2,6,5,1,2,0,3,1,0,0,0,0,1,0,0,1,0,1,1.0,Less than a year
+M-0252,Midline,Kabul,Livestock Package,Female,8,41,7,2,6,0,0,2,5,6,2,2,2,3,4,1,1,0,0,0,1,0,0,1,0,1,0.0,A few years
+M-0253,Midline,Samangan,Cash for Work,Male,7,41,7,0,1,1,0,0,3,6,5,0,4,1,6,1,1,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0254,Midline,Jawzjan,Cash for Work,Female,6,27,7,4,6,1,2,2,4,6,4,1,2,2,3,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0255,Midline,Jawzjan,Unconditional Cash Transfer,Male,6,53,7,1,2,0,0,2,4,5,5,1,3,1,1,1,0,0,1,0,0,1,0,0,0,1,1.0,A few years
+M-0256,Midline,Sar-e Pol,Kitchen Garden,Male,7,32,6,3,1,0,1,1,5,4,5,2,5,2,3,1,0,0,0,1,0,0,0,0,0,1,1.0,A few years
+M-0257,Midline,Samangan,Unconditional Cash Transfer,Female,8,36,7,1,1,0,1,0,4,5,7,5,5,7,5,0,0,0,0,0,0,0,0,0,0,1,1.0,Not sure
+M-0258,Midline,Balkh,Cash for Work,Male,8,42,7,0,1,0,1,4,4,5,5,1,2,2,3,1,1,0,1,0,0,1,0,1,0,1,0.0,Long term
+M-0259,Midline,Sar-e Pol,Cash for Work,Female,8,55,7,0,0,0,0,0,4,4,5,4,5,5,5,1,1,0,0,0,0,0,0,1,0,1,1.0,Not sure
+M-0260,Midline,Jawzjan,Kitchen Garden,Female,3,44,7,0,3,0,0,1,3,5,6,4,5,2,3,0,0,0,1,1,0,0,1,1,0,1,1.0,A few years
+M-0261,Midline,Balkh,Livestock Package,Male,9,54,7,7,3,2,4,3,7,4,2,0,3,0,2,1,0,0,1,0,0,1,0,0,0,1,0.0,Long term
+M-0262,Midline,Samangan,Cash for Work,Male,6,37,7,2,1,0,0,0,2,7,5,5,5,4,3,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0263,Midline,Sar-e Pol,Cash for Work,Male,4,25,7,2,1,0,2,2,2,6,6,2,5,2,4,1,0,1,0,0,0,1,0,0,0,1,1.0,A few years
+M-0264,Midline,Balkh,Unconditional Cash Transfer,Male,11,25,7,1,2,0,1,0,4,6,4,4,4,1,3,1,1,0,0,0,0,1,0,1,0,1,1.0,Less than a year
+M-0265,Midline,Samangan,Unconditional Cash Transfer,Male,3,32,7,2,2,0,0,0,5,5,4,2,6,3,3,1,1,0,1,0,0,0,0,1,1,1,1.0,Long term
+M-0266,Midline,Kabul,Livestock Package,Female,7,18,6,0,1,0,1,0,2,4,6,4,7,5,5,1,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0267,Midline,Jawzjan,Livestock Package,Female,6,60,6,2,2,0,2,0,4,5,5,2,2,1,3,0,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0268,Midline,Balkh,Cash for Work,Male,10,18,6,2,4,0,0,0,5,5,7,3,2,0,3,0,1,0,0,0,1,1,0,0,1,1,1.0,Long term
+M-0269,Midline,Sar-e Pol,Cash for Work,Female,4,51,7,0,2,0,0,0,2,5,5,3,7,2,5,0,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0270,Midline,Samangan,Cash for Work,Male,6,44,7,2,3,0,1,2,4,7,4,2,3,1,1,1,0,0,1,0,0,1,0,1,0,1,1.0,Long term
+M-0271,Midline,Balkh,Cash for Work,Male,7,54,6,2,1,1,2,1,5,4,3,4,4,2,2,1,0,0,1,0,1,0,1,1,0,1,0.0,Long term
+M-0272,Midline,Balkh,Cash for Work,Female,7,35,6,0,2,0,0,1,3,5,6,4,5,1,3,1,0,0,1,0,0,1,1,0,0,1,1.0,Long term
+M-0273,Midline,Jawzjan,Cash for Work,Male,11,52,7,0,1,1,0,0,4,4,7,4,5,2,4,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0274,Midline,Sar-e Pol,Cash for Work,Male,8,45,6,2,5,0,0,2,5,6,1,2,3,3,2,1,1,0,0,1,1,0,0,1,0,1,0.0,Long term
+M-0275,Midline,Jawzjan,Livestock Package,Male,7,37,7,1,1,0,0,1,3,5,5,4,4,2,6,1,0,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0276,Midline,Jawzjan,Kitchen Garden,Male,6,34,6,1,1,0,0,0,3,7,5,4,3,1,5,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0277,Midline,Jawzjan,Kitchen Garden,Male,5,46,6,2,2,1,1,0,5,5,5,3,5,1,4,0,0,0,0,0,0,1,0,1,0,1,1.0,A few years
+M-0278,Midline,Sar-e Pol,Cash for Work,Male,2,46,6,0,0,0,0,0,3,3,4,5,7,3,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0279,Midline,Kabul,Cash for Work,Male,2,36,6,0,2,0,0,1,2,6,4,2,4,2,4,1,1,0,0,0,0,0,1,0,0,1,0.0,A few years
+M-0280,Midline,Jawzjan,Kitchen Garden,Male,4,44,5,2,2,1,0,1,3,5,2,2,3,2,2,1,1,0,0,0,1,0,1,1,0,1,1.0,Less than a year
+M-0281,Midline,Jawzjan,Kitchen Garden,Male,7,35,6,1,1,0,0,0,1,4,7,4,4,2,5,0,0,0,1,0,0,0,0,0,1,1,1.0,Not sure
+M-0282,Midline,Samangan,Kitchen Garden,Female,9,23,7,0,2,0,0,0,2,4,6,6,5,3,4,0,0,0,0,1,0,0,0,0,0,1,0.0,A few years
+M-0283,Midline,Faryab,Livestock Package,Male,9,47,6,0,2,0,0,0,3,4,3,6,4,3,2,1,0,1,1,0,0,0,0,1,0,1,1.0,Long term
+M-0284,Midline,Kabul,Livestock Package,Male,9,55,5,0,2,0,0,0,3,6,7,4,6,6,2,1,0,0,1,0,0,0,1,1,0,0,1.0,Not sure
+M-0285,Midline,Faryab,Unconditional Cash Transfer,Male,12,38,6,0,3,0,0,3,5,3,4,3,5,1,1,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0286,Midline,Faryab,Kitchen Garden,Male,9,18,5,1,0,0,0,2,4,6,4,4,3,2,2,1,1,1,0,0,1,0,1,0,0,1,1.0,Less than a year
+M-0287,Midline,Balkh,Kitchen Garden,Male,8,19,7,0,3,0,0,1,3,6,4,5,2,4,5,1,1,0,1,0,0,0,0,0,0,1,1.0,Less than a year
+M-0288,Midline,Faryab,Cash for Work,Male,7,33,7,0,1,1,2,2,4,6,4,2,1,2,0,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0289,Midline,Samangan,Solar Water System,Female,10,23,5,1,0,0,0,0,3,7,6,3,7,1,4,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0290,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,6,48,7,1,3,0,0,0,3,5,5,3,6,2,1,1,1,0,0,0,0,0,0,0,1,1,1.0,Less than a year
+M-0291,Midline,Balkh,Cash for Work,Male,7,29,6,1,3,0,0,2,3,5,5,4,4,3,3,1,1,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0292,Midline,Samangan,Unconditional Cash Transfer,Male,11,25,7,2,3,0,0,0,4,6,5,2,2,2,6,1,0,0,0,0,0,0,0,1,1,1,0.0,Long term
+M-0293,Midline,Balkh,Unconditional Cash Transfer,Male,6,18,7,2,2,1,2,1,3,4,4,1,5,3,4,1,0,0,0,0,0,1,0,1,0,1,0.0,A few years
+M-0294,Midline,Samangan,Cash for Work,Female,5,32,7,1,3,0,0,2,5,5,6,0,4,2,3,1,0,0,0,0,0,0,1,0,0,1,0.0,Long term
+M-0295,Midline,Jawzjan,Livestock Package,Male,5,55,7,0,3,0,0,0,4,5,5,4,3,0,2,1,0,0,0,0,1,0,0,1,0,1,0.0,Less than a year
+M-0296,Midline,Kabul,Livestock Package,Female,6,43,6,1,3,1,1,1,1,4,5,2,7,2,3,1,1,0,0,0,0,1,0,0,0,0,0.0,Less than a year
+M-0297,Midline,Sar-e Pol,Cash for Work,Male,9,46,7,2,2,0,3,2,5,6,1,1,3,1,3,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0298,Midline,Jawzjan,Kitchen Garden,Male,5,37,7,2,1,0,0,0,5,5,6,4,6,0,2,1,0,0,0,1,1,0,0,0,1,0,1.0,A few years
+M-0299,Midline,Balkh,Solar Water System,Male,8,55,7,2,5,1,4,2,6,6,2,0,2,2,2,1,1,0,1,1,0,1,0,1,1,1,1.0,Long term
+M-0300,Midline,Faryab,Unconditional Cash Transfer,Female,9,28,7,2,4,1,0,1,5,7,5,3,1,1,5,1,0,0,0,0,0,0,0,0,1,1,1.0,Less than a year
+M-0301,Midline,Jawzjan,Kitchen Garden,Female,6,25,7,0,0,0,0,0,4,4,7,4,6,2,4,1,0,0,0,0,0,0,0,0,0,1,0.0,Less than a year
+M-0302,Midline,Kabul,Unconditional Cash Transfer,Male,6,46,7,0,1,0,0,0,3,5,4,4,3,3,4,1,0,0,0,1,0,0,0,0,0,1,1.0,Less than a year
+M-0303,Midline,Samangan,Kitchen Garden,Female,8,37,6,0,1,0,0,0,3,6,4,4,5,2,6,1,0,0,0,0,0,0,0,0,0,1,0.0,Long term
+M-0304,Midline,Faryab,Livestock Package,Male,8,28,7,1,5,1,0,2,5,5,1,0,2,2,4,1,1,0,1,0,0,0,0,1,0,1,0.0,Not sure
+M-0305,Midline,Samangan,Solar Water System,Male,9,59,6,1,2,0,1,1,3,7,4,3,3,2,3,1,0,0,0,0,0,0,0,1,1,1,0.0,A few years
+M-0306,Midline,Faryab,Unconditional Cash Transfer,Male,7,44,6,2,3,1,0,2,5,5,4,1,3,5,5,0,1,1,0,0,0,0,0,0,1,1,0.0,Less than a year
+M-0307,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,2,37,7,0,2,1,0,0,5,5,4,5,4,2,5,1,0,0,0,0,1,0,0,0,0,1,1.0,A few years
+M-0308,Midline,Samangan,Solar Water System,Male,4,28,5,1,1,0,0,0,3,2,5,5,4,4,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0309,Midline,Samangan,Unconditional Cash Transfer,Male,9,43,7,2,3,1,2,0,4,5,3,1,2,3,5,1,1,0,1,0,0,1,0,1,1,1,0.0,A few years
+M-0310,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,8,41,5,1,2,0,0,2,3,5,2,2,4,0,1,1,1,0,1,1,0,1,0,1,0,1,1.0,Long term
+M-0311,Midline,Kabul,Unconditional Cash Transfer,Male,5,47,6,1,3,1,1,1,4,3,4,1,4,3,3,1,0,1,1,0,0,0,0,1,0,1,0.0,Long term
+M-0312,Midline,Jawzjan,Cash for Work,Male,5,30,7,1,1,1,0,0,3,5,4,4,6,2,5,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0313,Midline,Balkh,Cash for Work,Male,5,32,6,3,2,0,0,0,3,4,3,1,4,2,4,1,1,1,1,0,1,0,0,0,1,1,1.0,A few years
+M-0314,Midline,Balkh,Livestock Package,Male,9,36,7,0,2,0,0,0,5,5,5,5,5,2,3,1,1,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0315,Midline,Faryab,Unconditional Cash Transfer,Male,3,36,7,1,3,1,0,1,5,5,4,3,4,2,4,1,0,0,0,0,0,1,0,1,1,1,1.0,Less than a year
+M-0316,Midline,Balkh,Cash for Work,Female,3,38,7,2,3,0,3,1,4,5,6,2,5,2,2,1,0,0,1,0,1,0,0,0,1,1,1.0,A few years
+M-0317,Midline,Balkh,Kitchen Garden,Male,2,55,6,0,1,0,0,0,2,7,5,1,4,5,3,1,0,0,1,0,0,0,0,1,0,1,0.0,Not sure
+M-0318,Midline,Balkh,Cash for Work,Male,9,32,7,0,4,1,2,1,6,5,3,1,5,1,1,1,0,0,1,0,0,1,0,1,0,1,1.0,Long term
+M-0319,Midline,Samangan,Cash for Work,Male,9,37,6,3,4,2,1,4,4,5,3,0,2,0,2,1,0,0,1,0,0,1,1,1,0,1,0.0,Less than a year
+M-0320,Midline,Samangan,Kitchen Garden,Male,9,44,7,3,2,1,1,3,6,5,3,2,3,0,2,1,1,0,0,0,0,1,0,0,0,1,0.0,A few years
+M-0321,Midline,Jawzjan,Cash for Work,Female,8,18,7,1,3,0,0,1,6,4,6,3,4,2,4,1,0,0,0,0,1,0,0,0,0,1,1.0,Long term
+M-0322,Midline,Samangan,Unconditional Cash Transfer,Male,5,49,5,0,0,0,0,0,3,4,4,3,4,4,5,1,0,0,0,0,0,1,1,1,0,1,1.0,A few years
+M-0323,Midline,Samangan,Unconditional Cash Transfer,Male,4,57,6,1,4,2,2,2,5,5,3,2,3,1,3,1,1,0,0,0,1,0,0,1,0,1,0.0,A few years
+M-0324,Midline,Balkh,Livestock Package,Male,4,23,7,0,0,0,1,0,4,6,3,4,5,4,4,1,0,0,1,0,0,0,0,0,0,1,0.0,A few years
+M-0325,Midline,Jawzjan,Unconditional Cash Transfer,Male,8,39,7,3,5,3,0,3,6,4,4,0,3,0,3,1,0,0,1,0,0,0,0,1,0,1,1.0,A few years
+M-0326,Midline,Sar-e Pol,Cash for Work,Male,6,61,6,0,3,0,0,0,4,4,7,3,4,3,4,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0327,Midline,Samangan,Cash for Work,Male,10,38,6,0,2,0,0,0,5,6,6,3,6,5,4,1,0,0,0,1,0,1,0,0,0,1,0.0,A few years
+M-0328,Midline,Jawzjan,Cash for Work,Female,5,33,6,0,2,1,0,1,2,4,5,3,4,5,5,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0329,Midline,Samangan,Solar Water System,Female,7,45,6,0,0,1,0,0,4,5,4,4,4,4,4,1,0,0,0,0,0,0,0,0,0,1,0.0,Long term
+M-0330,Midline,Kabul,Solar Water System,Male,5,35,7,1,3,0,0,0,3,3,6,2,3,4,5,0,0,0,1,0,0,1,0,0,0,1,0.0,Less than a year
+M-0331,Midline,Sar-e Pol,Livestock Package,Male,6,33,5,2,3,1,0,1,3,7,1,3,2,2,2,1,0,1,1,1,0,1,0,1,0,1,0.0,Less than a year
+M-0332,Midline,Kabul,Kitchen Garden,Female,7,28,6,2,1,0,0,0,5,6,5,2,4,2,3,1,0,0,0,0,0,0,0,0,0,0,0.0,Long term
+M-0333,Midline,Balkh,Unconditional Cash Transfer,Male,8,18,6,3,4,1,1,0,4,5,3,4,4,2,2,1,1,0,0,0,1,0,0,1,0,1,1.0,A few years
+M-0334,Midline,Jawzjan,Solar Water System,Male,9,18,7,0,4,0,0,2,5,5,5,3,3,2,2,1,0,0,1,1,0,0,0,1,0,1,0.0,Long term
+M-0335,Midline,Sar-e Pol,Solar Water System,Male,9,22,6,3,5,0,1,3,7,5,2,1,2,3,3,0,1,0,1,1,0,0,0,0,1,1,1.0,Long term
+M-0336,Midline,Samangan,Unconditional Cash Transfer,Male,9,49,7,1,2,0,0,1,4,7,5,2,6,1,2,1,1,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0337,Midline,Kabul,Livestock Package,Male,7,31,7,1,5,2,1,3,4,6,4,0,3,2,3,1,0,0,0,0,0,0,0,1,0,1,0.0,Long term
+M-0338,Midline,Kabul,Unconditional Cash Transfer,Female,11,30,7,1,3,1,0,2,3,6,4,2,2,3,2,1,0,0,1,0,1,0,0,1,0,1,1.0,Long term
+M-0339,Midline,Balkh,Unconditional Cash Transfer,Male,6,49,6,1,5,0,1,2,5,5,4,3,5,3,4,1,0,0,1,0,0,1,0,1,0,1,1.0,A few years
+M-0340,Midline,Samangan,Unconditional Cash Transfer,Male,9,55,6,1,3,1,0,3,3,6,1,0,2,1,4,0,1,0,0,1,0,1,0,0,1,1,0.0,Long term
+M-0341,Midline,Samangan,Cash for Work,Male,8,50,7,2,3,0,1,0,6,6,7,3,4,1,2,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0342,Midline,Balkh,Livestock Package,Male,9,21,6,4,4,3,3,4,6,5,3,2,2,3,2,1,1,0,1,0,1,1,0,1,1,1,1.0,Long term
+M-0343,Midline,Samangan,Unconditional Cash Transfer,Female,5,68,7,0,1,0,0,0,4,4,7,3,5,7,5,0,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0344,Midline,Samangan,Unconditional Cash Transfer,Male,8,38,7,0,2,0,0,1,5,5,2,2,3,3,5,1,1,0,0,0,0,0,1,0,0,0,1.0,A few years
+M-0345,Midline,Faryab,Livestock Package,Male,9,56,5,1,2,0,0,0,4,6,5,6,7,4,5,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0346,Midline,Sar-e Pol,Cash for Work,Male,11,56,6,3,4,1,0,3,4,7,2,0,2,0,0,1,1,1,1,0,0,1,1,1,0,1,1.0,A few years
+M-0347,Midline,Kabul,Cash for Work,Male,7,30,7,2,5,0,0,1,3,6,4,2,4,2,4,0,1,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0348,Midline,Faryab,Unconditional Cash Transfer,Male,5,50,7,3,5,1,2,2,3,7,1,1,3,0,2,1,0,0,1,1,0,1,1,1,0,1,1.0,A few years
+M-0349,Midline,Jawzjan,Livestock Package,Female,6,43,7,2,2,0,0,0,3,6,6,3,5,2,4,1,0,0,1,0,0,1,0,0,0,1,0.0,A few years
+M-0350,Midline,Samangan,Solar Water System,Male,5,26,5,0,3,1,0,0,6,7,4,4,3,4,4,1,0,0,0,0,0,1,0,0,0,1,1.0,Long term
+M-0351,Midline,Faryab,Livestock Package,Female,5,30,7,0,2,0,0,0,4,4,6,3,5,3,6,1,0,0,1,1,1,0,0,1,0,0,1.0,Less than a year
+M-0352,Midline,Samangan,Livestock Package,Male,6,50,5,2,2,0,0,1,4,5,5,3,3,3,4,1,0,1,0,0,0,1,1,1,0,1,1.0,Long term
+M-0353,Midline,Kabul,Kitchen Garden,Male,9,57,7,3,6,2,0,3,5,6,2,1,2,2,3,1,1,0,1,0,1,0,0,1,1,1,0.0,Long term
+M-0354,Midline,Balkh,Unconditional Cash Transfer,Male,3,28,5,1,3,1,1,0,5,5,5,2,4,1,4,1,1,0,0,0,0,0,1,0,0,1,1.0,A few years
+M-0355,Midline,Balkh,Unconditional Cash Transfer,Male,6,21,5,2,3,0,0,2,4,5,3,2,5,0,3,1,0,0,0,0,0,0,0,1,0,1,0.0,Less than a year
+M-0356,Midline,Samangan,Unconditional Cash Transfer,Male,8,35,4,1,1,1,0,2,4,7,5,2,4,4,4,0,0,0,0,0,0,0,0,0,0,1,0.0,Less than a year
+M-0357,Midline,Faryab,Unconditional Cash Transfer,Male,8,44,6,1,4,1,0,2,3,7,3,0,1,2,1,1,1,0,1,0,0,0,1,1,0,1,0.0,Long term
+M-0358,Midline,Samangan,Cash for Work,Female,7,36,5,1,1,0,2,0,4,4,3,4,6,0,3,1,0,0,0,1,0,1,0,0,0,1,1.0,Long term
+M-0359,Midline,Kabul,Kitchen Garden,Male,8,26,7,1,2,2,0,0,5,6,4,3,3,0,4,1,1,0,1,1,0,0,0,0,0,1,0.0,Less than a year
+M-0360,Midline,Balkh,Cash for Work,Female,6,42,7,2,4,1,0,4,5,6,1,1,3,0,0,1,0,0,1,0,0,0,1,1,1,1,0.0,Long term
+M-0361,Midline,Samangan,Unconditional Cash Transfer,Male,9,42,7,1,3,1,1,3,4,7,3,0,3,3,2,1,0,0,1,1,1,0,1,1,0,1,1.0,Less than a year
+M-0362,Midline,Kabul,Livestock Package,Female,11,31,5,1,2,1,0,1,4,3,2,4,3,4,4,1,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+M-0363,Midline,Jawzjan,Unconditional Cash Transfer,Male,5,40,6,0,1,0,0,1,4,6,5,3,6,2,2,1,1,0,0,0,0,1,0,1,0,1,0.0,A few years
+M-0364,Midline,Balkh,Solar Water System,Male,6,27,6,3,6,3,0,3,6,6,2,2,2,0,2,1,1,0,1,0,0,1,0,1,1,1,1.0,Long term
+M-0365,Midline,Samangan,Livestock Package,Female,8,33,7,1,2,0,0,1,5,6,5,3,6,3,7,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0366,Midline,Faryab,Livestock Package,Male,9,65,7,0,2,0,0,0,4,4,4,4,4,2,4,1,0,0,0,0,0,1,0,0,0,1,0.0,A few years
+M-0367,Midline,Kabul,Cash for Work,Male,7,52,7,2,4,0,3,3,5,7,4,2,2,0,0,1,1,0,1,1,1,1,0,1,0,1,0.0,A few years
+M-0368,Midline,Sar-e Pol,Cash for Work,Male,9,18,6,1,2,0,0,0,5,5,7,4,5,4,4,1,0,1,0,0,0,0,0,0,0,1,1.0,A few years
+M-0369,Midline,Samangan,Unconditional Cash Transfer,Male,7,39,7,2,2,0,1,0,3,5,3,2,3,1,5,0,1,0,0,1,1,1,0,0,0,0,1.0,A few years
+M-0370,Midline,Faryab,Kitchen Garden,Female,6,27,5,3,5,1,0,0,4,6,5,3,4,3,5,1,0,0,0,0,0,0,1,1,0,1,0.0,A few years
+M-0371,Midline,Balkh,Unconditional Cash Transfer,Female,3,39,6,0,3,0,0,1,3,5,5,1,4,3,3,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0372,Midline,Faryab,Kitchen Garden,Male,10,20,6,0,2,0,0,0,4,4,6,2,4,5,4,1,0,1,1,0,1,0,0,0,0,1,0.0,A few years
+M-0373,Midline,Balkh,Cash for Work,Male,8,38,4,1,4,1,1,1,5,4,4,1,2,1,2,1,1,0,1,0,0,0,1,1,0,1,1.0,A few years
+M-0374,Midline,Balkh,Cash for Work,Male,8,33,6,0,2,1,0,0,4,6,4,3,5,3,3,1,0,0,0,1,0,0,0,0,0,1,0.0,Long term
+M-0375,Midline,Balkh,Livestock Package,Female,11,36,7,0,2,0,0,1,4,6,4,2,4,3,1,1,0,0,1,0,0,1,0,1,1,1,0.0,A few years
+M-0376,Midline,Kabul,Kitchen Garden,Male,2,56,7,0,1,0,0,2,4,5,3,1,4,2,3,0,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0377,Midline,Faryab,Solar Water System,Male,10,45,7,3,2,1,0,1,5,4,4,4,4,4,3,1,0,1,0,1,0,0,0,1,0,1,1.0,A few years
+M-0378,Midline,Balkh,Livestock Package,Male,10,57,7,3,5,1,0,1,3,6,3,3,5,1,4,1,1,0,1,0,0,0,0,1,0,1,0.0,Less than a year
+M-0379,Midline,Faryab,Solar Water System,Male,10,42,7,0,2,0,1,0,3,5,4,4,5,5,4,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0380,Midline,Kabul,Cash for Work,Male,2,56,6,1,5,0,2,2,5,6,3,2,3,4,3,1,1,0,1,1,1,1,1,1,0,1,1.0,A few years
+M-0381,Midline,Kabul,Solar Water System,Female,5,48,6,1,1,1,0,0,4,6,5,4,2,3,1,1,0,0,0,0,0,0,0,1,0,1,0.0,A few years
+M-0382,Midline,Sar-e Pol,Unconditional Cash Transfer,Female,7,39,6,0,4,1,0,2,5,5,4,2,5,2,3,1,0,1,0,0,0,0,0,1,1,1,0.0,Less than a year
+M-0383,Midline,Samangan,Solar Water System,Male,6,68,6,0,3,0,0,0,4,5,4,4,5,3,3,1,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+M-0384,Midline,Faryab,Unconditional Cash Transfer,Male,8,56,6,0,3,0,0,0,3,6,6,5,5,5,4,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0385,Midline,Faryab,Unconditional Cash Transfer,Male,8,38,7,0,0,1,1,1,4,5,5,3,5,3,5,1,0,0,1,0,1,0,0,0,0,1,1.0,A few years
+M-0386,Midline,Balkh,Livestock Package,Female,6,36,6,0,2,0,1,1,4,5,5,2,4,0,3,1,0,0,1,0,0,0,0,0,0,1,0.0,A few years
+M-0387,Midline,Faryab,Cash for Work,Male,9,33,5,0,0,1,0,0,4,5,4,4,5,3,4,1,0,0,1,0,0,0,0,0,0,1,0.0,Long term
+M-0388,Midline,Jawzjan,Solar Water System,Male,9,35,6,0,1,0,2,0,4,5,5,4,5,2,3,1,1,0,0,0,0,0,0,0,0,1,0.0,Less than a year
+M-0389,Midline,Samangan,Unconditional Cash Transfer,Male,6,46,7,2,4,0,0,1,3,5,6,4,4,3,4,1,1,0,0,0,0,0,0,1,0,1,0.0,A few years
+M-0390,Midline,Jawzjan,Cash for Work,Female,7,47,7,2,4,0,1,2,6,5,4,1,2,3,4,0,1,0,0,0,1,0,0,0,0,1,0.0,Not sure
+M-0391,Midline,Sar-e Pol,Solar Water System,Male,6,23,6,3,3,3,0,3,5,6,3,1,2,2,3,0,0,0,1,0,0,1,0,1,0,1,0.0,Long term
+M-0392,Midline,Jawzjan,Livestock Package,Male,6,33,7,1,3,1,1,4,5,6,6,3,1,2,3,1,1,0,1,0,1,1,0,1,0,1,1.0,Not sure
+M-0393,Midline,Kabul,Unconditional Cash Transfer,Male,8,46,6,1,3,4,0,2,7,4,4,0,1,1,2,1,1,0,1,1,0,1,1,1,0,1,0.0,A few years
+M-0394,Midline,Sar-e Pol,Kitchen Garden,Male,5,23,7,0,2,0,0,0,3,6,4,3,4,3,2,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0395,Midline,Jawzjan,Unconditional Cash Transfer,Male,6,57,6,0,4,2,1,2,5,7,3,2,2,1,3,1,1,0,1,0,1,0,0,1,0,1,0.0,Long term
+M-0396,Midline,Faryab,Cash for Work,Male,9,27,5,2,0,0,0,0,5,5,7,4,1,1,5,0,1,0,0,0,0,1,0,0,0,1,1.0,A few years
+M-0397,Midline,Sar-e Pol,Cash for Work,Male,2,47,7,0,1,1,0,0,3,6,5,4,7,4,5,0,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+M-0398,Midline,Faryab,Cash for Work,Female,7,47,7,1,3,1,1,0,7,4,4,2,1,1,3,1,1,0,1,0,0,0,0,1,0,1,0.0,Long term
+M-0399,Midline,Balkh,Cash for Work,Male,11,46,7,3,4,1,1,3,2,6,4,3,1,5,3,1,0,0,0,0,1,0,1,1,0,1,0.0,A few years
+M-0400,Midline,Jawzjan,Cash for Work,Male,7,22,4,0,3,0,1,0,5,5,5,5,3,2,2,0,0,0,0,0,0,0,1,0,0,1,1.0,Less than a year
+M-0401,Midline,Jawzjan,Solar Water System,Male,9,37,7,3,4,2,2,2,5,5,3,0,1,2,2,1,1,0,1,1,0,1,0,1,0,1,0.0,A few years
+M-0402,Midline,Kabul,Unconditional Cash Transfer,Female,5,41,6,2,2,0,0,2,5,4,5,4,1,1,2,1,1,0,1,0,0,1,1,1,0,1,1.0,A few years
+M-0403,Midline,Jawzjan,Solar Water System,Male,11,35,7,1,3,0,0,1,6,5,2,2,2,3,2,1,1,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0404,Midline,Faryab,Unconditional Cash Transfer,Male,11,34,6,0,1,0,0,0,2,6,7,4,7,2,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0405,Midline,Faryab,Livestock Package,Male,8,46,7,1,3,0,1,1,7,5,3,0,2,1,2,1,1,0,0,1,1,1,0,0,1,1,1.0,A few years
+M-0406,Midline,Samangan,Livestock Package,Male,9,46,6,3,2,1,0,0,5,4,3,2,3,2,4,1,0,0,0,0,0,0,0,0,0,1,1.0,Not sure
+M-0407,Midline,Faryab,Cash for Work,Male,5,42,5,0,0,0,0,0,5,4,6,5,6,2,5,1,0,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0408,Midline,Kabul,Livestock Package,Female,7,52,7,2,2,0,1,1,3,6,5,1,7,2,4,1,0,0,0,0,0,0,0,1,0,1,1.0,Long term
+M-0409,Midline,Samangan,Kitchen Garden,Female,5,40,5,0,0,0,0,0,2,3,6,6,5,3,5,1,0,0,0,0,0,0,0,1,0,1,0.0,A few years
+M-0410,Midline,Kabul,Cash for Work,Male,6,42,6,0,3,2,1,3,5,6,3,3,4,1,1,1,0,0,1,0,0,0,0,0,0,1,0.0,A few years
+M-0411,Midline,Kabul,Cash for Work,Male,4,23,7,0,2,1,0,0,3,6,5,1,6,1,2,1,0,0,0,0,1,0,1,0,1,1,1.0,Long term
+M-0412,Midline,Sar-e Pol,Cash for Work,Female,7,61,5,1,3,0,1,2,5,4,4,3,4,3,3,1,0,0,0,1,0,1,0,0,0,0,1.0,A few years
+M-0413,Midline,Jawzjan,Kitchen Garden,Male,7,45,5,0,2,0,0,0,4,6,7,6,6,4,3,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+M-0414,Midline,Sar-e Pol,Unconditional Cash Transfer,Male,9,41,6,0,1,0,0,0,6,5,7,3,3,3,4,1,0,0,0,0,0,0,0,1,0,1,0.0,A few years
+M-0415,Midline,Jawzjan,Livestock Package,Male,4,35,6,0,2,0,0,1,3,5,6,3,6,3,2,1,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+M-0416,Midline,Kabul,Cash for Work,Female,10,48,6,1,3,2,2,2,5,5,4,1,2,1,2,1,0,0,1,0,0,0,0,1,1,1,1.0,Long term
+M-0417,Midline,Sar-e Pol,Livestock Package,Male,6,28,7,1,3,0,0,0,4,5,6,3,3,2,2,1,0,0,1,0,0,0,0,0,1,1,1.0,A few years
+M-0418,Midline,Faryab,Kitchen Garden,Male,5,20,4,1,2,0,1,0,2,6,7,3,3,1,0,0,0,0,1,0,0,1,0,1,0,1,1.0,Long term
+M-0419,Midline,Kabul,Unconditional Cash Transfer,Female,5,34,5,0,0,1,0,0,5,6,4,4,5,2,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+M-0420,Midline,Sar-e Pol,Cash for Work,Male,3,43,5,0,1,0,0,2,6,4,5,3,5,4,3,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0421,Midline,Samangan,Livestock Package,Male,7,28,6,0,2,1,0,0,4,5,5,3,3,2,4,1,0,0,0,1,0,0,0,0,0,1,1.0,Long term
+M-0422,Midline,Kabul,Unconditional Cash Transfer,Male,4,44,5,1,3,0,2,1,7,6,4,3,2,2,2,1,1,0,0,0,0,0,1,1,0,1,0.0,Long term
+M-0423,Midline,Jawzjan,Kitchen Garden,Male,8,23,5,2,0,0,0,0,3,5,5,4,5,4,4,1,0,1,0,0,0,0,0,0,0,1,1.0,Less than a year
+M-0424,Midline,Faryab,Livestock Package,Male,8,38,7,2,2,2,0,1,6,4,2,1,2,0,3,1,0,0,1,1,1,0,0,1,0,1,1.0,A few years
+M-0425,Midline,Sar-e Pol,Cash for Work,Male,6,41,6,2,3,1,2,2,5,3,2,2,2,1,1,1,1,0,1,1,1,0,1,0,0,1,1.0,Long term
+M-0426,Midline,Kabul,Livestock Package,Male,7,40,6,1,2,1,2,0,4,4,6,5,6,1,4,1,0,0,1,0,0,0,0,0,0,1,0.0,Long term
+M-0427,Midline,Kabul,Livestock Package,Male,7,38,7,0,2,0,0,0,3,4,5,2,4,2,3,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+M-0428,Midline,Balkh,Cash for Work,Male,5,58,6,1,3,2,2,2,5,5,4,2,1,1,1,1,0,1,1,0,0,0,0,1,0,1,1.0,Long term
+M-0429,Midline,Jawzjan,Unconditional Cash Transfer,Female,6,18,5,2,4,0,0,2,5,5,3,0,4,2,3,0,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+M-0430,Midline,Balkh,Cash for Work,Male,6,33,7,0,3,0,1,1,3,4,3,3,3,3,3,1,0,0,1,0,0,0,0,1,1,1,0.0,A few years
+E-0001,Endline,Faryab,Kitchen Garden,Male,5,43,7,1,4,1,1,1,5,6,4,0,2,2,2,1,0,0,0,0,1,1,0,1,0,1,0.0,Less than a year
+E-0002,Endline,Samangan,Unconditional Cash Transfer,Male,5,42,7,1,4,0,1,2,4,5,5,1,4,4,5,1,0,0,1,0,1,0,1,1,0,1,1.0,A few years
+E-0003,Endline,Kabul,Livestock Package,Male,7,37,6,1,4,1,2,2,6,4,2,0,4,1,2,1,0,0,1,0,1,1,1,0,1,1,1.0,A few years
+E-0004,Endline,Faryab,Kitchen Garden,Male,6,22,6,3,3,1,2,3,5,6,5,3,3,0,2,1,1,1,1,1,1,1,1,1,1,1,1.0,A few years
+E-0005,Endline,Sar-e Pol,Solar Water System,Female,8,35,7,2,5,2,0,2,7,5,4,3,5,2,3,1,1,0,1,0,0,0,0,1,1,1,1.0,A few years
+E-0006,Endline,Sar-e Pol,Cash for Work,Female,7,53,7,1,1,2,1,0,4,5,5,2,4,0,4,1,1,0,1,1,0,1,1,1,0,1,1.0,A few years
+E-0007,Endline,Samangan,Unconditional Cash Transfer,Male,10,32,5,1,3,0,0,1,4,5,5,4,5,3,3,1,1,0,1,0,0,0,0,1,0,1,0.0,Long term
+E-0008,Endline,Sar-e Pol,Cash for Work,Male,4,40,7,3,6,2,2,3,5,6,2,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,1.0,A few years
+E-0009,Endline,Samangan,Livestock Package,Male,7,42,6,0,3,1,0,2,7,4,3,2,5,0,0,1,0,0,0,0,0,0,1,1,0,1,0.0,Not sure
+E-0010,Endline,Kabul,Cash for Work,Male,8,27,7,2,6,2,3,1,4,6,2,3,3,0,0,1,0,0,1,1,0,0,0,1,0,1,0.0,A few years
+E-0011,Endline,Sar-e Pol,Solar Water System,Male,5,58,7,2,4,2,1,3,5,7,2,1,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1.0,A few years
+E-0012,Endline,Kabul,Cash for Work,Male,6,40,7,0,2,0,0,0,5,5,3,2,3,3,3,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+E-0013,Endline,Kabul,Kitchen Garden,Male,8,32,6,3,5,2,3,2,5,5,0,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1.0,Long term
+E-0014,Endline,Faryab,Livestock Package,Male,7,25,6,0,2,0,0,1,5,4,6,5,4,1,2,1,0,0,0,0,0,0,0,1,0,1,0.0,Long term
+E-0015,Endline,Samangan,Unconditional Cash Transfer,Male,9,40,4,2,4,0,1,3,3,5,3,1,2,3,3,1,1,0,0,0,0,0,1,1,0,1,0.0,A few years
+E-0016,Endline,Kabul,Livestock Package,Male,8,47,6,2,4,1,1,1,6,5,1,1,2,2,3,0,0,0,1,0,0,0,0,0,1,1,1.0,Less than a year
+E-0017,Endline,Samangan,Livestock Package,Female,4,27,7,2,2,0,0,0,3,5,5,4,3,2,5,1,0,0,1,0,1,0,0,1,0,1,0.0,Less than a year
+E-0018,Endline,Faryab,Cash for Work,Male,9,42,6,1,3,0,0,0,5,6,5,2,4,5,3,1,0,0,1,0,1,0,0,1,0,1,1.0,A few years
+E-0019,Endline,Faryab,Unconditional Cash Transfer,Male,8,41,7,2,3,3,1,1,5,6,2,0,2,3,3,1,0,0,1,0,0,1,1,1,0,0,1.0,A few years
+E-0020,Endline,Jawzjan,Unconditional Cash Transfer,Male,4,18,7,3,4,2,2,4,5,7,2,0,1,2,4,1,0,0,1,0,0,1,1,1,1,1,0.0,Not sure
+E-0021,Endline,Samangan,Livestock Package,Male,2,60,6,2,4,1,3,1,4,5,0,2,5,3,4,1,0,0,0,0,0,1,0,1,1,1,1.0,Not sure
+E-0022,Endline,Faryab,Kitchen Garden,Female,9,33,7,3,5,2,1,4,6,6,2,2,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1.0,Less than a year
+E-0023,Endline,Sar-e Pol,Cash for Work,Female,3,39,6,1,2,1,0,1,6,6,3,1,3,1,1,0,1,0,0,1,0,0,1,0,0,1,1.0,A few years
+E-0024,Endline,Jawzjan,Solar Water System,Male,6,44,6,1,4,1,3,3,4,6,4,3,0,1,2,1,1,0,1,0,0,0,1,1,0,1,1.0,A few years
+E-0025,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,8,26,7,1,3,0,1,2,3,5,5,2,2,1,2,1,0,0,0,0,1,1,0,1,0,1,0.0,A few years
+E-0026,Endline,Sar-e Pol,Kitchen Garden,Male,9,29,7,2,2,1,2,0,6,4,4,3,1,1,2,1,1,0,1,0,1,0,0,1,1,1,1.0,Long term
+E-0027,Endline,Samangan,Solar Water System,Female,4,34,7,1,2,0,0,1,6,4,4,4,3,1,2,1,1,0,0,0,1,0,0,0,1,1,1.0,A few years
+E-0028,Endline,Balkh,Livestock Package,Male,8,35,7,3,7,1,1,2,4,7,1,3,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1.0,A few years
+E-0029,Endline,Faryab,Livestock Package,Male,9,40,7,1,3,1,0,2,4,5,5,3,5,2,5,1,0,0,1,0,0,0,0,1,0,1,1.0,Not sure
+E-0030,Endline,Samangan,Kitchen Garden,Male,12,36,6,0,1,0,1,3,6,7,4,3,4,1,4,1,0,1,1,1,0,0,0,1,0,1,1.0,Not sure
+E-0031,Endline,Balkh,Solar Water System,Male,10,45,7,2,4,0,1,2,4,5,4,0,2,1,1,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0032,Endline,Balkh,Solar Water System,Male,10,44,7,2,4,2,0,1,5,7,2,1,3,0,4,0,0,0,1,0,0,1,0,1,1,1,0.0,Long term
+E-0033,Endline,Balkh,Kitchen Garden,Female,10,28,7,2,2,0,0,0,1,5,4,4,4,3,2,1,0,0,0,0,0,0,1,1,0,1,1.0,Not sure
+E-0034,Endline,Jawzjan,Livestock Package,Male,9,57,5,2,3,1,1,1,5,7,5,1,3,0,3,0,0,0,1,0,0,0,0,0,1,1,1.0,Less than a year
+E-0035,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,3,53,6,0,3,1,0,1,4,5,4,1,2,2,2,1,1,0,0,0,0,0,1,0,0,1,0.0,A few years
+E-0036,Endline,Jawzjan,Solar Water System,Female,8,35,7,1,2,0,2,1,5,2,4,2,3,1,3,0,1,0,1,0,0,0,0,0,0,1,0.0,A few years
+E-0037,Endline,Sar-e Pol,Cash for Work,Male,6,37,7,1,1,0,0,1,4,5,0,0,4,4,3,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0038,Endline,Kabul,Unconditional Cash Transfer,Male,8,40,7,1,3,0,1,3,4,5,4,2,1,1,3,1,0,0,1,1,0,0,1,1,0,1,1.0,A few years
+E-0039,Endline,Samangan,Livestock Package,Male,8,34,7,3,4,0,1,0,3,6,3,4,3,1,3,1,0,0,1,0,0,0,0,0,0,1,0.0,Less than a year
+E-0040,Endline,Balkh,Kitchen Garden,Female,10,58,7,2,2,1,0,3,3,6,5,0,2,1,1,1,0,0,1,0,1,0,0,1,0,1,0.0,Not sure
+E-0041,Endline,Faryab,Unconditional Cash Transfer,Male,8,22,4,0,2,1,2,2,3,7,4,5,3,2,4,1,1,0,1,1,1,0,0,1,0,1,0.0,A few years
+E-0042,Endline,Jawzjan,Cash for Work,Male,5,41,7,3,7,2,3,6,5,4,0,2,0,0,0,0,1,0,1,0,0,1,1,1,1,1,0.0,A few years
+E-0043,Endline,Jawzjan,Kitchen Garden,Female,6,42,7,1,3,1,1,1,5,7,2,0,2,1,1,1,0,0,1,0,1,1,0,1,1,0,1.0,A few years
+E-0044,Endline,Sar-e Pol,Solar Water System,Male,6,23,5,2,3,0,0,0,5,4,6,4,4,4,3,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+E-0045,Endline,Kabul,Cash for Work,Male,9,40,6,3,3,4,1,1,3,6,4,3,6,2,2,0,0,0,1,0,0,1,0,1,0,1,1.0,Less than a year
+E-0046,Endline,Faryab,Solar Water System,Male,9,36,6,1,2,0,2,2,3,4,4,3,4,3,4,1,0,0,1,0,0,0,1,0,0,1,1.0,Less than a year
+E-0047,Endline,Samangan,Cash for Work,Male,9,20,6,3,6,2,1,4,6,7,2,0,5,1,0,1,1,1,1,1,0,1,0,1,0,1,1.0,Long term
+E-0048,Endline,Kabul,Kitchen Garden,Male,4,38,7,4,5,3,0,3,5,6,4,2,2,1,1,1,1,0,1,1,1,1,1,1,1,1,1.0,Long term
+E-0049,Endline,Samangan,Cash for Work,Male,9,55,7,0,1,1,0,2,5,4,6,1,3,4,4,1,0,0,0,0,0,1,0,1,0,1,0.0,A few years
+E-0050,Endline,Samangan,Cash for Work,Male,4,46,6,1,3,1,1,1,3,3,5,2,4,3,1,1,1,1,0,0,0,0,0,0,0,1,1.0,Long term
+E-0051,Endline,Samangan,Solar Water System,Female,10,33,7,1,5,2,2,1,5,7,0,0,1,1,5,1,1,0,1,0,1,1,1,1,0,1,1.0,Long term
+E-0052,Endline,Faryab,Cash for Work,Male,5,61,5,0,3,1,0,0,3,6,6,3,3,2,3,1,0,0,1,0,0,0,0,1,0,1,0.0,Less than a year
+E-0053,Endline,Faryab,Livestock Package,Female,6,34,7,0,2,0,0,0,4,6,5,3,5,1,4,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0054,Endline,Jawzjan,Unconditional Cash Transfer,Male,7,38,4,1,2,2,0,0,5,5,5,4,4,2,5,1,1,0,1,1,0,0,0,1,1,1,1.0,A few years
+E-0055,Endline,Sar-e Pol,Kitchen Garden,Female,5,18,6,2,5,3,2,2,5,6,1,1,0,2,4,1,1,0,1,0,0,1,0,1,0,1,0.0,A few years
+E-0056,Endline,Samangan,Livestock Package,Male,7,59,7,4,5,2,2,2,5,5,2,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,0.0,Long term
+E-0057,Endline,Kabul,Unconditional Cash Transfer,Male,4,48,7,0,3,0,4,3,3,5,3,2,2,1,4,1,0,0,1,1,0,0,0,1,0,1,1.0,A few years
+E-0058,Endline,Samangan,Kitchen Garden,Male,3,36,5,2,2,2,2,1,5,5,2,1,2,1,1,1,1,0,1,0,1,1,1,0,0,1,0.0,Long term
+E-0059,Endline,Sar-e Pol,Cash for Work,Male,5,46,7,3,2,0,1,1,3,5,6,5,2,1,4,1,1,0,1,0,1,0,1,1,1,1,0.0,Less than a year
+E-0060,Endline,Jawzjan,Livestock Package,Male,5,50,7,2,3,2,1,2,5,5,1,2,1,1,1,1,0,0,1,0,0,1,1,1,0,1,0.0,Long term
+E-0061,Endline,Faryab,Unconditional Cash Transfer,Male,8,24,5,3,4,0,2,2,6,6,2,1,2,0,1,1,1,0,1,0,1,0,1,0,0,1,1.0,Less than a year
+E-0062,Endline,Jawzjan,Unconditional Cash Transfer,Male,6,40,7,2,7,2,1,1,3,7,2,0,4,0,2,1,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0063,Endline,Jawzjan,Unconditional Cash Transfer,Female,6,62,7,1,4,0,1,1,4,7,3,2,1,2,3,1,1,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+E-0064,Endline,Balkh,Livestock Package,Male,5,49,6,3,5,2,2,2,6,3,3,0,2,0,0,1,0,1,0,1,1,1,0,1,0,1,1.0,Long term
+E-0065,Endline,Faryab,Solar Water System,Female,5,36,7,4,6,1,1,2,5,6,3,0,0,1,4,1,0,1,1,1,1,1,1,1,1,1,0.0,Less than a year
+E-0066,Endline,Kabul,Kitchen Garden,Male,9,36,7,0,4,0,1,3,5,6,3,0,2,2,2,1,1,0,1,1,0,1,1,1,0,1,1.0,A few years
+E-0067,Endline,Balkh,Cash for Work,Male,6,41,7,2,2,0,2,2,3,5,2,0,3,2,3,1,0,0,1,1,0,1,1,1,0,1,1.0,Not sure
+E-0068,Endline,Balkh,Cash for Work,Female,7,24,7,1,3,0,0,0,5,6,4,1,3,1,3,1,1,0,1,1,0,1,0,0,0,1,1.0,A few years
+E-0069,Endline,Jawzjan,Cash for Work,Male,8,42,6,0,3,0,0,1,5,6,5,3,6,3,3,1,0,0,0,0,1,0,1,0,0,1,1.0,A few years
+E-0070,Endline,Kabul,Livestock Package,Male,7,26,7,3,5,0,1,1,5,6,3,1,3,1,0,1,1,0,1,0,0,0,1,0,0,1,1.0,Not sure
+E-0071,Endline,Samangan,Livestock Package,Male,2,58,7,3,3,3,1,2,7,5,0,0,5,0,1,1,1,0,1,1,0,1,1,0,1,0,0.0,A few years
+E-0072,Endline,Kabul,Cash for Work,Male,7,47,7,4,5,1,0,5,5,6,1,4,0,1,0,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+E-0073,Endline,Balkh,Cash for Work,Male,6,36,6,1,4,0,2,0,4,6,3,2,4,2,1,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0074,Endline,Kabul,Cash for Work,Male,4,35,7,1,4,1,0,0,4,5,2,4,4,3,3,1,1,0,1,0,0,1,0,1,0,1,1.0,A few years
+E-0075,Endline,Faryab,Kitchen Garden,Female,9,35,7,2,3,0,2,3,4,5,3,1,5,1,3,1,1,0,0,1,0,0,1,1,1,1,0.0,A few years
+E-0076,Endline,Balkh,Unconditional Cash Transfer,Female,8,42,5,2,2,3,2,2,4,6,2,2,2,3,1,1,1,0,1,1,0,0,0,0,0,1,1.0,Long term
+E-0077,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,3,31,7,0,0,0,0,0,3,5,4,4,5,4,3,1,1,0,1,0,0,0,1,0,1,1,1.0,A few years
+E-0078,Endline,Samangan,Unconditional Cash Transfer,Male,5,24,6,4,6,4,2,3,6,5,4,2,2,1,0,1,1,0,0,0,0,1,0,1,1,1,1.0,Not sure
+E-0079,Endline,Samangan,Cash for Work,Male,7,22,6,3,5,2,2,1,5,6,1,3,1,1,2,1,0,0,0,1,0,1,0,1,1,1,1.0,Less than a year
+E-0080,Endline,Jawzjan,Livestock Package,Female,5,53,6,1,3,1,1,2,3,6,4,4,4,2,3,0,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+E-0081,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,7,46,7,1,5,1,0,2,6,5,3,0,1,3,3,1,1,0,1,1,0,0,1,1,1,1,1.0,Long term
+E-0082,Endline,Balkh,Unconditional Cash Transfer,Male,8,38,6,4,5,2,1,3,5,6,3,1,0,2,1,1,1,1,1,0,1,1,0,1,1,1,0.0,A few years
+E-0083,Endline,Samangan,Solar Water System,Male,9,45,7,2,4,0,3,2,6,5,3,0,1,2,2,1,1,1,1,0,0,1,1,1,0,0,1.0,Long term
+E-0084,Endline,Balkh,Kitchen Garden,Male,3,37,5,1,2,0,0,0,3,5,5,1,3,3,4,1,0,0,1,0,1,0,0,1,1,1,1.0,A few years
+E-0085,Endline,Kabul,Livestock Package,Male,7,44,5,3,4,1,1,1,5,7,4,1,4,0,1,1,1,0,1,0,1,1,1,1,0,1,1.0,A few years
+E-0086,Endline,Jawzjan,Kitchen Garden,Male,8,37,6,2,3,2,2,2,5,6,4,3,2,1,3,1,0,1,1,0,0,0,0,1,0,1,0.0,Long term
+E-0087,Endline,Samangan,Cash for Work,Female,9,45,5,1,0,1,0,1,5,5,6,3,6,4,6,1,1,0,0,0,0,0,0,0,0,1,1.0,Less than a year
+E-0088,Endline,Balkh,Livestock Package,Male,5,42,6,2,4,3,2,2,6,7,3,1,3,0,2,1,1,0,1,0,0,1,1,1,0,1,1.0,Long term
+E-0089,Endline,Jawzjan,Livestock Package,Female,5,30,6,2,5,1,0,2,6,6,4,0,2,0,0,1,0,0,1,0,0,0,1,1,1,0,1.0,Long term
+E-0090,Endline,Faryab,Cash for Work,Male,5,44,7,3,5,1,0,3,5,7,1,0,0,2,0,1,1,1,0,1,0,1,0,1,0,1,1.0,Less than a year
+E-0091,Endline,Samangan,Cash for Work,Male,6,53,7,1,6,3,1,3,5,4,2,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,1.0,A few years
+E-0092,Endline,Faryab,Unconditional Cash Transfer,Male,7,31,7,2,0,1,0,0,3,6,3,1,4,2,5,1,0,0,0,0,1,0,0,1,1,1,1.0,Long term
+E-0093,Endline,Sar-e Pol,Cash for Work,Male,7,29,7,2,3,2,2,3,5,4,2,1,2,0,1,1,1,0,1,0,0,1,0,1,1,1,1.0,Long term
+E-0094,Endline,Sar-e Pol,Livestock Package,Male,6,40,7,2,4,1,1,0,4,7,2,0,3,5,3,1,1,0,0,0,1,1,0,1,1,1,0.0,A few years
+E-0095,Endline,Balkh,Kitchen Garden,Male,5,41,7,2,4,1,0,2,5,7,4,2,2,1,1,1,1,0,1,0,0,1,1,1,0,1,1.0,A few years
+E-0096,Endline,Samangan,Livestock Package,Male,6,42,6,2,4,1,0,0,6,7,4,5,3,0,2,1,0,1,1,0,0,1,0,0,0,1,1.0,A few years
+E-0097,Endline,Samangan,Cash for Work,Male,7,44,6,0,4,0,0,1,4,5,7,7,2,3,3,0,1,0,1,0,0,0,0,1,1,1,1.0,A few years
+E-0098,Endline,Jawzjan,Unconditional Cash Transfer,Male,9,39,7,2,4,1,1,3,3,7,3,2,4,0,5,1,0,1,1,0,0,1,1,1,1,1,1.0,A few years
+E-0099,Endline,Balkh,Unconditional Cash Transfer,Male,9,34,6,1,2,0,1,1,4,6,4,1,5,2,2,1,1,0,0,0,0,0,1,0,0,1,1.0,A few years
+E-0100,Endline,Sar-e Pol,Kitchen Garden,Male,8,44,7,2,4,0,1,4,6,6,3,0,0,3,2,1,0,0,1,1,0,1,0,1,0,1,1.0,Not sure
+E-0101,Endline,Samangan,Livestock Package,Female,6,27,7,0,3,1,0,0,3,5,5,2,2,2,4,1,0,0,0,1,0,0,1,0,0,1,1.0,A few years
+E-0102,Endline,Kabul,Unconditional Cash Transfer,Male,8,39,7,0,4,0,2,3,6,7,2,1,2,0,4,1,1,0,1,0,0,0,0,1,1,1,1.0,Less than a year
+E-0103,Endline,Kabul,Cash for Work,Male,3,43,7,2,3,0,3,2,3,7,3,0,2,0,0,1,1,1,1,0,0,0,0,1,0,1,1.0,Long term
+E-0104,Endline,Faryab,Unconditional Cash Transfer,Male,5,27,7,3,3,2,0,4,5,5,4,0,3,3,1,1,0,0,1,0,1,0,0,1,0,1,1.0,A few years
+E-0105,Endline,Sar-e Pol,Kitchen Garden,Female,13,32,7,2,3,2,0,1,4,5,2,1,4,0,2,1,1,1,1,0,0,1,1,0,1,1,1.0,A few years
+E-0106,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,9,21,7,2,1,1,0,0,5,6,5,2,3,0,3,1,0,0,1,0,0,1,0,0,0,1,1.0,A few years
+E-0107,Endline,Kabul,Kitchen Garden,Male,7,25,5,3,2,0,2,1,6,5,4,2,5,3,2,1,0,0,1,1,1,1,0,1,0,1,0.0,A few years
+E-0108,Endline,Balkh,Livestock Package,Female,9,34,7,1,3,0,2,1,6,7,5,3,1,1,2,1,0,0,1,1,0,0,0,1,1,1,1.0,Not sure
+E-0109,Endline,Samangan,Cash for Work,Male,9,25,7,0,2,1,0,1,4,7,4,4,5,3,4,1,0,0,0,0,0,0,1,1,0,1,1.0,Less than a year
+E-0110,Endline,Balkh,Kitchen Garden,Male,8,28,6,3,5,1,1,5,6,6,2,1,5,0,2,1,1,0,1,1,1,1,1,1,0,1,1.0,Long term
+E-0111,Endline,Samangan,Unconditional Cash Transfer,Male,8,56,7,3,5,0,0,2,5,4,3,1,4,4,3,1,1,1,0,0,0,1,0,1,0,1,1.0,A few years
+E-0112,Endline,Faryab,Cash for Work,Male,3,43,7,2,5,2,2,2,6,7,2,1,2,1,0,1,0,0,0,0,0,1,0,1,0,1,1.0,Long term
+E-0113,Endline,Samangan,Solar Water System,Female,9,48,6,2,5,2,0,3,5,5,3,2,4,1,1,1,0,0,0,0,0,1,0,1,0,1,1.0,A few years
+E-0114,Endline,Kabul,Livestock Package,Male,7,38,7,0,2,0,0,0,4,5,4,3,7,3,2,1,0,0,0,1,0,0,0,1,0,1,0.0,A few years
+E-0115,Endline,Faryab,Cash for Work,Male,10,51,5,3,4,3,2,3,5,5,2,5,4,2,3,1,0,0,0,0,0,1,0,1,0,1,1.0,A few years
+E-0116,Endline,Kabul,Cash for Work,Female,4,22,7,2,3,0,0,1,5,6,3,0,3,2,1,0,0,0,0,0,1,1,1,1,0,1,1.0,Less than a year
+E-0117,Endline,Kabul,Kitchen Garden,Male,10,59,5,0,3,1,0,1,4,5,3,3,3,3,6,1,0,0,0,0,0,0,0,0,1,1,1.0,A few years
+E-0118,Endline,Balkh,Livestock Package,Male,6,33,4,3,3,1,0,2,5,6,4,2,3,0,2,1,0,0,1,1,1,0,0,1,1,1,1.0,Long term
+E-0119,Endline,Samangan,Unconditional Cash Transfer,Male,6,51,6,1,4,0,1,4,5,5,1,0,1,1,0,1,1,1,1,0,0,1,0,0,1,1,1.0,Long term
+E-0120,Endline,Sar-e Pol,Kitchen Garden,Female,9,40,7,0,2,1,1,0,3,4,1,3,3,0,4,1,0,1,1,0,0,1,0,1,0,0,1.0,A few years
+E-0121,Endline,Samangan,Livestock Package,Female,6,31,6,2,2,0,0,0,4,5,4,3,3,3,2,1,0,1,0,0,1,1,0,0,0,1,0.0,Long term
+E-0122,Endline,Balkh,Cash for Work,Male,6,27,7,1,3,1,3,4,5,7,2,1,3,0,1,1,1,1,1,0,0,1,1,1,0,1,1.0,Less than a year
+E-0123,Endline,Kabul,Unconditional Cash Transfer,Male,5,20,6,1,1,0,0,2,5,5,4,2,5,0,5,1,1,0,0,1,0,0,0,0,0,1,1.0,A few years
+E-0124,Endline,Samangan,Cash for Work,Male,6,44,7,0,3,1,1,4,4,6,3,3,1,0,3,1,1,0,1,0,1,0,0,0,0,1,1.0,Long term
+E-0125,Endline,Faryab,Livestock Package,Male,8,60,7,0,2,2,0,0,5,6,2,4,3,2,5,1,1,0,1,0,0,0,0,1,0,1,0.0,Less than a year
+E-0126,Endline,Samangan,Kitchen Garden,Male,6,36,7,2,3,2,2,1,4,6,5,1,4,2,2,1,1,0,1,1,0,0,1,1,0,1,1.0,Not sure
+E-0127,Endline,Faryab,Unconditional Cash Transfer,Male,8,18,5,1,1,0,0,0,2,7,5,3,3,0,4,0,0,0,1,0,0,0,0,1,0,0,1.0,Long term
+E-0128,Endline,Samangan,Unconditional Cash Transfer,Male,6,40,6,2,7,1,1,2,4,6,4,2,2,0,3,1,0,0,1,0,0,1,0,0,1,1,1.0,A few years
+E-0129,Endline,Samangan,Cash for Work,Male,11,46,7,3,5,3,0,4,5,7,3,1,0,3,0,1,1,0,1,1,0,0,1,0,0,1,1.0,Less than a year
+E-0130,Endline,Balkh,Unconditional Cash Transfer,Female,8,59,7,5,5,2,0,4,6,7,2,2,2,0,0,1,1,0,1,1,0,1,1,1,0,1,1.0,A few years
+E-0131,Endline,Faryab,Livestock Package,Male,9,34,6,4,5,2,2,3,5,7,4,0,2,0,1,1,1,0,1,0,0,1,0,0,1,1,1.0,A few years
+E-0132,Endline,Kabul,Solar Water System,Female,6,52,7,1,3,3,1,3,5,5,4,0,3,0,3,1,0,0,0,1,0,0,0,1,0,1,1.0,Less than a year
+E-0133,Endline,Samangan,Solar Water System,Male,4,42,6,3,2,2,2,3,6,6,2,1,3,0,2,1,0,1,0,0,0,0,1,1,0,1,1.0,Long term
+E-0134,Endline,Balkh,Kitchen Garden,Male,6,19,5,2,3,2,0,3,3,4,1,2,2,0,0,1,1,0,1,1,1,0,0,1,0,1,1.0,A few years
+E-0135,Endline,Sar-e Pol,Livestock Package,Male,6,42,7,3,6,3,3,3,5,5,3,0,0,1,3,1,1,0,0,0,0,1,0,1,0,0,1.0,A few years
+E-0136,Endline,Jawzjan,Cash for Work,Male,7,34,7,1,5,1,2,4,6,6,3,0,2,2,2,1,1,0,1,0,1,1,0,1,0,1,1.0,A few years
+E-0137,Endline,Faryab,Unconditional Cash Transfer,Male,3,45,7,3,5,2,0,2,5,4,4,3,2,1,2,1,1,0,0,0,0,0,0,1,0,1,1.0,Long term
+E-0138,Endline,Samangan,Cash for Work,Male,4,26,7,3,4,0,1,2,5,6,3,1,2,1,1,1,0,0,1,0,0,1,0,1,1,1,0.0,Less than a year
+E-0139,Endline,Sar-e Pol,Cash for Work,Male,7,58,6,3,3,2,0,1,3,6,3,2,4,0,3,1,1,0,0,0,1,0,0,1,1,1,1.0,A few years
+E-0140,Endline,Kabul,Kitchen Garden,Female,2,28,7,2,5,1,2,3,6,7,2,0,1,2,1,1,1,1,0,0,0,0,0,1,0,0,1.0,A few years
+E-0141,Endline,Balkh,Kitchen Garden,Male,6,38,6,3,4,0,3,3,5,5,1,1,1,0,0,1,1,0,1,0,0,0,0,1,1,1,1.0,A few years
+E-0142,Endline,Jawzjan,Cash for Work,Male,8,45,7,2,3,0,0,1,3,6,5,3,2,3,3,1,0,0,1,0,0,1,0,1,1,1,1.0,Not sure
+E-0143,Endline,Kabul,Kitchen Garden,Female,11,51,7,1,3,1,1,1,3,5,5,5,3,2,5,1,0,0,1,0,0,1,0,1,0,1,1.0,A few years
+E-0144,Endline,Sar-e Pol,Livestock Package,Male,2,20,5,1,3,0,0,1,5,5,5,3,4,2,4,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0145,Endline,Samangan,Kitchen Garden,Male,6,52,7,4,4,0,2,2,6,7,1,2,1,1,2,1,1,1,1,1,1,0,1,1,1,1,1.0,Less than a year
+E-0146,Endline,Jawzjan,Unconditional Cash Transfer,Male,9,52,6,0,3,1,0,2,5,4,5,3,2,1,5,1,0,0,0,1,0,1,0,0,0,1,1.0,A few years
+E-0147,Endline,Jawzjan,Cash for Work,Male,4,34,5,0,3,0,0,1,6,5,3,1,4,3,2,0,0,0,0,0,1,1,1,0,1,1,1.0,A few years
+E-0148,Endline,Samangan,Cash for Work,Male,6,41,6,2,3,1,0,0,6,5,4,0,3,2,3,1,1,0,0,0,0,1,1,0,0,1,1.0,Less than a year
+E-0149,Endline,Kabul,Unconditional Cash Transfer,Female,8,41,5,0,3,0,1,1,4,6,3,2,3,0,2,1,0,1,0,0,1,1,0,1,0,1,1.0,Long term
+E-0150,Endline,Samangan,Cash for Work,Male,7,18,7,2,4,1,0,0,5,5,3,3,2,2,3,1,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0151,Endline,Balkh,Unconditional Cash Transfer,Male,8,51,6,3,5,3,4,3,6,7,2,1,2,1,0,1,1,1,1,1,1,1,1,1,0,1,1.0,A few years
+E-0152,Endline,Jawzjan,Unconditional Cash Transfer,Male,4,26,6,3,3,2,2,1,3,6,2,3,3,3,5,1,1,0,0,0,1,0,0,0,0,1,1.0,A few years
+E-0153,Endline,Kabul,Cash for Work,Male,5,37,7,2,4,0,2,0,6,6,3,3,4,3,2,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0154,Endline,Sar-e Pol,Kitchen Garden,Male,5,43,5,3,5,1,1,3,5,6,0,1,2,1,1,1,1,1,1,1,0,0,1,1,1,0,1.0,Less than a year
+E-0155,Endline,Faryab,Solar Water System,Male,8,38,7,2,3,2,2,3,4,6,4,2,2,2,5,1,0,0,0,0,1,0,0,1,0,1,1.0,Long term
+E-0156,Endline,Samangan,Unconditional Cash Transfer,Female,7,48,7,0,1,2,0,0,4,5,5,2,6,4,5,1,0,0,0,0,0,0,0,0,0,0,1.0,Long term
+E-0157,Endline,Samangan,Unconditional Cash Transfer,Female,10,53,7,2,2,0,0,0,4,5,2,0,1,0,4,1,0,0,0,0,0,0,0,1,0,1,0.0,A few years
+E-0158,Endline,Kabul,Livestock Package,Male,8,41,7,2,4,2,2,3,6,6,1,1,2,2,1,1,0,0,1,0,0,0,1,1,0,1,1.0,Long term
+E-0159,Endline,Balkh,Kitchen Garden,Male,8,31,7,3,3,0,1,3,5,6,3,2,2,1,2,1,1,0,0,0,1,0,1,0,0,1,0.0,A few years
+E-0160,Endline,Balkh,Unconditional Cash Transfer,Male,4,30,5,1,5,0,1,2,6,5,4,1,3,1,2,1,0,0,1,0,0,0,1,0,0,1,1.0,A few years
+E-0161,Endline,Faryab,Cash for Work,Male,11,30,5,1,4,1,1,2,4,7,2,1,1,1,2,1,0,1,1,1,1,1,1,1,1,1,1.0,Long term
+E-0162,Endline,Samangan,Unconditional Cash Transfer,Male,9,38,7,3,4,2,2,2,6,6,2,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1.0,A few years
+E-0163,Endline,Balkh,Cash for Work,Female,6,50,7,4,6,2,2,6,5,7,2,1,0,0,1,1,0,1,1,0,0,0,1,1,1,1,1.0,Long term
+E-0164,Endline,Samangan,Livestock Package,Male,3,46,7,2,3,0,1,2,3,5,1,3,4,1,3,1,1,1,1,0,0,0,0,1,0,1,1.0,A few years
+E-0165,Endline,Jawzjan,Kitchen Garden,Male,6,32,7,0,2,1,0,1,4,4,3,1,3,3,3,0,0,0,0,1,0,0,0,1,0,1,1.0,Long term
+E-0166,Endline,Samangan,Livestock Package,Male,2,35,5,1,3,1,1,1,4,5,5,1,3,1,0,1,0,1,0,0,0,1,0,1,0,1,0.0,Less than a year
+E-0167,Endline,Balkh,Cash for Work,Female,8,29,5,3,1,0,2,0,5,6,2,2,3,1,3,1,0,0,0,0,0,0,0,1,1,1,1.0,A few years
+E-0168,Endline,Sar-e Pol,Livestock Package,Male,6,45,7,1,3,1,0,2,5,7,3,1,2,1,1,1,0,0,1,1,0,0,1,1,0,0,1.0,Less than a year
+E-0169,Endline,Kabul,Cash for Work,Male,7,51,7,1,3,3,1,0,4,6,4,1,1,3,2,1,0,0,1,0,0,0,0,0,0,1,1.0,Long term
+E-0170,Endline,Faryab,Kitchen Garden,Male,5,36,7,4,6,2,2,0,6,6,3,1,1,1,2,1,1,1,1,1,0,0,0,1,1,1,1.0,Long term
+E-0171,Endline,Samangan,Kitchen Garden,Male,8,34,7,1,2,0,0,0,4,5,5,4,3,3,3,1,0,0,1,0,1,0,0,0,0,1,1.0,A few years
+E-0172,Endline,Jawzjan,Kitchen Garden,Male,3,48,7,3,4,1,2,1,4,6,1,2,2,0,1,1,1,1,1,1,1,1,1,0,1,1,1.0,A few years
+E-0173,Endline,Sar-e Pol,Solar Water System,Male,9,27,7,1,3,1,1,1,5,4,3,2,6,1,4,1,1,0,0,1,1,0,0,0,0,1,1.0,Long term
+E-0174,Endline,Sar-e Pol,Cash for Work,Male,5,39,7,0,2,0,1,1,4,5,3,4,3,3,3,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0175,Endline,Sar-e Pol,Unconditional Cash Transfer,Female,2,28,7,3,2,0,2,1,4,7,3,2,0,2,2,1,1,0,0,0,0,1,0,1,1,1,1.0,A few years
+E-0176,Endline,Kabul,Cash for Work,Female,5,30,7,1,3,1,1,2,4,7,3,2,1,1,2,1,1,0,0,0,0,0,0,1,1,1,1.0,A few years
+E-0177,Endline,Jawzjan,Cash for Work,Female,8,31,6,4,5,1,3,1,5,5,4,0,1,2,1,1,0,1,1,0,0,0,0,0,0,1,1.0,A few years
+E-0178,Endline,Samangan,Solar Water System,Male,9,44,7,4,5,0,4,2,4,5,1,0,2,1,2,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0179,Endline,Faryab,Livestock Package,Male,8,21,7,2,1,0,0,1,4,5,4,3,3,2,4,0,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0180,Endline,Balkh,Cash for Work,Male,7,58,7,2,5,2,1,3,5,6,3,1,3,3,2,1,1,0,1,0,0,0,0,0,1,1,0.0,Not sure
+E-0181,Endline,Balkh,Kitchen Garden,Male,6,41,7,2,4,0,2,1,5,7,0,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0.0,Not sure
+E-0182,Endline,Jawzjan,Cash for Work,Female,6,34,6,0,2,0,0,0,4,6,6,4,5,2,3,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+E-0183,Endline,Kabul,Kitchen Garden,Male,6,37,7,1,4,0,3,4,5,5,4,1,1,0,4,1,1,1,1,0,1,0,1,1,0,1,1.0,Long term
+E-0184,Endline,Balkh,Kitchen Garden,Male,9,18,7,1,3,1,0,2,5,6,4,3,3,3,1,1,1,0,0,0,0,0,0,1,0,1,1.0,Long term
+E-0185,Endline,Faryab,Livestock Package,Male,8,18,7,2,4,0,0,1,5,6,4,0,2,3,2,1,1,0,1,0,1,0,0,1,0,1,1.0,Less than a year
+E-0186,Endline,Samangan,Unconditional Cash Transfer,Male,6,50,5,1,4,2,1,1,6,5,5,1,2,2,3,1,1,0,1,0,0,1,0,0,0,1,0.0,A few years
+E-0187,Endline,Kabul,Cash for Work,Male,4,57,7,2,2,3,3,4,5,5,2,0,0,0,1,1,1,0,1,1,0,1,1,1,0,0,1.0,Long term
+E-0188,Endline,Jawzjan,Cash for Work,Male,5,36,7,1,5,1,2,1,5,5,3,2,2,0,2,1,1,1,1,1,1,0,0,1,0,1,1.0,Long term
+E-0189,Endline,Kabul,Cash for Work,Female,9,44,5,4,4,0,1,3,2,6,2,1,7,1,4,1,0,0,1,0,0,0,1,1,0,1,1.0,A few years
+E-0190,Endline,Sar-e Pol,Solar Water System,Male,4,42,5,2,4,1,3,2,5,5,2,1,5,2,1,1,1,0,0,0,0,1,1,0,1,1,1.0,A few years
+E-0191,Endline,Jawzjan,Cash for Work,Male,6,26,6,2,5,1,3,2,4,5,2,3,4,0,2,1,1,0,1,0,0,0,0,1,0,1,1.0,Not sure
+E-0192,Endline,Samangan,Unconditional Cash Transfer,Male,10,44,6,1,5,2,1,1,5,3,5,3,5,4,2,1,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0193,Endline,Samangan,Cash for Work,Female,6,45,6,0,2,0,0,1,4,5,4,1,6,3,4,1,1,0,0,0,1,0,1,0,0,1,0.0,Long term
+E-0194,Endline,Faryab,Cash for Work,Male,8,29,6,3,6,2,1,0,4,6,2,1,1,0,4,1,1,0,1,0,0,0,0,1,1,1,1.0,Not sure
+E-0195,Endline,Samangan,Kitchen Garden,Male,7,39,3,0,5,0,2,2,4,4,4,0,2,1,2,1,0,0,0,0,1,1,0,0,0,1,1.0,Less than a year
+E-0196,Endline,Sar-e Pol,Livestock Package,Male,6,39,7,2,3,2,0,1,4,5,1,4,4,2,3,1,1,0,0,0,0,0,1,0,0,1,1.0,A few years
+E-0197,Endline,Sar-e Pol,Livestock Package,Male,8,24,5,1,3,1,1,1,4,7,5,1,5,2,3,1,0,0,0,0,0,0,0,0,0,1,0.0,Long term
+E-0198,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,3,26,7,4,5,1,2,2,6,6,0,2,2,0,5,1,1,0,1,0,1,1,1,0,1,1,1.0,Less than a year
+E-0199,Endline,Samangan,Kitchen Garden,Male,5,20,6,2,4,2,3,3,6,5,2,0,2,1,0,1,1,0,1,0,1,1,0,1,0,1,1.0,A few years
+E-0200,Endline,Samangan,Cash for Work,Female,6,36,6,2,4,0,3,1,4,4,3,0,3,2,2,1,1,0,0,0,0,0,1,0,1,1,0.0,A few years
+E-0201,Endline,Sar-e Pol,Kitchen Garden,Female,7,44,6,3,6,3,1,2,5,5,3,0,2,0,2,1,1,0,1,1,1,0,0,1,1,1,1.0,A few years
+E-0202,Endline,Jawzjan,Cash for Work,Male,5,39,7,1,3,2,1,0,5,3,5,4,2,1,6,1,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0203,Endline,Faryab,Cash for Work,Female,8,35,7,2,3,2,0,2,4,5,5,1,2,0,3,1,1,0,1,1,1,1,0,1,0,1,1.0,Long term
+E-0204,Endline,Sar-e Pol,Kitchen Garden,Male,5,46,6,4,7,4,5,5,4,7,1,2,1,0,0,1,1,1,1,1,1,1,0,1,1,1,0.0,A few years
+E-0205,Endline,Kabul,Livestock Package,Male,5,35,7,2,3,0,1,1,5,7,6,2,7,2,2,1,1,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+E-0206,Endline,Sar-e Pol,Kitchen Garden,Male,8,41,7,2,3,2,1,5,4,6,2,1,3,1,1,1,1,0,1,1,0,1,0,1,0,1,1.0,A few years
+E-0207,Endline,Jawzjan,Unconditional Cash Transfer,Male,9,44,7,1,4,0,2,1,3,6,2,1,0,2,1,1,0,0,0,0,0,1,1,1,0,1,1.0,Less than a year
+E-0208,Endline,Samangan,Cash for Work,Female,3,37,5,3,4,2,3,2,5,6,3,3,3,0,2,1,1,0,1,1,0,0,0,1,1,1,1.0,Less than a year
+E-0209,Endline,Sar-e Pol,Cash for Work,Male,5,37,6,2,5,0,0,4,5,4,3,3,3,2,2,1,1,1,1,0,1,0,1,1,0,1,1.0,A few years
+E-0210,Endline,Balkh,Solar Water System,Female,5,32,7,1,5,0,0,2,4,5,4,0,3,0,1,1,1,0,0,0,0,0,1,1,0,0,1.0,Long term
+E-0211,Endline,Kabul,Unconditional Cash Transfer,Male,6,47,7,3,5,2,2,2,4,6,1,1,2,0,4,1,1,0,1,1,1,1,0,1,0,1,1.0,Less than a year
+E-0212,Endline,Samangan,Cash for Work,Male,8,31,7,0,1,1,0,0,5,6,7,3,4,3,5,0,0,0,1,0,0,0,1,0,0,1,1.0,Long term
+E-0213,Endline,Kabul,Solar Water System,Male,10,38,7,2,5,2,1,1,4,5,2,0,2,0,2,1,1,0,1,1,1,0,0,1,1,1,1.0,Not sure
+E-0214,Endline,Samangan,Livestock Package,Male,5,34,4,1,2,0,0,0,3,6,4,4,4,4,3,1,0,0,1,0,0,0,0,1,1,1,1.0,Less than a year
+E-0215,Endline,Samangan,Cash for Work,Male,2,50,7,2,4,2,1,1,5,6,4,3,1,1,1,1,1,0,1,0,1,0,0,1,0,1,1.0,A few years
+E-0216,Endline,Samangan,Livestock Package,Female,7,35,7,2,4,0,1,3,3,4,1,2,4,3,4,1,1,0,1,1,0,0,1,1,1,1,0.0,A few years
+E-0217,Endline,Jawzjan,Cash for Work,Male,6,23,6,2,3,1,0,1,4,7,3,0,4,2,3,0,1,0,0,1,0,0,0,1,1,1,1.0,A few years
+E-0218,Endline,Kabul,Kitchen Garden,Male,3,41,6,1,4,0,0,2,4,6,5,2,1,1,1,1,0,0,1,0,0,1,1,1,1,1,1.0,A few years
+E-0219,Endline,Faryab,Solar Water System,Male,6,51,7,2,4,0,2,1,5,6,5,1,5,3,3,1,1,1,0,0,1,1,0,1,1,1,1.0,Not sure
+E-0220,Endline,Faryab,Cash for Work,Female,10,41,6,0,3,1,0,0,5,7,4,2,4,4,3,0,0,0,0,0,1,0,0,0,0,0,0.0,Less than a year
+E-0221,Endline,Faryab,Cash for Work,Male,10,47,6,1,3,1,0,1,5,7,2,4,4,0,2,1,1,1,1,1,0,0,0,1,0,1,1.0,Long term
+E-0222,Endline,Faryab,Unconditional Cash Transfer,Female,7,46,7,0,3,1,3,2,4,5,3,3,3,3,3,1,0,0,1,0,0,0,0,1,0,1,1.0,A few years
+E-0223,Endline,Balkh,Solar Water System,Male,6,47,6,3,4,2,3,4,5,6,1,1,2,2,1,1,1,1,0,0,1,1,0,0,0,1,1.0,Long term
+E-0224,Endline,Samangan,Unconditional Cash Transfer,Male,6,47,7,2,2,1,0,2,4,7,3,2,1,2,2,1,1,0,0,0,0,0,0,1,0,1,1.0,Long term
+E-0225,Endline,Jawzjan,Unconditional Cash Transfer,Male,7,25,6,5,6,1,2,2,6,7,4,0,2,0,1,1,0,1,1,0,0,1,0,1,0,1,1.0,A few years
+E-0226,Endline,Kabul,Kitchen Garden,Male,7,38,7,2,7,3,3,4,5,7,3,0,1,2,2,1,0,0,1,1,1,1,0,0,0,1,1.0,A few years
+E-0227,Endline,Faryab,Kitchen Garden,Male,7,26,7,1,4,1,2,3,6,6,0,3,2,2,3,1,1,0,1,0,0,1,1,1,0,1,1.0,Long term
+E-0228,Endline,Kabul,Cash for Work,Male,4,36,5,2,5,0,0,4,6,4,2,2,0,1,2,1,1,1,1,1,0,0,1,0,0,1,1.0,Long term
+E-0229,Endline,Faryab,Kitchen Garden,Male,4,21,7,1,1,0,2,1,4,4,4,2,6,4,4,1,0,0,0,0,0,0,1,1,0,1,0.0,Less than a year
+E-0230,Endline,Balkh,Unconditional Cash Transfer,Male,7,46,7,3,2,0,2,0,3,6,6,2,3,3,4,1,0,0,0,0,1,1,0,0,0,1,1.0,A few years
+E-0231,Endline,Jawzjan,Kitchen Garden,Male,5,39,5,1,4,2,2,3,5,5,3,1,3,1,2,0,0,0,1,1,0,1,0,0,1,1,1.0,Long term
+E-0232,Endline,Balkh,Livestock Package,Male,5,57,7,2,4,3,1,3,5,6,4,0,2,2,1,1,1,1,1,0,0,0,1,0,0,1,1.0,A few years
+E-0233,Endline,Sar-e Pol,Solar Water System,Female,8,40,5,0,1,0,1,0,2,4,7,1,6,4,5,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+E-0234,Endline,Balkh,Kitchen Garden,Male,5,30,7,1,4,0,2,2,4,5,6,1,1,2,2,1,0,0,0,0,1,0,1,0,1,1,1.0,A few years
+E-0235,Endline,Kabul,Cash for Work,Male,10,70,7,0,1,0,0,0,4,4,6,4,3,3,4,1,1,0,0,0,0,0,0,1,0,1,0.0,A few years
+E-0236,Endline,Kabul,Cash for Work,Male,10,30,7,2,4,3,3,2,4,5,2,1,3,0,1,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+E-0237,Endline,Sar-e Pol,Livestock Package,Male,5,45,7,3,4,2,3,3,7,5,2,3,3,3,0,1,0,0,1,0,1,1,1,1,1,1,1.0,A few years
+E-0238,Endline,Balkh,Cash for Work,Female,7,32,7,2,2,0,0,0,5,6,5,3,4,1,3,1,1,1,0,0,1,1,0,0,0,1,1.0,Not sure
+E-0239,Endline,Sar-e Pol,Cash for Work,Female,6,52,7,2,5,1,0,2,5,6,2,2,4,0,3,1,1,0,1,0,0,1,0,1,0,1,1.0,A few years
+E-0240,Endline,Kabul,Unconditional Cash Transfer,Female,8,47,6,0,3,0,2,1,4,6,3,3,3,1,4,1,1,1,1,1,0,1,1,0,0,1,1.0,A few years
+E-0241,Endline,Samangan,Cash for Work,Male,9,51,6,0,2,0,1,2,4,4,5,0,5,4,2,1,0,0,0,0,0,0,0,0,1,1,1.0,A few years
+E-0242,Endline,Faryab,Kitchen Garden,Female,10,45,7,0,3,0,2,0,4,6,2,3,4,2,2,1,1,1,1,0,1,1,0,1,0,1,0.0,Long term
+E-0243,Endline,Faryab,Livestock Package,Male,8,43,6,2,5,0,2,3,5,7,4,2,3,2,0,1,1,1,1,1,0,1,1,1,0,1,1.0,Long term
+E-0244,Endline,Faryab,Cash for Work,Male,4,41,5,4,4,0,1,3,5,6,2,1,1,1,1,1,1,1,0,0,1,0,0,1,0,1,0.0,A few years
+E-0245,Endline,Balkh,Kitchen Garden,Male,5,25,7,4,6,2,2,4,5,7,2,1,1,3,1,1,1,0,1,1,0,1,0,1,1,1,1.0,A few years
+E-0246,Endline,Samangan,Cash for Work,Male,7,18,7,1,2,0,0,0,4,5,7,1,4,3,4,1,0,0,0,0,0,0,0,0,0,1,1.0,A few years
+E-0247,Endline,Samangan,Cash for Work,Male,3,38,7,2,2,0,1,2,5,5,7,3,4,2,3,1,1,1,1,0,0,0,0,1,0,1,1.0,Not sure
+E-0248,Endline,Sar-e Pol,Cash for Work,Male,10,42,6,2,4,1,2,3,3,6,3,0,3,2,2,1,1,0,1,1,1,0,0,1,1,1,1.0,Long term
+E-0249,Endline,Jawzjan,Cash for Work,Male,7,65,6,0,4,2,1,0,3,5,4,1,0,0,4,1,0,0,0,0,0,1,0,0,0,0,1.0,A few years
+E-0250,Endline,Sar-e Pol,Cash for Work,Male,5,40,7,0,5,3,0,2,5,5,5,2,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1.0,A few years
+E-0251,Endline,Faryab,Cash for Work,Male,7,31,6,2,4,1,4,2,4,7,2,0,0,1,0,1,1,0,0,1,1,1,0,1,0,1,1.0,A few years
+E-0252,Endline,Balkh,Kitchen Garden,Female,6,59,6,0,3,0,1,3,4,5,5,1,4,2,5,1,1,0,0,0,1,1,1,0,1,1,1.0,A few years
+E-0253,Endline,Balkh,Cash for Work,Male,4,44,7,2,4,0,1,1,4,5,4,4,3,3,2,1,0,0,0,1,1,0,0,1,1,1,1.0,Less than a year
+E-0254,Endline,Jawzjan,Unconditional Cash Transfer,Female,5,31,6,1,4,2,0,0,3,7,5,4,3,3,4,1,1,0,1,0,0,0,0,1,0,1,1.0,A few years
+E-0255,Endline,Kabul,Livestock Package,Male,6,47,5,0,2,0,1,3,4,5,4,4,4,3,4,1,0,0,1,1,1,0,0,1,0,1,1.0,Long term
+E-0256,Endline,Jawzjan,Unconditional Cash Transfer,Female,5,34,7,2,2,0,0,1,3,6,2,2,3,1,2,1,1,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0257,Endline,Faryab,Cash for Work,Male,6,35,7,3,6,3,4,1,5,7,3,0,2,1,2,1,1,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0258,Endline,Jawzjan,Livestock Package,Male,6,23,5,3,4,1,1,2,4,5,4,4,1,4,2,1,1,0,1,0,0,0,1,1,0,1,1.0,Not sure
+E-0259,Endline,Samangan,Solar Water System,Male,9,50,7,1,4,0,0,1,3,5,2,0,2,2,2,1,0,0,0,1,0,0,0,1,0,1,1.0,Long term
+E-0260,Endline,Balkh,Solar Water System,Female,8,47,7,3,2,2,2,2,4,5,3,1,3,1,1,1,0,0,0,0,0,0,0,0,0,1,1.0,Not sure
+E-0261,Endline,Samangan,Cash for Work,Male,6,47,5,2,1,0,0,4,4,5,4,0,1,0,4,1,1,0,0,0,0,0,1,1,0,1,1.0,Less than a year
+E-0262,Endline,Balkh,Livestock Package,Male,6,44,5,2,5,1,0,2,4,7,1,0,3,0,1,1,0,0,0,0,0,0,1,1,1,0,1.0,Less than a year
+E-0263,Endline,Faryab,Cash for Work,Male,3,43,6,3,4,4,3,3,7,7,1,3,3,0,0,1,1,0,1,1,0,0,1,1,1,1,1.0,A few years
+E-0264,Endline,Jawzjan,Kitchen Garden,Male,9,52,7,1,5,2,2,2,4,6,5,3,1,1,2,1,1,1,1,0,0,1,1,1,0,1,1.0,Less than a year
+E-0265,Endline,Samangan,Solar Water System,Male,4,30,7,2,5,2,1,3,4,6,3,2,1,0,0,1,0,0,1,0,1,1,1,1,1,1,1.0,Less than a year
+E-0266,Endline,Balkh,Kitchen Garden,Female,5,29,5,3,5,1,3,5,5,7,3,0,1,2,1,1,1,1,1,1,0,1,1,1,1,1,1.0,Long term
+E-0267,Endline,Jawzjan,Cash for Work,Female,10,27,7,1,1,1,0,1,3,6,1,4,3,1,2,0,0,0,0,1,0,1,0,1,0,1,0.0,A few years
+E-0268,Endline,Samangan,Kitchen Garden,Male,6,53,6,1,4,1,2,2,3,5,3,0,1,0,0,1,0,0,0,1,0,0,0,1,0,1,1.0,A few years
+E-0269,Endline,Jawzjan,Kitchen Garden,Female,10,44,7,1,4,1,0,2,6,6,3,5,4,3,2,1,1,0,1,0,0,1,1,1,1,1,1.0,A few years
+E-0270,Endline,Faryab,Kitchen Garden,Female,9,43,7,2,3,1,2,3,2,7,4,2,7,3,3,1,0,0,0,0,0,0,0,1,1,1,1.0,Long term
+E-0271,Endline,Jawzjan,Unconditional Cash Transfer,Male,5,38,7,1,4,2,1,2,7,5,4,0,2,2,1,1,0,0,1,1,0,1,0,0,0,1,1.0,A few years
+E-0272,Endline,Samangan,Cash for Work,Male,4,45,7,1,3,1,2,0,3,5,3,5,4,4,4,1,0,0,0,0,0,0,0,0,1,1,1.0,Long term
+E-0273,Endline,Samangan,Livestock Package,Male,8,51,7,2,5,2,1,3,4,7,3,2,3,0,2,1,0,1,1,0,1,0,0,0,1,1,0.0,Less than a year
+E-0274,Endline,Samangan,Cash for Work,Male,6,18,6,0,2,0,0,0,4,5,5,3,7,4,4,1,0,0,1,1,0,0,0,0,0,1,1.0,A few years
+E-0275,Endline,Jawzjan,Unconditional Cash Transfer,Male,13,27,6,2,2,0,2,1,6,7,4,3,2,2,2,1,0,0,1,0,0,0,0,1,1,1,1.0,Less than a year
+E-0276,Endline,Sar-e Pol,Livestock Package,Male,7,32,7,0,3,0,1,4,3,7,3,4,2,2,4,1,0,0,1,0,1,0,1,1,1,1,1.0,Less than a year
+E-0277,Endline,Sar-e Pol,Livestock Package,Male,7,39,7,3,4,3,1,3,5,7,4,2,3,0,2,1,0,1,1,0,1,0,1,1,0,1,0.0,Less than a year
+E-0278,Endline,Kabul,Cash for Work,Male,5,26,6,4,4,2,0,2,4,6,2,1,2,1,2,1,1,0,1,1,1,0,0,1,1,1,1.0,Long term
+E-0279,Endline,Sar-e Pol,Livestock Package,Male,5,18,7,1,4,2,1,3,4,6,2,3,1,2,1,0,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0280,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,4,62,6,1,5,1,1,2,4,7,2,2,2,0,1,1,1,0,1,0,1,0,0,1,1,1,0.0,A few years
+E-0281,Endline,Kabul,Livestock Package,Male,7,31,6,2,3,0,2,4,6,5,3,1,3,1,2,1,1,0,0,1,1,0,0,1,1,1,1.0,A few years
+E-0282,Endline,Balkh,Solar Water System,Male,7,44,7,2,3,0,3,3,5,5,2,1,2,2,0,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0283,Endline,Samangan,Unconditional Cash Transfer,Female,4,45,5,0,3,0,1,2,4,6,3,2,4,1,2,1,1,1,0,0,1,0,0,0,0,1,0.0,A few years
+E-0284,Endline,Kabul,Unconditional Cash Transfer,Male,8,50,6,3,2,1,3,3,3,6,1,1,3,3,1,1,1,0,0,0,0,1,0,0,0,1,1.0,A few years
+E-0285,Endline,Balkh,Cash for Work,Male,5,37,7,5,4,2,2,3,4,6,2,4,1,1,3,1,1,0,0,0,1,0,0,1,0,1,1.0,Long term
+E-0286,Endline,Sar-e Pol,Cash for Work,Male,8,45,6,0,3,1,3,2,5,7,2,3,4,0,0,1,1,0,1,1,1,0,1,1,0,1,1.0,A few years
+E-0287,Endline,Kabul,Cash for Work,Male,7,38,7,2,3,1,0,1,4,6,4,4,2,1,3,0,1,0,1,0,0,0,1,0,1,1,1.0,A few years
+E-0288,Endline,Kabul,Solar Water System,Male,7,36,7,2,4,1,3,3,5,7,3,1,1,0,0,1,1,1,1,0,0,0,1,1,0,1,1.0,Long term
+E-0289,Endline,Jawzjan,Unconditional Cash Transfer,Male,8,55,6,1,4,0,1,3,3,5,4,5,2,2,2,0,0,0,0,0,0,0,1,1,0,1,1.0,Long term
+E-0290,Endline,Samangan,Livestock Package,Female,7,46,7,0,5,0,3,3,5,5,2,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1,1.0,Not sure
+E-0291,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,8,19,6,2,3,0,0,1,4,4,5,2,4,3,3,1,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0292,Endline,Kabul,Kitchen Garden,Male,8,33,7,1,4,2,0,3,4,5,4,2,2,1,3,1,1,0,1,0,1,1,0,1,0,1,1.0,Not sure
+E-0293,Endline,Sar-e Pol,Solar Water System,Female,4,25,7,1,2,0,1,0,3,5,6,2,6,4,4,1,0,0,0,0,0,0,0,0,0,1,0.0,A few years
+E-0294,Endline,Samangan,Cash for Work,Male,5,29,7,3,4,1,0,1,3,5,5,4,5,2,2,1,1,0,0,0,0,0,1,0,0,1,1.0,Long term
+E-0295,Endline,Sar-e Pol,Livestock Package,Female,10,23,7,0,2,0,2,2,5,5,4,4,1,2,3,1,1,0,0,0,1,0,0,0,0,1,1.0,A few years
+E-0296,Endline,Faryab,Solar Water System,Male,6,27,5,1,4,1,3,2,5,4,3,2,1,0,1,1,0,0,0,0,0,0,1,1,0,1,1.0,Long term
+E-0297,Endline,Sar-e Pol,Livestock Package,Male,3,45,7,1,1,0,1,0,4,6,5,3,6,2,3,0,0,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0298,Endline,Faryab,Cash for Work,Female,5,28,7,0,2,0,1,1,3,5,5,4,3,2,5,1,0,0,1,0,1,1,0,0,0,1,1.0,Long term
+E-0299,Endline,Jawzjan,Kitchen Garden,Male,7,25,7,1,3,2,0,1,4,5,3,1,2,1,2,1,1,0,0,1,1,1,1,1,0,1,1.0,Long term
+E-0300,Endline,Faryab,Unconditional Cash Transfer,Male,4,48,7,1,2,0,0,1,4,4,3,5,4,4,4,1,0,0,0,0,0,0,1,0,0,1,1.0,A few years
+E-0301,Endline,Samangan,Unconditional Cash Transfer,Male,9,26,7,1,3,0,1,2,4,6,3,1,3,2,1,1,1,0,0,0,0,1,0,0,1,1,1.0,A few years
+E-0302,Endline,Faryab,Cash for Work,Male,8,44,7,0,3,1,0,2,5,7,5,3,3,2,3,1,1,0,0,1,0,0,0,1,0,1,1.0,A few years
+E-0303,Endline,Faryab,Cash for Work,Female,5,50,5,2,3,0,0,0,5,4,1,3,4,3,5,1,0,1,0,0,0,0,0,1,0,1,1.0,A few years
+E-0304,Endline,Faryab,Unconditional Cash Transfer,Female,9,21,7,0,2,1,0,0,5,6,5,5,5,3,3,0,0,0,0,0,0,0,0,0,1,1,1.0,A few years
+E-0305,Endline,Kabul,Unconditional Cash Transfer,Male,9,40,6,1,1,0,0,1,4,5,3,5,3,0,4,1,1,0,0,1,0,0,0,0,0,1,1.0,Less than a year
+E-0306,Endline,Kabul,Cash for Work,Male,5,47,7,3,3,1,2,1,5,7,4,2,3,1,2,1,1,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+E-0307,Endline,Sar-e Pol,Cash for Work,Female,9,45,7,2,5,2,3,4,6,6,2,2,3,1,0,1,0,0,0,0,0,1,0,1,0,1,1.0,A few years
+E-0308,Endline,Samangan,Unconditional Cash Transfer,Male,7,21,6,3,4,2,2,3,6,6,0,0,3,2,3,1,0,1,1,1,1,1,1,1,1,1,0.0,Less than a year
+E-0309,Endline,Samangan,Kitchen Garden,Male,4,39,7,3,4,2,3,2,6,5,3,2,2,0,1,1,1,0,1,1,0,1,1,1,1,1,1.0,Long term
+E-0310,Endline,Faryab,Solar Water System,Female,6,49,7,0,5,1,1,0,5,5,4,3,3,2,4,1,1,0,0,1,1,0,0,0,0,1,1.0,Less than a year
+E-0311,Endline,Sar-e Pol,Kitchen Garden,Female,8,35,7,2,6,2,2,4,5,7,2,0,2,3,2,1,1,1,0,1,0,1,1,1,0,1,1.0,Less than a year
+E-0312,Endline,Balkh,Livestock Package,Male,11,40,7,2,4,1,1,0,3,6,0,2,2,1,2,1,1,0,1,0,0,0,1,1,0,1,1.0,A few years
+E-0313,Endline,Jawzjan,Cash for Work,Male,6,31,6,2,1,0,3,4,5,6,3,0,2,2,3,1,0,1,1,1,1,0,1,1,1,1,1.0,A few years
+E-0314,Endline,Balkh,Cash for Work,Female,7,21,7,3,2,1,1,0,4,6,4,4,5,1,1,1,0,0,0,0,0,1,1,0,0,1,1.0,Not sure
+E-0315,Endline,Sar-e Pol,Cash for Work,Male,2,60,7,3,3,1,1,3,5,5,3,3,5,0,2,1,0,0,0,1,1,0,0,1,0,1,1.0,Long term
+E-0316,Endline,Samangan,Livestock Package,Male,10,28,6,2,4,2,0,1,5,6,3,2,4,2,4,1,1,0,0,0,1,0,1,0,0,1,1.0,A few years
+E-0317,Endline,Faryab,Livestock Package,Female,9,38,7,4,5,4,3,3,7,7,1,0,1,0,0,1,1,0,1,0,1,0,1,1,1,1,1.0,Long term
+E-0318,Endline,Balkh,Unconditional Cash Transfer,Male,7,41,6,2,4,2,2,4,5,4,2,1,2,0,4,1,1,0,0,0,1,1,0,1,0,0,0.0,A few years
+E-0319,Endline,Samangan,Unconditional Cash Transfer,Male,10,29,6,2,3,0,0,3,5,5,3,2,1,1,0,1,1,0,1,0,1,1,0,0,0,1,1.0,Not sure
+E-0320,Endline,Jawzjan,Cash for Work,Male,6,47,6,2,4,0,1,1,5,4,2,2,2,3,1,1,1,0,0,1,0,0,0,1,0,1,1.0,Less than a year
+E-0321,Endline,Samangan,Livestock Package,Male,4,39,6,1,2,0,1,1,5,5,5,6,4,2,5,1,0,0,0,0,0,0,1,1,0,1,0.0,Less than a year
+E-0322,Endline,Balkh,Livestock Package,Female,8,37,7,3,4,0,1,2,7,6,1,3,2,0,4,1,1,0,0,1,0,1,0,1,0,1,0.0,A few years
+E-0323,Endline,Balkh,Cash for Work,Male,5,52,7,2,3,3,3,2,5,7,4,2,2,0,2,1,1,0,0,0,0,0,1,1,1,1,1.0,Long term
+E-0324,Endline,Jawzjan,Cash for Work,Male,7,39,6,3,5,1,2,3,5,6,2,0,1,0,2,1,1,0,1,1,1,1,1,1,0,1,1.0,A few years
+E-0325,Endline,Sar-e Pol,Solar Water System,Female,4,23,7,4,4,0,1,3,4,5,3,2,1,3,2,1,1,1,1,0,1,0,0,1,0,0,1.0,A few years
+E-0326,Endline,Jawzjan,Unconditional Cash Transfer,Male,4,47,7,1,3,0,1,2,5,6,4,5,4,5,2,1,0,0,0,0,0,1,0,1,1,1,0.0,A few years
+E-0327,Endline,Jawzjan,Unconditional Cash Transfer,Male,7,49,5,3,5,0,1,3,7,6,1,2,2,1,2,1,1,1,0,1,0,1,0,0,1,1,0.0,A few years
+E-0328,Endline,Jawzjan,Cash for Work,Male,10,18,7,3,5,2,2,2,4,7,2,2,3,1,3,1,1,1,1,0,0,0,0,1,1,1,1.0,Long term
+E-0329,Endline,Jawzjan,Cash for Work,Female,5,45,6,1,3,0,0,2,5,6,3,2,6,0,3,1,0,1,0,0,0,0,0,1,1,1,1.0,Long term
+E-0330,Endline,Samangan,Unconditional Cash Transfer,Female,9,31,7,1,3,0,1,2,5,5,7,4,4,3,2,1,1,0,0,0,0,0,0,0,0,1,0.0,A few years
+E-0331,Endline,Samangan,Cash for Work,Male,5,33,7,2,5,2,2,2,3,4,1,3,2,3,3,0,1,0,0,1,0,0,1,1,0,1,1.0,A few years
+E-0332,Endline,Sar-e Pol,Solar Water System,Male,3,59,7,1,4,0,0,1,5,6,5,1,1,1,2,0,1,0,0,0,0,1,0,1,0,1,1.0,A few years
+E-0333,Endline,Jawzjan,Kitchen Garden,Female,9,56,7,1,1,2,2,1,6,6,7,2,2,2,2,1,1,0,1,0,1,1,0,1,0,1,1.0,A few years
+E-0334,Endline,Balkh,Kitchen Garden,Male,7,22,7,4,7,3,4,5,4,7,2,0,0,0,1,1,1,0,1,0,0,1,1,1,0,1,1.0,Long term
+E-0335,Endline,Sar-e Pol,Cash for Work,Female,8,40,7,1,4,3,1,0,6,4,3,2,3,0,4,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0336,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,8,45,7,5,5,1,1,4,6,7,4,2,3,0,2,1,0,1,1,0,0,0,0,1,1,1,1.0,A few years
+E-0337,Endline,Kabul,Kitchen Garden,Male,6,68,7,4,3,0,1,3,5,7,2,0,0,0,0,1,0,0,1,0,0,1,1,1,0,1,1.0,Not sure
+E-0338,Endline,Jawzjan,Cash for Work,Male,7,56,6,2,2,1,1,1,5,4,3,1,5,1,1,0,1,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0339,Endline,Kabul,Cash for Work,Male,7,46,5,0,2,0,2,1,4,5,3,3,3,3,1,0,0,1,1,0,0,0,0,0,0,1,1.0,Less than a year
+E-0340,Endline,Kabul,Kitchen Garden,Male,6,33,7,2,5,1,3,2,3,7,3,1,2,0,1,1,1,1,1,0,0,1,0,0,1,1,1.0,Long term
+E-0341,Endline,Balkh,Solar Water System,Male,6,23,5,3,3,0,1,3,4,6,3,3,5,2,2,1,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0342,Endline,Kabul,Unconditional Cash Transfer,Male,7,50,7,4,5,1,3,2,5,7,2,1,2,1,0,1,0,0,1,1,1,1,1,1,1,1,1.0,A few years
+E-0343,Endline,Jawzjan,Cash for Work,Male,4,43,6,3,2,0,0,0,4,5,6,3,3,0,4,1,0,0,1,1,0,0,0,0,0,1,0.0,A few years
+E-0344,Endline,Kabul,Kitchen Garden,Female,4,26,5,3,3,0,3,2,5,6,2,0,3,1,1,1,1,0,1,1,1,0,1,1,1,1,1.0,Long term
+E-0345,Endline,Samangan,Solar Water System,Male,6,56,6,3,4,1,3,1,4,6,2,1,3,3,0,1,1,0,0,0,0,0,0,1,0,1,0.0,A few years
+E-0346,Endline,Samangan,Cash for Work,Male,8,43,7,2,4,1,2,4,5,5,1,2,5,3,1,1,1,0,0,0,0,0,1,1,0,1,1.0,Long term
+E-0347,Endline,Jawzjan,Kitchen Garden,Male,6,30,7,1,1,1,0,1,3,5,6,1,5,2,3,1,0,0,1,0,0,0,1,1,0,1,0.0,Long term
+E-0348,Endline,Faryab,Cash for Work,Female,7,33,6,2,3,1,1,2,5,7,2,1,1,3,1,1,0,0,0,0,0,1,0,1,0,1,1.0,Long term
+E-0349,Endline,Balkh,Cash for Work,Male,4,45,7,2,3,1,2,1,5,7,3,1,4,0,0,1,1,0,1,1,1,1,1,1,1,1,1.0,Long term
+E-0350,Endline,Balkh,Cash for Work,Male,7,56,7,1,4,1,1,2,4,6,2,3,2,0,1,1,1,0,1,0,1,1,0,1,1,1,1.0,A few years
+E-0351,Endline,Faryab,Livestock Package,Male,8,33,7,5,5,1,1,2,6,5,1,0,1,1,3,1,1,0,1,0,0,0,1,0,1,0,1.0,Not sure
+E-0352,Endline,Jawzjan,Solar Water System,Male,6,34,7,1,2,1,1,2,6,5,4,2,3,2,2,1,1,0,1,0,0,1,0,1,0,1,1.0,A few years
+E-0353,Endline,Faryab,Kitchen Garden,Male,11,32,7,3,2,1,2,2,3,7,4,0,3,0,1,1,1,0,1,0,1,1,0,1,0,1,1.0,Not sure
+E-0354,Endline,Samangan,Unconditional Cash Transfer,Female,7,50,7,0,5,0,1,0,4,5,3,3,3,1,1,1,0,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0355,Endline,Jawzjan,Kitchen Garden,Male,11,51,7,2,3,1,1,3,4,6,4,1,2,3,4,1,1,1,1,0,0,1,0,1,0,1,1.0,A few years
+E-0356,Endline,Samangan,Cash for Work,Male,8,37,6,3,3,2,1,3,5,6,6,1,1,1,3,1,0,0,0,1,1,1,0,1,1,1,1.0,Long term
+E-0357,Endline,Samangan,Livestock Package,Male,6,25,7,1,3,1,3,2,5,4,4,1,2,1,0,1,0,1,1,1,0,1,0,0,0,1,1.0,A few years
+E-0358,Endline,Samangan,Cash for Work,Female,6,38,6,0,1,0,0,0,5,5,3,3,3,6,3,0,0,1,0,0,0,0,0,0,0,1,1.0,Less than a year
+E-0359,Endline,Sar-e Pol,Cash for Work,Female,8,33,7,2,3,1,0,2,5,5,6,3,2,2,0,1,1,0,1,0,0,1,1,0,0,1,1.0,A few years
+E-0360,Endline,Sar-e Pol,Solar Water System,Male,6,60,6,1,4,0,1,1,5,6,5,4,3,0,4,1,1,0,0,0,1,1,1,0,1,1,1.0,A few years
+E-0361,Endline,Samangan,Solar Water System,Male,6,69,5,2,4,1,2,2,5,4,3,1,3,1,1,1,1,0,1,1,1,0,1,0,0,0,1.0,Less than a year
+E-0362,Endline,Jawzjan,Livestock Package,Male,6,41,7,3,5,0,1,3,4,5,3,0,0,2,0,1,1,0,0,1,0,1,0,1,0,1,0.0,A few years
+E-0363,Endline,Faryab,Unconditional Cash Transfer,Male,6,20,6,0,4,0,0,1,5,5,4,2,3,0,2,1,0,1,1,0,0,0,0,0,0,1,1.0,Long term
+E-0364,Endline,Samangan,Kitchen Garden,Male,7,31,7,1,1,0,1,2,6,7,5,3,5,3,3,1,0,0,1,0,1,0,0,1,0,1,1.0,A few years
+E-0365,Endline,Balkh,Kitchen Garden,Male,5,38,7,2,4,2,3,3,5,6,2,0,2,0,0,1,0,0,1,1,1,1,0,1,0,1,1.0,Long term
+E-0366,Endline,Faryab,Livestock Package,Female,5,20,7,2,4,2,2,3,5,7,4,2,2,3,4,1,1,0,1,0,0,0,0,0,1,1,1.0,A few years
+E-0367,Endline,Sar-e Pol,Unconditional Cash Transfer,Male,7,42,7,1,2,1,2,2,5,5,3,0,3,0,2,1,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0368,Endline,Balkh,Cash for Work,Male,11,54,6,0,1,0,1,2,4,4,2,3,1,3,3,0,1,1,0,0,0,1,0,1,0,1,1.0,A few years
+E-0369,Endline,Faryab,Solar Water System,Female,5,27,6,0,2,0,1,0,4,6,5,3,5,3,2,1,0,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0370,Endline,Kabul,Cash for Work,Male,6,47,7,2,3,0,1,0,4,5,7,2,4,2,4,1,1,0,0,0,0,0,0,1,0,1,0.0,A few years
+E-0371,Endline,Faryab,Kitchen Garden,Male,8,44,7,2,4,1,0,1,4,5,4,3,2,1,2,1,1,0,1,1,0,0,0,1,0,1,1.0,A few years
+E-0372,Endline,Samangan,Unconditional Cash Transfer,Male,6,35,7,4,4,0,2,3,5,7,2,2,0,3,2,1,1,0,1,1,1,0,0,1,1,1,1.0,A few years
+E-0373,Endline,Faryab,Cash for Work,Male,12,40,6,2,2,0,1,3,4,4,4,5,3,0,5,1,1,0,0,0,0,0,0,0,0,1,1.0,A few years
+E-0374,Endline,Faryab,Unconditional Cash Transfer,Male,7,55,6,1,0,2,0,0,4,4,6,6,4,2,1,1,0,0,1,0,0,0,0,0,0,0,1.0,Not sure
+E-0375,Endline,Balkh,Livestock Package,Male,9,37,7,2,5,1,1,3,5,6,2,0,2,3,0,1,1,0,1,0,0,1,1,1,0,1,1.0,A few years
+E-0376,Endline,Kabul,Kitchen Garden,Male,8,61,6,4,6,3,1,5,5,6,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1.0,Long term
+E-0377,Endline,Balkh,Cash for Work,Male,6,34,6,3,5,1,0,0,6,7,2,2,3,3,3,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+E-0378,Endline,Kabul,Cash for Work,Female,8,48,7,2,3,1,2,2,4,5,3,2,2,1,0,1,1,0,1,1,0,1,1,1,1,1,1.0,Not sure
+E-0379,Endline,Jawzjan,Cash for Work,Male,4,47,7,4,5,3,2,2,4,7,1,0,2,0,2,1,1,0,0,1,0,0,0,0,0,1,1.0,Long term
+E-0380,Endline,Samangan,Unconditional Cash Transfer,Female,7,37,7,3,2,0,0,4,3,5,4,3,3,2,2,1,1,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0381,Endline,Balkh,Unconditional Cash Transfer,Male,8,31,7,4,6,2,2,5,5,5,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1.0,A few years
+E-0382,Endline,Sar-e Pol,Livestock Package,Male,9,57,7,3,4,2,0,4,4,6,2,0,1,0,1,1,1,0,0,0,0,1,0,1,1,1,1.0,A few years
+E-0383,Endline,Jawzjan,Livestock Package,Male,10,54,6,2,1,0,0,3,5,6,4,2,4,1,3,1,0,0,1,1,0,1,0,1,0,1,0.0,Not sure
+E-0384,Endline,Balkh,Cash for Work,Male,10,23,7,3,3,1,1,3,6,5,5,2,2,2,1,1,1,0,0,0,0,0,1,0,0,1,0.0,Less than a year
+E-0385,Endline,Balkh,Solar Water System,Male,2,35,7,0,2,0,0,0,5,5,6,4,4,2,3,1,1,0,1,0,0,0,1,0,0,1,1.0,A few years
+E-0386,Endline,Sar-e Pol,Livestock Package,Male,6,34,5,4,2,2,2,3,6,6,0,0,1,1,2,1,1,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0387,Endline,Sar-e Pol,Livestock Package,Male,9,61,6,1,4,1,0,0,5,6,5,4,4,2,0,0,0,0,1,0,0,0,0,1,0,1,1.0,Long term
+E-0388,Endline,Sar-e Pol,Cash for Work,Female,8,39,7,2,3,1,0,1,4,6,3,4,4,2,3,1,0,0,1,1,0,1,0,0,1,1,1.0,Long term
+E-0389,Endline,Balkh,Livestock Package,Male,7,56,5,1,3,0,1,0,3,6,3,2,5,1,3,1,0,0,0,0,0,0,1,1,0,1,1.0,A few years
+E-0390,Endline,Jawzjan,Solar Water System,Female,5,42,7,1,3,1,0,0,4,5,5,1,5,4,4,1,0,0,0,0,1,0,0,0,1,1,1.0,Less than a year
+E-0391,Endline,Kabul,Kitchen Garden,Male,3,35,7,1,4,0,1,3,6,5,4,1,3,1,3,1,1,1,1,0,0,1,1,0,0,1,1.0,A few years
+E-0392,Endline,Sar-e Pol,Kitchen Garden,Male,5,33,7,1,3,2,1,3,4,6,2,1,2,1,2,1,1,1,0,0,0,1,1,0,0,1,1.0,A few years
+E-0393,Endline,Jawzjan,Solar Water System,Female,6,18,6,1,3,0,1,3,5,6,4,1,3,0,4,1,0,0,0,0,0,0,1,1,0,1,1.0,Long term
+E-0394,Endline,Faryab,Unconditional Cash Transfer,Male,5,34,6,0,2,1,1,0,3,7,2,1,4,1,3,1,1,1,0,0,0,0,0,1,0,1,1.0,A few years
+E-0395,Endline,Samangan,Livestock Package,Female,6,41,6,1,6,1,3,2,6,7,2,2,1,3,0,1,0,0,1,0,1,1,0,1,0,1,1.0,A few years
+E-0396,Endline,Kabul,Kitchen Garden,Male,5,49,6,2,3,3,3,4,5,5,0,0,3,1,0,1,0,1,1,1,0,1,1,1,0,1,1.0,A few years
+E-0397,Endline,Sar-e Pol,Livestock Package,Male,6,31,7,1,3,2,0,4,4,6,4,4,3,2,2,1,0,1,1,0,0,0,0,0,0,1,1.0,A few years
+E-0398,Endline,Sar-e Pol,Kitchen Garden,Female,3,36,6,2,5,1,2,1,4,5,2,2,3,4,4,1,1,0,1,0,0,1,0,1,0,1,1.0,Not sure
+E-0399,Endline,Jawzjan,Livestock Package,Male,12,48,7,0,3,0,0,0,3,4,6,3,4,2,2,1,0,0,0,0,0,1,0,0,1,1,1.0,Long term
+E-0400,Endline,Faryab,Livestock Package,Male,7,45,7,2,7,1,2,3,6,7,3,0,1,1,1,1,0,1,1,1,0,0,1,1,0,1,1.0,A few years
+E-0401,Endline,Samangan,Livestock Package,Male,6,49,7,3,3,1,3,4,4,7,4,1,2,2,1,1,0,0,0,0,1,1,1,1,0,0,1.0,A few years
+E-0402,Endline,Jawzjan,Cash for Work,Male,9,36,7,2,4,4,1,3,5,7,2,2,2,4,3,1,0,0,1,1,0,1,0,1,0,1,0.0,Not sure
+E-0403,Endline,Samangan,Cash for Work,Male,10,40,7,1,2,0,0,3,5,6,3,2,3,2,4,1,1,0,1,0,0,1,0,1,0,1,1.0,A few years
+E-0404,Endline,Balkh,Livestock Package,Male,4,34,7,1,5,2,2,4,6,5,1,0,2,1,0,1,1,0,1,1,0,1,0,1,1,1,1.0,A few years
+E-0405,Endline,Jawzjan,Unconditional Cash Transfer,Male,7,44,7,3,2,1,2,2,5,5,3,1,2,2,3,1,0,0,1,0,0,0,1,1,0,1,0.0,A few years
+E-0406,Endline,Balkh,Cash for Work,Female,6,23,6,2,4,1,0,1,4,6,5,2,2,3,4,1,0,1,0,0,0,1,0,1,1,1,0.0,Not sure
+E-0407,Endline,Faryab,Solar Water System,Male,7,33,7,2,5,2,2,1,4,5,3,2,4,1,2,1,0,0,0,0,0,1,1,1,0,1,1.0,A few years
+E-0408,Endline,Samangan,Unconditional Cash Transfer,Male,5,35,5,1,2,1,3,3,4,7,5,0,2,3,3,1,1,0,0,0,0,0,0,0,0,1,1.0,Long term
+E-0409,Endline,Samangan,Cash for Work,Male,6,54,7,2,5,0,2,2,4,6,4,3,2,4,3,1,0,0,1,0,0,0,0,1,0,1,1.0,Less than a year
+E-0410,Endline,Kabul,Cash for Work,Male,3,31,7,2,4,2,1,2,5,6,4,0,2,1,1,1,1,0,1,0,1,0,0,0,0,1,1.0,A few years
+E-0411,Endline,Jawzjan,Livestock Package,Male,9,21,7,2,6,1,2,3,5,7,1,0,2,1,0,1,0,1,1,1,0,0,1,1,1,1,1.0,A few years
+E-0412,Endline,Faryab,Solar Water System,Male,7,42,7,1,4,2,1,2,4,6,3,2,2,1,1,1,0,0,1,0,0,1,1,1,1,1,1.0,Not sure
+E-0413,Endline,Balkh,Unconditional Cash Transfer,Male,9,41,5,0,3,0,2,0,4,4,4,4,3,1,3,1,1,0,0,0,0,0,0,1,0,1,1.0,A few years
+E-0414,Endline,Balkh,Cash for Work,Female,8,27,6,3,4,0,1,2,4,6,5,2,4,2,2,0,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0415,Endline,Jawzjan,Kitchen Garden,Male,8,65,6,2,6,1,3,4,4,6,2,0,2,0,0,1,1,0,0,0,0,1,1,1,1,1,1.0,Long term
+E-0416,Endline,Sar-e Pol,Cash for Work,Male,9,56,6,1,1,0,0,2,4,5,4,3,6,2,4,1,1,0,1,0,0,0,0,0,0,1,1.0,A few years
+E-0417,Endline,Balkh,Kitchen Garden,Male,5,53,5,1,5,0,2,3,6,6,2,2,1,0,5,1,1,0,0,1,0,1,1,1,0,1,1.0,Long term
+E-0418,Endline,Balkh,Solar Water System,Male,8,40,6,2,1,0,1,0,5,6,4,3,4,2,2,1,0,1,1,0,0,0,1,0,0,1,1.0,Long term
+E-0419,Endline,Jawzjan,Solar Water System,Male,7,34,7,2,6,1,2,3,5,7,4,3,1,1,2,1,0,0,0,0,0,1,1,1,0,1,0.0,Long term
+E-0420,Endline,Jawzjan,Livestock Package,Male,6,41,4,2,4,1,2,4,7,7,1,1,2,0,1,1,1,0,1,0,0,0,1,0,0,1,1.0,Long term
+E-0421,Endline,Samangan,Cash for Work,Male,7,20,7,3,4,2,1,3,5,7,4,1,2,2,2,1,0,0,0,0,0,1,1,1,1,1,1.0,A few years
+E-0422,Endline,Samangan,Solar Water System,Male,11,45,5,3,1,1,0,1,4,6,7,5,5,3,3,0,0,1,0,0,0,0,0,1,1,1,1.0,Long term
+E-0423,Endline,Kabul,Unconditional Cash Transfer,Male,2,42,7,2,5,1,2,2,5,6,4,3,3,0,2,1,0,0,1,0,0,1,0,1,1,1,1.0,Long term
+E-0424,Endline,Balkh,Cash for Work,Male,8,48,7,1,4,0,2,0,3,7,2,0,3,1,2,1,1,1,1,1,0,1,0,1,0,1,1.0,A few years
+E-0425,Endline,Faryab,Kitchen Garden,Male,5,48,7,1,5,0,2,2,6,6,4,2,2,2,3,1,0,0,0,1,1,1,0,1,1,1,0.0,A few years
+E-0426,Endline,Sar-e Pol,Livestock Package,Male,9,28,6,1,2,0,1,2,4,5,5,3,5,2,2,0,0,0,1,0,0,1,0,0,0,1,1.0,A few years
+E-0427,Endline,Samangan,Livestock Package,Female,7,42,7,0,3,0,3,1,4,6,5,2,5,3,2,1,1,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0428,Endline,Samangan,Kitchen Garden,Male,8,27,7,3,7,3,0,5,5,7,2,0,1,1,2,1,1,1,1,1,1,1,1,1,0,1,0.0,Less than a year
+E-0429,Endline,Kabul,Solar Water System,Female,5,44,7,2,2,0,0,0,5,7,4,3,3,1,3,0,0,0,0,0,0,0,0,1,0,1,1.0,Less than a year
+E-0430,Endline,Balkh,Cash for Work,Male,4,40,6,2,3,2,1,3,5,7,4,0,2,1,1,1,1,0,1,0,0,1,1,1,1,0,1.0,Long term

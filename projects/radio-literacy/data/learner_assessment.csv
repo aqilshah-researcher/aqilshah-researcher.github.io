@@ -1,0 +1,391 @@
+learner_id,province,sex,learner_group,age,weeks_enrolled,read_letter,read_word,read_sentence,read_short_text,write_letter,write_word,write_sentence,count_objects,add_numbers,subtract_numbers,tell_time,read_price,self_rated_improvement,radio_signal_stable,difficulty_accessing_radio,sound_quality_issue,needs_trainer,lesson_length_ok,confident_method_sustainable
+L-0001,Nangarhar,Female,Adolescent (13-18),18,12,1,1,1,1,1,1,0,1,1,1,1,1,Some,1,1,1,1,1,1
+L-0002,Herat,Male,Adult literacy (19+),44,12,1,0,1,0,0,0,0,1,0,1,0,0,Some,1,0,0,1,1,1
+L-0003,Nangarhar,Male,Adolescent (13-18),17,24,1,1,1,1,1,1,1,1,1,0,1,1,Significant,1,0,0,1,1,1
+L-0004,Nangarhar,Female,Adolescent (13-18),17,16,1,1,0,1,0,1,0,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0005,Herat,Male,Adult literacy (19+),38,9,1,1,1,1,1,1,1,1,1,0,0,1,Significant,1,1,0,0,1,1
+L-0006,Nangarhar,Female,Adolescent (13-18),13,8,1,1,1,0,1,1,1,1,1,0,0,0,Some,1,0,0,1,1,1
+L-0007,Helmand,Female,Adult literacy (19+),43,26,1,1,1,0,1,1,1,1,1,1,0,1,Significant,1,1,0,1,1,1
+L-0008,Helmand,Female,Adolescent (13-18),15,10,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,1,1,1,1
+L-0009,Herat,Male,Adolescent (13-18),15,12,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0010,Herat,Female,Adolescent (13-18),18,22,1,0,0,0,1,1,0,1,1,0,0,0,Some,1,1,1,1,1,1
+L-0011,Kandahar,Male,Adolescent (13-18),14,23,1,0,0,0,1,1,1,0,1,1,1,1,Significant,1,1,0,1,1,1
+L-0012,Herat,Female,Adolescent (13-18),16,10,1,1,0,0,1,1,1,1,1,0,1,1,Significant,1,1,0,1,1,1
+L-0013,Herat,Female,Adolescent (13-18),14,17,1,1,0,0,1,1,0,1,1,0,0,0,Some,1,0,0,0,1,1
+L-0014,Balkh,Male,Adolescent (13-18),18,24,1,1,1,1,1,1,0,1,1,0,1,1,Some,1,0,0,1,1,1
+L-0015,Herat,Female,Adult literacy (19+),38,15,1,1,1,1,1,0,0,1,1,1,1,0,Some,1,0,0,0,1,1
+L-0016,Herat,Male,Adolescent (13-18),16,8,1,1,1,0,1,1,0,1,1,0,0,0,Some,1,1,0,1,1,1
+L-0017,Helmand,Female,Adult literacy (19+),38,12,0,0,0,0,1,0,0,1,0,1,0,1,Some,1,0,0,1,1,1
+L-0018,Nangarhar,Female,Adolescent (13-18),15,10,0,1,0,1,1,1,0,1,1,0,0,0,Some,0,1,0,1,1,1
+L-0019,Nangarhar,Female,Adult literacy (19+),44,13,1,0,0,1,1,1,0,1,0,1,1,1,Some,1,0,0,0,1,1
+L-0020,Balkh,Female,Adolescent (13-18),17,18,1,0,0,1,0,1,1,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0021,Herat,Male,Adult literacy (19+),28,24,1,1,0,0,0,1,0,1,0,1,0,1,Significant,1,0,0,1,1,1
+L-0022,Herat,Male,Adolescent (13-18),13,13,1,1,1,1,1,1,0,1,1,1,0,1,Some,1,1,0,0,1,1
+L-0023,Balkh,Male,Adult literacy (19+),26,20,0,0,0,0,0,0,0,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0024,Kandahar,Female,Adolescent (13-18),15,12,1,1,1,0,1,1,0,1,1,1,1,0,Significant,0,1,0,1,1,1
+L-0025,Herat,Female,Adolescent (13-18),16,10,1,0,1,0,0,0,0,1,1,1,1,0,Some,0,1,0,1,1,1
+L-0026,Helmand,Male,Adolescent (13-18),13,19,1,0,1,1,1,1,1,1,1,1,0,1,Some,0,0,1,1,1,1
+L-0027,Kandahar,Female,Adolescent (13-18),14,11,1,1,1,0,1,1,1,1,1,1,0,1,Some,0,1,0,1,1,1
+L-0028,Kandahar,Male,Adolescent (13-18),14,14,1,1,0,1,1,1,1,1,1,1,1,0,Some,1,0,1,0,1,1
+L-0029,Nangarhar,Male,Adult literacy (19+),27,14,1,1,1,1,0,1,1,0,1,0,0,0,Some,1,0,0,1,1,1
+L-0030,Kandahar,Female,Adolescent (13-18),17,11,0,1,1,0,0,0,1,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0031,Balkh,Male,Adolescent (13-18),18,9,1,1,1,1,1,1,1,1,1,1,1,0,Significant,1,1,0,1,1,1
+L-0032,Balkh,Female,Adolescent (13-18),13,14,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0033,Herat,Male,Adolescent (13-18),16,16,1,1,1,0,1,1,0,1,1,1,1,0,Significant,1,1,0,0,1,1
+L-0034,Helmand,Male,Adolescent (13-18),18,11,1,0,1,0,1,1,1,1,1,0,0,0,Some,1,1,1,0,1,1
+L-0035,Balkh,Male,Adolescent (13-18),16,22,0,1,0,0,1,0,0,1,1,0,0,0,Some,1,0,1,1,1,1
+L-0036,Kandahar,Male,Adolescent (13-18),18,16,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0037,Balkh,Male,Adolescent (13-18),16,10,1,1,1,1,1,0,0,1,1,0,0,1,Some,1,1,0,0,1,1
+L-0038,Balkh,Male,Adolescent (13-18),18,22,1,1,1,0,1,1,1,1,0,1,1,1,Significant,1,1,0,0,1,1
+L-0039,Kandahar,Male,Adolescent (13-18),13,16,1,1,1,1,1,1,1,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0040,Helmand,Female,Adolescent (13-18),18,24,1,1,1,1,1,1,1,1,0,1,0,1,Significant,1,1,0,1,1,1
+L-0041,Kandahar,Female,Adolescent (13-18),17,11,1,1,0,0,0,1,1,1,1,1,0,0,Some,1,0,0,1,0,1
+L-0042,Herat,Male,Adolescent (13-18),13,10,1,1,1,0,0,1,0,1,1,1,0,0,Some,1,0,0,0,1,1
+L-0043,Kandahar,Male,Adult literacy (19+),33,8,1,1,0,1,1,1,0,1,1,1,0,1,Some,1,0,0,1,1,0
+L-0044,Herat,Female,Adolescent (13-18),17,19,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0045,Nangarhar,Female,Adolescent (13-18),18,12,0,1,0,1,1,0,0,1,1,0,0,1,Some,1,1,1,1,0,1
+L-0046,Nangarhar,Female,Adolescent (13-18),14,24,1,1,1,1,1,1,1,1,1,0,1,0,Some,1,0,0,1,1,0
+L-0047,Helmand,Male,Adult literacy (19+),25,26,1,1,0,0,1,1,0,1,1,1,0,0,Significant,1,1,1,1,1,1
+L-0048,Kandahar,Male,Adult literacy (19+),45,11,1,1,1,1,1,1,0,1,1,1,1,0,Significant,1,0,1,1,1,0
+L-0049,Herat,Female,Adolescent (13-18),13,19,1,0,1,0,1,0,1,0,1,1,1,1,Some,1,1,0,1,1,1
+L-0050,Herat,Male,Adult literacy (19+),43,16,1,0,0,0,0,0,0,1,0,0,0,0,None,1,0,0,0,1,1
+L-0051,Kandahar,Female,Adult literacy (19+),31,9,1,1,1,1,1,1,0,1,1,1,0,1,Significant,1,0,0,1,1,1
+L-0052,Nangarhar,Female,Adolescent (13-18),15,20,1,0,0,0,0,1,0,1,1,0,0,0,Some,1,1,0,1,1,0
+L-0053,Balkh,Male,Adolescent (13-18),15,8,1,1,1,0,1,1,0,1,0,0,0,1,Some,1,0,0,1,1,0
+L-0054,Kandahar,Female,Adolescent (13-18),13,14,1,1,1,0,0,1,0,0,1,0,0,0,Some,1,0,0,1,1,1
+L-0055,Nangarhar,Male,Adult literacy (19+),40,9,1,0,0,1,1,0,0,1,0,0,1,0,Some,1,1,0,1,1,1
+L-0056,Kandahar,Female,Adolescent (13-18),16,15,1,1,1,0,1,1,1,1,1,0,0,1,Some,1,1,0,1,1,1
+L-0057,Herat,Male,Adolescent (13-18),16,15,1,1,1,0,0,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0058,Balkh,Female,Adult literacy (19+),29,12,1,0,0,0,1,0,0,1,1,1,0,0,None,1,1,0,1,1,1
+L-0059,Helmand,Male,Adult literacy (19+),23,9,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0060,Herat,Female,Adult literacy (19+),26,17,0,1,1,1,1,0,0,1,0,1,0,1,Some,0,1,0,1,1,1
+L-0061,Helmand,Female,Adult literacy (19+),36,17,1,0,0,0,1,0,0,1,0,0,0,0,Some,1,1,0,1,1,1
+L-0062,Herat,Female,Adolescent (13-18),18,15,1,0,0,0,1,0,1,1,1,0,0,1,Some,1,1,0,1,1,1
+L-0063,Balkh,Female,Adult literacy (19+),34,8,1,0,0,0,0,1,0,0,0,1,1,1,Some,1,0,0,1,0,1
+L-0064,Helmand,Female,Adolescent (13-18),15,11,1,1,1,0,1,1,1,1,0,1,1,1,Significant,1,1,0,0,1,1
+L-0065,Balkh,Female,Adolescent (13-18),18,15,1,1,0,0,1,1,0,1,1,0,1,0,Some,1,1,0,1,0,1
+L-0066,Helmand,Female,Adult literacy (19+),25,16,1,1,1,0,1,0,1,1,1,0,1,0,Some,1,1,0,1,1,1
+L-0067,Herat,Male,Adult literacy (19+),19,17,0,1,1,0,0,0,1,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0068,Kandahar,Female,Adolescent (13-18),18,12,1,1,0,0,0,0,0,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0069,Herat,Female,Adult literacy (19+),41,9,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,1,1,1,1
+L-0070,Helmand,Female,Adolescent (13-18),17,26,1,1,1,1,1,1,1,1,1,0,1,0,Significant,1,1,0,1,1,1
+L-0071,Helmand,Female,Adolescent (13-18),15,16,1,1,1,0,1,0,1,1,1,1,0,1,Some,1,0,1,1,1,1
+L-0072,Kandahar,Female,Adolescent (13-18),15,19,1,0,0,1,1,1,0,1,1,0,0,1,Some,1,0,1,0,1,1
+L-0073,Helmand,Female,Adolescent (13-18),18,11,1,0,0,1,1,1,0,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0074,Nangarhar,Male,Adult literacy (19+),30,13,0,0,1,0,1,1,1,1,1,0,1,1,Some,1,0,0,0,1,1
+L-0075,Nangarhar,Female,Adolescent (13-18),15,18,1,1,0,0,0,1,0,1,1,0,0,0,None,1,1,0,1,1,1
+L-0076,Herat,Female,Adolescent (13-18),14,16,1,1,0,1,1,1,1,0,0,1,0,1,Some,1,1,0,1,1,1
+L-0077,Herat,Male,Adolescent (13-18),16,15,0,1,0,0,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0078,Balkh,Female,Adolescent (13-18),14,19,1,1,0,0,1,0,0,1,1,0,0,1,Some,1,1,0,1,1,1
+L-0079,Helmand,Female,Adolescent (13-18),18,15,1,1,1,0,1,1,1,1,1,1,1,1,Significant,0,0,0,0,1,1
+L-0080,Nangarhar,Female,Adolescent (13-18),18,10,1,1,0,1,1,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0081,Nangarhar,Female,Adolescent (13-18),18,20,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0082,Nangarhar,Male,Adolescent (13-18),16,20,1,1,0,0,0,0,0,1,0,0,1,0,Some,1,0,0,1,1,1
+L-0083,Balkh,Female,Adult literacy (19+),28,22,1,1,1,0,1,1,0,1,0,0,0,0,Some,1,0,0,1,1,1
+L-0084,Kandahar,Male,Adult literacy (19+),41,22,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0085,Kandahar,Male,Adolescent (13-18),18,18,1,1,1,1,1,0,0,1,1,0,0,0,Some,0,1,1,1,1,1
+L-0086,Balkh,Male,Adult literacy (19+),32,18,0,1,1,0,1,1,0,1,1,1,0,1,Some,1,0,0,0,1,1
+L-0087,Helmand,Male,Adult literacy (19+),21,9,0,1,1,0,1,1,0,1,0,1,1,0,Some,1,1,0,1,0,1
+L-0088,Kandahar,Female,Adolescent (13-18),16,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0089,Nangarhar,Male,Adolescent (13-18),14,16,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,0,1,1,1,1
+L-0090,Balkh,Male,Adolescent (13-18),18,12,0,0,0,0,0,0,0,0,0,1,0,0,Some,1,0,1,1,1,1
+L-0091,Nangarhar,Female,Adult literacy (19+),29,14,1,0,1,0,1,0,0,1,0,0,0,0,None,1,1,1,1,1,1
+L-0092,Balkh,Female,Adolescent (13-18),14,17,0,0,1,0,1,1,0,0,1,1,1,1,Some,1,1,1,1,1,1
+L-0093,Herat,Female,Adult literacy (19+),37,24,1,1,0,1,1,0,0,1,1,0,0,1,Some,0,1,0,1,1,1
+L-0094,Kandahar,Female,Adolescent (13-18),17,20,1,1,0,1,1,1,1,1,1,1,1,0,Significant,1,1,0,1,1,1
+L-0095,Nangarhar,Male,Adult literacy (19+),24,15,1,1,1,1,1,1,0,1,0,0,0,1,Some,0,1,0,1,1,1
+L-0096,Helmand,Male,Adult literacy (19+),44,15,1,0,0,1,0,1,0,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0097,Kandahar,Female,Adolescent (13-18),13,14,1,1,1,1,0,1,0,1,1,1,0,1,Significant,1,1,0,1,0,1
+L-0098,Kandahar,Female,Adolescent (13-18),17,23,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,1,1,1,1
+L-0099,Kandahar,Male,Adult literacy (19+),36,15,1,1,0,1,1,1,1,1,1,1,1,1,Some,1,1,1,1,1,1
+L-0100,Helmand,Male,Adult literacy (19+),30,26,1,1,0,0,0,0,0,0,0,0,0,0,None,1,0,0,1,1,1
+L-0101,Kandahar,Female,Adolescent (13-18),16,23,1,1,1,1,1,1,1,1,1,1,0,1,Significant,1,0,0,1,1,1
+L-0102,Kandahar,Male,Adult literacy (19+),34,14,1,0,0,1,0,1,1,1,1,0,1,1,Significant,1,0,1,0,1,1
+L-0103,Balkh,Female,Adult literacy (19+),21,14,1,1,0,0,1,1,0,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0104,Herat,Male,Adolescent (13-18),13,10,1,1,1,0,1,1,0,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0105,Kandahar,Female,Adolescent (13-18),13,22,1,1,0,1,1,1,1,1,1,0,0,0,Some,1,0,0,1,1,1
+L-0106,Kandahar,Female,Adult literacy (19+),25,10,1,0,0,1,1,1,1,1,0,1,1,0,Significant,1,0,0,1,0,1
+L-0107,Balkh,Male,Adolescent (13-18),14,9,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,0,1
+L-0108,Helmand,Female,Adolescent (13-18),17,9,0,1,1,1,0,1,1,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0109,Kandahar,Female,Adult literacy (19+),20,23,1,0,1,1,1,1,1,1,0,1,1,1,Some,1,1,0,1,1,1
+L-0110,Helmand,Female,Adolescent (13-18),14,8,1,0,1,0,1,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0111,Balkh,Female,Adolescent (13-18),15,22,1,1,1,0,0,0,0,0,1,0,0,0,Some,1,0,1,1,1,1
+L-0112,Balkh,Male,Adolescent (13-18),15,8,0,1,0,1,1,1,1,1,1,0,1,1,Some,1,0,0,0,1,1
+L-0113,Nangarhar,Female,Adolescent (13-18),17,11,1,0,1,1,1,1,1,1,0,1,1,0,Significant,1,0,0,1,1,1
+L-0114,Herat,Female,Adolescent (13-18),18,10,1,0,1,1,1,1,0,1,1,1,0,1,Some,1,0,0,0,1,1
+L-0115,Kandahar,Male,Adolescent (13-18),17,14,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0116,Balkh,Female,Adolescent (13-18),18,23,1,1,0,0,1,1,1,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0117,Kandahar,Male,Adolescent (13-18),17,13,1,0,0,0,0,1,0,1,0,1,0,0,Some,1,0,1,1,1,1
+L-0118,Balkh,Male,Adolescent (13-18),13,11,1,1,1,1,1,1,1,1,1,1,0,0,Some,0,1,0,1,1,1
+L-0119,Helmand,Male,Adolescent (13-18),14,8,1,0,0,0,0,0,0,1,1,0,0,0,None,1,0,0,0,1,1
+L-0120,Balkh,Female,Adult literacy (19+),40,17,0,0,0,0,1,0,0,1,1,0,1,1,Some,0,0,0,1,1,1
+L-0121,Helmand,Female,Adult literacy (19+),22,23,1,1,1,0,1,1,0,1,1,0,1,0,Some,1,1,0,1,1,1
+L-0122,Nangarhar,Female,Adolescent (13-18),17,8,1,1,1,0,1,1,0,1,1,1,1,1,Some,1,1,1,1,1,1
+L-0123,Herat,Female,Adolescent (13-18),18,20,1,1,0,0,1,1,1,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0124,Balkh,Male,Adult literacy (19+),33,21,1,1,0,1,1,1,0,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0125,Nangarhar,Female,Adult literacy (19+),42,22,0,1,0,0,1,0,0,1,0,0,0,0,Some,1,0,0,1,1,1
+L-0126,Kandahar,Male,Adolescent (13-18),13,18,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0127,Helmand,Male,Adult literacy (19+),29,19,1,1,0,0,0,0,0,0,1,0,0,0,None,1,1,0,1,1,1
+L-0128,Nangarhar,Male,Adolescent (13-18),16,17,0,0,0,0,1,0,0,1,0,1,0,0,None,1,1,0,1,1,1
+L-0129,Kandahar,Male,Adult literacy (19+),22,11,1,1,1,1,0,1,1,1,1,1,0,0,Some,1,0,0,1,0,1
+L-0130,Kandahar,Male,Adolescent (13-18),13,19,1,1,0,0,1,1,1,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0131,Herat,Male,Adolescent (13-18),14,15,1,1,1,1,1,1,0,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0132,Kandahar,Male,Adolescent (13-18),14,16,1,0,0,0,1,1,0,1,1,1,0,1,Some,0,0,0,1,1,1
+L-0133,Helmand,Male,Adult literacy (19+),41,21,1,0,1,1,1,1,0,1,1,1,1,0,Some,1,1,0,0,1,1
+L-0134,Nangarhar,Male,Adult literacy (19+),45,24,1,0,1,1,1,1,0,1,1,0,0,1,Significant,1,0,0,0,1,1
+L-0135,Nangarhar,Male,Adolescent (13-18),17,14,1,0,1,0,1,1,0,1,0,0,0,0,Some,1,1,0,1,1,1
+L-0136,Nangarhar,Female,Adolescent (13-18),15,12,1,1,0,0,1,0,0,1,1,0,1,0,Some,1,1,0,1,1,0
+L-0137,Balkh,Male,Adolescent (13-18),16,11,1,1,1,0,1,0,0,1,1,0,1,0,Some,1,0,0,1,0,0
+L-0138,Balkh,Female,Adolescent (13-18),16,22,1,0,1,1,1,0,0,1,1,1,1,1,Some,1,0,0,1,1,0
+L-0139,Nangarhar,Female,Adolescent (13-18),17,15,0,1,1,0,1,0,0,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0140,Nangarhar,Male,Adult literacy (19+),34,19,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0141,Kandahar,Male,Adult literacy (19+),45,20,0,0,0,0,1,1,1,1,1,1,0,0,Some,0,1,0,1,1,0
+L-0142,Herat,Female,Adolescent (13-18),18,9,1,1,1,1,0,1,1,1,1,1,1,1,Significant,1,0,1,0,1,1
+L-0143,Helmand,Female,Adult literacy (19+),35,23,1,0,1,0,1,0,0,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0144,Balkh,Female,Adolescent (13-18),16,24,1,1,0,0,0,1,1,1,1,1,0,0,Some,1,1,0,0,1,1
+L-0145,Kandahar,Male,Adolescent (13-18),14,11,1,1,1,1,0,0,0,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0146,Balkh,Male,Adolescent (13-18),16,22,0,0,0,1,1,0,1,1,1,0,0,1,Some,1,1,0,1,1,1
+L-0147,Herat,Female,Adolescent (13-18),13,18,1,1,1,1,1,0,0,1,1,1,0,0,Some,1,1,1,1,1,1
+L-0148,Balkh,Female,Adult literacy (19+),43,15,1,0,1,0,1,0,0,1,0,0,1,1,Some,1,0,0,1,1,1
+L-0149,Herat,Female,Adolescent (13-18),17,13,1,0,0,1,1,1,1,1,0,1,0,0,Some,1,1,0,1,0,1
+L-0150,Balkh,Male,Adolescent (13-18),16,9,0,0,1,0,1,1,1,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0151,Nangarhar,Female,Adult literacy (19+),32,26,1,0,0,1,1,0,0,1,1,1,0,1,Some,1,1,0,1,1,1
+L-0152,Herat,Male,Adolescent (13-18),18,8,0,1,1,0,1,0,1,1,1,1,1,1,Some,1,0,1,1,1,1
+L-0153,Helmand,Female,Adolescent (13-18),15,16,1,1,0,0,1,1,0,0,0,0,1,0,Some,0,0,0,1,1,1
+L-0154,Balkh,Male,Adolescent (13-18),18,10,1,1,0,1,1,0,0,1,1,1,0,0,None,1,0,0,1,1,1
+L-0155,Balkh,Male,Adolescent (13-18),13,21,1,1,0,1,1,1,0,1,1,1,1,1,Some,1,1,1,1,1,1
+L-0156,Herat,Female,Adolescent (13-18),14,24,1,1,1,1,1,0,1,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0157,Kandahar,Female,Adolescent (13-18),18,19,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0158,Nangarhar,Female,Adolescent (13-18),16,8,1,1,0,1,1,1,1,1,1,1,0,1,Significant,0,0,0,1,1,1
+L-0159,Balkh,Male,Adolescent (13-18),15,8,1,0,0,0,1,1,0,0,0,0,0,0,None,1,0,0,1,1,1
+L-0160,Balkh,Male,Adolescent (13-18),17,18,1,1,0,0,0,0,0,1,1,1,1,0,Some,1,0,1,1,1,1
+L-0161,Kandahar,Male,Adolescent (13-18),14,10,0,0,1,1,1,1,0,1,1,1,1,0,Significant,1,1,0,1,1,1
+L-0162,Kandahar,Female,Adolescent (13-18),14,8,1,1,1,1,1,1,0,1,1,0,0,1,Significant,1,0,0,1,1,1
+L-0163,Herat,Female,Adolescent (13-18),13,23,1,1,0,1,1,1,0,1,1,1,1,1,Some,1,0,0,0,1,1
+L-0164,Nangarhar,Male,Adolescent (13-18),16,21,1,1,1,0,1,0,1,1,1,1,1,0,Significant,1,0,0,1,1,1
+L-0165,Balkh,Female,Adult literacy (19+),22,21,1,1,0,0,1,1,0,1,0,0,0,1,Some,1,0,0,1,1,1
+L-0166,Herat,Female,Adolescent (13-18),15,8,1,1,0,0,1,0,0,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0167,Herat,Male,Adolescent (13-18),14,14,1,1,1,0,1,1,1,1,1,1,0,1,Significant,1,0,0,1,0,1
+L-0168,Herat,Female,Adolescent (13-18),18,13,1,1,1,1,1,1,0,1,1,0,0,0,Significant,1,0,0,1,1,1
+L-0169,Helmand,Female,Adult literacy (19+),36,16,1,1,1,0,1,1,0,1,1,0,1,1,Some,1,1,0,1,1,0
+L-0170,Nangarhar,Male,Adult literacy (19+),45,25,1,1,1,0,1,1,1,0,0,0,0,0,Significant,1,0,0,1,1,1
+L-0171,Kandahar,Female,Adolescent (13-18),16,11,0,1,1,0,1,1,0,1,0,0,0,0,Some,0,1,0,1,1,1
+L-0172,Balkh,Female,Adolescent (13-18),18,21,0,1,0,0,1,1,0,1,0,0,0,0,Some,1,1,1,1,1,1
+L-0173,Kandahar,Male,Adult literacy (19+),42,9,1,1,0,1,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0174,Balkh,Male,Adult literacy (19+),35,8,0,0,0,0,0,0,0,0,0,0,0,0,None,1,0,0,1,1,1
+L-0175,Helmand,Male,Adult literacy (19+),27,8,1,1,0,1,1,1,1,1,1,1,1,0,Significant,1,0,0,1,1,1
+L-0176,Helmand,Male,Adolescent (13-18),15,21,1,1,0,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0177,Balkh,Male,Adolescent (13-18),16,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0178,Kandahar,Male,Adult literacy (19+),43,11,1,0,1,1,0,1,1,1,0,1,0,0,Some,1,0,0,1,1,1
+L-0179,Helmand,Female,Adolescent (13-18),13,15,1,0,1,0,1,1,1,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0180,Nangarhar,Female,Adolescent (13-18),18,9,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,0
+L-0181,Nangarhar,Male,Adolescent (13-18),16,20,0,1,1,1,1,0,0,1,1,1,1,0,Significant,1,0,0,1,1,0
+L-0182,Kandahar,Female,Adolescent (13-18),14,20,1,1,0,0,1,1,0,1,0,1,1,0,Some,0,1,0,0,1,1
+L-0183,Herat,Female,Adult literacy (19+),40,13,1,1,1,0,1,0,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0184,Helmand,Male,Adult literacy (19+),32,23,1,0,1,1,0,1,0,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0185,Kandahar,Male,Adult literacy (19+),40,26,0,1,1,1,0,1,1,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0186,Helmand,Female,Adult literacy (19+),44,23,1,1,0,0,0,1,0,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0187,Kandahar,Female,Adolescent (13-18),18,26,1,0,0,1,1,1,0,1,0,0,0,0,Some,1,0,0,1,1,1
+L-0188,Helmand,Male,Adolescent (13-18),15,9,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,0
+L-0189,Kandahar,Male,Adolescent (13-18),14,13,1,0,0,0,1,1,0,1,1,1,0,0,Some,0,1,1,0,1,1
+L-0190,Balkh,Male,Adolescent (13-18),16,13,1,0,0,1,1,0,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0191,Balkh,Male,Adolescent (13-18),17,26,1,1,1,1,1,1,0,1,1,1,0,0,Some,1,0,1,0,1,1
+L-0192,Herat,Male,Adult literacy (19+),26,19,1,1,0,0,1,0,0,1,1,0,0,0,Some,1,1,0,1,1,1
+L-0193,Herat,Male,Adolescent (13-18),18,9,1,1,1,0,1,1,1,1,1,1,0,0,Significant,1,0,0,0,1,1
+L-0194,Nangarhar,Male,Adolescent (13-18),13,23,1,1,0,1,0,1,1,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0195,Balkh,Male,Adolescent (13-18),15,20,1,1,1,1,1,1,0,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0196,Herat,Male,Adult literacy (19+),19,22,0,1,1,1,1,1,1,1,1,0,1,1,Some,1,0,0,0,1,1
+L-0197,Nangarhar,Male,Adolescent (13-18),14,24,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0198,Balkh,Male,Adolescent (13-18),14,23,1,1,1,0,1,0,0,1,1,1,0,0,Some,1,0,1,1,1,0
+L-0199,Balkh,Female,Adult literacy (19+),42,21,1,1,1,0,1,0,0,1,0,1,1,0,Some,1,0,0,1,1,1
+L-0200,Herat,Female,Adult literacy (19+),39,19,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,0
+L-0201,Nangarhar,Female,Adolescent (13-18),14,12,1,1,0,0,1,1,0,1,1,1,0,0,Some,1,1,0,0,1,1
+L-0202,Balkh,Male,Adolescent (13-18),13,14,1,1,0,1,1,1,1,1,1,1,1,1,Significant,1,1,1,1,1,0
+L-0203,Nangarhar,Female,Adolescent (13-18),16,9,1,1,1,0,0,1,0,1,0,1,1,1,Significant,1,1,0,1,1,0
+L-0204,Nangarhar,Male,Adult literacy (19+),38,25,1,0,0,0,0,0,0,0,0,0,0,1,None,1,0,1,0,1,0
+L-0205,Herat,Female,Adult literacy (19+),23,20,1,1,0,1,1,1,0,1,0,1,1,1,Some,1,0,0,1,1,1
+L-0206,Helmand,Female,Adolescent (13-18),18,18,1,1,1,1,1,1,0,1,1,0,0,1,Significant,1,1,0,1,1,1
+L-0207,Balkh,Female,Adult literacy (19+),31,16,1,1,0,0,0,0,0,0,0,1,0,1,None,0,1,1,1,1,0
+L-0208,Nangarhar,Female,Adolescent (13-18),16,9,1,1,1,0,1,1,0,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0209,Helmand,Male,Adolescent (13-18),18,18,1,0,1,0,1,0,1,1,0,1,1,1,Significant,0,0,0,1,1,1
+L-0210,Balkh,Female,Adult literacy (19+),22,23,1,0,0,0,0,1,0,1,1,1,1,1,None,1,1,0,1,1,1
+L-0211,Kandahar,Male,Adolescent (13-18),14,9,1,1,0,0,1,1,1,1,1,0,1,1,Some,1,0,0,0,1,1
+L-0212,Balkh,Female,Adolescent (13-18),13,19,1,0,1,0,1,1,0,1,1,0,1,0,Some,1,0,1,0,1,1
+L-0213,Kandahar,Female,Adolescent (13-18),15,12,1,1,0,1,0,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0214,Balkh,Female,Adult literacy (19+),39,14,0,1,0,0,1,0,0,1,0,0,0,0,Some,1,1,0,1,1,1
+L-0215,Nangarhar,Male,Adolescent (13-18),14,20,1,0,0,0,0,1,0,0,0,0,0,0,Some,1,1,0,1,1,1
+L-0216,Nangarhar,Female,Adolescent (13-18),18,13,1,1,1,1,0,1,1,0,1,1,0,1,Some,1,0,1,0,1,1
+L-0217,Balkh,Male,Adult literacy (19+),29,25,1,0,1,0,1,0,0,1,1,1,0,0,None,1,0,0,1,0,1
+L-0218,Helmand,Female,Adolescent (13-18),13,16,1,0,1,1,1,0,1,1,1,1,1,0,Some,1,1,0,1,0,1
+L-0219,Herat,Male,Adolescent (13-18),15,25,1,0,1,0,0,1,0,1,0,0,0,0,Some,1,0,0,0,1,1
+L-0220,Kandahar,Female,Adolescent (13-18),15,9,1,1,0,0,1,1,0,1,1,1,1,1,Some,1,0,0,1,1,0
+L-0221,Herat,Male,Adult literacy (19+),39,13,1,0,0,1,1,1,0,1,0,1,0,1,Some,1,0,1,1,1,0
+L-0222,Kandahar,Female,Adult literacy (19+),26,17,0,0,1,0,1,0,0,1,1,1,0,0,Some,0,1,0,1,1,1
+L-0223,Nangarhar,Male,Adolescent (13-18),17,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0224,Kandahar,Male,Adult literacy (19+),29,19,1,0,1,0,1,1,0,1,1,1,0,1,Significant,1,1,1,1,1,1
+L-0225,Helmand,Female,Adolescent (13-18),15,16,0,1,0,1,1,0,0,1,1,1,0,1,Some,0,0,0,1,1,1
+L-0226,Nangarhar,Male,Adolescent (13-18),15,9,1,1,1,0,1,1,1,1,0,1,1,1,Significant,1,0,0,1,1,1
+L-0227,Kandahar,Female,Adult literacy (19+),28,14,1,1,0,1,1,0,1,1,1,1,0,1,Some,1,1,0,1,1,0
+L-0228,Balkh,Female,Adult literacy (19+),26,18,0,1,1,0,1,1,0,1,1,1,0,1,Some,0,0,0,1,1,1
+L-0229,Kandahar,Female,Adolescent (13-18),15,16,1,1,0,0,1,1,0,1,1,1,1,0,Some,0,1,0,1,1,1
+L-0230,Nangarhar,Female,Adolescent (13-18),13,11,1,1,1,1,1,1,1,1,1,1,0,1,Significant,1,1,0,0,1,1
+L-0231,Kandahar,Female,Adolescent (13-18),13,10,1,1,1,1,1,0,0,1,0,1,1,1,Some,1,0,0,1,0,1
+L-0232,Helmand,Female,Adult literacy (19+),34,21,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,0
+L-0233,Herat,Male,Adult literacy (19+),22,19,1,1,1,0,1,1,1,1,1,1,1,1,Significant,0,0,0,0,1,1
+L-0234,Kandahar,Female,Adolescent (13-18),18,12,1,1,0,1,1,0,1,0,0,1,0,1,Some,1,0,0,1,1,0
+L-0235,Balkh,Male,Adolescent (13-18),13,23,1,1,0,0,1,1,1,1,1,0,1,1,Some,1,1,1,1,1,1
+L-0236,Helmand,Male,Adolescent (13-18),15,9,1,0,1,0,1,0,1,1,1,1,1,1,Significant,1,1,0,1,0,1
+L-0237,Helmand,Female,Adolescent (13-18),18,21,0,0,0,0,0,1,0,1,0,1,0,0,Some,1,0,0,0,1,1
+L-0238,Balkh,Male,Adult literacy (19+),26,22,1,1,0,0,1,1,1,1,1,1,1,1,Significant,1,1,1,1,0,1
+L-0239,Balkh,Female,Adult literacy (19+),37,24,1,1,0,1,0,0,0,1,1,0,1,0,Some,0,1,0,1,1,1
+L-0240,Helmand,Female,Adult literacy (19+),20,13,1,1,0,1,1,1,1,1,1,1,1,0,Significant,1,0,0,1,1,1
+L-0241,Helmand,Female,Adult literacy (19+),22,17,0,1,0,0,1,1,0,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0242,Balkh,Male,Adult literacy (19+),19,26,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0243,Kandahar,Male,Adolescent (13-18),17,13,1,1,0,1,1,1,1,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0244,Nangarhar,Male,Adolescent (13-18),13,16,1,1,1,1,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0245,Herat,Female,Adult literacy (19+),34,8,0,1,0,0,0,1,1,1,1,0,0,1,Significant,1,0,1,1,1,0
+L-0246,Kandahar,Male,Adult literacy (19+),22,23,1,1,1,0,1,1,0,1,1,1,1,1,Significant,1,0,1,0,1,1
+L-0247,Helmand,Female,Adult literacy (19+),24,14,1,1,1,0,1,1,0,1,1,1,0,1,Some,0,1,0,1,1,1
+L-0248,Herat,Male,Adolescent (13-18),16,23,1,0,0,0,0,0,0,1,0,1,0,1,Some,1,1,0,1,1,0
+L-0249,Nangarhar,Female,Adult literacy (19+),33,11,1,1,1,1,1,1,1,1,1,0,1,0,Some,1,0,0,1,1,1
+L-0250,Kandahar,Male,Adolescent (13-18),15,26,1,0,0,0,1,1,0,1,1,0,1,0,Some,1,1,0,0,1,1
+L-0251,Kandahar,Male,Adult literacy (19+),44,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,0,0,0,1,1,1
+L-0252,Balkh,Male,Adult literacy (19+),44,13,1,1,1,0,1,0,0,1,0,0,0,1,Some,1,0,0,1,1,1
+L-0253,Balkh,Female,Adolescent (13-18),15,10,1,0,1,0,1,1,1,1,1,0,1,0,None,1,0,1,1,1,1
+L-0254,Helmand,Male,Adolescent (13-18),14,13,1,1,1,1,1,0,0,1,1,0,0,1,Significant,0,1,0,1,1,1
+L-0255,Nangarhar,Female,Adolescent (13-18),14,21,1,1,0,1,0,1,0,1,1,0,1,0,Some,1,1,0,0,1,1
+L-0256,Balkh,Male,Adult literacy (19+),39,9,1,1,0,1,1,0,0,1,1,0,0,0,None,1,0,0,0,1,1
+L-0257,Herat,Male,Adult literacy (19+),34,23,1,1,0,0,1,0,1,1,0,0,0,0,Some,1,1,0,1,1,1
+L-0258,Nangarhar,Female,Adult literacy (19+),38,19,1,1,1,0,1,0,1,1,1,0,0,1,Some,1,1,0,1,1,1
+L-0259,Nangarhar,Male,Adolescent (13-18),14,16,1,1,1,0,1,1,1,1,0,1,1,1,Some,1,0,0,0,1,1
+L-0260,Kandahar,Female,Adult literacy (19+),20,17,1,1,0,0,0,1,1,1,0,1,0,0,Some,1,0,0,1,1,1
+L-0261,Balkh,Female,Adolescent (13-18),16,13,1,1,0,1,1,1,0,1,1,1,1,0,Significant,1,1,0,1,1,1
+L-0262,Balkh,Male,Adult literacy (19+),42,21,1,1,1,0,1,0,1,1,1,1,1,1,Significant,0,1,0,1,1,1
+L-0263,Helmand,Female,Adolescent (13-18),17,11,0,0,0,0,1,1,0,0,0,0,1,0,Some,1,0,0,1,1,1
+L-0264,Balkh,Female,Adult literacy (19+),25,16,0,1,1,0,0,1,0,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0265,Helmand,Female,Adult literacy (19+),19,21,0,1,1,0,0,1,0,0,0,1,0,0,Some,1,1,0,0,1,1
+L-0266,Helmand,Female,Adult literacy (19+),21,13,1,1,0,1,1,0,1,1,1,1,1,1,Significant,1,0,1,1,1,1
+L-0267,Herat,Female,Adolescent (13-18),17,17,1,0,0,0,1,1,1,1,1,1,1,0,Some,1,1,0,0,1,1
+L-0268,Herat,Male,Adolescent (13-18),15,10,1,1,1,1,1,1,1,1,1,1,1,1,Significant,0,0,0,1,1,0
+L-0269,Nangarhar,Male,Adult literacy (19+),37,10,1,0,1,0,1,1,1,1,1,0,0,1,Some,1,0,0,1,1,0
+L-0270,Herat,Female,Adolescent (13-18),17,15,1,1,1,0,1,1,0,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0271,Kandahar,Female,Adolescent (13-18),18,17,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,0
+L-0272,Nangarhar,Male,Adult literacy (19+),32,19,1,1,1,1,1,1,0,1,1,1,0,1,Some,1,0,0,1,1,1
+L-0273,Balkh,Male,Adolescent (13-18),15,19,0,0,1,0,0,0,0,1,0,0,0,0,None,1,1,1,1,1,1
+L-0274,Kandahar,Female,Adult literacy (19+),38,21,1,0,1,1,1,1,1,1,0,0,1,1,Some,0,1,0,0,1,1
+L-0275,Kandahar,Female,Adolescent (13-18),18,9,1,1,1,1,1,1,1,1,1,1,0,0,Significant,1,1,0,0,1,1
+L-0276,Helmand,Female,Adolescent (13-18),14,13,1,1,1,0,1,1,0,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0277,Balkh,Male,Adolescent (13-18),16,14,1,1,1,1,0,1,0,1,1,0,1,1,Some,1,0,0,1,1,0
+L-0278,Herat,Male,Adolescent (13-18),13,22,1,1,1,0,1,0,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0279,Balkh,Female,Adolescent (13-18),16,14,0,1,0,0,0,0,0,1,1,0,0,0,None,1,1,0,0,1,1
+L-0280,Nangarhar,Male,Adolescent (13-18),14,17,1,1,1,1,1,0,0,1,1,1,0,0,Significant,1,0,0,1,1,1
+L-0281,Helmand,Male,Adolescent (13-18),15,9,1,0,0,0,1,0,0,1,1,0,0,0,None,0,0,0,1,1,1
+L-0282,Kandahar,Female,Adolescent (13-18),18,14,1,1,1,1,1,1,0,1,1,1,1,1,Some,1,1,0,1,1,1
+L-0283,Kandahar,Male,Adolescent (13-18),15,15,1,1,0,1,1,1,1,1,1,1,1,0,Some,1,0,0,0,1,0
+L-0284,Nangarhar,Male,Adolescent (13-18),14,14,1,1,1,1,1,1,1,1,1,1,0,0,Some,0,1,0,0,1,1
+L-0285,Kandahar,Male,Adolescent (13-18),17,24,1,1,1,1,1,1,1,1,1,1,1,0,Significant,1,1,0,1,1,1
+L-0286,Balkh,Female,Adult literacy (19+),43,9,1,0,1,0,0,0,0,1,1,0,0,0,None,1,1,0,0,1,0
+L-0287,Herat,Female,Adolescent (13-18),17,23,1,1,0,0,0,1,1,1,1,0,1,0,Some,1,0,0,1,1,0
+L-0288,Balkh,Male,Adolescent (13-18),18,17,0,1,0,0,1,1,1,1,1,1,0,1,Some,1,1,0,1,1,1
+L-0289,Kandahar,Male,Adolescent (13-18),14,24,1,1,1,1,1,1,0,1,0,0,0,0,Some,1,0,0,1,1,1
+L-0290,Kandahar,Male,Adult literacy (19+),43,8,1,1,1,0,1,1,1,1,1,1,1,1,Significant,0,1,1,1,1,1
+L-0291,Kandahar,Male,Adolescent (13-18),16,15,1,0,0,1,0,1,0,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0292,Balkh,Male,Adolescent (13-18),18,12,1,0,0,0,0,0,0,1,0,1,0,0,None,1,0,1,1,1,1
+L-0293,Kandahar,Male,Adolescent (13-18),18,24,1,1,1,0,1,1,1,1,0,1,0,0,None,1,1,0,1,1,1
+L-0294,Helmand,Female,Adolescent (13-18),18,24,1,1,0,1,1,1,1,1,1,0,1,0,Some,1,0,1,1,1,1
+L-0295,Kandahar,Female,Adult literacy (19+),39,8,1,1,1,1,0,1,1,1,1,1,0,1,Significant,1,0,1,1,1,1
+L-0296,Balkh,Male,Adolescent (13-18),17,14,1,1,1,0,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0297,Nangarhar,Female,Adult literacy (19+),21,8,1,1,1,1,1,0,1,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0298,Balkh,Female,Adolescent (13-18),16,25,0,1,0,0,0,0,0,0,0,0,0,0,None,0,1,0,1,1,1
+L-0299,Helmand,Female,Adult literacy (19+),39,21,1,1,0,1,1,0,0,1,1,1,0,1,Some,1,1,1,0,1,1
+L-0300,Nangarhar,Male,Adolescent (13-18),16,24,1,1,1,1,1,1,0,1,1,0,0,0,Some,1,0,0,0,1,1
+L-0301,Nangarhar,Female,Adolescent (13-18),16,25,1,1,1,0,1,1,1,1,1,1,0,1,Some,1,1,1,1,1,1
+L-0302,Kandahar,Male,Adult literacy (19+),34,13,1,1,1,0,1,1,1,1,1,0,0,0,None,1,1,1,1,1,1
+L-0303,Herat,Male,Adolescent (13-18),15,8,1,1,1,0,1,1,1,1,1,1,0,1,Some,1,0,0,0,1,1
+L-0304,Nangarhar,Female,Adolescent (13-18),16,15,1,1,1,1,1,1,1,1,1,1,1,0,Some,1,1,0,1,1,0
+L-0305,Balkh,Female,Adult literacy (19+),41,21,0,1,1,0,1,1,0,0,0,0,1,0,Some,1,1,0,1,1,1
+L-0306,Nangarhar,Female,Adult literacy (19+),32,26,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0307,Herat,Male,Adolescent (13-18),18,11,1,1,1,1,0,1,0,0,0,1,1,0,Some,1,0,0,1,1,1
+L-0308,Herat,Male,Adolescent (13-18),14,25,1,1,1,1,0,1,0,1,1,1,1,1,Some,1,0,0,1,0,1
+L-0309,Balkh,Female,Adolescent (13-18),16,12,1,1,0,0,0,1,0,1,1,0,0,0,Some,1,1,0,1,1,1
+L-0310,Nangarhar,Male,Adolescent (13-18),14,11,1,1,0,1,0,1,0,1,0,0,0,1,Some,1,0,0,1,1,1
+L-0311,Helmand,Female,Adolescent (13-18),13,15,1,1,1,0,1,1,1,1,1,1,0,1,Significant,1,1,0,1,1,1
+L-0312,Balkh,Female,Adult literacy (19+),29,10,1,0,0,0,0,0,0,0,0,0,0,0,None,1,0,0,1,1,1
+L-0313,Nangarhar,Female,Adolescent (13-18),13,10,1,1,1,1,1,1,0,1,1,1,1,1,Significant,1,1,0,1,1,0
+L-0314,Kandahar,Male,Adult literacy (19+),29,12,1,1,0,1,1,1,1,1,0,1,0,1,Some,0,0,0,1,1,0
+L-0315,Nangarhar,Female,Adolescent (13-18),14,23,1,0,1,1,1,1,1,1,1,1,1,0,Some,1,0,0,1,1,1
+L-0316,Herat,Female,Adult literacy (19+),43,10,1,1,0,0,1,0,0,0,0,0,0,0,Some,1,1,1,1,1,1
+L-0317,Nangarhar,Male,Adolescent (13-18),18,18,0,1,0,1,1,1,0,0,0,0,0,0,Significant,1,0,1,1,1,1
+L-0318,Kandahar,Female,Adolescent (13-18),18,9,0,0,0,0,1,1,1,0,1,0,1,1,Significant,1,0,0,1,1,1
+L-0319,Balkh,Female,Adolescent (13-18),18,11,1,0,1,0,1,0,0,1,0,1,0,0,Some,0,1,0,1,1,1
+L-0320,Helmand,Female,Adolescent (13-18),17,25,0,0,1,0,1,1,0,1,1,1,0,0,Some,1,0,0,1,1,1
+L-0321,Helmand,Female,Adolescent (13-18),18,26,1,1,1,1,1,0,0,1,1,1,0,0,Some,1,0,1,1,1,0
+L-0322,Herat,Female,Adolescent (13-18),15,8,1,1,1,1,0,1,0,1,1,0,0,1,Significant,1,0,1,1,1,1
+L-0323,Nangarhar,Female,Adolescent (13-18),15,15,0,1,1,0,1,1,0,1,0,0,1,1,Some,1,0,0,1,1,1
+L-0324,Nangarhar,Female,Adolescent (13-18),17,23,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0325,Kandahar,Male,Adult literacy (19+),38,12,0,1,1,0,1,1,0,1,0,1,1,0,Some,1,0,0,1,1,1
+L-0326,Balkh,Male,Adult literacy (19+),45,23,1,1,0,1,0,1,1,1,1,1,0,1,Some,1,0,1,1,1,1
+L-0327,Kandahar,Female,Adolescent (13-18),16,22,0,1,1,0,1,1,0,1,1,0,0,1,Some,0,1,0,1,1,1
+L-0328,Balkh,Male,Adult literacy (19+),30,14,1,0,1,0,0,1,0,0,1,0,1,0,Some,1,0,1,1,1,1
+L-0329,Herat,Female,Adult literacy (19+),39,21,1,1,0,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0330,Herat,Female,Adult literacy (19+),25,24,1,1,1,0,1,1,1,1,1,1,0,1,Significant,1,1,0,1,1,1
+L-0331,Balkh,Male,Adolescent (13-18),17,17,1,1,1,1,1,1,1,1,1,0,0,1,Some,1,0,0,1,1,1
+L-0332,Nangarhar,Female,Adult literacy (19+),35,20,1,1,1,0,1,1,0,1,1,1,0,0,Some,1,0,0,0,1,1
+L-0333,Kandahar,Male,Adult literacy (19+),26,8,1,1,1,0,0,0,0,1,1,0,0,1,None,1,1,0,1,1,0
+L-0334,Kandahar,Male,Adolescent (13-18),16,10,1,1,1,1,1,1,0,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0335,Helmand,Female,Adolescent (13-18),14,11,1,1,1,1,1,1,1,1,1,1,0,1,Significant,0,1,0,0,1,0
+L-0336,Herat,Male,Adolescent (13-18),14,10,1,0,0,1,0,0,1,1,0,0,1,0,None,1,0,1,0,1,1
+L-0337,Balkh,Male,Adolescent (13-18),16,24,0,1,0,0,1,0,0,1,1,1,1,1,Some,1,1,1,1,1,1
+L-0338,Balkh,Male,Adolescent (13-18),17,21,1,1,0,0,1,1,1,1,1,1,0,0,Some,1,1,0,1,1,0
+L-0339,Herat,Male,Adult literacy (19+),36,10,1,1,1,1,1,1,1,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0340,Kandahar,Male,Adolescent (13-18),13,8,1,1,1,0,0,1,0,1,1,1,1,1,Significant,0,0,0,1,1,1
+L-0341,Herat,Female,Adolescent (13-18),18,9,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0342,Herat,Female,Adolescent (13-18),16,8,1,0,1,1,1,1,1,1,1,0,0,0,Significant,1,0,0,1,1,1
+L-0343,Balkh,Male,Adolescent (13-18),15,19,1,1,1,1,1,1,0,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0344,Balkh,Male,Adult literacy (19+),45,12,0,0,1,1,1,1,0,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0345,Kandahar,Female,Adolescent (13-18),18,19,1,1,0,0,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0346,Nangarhar,Male,Adolescent (13-18),13,8,0,1,0,0,1,1,1,0,1,1,0,0,Some,1,1,0,1,1,1
+L-0347,Herat,Male,Adult literacy (19+),35,12,1,1,0,0,1,1,1,1,0,1,0,1,Significant,1,0,1,1,1,1
+L-0348,Helmand,Female,Adolescent (13-18),15,17,1,1,0,1,1,1,1,1,1,1,0,1,Significant,0,0,0,1,1,1
+L-0349,Herat,Female,Adult literacy (19+),19,9,0,1,0,0,1,1,1,1,1,1,1,0,Some,1,0,1,0,1,1
+L-0350,Kandahar,Male,Adult literacy (19+),19,8,1,1,1,1,1,1,1,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0351,Kandahar,Male,Adolescent (13-18),17,23,1,1,1,1,1,1,1,1,1,1,0,1,Significant,1,0,0,1,1,1
+L-0352,Nangarhar,Male,Adolescent (13-18),18,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,1,1,1,1
+L-0353,Nangarhar,Female,Adolescent (13-18),13,22,1,0,1,0,1,1,0,1,1,1,0,1,Significant,0,0,0,1,1,1
+L-0354,Herat,Male,Adolescent (13-18),13,18,1,1,1,0,1,1,0,1,1,0,1,0,Significant,1,1,1,1,1,0
+L-0355,Kandahar,Female,Adolescent (13-18),18,26,1,1,1,0,1,0,0,1,1,1,0,0,Some,0,1,0,1,1,1
+L-0356,Balkh,Male,Adult literacy (19+),35,21,1,0,0,0,0,0,0,1,0,0,0,0,None,1,0,0,1,1,1
+L-0357,Helmand,Female,Adult literacy (19+),20,22,0,0,0,0,1,0,0,1,0,0,0,0,None,1,0,0,1,1,1
+L-0358,Balkh,Male,Adolescent (13-18),18,22,1,1,1,1,1,1,1,1,1,1,1,0,Some,0,0,0,1,1,1
+L-0359,Balkh,Female,Adolescent (13-18),15,18,1,1,0,0,1,1,1,1,1,1,0,1,Some,1,1,0,1,1,1
+L-0360,Herat,Male,Adolescent (13-18),17,19,1,1,1,0,1,1,1,1,1,0,1,1,Some,0,0,0,1,1,1
+L-0361,Helmand,Male,Adolescent (13-18),17,18,1,1,0,0,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0362,Balkh,Female,Adolescent (13-18),14,19,1,0,0,0,1,1,0,1,0,0,0,0,None,1,1,0,1,1,1
+L-0363,Nangarhar,Female,Adolescent (13-18),15,21,1,1,0,1,1,0,0,1,1,0,0,1,Some,1,1,0,1,1,0
+L-0364,Nangarhar,Female,Adult literacy (19+),32,25,1,0,0,0,0,1,0,1,0,0,0,0,None,1,1,1,1,1,1
+L-0365,Helmand,Female,Adult literacy (19+),44,16,1,0,0,0,1,0,1,1,1,1,0,1,Some,1,0,0,0,1,1
+L-0366,Balkh,Female,Adolescent (13-18),18,13,1,1,0,1,1,1,1,1,1,1,0,1,Significant,1,1,0,1,1,1
+L-0367,Helmand,Female,Adolescent (13-18),13,26,1,1,1,0,1,1,1,1,1,1,1,1,Significant,1,1,1,0,1,1
+L-0368,Balkh,Male,Adolescent (13-18),13,16,1,1,1,0,1,1,1,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0369,Kandahar,Female,Adult literacy (19+),39,16,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,0,1,1
+L-0370,Helmand,Male,Adolescent (13-18),13,17,1,1,0,1,1,1,1,1,1,0,1,1,Significant,1,0,0,1,1,1
+L-0371,Helmand,Male,Adolescent (13-18),17,22,1,1,1,1,1,1,1,1,1,1,1,1,Significant,0,0,0,1,1,1
+L-0372,Herat,Male,Adolescent (13-18),17,10,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,0,0,1,1,1
+L-0373,Nangarhar,Female,Adult literacy (19+),25,19,1,1,1,1,0,1,0,1,1,1,0,0,Some,1,1,0,1,1,1
+L-0374,Herat,Female,Adolescent (13-18),13,12,1,1,0,0,1,1,1,1,1,1,0,1,Some,1,0,0,0,1,1
+L-0375,Nangarhar,Male,Adolescent (13-18),15,25,1,1,1,1,1,1,1,1,1,1,1,1,Significant,1,1,0,1,1,1
+L-0376,Herat,Female,Adolescent (13-18),14,15,1,1,1,1,1,1,1,1,1,0,1,1,Some,1,0,0,1,1,1
+L-0377,Herat,Male,Adolescent (13-18),15,22,1,1,1,1,1,1,0,1,0,0,0,1,Some,1,0,0,1,1,1
+L-0378,Helmand,Female,Adolescent (13-18),15,10,1,1,0,1,1,1,1,1,1,1,1,1,Some,1,0,0,1,1,1
+L-0379,Balkh,Female,Adolescent (13-18),14,14,1,0,0,1,1,0,0,1,1,0,1,0,Some,1,1,1,1,1,1
+L-0380,Helmand,Female,Adolescent (13-18),18,8,1,1,0,0,1,1,0,1,0,1,0,0,None,0,0,0,1,1,1
+L-0381,Balkh,Male,Adult literacy (19+),19,12,1,1,1,1,1,1,1,1,1,1,1,0,Some,1,1,0,1,1,1
+L-0382,Helmand,Female,Adult literacy (19+),31,25,1,1,0,0,0,1,0,1,1,1,0,0,None,1,1,0,1,1,1
+L-0383,Helmand,Male,Adolescent (13-18),14,10,1,1,1,0,1,1,0,1,1,0,1,0,Some,1,0,0,1,1,1
+L-0384,Nangarhar,Female,Adolescent (13-18),14,10,1,1,0,0,1,1,0,1,1,1,0,1,Some,1,1,0,1,1,1
+L-0385,Kandahar,Female,Adolescent (13-18),14,18,1,1,1,1,1,1,0,1,1,0,0,1,Significant,1,0,0,1,1,1
+L-0386,Helmand,Female,Adolescent (13-18),14,10,1,1,1,1,0,1,1,1,1,0,1,1,Significant,1,0,0,1,1,1
+L-0387,Kandahar,Female,Adolescent (13-18),17,26,1,1,1,0,1,0,1,1,1,1,0,0,Some,1,0,1,1,1,1
+L-0388,Kandahar,Female,Adult literacy (19+),32,11,1,0,0,0,1,1,0,1,1,0,1,0,Some,1,0,1,1,1,1
+L-0389,Herat,Male,Adolescent (13-18),16,21,1,1,1,0,1,0,0,1,1,1,0,1,Some,1,0,0,0,0,1
+L-0390,Herat,Female,Adolescent (13-18),14,16,1,0,1,1,0,1,0,1,0,1,0,0,Some,0,0,0,0,1,1

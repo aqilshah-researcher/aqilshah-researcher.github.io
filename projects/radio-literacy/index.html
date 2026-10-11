@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio-Based Literacy: Learning Assessment · Aqil Shah Ayaz</title>
+<meta name="description" content="Learning assessment dashboard for a sample radio-based literacy program: item difficulty, reading, writing and numeracy scores by province and sex, and access barriers.">
+<meta property="og:title" content="Radio-Based Literacy: Learning Assessment · Aqil Shah Ayaz">
+<meta property="og:description" content="Learning assessment dashboard for a sample radio-based literacy program: item difficulty, reading, writing and numeracy scores by province and sex, and access barriers.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Radio-Based Literacy: Learning Assessment</h1>
+    <p class="lede">A learner test of 12 reading, writing and numeracy items, read alongside learners' own view of their progress and the barriers they face in a radio-based programme.</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">SPSS</span><span class="chip ">Item analysis</span><span class="chip ">KR-20 reliability</span><span class="chip ">KoBo Toolbox</span></div>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Province<select id="f-prov"></select></label><label>Sex<select id="f-sex"></select></label><label>Learner group<select id="f-grp"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-n">–</div><div class="l">Learners assessed</div></div><div class="kpi"><div class="v" id="k-score">–</div><div class="l">Average test score</div></div><div class="kpi"><div class="v" id="k-imp">–</div><div class="l">Report significant improvement</div></div><div class="kpi"><div class="v" id="k-trainer">–</div><div class="l">Say a trainer is needed</div></div><div class="kpi"><div class="v" id="k-radio">–</div><div class="l">Find it hard to access a radio</div></div></div>
+    <div class="charts"><div class="chart "><h3>Item difficulty</h3><div class="sub">% of learners answering each item correctly</div><div class="plot tall" id="c-items" role="img" aria-label="Item difficulty"></div></div><div class="chart "><h3>Domain scores by province</h3><div class="sub">Average % correct</div><div class="plot tall" id="c-dom" role="img" aria-label="Domain scores by province"></div></div><div class="chart "><h3>Self-rated improvement by province</h3><div class="sub">Share of learners</div><div class="plot " id="c-imp" role="img" aria-label="Self-rated improvement by province"></div></div><div class="chart "><h3>Barriers to learning by sex</h3><div class="sub">% of learners reporting each barrier</div><div class="plot " id="c-bar" role="img" aria-label="Barriers to learning by sex"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-items"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on two pieces of real work. First, the final evaluation of a radio-based literacy and alternative learning program for out-of-school adolescents and adults, where I served as Data Analyst &amp; Reporting Specialist (Grant Thornton Afghanistan, 2025): I cleaned and analyzed 400+ learner and stakeholder interviews and prepared the evaluation report against the OECD/DAC criteria. Second, the KoBo Toolbox data system I built for a literacy TPM across 10 provinces (2023 to 2024), with skip logic, validation, GPS and daily QA.</p>
+<h3>Method shown here</h3>
+<ul><li><b>Item analysis:</b> percent correct (difficulty) and item-rest correlation (discrimination) for every test item.</li>
+<li><b>Reliability:</b> KR-20 for the full 12-item test.</li>
+<li><b>Group differences:</b> domain scores by province and sex, and a chi-square test of self-rated improvement by province.</li>
+<li>The same steps are written twice: in Python and in SPSS syntax.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/radio-literacy/code/learning_assessment.py" target="_blank" rel="noopener"><b>learning_assessment.py</b><span>Item analysis, KR-20, chi-square in Python</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/radio-literacy/code/learning_assessment.sps" target="_blank" rel="noopener"><b>learning_assessment.sps</b><span>Same analysis in SPSS syntax</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/radio-literacy/data/learner_assessment.csv" target="_blank" rel="noopener"><b>learner_assessment.csv</b><span>Learner-level assessment data (n=390)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/radio-literacy/data/item_statistics.csv" target="_blank" rel="noopener"><b>item_statistics.csv</b><span>Item statistics output</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const rows = await ASA.loadCSV('data/learner_assessment.csv');
+  const items = await ASA.loadCSV('data/dim_items.csv');
+  const el = id => document.getElementById(id);
+  const DOM = ['Reading', 'Writing', 'Numeracy'];
+  const nice = s => s.replace(/_/g, ' ').replace(/^./, c => c.toUpperCase());
+  rows.forEach(r => {
+    r.score = 100 * items.reduce((a, it) => a + r[it.item], 0) / items.length;
+    DOM.forEach(dm => { const its = items.filter(i => i.domain === dm); r[dm] = 100 * its.reduce((a, it) => a + r[it.item], 0) / its.length; });
+  });
+  const F = { prov: el('f-prov'), sex: el('f-sex'), grp: el('f-grp') };
+  ASA.fillSelect(F.prov, ASA.uniq(rows, 'province'), 'All provinces');
+  ASA.fillSelect(F.sex, ['Female', 'Male'], 'All learners');
+  ASA.fillSelect(F.grp, ASA.uniq(rows, 'learner_group'), 'All groups');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const filt = () => rows.filter(r => (!F.prov.value || r.province === F.prov.value) && (!F.sex.value || r.sex === F.sex.value) && (!F.grp.value || r.learner_group === F.grp.value));
+  const mean = (v, k) => v.length ? v.reduce((a, r) => a + r[k], 0) / v.length : NaN;
+  const sh = (v, k) => ASA.pct(v.filter(r => r[k] === 1).length, v.length);
+
+  function render() {
+    const d = filt(), C = ASA.colors(), bg = getComputedStyle(document.documentElement).getPropertyValue('--bg');
+    el('k-n').textContent = ASA.fmt(d.length);
+    el('k-score').textContent = ASA.fmt(mean(d, 'score'), 1) + '%';
+    el('k-imp').textContent = ASA.fmt(ASA.pct(d.filter(r => r.self_rated_improvement === 'Significant').length, d.length), 1) + '%';
+    el('k-trainer').textContent = ASA.fmt(sh(d, 'needs_trainer'), 1) + '%';
+    el('k-radio').textContent = ASA.fmt(sh(d, 'difficulty_accessing_radio'), 1) + '%';
+
+    // 1. item difficulty
+    const it = items.map(i => [i.item, i.domain, ASA.pct(d.filter(r => r[i.item] === 1).length, d.length)]).sort((a, b) => a[2] - b[2]);
+    Plotly.react('c-items', DOM.map((dm, k) => { const x = it.filter(i => i[1] === dm); return { type: 'bar', orientation: 'h', name: dm, y: x.map(i => nice(i[0])), x: x.map(i => i[2]),
+      marker: { color: C.series[k] }, hovertemplate: '<b>%{x:.1f}%</b> answered correctly<extra>%{y} · ' + dm + '</extra>' }; }),
+      ASA.layout({ showlegend: true, barmode: 'overlay', yaxis: { categoryorder: 'array', categoryarray: it.map(i => nice(i[0])) }, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+
+    // 2. domain scores by province
+    const provs = ASA.uniq(d, 'province');
+    Plotly.react('c-dom', DOM.map((dm, k) => ({ type: 'bar', name: dm, x: provs, y: provs.map(p => mean(d.filter(r => r.province === p), dm)),
+      marker: { color: C.series[k] }, hovertemplate: '<b>%{y:.1f}%</b> ' + dm + '<extra>%{x}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] } }), ASA.config);
+
+    // 3. self-rated improvement by province (ordinal)
+    const lv = ['Some', 'Significant'], ramp = ASA.isDark() ? ['#6da7ec', '#184f95'] : ['#86b6ef', '#104281'];
+    Plotly.react('c-imp', lv.map((l, k) => ({ type: 'bar', orientation: 'h', name: l + ' improvement', y: provs, x: provs.map(p => { const v = d.filter(r => r.province === p); return ASA.pct(v.filter(r => r.self_rated_improvement === l).length, v.length); }),
+      marker: { color: ramp[k], line: { width: 1, color: bg } }, hovertemplate: '<b>%{x:.1f}%</b> ' + l.toLowerCase() + '<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+
+    // 4. barriers by sex
+    const bars = [['difficulty_accessing_radio', 'Hard to access a radio'], ['sound_quality_issue', 'Sound quality problems'], ['radio_signal_unstable', 'Unstable radio signal'], ['needs_trainer', 'Says a trainer is needed']];
+    d.forEach(r => r.radio_signal_unstable = r.radio_signal_stable === 1 ? 0 : 1);
+    Plotly.react('c-bar', ['Female', 'Male'].map((s, k) => ({ type: 'bar', orientation: 'h', name: s, y: bars.map(b => b[1]), x: bars.map(b => sh(d.filter(r => r.sex === s), b[0])),
+      marker: { color: C.series[k === 0 ? 4 : 6] }, hovertemplate: '<b>%{x:.1f}%</b> of ' + s.toLowerCase() + ' learners<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'group', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
+
+    ASA.table(el('t-items'), ['Item', 'Domain', '% correct'], it.slice().reverse().map(i => [nice(i[0]), i[1], ASA.fmt(i[2], 1)]));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

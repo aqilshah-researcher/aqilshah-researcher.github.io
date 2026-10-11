@@ -1,0 +1,25 @@
+sme_id,sector,After training,Before training
+SME-01,Metal works,50.0,35.7
+SME-02,Carpentry,57.1,35.7
+SME-03,Carpentry,71.4,42.9
+SME-04,Soap & detergents,50.0,35.7
+SME-05,Carpentry,78.6,42.9
+SME-06,Food processing,64.3,21.4
+SME-07,Carpentry,42.9,28.6
+SME-08,Food processing,64.3,50.0
+SME-09,Soap & detergents,57.1,28.6
+SME-10,Carpentry,71.4,50.0
+SME-11,Carpentry,50.0,35.7
+SME-12,Printing,50.0,35.7
+SME-13,Printing,57.1,50.0
+SME-14,Leather goods,57.1,14.3
+SME-15,Metal works,50.0,35.7
+SME-16,Garments,71.4,42.9
+SME-17,Garments,57.1,50.0
+SME-18,Leather goods,71.4,57.1
+SME-19,Metal works,64.3,35.7
+SME-20,Leather goods,71.4,42.9
+SME-21,Food processing,64.3,35.7
+SME-22,Garments,57.1,21.4
+SME-23,Printing,64.3,35.7
+SME-24,Garments,78.6,64.3

@@ -1,0 +1,81 @@
+parent_id,school,district,wants_daughter_in_stem,would_fund_higher_ed,attended_club_event,preferred_field
+P-001,School 07,District B,1,1,1,Teaching science
+P-002,School 06,District B,1,1,0,Not decided
+P-003,School 03,District A,1,1,1,Medicine
+P-004,School 01,District A,1,0,1,Engineering
+P-005,School 10,District C,1,1,0,Computer science
+P-006,School 10,District C,1,1,0,Engineering
+P-007,School 06,District B,1,1,0,Engineering
+P-008,School 13,District D,1,0,0,Medicine
+P-009,School 05,District B,1,1,0,Medicine
+P-010,School 09,District C,1,0,0,Engineering
+P-011,School 10,District C,1,0,0,Computer science
+P-012,School 03,District A,1,0,0,Medicine
+P-013,School 04,District A,1,1,1,Medicine
+P-014,School 05,District B,1,1,0,Medicine
+P-015,School 12,District D,1,1,0,Engineering
+P-016,School 10,District C,1,0,0,Medicine
+P-017,School 02,District A,0,1,0,Teaching science
+P-018,School 05,District B,0,1,0,Engineering
+P-019,School 06,District B,1,1,0,Not decided
+P-020,School 05,District B,1,1,1,Computer science
+P-021,School 02,District A,1,1,0,Teaching science
+P-022,School 09,District C,0,1,1,Computer science
+P-023,School 09,District C,1,1,0,Medicine
+P-024,School 07,District B,1,0,0,Medicine
+P-025,School 12,District D,1,0,1,Not decided
+P-026,School 13,District D,1,1,1,Teaching science
+P-027,School 05,District B,1,1,0,Medicine
+P-028,School 03,District A,1,1,1,Medicine
+P-029,School 08,District C,1,0,1,Engineering
+P-030,School 02,District A,1,0,1,Teaching science
+P-031,School 09,District C,1,0,1,Medicine
+P-032,School 04,District A,1,1,1,Engineering
+P-033,School 08,District C,1,1,1,Medicine
+P-034,School 08,District C,1,1,1,Computer science
+P-035,School 08,District C,1,1,1,Medicine
+P-036,School 13,District D,1,0,1,Teaching science
+P-037,School 08,District C,1,0,1,Medicine
+P-038,School 04,District A,1,1,1,Computer science
+P-039,School 04,District A,1,0,1,Medicine
+P-040,School 03,District A,1,0,0,Not decided
+P-041,School 06,District B,0,0,1,Engineering
+P-042,School 09,District C,1,1,0,Not decided
+P-043,School 11,District D,1,1,0,Medicine
+P-044,School 02,District A,1,1,0,Medicine
+P-045,School 06,District B,0,1,0,Engineering
+P-046,School 05,District B,1,1,0,Medicine
+P-047,School 13,District D,1,0,0,Engineering
+P-048,School 10,District C,1,1,1,Teaching science
+P-049,School 01,District A,1,1,0,Medicine
+P-050,School 05,District B,1,1,1,Teaching science
+P-051,School 11,District D,0,1,0,Medicine
+P-052,School 11,District D,1,1,0,Teaching science
+P-053,School 12,District D,1,0,1,Engineering
+P-054,School 13,District D,1,1,0,Not decided
+P-055,School 01,District A,1,1,0,Engineering
+P-056,School 04,District A,1,1,1,Teaching science
+P-057,School 05,District B,1,1,0,Not decided
+P-058,School 01,District A,1,1,1,Engineering
+P-059,School 07,District B,1,1,0,Engineering
+P-060,School 03,District A,1,0,1,Teaching science
+P-061,School 01,District A,1,1,0,Teaching science
+P-062,School 04,District A,1,0,1,Medicine
+P-063,School 06,District B,1,1,1,Medicine
+P-064,School 03,District A,1,0,1,Medicine
+P-065,School 06,District B,1,1,0,Engineering
+P-066,School 13,District D,1,1,0,Not decided
+P-067,School 13,District D,1,1,0,Engineering
+P-068,School 11,District D,0,1,1,Teaching science
+P-069,School 05,District B,1,1,0,Not decided
+P-070,School 09,District C,1,1,1,Medicine
+P-071,School 01,District A,1,1,0,Teaching science
+P-072,School 02,District A,1,1,0,Engineering
+P-073,School 10,District C,0,0,1,Not decided
+P-074,School 07,District B,1,1,0,Medicine
+P-075,School 05,District B,1,1,1,Engineering
+P-076,School 09,District C,1,1,1,Computer science
+P-077,School 05,District B,1,1,1,Not decided
+P-078,School 03,District A,1,1,0,Engineering
+P-079,School 11,District D,1,1,0,Engineering
+P-080,School 02,District A,1,1,0,Teaching science

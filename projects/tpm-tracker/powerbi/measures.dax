@@ -1,0 +1,58 @@
+// =====================================================================
+// TPM Site-Visit Tracker: DAX measures (Power BI)
+// Author : Aqil Shah Ayaz
+// Table  : Visits = tpm_site_visits_clean.csv ; Province = dim_province.csv
+// Model  : Province[province] 1 --> * Visits[province]; 'Date'[Date] 1 --> * Visits[planned_date]
+// =====================================================================
+
+// ---- Date table (calculated table) ----
+Date =
+ADDCOLUMNS (
+    CALENDAR ( DATE ( 2020, 1, 1 ), DATE ( 2024, 12, 31 ) ),
+    "Year", YEAR ( [Date] ),
+    "Month", FORMAT ( [Date], "MMM yyyy" ),
+    "MonthNo", YEAR ( [Date] ) * 100 + MONTH ( [Date] )
+)
+
+// ---- Core counts (same logic as the original tracker) ----
+Planned        = COUNTROWS ( Visits )
+Completed      = CALCULATE ( [Planned], Visits[status] = "Completed" )
+IP Postponed   = CALCULATE ( [Planned], Visits[status] = "IP Postponed" )
+IP Canceled    = CALCULATE ( [Planned], Visits[status] = "IP Canceled" )
+TPM Canceled   = CALCULATE ( [Planned], Visits[status] = "TPM Canceled" )
+
+% Completed    = DIVIDE ( [Completed], [Planned], 0 )
+% IP Postponed = DIVIDE ( [IP Postponed], [Planned], 0 )
+% IP Canceled  = DIVIDE ( [IP Canceled], [Planned], 0 )
+
+// ---- Flags ----
+Red Flags      = CALCULATE ( [Completed], Visits[flag] = "Red" )
+Yellow Flags   = CALCULATE ( [Completed], Visits[flag] = "Yellow" )
+% Flagged      = DIVIDE ( [Red Flags] + [Yellow Flags], [Completed], 0 )
+
+National Red Flag Rate =
+    CALCULATE ( DIVIDE ( [Red Flags], [Completed] ), REMOVEFILTERS ( Province ) )
+
+Above National Rate =
+    IF ( DIVIDE ( [Red Flags], [Completed] ) > [National Red Flag Rate], "Above", "At or below" )
+
+// ---- Timeliness ----
+Avg Days to Submit = CALCULATE ( AVERAGE ( Visits[days_to_submit] ), Visits[status] = "Completed" )
+% On Time (<=5d)   =
+    DIVIDE (
+        CALCULATE ( [Completed], Visits[days_to_submit] <= 5 ),
+        [Completed]
+    )
+
+// ---- Trend ----
+Completed 3M Rolling Avg =
+    AVERAGEX (
+        DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -3, MONTH ),
+        CALCULATE ( [Completed] )
+    )
+
+// ---- Dynamic title for the report header ----
+Report Title =
+    "Site visits " &
+    IF ( HASONEVALUE ( 'Date'[Year] ), VALUES ( 'Date'[Year] ), "2020-2024" ) &
+    " · " & FORMAT ( [% Completed], "0.0%" ) & " completed"

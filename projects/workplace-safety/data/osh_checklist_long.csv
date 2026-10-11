@@ -1,0 +1,673 @@
+sme_id,sector,employees,phase,check_item,category,compliant
+SME-01,Metal works,13,Before training,Hazard awareness,Knowledge,0
+SME-01,Metal works,13,After training,Hazard awareness,Knowledge,1
+SME-01,Metal works,13,Before training,Passageways marked,Layout,0
+SME-01,Metal works,13,After training,Passageways marked,Layout,0
+SME-01,Metal works,13,Before training,Adequate lighting,Environment,0
+SME-01,Metal works,13,After training,Adequate lighting,Environment,0
+SME-01,Metal works,13,Before training,Ventilation / exhaust,Environment,0
+SME-01,Metal works,13,After training,Ventilation / exhaust,Environment,0
+SME-01,Metal works,13,Before training,Temperature control,Environment,1
+SME-01,Metal works,13,After training,Temperature control,Environment,1
+SME-01,Metal works,13,Before training,Fire extinguisher accessible,Fire safety,0
+SME-01,Metal works,13,After training,Fire extinguisher accessible,Fire safety,0
+SME-01,Metal works,13,Before training,Fire exit marked,Fire safety,0
+SME-01,Metal works,13,After training,Fire exit marked,Fire safety,0
+SME-01,Metal works,13,Before training,First aid kit accessible,First aid,0
+SME-01,Metal works,13,After training,First aid kit accessible,First aid,0
+SME-01,Metal works,13,Before training,First aid trained person,First aid,1
+SME-01,Metal works,13,After training,First aid trained person,First aid,1
+SME-01,Metal works,13,Before training,PPE provided and used,PPE,1
+SME-01,Metal works,13,After training,PPE provided and used,PPE,1
+SME-01,Metal works,13,Before training,Machine guarding,Equipment,1
+SME-01,Metal works,13,After training,Machine guarding,Equipment,1
+SME-01,Metal works,13,Before training,Chemical storage labelled,Chemicals,0
+SME-01,Metal works,13,After training,Chemical storage labelled,Chemicals,1
+SME-01,Metal works,13,Before training,Safety supervisor assigned,Management,1
+SME-01,Metal works,13,After training,Safety supervisor assigned,Management,1
+SME-01,Metal works,13,Before training,Incident log kept,Management,0
+SME-01,Metal works,13,After training,Incident log kept,Management,0
+SME-02,Carpentry,21,Before training,Hazard awareness,Knowledge,1
+SME-02,Carpentry,21,After training,Hazard awareness,Knowledge,1
+SME-02,Carpentry,21,Before training,Passageways marked,Layout,0
+SME-02,Carpentry,21,After training,Passageways marked,Layout,1
+SME-02,Carpentry,21,Before training,Adequate lighting,Environment,1
+SME-02,Carpentry,21,After training,Adequate lighting,Environment,1
+SME-02,Carpentry,21,Before training,Ventilation / exhaust,Environment,0
+SME-02,Carpentry,21,After training,Ventilation / exhaust,Environment,0
+SME-02,Carpentry,21,Before training,Temperature control,Environment,1
+SME-02,Carpentry,21,After training,Temperature control,Environment,1
+SME-02,Carpentry,21,Before training,Fire extinguisher accessible,Fire safety,0
+SME-02,Carpentry,21,After training,Fire extinguisher accessible,Fire safety,1
+SME-02,Carpentry,21,Before training,Fire exit marked,Fire safety,0
+SME-02,Carpentry,21,After training,Fire exit marked,Fire safety,0
+SME-02,Carpentry,21,Before training,First aid kit accessible,First aid,0
+SME-02,Carpentry,21,After training,First aid kit accessible,First aid,0
+SME-02,Carpentry,21,Before training,First aid trained person,First aid,1
+SME-02,Carpentry,21,After training,First aid trained person,First aid,1
+SME-02,Carpentry,21,Before training,PPE provided and used,PPE,0
+SME-02,Carpentry,21,After training,PPE provided and used,PPE,0
+SME-02,Carpentry,21,Before training,Machine guarding,Equipment,0
+SME-02,Carpentry,21,After training,Machine guarding,Equipment,1
+SME-02,Carpentry,21,Before training,Chemical storage labelled,Chemicals,1
+SME-02,Carpentry,21,After training,Chemical storage labelled,Chemicals,1
+SME-02,Carpentry,21,Before training,Safety supervisor assigned,Management,0
+SME-02,Carpentry,21,After training,Safety supervisor assigned,Management,0
+SME-02,Carpentry,21,Before training,Incident log kept,Management,0
+SME-02,Carpentry,21,After training,Incident log kept,Management,0
+SME-03,Carpentry,10,Before training,Hazard awareness,Knowledge,1
+SME-03,Carpentry,10,After training,Hazard awareness,Knowledge,1
+SME-03,Carpentry,10,Before training,Passageways marked,Layout,0
+SME-03,Carpentry,10,After training,Passageways marked,Layout,0
+SME-03,Carpentry,10,Before training,Adequate lighting,Environment,0
+SME-03,Carpentry,10,After training,Adequate lighting,Environment,1
+SME-03,Carpentry,10,Before training,Ventilation / exhaust,Environment,0
+SME-03,Carpentry,10,After training,Ventilation / exhaust,Environment,1
+SME-03,Carpentry,10,Before training,Temperature control,Environment,1
+SME-03,Carpentry,10,After training,Temperature control,Environment,1
+SME-03,Carpentry,10,Before training,Fire extinguisher accessible,Fire safety,0
+SME-03,Carpentry,10,After training,Fire extinguisher accessible,Fire safety,0
+SME-03,Carpentry,10,Before training,Fire exit marked,Fire safety,0
+SME-03,Carpentry,10,After training,Fire exit marked,Fire safety,0
+SME-03,Carpentry,10,Before training,First aid kit accessible,First aid,0
+SME-03,Carpentry,10,After training,First aid kit accessible,First aid,1
+SME-03,Carpentry,10,Before training,First aid trained person,First aid,1
+SME-03,Carpentry,10,After training,First aid trained person,First aid,1
+SME-03,Carpentry,10,Before training,PPE provided and used,PPE,1
+SME-03,Carpentry,10,After training,PPE provided and used,PPE,1
+SME-03,Carpentry,10,Before training,Machine guarding,Equipment,1
+SME-03,Carpentry,10,After training,Machine guarding,Equipment,1
+SME-03,Carpentry,10,Before training,Chemical storage labelled,Chemicals,0
+SME-03,Carpentry,10,After training,Chemical storage labelled,Chemicals,0
+SME-03,Carpentry,10,Before training,Safety supervisor assigned,Management,1
+SME-03,Carpentry,10,After training,Safety supervisor assigned,Management,1
+SME-03,Carpentry,10,Before training,Incident log kept,Management,0
+SME-03,Carpentry,10,After training,Incident log kept,Management,1
+SME-04,Soap & detergents,50,Before training,Hazard awareness,Knowledge,0
+SME-04,Soap & detergents,50,After training,Hazard awareness,Knowledge,0
+SME-04,Soap & detergents,50,Before training,Passageways marked,Layout,0
+SME-04,Soap & detergents,50,After training,Passageways marked,Layout,0
+SME-04,Soap & detergents,50,Before training,Adequate lighting,Environment,1
+SME-04,Soap & detergents,50,After training,Adequate lighting,Environment,1
+SME-04,Soap & detergents,50,Before training,Ventilation / exhaust,Environment,0
+SME-04,Soap & detergents,50,After training,Ventilation / exhaust,Environment,1
+SME-04,Soap & detergents,50,Before training,Temperature control,Environment,0
+SME-04,Soap & detergents,50,After training,Temperature control,Environment,1
+SME-04,Soap & detergents,50,Before training,Fire extinguisher accessible,Fire safety,1
+SME-04,Soap & detergents,50,After training,Fire extinguisher accessible,Fire safety,1
+SME-04,Soap & detergents,50,Before training,Fire exit marked,Fire safety,1
+SME-04,Soap & detergents,50,After training,Fire exit marked,Fire safety,1
+SME-04,Soap & detergents,50,Before training,First aid kit accessible,First aid,0
+SME-04,Soap & detergents,50,After training,First aid kit accessible,First aid,0
+SME-04,Soap & detergents,50,Before training,First aid trained person,First aid,1
+SME-04,Soap & detergents,50,After training,First aid trained person,First aid,1
+SME-04,Soap & detergents,50,Before training,PPE provided and used,PPE,0
+SME-04,Soap & detergents,50,After training,PPE provided and used,PPE,0
+SME-04,Soap & detergents,50,Before training,Machine guarding,Equipment,0
+SME-04,Soap & detergents,50,After training,Machine guarding,Equipment,0
+SME-04,Soap & detergents,50,Before training,Chemical storage labelled,Chemicals,0
+SME-04,Soap & detergents,50,After training,Chemical storage labelled,Chemicals,0
+SME-04,Soap & detergents,50,Before training,Safety supervisor assigned,Management,1
+SME-04,Soap & detergents,50,After training,Safety supervisor assigned,Management,1
+SME-04,Soap & detergents,50,Before training,Incident log kept,Management,0
+SME-04,Soap & detergents,50,After training,Incident log kept,Management,0
+SME-05,Carpentry,50,Before training,Hazard awareness,Knowledge,1
+SME-05,Carpentry,50,After training,Hazard awareness,Knowledge,1
+SME-05,Carpentry,50,Before training,Passageways marked,Layout,0
+SME-05,Carpentry,50,After training,Passageways marked,Layout,1
+SME-05,Carpentry,50,Before training,Adequate lighting,Environment,1
+SME-05,Carpentry,50,After training,Adequate lighting,Environment,1
+SME-05,Carpentry,50,Before training,Ventilation / exhaust,Environment,0
+SME-05,Carpentry,50,After training,Ventilation / exhaust,Environment,1
+SME-05,Carpentry,50,Before training,Temperature control,Environment,1
+SME-05,Carpentry,50,After training,Temperature control,Environment,1
+SME-05,Carpentry,50,Before training,Fire extinguisher accessible,Fire safety,1
+SME-05,Carpentry,50,After training,Fire extinguisher accessible,Fire safety,1
+SME-05,Carpentry,50,Before training,Fire exit marked,Fire safety,0
+SME-05,Carpentry,50,After training,Fire exit marked,Fire safety,1
+SME-05,Carpentry,50,Before training,First aid kit accessible,First aid,0
+SME-05,Carpentry,50,After training,First aid kit accessible,First aid,1
+SME-05,Carpentry,50,Before training,First aid trained person,First aid,1
+SME-05,Carpentry,50,After training,First aid trained person,First aid,1
+SME-05,Carpentry,50,Before training,PPE provided and used,PPE,0
+SME-05,Carpentry,50,After training,PPE provided and used,PPE,0
+SME-05,Carpentry,50,Before training,Machine guarding,Equipment,0
+SME-05,Carpentry,50,After training,Machine guarding,Equipment,0
+SME-05,Carpentry,50,Before training,Chemical storage labelled,Chemicals,0
+SME-05,Carpentry,50,After training,Chemical storage labelled,Chemicals,0
+SME-05,Carpentry,50,Before training,Safety supervisor assigned,Management,1
+SME-05,Carpentry,50,After training,Safety supervisor assigned,Management,1
+SME-05,Carpentry,50,Before training,Incident log kept,Management,0
+SME-05,Carpentry,50,After training,Incident log kept,Management,1
+SME-06,Food processing,22,Before training,Hazard awareness,Knowledge,0
+SME-06,Food processing,22,After training,Hazard awareness,Knowledge,0
+SME-06,Food processing,22,Before training,Passageways marked,Layout,0
+SME-06,Food processing,22,After training,Passageways marked,Layout,1
+SME-06,Food processing,22,Before training,Adequate lighting,Environment,1
+SME-06,Food processing,22,After training,Adequate lighting,Environment,1
+SME-06,Food processing,22,Before training,Ventilation / exhaust,Environment,0
+SME-06,Food processing,22,After training,Ventilation / exhaust,Environment,0
+SME-06,Food processing,22,Before training,Temperature control,Environment,1
+SME-06,Food processing,22,After training,Temperature control,Environment,1
+SME-06,Food processing,22,Before training,Fire extinguisher accessible,Fire safety,0
+SME-06,Food processing,22,After training,Fire extinguisher accessible,Fire safety,1
+SME-06,Food processing,22,Before training,Fire exit marked,Fire safety,0
+SME-06,Food processing,22,After training,Fire exit marked,Fire safety,0
+SME-06,Food processing,22,Before training,First aid kit accessible,First aid,0
+SME-06,Food processing,22,After training,First aid kit accessible,First aid,1
+SME-06,Food processing,22,Before training,First aid trained person,First aid,1
+SME-06,Food processing,22,After training,First aid trained person,First aid,1
+SME-06,Food processing,22,Before training,PPE provided and used,PPE,0
+SME-06,Food processing,22,After training,PPE provided and used,PPE,0
+SME-06,Food processing,22,Before training,Machine guarding,Equipment,0
+SME-06,Food processing,22,After training,Machine guarding,Equipment,0
+SME-06,Food processing,22,Before training,Chemical storage labelled,Chemicals,0
+SME-06,Food processing,22,After training,Chemical storage labelled,Chemicals,1
+SME-06,Food processing,22,Before training,Safety supervisor assigned,Management,0
+SME-06,Food processing,22,After training,Safety supervisor assigned,Management,1
+SME-06,Food processing,22,Before training,Incident log kept,Management,0
+SME-06,Food processing,22,After training,Incident log kept,Management,1
+SME-07,Carpentry,26,Before training,Hazard awareness,Knowledge,0
+SME-07,Carpentry,26,After training,Hazard awareness,Knowledge,1
+SME-07,Carpentry,26,Before training,Passageways marked,Layout,0
+SME-07,Carpentry,26,After training,Passageways marked,Layout,1
+SME-07,Carpentry,26,Before training,Adequate lighting,Environment,1
+SME-07,Carpentry,26,After training,Adequate lighting,Environment,1
+SME-07,Carpentry,26,Before training,Ventilation / exhaust,Environment,0
+SME-07,Carpentry,26,After training,Ventilation / exhaust,Environment,0
+SME-07,Carpentry,26,Before training,Temperature control,Environment,1
+SME-07,Carpentry,26,After training,Temperature control,Environment,1
+SME-07,Carpentry,26,Before training,Fire extinguisher accessible,Fire safety,0
+SME-07,Carpentry,26,After training,Fire extinguisher accessible,Fire safety,0
+SME-07,Carpentry,26,Before training,Fire exit marked,Fire safety,0
+SME-07,Carpentry,26,After training,Fire exit marked,Fire safety,0
+SME-07,Carpentry,26,Before training,First aid kit accessible,First aid,0
+SME-07,Carpentry,26,After training,First aid kit accessible,First aid,0
+SME-07,Carpentry,26,Before training,First aid trained person,First aid,0
+SME-07,Carpentry,26,After training,First aid trained person,First aid,0
+SME-07,Carpentry,26,Before training,PPE provided and used,PPE,1
+SME-07,Carpentry,26,After training,PPE provided and used,PPE,1
+SME-07,Carpentry,26,Before training,Machine guarding,Equipment,0
+SME-07,Carpentry,26,After training,Machine guarding,Equipment,0
+SME-07,Carpentry,26,Before training,Chemical storage labelled,Chemicals,0
+SME-07,Carpentry,26,After training,Chemical storage labelled,Chemicals,0
+SME-07,Carpentry,26,Before training,Safety supervisor assigned,Management,1
+SME-07,Carpentry,26,After training,Safety supervisor assigned,Management,1
+SME-07,Carpentry,26,Before training,Incident log kept,Management,0
+SME-07,Carpentry,26,After training,Incident log kept,Management,0
+SME-08,Food processing,22,Before training,Hazard awareness,Knowledge,0
+SME-08,Food processing,22,After training,Hazard awareness,Knowledge,1
+SME-08,Food processing,22,Before training,Passageways marked,Layout,0
+SME-08,Food processing,22,After training,Passageways marked,Layout,0
+SME-08,Food processing,22,Before training,Adequate lighting,Environment,1
+SME-08,Food processing,22,After training,Adequate lighting,Environment,1
+SME-08,Food processing,22,Before training,Ventilation / exhaust,Environment,0
+SME-08,Food processing,22,After training,Ventilation / exhaust,Environment,0
+SME-08,Food processing,22,Before training,Temperature control,Environment,1
+SME-08,Food processing,22,After training,Temperature control,Environment,1
+SME-08,Food processing,22,Before training,Fire extinguisher accessible,Fire safety,1
+SME-08,Food processing,22,After training,Fire extinguisher accessible,Fire safety,1
+SME-08,Food processing,22,Before training,Fire exit marked,Fire safety,1
+SME-08,Food processing,22,After training,Fire exit marked,Fire safety,1
+SME-08,Food processing,22,Before training,First aid kit accessible,First aid,1
+SME-08,Food processing,22,After training,First aid kit accessible,First aid,1
+SME-08,Food processing,22,Before training,First aid trained person,First aid,0
+SME-08,Food processing,22,After training,First aid trained person,First aid,1
+SME-08,Food processing,22,Before training,PPE provided and used,PPE,1
+SME-08,Food processing,22,After training,PPE provided and used,PPE,1
+SME-08,Food processing,22,Before training,Machine guarding,Equipment,0
+SME-08,Food processing,22,After training,Machine guarding,Equipment,0
+SME-08,Food processing,22,Before training,Chemical storage labelled,Chemicals,0
+SME-08,Food processing,22,After training,Chemical storage labelled,Chemicals,0
+SME-08,Food processing,22,Before training,Safety supervisor assigned,Management,1
+SME-08,Food processing,22,After training,Safety supervisor assigned,Management,1
+SME-08,Food processing,22,Before training,Incident log kept,Management,0
+SME-08,Food processing,22,After training,Incident log kept,Management,0
+SME-09,Soap & detergents,20,Before training,Hazard awareness,Knowledge,0
+SME-09,Soap & detergents,20,After training,Hazard awareness,Knowledge,1
+SME-09,Soap & detergents,20,Before training,Passageways marked,Layout,1
+SME-09,Soap & detergents,20,After training,Passageways marked,Layout,1
+SME-09,Soap & detergents,20,Before training,Adequate lighting,Environment,1
+SME-09,Soap & detergents,20,After training,Adequate lighting,Environment,1
+SME-09,Soap & detergents,20,Before training,Ventilation / exhaust,Environment,0
+SME-09,Soap & detergents,20,After training,Ventilation / exhaust,Environment,0
+SME-09,Soap & detergents,20,Before training,Temperature control,Environment,0
+SME-09,Soap & detergents,20,After training,Temperature control,Environment,0
+SME-09,Soap & detergents,20,Before training,Fire extinguisher accessible,Fire safety,0
+SME-09,Soap & detergents,20,After training,Fire extinguisher accessible,Fire safety,0
+SME-09,Soap & detergents,20,Before training,Fire exit marked,Fire safety,0
+SME-09,Soap & detergents,20,After training,Fire exit marked,Fire safety,1
+SME-09,Soap & detergents,20,Before training,First aid kit accessible,First aid,0
+SME-09,Soap & detergents,20,After training,First aid kit accessible,First aid,0
+SME-09,Soap & detergents,20,Before training,First aid trained person,First aid,1
+SME-09,Soap & detergents,20,After training,First aid trained person,First aid,1
+SME-09,Soap & detergents,20,Before training,PPE provided and used,PPE,0
+SME-09,Soap & detergents,20,After training,PPE provided and used,PPE,0
+SME-09,Soap & detergents,20,Before training,Machine guarding,Equipment,0
+SME-09,Soap & detergents,20,After training,Machine guarding,Equipment,0
+SME-09,Soap & detergents,20,Before training,Chemical storage labelled,Chemicals,0
+SME-09,Soap & detergents,20,After training,Chemical storage labelled,Chemicals,1
+SME-09,Soap & detergents,20,Before training,Safety supervisor assigned,Management,1
+SME-09,Soap & detergents,20,After training,Safety supervisor assigned,Management,1
+SME-09,Soap & detergents,20,Before training,Incident log kept,Management,0
+SME-09,Soap & detergents,20,After training,Incident log kept,Management,1
+SME-10,Carpentry,40,Before training,Hazard awareness,Knowledge,0
+SME-10,Carpentry,40,After training,Hazard awareness,Knowledge,0
+SME-10,Carpentry,40,Before training,Passageways marked,Layout,1
+SME-10,Carpentry,40,After training,Passageways marked,Layout,1
+SME-10,Carpentry,40,Before training,Adequate lighting,Environment,1
+SME-10,Carpentry,40,After training,Adequate lighting,Environment,1
+SME-10,Carpentry,40,Before training,Ventilation / exhaust,Environment,0
+SME-10,Carpentry,40,After training,Ventilation / exhaust,Environment,0
+SME-10,Carpentry,40,Before training,Temperature control,Environment,1
+SME-10,Carpentry,40,After training,Temperature control,Environment,1
+SME-10,Carpentry,40,Before training,Fire extinguisher accessible,Fire safety,0
+SME-10,Carpentry,40,After training,Fire extinguisher accessible,Fire safety,1
+SME-10,Carpentry,40,Before training,Fire exit marked,Fire safety,1
+SME-10,Carpentry,40,After training,Fire exit marked,Fire safety,1
+SME-10,Carpentry,40,Before training,First aid kit accessible,First aid,0
+SME-10,Carpentry,40,After training,First aid kit accessible,First aid,1
+SME-10,Carpentry,40,Before training,First aid trained person,First aid,0
+SME-10,Carpentry,40,After training,First aid trained person,First aid,1
+SME-10,Carpentry,40,Before training,PPE provided and used,PPE,0
+SME-10,Carpentry,40,After training,PPE provided and used,PPE,0
+SME-10,Carpentry,40,Before training,Machine guarding,Equipment,1
+SME-10,Carpentry,40,After training,Machine guarding,Equipment,1
+SME-10,Carpentry,40,Before training,Chemical storage labelled,Chemicals,1
+SME-10,Carpentry,40,After training,Chemical storage labelled,Chemicals,1
+SME-10,Carpentry,40,Before training,Safety supervisor assigned,Management,1
+SME-10,Carpentry,40,After training,Safety supervisor assigned,Management,1
+SME-10,Carpentry,40,Before training,Incident log kept,Management,0
+SME-10,Carpentry,40,After training,Incident log kept,Management,0
+SME-11,Carpentry,16,Before training,Hazard awareness,Knowledge,0
+SME-11,Carpentry,16,After training,Hazard awareness,Knowledge,0
+SME-11,Carpentry,16,Before training,Passageways marked,Layout,0
+SME-11,Carpentry,16,After training,Passageways marked,Layout,0
+SME-11,Carpentry,16,Before training,Adequate lighting,Environment,1
+SME-11,Carpentry,16,After training,Adequate lighting,Environment,1
+SME-11,Carpentry,16,Before training,Ventilation / exhaust,Environment,1
+SME-11,Carpentry,16,After training,Ventilation / exhaust,Environment,1
+SME-11,Carpentry,16,Before training,Temperature control,Environment,1
+SME-11,Carpentry,16,After training,Temperature control,Environment,1
+SME-11,Carpentry,16,Before training,Fire extinguisher accessible,Fire safety,0
+SME-11,Carpentry,16,After training,Fire extinguisher accessible,Fire safety,0
+SME-11,Carpentry,16,Before training,Fire exit marked,Fire safety,0
+SME-11,Carpentry,16,After training,Fire exit marked,Fire safety,0
+SME-11,Carpentry,16,Before training,First aid kit accessible,First aid,1
+SME-11,Carpentry,16,After training,First aid kit accessible,First aid,1
+SME-11,Carpentry,16,Before training,First aid trained person,First aid,0
+SME-11,Carpentry,16,After training,First aid trained person,First aid,1
+SME-11,Carpentry,16,Before training,PPE provided and used,PPE,0
+SME-11,Carpentry,16,After training,PPE provided and used,PPE,0
+SME-11,Carpentry,16,Before training,Machine guarding,Equipment,0
+SME-11,Carpentry,16,After training,Machine guarding,Equipment,0
+SME-11,Carpentry,16,Before training,Chemical storage labelled,Chemicals,0
+SME-11,Carpentry,16,After training,Chemical storage labelled,Chemicals,0
+SME-11,Carpentry,16,Before training,Safety supervisor assigned,Management,1
+SME-11,Carpentry,16,After training,Safety supervisor assigned,Management,1
+SME-11,Carpentry,16,Before training,Incident log kept,Management,0
+SME-11,Carpentry,16,After training,Incident log kept,Management,1
+SME-12,Printing,16,Before training,Hazard awareness,Knowledge,0
+SME-12,Printing,16,After training,Hazard awareness,Knowledge,1
+SME-12,Printing,16,Before training,Passageways marked,Layout,1
+SME-12,Printing,16,After training,Passageways marked,Layout,1
+SME-12,Printing,16,Before training,Adequate lighting,Environment,1
+SME-12,Printing,16,After training,Adequate lighting,Environment,1
+SME-12,Printing,16,Before training,Ventilation / exhaust,Environment,0
+SME-12,Printing,16,After training,Ventilation / exhaust,Environment,0
+SME-12,Printing,16,Before training,Temperature control,Environment,0
+SME-12,Printing,16,After training,Temperature control,Environment,0
+SME-12,Printing,16,Before training,Fire extinguisher accessible,Fire safety,0
+SME-12,Printing,16,After training,Fire extinguisher accessible,Fire safety,0
+SME-12,Printing,16,Before training,Fire exit marked,Fire safety,0
+SME-12,Printing,16,After training,Fire exit marked,Fire safety,0
+SME-12,Printing,16,Before training,First aid kit accessible,First aid,0
+SME-12,Printing,16,After training,First aid kit accessible,First aid,0
+SME-12,Printing,16,Before training,First aid trained person,First aid,1
+SME-12,Printing,16,After training,First aid trained person,First aid,1
+SME-12,Printing,16,Before training,PPE provided and used,PPE,0
+SME-12,Printing,16,After training,PPE provided and used,PPE,1
+SME-12,Printing,16,Before training,Machine guarding,Equipment,0
+SME-12,Printing,16,After training,Machine guarding,Equipment,0
+SME-12,Printing,16,Before training,Chemical storage labelled,Chemicals,1
+SME-12,Printing,16,After training,Chemical storage labelled,Chemicals,1
+SME-12,Printing,16,Before training,Safety supervisor assigned,Management,1
+SME-12,Printing,16,After training,Safety supervisor assigned,Management,1
+SME-12,Printing,16,Before training,Incident log kept,Management,0
+SME-12,Printing,16,After training,Incident log kept,Management,0
+SME-13,Printing,29,Before training,Hazard awareness,Knowledge,0
+SME-13,Printing,29,After training,Hazard awareness,Knowledge,0
+SME-13,Printing,29,Before training,Passageways marked,Layout,1
+SME-13,Printing,29,After training,Passageways marked,Layout,1
+SME-13,Printing,29,Before training,Adequate lighting,Environment,1
+SME-13,Printing,29,After training,Adequate lighting,Environment,1
+SME-13,Printing,29,Before training,Ventilation / exhaust,Environment,1
+SME-13,Printing,29,After training,Ventilation / exhaust,Environment,1
+SME-13,Printing,29,Before training,Temperature control,Environment,1
+SME-13,Printing,29,After training,Temperature control,Environment,1
+SME-13,Printing,29,Before training,Fire extinguisher accessible,Fire safety,0
+SME-13,Printing,29,After training,Fire extinguisher accessible,Fire safety,0
+SME-13,Printing,29,Before training,Fire exit marked,Fire safety,0
+SME-13,Printing,29,After training,Fire exit marked,Fire safety,0
+SME-13,Printing,29,Before training,First aid kit accessible,First aid,1
+SME-13,Printing,29,After training,First aid kit accessible,First aid,1
+SME-13,Printing,29,Before training,First aid trained person,First aid,1
+SME-13,Printing,29,After training,First aid trained person,First aid,1
+SME-13,Printing,29,Before training,PPE provided and used,PPE,0
+SME-13,Printing,29,After training,PPE provided and used,PPE,1
+SME-13,Printing,29,Before training,Machine guarding,Equipment,1
+SME-13,Printing,29,After training,Machine guarding,Equipment,1
+SME-13,Printing,29,Before training,Chemical storage labelled,Chemicals,0
+SME-13,Printing,29,After training,Chemical storage labelled,Chemicals,0
+SME-13,Printing,29,Before training,Safety supervisor assigned,Management,0
+SME-13,Printing,29,After training,Safety supervisor assigned,Management,0
+SME-13,Printing,29,Before training,Incident log kept,Management,0
+SME-13,Printing,29,After training,Incident log kept,Management,0
+SME-14,Leather goods,47,Before training,Hazard awareness,Knowledge,0
+SME-14,Leather goods,47,After training,Hazard awareness,Knowledge,1
+SME-14,Leather goods,47,Before training,Passageways marked,Layout,0
+SME-14,Leather goods,47,After training,Passageways marked,Layout,0
+SME-14,Leather goods,47,Before training,Adequate lighting,Environment,0
+SME-14,Leather goods,47,After training,Adequate lighting,Environment,1
+SME-14,Leather goods,47,Before training,Ventilation / exhaust,Environment,0
+SME-14,Leather goods,47,After training,Ventilation / exhaust,Environment,0
+SME-14,Leather goods,47,Before training,Temperature control,Environment,1
+SME-14,Leather goods,47,After training,Temperature control,Environment,1
+SME-14,Leather goods,47,Before training,Fire extinguisher accessible,Fire safety,0
+SME-14,Leather goods,47,After training,Fire extinguisher accessible,Fire safety,1
+SME-14,Leather goods,47,Before training,Fire exit marked,Fire safety,0
+SME-14,Leather goods,47,After training,Fire exit marked,Fire safety,0
+SME-14,Leather goods,47,Before training,First aid kit accessible,First aid,0
+SME-14,Leather goods,47,After training,First aid kit accessible,First aid,1
+SME-14,Leather goods,47,Before training,First aid trained person,First aid,0
+SME-14,Leather goods,47,After training,First aid trained person,First aid,1
+SME-14,Leather goods,47,Before training,PPE provided and used,PPE,0
+SME-14,Leather goods,47,After training,PPE provided and used,PPE,0
+SME-14,Leather goods,47,Before training,Machine guarding,Equipment,0
+SME-14,Leather goods,47,After training,Machine guarding,Equipment,1
+SME-14,Leather goods,47,Before training,Chemical storage labelled,Chemicals,0
+SME-14,Leather goods,47,After training,Chemical storage labelled,Chemicals,0
+SME-14,Leather goods,47,Before training,Safety supervisor assigned,Management,1
+SME-14,Leather goods,47,After training,Safety supervisor assigned,Management,1
+SME-14,Leather goods,47,Before training,Incident log kept,Management,0
+SME-14,Leather goods,47,After training,Incident log kept,Management,0
+SME-15,Metal works,59,Before training,Hazard awareness,Knowledge,1
+SME-15,Metal works,59,After training,Hazard awareness,Knowledge,1
+SME-15,Metal works,59,Before training,Passageways marked,Layout,0
+SME-15,Metal works,59,After training,Passageways marked,Layout,0
+SME-15,Metal works,59,Before training,Adequate lighting,Environment,0
+SME-15,Metal works,59,After training,Adequate lighting,Environment,1
+SME-15,Metal works,59,Before training,Ventilation / exhaust,Environment,0
+SME-15,Metal works,59,After training,Ventilation / exhaust,Environment,0
+SME-15,Metal works,59,Before training,Temperature control,Environment,0
+SME-15,Metal works,59,After training,Temperature control,Environment,0
+SME-15,Metal works,59,Before training,Fire extinguisher accessible,Fire safety,1
+SME-15,Metal works,59,After training,Fire extinguisher accessible,Fire safety,1
+SME-15,Metal works,59,Before training,Fire exit marked,Fire safety,0
+SME-15,Metal works,59,After training,Fire exit marked,Fire safety,1
+SME-15,Metal works,59,Before training,First aid kit accessible,First aid,0
+SME-15,Metal works,59,After training,First aid kit accessible,First aid,0
+SME-15,Metal works,59,Before training,First aid trained person,First aid,1
+SME-15,Metal works,59,After training,First aid trained person,First aid,1
+SME-15,Metal works,59,Before training,PPE provided and used,PPE,1
+SME-15,Metal works,59,After training,PPE provided and used,PPE,1
+SME-15,Metal works,59,Before training,Machine guarding,Equipment,0
+SME-15,Metal works,59,After training,Machine guarding,Equipment,0
+SME-15,Metal works,59,Before training,Chemical storage labelled,Chemicals,0
+SME-15,Metal works,59,After training,Chemical storage labelled,Chemicals,0
+SME-15,Metal works,59,Before training,Safety supervisor assigned,Management,1
+SME-15,Metal works,59,After training,Safety supervisor assigned,Management,1
+SME-15,Metal works,59,Before training,Incident log kept,Management,0
+SME-15,Metal works,59,After training,Incident log kept,Management,0
+SME-16,Garments,22,Before training,Hazard awareness,Knowledge,1
+SME-16,Garments,22,After training,Hazard awareness,Knowledge,1
+SME-16,Garments,22,Before training,Passageways marked,Layout,0
+SME-16,Garments,22,After training,Passageways marked,Layout,0
+SME-16,Garments,22,Before training,Adequate lighting,Environment,1
+SME-16,Garments,22,After training,Adequate lighting,Environment,1
+SME-16,Garments,22,Before training,Ventilation / exhaust,Environment,1
+SME-16,Garments,22,After training,Ventilation / exhaust,Environment,1
+SME-16,Garments,22,Before training,Temperature control,Environment,0
+SME-16,Garments,22,After training,Temperature control,Environment,1
+SME-16,Garments,22,Before training,Fire extinguisher accessible,Fire safety,0
+SME-16,Garments,22,After training,Fire extinguisher accessible,Fire safety,1
+SME-16,Garments,22,Before training,Fire exit marked,Fire safety,0
+SME-16,Garments,22,After training,Fire exit marked,Fire safety,0
+SME-16,Garments,22,Before training,First aid kit accessible,First aid,1
+SME-16,Garments,22,After training,First aid kit accessible,First aid,1
+SME-16,Garments,22,Before training,First aid trained person,First aid,1
+SME-16,Garments,22,After training,First aid trained person,First aid,1
+SME-16,Garments,22,Before training,PPE provided and used,PPE,0
+SME-16,Garments,22,After training,PPE provided and used,PPE,1
+SME-16,Garments,22,Before training,Machine guarding,Equipment,0
+SME-16,Garments,22,After training,Machine guarding,Equipment,1
+SME-16,Garments,22,Before training,Chemical storage labelled,Chemicals,0
+SME-16,Garments,22,After training,Chemical storage labelled,Chemicals,0
+SME-16,Garments,22,Before training,Safety supervisor assigned,Management,0
+SME-16,Garments,22,After training,Safety supervisor assigned,Management,0
+SME-16,Garments,22,Before training,Incident log kept,Management,1
+SME-16,Garments,22,After training,Incident log kept,Management,1
+SME-17,Garments,25,Before training,Hazard awareness,Knowledge,1
+SME-17,Garments,25,After training,Hazard awareness,Knowledge,1
+SME-17,Garments,25,Before training,Passageways marked,Layout,0
+SME-17,Garments,25,After training,Passageways marked,Layout,1
+SME-17,Garments,25,Before training,Adequate lighting,Environment,1
+SME-17,Garments,25,After training,Adequate lighting,Environment,1
+SME-17,Garments,25,Before training,Ventilation / exhaust,Environment,0
+SME-17,Garments,25,After training,Ventilation / exhaust,Environment,0
+SME-17,Garments,25,Before training,Temperature control,Environment,0
+SME-17,Garments,25,After training,Temperature control,Environment,0
+SME-17,Garments,25,Before training,Fire extinguisher accessible,Fire safety,1
+SME-17,Garments,25,After training,Fire extinguisher accessible,Fire safety,1
+SME-17,Garments,25,Before training,Fire exit marked,Fire safety,0
+SME-17,Garments,25,After training,Fire exit marked,Fire safety,0
+SME-17,Garments,25,Before training,First aid kit accessible,First aid,1
+SME-17,Garments,25,After training,First aid kit accessible,First aid,1
+SME-17,Garments,25,Before training,First aid trained person,First aid,1
+SME-17,Garments,25,After training,First aid trained person,First aid,1
+SME-17,Garments,25,Before training,PPE provided and used,PPE,0
+SME-17,Garments,25,After training,PPE provided and used,PPE,0
+SME-17,Garments,25,Before training,Machine guarding,Equipment,1
+SME-17,Garments,25,After training,Machine guarding,Equipment,1
+SME-17,Garments,25,Before training,Chemical storage labelled,Chemicals,1
+SME-17,Garments,25,After training,Chemical storage labelled,Chemicals,1
+SME-17,Garments,25,Before training,Safety supervisor assigned,Management,0
+SME-17,Garments,25,After training,Safety supervisor assigned,Management,0
+SME-17,Garments,25,Before training,Incident log kept,Management,0
+SME-17,Garments,25,After training,Incident log kept,Management,0
+SME-18,Leather goods,10,Before training,Hazard awareness,Knowledge,0
+SME-18,Leather goods,10,After training,Hazard awareness,Knowledge,1
+SME-18,Leather goods,10,Before training,Passageways marked,Layout,0
+SME-18,Leather goods,10,After training,Passageways marked,Layout,0
+SME-18,Leather goods,10,Before training,Adequate lighting,Environment,1
+SME-18,Leather goods,10,After training,Adequate lighting,Environment,1
+SME-18,Leather goods,10,Before training,Ventilation / exhaust,Environment,1
+SME-18,Leather goods,10,After training,Ventilation / exhaust,Environment,1
+SME-18,Leather goods,10,Before training,Temperature control,Environment,1
+SME-18,Leather goods,10,After training,Temperature control,Environment,1
+SME-18,Leather goods,10,Before training,Fire extinguisher accessible,Fire safety,1
+SME-18,Leather goods,10,After training,Fire extinguisher accessible,Fire safety,1
+SME-18,Leather goods,10,Before training,Fire exit marked,Fire safety,0
+SME-18,Leather goods,10,After training,Fire exit marked,Fire safety,0
+SME-18,Leather goods,10,Before training,First aid kit accessible,First aid,0
+SME-18,Leather goods,10,After training,First aid kit accessible,First aid,0
+SME-18,Leather goods,10,Before training,First aid trained person,First aid,1
+SME-18,Leather goods,10,After training,First aid trained person,First aid,1
+SME-18,Leather goods,10,Before training,PPE provided and used,PPE,1
+SME-18,Leather goods,10,After training,PPE provided and used,PPE,1
+SME-18,Leather goods,10,Before training,Machine guarding,Equipment,0
+SME-18,Leather goods,10,After training,Machine guarding,Equipment,1
+SME-18,Leather goods,10,Before training,Chemical storage labelled,Chemicals,0
+SME-18,Leather goods,10,After training,Chemical storage labelled,Chemicals,0
+SME-18,Leather goods,10,Before training,Safety supervisor assigned,Management,1
+SME-18,Leather goods,10,After training,Safety supervisor assigned,Management,1
+SME-18,Leather goods,10,Before training,Incident log kept,Management,1
+SME-18,Leather goods,10,After training,Incident log kept,Management,1
+SME-19,Metal works,12,Before training,Hazard awareness,Knowledge,0
+SME-19,Metal works,12,After training,Hazard awareness,Knowledge,0
+SME-19,Metal works,12,Before training,Passageways marked,Layout,0
+SME-19,Metal works,12,After training,Passageways marked,Layout,1
+SME-19,Metal works,12,Before training,Adequate lighting,Environment,1
+SME-19,Metal works,12,After training,Adequate lighting,Environment,1
+SME-19,Metal works,12,Before training,Ventilation / exhaust,Environment,0
+SME-19,Metal works,12,After training,Ventilation / exhaust,Environment,1
+SME-19,Metal works,12,Before training,Temperature control,Environment,0
+SME-19,Metal works,12,After training,Temperature control,Environment,0
+SME-19,Metal works,12,Before training,Fire extinguisher accessible,Fire safety,1
+SME-19,Metal works,12,After training,Fire extinguisher accessible,Fire safety,1
+SME-19,Metal works,12,Before training,Fire exit marked,Fire safety,0
+SME-19,Metal works,12,After training,Fire exit marked,Fire safety,0
+SME-19,Metal works,12,Before training,First aid kit accessible,First aid,0
+SME-19,Metal works,12,After training,First aid kit accessible,First aid,1
+SME-19,Metal works,12,Before training,First aid trained person,First aid,1
+SME-19,Metal works,12,After training,First aid trained person,First aid,1
+SME-19,Metal works,12,Before training,PPE provided and used,PPE,1
+SME-19,Metal works,12,After training,PPE provided and used,PPE,1
+SME-19,Metal works,12,Before training,Machine guarding,Equipment,0
+SME-19,Metal works,12,After training,Machine guarding,Equipment,1
+SME-19,Metal works,12,Before training,Chemical storage labelled,Chemicals,0
+SME-19,Metal works,12,After training,Chemical storage labelled,Chemicals,0
+SME-19,Metal works,12,Before training,Safety supervisor assigned,Management,1
+SME-19,Metal works,12,After training,Safety supervisor assigned,Management,1
+SME-19,Metal works,12,Before training,Incident log kept,Management,0
+SME-19,Metal works,12,After training,Incident log kept,Management,0
+SME-20,Leather goods,19,Before training,Hazard awareness,Knowledge,1
+SME-20,Leather goods,19,After training,Hazard awareness,Knowledge,1
+SME-20,Leather goods,19,Before training,Passageways marked,Layout,1
+SME-20,Leather goods,19,After training,Passageways marked,Layout,1
+SME-20,Leather goods,19,Before training,Adequate lighting,Environment,1
+SME-20,Leather goods,19,After training,Adequate lighting,Environment,1
+SME-20,Leather goods,19,Before training,Ventilation / exhaust,Environment,0
+SME-20,Leather goods,19,After training,Ventilation / exhaust,Environment,1
+SME-20,Leather goods,19,Before training,Temperature control,Environment,0
+SME-20,Leather goods,19,After training,Temperature control,Environment,1
+SME-20,Leather goods,19,Before training,Fire extinguisher accessible,Fire safety,0
+SME-20,Leather goods,19,After training,Fire extinguisher accessible,Fire safety,0
+SME-20,Leather goods,19,Before training,Fire exit marked,Fire safety,0
+SME-20,Leather goods,19,After training,Fire exit marked,Fire safety,0
+SME-20,Leather goods,19,Before training,First aid kit accessible,First aid,0
+SME-20,Leather goods,19,After training,First aid kit accessible,First aid,0
+SME-20,Leather goods,19,Before training,First aid trained person,First aid,0
+SME-20,Leather goods,19,After training,First aid trained person,First aid,1
+SME-20,Leather goods,19,Before training,PPE provided and used,PPE,0
+SME-20,Leather goods,19,After training,PPE provided and used,PPE,1
+SME-20,Leather goods,19,Before training,Machine guarding,Equipment,1
+SME-20,Leather goods,19,After training,Machine guarding,Equipment,1
+SME-20,Leather goods,19,Before training,Chemical storage labelled,Chemicals,1
+SME-20,Leather goods,19,After training,Chemical storage labelled,Chemicals,1
+SME-20,Leather goods,19,Before training,Safety supervisor assigned,Management,1
+SME-20,Leather goods,19,After training,Safety supervisor assigned,Management,1
+SME-20,Leather goods,19,Before training,Incident log kept,Management,0
+SME-20,Leather goods,19,After training,Incident log kept,Management,0
+SME-21,Food processing,9,Before training,Hazard awareness,Knowledge,0
+SME-21,Food processing,9,After training,Hazard awareness,Knowledge,0
+SME-21,Food processing,9,Before training,Passageways marked,Layout,0
+SME-21,Food processing,9,After training,Passageways marked,Layout,1
+SME-21,Food processing,9,Before training,Adequate lighting,Environment,1
+SME-21,Food processing,9,After training,Adequate lighting,Environment,1
+SME-21,Food processing,9,Before training,Ventilation / exhaust,Environment,0
+SME-21,Food processing,9,After training,Ventilation / exhaust,Environment,0
+SME-21,Food processing,9,Before training,Temperature control,Environment,1
+SME-21,Food processing,9,After training,Temperature control,Environment,1
+SME-21,Food processing,9,Before training,Fire extinguisher accessible,Fire safety,0
+SME-21,Food processing,9,After training,Fire extinguisher accessible,Fire safety,0
+SME-21,Food processing,9,Before training,Fire exit marked,Fire safety,1
+SME-21,Food processing,9,After training,Fire exit marked,Fire safety,1
+SME-21,Food processing,9,Before training,First aid kit accessible,First aid,0
+SME-21,Food processing,9,After training,First aid kit accessible,First aid,1
+SME-21,Food processing,9,Before training,First aid trained person,First aid,0
+SME-21,Food processing,9,After training,First aid trained person,First aid,1
+SME-21,Food processing,9,Before training,PPE provided and used,PPE,0
+SME-21,Food processing,9,After training,PPE provided and used,PPE,0
+SME-21,Food processing,9,Before training,Machine guarding,Equipment,0
+SME-21,Food processing,9,After training,Machine guarding,Equipment,0
+SME-21,Food processing,9,Before training,Chemical storage labelled,Chemicals,1
+SME-21,Food processing,9,After training,Chemical storage labelled,Chemicals,1
+SME-21,Food processing,9,Before training,Safety supervisor assigned,Management,1
+SME-21,Food processing,9,After training,Safety supervisor assigned,Management,1
+SME-21,Food processing,9,Before training,Incident log kept,Management,0
+SME-21,Food processing,9,After training,Incident log kept,Management,1
+SME-22,Garments,50,Before training,Hazard awareness,Knowledge,0
+SME-22,Garments,50,After training,Hazard awareness,Knowledge,0
+SME-22,Garments,50,Before training,Passageways marked,Layout,0
+SME-22,Garments,50,After training,Passageways marked,Layout,1
+SME-22,Garments,50,Before training,Adequate lighting,Environment,1
+SME-22,Garments,50,After training,Adequate lighting,Environment,1
+SME-22,Garments,50,Before training,Ventilation / exhaust,Environment,0
+SME-22,Garments,50,After training,Ventilation / exhaust,Environment,0
+SME-22,Garments,50,Before training,Temperature control,Environment,1
+SME-22,Garments,50,After training,Temperature control,Environment,1
+SME-22,Garments,50,Before training,Fire extinguisher accessible,Fire safety,0
+SME-22,Garments,50,After training,Fire extinguisher accessible,Fire safety,1
+SME-22,Garments,50,Before training,Fire exit marked,Fire safety,0
+SME-22,Garments,50,After training,Fire exit marked,Fire safety,1
+SME-22,Garments,50,Before training,First aid kit accessible,First aid,0
+SME-22,Garments,50,After training,First aid kit accessible,First aid,0
+SME-22,Garments,50,Before training,First aid trained person,First aid,0
+SME-22,Garments,50,After training,First aid trained person,First aid,0
+SME-22,Garments,50,Before training,PPE provided and used,PPE,0
+SME-22,Garments,50,After training,PPE provided and used,PPE,1
+SME-22,Garments,50,Before training,Machine guarding,Equipment,0
+SME-22,Garments,50,After training,Machine guarding,Equipment,0
+SME-22,Garments,50,Before training,Chemical storage labelled,Chemicals,1
+SME-22,Garments,50,After training,Chemical storage labelled,Chemicals,1
+SME-22,Garments,50,Before training,Safety supervisor assigned,Management,0
+SME-22,Garments,50,After training,Safety supervisor assigned,Management,1
+SME-22,Garments,50,Before training,Incident log kept,Management,0
+SME-22,Garments,50,After training,Incident log kept,Management,0
+SME-23,Printing,12,Before training,Hazard awareness,Knowledge,0
+SME-23,Printing,12,After training,Hazard awareness,Knowledge,1
+SME-23,Printing,12,Before training,Passageways marked,Layout,0
+SME-23,Printing,12,After training,Passageways marked,Layout,0
+SME-23,Printing,12,Before training,Adequate lighting,Environment,1
+SME-23,Printing,12,After training,Adequate lighting,Environment,1
+SME-23,Printing,12,Before training,Ventilation / exhaust,Environment,0
+SME-23,Printing,12,After training,Ventilation / exhaust,Environment,1
+SME-23,Printing,12,Before training,Temperature control,Environment,1
+SME-23,Printing,12,After training,Temperature control,Environment,1
+SME-23,Printing,12,Before training,Fire extinguisher accessible,Fire safety,1
+SME-23,Printing,12,After training,Fire extinguisher accessible,Fire safety,1
+SME-23,Printing,12,Before training,Fire exit marked,Fire safety,0
+SME-23,Printing,12,After training,Fire exit marked,Fire safety,0
+SME-23,Printing,12,Before training,First aid kit accessible,First aid,1
+SME-23,Printing,12,After training,First aid kit accessible,First aid,1
+SME-23,Printing,12,Before training,First aid trained person,First aid,0
+SME-23,Printing,12,After training,First aid trained person,First aid,0
+SME-23,Printing,12,Before training,PPE provided and used,PPE,0
+SME-23,Printing,12,After training,PPE provided and used,PPE,1
+SME-23,Printing,12,Before training,Machine guarding,Equipment,0
+SME-23,Printing,12,After training,Machine guarding,Equipment,1
+SME-23,Printing,12,Before training,Chemical storage labelled,Chemicals,0
+SME-23,Printing,12,After training,Chemical storage labelled,Chemicals,0
+SME-23,Printing,12,Before training,Safety supervisor assigned,Management,1
+SME-23,Printing,12,After training,Safety supervisor assigned,Management,1
+SME-23,Printing,12,Before training,Incident log kept,Management,0
+SME-23,Printing,12,After training,Incident log kept,Management,0
+SME-24,Garments,21,Before training,Hazard awareness,Knowledge,1
+SME-24,Garments,21,After training,Hazard awareness,Knowledge,1
+SME-24,Garments,21,Before training,Passageways marked,Layout,1
+SME-24,Garments,21,After training,Passageways marked,Layout,1
+SME-24,Garments,21,Before training,Adequate lighting,Environment,1
+SME-24,Garments,21,After training,Adequate lighting,Environment,1
+SME-24,Garments,21,Before training,Ventilation / exhaust,Environment,1
+SME-24,Garments,21,After training,Ventilation / exhaust,Environment,1
+SME-24,Garments,21,Before training,Temperature control,Environment,1
+SME-24,Garments,21,After training,Temperature control,Environment,1
+SME-24,Garments,21,Before training,Fire extinguisher accessible,Fire safety,0
+SME-24,Garments,21,After training,Fire extinguisher accessible,Fire safety,0
+SME-24,Garments,21,Before training,Fire exit marked,Fire safety,0
+SME-24,Garments,21,After training,Fire exit marked,Fire safety,0
+SME-24,Garments,21,Before training,First aid kit accessible,First aid,1
+SME-24,Garments,21,After training,First aid kit accessible,First aid,1
+SME-24,Garments,21,Before training,First aid trained person,First aid,0
+SME-24,Garments,21,After training,First aid trained person,First aid,1
+SME-24,Garments,21,Before training,PPE provided and used,PPE,1
+SME-24,Garments,21,After training,PPE provided and used,PPE,1
+SME-24,Garments,21,Before training,Machine guarding,Equipment,0
+SME-24,Garments,21,After training,Machine guarding,Equipment,0
+SME-24,Garments,21,Before training,Chemical storage labelled,Chemicals,1
+SME-24,Garments,21,After training,Chemical storage labelled,Chemicals,1
+SME-24,Garments,21,Before training,Safety supervisor assigned,Management,1
+SME-24,Garments,21,After training,Safety supervisor assigned,Management,1
+SME-24,Garments,21,Before training,Incident log kept,Management,0
+SME-24,Garments,21,After training,Incident log kept,Management,1

@@ -1,0 +1,15 @@
+check_item,category,pct_before,pct_after,change_pts,businesses_improved,mcnemar_p
+Passageways marked,Layout,25.0,58.3,33.3,8,0.0078
+Hazard awareness,Knowledge,33.3,66.7,33.3,8,0.0078
+First aid kit accessible,First aid,29.2,58.3,29.2,7,0.0156
+Incident log kept,Management,8.3,37.5,29.2,7,0.0156
+First aid trained person,First aid,58.3,87.5,29.2,7,0.0156
+Fire extinguisher accessible,Fire safety,33.3,58.3,25.0,6,0.0312
+PPE provided and used,PPE,33.3,58.3,25.0,6,0.0312
+Ventilation / exhaust,Environment,20.8,45.8,25.0,6,0.0312
+Machine guarding,Equipment,25.0,50.0,25.0,6,0.0312
+Fire exit marked,Fire safety,16.7,33.3,16.7,4,0.125
+Adequate lighting,Environment,83.3,95.8,12.5,3,0.25
+Chemical storage labelled,Chemicals,33.3,45.8,12.5,3,0.25
+Temperature control,Environment,66.7,79.2,12.5,3,0.25
+Safety supervisor assigned,Management,75.0,83.3,8.3,2,0.5
