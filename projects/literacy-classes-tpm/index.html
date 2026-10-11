@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Literacy Classes TPM: Spot Checks and Partner Scorecard · Aqil Shah Ayaz</title>
+<meta name="description" content="Sample third-party monitoring dashboard for 330 literacy classes in 11 provinces: class checklist, attendance, ghost classes, learner assessment and partner scorecard.">
+<meta property="og:title" content="Literacy Classes TPM: Spot Checks and Partner Scorecard · Aqil Shah Ayaz">
+<meta property="og:description" content="Sample third-party monitoring dashboard for 330 literacy classes in 11 provinces: class checklist, attendance, ghost classes, learner assessment and partner scorecard.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Literacy Classes TPM: Spot Checks and Partner Scorecard</h1>
+    <p class="lede">Third-party monitors visited literacy classes, checked them against a checklist, counted learners present and tested five learners per class. The result is a scorecard that shows the donor which partners need follow-up.</p>
+    <div class="p-meta chips"><span class="chip ">KoBo Toolbox</span><span class="chip ">Python</span><span class="chip ">Spot checks</span><span class="chip ">Learner assessment</span><span class="chip ">Partner scorecard</span></div>
+    <p style="margin-top:14px"><a class="btn btn-ghost" href="../../case-studies/literacy-classes-tpm.html">Read the case study →</a></p>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Province<select id="f-prov"></select></label><label>Implementing partner<select id="f-ip"></select></label><label>Class<select id="f-sex"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-cls">–</div><div class="l">Classes visited</div></div><div class="kpi"><div class="v" id="k-att">–</div><div class="l">Attendance on visit day</div></div><div class="kpi"><div class="v" id="k-comp">–</div><div class="l">Classes fully compliant</div></div><div class="kpi"><div class="v" id="k-ghost">–</div><div class="l">Ghost classes found</div></div><div class="kpi"><div class="v" id="k-score">–</div><div class="l">Average learner score</div></div></div>
+    <div class="charts"><div class="chart "><h3>Class checklist</h3><div class="sub">% of classes meeting each standard</div><div class="plot " id="c-ck" role="img" aria-label="Class checklist"></div></div><div class="chart "><h3>Spot check results by partner</h3><div class="sub">Classes by result</div><div class="plot " id="c-ip" role="img" aria-label="Spot check results by partner"></div></div><div class="chart full"><h3>Learner assessment by province</h3><div class="sub">% correct by skill</div><div class="plot " id="c-learn" role="img" aria-label="Learner assessment by province"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-main"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on the third-party monitoring of a UNESCO basic general literacy program by Grant Thornton Afghanistan (2023 to 2024), where I was the data expert: I reviewed the tools, built the forms in KoBo Toolbox, tested them, trained enumerators on KoBo Collect, solved field issues and reviewed data validity and integrity. Teams visited classes in 11 provinces, assessed learners and held 34 focus group discussions.</p>
+<h3>Method shown here</h3><ul><li>Six-item class checklist and a spot-check result for every class, including ghost classes that did not exist on the day.</li><li>Attendance on the visit day against enrollment.</li><li>Five learners per class tested on letters, words, sentences and numbers.</li><li>A ranked scorecard per implementing partner.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/literacy-classes-tpm/code/ip_scorecard.py" target="_blank" rel="noopener"><b>ip_scorecard.py</b><span>Partner scorecard in Python</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/literacy-classes-tpm/data/class_observations.csv" target="_blank" rel="noopener"><b>class_observations.csv</b><span>Class observations (n=330)</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/literacy-classes-tpm/data/learner_assessment.csv" target="_blank" rel="noopener"><b>learner_assessment.csv</b><span>Learner assessment</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/literacy-classes-tpm/data/ip_scorecard.csv" target="_blank" rel="noopener"><b>ip_scorecard.csv</b><span>Partner scorecard output</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const c = await ASA.loadCSV('data/class_observations.csv');
+  const l = await ASA.loadCSV('data/learner_assessment.csv');
+  const el = id => document.getElementById(id);
+  const CK = [['facilitator_present', 'Facilitator present'], ['facilitator_trained', 'Facilitator trained'], ['learning_kits_available', 'Learning kits available'], ['register_up_to_date', 'Register up to date'], ['vlc_active', 'Village literacy committee active'], ['safe_venue', 'Safe venue']];
+  const F = { prov: el('f-prov'), ip: el('f-ip'), sex: el('f-sex') };
+  ASA.fillSelect(F.prov, ASA.uniq(c, 'province'), 'All provinces');
+  ASA.fillSelect(F.ip, ASA.uniq(c, 'implementing_partner'), 'All partners');
+  ASA.fillSelect(F.sex, ['Female', 'Male'], 'All classes');
+  Object.values(F).forEach(s => s.addEventListener('change', render));
+  el('f-reset').addEventListener('click', () => { Object.values(F).forEach(s => s.value = ''); render(); });
+  ASA.onTheme.push(render);
+  const ok = r => (!F.prov.value || r.province === F.prov.value) && (!F.ip.value || r.implementing_partner === F.ip.value) && (!F.sex.value || (r.class_sex || r.sex) === F.sex.value);
+  function render() {
+    const d = c.filter(ok), live = d.filter(r => r.class_exists === 1), L = l.filter(ok), C = ASA.colors(), bg = getComputedStyle(document.documentElement).getPropertyValue('--bg');
+    el('k-cls').textContent = d.length;
+    el('k-att').textContent = ASA.fmt(ASA.pct(live.reduce((s, r) => s + r.present_on_visit, 0), live.reduce((s, r) => s + r.enrolled, 0)), 0) + '%';
+    el('k-comp').textContent = ASA.fmt(ASA.pct(d.filter(r => r.spot_check_result === 'Compliant').length, d.length), 0) + '%';
+    el('k-ghost').textContent = d.filter(r => r.class_exists === 0).length;
+    const sc = v => v.length ? v.reduce((s, r) => s + (r.letters + r.words + r.sentences + r.numbers) / 4, 0) / v.length * 10 : NaN;
+    el('k-score').textContent = ASA.fmt(sc(L), 0) + '%';
+    Plotly.react('c-ck', [{ type: 'bar', orientation: 'h', y: CK.map(k => k[1]), x: CK.map(k => ASA.pct(live.filter(r => r[k[0]] === 1).length, live.length)), marker: { color: C.series[0] },
+      text: CK.map(k => ASA.fmt(ASA.pct(live.filter(r => r[k[0]] === 1).length, live.length), 0) + '%'), textposition: 'outside', cliponaxis: false,
+      hovertemplate: '<b>%{x:.1f}%</b> of classes<extra>%{y}</extra>' }], ASA.layout({ xaxis: { ticksuffix: '%', range: [0, 110] }, yaxis: { autorange: 'reversed' }, margin: { l: 10 } }), ASA.config);
+    const res = [['Compliant', ASA.status.good], ['Minor issues', ASA.status.warning], ['Major issues', ASA.status.serious], ['Ghost class', ASA.status.critical]];
+    const ips = ASA.uniq(d, 'implementing_partner');
+    Plotly.react('c-ip', res.map(([n, col]) => ({ type: 'bar', name: n, x: ips, y: ips.map(i => d.filter(r => r.implementing_partner === i && r.spot_check_result === n).length), marker: { color: col, line: { width: 1, color: bg } },
+      hovertemplate: '<b>%{y}</b> classes · ' + n + '<extra>%{x}</extra>' })), ASA.layout({ barmode: 'stack', showlegend: true, yaxis: { title: { text: 'Classes visited' } } }), ASA.config);
+    const doms = [['letters', 'Letters'], ['words', 'Words'], ['sentences', 'Sentences'], ['numbers', 'Numbers']], provs = ASA.uniq(L, 'province');
+    Plotly.react('c-learn', doms.map(([k, n], i) => ({ type: 'bar', name: n, x: provs, y: provs.map(p => { const v = L.filter(r => r.province === p); return v.reduce((s, r) => s + r[k], 0) / v.length * 10; }),
+      marker: { color: C.series[i] }, hovertemplate: '<b>%{y:.0f}%</b> ' + n.toLowerCase() + '<extra>%{x}</extra>' })), ASA.layout({ barmode: 'group', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] }, xaxis: { tickangle: -30 } }), ASA.config);
+    ASA.table(el('t-main'), ['Partner', 'Classes', 'Attendance', '% compliant', 'Ghost classes', 'Learner score'], ips.map(i => { const v = d.filter(r => r.implementing_partner === i), lv = v.filter(r => r.class_exists === 1);
+      return [i, v.length, ASA.fmt(ASA.pct(lv.reduce((s, r) => s + r.present_on_visit, 0), lv.reduce((s, r) => s + r.enrolled, 0)), 0) + '%', ASA.fmt(ASA.pct(v.filter(r => r.spot_check_result === 'Compliant').length, v.length), 0) + '%', v.filter(r => r.class_exists === 0).length, ASA.fmt(sc(L.filter(r => r.implementing_partner === i)), 0) + '%']; }));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

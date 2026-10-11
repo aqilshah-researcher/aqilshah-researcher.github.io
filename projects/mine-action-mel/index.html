@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mine Action MEL: Outputs and Evidence Matrix · Aqil Shah Ayaz</title>
+<meta name="description" content="Sample dashboard for a mine action monitoring visit: land cleared, risk education reach by sex and age, who was consulted, and coded evidence by evaluation criterion.">
+<meta property="og:title" content="Mine Action MEL: Outputs and Evidence Matrix · Aqil Shah Ayaz">
+<meta property="og:description" content="Sample dashboard for a mine action monitoring visit: land cleared, risk education reach by sex and age, who was consulted, and coded evidence by evaluation criterion.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
+    <div class="nav-links">
+      <a href="../../index.html#dashboards">Dashboards</a>
+      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
+      <a href="../../index.html#skills">Skills</a>
+      <a href="../../index.html#experience" class="hide-sm">Experience</a>
+      <a href="../../resume.html">Resume</a>
+      <a href="../../index.html#contact">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="crumbs"><a href="../../index.html#dashboards">← All dashboards</a></div>
+  <header class="p-head">
+    <div class="eyebrow">Interactive dashboard · Monitoring &amp; evaluation</div>
+    <h1>Mine Action MEL: Outputs and Evidence Matrix</h1>
+    <p class="lede">A monitoring, evaluation and learning (MEL) visit has to answer two questions: what has the program delivered, and how strong is the evidence behind each evaluation criterion? This dashboard puts outputs and the coded interview evidence side by side.</p>
+    <div class="p-meta chips"><span class="chip ">Python</span><span class="chip ">KII / FGD coding</span><span class="chip ">Evidence matrix</span><span class="chip ">OECD/DAC criteria</span><span class="chip ">Value for money</span></div>
+    <p style="margin-top:14px"><a class="btn btn-ghost" href="../../case-studies/mine-action-mel.html">Read the case study →</a></p>
+  </header>
+  <div class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Sample data.</b> Every number on this page is simulated to protect client and respondent confidentiality. The structure, indicators, methods and code follow the real work described below.</span></div>
+  <section class="dash" aria-label="Interactive dashboard" style="padding-top:18px">
+    <div class="filters"><label>Province<select id="f-prov"></select></label><button type="button" class="reset" id="f-reset">Reset</button></div>
+    <div class="kpis"><div class="kpi"><div class="v" id="k-area">–</div><div class="l">Land cleared</div></div><div class="kpi"><div class="v" id="k-items">–</div><div class="l">Explosive items destroyed</div></div><div class="kpi"><div class="v" id="k-eore">–</div><div class="l">Risk education reach</div></div><div class="kpi"><div class="v" id="k-fem">–</div><div class="l">Women and girls reached</div></div><div class="kpi"><div class="v" id="k-cons">–</div><div class="l">KIIs and FGDs held</div></div></div>
+    <div class="charts"><div class="chart full"><h3>Land cleared per month</h3><div class="sub">Thousand square metres</div><div class="plot " id="c-area" role="img" aria-label="Land cleared per month"></div></div><div class="chart "><h3>Risk education reach</h3><div class="sub">By sex and age</div><div class="plot " id="c-eore" role="img" aria-label="Risk education reach"></div></div><div class="chart "><h3>Who was consulted</h3><div class="sub">Participants by stakeholder group</div><div class="plot " id="c-cons" role="img" aria-label="Who was consulted"></div></div><div class="chart full"><h3>Evidence matrix</h3><div class="sub">Coded interview references by theme and criterion</div><div class="plot tall" id="c-ev" role="img" aria-label="Evidence matrix"></div></div></div>
+    <details class="table-view"><summary>Show the numbers as a table</summary><div class="tbl-wrap" id="t-main"></div></details>
+  </section>
+  <div class="prose" style="padding-bottom:30px">
+    <h2>About this project</h2>
+    <p>Modeled on my work as Itad's in-country expert for the FCDO-funded Global Mine Action Programme 3 (GMAP3) in Afghanistan (2023 to 2024). I joined the international MEL visit to clearance sites and risk education sessions, co-led key informant interviews and focus groups, and turned the notes into coded evidence for the visit report, the formative evaluation and the pause-and-reflect sessions.</p>
+<h3>Method shown here</h3><ul><li>Monthly outputs: area cleared, items destroyed, risk education reach split by girls, boys, women and men.</li><li>Consultation log: every KII and FGD with stakeholder group and number of women and men.</li><li>Evidence matrix: coded references by theme and OECD/DAC criterion, so thin evidence is easy to spot before the next visit.</li></ul>
+    
+    <h2>Code and data</h2>
+    <p>Everything here runs as-is. Open a file to read it on GitHub.</p>
+    <div class="files"><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/mine-action-mel/code/evidence_summary.py" target="_blank" rel="noopener"><b>evidence_summary.py</b><span>Outputs, consultation profile and evidence matrix</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/mine-action-mel/data/monthly_outputs.csv" target="_blank" rel="noopener"><b>monthly_outputs.csv</b><span>Monthly outputs</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/mine-action-mel/data/consultation_log.csv" target="_blank" rel="noopener"><b>consultation_log.csv</b><span>KII and FGD log</span></a><a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io/blob/main/projects/mine-action-mel/data/evidence_matrix.csv" target="_blank" rel="noopener"><b>evidence_matrix.csv</b><span>Coded evidence matrix</span></a></div>
+  </div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => { const go = () => window.Plotly ? run() : setTimeout(go, 60); go(); });
+function run() {
+(async function () {
+  const out = await ASA.loadCSV('data/monthly_outputs.csv');
+  const log = await ASA.loadCSV('data/consultation_log.csv');
+  const ev = await ASA.loadCSV('data/evidence_matrix.csv');
+  const el = id => document.getElementById(id);
+  const F = { prov: el('f-prov') };
+  ASA.fillSelect(F.prov, ASA.uniq(out, 'province'), 'All provinces');
+  F.prov.addEventListener('change', render);
+  el('f-reset').addEventListener('click', () => { F.prov.value = ''; render(); });
+  ASA.onTheme.push(render);
+  const sum = (v, k) => v.reduce((s, r) => s + r[k], 0);
+  function render() {
+    const d = out.filter(r => !F.prov.value || r.province === F.prov.value), C = ASA.colors(), dark = ASA.isDark();
+    el('k-area').textContent = ASA.fmt(sum(d, 'area_cleared_m2') / 1e6, 2) + ' km²';
+    el('k-items').textContent = ASA.fmt(sum(d, 'items_destroyed'));
+    const e = ['eore_girls', 'eore_boys', 'eore_women', 'eore_men'].map(k => sum(d, k)), et = e.reduce((a, b) => a + b, 0);
+    el('k-eore').textContent = ASA.fmt(et); el('k-fem').textContent = ASA.fmt(ASA.pct(e[0] + e[2], et), 0) + '%';
+    el('k-cons').textContent = log.length;
+    const months = ASA.uniq(d, 'month');
+    Plotly.react('c-area', [{ type: 'bar', x: months, y: months.map(m => sum(d.filter(r => r.month === m), 'area_cleared_m2') / 1000), marker: { color: C.series[0] },
+      hovertemplate: '<b>%{y:,.0f}</b> thousand m² cleared<extra>%{x}</extra>' }], ASA.layout({ xaxis: { type: 'category', tickangle: -45, nticks: 12 }, yaxis: { title: { text: 'Thousand m² cleared' } } }), ASA.config);
+    Plotly.react('c-eore', [{ type: 'bar', orientation: 'h', y: ['Girls', 'Boys', 'Women', 'Men'], x: e, marker: { color: [C.series[4], C.series[6], C.series[4], C.series[6]] },
+      text: e.map(v => ASA.fmt(v)), textposition: 'outside', cliponaxis: false, hovertemplate: '<b>%{x:,}</b> people reached<extra>%{y}</extra>' }],
+      ASA.layout({ yaxis: { autorange: 'reversed' }, margin: { l: 10, r: 60 } }), ASA.config);
+    const themes = ASA.uniq(ev, 'theme'), crit = ['Relevance', 'Effectiveness', 'Efficiency / VfM', 'Sustainability', 'Inclusion'];
+    const z = themes.map(t => crit.map(c => (ev.find(r => r.theme === t && r.criterion === c) || {}).coded_references || 0));
+    const ramp = dark ? [[0, '#22262e'], [0.15, '#184f95'], [1, '#9ec5f4']] : [[0, '#f0eee8'], [0.15, '#cde2fb'], [1, '#104281']];
+    Plotly.react('c-ev', [{ type: 'heatmap', x: crit, y: themes, z, colorscale: ramp, xgap: 2, ygap: 2, text: z.map(r => r.map(v => v || '')), texttemplate: '%{text}',
+      textfont: { size: 12 }, colorbar: { title: { text: 'Refs', side: 'top' }, thickness: 10, outlinewidth: 0 }, hovertemplate: '<b>%{z}</b> coded references<br>%{y} · %{x}<extra></extra>' }],
+      ASA.layout({ margin: { l: 10, b: 60 }, xaxis: { side: 'bottom' }, yaxis: { autorange: 'reversed' } }), ASA.config);
+    const sg = ASA.group(log, 'stakeholder_group', v => [v.length, sum(v, 'participants_female'), sum(v, 'participants_male')]).sort((a, b) => a[1][0] - b[1][0]);
+    Plotly.react('c-cons', [['Women', 1, C.series[4]], ['Men', 2, C.series[6]]].map(([n, k, col]) => ({ type: 'bar', orientation: 'h', name: n, y: sg.map(s => s[0]), x: sg.map(s => s[1][k]),
+      marker: { color: col }, customdata: sg.map(s => s[1][0]), hovertemplate: '<b>%{x}</b> ' + n.toLowerCase() + ' · %{customdata} sessions<extra>%{y}</extra>' })),
+      ASA.layout({ barmode: 'stack', showlegend: true, margin: { l: 10 } }), ASA.config);
+    ASA.table(el('t-main'), ['Theme'].concat(crit), themes.map((t, i) => [t].concat(z[i])));
+  }
+  render();
+})();
+
+}
+</script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aqil Shah Ayaz · Data Analyst &amp; MEL Specialist · Rockville, Maryland</span>
+    <span><a href="mailto:aqilshah.researcher@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aqil-shah-ayaz/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/aqilshah-researcher/aqilshah-researcher.github.io" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>

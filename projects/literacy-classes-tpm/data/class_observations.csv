@@ -1,0 +1,331 @@
+class_id,province,implementing_partner,class_sex,class_exists,enrolled,present_on_visit,facilitator_present,facilitator_trained,learning_kits_available,register_up_to_date,vlc_active,safe_venue,separate_female_class,spot_check_result
+CL-0001,Ghor,IP-A,Male,1,19,15,1,1,1,0,1,1,0,Compliant
+CL-0002,Uruzgan,IP-H,Female,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0003,Nangarhar,IP-B,Female,1,26,21,1,1,1,1,1,1,1,Compliant
+CL-0004,Balkh,IP-B,Female,1,28,20,1,0,0,1,1,1,1,Minor issues
+CL-0005,Faryab,IP-D,Female,1,25,17,1,1,1,1,1,1,1,Compliant
+CL-0006,Nangarhar,IP-D,Male,1,20,15,1,1,1,1,0,0,0,Compliant
+CL-0007,Ghor,IP-B,Male,1,21,15,1,1,0,0,0,1,0,Major issues
+CL-0008,Nangarhar,IP-I,Female,1,19,12,1,0,0,1,0,1,1,Compliant
+CL-0009,Faryab,IP-I,Female,1,27,20,1,1,1,0,1,0,1,Compliant
+CL-0010,Uruzgan,IP-I,Male,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0011,Balkh,IP-D,Male,1,24,13,1,1,0,1,1,1,0,Minor issues
+CL-0012,Zabul,IP-E,Female,1,28,18,1,1,1,1,0,1,1,Compliant
+CL-0013,Balkh,IP-F,Female,1,27,20,1,1,0,1,1,1,1,Compliant
+CL-0014,Ghazni,IP-G,Male,1,29,26,1,0,1,1,1,1,0,Compliant
+CL-0015,Herat,IP-C,Male,1,27,20,1,0,1,1,1,1,0,Compliant
+CL-0016,Balkh,IP-H,Male,1,27,20,0,1,0,1,0,1,0,Minor issues
+CL-0017,Kabul,IP-D,Male,1,23,16,1,1,1,1,1,1,0,Compliant
+CL-0018,Herat,IP-I,Female,1,19,13,0,1,1,1,1,1,1,Compliant
+CL-0019,Wardak,IP-F,Female,1,20,14,1,1,1,1,0,1,1,Compliant
+CL-0020,Wardak,IP-C,Male,1,20,20,1,1,0,1,1,1,0,Compliant
+CL-0021,Nangarhar,IP-D,Female,1,30,24,1,1,1,1,1,0,1,Compliant
+CL-0022,Nimroz,IP-C,Female,1,21,17,1,1,1,0,1,1,1,Compliant
+CL-0023,Faryab,IP-D,Female,1,25,17,1,1,1,1,1,1,1,Minor issues
+CL-0024,Uruzgan,IP-C,Male,1,24,22,1,1,1,1,1,1,0,Compliant
+CL-0025,Uruzgan,IP-C,Male,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0026,Herat,IP-F,Male,1,20,10,1,1,1,0,0,1,0,Major issues
+CL-0027,Ghazni,IP-F,Female,1,19,13,1,1,1,1,1,1,1,Minor issues
+CL-0028,Kabul,IP-E,Female,1,18,13,1,0,1,1,1,1,1,Compliant
+CL-0029,Zabul,IP-G,Female,1,18,14,1,1,1,1,1,1,1,Compliant
+CL-0030,Herat,IP-H,Female,1,19,14,1,1,1,0,1,1,1,Compliant
+CL-0031,Faryab,IP-C,Male,1,30,30,1,1,1,0,1,1,0,Compliant
+CL-0032,Wardak,IP-D,Male,1,30,22,1,1,1,1,1,1,0,Compliant
+CL-0033,Kabul,IP-I,Male,1,22,15,1,1,0,1,1,1,0,Minor issues
+CL-0034,Nimroz,IP-E,Female,1,18,15,1,1,1,1,1,1,1,Compliant
+CL-0035,Nangarhar,IP-E,Female,1,24,17,0,1,1,1,1,1,1,Compliant
+CL-0036,Faryab,IP-I,Female,1,21,13,0,1,0,0,1,1,1,Minor issues
+CL-0037,Nimroz,IP-D,Female,1,25,17,1,0,1,1,0,1,1,Major issues
+CL-0038,Kabul,IP-C,Male,1,30,24,1,0,1,0,1,1,0,Compliant
+CL-0039,Kabul,IP-E,Male,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0040,Kabul,IP-I,Male,1,25,19,1,1,0,1,1,1,0,Compliant
+CL-0041,Uruzgan,IP-A,Male,1,18,11,1,1,1,1,1,1,0,Minor issues
+CL-0042,Nimroz,IP-G,Male,1,29,20,1,1,1,1,1,0,0,Compliant
+CL-0043,Uruzgan,IP-B,Female,1,28,23,1,1,1,0,1,1,1,Compliant
+CL-0044,Kabul,IP-H,Male,1,19,16,1,1,1,1,1,0,0,Compliant
+CL-0045,Uruzgan,IP-C,Male,1,30,27,1,1,0,1,1,1,0,Compliant
+CL-0046,Ghazni,IP-A,Male,1,30,21,1,1,0,1,1,0,0,Compliant
+CL-0047,Nimroz,IP-D,Male,1,25,19,1,0,1,0,1,1,0,Compliant
+CL-0048,Ghazni,IP-G,Female,1,30,23,1,1,1,1,1,1,1,Compliant
+CL-0049,Nimroz,IP-H,Male,1,26,18,1,1,0,1,0,1,0,Minor issues
+CL-0050,Nimroz,IP-H,Female,1,20,10,1,0,1,0,0,1,1,Compliant
+CL-0051,Wardak,IP-G,Female,1,26,15,1,1,1,1,0,1,1,Minor issues
+CL-0052,Herat,IP-A,Male,1,24,17,1,1,0,1,1,1,0,Minor issues
+CL-0053,Wardak,IP-E,Female,1,28,19,1,0,1,1,0,1,1,Compliant
+CL-0054,Faryab,IP-A,Female,1,19,13,1,1,1,1,0,1,1,Compliant
+CL-0055,Nimroz,IP-F,Female,1,18,13,1,1,1,1,0,1,1,Compliant
+CL-0056,Ghazni,IP-G,Female,1,18,14,1,1,1,1,0,1,1,Compliant
+CL-0057,Nangarhar,IP-H,Male,1,23,15,1,1,0,0,0,1,0,Compliant
+CL-0058,Faryab,IP-A,Female,1,24,18,1,1,1,1,0,1,1,Compliant
+CL-0059,Nimroz,IP-H,Female,1,20,15,1,1,1,0,0,1,1,Minor issues
+CL-0060,Uruzgan,IP-A,Female,1,24,18,0,1,1,1,1,0,1,Compliant
+CL-0061,Balkh,IP-G,Male,1,29,23,1,1,1,1,1,1,0,Compliant
+CL-0062,Kabul,IP-A,Female,1,24,13,1,0,0,0,1,1,1,Minor issues
+CL-0063,Herat,IP-D,Female,1,29,16,1,1,0,0,1,1,1,Major issues
+CL-0064,Nangarhar,IP-B,Male,1,24,19,1,0,1,0,1,1,0,Minor issues
+CL-0065,Wardak,IP-G,Female,1,25,18,1,1,1,0,0,1,1,Minor issues
+CL-0066,Kabul,IP-B,Male,1,22,15,1,0,0,1,1,1,0,Compliant
+CL-0067,Uruzgan,IP-G,Male,1,27,18,1,1,1,1,1,1,0,Compliant
+CL-0068,Kabul,IP-C,Female,1,27,20,1,1,1,1,1,1,1,Compliant
+CL-0069,Wardak,IP-B,Female,1,19,12,1,1,1,1,1,1,1,Minor issues
+CL-0070,Nimroz,IP-G,Female,1,21,18,1,1,0,1,1,1,1,Compliant
+CL-0071,Kabul,IP-F,Male,1,20,13,1,0,0,0,1,1,0,Minor issues
+CL-0072,Faryab,IP-A,Female,1,27,19,1,1,1,1,1,1,1,Compliant
+CL-0073,Ghor,IP-G,Male,1,25,14,1,1,0,1,1,0,0,Compliant
+CL-0074,Nimroz,IP-E,Female,1,28,22,1,1,1,1,1,1,1,Compliant
+CL-0075,Herat,IP-B,Male,1,24,17,1,1,1,1,0,1,0,Compliant
+CL-0076,Ghazni,IP-A,Female,1,28,20,1,1,0,1,1,0,1,Minor issues
+CL-0077,Nimroz,IP-I,Female,1,26,17,1,0,1,0,1,1,1,Minor issues
+CL-0078,Nangarhar,IP-E,Male,1,25,21,1,1,1,1,1,1,0,Compliant
+CL-0079,Faryab,IP-A,Female,1,30,16,1,1,0,0,1,0,1,Minor issues
+CL-0080,Ghor,IP-H,Male,1,26,20,1,1,1,1,1,0,0,Compliant
+CL-0081,Ghor,IP-E,Female,1,20,10,1,1,1,1,0,1,1,Major issues
+CL-0082,Kabul,IP-A,Female,1,30,26,1,1,1,1,1,1,1,Compliant
+CL-0083,Nangarhar,IP-C,Male,1,18,16,1,0,1,1,1,1,0,Compliant
+CL-0084,Kabul,IP-C,Female,1,29,22,1,1,0,1,1,1,1,Compliant
+CL-0085,Faryab,IP-H,Female,1,20,12,1,1,1,1,0,1,1,Minor issues
+CL-0086,Nangarhar,IP-I,Female,1,21,12,1,0,0,1,1,0,1,Major issues
+CL-0087,Herat,IP-B,Female,1,19,11,1,1,1,1,1,1,1,Minor issues
+CL-0088,Kabul,IP-G,Female,1,27,23,1,1,0,1,0,1,1,Compliant
+CL-0089,Kabul,IP-A,Male,1,27,22,1,1,1,1,0,1,0,Compliant
+CL-0090,Nangarhar,IP-C,Female,1,23,15,1,0,1,0,1,1,1,Compliant
+CL-0091,Uruzgan,IP-C,Female,1,24,17,1,1,1,1,1,1,1,Compliant
+CL-0092,Kabul,IP-D,Male,1,25,21,1,1,1,1,0,1,0,Minor issues
+CL-0093,Uruzgan,IP-I,Female,1,30,19,1,1,1,1,1,1,1,Minor issues
+CL-0094,Uruzgan,IP-G,Female,1,28,18,1,1,1,0,1,1,1,Compliant
+CL-0095,Herat,IP-E,Male,1,20,15,1,0,1,1,0,0,0,Compliant
+CL-0096,Wardak,IP-C,Male,1,28,22,1,1,1,1,1,1,0,Compliant
+CL-0097,Faryab,IP-I,Female,1,20,13,1,0,1,0,0,1,1,Compliant
+CL-0098,Nimroz,IP-A,Male,1,19,14,1,1,1,1,1,1,0,Minor issues
+CL-0099,Herat,IP-H,Female,1,30,21,1,1,0,0,1,1,1,Compliant
+CL-0100,Nimroz,IP-F,Male,1,28,15,1,1,0,1,0,0,0,Major issues
+CL-0101,Zabul,IP-I,Male,1,21,14,1,1,0,1,1,0,0,Compliant
+CL-0102,Uruzgan,IP-A,Female,1,21,15,1,1,1,1,0,1,1,Minor issues
+CL-0103,Herat,IP-B,Female,1,18,14,1,1,1,0,1,1,1,Major issues
+CL-0104,Nimroz,IP-C,Female,1,19,14,1,1,1,1,0,1,1,Compliant
+CL-0105,Faryab,IP-C,Female,1,30,21,1,1,1,1,1,1,1,Compliant
+CL-0106,Balkh,IP-I,Female,1,30,23,1,1,1,1,0,0,1,Compliant
+CL-0107,Nangarhar,IP-G,Male,1,25,20,1,0,0,1,0,1,0,Minor issues
+CL-0108,Balkh,IP-E,Male,1,20,15,1,1,1,1,1,1,0,Compliant
+CL-0109,Faryab,IP-I,Male,1,22,14,1,1,0,0,0,0,0,Minor issues
+CL-0110,Faryab,IP-H,Male,1,25,16,1,1,0,1,0,1,0,Major issues
+CL-0111,Zabul,IP-A,Female,1,30,23,1,1,1,1,0,1,1,Compliant
+CL-0112,Uruzgan,IP-E,Male,1,24,16,1,1,0,1,1,1,0,Compliant
+CL-0113,Balkh,IP-H,Male,1,22,12,1,0,1,1,0,1,0,Compliant
+CL-0114,Herat,IP-F,Male,1,21,14,1,1,0,0,0,1,0,Minor issues
+CL-0115,Kabul,IP-B,Female,1,28,22,1,1,1,0,0,1,1,Compliant
+CL-0116,Nimroz,IP-E,Male,1,22,19,1,1,1,1,1,1,0,Compliant
+CL-0117,Nangarhar,IP-G,Female,1,24,19,1,1,1,1,0,1,1,Compliant
+CL-0118,Nimroz,IP-B,Male,1,24,18,1,1,1,1,0,1,0,Minor issues
+CL-0119,Wardak,IP-H,Female,1,23,17,1,1,1,0,1,1,1,Compliant
+CL-0120,Balkh,IP-C,Female,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0121,Uruzgan,IP-C,Female,1,29,24,1,1,1,1,1,1,1,Compliant
+CL-0122,Ghazni,IP-B,Female,1,18,9,1,1,0,1,0,1,1,Major issues
+CL-0123,Kabul,IP-I,Female,1,22,16,1,1,0,1,1,1,1,Minor issues
+CL-0124,Kabul,IP-C,Male,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0125,Wardak,IP-F,Male,1,26,15,1,0,1,0,0,0,0,Major issues
+CL-0126,Ghazni,IP-E,Male,1,19,15,1,1,1,1,1,1,0,Compliant
+CL-0127,Kabul,IP-A,Female,1,27,13,1,1,0,0,1,1,1,Minor issues
+CL-0128,Balkh,IP-D,Male,1,19,13,1,1,1,0,0,1,0,Major issues
+CL-0129,Nangarhar,IP-E,Female,1,29,19,0,1,0,0,1,1,1,Minor issues
+CL-0130,Nangarhar,IP-H,Female,1,19,11,0,1,1,1,1,1,1,Minor issues
+CL-0131,Wardak,IP-I,Male,0,0,0,0,0,0,0,0,0,0,Ghost class
+CL-0132,Balkh,IP-D,Male,1,30,26,1,1,1,0,0,0,0,Compliant
+CL-0133,Zabul,IP-H,Male,1,19,13,1,1,1,1,1,1,0,Minor issues
+CL-0134,Nimroz,IP-A,Female,1,28,19,1,1,1,0,0,1,1,Minor issues
+CL-0135,Wardak,IP-G,Female,1,22,18,1,1,1,1,1,1,1,Compliant
+CL-0136,Kabul,IP-E,Male,1,20,13,1,1,1,1,0,1,0,Minor issues
+CL-0137,Uruzgan,IP-F,Female,1,29,22,1,1,1,1,0,1,1,Compliant
+CL-0138,Kabul,IP-G,Female,1,22,16,1,0,0,0,0,1,1,Compliant
+CL-0139,Nangarhar,IP-H,Female,1,25,17,1,1,1,1,1,1,1,Minor issues
+CL-0140,Nangarhar,IP-B,Female,1,21,15,1,1,1,0,0,0,1,Compliant
+CL-0141,Balkh,IP-I,Male,1,26,17,1,1,1,1,1,1,0,Compliant
+CL-0142,Ghor,IP-D,Female,1,27,15,1,1,1,1,0,1,1,Major issues
+CL-0143,Nangarhar,IP-G,Female,1,22,17,1,1,1,1,0,1,1,Minor issues
+CL-0144,Nimroz,IP-D,Female,1,29,15,1,1,0,0,0,1,1,Major issues
+CL-0145,Ghor,IP-I,Male,1,25,16,1,1,1,0,0,1,0,Minor issues
+CL-0146,Ghor,IP-E,Female,1,24,18,1,1,0,1,0,1,1,Compliant
+CL-0147,Nimroz,IP-A,Female,1,24,19,0,1,0,1,1,1,1,Minor issues
+CL-0148,Zabul,IP-I,Female,1,27,19,0,1,1,0,0,1,1,Minor issues
+CL-0149,Nangarhar,IP-F,Male,1,26,15,1,1,0,0,0,1,0,Major issues
+CL-0150,Ghor,IP-A,Female,1,26,18,1,1,0,1,0,1,1,Minor issues
+CL-0151,Nimroz,IP-B,Male,1,19,13,0,1,1,1,1,1,0,Minor issues
+CL-0152,Nangarhar,IP-F,Female,1,18,14,1,1,1,1,1,1,1,Compliant
+CL-0153,Zabul,IP-B,Female,1,26,19,1,1,1,1,1,0,1,Compliant
+CL-0154,Ghor,IP-D,Male,1,23,18,1,1,1,0,1,1,0,Compliant
+CL-0155,Ghor,IP-H,Female,1,26,18,0,0,1,1,0,1,1,Compliant
+CL-0156,Wardak,IP-C,Female,1,23,18,1,1,1,1,1,1,1,Compliant
+CL-0157,Kabul,IP-I,Male,1,25,18,1,1,1,1,1,0,0,Minor issues
+CL-0158,Herat,IP-B,Male,1,25,18,1,1,1,1,1,1,0,Compliant
+CL-0159,Ghor,IP-E,Male,1,19,14,1,1,1,0,0,1,0,Compliant
+CL-0160,Herat,IP-I,Female,1,28,17,1,1,1,0,1,1,1,Compliant
+CL-0161,Ghor,IP-C,Male,1,29,24,1,1,1,1,1,1,0,Compliant
+CL-0162,Ghor,IP-E,Male,1,21,16,1,1,0,1,1,1,0,Compliant
+CL-0163,Uruzgan,IP-F,Female,1,27,17,1,1,1,1,1,1,1,Compliant
+CL-0164,Nimroz,IP-E,Female,1,19,14,1,1,1,1,0,1,1,Compliant
+CL-0165,Herat,IP-A,Female,1,22,12,1,1,1,1,1,0,1,Minor issues
+CL-0166,Wardak,IP-D,Female,1,25,15,1,1,1,0,1,0,1,Major issues
+CL-0167,Zabul,IP-I,Male,1,19,11,0,1,1,0,1,0,0,Minor issues
+CL-0168,Uruzgan,IP-B,Male,1,26,22,1,1,1,1,0,1,0,Compliant
+CL-0169,Nimroz,IP-A,Female,1,27,18,1,1,1,0,0,1,1,Minor issues
+CL-0170,Ghazni,IP-H,Male,1,22,18,1,1,1,1,0,1,0,Compliant
+CL-0171,Kabul,IP-F,Female,1,29,22,1,1,1,1,1,1,1,Minor issues
+CL-0172,Nangarhar,IP-F,Female,1,25,16,1,1,1,1,1,1,1,Minor issues
+CL-0173,Kabul,IP-I,Male,1,21,14,1,1,1,1,1,1,0,Compliant
+CL-0174,Kabul,IP-E,Female,1,24,21,1,1,1,1,1,1,1,Compliant
+CL-0175,Nimroz,IP-D,Female,1,21,15,1,1,1,0,0,1,1,Compliant
+CL-0176,Nangarhar,IP-A,Male,1,27,23,0,1,1,1,1,1,0,Compliant
+CL-0177,Wardak,IP-E,Male,1,24,17,1,1,1,1,0,1,0,Compliant
+CL-0178,Nangarhar,IP-I,Female,1,29,21,0,1,1,1,0,1,1,Compliant
+CL-0179,Kabul,IP-I,Male,1,27,18,1,1,0,0,1,1,0,Minor issues
+CL-0180,Nimroz,IP-I,Female,1,19,16,1,1,1,1,1,1,1,Compliant
+CL-0181,Zabul,IP-G,Male,1,29,24,1,0,1,1,1,1,0,Compliant
+CL-0182,Wardak,IP-A,Female,1,28,20,1,1,1,1,1,1,1,Compliant
+CL-0183,Ghazni,IP-F,Female,1,23,18,1,1,1,0,1,0,1,Compliant
+CL-0184,Ghazni,IP-B,Female,1,22,11,1,1,1,0,1,1,1,Minor issues
+CL-0185,Herat,IP-C,Female,1,27,25,1,1,1,1,1,1,1,Compliant
+CL-0186,Ghor,IP-A,Female,1,30,22,1,0,1,0,0,1,1,Compliant
+CL-0187,Zabul,IP-D,Female,1,18,13,1,1,1,1,1,1,1,Minor issues
+CL-0188,Ghazni,IP-E,Male,1,18,12,1,1,1,1,1,0,0,Compliant
+CL-0189,Wardak,IP-D,Male,1,19,13,1,1,1,1,1,0,0,Major issues
+CL-0190,Nangarhar,IP-G,Female,1,29,20,1,0,1,1,0,1,1,Compliant
+CL-0191,Nimroz,IP-C,Female,1,21,13,1,1,1,1,1,1,1,Compliant
+CL-0192,Ghazni,IP-A,Female,1,23,16,1,1,1,1,1,1,1,Compliant
+CL-0193,Uruzgan,IP-I,Female,1,20,16,0,1,1,1,1,1,1,Compliant
+CL-0194,Faryab,IP-E,Female,1,27,20,1,1,1,1,1,1,1,Compliant
+CL-0195,Balkh,IP-E,Female,1,28,20,1,1,1,1,0,1,1,Major issues
+CL-0196,Herat,IP-H,Male,1,19,12,1,1,0,1,0,1,0,Compliant
+CL-0197,Uruzgan,IP-D,Female,1,18,9,1,1,0,0,0,1,1,Major issues
+CL-0198,Zabul,IP-E,Female,1,21,12,1,1,0,0,1,1,1,Minor issues
+CL-0199,Nimroz,IP-C,Female,1,28,23,1,1,1,1,1,1,1,Compliant
+CL-0200,Ghazni,IP-E,Female,1,23,19,1,1,0,0,1,1,1,Compliant
+CL-0201,Zabul,IP-C,Male,1,23,20,0,1,0,1,1,1,0,Compliant
+CL-0202,Kabul,IP-G,Male,1,26,18,1,1,0,1,1,1,0,Major issues
+CL-0203,Wardak,IP-I,Female,1,29,21,1,0,1,1,0,1,1,Compliant
+CL-0204,Ghazni,IP-A,Female,1,18,14,1,1,1,1,1,1,1,Compliant
+CL-0205,Ghor,IP-B,Female,1,25,17,1,1,0,1,0,1,1,Minor issues
+CL-0206,Ghazni,IP-A,Male,1,19,14,1,1,1,0,0,1,0,Minor issues
+CL-0207,Herat,IP-F,Male,1,28,21,1,1,1,1,1,1,0,Minor issues
+CL-0208,Herat,IP-A,Male,1,19,11,0,1,1,1,1,1,0,Major issues
+CL-0209,Uruzgan,IP-G,Female,1,21,16,1,0,0,1,1,1,1,Compliant
+CL-0210,Faryab,IP-A,Female,1,30,18,1,1,1,0,1,1,1,Compliant
+CL-0211,Uruzgan,IP-B,Female,1,30,21,1,1,0,1,1,0,1,Minor issues
+CL-0212,Faryab,IP-C,Male,1,20,19,1,1,1,1,1,0,0,Compliant
+CL-0213,Ghor,IP-E,Female,1,23,16,1,1,1,0,1,1,1,Compliant
+CL-0214,Balkh,IP-C,Male,1,18,14,1,1,1,1,1,1,0,Compliant
+CL-0215,Faryab,IP-H,Male,1,25,14,1,1,1,1,1,1,0,Compliant
+CL-0216,Faryab,IP-D,Male,1,19,14,1,1,1,1,0,1,0,Minor issues
+CL-0217,Ghazni,IP-G,Male,1,30,25,1,1,1,0,1,1,0,Compliant
+CL-0218,Kabul,IP-C,Male,1,29,26,1,1,1,1,1,0,0,Compliant
+CL-0219,Kabul,IP-H,Female,1,23,18,1,1,1,1,1,1,1,Minor issues
+CL-0220,Nangarhar,IP-F,Female,1,23,15,1,1,0,1,1,1,1,Compliant
+CL-0221,Ghor,IP-C,Male,1,26,22,1,1,1,1,0,1,0,Compliant
+CL-0222,Nangarhar,IP-E,Male,1,18,14,1,1,1,1,0,1,0,Minor issues
+CL-0223,Faryab,IP-E,Male,1,27,18,1,1,1,0,1,1,0,Compliant
+CL-0224,Herat,IP-I,Male,1,29,18,1,0,0,1,0,1,0,Minor issues
+CL-0225,Nangarhar,IP-H,Female,1,29,21,1,1,1,1,0,1,1,Minor issues
+CL-0226,Ghazni,IP-E,Female,1,23,20,1,1,1,1,1,1,1,Compliant
+CL-0227,Faryab,IP-E,Female,1,19,15,1,0,1,1,0,1,1,Compliant
+CL-0228,Faryab,IP-A,Male,1,24,17,1,1,1,1,1,1,0,Compliant
+CL-0229,Wardak,IP-C,Female,1,30,26,1,1,1,1,0,1,1,Compliant
+CL-0230,Kabul,IP-D,Female,1,19,11,0,1,1,0,0,1,1,Major issues
+CL-0231,Uruzgan,IP-E,Female,1,18,14,1,1,1,1,1,1,1,Compliant
+CL-0232,Balkh,IP-B,Female,1,22,15,1,1,0,0,1,1,1,Minor issues
+CL-0233,Wardak,IP-I,Male,1,23,14,1,1,1,1,0,1,0,Minor issues
+CL-0234,Nangarhar,IP-A,Female,1,30,25,1,1,1,1,0,1,1,Compliant
+CL-0235,Ghor,IP-F,Male,1,30,28,1,1,0,1,1,1,0,Compliant
+CL-0236,Uruzgan,IP-B,Female,1,22,19,1,1,1,1,1,1,1,Compliant
+CL-0237,Uruzgan,IP-B,Female,1,20,17,1,0,1,1,1,1,1,Compliant
+CL-0238,Faryab,IP-E,Female,1,24,18,1,1,1,1,0,1,1,Compliant
+CL-0239,Nangarhar,IP-C,Male,1,21,14,1,0,1,1,1,1,0,Compliant
+CL-0240,Balkh,IP-G,Male,1,23,17,0,1,1,1,1,1,0,Compliant
+CL-0241,Faryab,IP-I,Male,1,25,10,1,1,1,1,0,1,0,Minor issues
+CL-0242,Faryab,IP-G,Female,1,21,15,0,1,1,1,0,1,1,Compliant
+CL-0243,Kabul,IP-B,Male,1,20,16,1,1,1,1,1,1,0,Compliant
+CL-0244,Nangarhar,IP-F,Female,1,25,16,1,1,1,1,1,1,1,Minor issues
+CL-0245,Wardak,IP-G,Female,1,27,18,1,1,0,1,1,1,1,Compliant
+CL-0246,Ghazni,IP-H,Female,1,23,14,1,1,0,1,1,1,1,Major issues
+CL-0247,Zabul,IP-C,Female,1,19,14,1,1,0,1,1,1,1,Compliant
+CL-0248,Balkh,IP-G,Female,1,19,12,1,1,0,1,0,1,1,Compliant
+CL-0249,Ghazni,IP-E,Female,1,30,21,1,1,0,1,1,1,1,Compliant
+CL-0250,Zabul,IP-E,Female,1,27,23,1,0,1,0,1,1,1,Compliant
+CL-0251,Ghazni,IP-H,Male,1,18,9,1,1,1,0,0,1,0,Minor issues
+CL-0252,Uruzgan,IP-H,Female,1,24,21,1,1,0,1,0,1,1,Compliant
+CL-0253,Nangarhar,IP-A,Male,1,23,14,1,0,0,1,1,1,0,Compliant
+CL-0254,Ghor,IP-I,Female,1,24,15,1,0,1,0,1,1,1,Minor issues
+CL-0255,Ghazni,IP-A,Female,1,30,19,1,1,0,1,1,1,1,Minor issues
+CL-0256,Herat,IP-F,Male,1,30,25,1,1,1,1,0,1,0,Compliant
+CL-0257,Kabul,IP-A,Male,1,30,16,1,1,1,1,0,1,0,Major issues
+CL-0258,Ghor,IP-I,Male,1,22,20,1,1,1,0,0,1,0,Compliant
+CL-0259,Ghazni,IP-B,Male,1,20,15,1,1,0,1,0,1,0,Compliant
+CL-0260,Balkh,IP-F,Male,1,30,22,1,1,0,1,1,1,0,Compliant
+CL-0261,Nimroz,IP-H,Female,1,29,24,1,1,1,0,0,0,1,Compliant
+CL-0262,Ghazni,IP-G,Male,1,29,23,1,1,1,1,0,1,0,Compliant
+CL-0263,Kabul,IP-G,Female,1,19,13,1,1,1,0,0,1,1,Compliant
+CL-0264,Nimroz,IP-E,Male,1,20,14,1,1,1,0,1,1,0,Compliant
+CL-0265,Herat,IP-D,Female,1,26,22,1,0,0,1,1,1,1,Compliant
+CL-0266,Faryab,IP-D,Female,1,21,15,1,1,0,1,1,1,1,Minor issues
+CL-0267,Nimroz,IP-A,Female,1,25,17,0,1,1,1,0,1,1,Minor issues
+CL-0268,Wardak,IP-F,Female,1,30,18,1,1,0,0,1,1,1,Major issues
+CL-0269,Ghazni,IP-A,Female,1,26,22,1,1,1,1,0,1,1,Compliant
+CL-0270,Ghazni,IP-C,Female,1,27,25,1,0,1,1,1,1,1,Compliant
+CL-0271,Nangarhar,IP-G,Female,1,22,16,1,1,1,1,1,0,1,Compliant
+CL-0272,Kabul,IP-B,Male,1,26,19,1,1,1,1,1,1,0,Minor issues
+CL-0273,Balkh,IP-H,Female,1,22,15,1,1,1,1,1,1,1,Minor issues
+CL-0274,Uruzgan,IP-H,Female,1,30,20,1,1,1,1,0,0,1,Minor issues
+CL-0275,Nangarhar,IP-H,Male,1,23,17,1,1,1,1,1,1,0,Compliant
+CL-0276,Nangarhar,IP-D,Female,1,20,16,1,1,1,1,1,1,1,Compliant
+CL-0277,Nimroz,IP-B,Female,1,23,19,1,1,1,0,0,0,1,Minor issues
+CL-0278,Zabul,IP-D,Male,1,22,16,0,0,0,1,0,1,0,Minor issues
+CL-0279,Ghazni,IP-D,Female,1,24,14,0,0,1,1,1,1,1,Minor issues
+CL-0280,Balkh,IP-B,Male,1,25,19,1,1,1,1,1,0,0,Compliant
+CL-0281,Zabul,IP-I,Female,1,26,20,1,1,0,1,1,1,1,Compliant
+CL-0282,Balkh,IP-A,Female,1,25,15,1,1,1,1,1,1,1,Major issues
+CL-0283,Balkh,IP-E,Female,1,30,20,0,1,0,0,1,0,1,Compliant
+CL-0284,Nimroz,IP-I,Male,1,26,18,1,1,1,0,0,0,0,Compliant
+CL-0285,Faryab,IP-H,Female,1,19,13,1,1,1,0,0,1,1,Minor issues
+CL-0286,Uruzgan,IP-D,Female,1,26,18,0,1,1,1,0,1,1,Minor issues
+CL-0287,Herat,IP-G,Female,1,28,24,1,0,1,1,1,1,1,Compliant
+CL-0288,Uruzgan,IP-B,Female,1,28,20,1,1,1,1,1,0,1,Compliant
+CL-0289,Ghazni,IP-E,Female,1,30,24,1,1,1,1,1,1,1,Compliant
+CL-0290,Ghazni,IP-F,Male,1,23,19,1,1,1,1,1,1,0,Compliant
+CL-0291,Faryab,IP-B,Female,1,30,20,1,0,1,1,0,1,1,Minor issues
+CL-0292,Zabul,IP-A,Male,1,27,21,1,1,1,1,0,1,0,Compliant
+CL-0293,Uruzgan,IP-F,Male,1,27,21,1,1,0,1,1,1,0,Minor issues
+CL-0294,Uruzgan,IP-C,Male,1,25,20,1,1,1,1,1,1,0,Compliant
+CL-0295,Kabul,IP-E,Female,1,27,25,1,1,1,1,1,1,1,Compliant
+CL-0296,Nangarhar,IP-B,Female,1,27,21,1,1,1,1,1,0,1,Compliant
+CL-0297,Balkh,IP-D,Female,1,24,17,1,1,1,1,1,1,1,Minor issues
+CL-0298,Ghazni,IP-D,Female,1,28,16,1,1,0,1,1,0,1,Minor issues
+CL-0299,Nimroz,IP-E,Male,1,22,17,1,1,0,1,1,1,0,Compliant
+CL-0300,Kabul,IP-G,Male,1,21,17,1,1,1,0,1,1,0,Compliant
+CL-0301,Kabul,IP-B,Male,1,28,26,1,1,1,1,0,1,0,Compliant
+CL-0302,Zabul,IP-C,Male,1,28,21,1,1,1,1,0,1,0,Compliant
+CL-0303,Nangarhar,IP-D,Female,1,20,12,1,1,0,0,0,1,1,Minor issues
+CL-0304,Faryab,IP-B,Male,1,25,18,1,0,1,1,0,1,0,Compliant
+CL-0305,Balkh,IP-F,Female,1,29,21,1,1,1,0,1,1,1,Compliant
+CL-0306,Nimroz,IP-C,Male,1,21,18,1,1,1,1,1,1,0,Compliant
+CL-0307,Kabul,IP-I,Male,1,28,19,1,0,1,1,1,1,0,Compliant
+CL-0308,Faryab,IP-I,Female,1,25,20,1,1,1,1,1,1,1,Compliant
+CL-0309,Wardak,IP-I,Female,1,24,18,1,1,0,1,1,1,1,Compliant
+CL-0310,Nimroz,IP-F,Female,1,29,17,1,0,1,1,1,1,1,Compliant
+CL-0311,Uruzgan,IP-E,Male,1,24,13,1,1,1,1,0,1,0,Major issues
+CL-0312,Ghazni,IP-I,Male,1,27,16,1,1,0,0,0,1,0,Major issues
+CL-0313,Herat,IP-C,Female,1,21,15,1,1,1,1,1,1,1,Compliant
+CL-0314,Nangarhar,IP-D,Male,1,23,14,1,1,0,1,0,1,0,Minor issues
+CL-0315,Nimroz,IP-H,Female,1,27,17,1,1,1,1,1,1,1,Minor issues
+CL-0316,Ghazni,IP-A,Male,1,30,19,1,1,0,1,1,1,0,Compliant
+CL-0317,Herat,IP-G,Male,1,21,12,0,1,1,0,0,1,0,Minor issues
+CL-0318,Zabul,IP-A,Female,1,24,10,1,1,0,0,0,1,1,Minor issues
+CL-0319,Kabul,IP-H,Female,1,22,12,1,1,1,1,0,0,1,Minor issues
+CL-0320,Zabul,IP-G,Female,1,18,13,0,1,0,0,1,1,1,Compliant
+CL-0321,Nangarhar,IP-A,Female,1,29,20,1,1,0,0,1,1,1,Minor issues
+CL-0322,Kabul,IP-H,Female,1,23,19,0,1,1,1,1,1,1,Minor issues
+CL-0323,Nangarhar,IP-F,Male,1,26,20,1,1,1,1,0,1,0,Compliant
+CL-0324,Wardak,IP-E,Female,1,22,17,1,1,1,1,0,1,1,Compliant
+CL-0325,Nimroz,IP-B,Female,1,19,13,0,1,0,1,1,0,1,Major issues
+CL-0326,Kabul,IP-G,Female,1,27,23,0,1,0,1,0,1,1,Minor issues
+CL-0327,Zabul,IP-H,Male,1,26,24,1,1,1,1,1,1,0,Compliant
+CL-0328,Ghazni,IP-C,Male,1,23,17,1,1,1,1,1,0,0,Compliant
+CL-0329,Kabul,IP-H,Female,1,30,24,1,1,1,1,0,1,1,Compliant
+CL-0330,Zabul,IP-F,Female,1,30,22,1,1,1,1,1,1,1,Compliant

@@ -1,0 +1,101 @@
+topic_id,group,domain,topic_title
+T001,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 1
+T002,Teacher,Inclusive teaching,Inclusive teaching: topic 2
+T003,Teacher,Mathematics,Mathematics: topic 3
+T004,Teacher,Mathematics,Mathematics: topic 4
+T005,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 5
+T006,Teacher,Science,Science: topic 6
+T007,Teacher,Inclusive teaching,Inclusive teaching: topic 7
+T008,Teacher,Inclusive teaching,Inclusive teaching: topic 8
+T009,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 9
+T010,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 10
+T011,Teacher,Science,Science: topic 11
+T012,Teacher,Inclusive teaching,Inclusive teaching: topic 12
+T013,Teacher,Science,Science: topic 13
+T014,Teacher,Mathematics,Mathematics: topic 14
+T015,Teacher,Inclusive teaching,Inclusive teaching: topic 15
+T016,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 16
+T017,Teacher,Mathematics,Mathematics: topic 17
+T018,Teacher,Inclusive teaching,Inclusive teaching: topic 18
+T019,Teacher,Science,Science: topic 19
+T020,Teacher,Mathematics,Mathematics: topic 20
+T021,Teacher,Mathematics,Mathematics: topic 21
+T022,Teacher,Classroom management,Classroom management: topic 22
+T023,Teacher,Science,Science: topic 23
+T024,Teacher,Science,Science: topic 24
+T025,Teacher,Mathematics,Mathematics: topic 25
+T026,Teacher,Science,Science: topic 26
+T027,Teacher,Classroom management,Classroom management: topic 27
+T028,Teacher,Inclusive teaching,Inclusive teaching: topic 28
+T029,Teacher,Science,Science: topic 29
+T030,Teacher,Inclusive teaching,Inclusive teaching: topic 30
+T031,Teacher,Science,Science: topic 31
+T032,Teacher,Mathematics,Mathematics: topic 32
+T033,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 33
+T034,Teacher,Classroom management,Classroom management: topic 34
+T035,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 35
+T036,Teacher,Mathematics,Mathematics: topic 36
+T037,Teacher,Classroom management,Classroom management: topic 37
+T038,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 38
+T039,Teacher,Classroom management,Classroom management: topic 39
+T040,Teacher,Mathematics,Mathematics: topic 40
+T041,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 41
+T042,Teacher,Inclusive teaching,Inclusive teaching: topic 42
+T043,Teacher,Inclusive teaching,Inclusive teaching: topic 43
+T044,Teacher,Classroom management,Classroom management: topic 44
+T045,Teacher,Classroom management,Classroom management: topic 45
+T046,Teacher,Mathematics,Mathematics: topic 46
+T047,Teacher,Classroom management,Classroom management: topic 47
+T048,Teacher,Language (Dari/Pashto),Language (Dari/Pashto): topic 48
+T049,Principal,School leadership,School leadership: topic 1
+T050,Principal,School leadership,School leadership: topic 2
+T051,Principal,Community engagement,Community engagement: topic 3
+T052,Principal,Community engagement,Community engagement: topic 4
+T053,Principal,School leadership,School leadership: topic 5
+T054,Principal,Staff development,Staff development: topic 6
+T055,Principal,School leadership,School leadership: topic 7
+T056,Principal,School planning,School planning: topic 8
+T057,Principal,Community engagement,Community engagement: topic 9
+T058,Principal,Staff development,Staff development: topic 10
+T059,Principal,School planning,School planning: topic 11
+T060,Principal,School planning,School planning: topic 12
+T061,Principal,School leadership,School leadership: topic 13
+T062,Principal,Staff development,Staff development: topic 14
+T063,Principal,Community engagement,Community engagement: topic 15
+T064,Principal,School leadership,School leadership: topic 16
+T065,Principal,Community engagement,Community engagement: topic 17
+T066,Principal,Community engagement,Community engagement: topic 18
+T067,Principal,Staff development,Staff development: topic 19
+T068,Principal,Community engagement,Community engagement: topic 20
+T069,Principal,School leadership,School leadership: topic 21
+T070,Principal,School planning,School planning: topic 22
+T071,Principal,School planning,School planning: topic 23
+T072,Principal,School leadership,School leadership: topic 24
+T073,Principal,School leadership,School leadership: topic 25
+T074,Principal,School planning,School planning: topic 26
+T075,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 1
+T076,Academic supervisor,Classroom observation,Classroom observation: topic 2
+T077,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 3
+T078,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 4
+T079,Academic supervisor,Lesson planning support,Lesson planning support: topic 5
+T080,Academic supervisor,Assessment,Assessment: topic 6
+T081,Academic supervisor,Assessment,Assessment: topic 7
+T082,Academic supervisor,Classroom observation,Classroom observation: topic 8
+T083,Academic supervisor,Assessment,Assessment: topic 9
+T084,Academic supervisor,Lesson planning support,Lesson planning support: topic 10
+T085,Academic supervisor,Lesson planning support,Lesson planning support: topic 11
+T086,Academic supervisor,Assessment,Assessment: topic 12
+T087,Academic supervisor,Classroom observation,Classroom observation: topic 13
+T088,Academic supervisor,Lesson planning support,Lesson planning support: topic 14
+T089,Academic supervisor,Classroom observation,Classroom observation: topic 15
+T090,Academic supervisor,Coaching and feedback,Coaching and feedback: topic 16
+T091,Academic supervisor,Assessment,Assessment: topic 17
+T092,Academic supervisor,Lesson planning support,Lesson planning support: topic 18
+T093,Academic supervisor,Classroom observation,Classroom observation: topic 19
+T094,Academic supervisor,Classroom observation,Classroom observation: topic 20
+T095,Academic supervisor,Assessment,Assessment: topic 21
+T096,Academic supervisor,Assessment,Assessment: topic 22
+T097,Academic supervisor,Classroom observation,Classroom observation: topic 23
+T098,Academic supervisor,Assessment,Assessment: topic 24
+T099,Academic supervisor,Lesson planning support,Lesson planning support: topic 25
+T100,Academic supervisor,Assessment,Assessment: topic 26
