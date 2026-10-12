@@ -97,9 +97,9 @@
     if (/\/index\.html$/.test(p)) history.replaceState(null, '', p.replace(/index\.html$/, '') + location.search + location.hash);
   } catch (e) {}
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href^="#"]');
-    if (!a) return;
-    var id = a.getAttribute('href').slice(1), el = id && document.getElementById(id);
+    var a = e.target.closest && e.target.closest('a[href*="#"]');
+    if (!a || !a.hash || a.pathname !== location.pathname || a.host !== location.host) return;
+    var id = a.hash.slice(1), el = id && document.getElementById(id);
     if (!el) return;
     e.preventDefault();
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
