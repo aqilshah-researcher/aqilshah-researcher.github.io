@@ -20,12 +20,13 @@
   <div class="wrap">
     <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
     <div class="nav-links">
-      <a href="../../index.html#dashboards">Dashboards</a>
-      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
-      <a href="../../index.html#skills">Skills</a>
-      <a href="../../index.html#experience" class="hide-sm">Experience</a>
-      <a href="../../resume.html">Resume</a>
-      <a href="../../index.html#contact">Contact</a>
+      <a href="../../index.html#data">Data &amp; Dashboards</a>
+      <a href="../../index.html#mel">M&amp;E</a>
+      <a href="../../index.html#training">Training</a>
+      <a href="../../index.html#proposals">Proposals</a>
+      <a href="../../index.html#skills" class="hide-md">Skills</a>
+      <a href="../../index.html#resume">Resume</a>
+      <a href="../../index.html#contact" class="cta-link">Contact</a>
     </div>
     <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
   </div>
@@ -87,7 +88,7 @@ function run() {
     Plotly.react('c-sector', [{ type: 'bar', x: secs, y: secs.map(s => { const v = d.filter(r => r.sector === s); return mean(v, 'end') - mean(v, 'base'); }), marker: { color: C.series[0] },
       text: secs.map(s => { const v = d.filter(r => r.sector === s); return '+' + ASA.fmt(mean(v, 'end') - mean(v, 'base'), 2); }), textposition: 'outside', cliponaxis: false,
       hovertemplate: '<b>+%{y:.2f}</b> points on the agency index<extra>%{x}</extra>' }], ASA.layout({ yaxis: { title: { text: 'Change in agency index (1-5)' }, rangemode: 'tozero' } }), ASA.config);
-    const types = ASA.uniq(ac, 'action_type'), oc = [['Change achieved', ASA.isDark() ? '#184f95' : '#104281'], ['Partial change', '#3987e5'], ['No change yet', ASA.isDark() ? '#6b6f78' : '#b9b6ad']];
+    const types = ASA.uniq(ac, 'action_type'), oc = [['Change achieved', ASA.isDark() ? '#245a86' : '#184066'], ['Partial change', '#37a3bc'], ['No change yet', ASA.isDark() ? '#6b6f78' : '#bdb8b8']];
     Plotly.react('c-out', oc.map(([o, col]) => ({ type: 'bar', orientation: 'h', name: o, y: types, x: types.map(t => { const v = ac.filter(r => r.action_type === t); return ASA.pct(v.filter(r => r.outcome === o).length, v.length); }),
       marker: { color: col, line: { width: 1, color: bg } }, hovertemplate: '<b>%{x:.0f}%</b> ' + o.toLowerCase() + '<extra>%{y}</extra>' })),
       ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);
@@ -114,7 +115,7 @@ function run() {
     </div>
     <div>
       <h4>Explore</h4>
-      <ul><li><a href="../../index.html#dashboards">Dashboards</a></li><li><a href="../../index.html#case-studies">Case studies</a></li><li><a href="../../index.html#maps">Maps</a></li><li><a href="../../index.html#training">Training</a></li><li><a href="../../index.html#proposals">Proposals</a></li><li><a href="../../resume.html">Resume</a></li></ul>
+      <ul><li><a href="../../index.html#data">Data analysis &amp; dashboards</a></li><li><a href="../../index.html#mel">Monitoring &amp; evaluation</a></li><li><a href="../../index.html#training">Capacity building &amp; training</a></li><li><a href="../../index.html#proposals">Proposal development</a></li><li><a href="../../index.html#skills">Skills</a></li><li><a href="../../resume.html">Full resume</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>

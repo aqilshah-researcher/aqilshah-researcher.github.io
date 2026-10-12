@@ -20,12 +20,13 @@
   <div class="wrap">
     <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
     <div class="nav-links">
-      <a href="../../index.html#dashboards">Dashboards</a>
-      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
-      <a href="../../index.html#skills">Skills</a>
-      <a href="../../index.html#experience" class="hide-sm">Experience</a>
-      <a href="../../resume.html">Resume</a>
-      <a href="../../index.html#contact">Contact</a>
+      <a href="../../index.html#data">Data &amp; Dashboards</a>
+      <a href="../../index.html#mel">M&amp;E</a>
+      <a href="../../index.html#training">Training</a>
+      <a href="../../index.html#proposals">Proposals</a>
+      <a href="../../index.html#skills" class="hide-md">Skills</a>
+      <a href="../../index.html#resume">Resume</a>
+      <a href="../../index.html#contact" class="cta-link">Contact</a>
     </div>
     <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
   </div>
@@ -85,7 +86,7 @@ function run() {
       ASA.layout({ yaxis: { autorange: 'reversed' }, margin: { l: 10, r: 60 } }), ASA.config);
     const themes = ASA.uniq(ev, 'theme'), crit = ['Relevance', 'Effectiveness', 'Efficiency / VfM', 'Sustainability', 'Inclusion'];
     const z = themes.map(t => crit.map(c => (ev.find(r => r.theme === t && r.criterion === c) || {}).coded_references || 0));
-    const ramp = dark ? [[0, '#22262e'], [0.15, '#184f95'], [1, '#9ec5f4']] : [[0, '#f0eee8'], [0.15, '#cde2fb'], [1, '#104281']];
+    const ramp = dark ? [[0, '#16304d'], [0.15, '#245a86'], [1, '#bfe6ef']] : [[0, '#efeeee'], [0.15, '#d9eff4'], [1, '#184066']];
     Plotly.react('c-ev', [{ type: 'heatmap', x: crit, y: themes, z, colorscale: ramp, xgap: 2, ygap: 2, text: z.map(r => r.map(v => v || '')), texttemplate: '%{text}',
       textfont: { size: 12 }, colorbar: { title: { text: 'Refs', side: 'top' }, thickness: 10, outlinewidth: 0 }, hovertemplate: '<b>%{z}</b> coded references<br>%{y} · %{x}<extra></extra>' }],
       ASA.layout({ margin: { l: 10, b: 60 }, xaxis: { side: 'bottom' }, yaxis: { autorange: 'reversed' } }), ASA.config);
@@ -113,7 +114,7 @@ function run() {
     </div>
     <div>
       <h4>Explore</h4>
-      <ul><li><a href="../../index.html#dashboards">Dashboards</a></li><li><a href="../../index.html#case-studies">Case studies</a></li><li><a href="../../index.html#maps">Maps</a></li><li><a href="../../index.html#training">Training</a></li><li><a href="../../index.html#proposals">Proposals</a></li><li><a href="../../resume.html">Resume</a></li></ul>
+      <ul><li><a href="../../index.html#data">Data analysis &amp; dashboards</a></li><li><a href="../../index.html#mel">Monitoring &amp; evaluation</a></li><li><a href="../../index.html#training">Capacity building &amp; training</a></li><li><a href="../../index.html#proposals">Proposal development</a></li><li><a href="../../index.html#skills">Skills</a></li><li><a href="../../resume.html">Full resume</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>

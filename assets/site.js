@@ -46,21 +46,21 @@
 
   /* Validated categorical palette (fixed order) + status colors. */
   ASA.colors = () => isDark()
-    ? { series: ['#3987e5', '#d95926', '#199e70', '#c98500', '#d55181', '#008300', '#9085e9', '#e66767'], seq: ['#184f95', '#256abf', '#3987e5', '#6da7ec', '#9ec5f4'] }
-    : { series: ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#6250d6', '#e34948'], seq: ['#cde2fb', '#86b6ef', '#3987e5', '#256abf', '#0d366b'] };
-  ASA.status = { good: '#0ca30c', warning: '#fab219', serious: '#ec835a', critical: '#d03b3b', neutral: '#9a9da5' };
+    ? { series: ['#6aa6dc', '#5cc3da', '#3fbf8f', '#a3dc78', '#dcd641', '#f0995c', '#b3a8a9', '#9cb3dd'], seq: ['#1d3f63', '#245a86', '#37a3bc', '#7fc9db', '#bfe6ef'] }
+    : { series: ['#184066', '#37a3bc', '#007853', '#80ca4f', '#c9b322', '#e0803c', '#8a7f80', '#5b7db0'], seq: ['#d9eff4', '#9fd5e2', '#37a3bc', '#246f90', '#184066'] };
+  ASA.status = { good: '#2e9e5b', warning: '#fab219', serious: '#ec835a', critical: '#d03b3b', neutral: '#9a9da5' };
 
   ASA.layout = function (extra) {
     const cs = getComputedStyle(document.documentElement);
     const ink = cs.getPropertyValue('--ink-2').trim(), line = cs.getPropertyValue('--line').trim();
     const base = {
       paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
-      font: { family: 'DM Sans, system-ui, sans-serif', size: 12.5, color: ink },
+      font: { family: 'Nunito Sans, system-ui, sans-serif', size: 12.5, color: ink },
       margin: { l: 48, r: 12, t: 8, b: 40 },
       xaxis: { gridcolor: line, linecolor: line, zerolinecolor: line, automargin: true, fixedrange: true },
       yaxis: { gridcolor: line, linecolor: line, zerolinecolor: line, automargin: true, fixedrange: true },
       legend: { orientation: 'h', y: -0.18, x: 0, font: { size: 12 } },
-      hoverlabel: { font: { family: 'DM Sans, system-ui, sans-serif', size: 13 } },
+      hoverlabel: { font: { family: 'Nunito Sans, system-ui, sans-serif', size: 13 } },
       bargap: 0.28, showlegend: false
     };
     return deepMerge(base, extra || {});
