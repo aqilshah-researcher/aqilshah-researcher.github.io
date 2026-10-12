@@ -183,3 +183,42 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
+
+/* Donors wall: filter tabs, tap to flip, count-up numbers */
+(function () {
+  function init() {
+    var sec = document.querySelector('.donors-sec'); if (!sec) return;
+    var tabs = [].slice.call(sec.querySelectorAll('.dtab')), cards = [].slice.call(sec.querySelectorAll('.dcard'));
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        var g = t.dataset.g;
+        tabs.forEach(function (x) { var on = x === t; x.classList.toggle('active', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+        var i = 0;
+        cards.forEach(function (c) {
+          var show = g === 'all' || c.dataset.g === g;
+          c.classList.toggle('hide', !show); c.classList.remove('pop', 'flipped');
+          if (show) { c.style.animationDelay = (i++ * 30) + 'ms'; void c.offsetWidth; c.classList.add('pop'); }
+        });
+      });
+    });
+    cards.forEach(function (c) {
+      c.querySelector('.dflip').addEventListener('click', function () {
+        var on = !c.classList.contains('flipped');
+        cards.forEach(function (x) { x.classList.remove('flipped'); });
+        c.classList.toggle('flipped', on);
+      });
+    });
+    var nums = [].slice.call(sec.querySelectorAll('.dstats b[data-count]'));
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return; io.unobserve(e.target);
+        var el = e.target, end = +el.dataset.count, t0 = null;
+        function step(ts) { if (!t0) t0 = ts; var p = Math.min(1, (ts - t0) / 1100); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); }
+        el.textContent = '0'; requestAnimationFrame(step);
+      });
+    }, { threshold: .6 });
+    nums.forEach(function (n) { io.observe(n); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
