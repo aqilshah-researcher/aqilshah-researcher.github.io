@@ -112,3 +112,50 @@
     try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {}
   });
 })();
+
+/* Email chooser: let visitors write from Gmail, Outlook, Yahoo, their mail app, or copy the address */
+(function () {
+  var menu = null, lastLink = null, y0 = 0;
+  function close() { if (menu) { menu.remove(); menu = null; document.removeEventListener('keydown', onKey); if (lastLink) lastLink.focus(); } }
+  function onKey(e) { if (e.key === 'Escape') close(); }
+  function open(a) {
+    close(); lastLink = a; y0 = window.scrollY;
+    var to = decodeURIComponent(a.getAttribute('href').replace(/^mailto:/, '').split('?')[0]);
+    var su = encodeURIComponent('Hello from your portfolio'), t = encodeURIComponent(to);
+    var opts = [
+      ['Gmail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + t + '&su=' + su],
+      ['Outlook.com', 'https://outlook.live.com/mail/0/deeplink/compose?to=' + t + '&subject=' + su],
+      ['Outlook (work or school)', 'https://outlook.office.com/mail/deeplink/compose?to=' + t + '&subject=' + su],
+      ['Yahoo Mail', 'https://compose.mail.yahoo.com/?to=' + t + '&subject=' + su],
+      ['My default mail app', 'mailto:' + to + '?subject=' + su]
+    ];
+    menu = document.createElement('div');
+    menu.className = 'mailpick'; menu.setAttribute('role', 'dialog'); menu.setAttribute('aria-label', 'Choose how to email ' + to);
+    var h = '<div class="mp-head"><b>Email me</b><span>' + to + '</span></div>';
+    opts.forEach(function (o) { h += '<a href="' + o[1] + '"' + (o[1].indexOf('http') === 0 ? ' target="_blank" rel="noopener"' : '') + '>' + o[0] + '</a>'; });
+    h += '<button type="button" class="mp-copy">Copy email address</button>';
+    menu.innerHTML = h;
+    document.body.appendChild(menu);
+    var r = a.getBoundingClientRect(), mw = menu.offsetWidth, mh = menu.offsetHeight;
+    var left = Math.min(Math.max(12, r.left), window.innerWidth - mw - 12);
+    var top = r.bottom + 8 + mh > window.innerHeight ? r.top - mh - 8 : r.bottom + 8;
+    menu.style.left = left + 'px'; menu.style.top = Math.max(12, top) + 'px';
+    menu.querySelectorAll('a').forEach(function (x) { x.addEventListener('click', function () { setTimeout(close, 50); }); });
+    var cp = menu.querySelector('.mp-copy');
+    cp.addEventListener('click', function () {
+      var done = function () { cp.textContent = 'Copied ✓'; setTimeout(close, 900); };
+      if (navigator.clipboard) navigator.clipboard.writeText(to).then(done, function () { window.prompt('Copy this email address:', to); close(); });
+      else { window.prompt('Copy this email address:', to); close(); }
+    });
+    menu.querySelector('a').focus();
+    document.addEventListener('keydown', onKey);
+  }
+  document.addEventListener('click', function (e) {
+    if (menu && !menu.contains(e.target) && !(e.target.closest && e.target.closest('a[href^="mailto:"]'))) close();
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"]');
+    if (!a || (menu && menu.contains(a))) return;
+    e.preventDefault(); open(a);
+  });
+  window.addEventListener('scroll', function () { if (menu && Math.abs(window.scrollY - y0) > 80) close(); }, { passive: true });
+  window.addEventListener('resize', close);
+})();
