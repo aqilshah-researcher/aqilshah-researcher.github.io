@@ -46,8 +46,8 @@
 
   /* Validated categorical palette (fixed order) + status colors. */
   ASA.colors = () => isDark()
-    ? { series: ['#6aa6dc', '#5cc3da', '#3fbf8f', '#a3dc78', '#dcd641', '#f0995c', '#b3a8a9', '#9cb3dd'], seq: ['#1d3f63', '#245a86', '#37a3bc', '#7fc9db', '#bfe6ef'] }
-    : { series: ['#184066', '#37a3bc', '#007853', '#80ca4f', '#c9b322', '#e0803c', '#8a7f80', '#5b7db0'], seq: ['#d9eff4', '#9fd5e2', '#37a3bc', '#246f90', '#184066'] };
+    ? { series: ['#4fc9ad', '#5ab4e6', '#9ad677', '#bef29a', '#f5b862', '#82cdfa', '#b4bec0', '#f07a85'], seq: ['#0d4a4c', '#11695f', '#2a9a82', '#6fcdb4', '#bfeedd'] }
+    : { series: ['#007d69', '#198cc3', '#6ec34b', '#005055', '#e8a33d', '#82cdfa', '#8c9da0', '#e13c4b'], seq: ['#e3f3ee', '#a8dccb', '#2a9a82', '#007d69', '#005055'] };
   ASA.status = { good: '#2e9e5b', warning: '#fab219', serious: '#ec835a', critical: '#d03b3b', neutral: '#9a9da5' };
 
   ASA.layout = function (extra) {

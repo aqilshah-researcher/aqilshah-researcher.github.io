@@ -93,10 +93,10 @@ function run() {
     el('k-n').textContent = ASA.fmt(d.length);
 
     // 1. FCS groups by round (ordinal ramp, 100% stacked)
-    const grp = ['Poor', 'Borderline', 'Acceptable'], ramp = ASA.isDark() ? ['#bfe6ef', '#37a3bc', '#245a86'] : ['#9fd5e2', '#37a3bc', '#184066'];
+    const grp = ['Poor', 'Borderline', 'Acceptable'], ramp = ASA.isDark() ? ['#bfeedd', '#2a9a82', '#11695f'] : ['#a8dccb', '#2a9a82', '#005055'];
     Plotly.react('c-fcs', grp.map((g, i) => ({ type: 'bar', name: g, x: ROUNDS, y: ROUNDS.map(k => share(by[k], r => r.fcs_group === g)),
       marker: { color: ramp[i] }, text: ROUNDS.map(k => ASA.fmt(share(by[k], r => r.fcs_group === g), 0) + '%'), textposition: 'inside', insidetextanchor: 'middle',
-      textfont: { color: i === 0 && !ASA.isDark() ? '#0f2a45' : '#ffffff' }, hovertemplate: '<b>%{y:.1f}%</b> ' + g + '<extra>%{x}</extra>' })),
+      textfont: { color: i === 0 && !ASA.isDark() ? '#063a3e' : '#ffffff' }, hovertemplate: '<b>%{y:.1f}%</b> ' + g + '<extra>%{x}</extra>' })),
       ASA.layout({ barmode: 'stack', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] }, legend: { traceorder: 'reversed' } }), ASA.config);
 
     // 2. three indicators across rounds
