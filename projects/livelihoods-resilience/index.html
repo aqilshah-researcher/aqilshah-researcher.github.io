@@ -20,12 +20,13 @@
   <div class="wrap">
     <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
     <div class="nav-links">
-      <a href="../../index.html#dashboards">Dashboards</a>
-      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
-      <a href="../../index.html#skills">Skills</a>
-      <a href="../../index.html#experience" class="hide-sm">Experience</a>
-      <a href="../../resume.html">Resume</a>
-      <a href="../../index.html#contact">Contact</a>
+      <a href="../../index.html#data">Data &amp; Dashboards</a>
+      <a href="../../index.html#mel">M&amp;E</a>
+      <a href="../../index.html#training">Training</a>
+      <a href="../../index.html#proposals">Proposals</a>
+      <a href="../../index.html#skills" class="hide-md">Skills</a>
+      <a href="../../index.html#resume">Resume</a>
+      <a href="../../index.html#contact" class="cta-link">Contact</a>
     </div>
     <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
   </div>
@@ -92,10 +93,10 @@ function run() {
     el('k-n').textContent = ASA.fmt(d.length);
 
     // 1. FCS groups by round (ordinal ramp, 100% stacked)
-    const grp = ['Poor', 'Borderline', 'Acceptable'], ramp = ASA.isDark() ? ['#9ec5f4', '#3987e5', '#184f95'] : ['#86b6ef', '#3987e5', '#104281'];
+    const grp = ['Poor', 'Borderline', 'Acceptable'], ramp = ASA.isDark() ? ['#bfe6ef', '#37a3bc', '#245a86'] : ['#9fd5e2', '#37a3bc', '#184066'];
     Plotly.react('c-fcs', grp.map((g, i) => ({ type: 'bar', name: g, x: ROUNDS, y: ROUNDS.map(k => share(by[k], r => r.fcs_group === g)),
       marker: { color: ramp[i] }, text: ROUNDS.map(k => ASA.fmt(share(by[k], r => r.fcs_group === g), 0) + '%'), textposition: 'inside', insidetextanchor: 'middle',
-      textfont: { color: i === 0 && !ASA.isDark() ? '#0d366b' : '#ffffff' }, hovertemplate: '<b>%{y:.1f}%</b> ' + g + '<extra>%{x}</extra>' })),
+      textfont: { color: i === 0 && !ASA.isDark() ? '#0f2a45' : '#ffffff' }, hovertemplate: '<b>%{y:.1f}%</b> ' + g + '<extra>%{x}</extra>' })),
       ASA.layout({ barmode: 'stack', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] }, legend: { traceorder: 'reversed' } }), ASA.config);
 
     // 2. three indicators across rounds
@@ -151,7 +152,7 @@ function run() {
     </div>
     <div>
       <h4>Explore</h4>
-      <ul><li><a href="../../index.html#dashboards">Dashboards</a></li><li><a href="../../index.html#case-studies">Case studies</a></li><li><a href="../../index.html#maps">Maps</a></li><li><a href="../../index.html#training">Training</a></li><li><a href="../../index.html#proposals">Proposals</a></li><li><a href="../../resume.html">Resume</a></li></ul>
+      <ul><li><a href="../../index.html#data">Data analysis &amp; dashboards</a></li><li><a href="../../index.html#mel">Monitoring &amp; evaluation</a></li><li><a href="../../index.html#training">Capacity building &amp; training</a></li><li><a href="../../index.html#proposals">Proposal development</a></li><li><a href="../../index.html#skills">Skills</a></li><li><a href="../../resume.html">Full resume</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>

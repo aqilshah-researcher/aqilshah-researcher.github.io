@@ -20,12 +20,13 @@
   <div class="wrap">
     <a class="brand" href="../../index.html">Aqil Shah Ayaz</a>
     <div class="nav-links">
-      <a href="../../index.html#dashboards">Dashboards</a>
-      <a href="../../index.html#case-studies" class="hide-sm">Case studies</a>
-      <a href="../../index.html#skills">Skills</a>
-      <a href="../../index.html#experience" class="hide-sm">Experience</a>
-      <a href="../../resume.html">Resume</a>
-      <a href="../../index.html#contact">Contact</a>
+      <a href="../../index.html#data">Data &amp; Dashboards</a>
+      <a href="../../index.html#mel">M&amp;E</a>
+      <a href="../../index.html#training">Training</a>
+      <a href="../../index.html#proposals">Proposals</a>
+      <a href="../../index.html#skills" class="hide-md">Skills</a>
+      <a href="../../index.html#resume">Resume</a>
+      <a href="../../index.html#contact" class="cta-link">Contact</a>
     </div>
     <button class="theme-btn" type="button" aria-label="Switch theme">☾</button>
   </div>
@@ -123,12 +124,12 @@ function run() {
       type: 'scattergeo', lat: pts.map(p => p.lat), lon: pts.map(p => p.lon), text: pts.map(p => p.province),
       customdata: pts.map(p => [p.n, p.rate, p.red]),
       marker: { size: pts.map(p => 8 + 34 * Math.sqrt(p.n / maxN)), color: pts.map(p => p.rate), cmin: 60, cmax: 100,
-        colorscale: [[0, C.seq[0]], [0.5, C.seq[2]], [1, C.seq[4]]], line: { width: 1.5, color: dark ? '#1a1d23' : '#ffffff' }, opacity: 0.9,
+        colorscale: [[0, C.seq[0]], [0.5, C.seq[2]], [1, C.seq[4]]], line: { width: 1.5, color: dark ? '#0c1a2c' : '#ffffff' }, opacity: 0.9,
         colorbar: { title: { text: '% done', side: 'top' }, thickness: 10, len: 0.6, ticksuffix: '%', outlinewidth: 0 } },
       hovertemplate: '<b>%{text}</b><br>%{customdata[0]:,} planned visits<br>%{customdata[1]:.1f}% completed<br>%{customdata[2]} red flags<extra></extra>'
     }], ASA.layout({ margin: { l: 0, r: 0, t: 0, b: 0 }, geo: {
       projection: { type: 'mercator' }, lataxis: { range: [29, 38.8] }, lonaxis: { range: [60, 75.5] },
-      showcountries: true, countrycolor: dark ? '#4a505c' : '#b9b6ad', showland: true, landcolor: dark ? '#22262e' : '#f0eee8',
+      showcountries: true, countrycolor: dark ? '#2c4a6c' : '#bdb8b8', showland: true, landcolor: dark ? '#16304d' : '#efeeee',
       showocean: false, showlakes: false, bgcolor: 'rgba(0,0,0,0)', showframe: false, showcoastlines: false, resolution: 50 } }), ASA.config);
 
     // 4. flags by category
@@ -168,7 +169,7 @@ function run() {
     </div>
     <div>
       <h4>Explore</h4>
-      <ul><li><a href="../../index.html#dashboards">Dashboards</a></li><li><a href="../../index.html#case-studies">Case studies</a></li><li><a href="../../index.html#maps">Maps</a></li><li><a href="../../index.html#training">Training</a></li><li><a href="../../index.html#proposals">Proposals</a></li><li><a href="../../resume.html">Resume</a></li></ul>
+      <ul><li><a href="../../index.html#data">Data analysis &amp; dashboards</a></li><li><a href="../../index.html#mel">Monitoring &amp; evaluation</a></li><li><a href="../../index.html#training">Capacity building &amp; training</a></li><li><a href="../../index.html#proposals">Proposal development</a></li><li><a href="../../index.html#skills">Skills</a></li><li><a href="../../resume.html">Full resume</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
