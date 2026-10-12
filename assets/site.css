@@ -615,3 +615,15 @@ section.phero{padding:0}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .g-dir{--gc:#5fd0b5}}
 .dgrid.direct .dfront{background:linear-gradient(160deg,var(--surface) 55%,color-mix(in srgb,var(--leaf) 12%,var(--surface)))}
 .dgrid.direct .dfront::before{background:var(--grad)}
+/* donor cards: which employer each donor link came through */
+.dg-donors .dcard{height:248px}
+.dvia{margin-top:auto;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.dvia>span{width:100%;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gc)}
+.dvia i{font-style:normal;font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--gc) 14%,transparent);color:var(--navy-2)}
+:root[data-theme="dark"] .dvia i{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dvia i{color:#fff}}
+.dg-donors .dback{justify-content:flex-start;overflow:auto}
+.dback .dline{display:block;font-size:12.5px;line-height:1.4;color:#eaf4f1;margin-top:5px}
+.dline strong{color:var(--lime)}
+@media (max-width:600px){.dg-donors .dcard{height:260px}.dback .dline{font-size:11.5px}}
+@media (max-width:600px){.dgrid.direct .dcard{height:205px}}
