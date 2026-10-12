@@ -2,7 +2,7 @@
 
 Portfolio site: **https://aqilshah-researcher.github.io/**
 
-Data analyst and monitoring, evaluation and learning (MEL) expert with 10+ years of experience building data systems and leading analysis for programs funded by USAID, the UN, the World Bank, FCDO, the EU and Sida.
+Data analyst and monitoring, evaluation and learning (MEL) expert with 10+ years of experience building data systems and leading analysis for programs funded by USAID, the UN, the World Bank, FCDO, the EU and SIDA.
 
 ## Dashboards and code
 
