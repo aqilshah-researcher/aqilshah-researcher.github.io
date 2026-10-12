@@ -552,3 +552,4 @@ section.phero{padding:0}
 .factcard dt{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:10px}
 .factcard dd{font-size:15.5px;color:var(--ink);font-weight:600}
 @media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:28px}.factcard{position:static}}
+.ticks.path li{font-size:16px}.ticks.path b{display:block;color:var(--head);font-family:var(--serif);font-size:19px;font-weight:800}
