@@ -20,7 +20,7 @@ Every dashboard uses **simulated sample data**. Client reports and datasets stay
 | [Women's Advocacy Outcome Tracking](https://aqilshah-researcher.github.io/projects/women-advocacy/) | Agency index change, advocacy outcomes | [Python](projects/women-advocacy/code/agency_change.py) |
 | [Teacher Training Needs Assessment](https://aqilshah-researcher.github.io/projects/teacher-needs/) | KII scoring and topic validation rule | [Python](projects/teacher-needs/code/score_topics.py) |
 
-Each dashboard has a matching case study in [case-studies/](case-studies/).
+Each dashboard is linked to a third-party monitoring, evaluation or assessment write-up in [case-studies/](case-studies/).
 
 ## Run the analysis
 
