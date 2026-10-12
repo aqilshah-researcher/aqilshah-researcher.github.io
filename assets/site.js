@@ -188,7 +188,7 @@
 (function () {
   function init() {
     var sec = document.querySelector('.donors-sec'); if (!sec) return;
-    var tabs = [].slice.call(sec.querySelectorAll('.dtab')), cards = [].slice.call(sec.querySelectorAll('.dcard'));
+    var tabs = [].slice.call(sec.querySelectorAll('.dtab')), cards = [].slice.call(sec.querySelectorAll('.dg-donors .dcard')), allcards = [].slice.call(sec.querySelectorAll('.dcard'));
     tabs.forEach(function (t) {
       t.addEventListener('click', function () {
         var g = t.dataset.g;
@@ -201,10 +201,10 @@
         });
       });
     });
-    cards.forEach(function (c) {
+    allcards.forEach(function (c) {
       c.querySelector('.dflip').addEventListener('click', function () {
         var on = !c.classList.contains('flipped');
-        cards.forEach(function (x) { x.classList.remove('flipped'); });
+        allcards.forEach(function (x) { x.classList.remove('flipped'); });
         c.classList.toggle('flipped', on);
       });
     });
