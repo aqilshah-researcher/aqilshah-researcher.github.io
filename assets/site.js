@@ -89,3 +89,26 @@
     el.innerHTML = ''; el.appendChild(t);
   };
 })();
+
+/* Clean addresses: no "index.html" and no "#section" left in the address bar */
+(function () {
+  try {
+    var p = location.pathname;
+    if (/\/index\.html$/.test(p)) history.replaceState(null, '', p.replace(/index\.html$/, '') + location.search + location.hash);
+  } catch (e) {}
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1), el = id && document.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {}
+  });
+  window.addEventListener('load', function () {
+    if (!location.hash) return;
+    var el = document.getElementById(location.hash.slice(1));
+    if (el) el.scrollIntoView({ block: 'start' });
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {}
+  });
+})();
