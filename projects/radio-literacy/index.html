@@ -106,7 +106,7 @@ function run() {
       ASA.layout({ barmode: 'group', showlegend: true, yaxis: { ticksuffix: '%', range: [0, 100] } }), ASA.config);
 
     // 3. self-rated improvement by province (ordinal)
-    const lv = ['Some', 'Significant'], ramp = ASA.isDark() ? ['#7fc9db', '#245a86'] : ['#9fd5e2', '#184066'];
+    const lv = ['Some', 'Significant'], ramp = ASA.isDark() ? ['#6fcdb4', '#11695f'] : ['#a8dccb', '#005055'];
     Plotly.react('c-imp', lv.map((l, k) => ({ type: 'bar', orientation: 'h', name: l + ' improvement', y: provs, x: provs.map(p => { const v = d.filter(r => r.province === p); return ASA.pct(v.filter(r => r.self_rated_improvement === l).length, v.length); }),
       marker: { color: ramp[k], line: { width: 1, color: bg } }, hovertemplate: '<b>%{x:.1f}%</b> ' + l.toLowerCase() + '<extra>%{y}</extra>' })),
       ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);

@@ -88,7 +88,7 @@ function run() {
     Plotly.react('c-sector', [{ type: 'bar', x: secs, y: secs.map(s => { const v = d.filter(r => r.sector === s); return mean(v, 'end') - mean(v, 'base'); }), marker: { color: C.series[0] },
       text: secs.map(s => { const v = d.filter(r => r.sector === s); return '+' + ASA.fmt(mean(v, 'end') - mean(v, 'base'), 2); }), textposition: 'outside', cliponaxis: false,
       hovertemplate: '<b>+%{y:.2f}</b> points on the agency index<extra>%{x}</extra>' }], ASA.layout({ yaxis: { title: { text: 'Change in agency index (1-5)' }, rangemode: 'tozero' } }), ASA.config);
-    const types = ASA.uniq(ac, 'action_type'), oc = [['Change achieved', ASA.isDark() ? '#245a86' : '#184066'], ['Partial change', '#37a3bc'], ['No change yet', ASA.isDark() ? '#6b6f78' : '#bdb8b8']];
+    const types = ASA.uniq(ac, 'action_type'), oc = [['Change achieved', ASA.isDark() ? '#11695f' : '#005055'], ['Partial change', '#2a9a82'], ['No change yet', ASA.isDark() ? '#6b6f78' : '#b4bec0']];
     Plotly.react('c-out', oc.map(([o, col]) => ({ type: 'bar', orientation: 'h', name: o, y: types, x: types.map(t => { const v = ac.filter(r => r.action_type === t); return ASA.pct(v.filter(r => r.outcome === o).length, v.length); }),
       marker: { color: col, line: { width: 1, color: bg } }, hovertemplate: '<b>%{x:.0f}%</b> ' + o.toLowerCase() + '<extra>%{y}</extra>' })),
       ASA.layout({ barmode: 'stack', showlegend: true, xaxis: { ticksuffix: '%', range: [0, 100] }, margin: { l: 10 } }), ASA.config);

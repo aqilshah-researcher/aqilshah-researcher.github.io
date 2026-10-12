@@ -124,12 +124,12 @@ function run() {
       type: 'scattergeo', lat: pts.map(p => p.lat), lon: pts.map(p => p.lon), text: pts.map(p => p.province),
       customdata: pts.map(p => [p.n, p.rate, p.red]),
       marker: { size: pts.map(p => 8 + 34 * Math.sqrt(p.n / maxN)), color: pts.map(p => p.rate), cmin: 60, cmax: 100,
-        colorscale: [[0, C.seq[0]], [0.5, C.seq[2]], [1, C.seq[4]]], line: { width: 1.5, color: dark ? '#0c1a2c' : '#ffffff' }, opacity: 0.9,
+        colorscale: [[0, C.seq[0]], [0.5, C.seq[2]], [1, C.seq[4]]], line: { width: 1.5, color: dark ? '#04282b' : '#ffffff' }, opacity: 0.9,
         colorbar: { title: { text: '% done', side: 'top' }, thickness: 10, len: 0.6, ticksuffix: '%', outlinewidth: 0 } },
       hovertemplate: '<b>%{text}</b><br>%{customdata[0]:,} planned visits<br>%{customdata[1]:.1f}% completed<br>%{customdata[2]} red flags<extra></extra>'
     }], ASA.layout({ margin: { l: 0, r: 0, t: 0, b: 0 }, geo: {
       projection: { type: 'mercator' }, lataxis: { range: [29, 38.8] }, lonaxis: { range: [60, 75.5] },
-      showcountries: true, countrycolor: dark ? '#2c4a6c' : '#bdb8b8', showland: true, landcolor: dark ? '#16304d' : '#efeeee',
+      showcountries: true, countrycolor: dark ? '#2b5d60' : '#b4bec0', showland: true, landcolor: dark ? '#0d4245' : '#eef3f2',
       showocean: false, showlakes: false, bgcolor: 'rgba(0,0,0,0)', showframe: false, showcoastlines: false, resolution: 50 } }), ASA.config);
 
     // 4. flags by category

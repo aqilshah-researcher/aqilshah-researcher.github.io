@@ -86,7 +86,7 @@ function run() {
       ASA.layout({ yaxis: { autorange: 'reversed' }, margin: { l: 10, r: 60 } }), ASA.config);
     const themes = ASA.uniq(ev, 'theme'), crit = ['Relevance', 'Effectiveness', 'Efficiency / VfM', 'Sustainability', 'Inclusion'];
     const z = themes.map(t => crit.map(c => (ev.find(r => r.theme === t && r.criterion === c) || {}).coded_references || 0));
-    const ramp = dark ? [[0, '#16304d'], [0.15, '#245a86'], [1, '#bfe6ef']] : [[0, '#efeeee'], [0.15, '#d9eff4'], [1, '#184066']];
+    const ramp = dark ? [[0, '#0d4245'], [0.15, '#11695f'], [1, '#bfeedd']] : [[0, '#eef3f2'], [0.15, '#e3f3ee'], [1, '#005055']];
     Plotly.react('c-ev', [{ type: 'heatmap', x: crit, y: themes, z, colorscale: ramp, xgap: 2, ygap: 2, text: z.map(r => r.map(v => v || '')), texttemplate: '%{text}',
       textfont: { size: 12 }, colorbar: { title: { text: 'Refs', side: 'top' }, thickness: 10, outlinewidth: 0 }, hovertemplate: '<b>%{z}</b> coded references<br>%{y} · %{x}<extra></extra>' }],
       ASA.layout({ margin: { l: 10, b: 60 }, xaxis: { side: 'bottom' }, yaxis: { autorange: 'reversed' } }), ASA.config);
