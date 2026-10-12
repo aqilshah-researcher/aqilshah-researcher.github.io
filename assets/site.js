@@ -159,3 +159,27 @@
   window.addEventListener('scroll', function () { if (menu && Math.abs(window.scrollY - y0) > 80) close(); }, { passive: true });
   window.addEventListener('resize', close);
 })();
+
+/* Mega menu (desktop hover/click, mobile accordion) */
+(function () {
+  function init() {
+    var header = document.querySelector('.site-header'); if (!header) return;
+    var items = [].slice.call(header.querySelectorAll('.has-mega')), mnav = header.querySelector('.mnav'), mbtn = header.querySelector('.menu-btn');
+    var desktop = function () { return window.matchMedia('(min-width:1101px)').matches; };
+    function setOpen(li, on) { li.classList.toggle('open', on); var b = li.querySelector('.mtop'); if (b) b.setAttribute('aria-expanded', on ? 'true' : 'false'); }
+    function closeAll(except) { items.forEach(function (li) { if (li !== except) setOpen(li, false); }); }
+    items.forEach(function (li) {
+      var b = li.querySelector('.mtop'), t = null;
+      b.addEventListener('click', function (e) { e.stopPropagation(); var on = !li.classList.contains('open'); closeAll(li); setOpen(li, on); });
+      li.addEventListener('mouseenter', function () { if (!desktop()) return; clearTimeout(t); closeAll(li); setOpen(li, true); });
+      li.addEventListener('mouseleave', function () { if (!desktop()) return; t = setTimeout(function () { setOpen(li, false); }, 160); });
+    });
+    document.addEventListener('click', function (e) { if (!header.contains(e.target)) { closeAll(); } });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeAll(); if (mnav.classList.contains('open')) { mnav.classList.remove('open'); mbtn.setAttribute('aria-expanded', 'false'); } } });
+    if (mbtn) mbtn.addEventListener('click', function () { var on = !mnav.classList.contains('open'); mnav.classList.toggle('open', on); mbtn.setAttribute('aria-expanded', on ? 'true' : 'false'); if (!on) closeAll(); });
+    // mark current page
+    var here = location.pathname.replace(/index\.html$/, '');
+    header.querySelectorAll('.mega-links a, a.mtop').forEach(function (a) { if (a.getAttribute('href') === here) a.setAttribute('aria-current', 'page'); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
