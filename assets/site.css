@@ -525,3 +525,30 @@ details.table-view summary{cursor:pointer;font-size:14px;color:var(--accent);fon
 @media (min-width:761px){footer .wrap{grid-template-columns:1.3fr 1fr 1fr}}
 .split-img img[style*="contain"]{background:#fff;padding:14px}
 section.phero{padding:0}
+
+/* donors and clients wall (names, not logos) */
+.dwall{display:flex;flex-direction:column;gap:26px}
+.dgroup h3{font-family:var(--serif);font-weight:800;font-size:22px;color:var(--head);margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.dgroup h3::after{content:"";flex:1;height:2px;background:var(--line)}
+.dgroup ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.dtile{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;display:flex;flex-direction:column;gap:4px;min-height:96px;border-top:4px solid var(--accent);transition:transform .15s ease,box-shadow .15s ease}
+.dtile:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.dtile b{font-family:var(--serif);font-weight:800;font-size:25px;line-height:1.05;color:var(--navy-2)}
+:root[data-theme="dark"] .dtile b{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dtile b{color:#fff}}
+.dtile span{font-size:13.5px;color:var(--ink-3);line-height:1.35}
+.dgroup:nth-child(2) .dtile{border-top-color:var(--teal)}
+.dgroup:nth-child(3) .dtile{border-top-color:var(--leaf)}
+.dgroup:nth-child(4) .dtile{border-top-color:#64afa0}
+.dgroup:nth-child(5) .dtile{border-top-color:var(--navy-2)}
+
+/* about intro with fact card */
+.about-intro{padding-bottom:56px}
+.about-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:48px;align-items:start}
+.about-grid p:not(.lead){color:var(--ink-2);font-size:17.5px;margin-top:16px}
+.factcard{background:var(--surface-2);border-radius:var(--radius);padding:26px;border-top:5px solid var(--leaf);position:sticky;top:100px}
+.factcard h3{font-family:var(--serif);font-weight:800;font-size:26px;color:var(--head);margin-bottom:10px}
+.factcard dl{display:flex;flex-direction:column;gap:2px;margin-bottom:18px}
+.factcard dt{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:10px}
+.factcard dd{font-size:15.5px;color:var(--ink);font-weight:600}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:28px}.factcard{position:static}}
