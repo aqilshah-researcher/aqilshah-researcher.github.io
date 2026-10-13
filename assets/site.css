@@ -627,3 +627,7 @@ section.phero{padding:0}
 .dline strong{color:var(--lime)}
 @media (max-width:600px){.dg-donors .dcard{height:260px}.dback .dline{font-size:11.5px}}
 @media (max-width:600px){.dgrid.direct .dcard{height:205px}}
+/* who I worked with */
+.tl-team{margin-top:8px;font-size:14.5px;color:var(--ink-2);background:var(--surface-2);border-left:3px solid var(--leaf);padding:8px 12px;border-radius:0 8px 8px 0}
+.tl-team b{color:var(--head)}
+small.ctm{display:block;font-size:13px;color:var(--ink-3);margin-top:3px;line-height:1.4}
