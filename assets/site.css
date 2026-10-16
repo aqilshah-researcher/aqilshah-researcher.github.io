@@ -631,3 +631,8 @@ section.phero{padding:0}
 .tl-team{margin-top:8px;font-size:14.5px;color:var(--ink-2);background:var(--surface-2);border-left:3px solid var(--leaf);padding:8px 12px;border-radius:0 8px 8px 0}
 .tl-team b{color:var(--head)}
 small.ctm{display:block;font-size:13px;color:var(--ink-3);margin-top:3px;line-height:1.4}
+/* farewell video */
+.vsplit{align-items:center}
+.vbox{border-radius:var(--radius);overflow:hidden;background:#0b1f44;box-shadow:var(--shadow);aspect-ratio:832/464}
+.vbox video{display:block;width:100%;height:100%;background:#0b1f44}
+.vnote{font-size:14px;color:var(--ink-3)}
