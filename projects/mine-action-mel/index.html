@@ -11,8 +11,8 @@
 <meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/training-kobo.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f6e6a'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=02b62392">
-<script src="/assets/site.js?v=73c255da"></script>
+<link rel="stylesheet" href="/assets/site.css?v=2c9ba89b">
+<script src="/assets/site.js?v=1f2641a5"></script>
 <script data-goatcounter="https://aqilshah.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
 </head>
@@ -89,7 +89,7 @@ function run() {
       ASA.layout({ yaxis: { autorange: 'reversed' }, margin: { l: 10, r: 60 } }), ASA.config);
     const themes = ASA.uniq(ev, 'theme'), crit = ['Relevance', 'Effectiveness', 'Efficiency / VfM', 'Sustainability', 'Inclusion'];
     const z = themes.map(t => crit.map(c => (ev.find(r => r.theme === t && r.criterion === c) || {}).coded_references || 0));
-    const ramp = dark ? [[0, '#0d4245'], [0.15, '#11695f'], [1, '#bfeedd']] : [[0, '#eef3f2'], [0.15, '#e3f3ee'], [1, '#005055']];
+    const ramp = dark ? [[0, '#0d4245'], [0.15, '#11695f'], [1, '#cfe6f6']] : [[0, '#eef3f2'], [0.15, '#e5edf9'], [1, '#13326b']];
     Plotly.react('c-ev', [{ type: 'heatmap', x: crit, y: themes, z, colorscale: ramp, xgap: 2, ygap: 2, text: z.map(r => r.map(v => v || '')), texttemplate: '%{text}',
       textfont: { size: 12 }, colorbar: { title: { text: 'Refs', side: 'top' }, thickness: 10, outlinewidth: 0 }, hovertemplate: '<b>%{z}</b> coded references<br>%{y} · %{x}<extra></extra>' }],
       ASA.layout({ margin: { l: 10, b: 60 }, xaxis: { side: 'bottom' }, yaxis: { autorange: 'reversed' } }), ASA.config);
