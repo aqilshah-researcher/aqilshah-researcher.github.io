@@ -411,7 +411,7 @@
     function big(C, x, y, txt) { ctx.fillStyle = C.txt; ctx.font = '800 15px Inter, system-ui, sans-serif'; ctx.textAlign = 'right'; ctx.fillText(txt, x, y); ctx.textAlign = 'start'; }
     var US = [[.03,.17],[.12,.06],[.33,.08],[.55,.09],[.62,.13],[.69,.21],[.78,.13],[.87,.06],[.97,.03],[.98,.19],[.91,.3],[.87,.42],[.83,.55],[.85,.7],[.87,.9],[.8,.94],[.74,.72],[.62,.75],[.52,.81],[.45,.99],[.36,.84],[.28,.79],[.2,.77],[.1,.63],[.04,.46]];
     var CH = [
-      { t: 'Outcome trend', s: 'Participants employed, %, MD', d: function (X, Y, Wd, Ht, lt, C) {
+      { t: 'Job placement rate', s: 'Workforce program, Maryland, %', d: function (X, Y, Wd, Ht, lt, C) {
         var P = [.18, .26, .23, .38, .44, .41, .58, .66, .63, .81], x0 = X, x1 = X + Wd, y0 = Y, y1 = Y + Ht - 16, k = ease(lt / 4) * (P.length - 1);
         var pts = P.slice(0, Math.floor(k) + 1).map(function (v, i) { return [x0 + i / (P.length - 1) * (x1 - x0), y1 - v * (y1 - y0)]; });
         if (Math.floor(k) < P.length - 1) { var f = k - Math.floor(k), i = Math.floor(k); pts.push([x0 + (i + f) / (P.length - 1) * (x1 - x0), y1 - (P[i] + (P[i + 1] - P[i]) * f) * (y1 - y0)]); }
@@ -421,20 +421,20 @@
         [[0, 'Baseline', 'left'], [5, 'Midline', 'center'], [9, 'Endline', 'right']].forEach(function (m) { if (k + .02 < m[0]) return; var px = x0 + m[0] / 9 * (x1 - x0), py = y1 - P[m[0]] * (y1 - y0);
           ctx.fillStyle = C.card; ctx.strokeStyle = '#e76f51'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(px, py, 4, 0, 6.283); ctx.fill(); ctx.stroke(); ctx.fillStyle = C.mute; ctx.font = F; ctx.textAlign = m[2]; ctx.fillText(m[1], px, y1 + 14); ctx.textAlign = 'start'; });
         return Math.round(18 + 63 * k / 9) + '%'; } },
-      { t: 'Results by state', s: 'Indicator achievement, %', d: function (X, Y, Wd, Ht, lt, C) {
+      { t: 'Results by state', s: 'Program goals achieved, %', d: function (X, Y, Wd, Ht, lt, C) {
         var V = [62, 78, 54, 88, 71, 93], L = ['MD', 'VA', 'DC', 'PA', 'NY', 'NC'], by = Y + Ht - 14, bw = Wd / V.length - 8;
         V.forEach(function (v, i) { var g = ease((lt - i * .14) / 1.1), hh = (Ht - 34) * v / 100 * g, x = X + i * (bw + 8) + 4;
           ctx.beginPath(); rr(x, by - hh, bw, Math.max(hh, 1), Math.min(6, bw / 2)); ctx.fillStyle = i % 2 ? grad(0, by - hh, 0, by, ['#2a9d8f', '#1f7a70']) : grad(0, by - hh, 0, by, ['#f4a261', '#e9c46a']); ctx.fill();
           ctx.textAlign = 'center'; if (g > .6) { ctx.fillStyle = C.txt; ctx.font = FB; ctx.fillText(Math.round(v * g), x + bw / 2, by - hh - 5); } ctx.fillStyle = C.mute; ctx.font = F; ctx.fillText(L[i], x + bw / 2, by + 13); ctx.textAlign = 'start'; });
         return 'Avg 74%'; } },
-      { t: 'Indicator vs target', s: 'Staff trained, cumulative', d: function (X, Y, Wd, Ht, lt, C) {
+      { t: 'Clients served vs target', s: 'Fiscal year to date', d: function (X, Y, Wd, Ht, lt, C) {
         var gx = X + Wd / 2, gy = Y + Ht * .62, R = Math.min(56, Wd / 2 - 14, Ht * .55), k = .15 + .82 * ease(lt / 5), s0 = Math.PI * .8, sp = Math.PI * 1.4;
         ctx.lineCap = 'round'; ctx.lineWidth = 12; ctx.strokeStyle = C.grid; ctx.beginPath(); ctx.arc(gx, gy, R, s0, s0 + sp); ctx.stroke();
         ctx.strokeStyle = grad(gx - R, 0, gx + R, 0, ['#2a9d8f', '#e9c46a', '#e76f51']); ctx.shadowColor = 'rgba(233,196,106,.6)'; ctx.shadowBlur = 12; ctx.beginPath(); ctx.arc(gx, gy, R, s0, s0 + sp * k); ctx.stroke(); ctx.shadowBlur = 0;
         var ta = s0 + sp * .9; ctx.lineWidth = 3; ctx.strokeStyle = C.txt; ctx.beginPath(); ctx.moveTo(gx + Math.cos(ta) * (R - 12), gy + Math.sin(ta) * (R - 12)); ctx.lineTo(gx + Math.cos(ta) * (R + 12), gy + Math.sin(ta) * (R + 12)); ctx.stroke(); ctx.lineCap = 'butt';
-        ctx.textAlign = 'center'; ctx.fillStyle = C.txt; ctx.font = '800 24px Inter, system-ui, sans-serif'; ctx.fillText(Math.round(k * 560), gx, gy + 4); ctx.fillStyle = C.mute; ctx.font = F; ctx.fillText('of 500 target', gx, gy + 19);
-        if (k > .9) { ctx.fillStyle = '#2a9d8f'; ctx.font = FB; ctx.fillText('✓ Target met', gx, Y + Ht + 2); } ctx.textAlign = 'start'; return ''; } },
-      { t: 'Site visits verified', s: 'Third-party monitoring, US', d: function (X, Y, Wd, Ht, lt, C) {
+        ctx.textAlign = 'center'; ctx.fillStyle = C.txt; ctx.font = '800 24px Inter, system-ui, sans-serif'; ctx.fillText(Math.round(k * 560), gx, gy + 4); ctx.fillStyle = C.mute; ctx.font = F; ctx.fillText('of 500 goal', gx, gy + 19);
+        if (k > .9) { ctx.fillStyle = '#2a9d8f'; ctx.font = FB; ctx.fillText('✓ Goal met', gx, Y + Ht + 2); } ctx.textAlign = 'start'; return ''; } },
+      { t: 'Grantee site visits', s: 'Monitoring visits verified, US', d: function (X, Y, Wd, Ht, lt, C) {
         var mh = Ht - 18; ctx.beginPath(); US.forEach(function (p, i) { var x = X + p[0] * Wd, y = Y + p[1] * mh; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }); ctx.closePath();
         ctx.fillStyle = C.dk ? 'rgba(42,157,143,.16)' : 'rgba(42,157,143,.10)'; ctx.fill(); ctx.strokeStyle = C.dk ? 'rgba(143,208,198,.35)' : 'rgba(31,122,112,.35)'; ctx.lineWidth = 1.2; ctx.stroke();
         var S = [['WA', .1, .14], ['CA', .07, .5], ['CO', .3, .42], ['TX', .42, .78], ['IL', .62, .32], ['GA', .76, .7], ['FL', .81, .88], ['NY', .87, .2], ['MD', .84, .38], ['VA', .8, .48]], n = 0;
@@ -486,15 +486,18 @@
           ctx.beginPath(); rr(x, y, Math.max(w, 1), rh, 5); ctx.fillStyle = C.dk && i === 0 ? '#5d8a99' : s3[2]; ctx.fill();
           ctx.fillStyle = C.txt; ctx.font = FB; ctx.fillText(Math.round(s3[1] * g).toLocaleString(), X + Wd - 62, y + rh / 2 - 1); ctx.fillStyle = C.mute; ctx.font = F; ctx.fillText(s3[0], X + Wd - 62, y + rh / 2 + 10); });
         return '52%'; } },
-      { t: 'Program vs comparison', s: 'Average monthly income, $', d: function (X, Y, Wd, Ht, lt, C) {
-        var A = [.3, .34, .36, .45, .55, .63, .7, .78], B = [.3, .32, .35, .37, .4, .42, .45, .47], k = Math.max(2, Math.ceil(ease(lt / 3.5) * A.length));
-        [[B, '#9aa9ad', 'Comparison'], [A, '#2a9d8f', 'Program']].forEach(function (L, j) { var pts = L[0].slice(0, k).map(function (v, i) { return [X + i / (A.length - 1) * Wd, Y + Ht - 18 - v * (Ht - 26)]; });
-          if (j) { ctx.beginPath(); smooth(pts); var e = pts[pts.length - 1]; ctx.lineTo(e[0], Y + Ht - 18); ctx.lineTo(X, Y + Ht - 18); ctx.closePath(); ctx.fillStyle = grad(0, Y, 0, Y + Ht, ['rgba(42,157,143,.3)', 'rgba(42,157,143,0)']); ctx.fill(); }
-          ctx.beginPath(); smooth(pts); ctx.strokeStyle = L[1]; ctx.lineWidth = j ? 2.6 : 2; if (!j) ctx.setLineDash([4, 4]); ctx.stroke(); ctx.setLineDash([]);
-          ctx.fillStyle = L[1]; ctx.beginPath(); ctx.arc(X + j * (Wd / 2), Y + Ht - 3, 4, 0, 6.283); ctx.fill(); ctx.fillStyle = C.mute; ctx.font = F; ctx.fillText(L[2], X + j * (Wd / 2) + 8, Y + Ht); });
-        return '+$310'; } },
-      { t: 'Logframe progress', s: 'Outputs against annual targets', d: function (X, Y, Wd, Ht, lt, C) {
-        var O = [['1.1 Staff trained', .96], ['1.2 Sites monitored', .84], ['2.1 Reports delivered', 1], ['2.2 Dashboards live', .72]], rh = (Ht - 6) / O.length;
+      { t: 'Grant spend vs budget', s: 'Federal FY 2026, cumulative, $K', d: function (X, Y, Wd, Ht, lt, C) {
+        var M = ['Oct', 'Jan', 'Apr', 'Jul', 'Sep'], plan = [0, .25, .5, .75, 1], act = [0, .22, .47, .74, .97], k = ease(lt / 3.5) * (plan.length - 1), y1 = Y + Ht - 18, yh = Ht - 26;
+        var P = function (arr, n) { var o = []; for (var i = 0; i <= Math.floor(n) && i < arr.length; i++) o.push([X + i / (arr.length - 1) * Wd, y1 - arr[i] * yh]); var f = n - Math.floor(n), i0 = Math.floor(n); if (i0 < arr.length - 1 && f > 0) o.push([X + (i0 + f) / (arr.length - 1) * Wd, y1 - (arr[i0] + (arr[i0 + 1] - arr[i0]) * f) * yh]); return o; };
+        ctx.strokeStyle = C.grid; ctx.lineWidth = 1; for (var i = 0; i < 4; i++) { var gy = y1 - i / 3 * yh; ctx.beginPath(); ctx.moveTo(X, gy); ctx.lineTo(X + Wd, gy); ctx.stroke(); }
+        var pp = P(plan, plan.length - 1); ctx.beginPath(); ctx.moveTo(pp[0][0], pp[0][1]); pp.forEach(function (q2) { ctx.lineTo(q2[0], q2[1]); }); ctx.strokeStyle = '#9aa9ad'; ctx.setLineDash([4, 4]); ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]);
+        var ap = P(act, k); if (ap.length > 1) { ctx.beginPath(); ctx.moveTo(ap[0][0], y1); ap.forEach(function (q2) { ctx.lineTo(q2[0], q2[1]); }); ctx.lineTo(ap[ap.length - 1][0], y1); ctx.closePath(); ctx.fillStyle = grad(0, Y, 0, y1, ['rgba(42,157,143,.32)', 'rgba(42,157,143,0)']); ctx.fill();
+          ctx.beginPath(); ctx.moveTo(ap[0][0], ap[0][1]); ap.forEach(function (q2) { ctx.lineTo(q2[0], q2[1]); }); ctx.strokeStyle = '#2a9d8f'; ctx.lineWidth = 2.6; ctx.stroke();
+          var e = ap[ap.length - 1]; ctx.fillStyle = '#e9c46a'; ctx.shadowColor = '#e9c46a'; ctx.shadowBlur = 10; ctx.beginPath(); ctx.arc(e[0], e[1], 4, 0, 6.283); ctx.fill(); ctx.shadowBlur = 0; }
+        ctx.fillStyle = C.mute; ctx.font = F; M.forEach(function (m, i) { ctx.textAlign = i === 0 ? 'left' : i === M.length - 1 ? 'right' : 'center'; ctx.fillText(m, X + i / (M.length - 1) * Wd, y1 + 13); }); ctx.textAlign = 'start';
+        return Math.round(97 * Math.min(1, k / 4)) + '%'; } },
+      { t: 'Grant deliverables', s: 'Progress against annual targets', d: function (X, Y, Wd, Ht, lt, C) {
+        var O = [['Participants trained', .96], ['Sites monitored', .84], ['Quarterly reports', 1], ['Dashboards live', .72]], rh = (Ht - 6) / O.length;
         O.forEach(function (o, i) { var y = Y + i * rh, g = ease((lt - i * .25) / 1.4) * o[1];
           ctx.fillStyle = C.txt; ctx.font = F; ctx.fillText(o[0], X, y + 10); ctx.textAlign = 'right'; ctx.font = FB; ctx.fillText(Math.round(g * 100) + '%', X + Wd, y + 10); ctx.textAlign = 'start';
           ctx.beginPath(); rr(X, y + 16, Wd, 7, 3.5); ctx.fillStyle = C.grid; ctx.fill(); ctx.beginPath(); rr(X, y + 16, Math.max(7, Wd * g), 7, 3.5); ctx.fillStyle = g >= .99 ? '#2a9d8f' : grad(X, 0, X + Wd, 0, ['#2a9d8f', '#e9c46a']); ctx.fill(); });
@@ -517,7 +520,7 @@
         var c = CH[idx]; panel(x, y, pw, ph, dk, c.t, c.s, a);
         ctx.globalAlpha = a; ctx.save(); ctx.beginPath(); rr(x, y, pw, ph, 14); ctx.clip();
         var label = c.d(x + 14, y + 52, pw - 28, ph - 72, lt, C); ctx.restore();
-        if (label) { ctx.globalAlpha = a; big(C, x + pw - 14, y + 26, label); }
+        if (label) { ctx.globalAlpha = a; ctx.font = '800 15px Inter, system-ui, sans-serif'; var lw = ctx.measureText(label).width; ctx.font = '700 12px Inter, system-ui, sans-serif'; if (ctx.measureText(c.t).width + lw + 40 > pw) label = ''; else big(C, x + pw - 14, y + 26, label); }
       }
       ctx.restore(); ctx.globalAlpha = 1;
     }
