@@ -656,3 +656,9 @@ section.cta > .wrap{position:relative;z-index:2}
 .hero2 .hero-bg{opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent 18%,#000 75%);mask-image:linear-gradient(90deg,transparent 18%,#000 75%);filter:saturate(.75)}
 .hero2::after{background:linear-gradient(90deg,rgba(15,34,42,.92) 0%,rgba(15,34,42,.55) 50%,rgba(15,34,42,.25) 100%),linear-gradient(0deg,rgba(15,34,42,.7),transparent 40%)}
 .hero2 canvas.atmo{mix-blend-mode:normal}
+/* page-wide background grid: sits behind all content, shows in open background areas */
+canvas.bg-plexus{position:fixed;inset:0;z-index:0;pointer-events:none}
+body > section, body > main, body > footer, body > nav.jumps, body > .statband, body > div{position:relative;z-index:1}
+.alt{background:rgba(247,244,238,.82)}
+:root[data-theme="dark"] .alt{background:rgba(23,42,49,.82)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .alt{background:rgba(23,42,49,.82)}}
