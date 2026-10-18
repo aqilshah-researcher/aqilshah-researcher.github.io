@@ -361,6 +361,8 @@
     var path = location.pathname;
     // Dashboards, Evaluations and TPM pages: no backdrop at all
     if (/^\/(dashboards|projects|case-studies)(\/|$)/.test(path)) return;
+    // Home page and resume: no backdrop either
+    if (path === '/' || path === '/index.html' || /^\/resume(\.html)?\/?$/.test(path)) return;
     // Expertise pages: keep the M&E charts in the margins, but no network lines or points
     var noNet = /^\/expertise(\/|$)/.test(path);
     // A fixed backdrop that stays still while the page scrolls. It tells the M&E story:
