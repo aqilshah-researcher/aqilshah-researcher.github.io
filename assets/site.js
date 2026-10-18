@@ -394,43 +394,93 @@
     window.addEventListener('scroll', function () { qt = 0; }, { passive: true });
     var ease = function (k) { k = Math.max(0, Math.min(1, k)); return 1 - Math.pow(1 - k, 3); };
     function gutter() { var m = document.querySelector('main, section .wrap'); var w = m ? Math.min(1180, m.getBoundingClientRect().width) : 1180; return Math.max(0, (W - w) / 2 - 24); }
+    function rr(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+    function panel(x, y, w, h, dk, title, sub, a) {
+      ctx.save(); ctx.globalAlpha = a;
+      ctx.shadowColor = dk ? 'rgba(0,0,0,.45)' : 'rgba(38,70,83,.16)'; ctx.shadowBlur = 24; ctx.shadowOffsetY = 8;
+      rr(x, y, w, h, 14); ctx.fillStyle = dk ? 'rgba(27,48,56,.92)' : 'rgba(255,255,255,.94)'; ctx.fill();
+      ctx.shadowColor = 'transparent'; ctx.lineWidth = 1; ctx.strokeStyle = dk ? 'rgba(143,208,198,.18)' : 'rgba(38,70,83,.10)'; ctx.stroke();
+      var gb = ctx.createLinearGradient(x, 0, x + w, 0); gb.addColorStop(0, '#2a9d8f'); gb.addColorStop(.5, '#e9c46a'); gb.addColorStop(1, '#e76f51');
+      ctx.save(); rr(x, y, w, h, 14); ctx.clip(); ctx.fillStyle = gb; ctx.fillRect(x, y, w, 3); ctx.restore();
+      ctx.fillStyle = dk ? '#e6f2ef' : '#264653'; ctx.font = '700 12px Inter, system-ui, sans-serif'; ctx.fillText(title, x + 14, y + 24);
+      ctx.fillStyle = dk ? 'rgba(214,236,232,.6)' : '#687a80'; ctx.font = '500 10px Inter, system-ui, sans-serif'; ctx.fillText(sub, x + 14, y + 38);
+      ctx.restore();
+    }
     function charts(now, dk, ink, acc) {
-      var g = gutter(); if (g < 120 || H < 520) return;
-      var t = (now - born) / 1000, wide = Math.min(g - 20, 210), x0 = 22;
-      ctx.lineWidth = 1.4; ctx.font = '600 10px Inter, system-ui, sans-serif';
-      // 1) trend line with baseline, midline, endline checkpoints (left margin, upper)
-      var cy = H * .28, ch = 110, cyc = (t % 14) / 9, pts = [0, .22, .18, .42, .38, .6, .55, .78, .74, .92];
-      ctx.globalAlpha = .55 * ease(t / 1.6) * q(x0 + wide / 2, cy);
-      ctx.strokeStyle = ink; ctx.beginPath(); ctx.moveTo(x0, cy + ch); ctx.lineTo(x0 + wide, cy + ch); ctx.moveTo(x0, cy); ctx.lineTo(x0, cy + ch); ctx.stroke();
-      var drawn = ease(cyc) * (pts.length - 1);
-      ctx.strokeStyle = acc; ctx.lineWidth = 2; ctx.beginPath();
-      for (var i = 0; i <= Math.floor(drawn); i++) { var px = x0 + i / (pts.length - 1) * wide, py = cy + ch - pts[i] * ch; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
-      var f = drawn - Math.floor(drawn), k = Math.floor(drawn); if (k < pts.length - 1) { var ax = x0 + k / (pts.length - 1) * wide, ay = cy + ch - pts[k] * ch, bx = x0 + (k + 1) / (pts.length - 1) * wide, by = cy + ch - pts[k + 1] * ch; ctx.lineTo(ax + (bx - ax) * f, ay + (by - ay) * f); }
-      ctx.stroke();
-      [[0, 'Baseline'], [4, 'Midline'], [9, 'Endline']].forEach(function (m) { if (drawn + .01 < m[0]) return; var px = x0 + m[0] / (pts.length - 1) * wide, py = cy + ch - pts[m[0]] * ch;
-        ctx.fillStyle = '#e76f51'; ctx.beginPath(); ctx.arc(px, py, 3.6, 0, 6.283); ctx.fill(); ctx.fillStyle = ink; ctx.fillText(m[1], Math.min(px - 4, x0 + wide - 44), py - 9); });
-      // 2) dashboard bars rising (left margin, lower)
-      var by0 = H * .78, bh = 90, vals = [.45, .7, .55, .85, .65, .95], bw = wide / vals.length - 6;
-      ctx.globalAlpha = .55 * ease((t - .4) / 1.6) * q(x0 + wide / 2, by0 - bh / 2);
-      ctx.strokeStyle = ink; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(x0, by0); ctx.lineTo(x0 + wide, by0); ctx.stroke();
-      vals.forEach(function (v, i) { var hgt = bh * v * (.75 + .25 * Math.sin(t * .6 + i)) * ease((t - .4 - i * .12) / 1.2);
-        ctx.fillStyle = i % 2 ? acc : '#e9c46a'; ctx.fillRect(x0 + i * (bw + 6), by0 - hgt, bw, hgt); });
-      // 3) indicator gauge filling toward a target (right margin)
-      var gx = W - g / 2 - 10, gy = H * .34, R = Math.min(52, g / 2 - 18), prog = .2 + .7 * ease(((t % 12) / 8));
-      ctx.globalAlpha = .6 * ease((t - .8) / 1.6) * q(gx, gy);
-      ctx.lineWidth = 8; ctx.strokeStyle = dk ? 'rgba(255,255,255,.12)' : 'rgba(38,70,83,.12)'; ctx.beginPath(); ctx.arc(gx, gy, R, Math.PI * .75, Math.PI * 2.25); ctx.stroke();
-      ctx.strokeStyle = acc; ctx.beginPath(); ctx.arc(gx, gy, R, Math.PI * .75, Math.PI * (.75 + 1.5 * prog)); ctx.stroke();
-      var ta = Math.PI * (.75 + 1.5 * .9); ctx.strokeStyle = '#e76f51'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(gx + Math.cos(ta) * (R - 9), gy + Math.sin(ta) * (R - 9)); ctx.lineTo(gx + Math.cos(ta) * (R + 9), gy + Math.sin(ta) * (R + 9)); ctx.stroke();
-      ctx.fillStyle = ink; ctx.font = '700 16px Inter, system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillText(Math.round(prog * 100) + '%', gx, gy + 6);
-      ctx.font = '600 10px Inter, system-ui, sans-serif'; ctx.fillText('Indicator vs target', gx, gy + R + 16); ctx.textAlign = 'start';
-      // 4) a map pin for site visits (right margin, lower)
-      var px = W - g / 2 - 10, py = H * .74, bob = Math.sin(t * 1.6) * 4;
-      ctx.globalAlpha = .6 * ease((t - 1.2) / 1.6) * q(px, py);
-      ctx.fillStyle = '#e76f51'; ctx.beginPath(); ctx.arc(px, py - 22 + bob, 11, Math.PI, 0); ctx.lineTo(px, py + bob); ctx.closePath(); ctx.fill();
-      ctx.fillStyle = dk ? '#1b3038' : '#ffffff'; ctx.beginPath(); ctx.arc(px, py - 22 + bob, 4.5, 0, 6.283); ctx.fill();
-      var rr = (t * 26) % 40; ctx.strokeStyle = 'rgba(231,111,81,' + (1 - rr / 40) * .8 + ')'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.ellipse(px, py + 4, rr, rr * .35, 0, 0, 6.283); ctx.stroke();
-      ctx.fillStyle = ink; ctx.font = '600 10px Inter, system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('Site visit verified', px, py + 30); ctx.textAlign = 'start';
-      ctx.globalAlpha = 1;
+      var g = gutter(); if (g < 150 || H < 560) return;
+      var t = (now - born) / 1000, pw = Math.min(g - 28, 236), lx = 14, rx = W - pw - 16, txt = dk ? '#e6f2ef' : '#264653', mute = dk ? 'rgba(214,236,232,.55)' : '#8a999d', grid = dk ? 'rgba(255,255,255,.07)' : 'rgba(38,70,83,.07)';
+      ctx.save();
+      // ---------- 1. Outcome trend: smooth curve with gradient area, baseline > midline > endline
+      var y1 = Math.max(90, H * .14), h1 = 190, a1 = ease(t / 1.4); ctx.globalAlpha = 1;
+      var vis = q(lx + pw / 2, y1 + h1 / 2); panel(lx, y1, pw, h1, dk, 'Outcome trend', 'Women reporting higher income, %', a1 * vis);
+      ctx.globalAlpha = a1 * vis;
+      var cx0 = lx + 16, cx1 = lx + pw - 16, cy0 = y1 + 56, cy1 = y1 + h1 - 34, P = [.18, .26, .23, .38, .44, .41, .58, .66, .63, .81];
+      for (var i = 0; i < 4; i++) { var gy = cy0 + i * (cy1 - cy0) / 3; ctx.strokeStyle = grid; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx0, gy); ctx.lineTo(cx1, gy); ctx.stroke(); }
+      var prog = ease(((t % 10) / 6.5)), pts = P.map(function (v, i) { return [cx0 + i / (P.length - 1) * (cx1 - cx0), cy1 - v * (cy1 - cy0)]; });
+      var upto = prog * (pts.length - 1), last = Math.floor(upto), fr = upto - last;
+      function curve(close) {
+        ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+        for (var i = 1; i <= last && i < pts.length; i++) { var p0 = pts[i - 1], p1 = pts[i], mx2 = (p0[0] + p1[0]) / 2; ctx.bezierCurveTo(mx2, p0[1], mx2, p1[1], p1[0], p1[1]); }
+        var end = pts[Math.min(last, pts.length - 1)];
+        if (last < pts.length - 1) { var p0 = pts[last], p1 = pts[last + 1]; end = [p0[0] + (p1[0] - p0[0]) * fr, p0[1] + (p1[1] - p0[1]) * fr]; ctx.lineTo(end[0], end[1]); }
+        if (close) { ctx.lineTo(end[0], cy1); ctx.lineTo(pts[0][0], cy1); ctx.closePath(); }
+        return end;
+      }
+      var ga = ctx.createLinearGradient(0, cy0, 0, cy1); ga.addColorStop(0, 'rgba(42,157,143,.38)'); ga.addColorStop(1, 'rgba(42,157,143,0)');
+      curve(true); ctx.fillStyle = ga; ctx.fill();
+      var gl = ctx.createLinearGradient(cx0, 0, cx1, 0); gl.addColorStop(0, '#2a9d8f'); gl.addColorStop(1, '#e9c46a');
+      var tip = curve(false); ctx.strokeStyle = gl; ctx.lineWidth = 2.6; ctx.lineCap = 'round'; ctx.stroke();
+      ctx.shadowColor = '#e9c46a'; ctx.shadowBlur = 14; ctx.fillStyle = '#e9c46a'; ctx.beginPath(); ctx.arc(tip[0], tip[1], 4.5, 0, 6.283); ctx.fill(); ctx.shadowBlur = 0;
+      [[0, 'Baseline'], [5, 'Midline'], [9, 'Endline']].forEach(function (m) {
+        var px = pts[m[0]][0], py = pts[m[0]][1]; if (upto + .02 < m[0]) return;
+        ctx.fillStyle = dk ? '#1b3038' : '#fff'; ctx.strokeStyle = '#e76f51'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(px, py, 4, 0, 6.283); ctx.fill(); ctx.stroke();
+        ctx.fillStyle = mute; ctx.font = '600 9.5px Inter, system-ui, sans-serif'; ctx.textAlign = m[0] ? (m[0] === 9 ? 'right' : 'center') : 'left'; ctx.fillText(m[1], px, cy1 + 16); });
+      ctx.textAlign = 'right'; ctx.fillStyle = txt; ctx.font = '800 15px Inter, system-ui, sans-serif';
+      ctx.fillText(Math.round(18 + 63 * Math.min(1, upto / 9)) + '%', lx + pw - 14, y1 + 26); ctx.textAlign = 'start';
+      // ---------- 2. Dashboard bars: rounded, gradient, value labels, staggered growth
+      var y2 = y1 + h1 + 22, h2 = 182, a2 = ease((t - .35) / 1.4), vis2 = q(lx + pw / 2, y2 + h2 / 2);
+      if (y2 + h2 < H - 10) {
+        panel(lx, y2, pw, h2, dk, 'Results by province', 'Indicator achievement, %', a2 * vis2); ctx.globalAlpha = a2 * vis2;
+        var V = [62, 78, 54, 88, 71, 93], L = ['KBL', 'HRT', 'KDR', 'BLK', 'NGR', 'BMY'], bx0 = lx + 14, bx1 = lx + pw - 14, by1 = y2 + h2 - 30, bTop = y2 + 52, bw = (bx1 - bx0) / V.length - 8, cyc = (t % 9) / 9;
+        V.forEach(function (v, i) {
+          var grow = ease((t - .5 - i * .14) / 1.1) * (cyc < .8 ? 1 : 1 - ease((cyc - .8) / .2) * .15), hh = (by1 - bTop) * v / 100 * grow, x = bx0 + i * (bw + 8) + 4;
+          var gg = ctx.createLinearGradient(0, by1 - hh, 0, by1); if (i % 2) { gg.addColorStop(0, '#2a9d8f'); gg.addColorStop(1, '#1f7a70'); } else { gg.addColorStop(0, '#f4a261'); gg.addColorStop(1, '#e9c46a'); }
+          rr(x, by1 - hh, bw, Math.max(hh, 1), Math.min(6, bw / 2)); ctx.fillStyle = gg; ctx.fill();
+          ctx.fillStyle = txt; ctx.font = '700 9.5px Inter, system-ui, sans-serif'; ctx.textAlign = 'center';
+          if (grow > .6) ctx.fillText(Math.round(v * grow), x + bw / 2, by1 - hh - 5);
+          ctx.fillStyle = mute; ctx.font = '600 9px Inter, system-ui, sans-serif'; ctx.fillText(L[i], x + bw / 2, by1 + 14); ctx.textAlign = 'start'; });
+      }
+      // ---------- 3. Indicator gauge: gradient arc with glow and target tick
+      var y3 = Math.max(90, H * .14), h3 = 190, a3 = ease((t - .6) / 1.4), vis3 = q(rx + pw / 2, y3 + h3 / 2);
+      panel(rx, y3, pw, h3, dk, 'Indicator vs target', 'Staff trained, cumulative', a3 * vis3); ctx.globalAlpha = a3 * vis3;
+      var gx = rx + pw / 2, gy = y3 + 122, R = Math.min(58, pw / 2 - 26), k = .15 + .78 * ease(((t % 11) / 7)), s0 = Math.PI * .8, span = Math.PI * 1.4;
+      ctx.lineCap = 'round'; ctx.lineWidth = 12; ctx.strokeStyle = grid; ctx.beginPath(); ctx.arc(gx, gy, R, s0, s0 + span); ctx.stroke();
+      var gg2 = ctx.createLinearGradient(gx - R, 0, gx + R, 0); gg2.addColorStop(0, '#2a9d8f'); gg2.addColorStop(.6, '#e9c46a'); gg2.addColorStop(1, '#e76f51');
+      ctx.strokeStyle = gg2; ctx.shadowColor = 'rgba(233,196,106,.6)'; ctx.shadowBlur = 12; ctx.beginPath(); ctx.arc(gx, gy, R, s0, s0 + span * k); ctx.stroke(); ctx.shadowBlur = 0;
+      var ta = s0 + span * .9; ctx.lineWidth = 3; ctx.strokeStyle = txt; ctx.beginPath(); ctx.moveTo(gx + Math.cos(ta) * (R - 12), gy + Math.sin(ta) * (R - 12)); ctx.lineTo(gx + Math.cos(ta) * (R + 12), gy + Math.sin(ta) * (R + 12)); ctx.stroke();
+      ctx.lineCap = 'butt'; ctx.textAlign = 'center'; ctx.fillStyle = txt; ctx.font = '800 24px Inter, system-ui, sans-serif'; ctx.fillText(Math.round(k * 560), gx, gy + 4);
+      ctx.fillStyle = mute; ctx.font = '600 9.5px Inter, system-ui, sans-serif'; ctx.fillText('of 500 target', gx, gy + 19);
+      if (k > .9) { ctx.fillStyle = '#2a9d8f'; ctx.font = '700 10px Inter, system-ui, sans-serif'; ctx.fillText('✓ Target met', gx, y3 + h3 - 12); }
+      ctx.textAlign = 'start';
+      // ---------- 4. Site visits: mini map with pulsing visited sites and a verified counter
+      var y4 = y3 + h3 + 22, h4 = 182, a4 = ease((t - .9) / 1.4), vis4 = q(rx + pw / 2, y4 + h4 / 2);
+      if (y4 + h4 < H - 10) {
+        panel(rx, y4, pw, h4, dk, 'Site visits verified', 'Third-party monitoring', a4 * vis4); ctx.globalAlpha = a4 * vis4;
+        var mx0 = rx + 14, my0 = y4 + 50, mw = pw - 28, mh = h4 - 82;
+        // stylized territory outline
+        var shape = [[.05, .55], [.18, .3], [.35, .22], [.5, .08], [.68, .14], [.86, .1], [.95, .3], [.82, .5], [.7, .78], [.48, .92], [.3, .82], [.12, .78]];
+        ctx.beginPath(); shape.forEach(function (p, i) { var x = mx0 + p[0] * mw, y = my0 + p[1] * mh; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }); ctx.closePath();
+        ctx.fillStyle = dk ? 'rgba(42,157,143,.16)' : 'rgba(42,157,143,.10)'; ctx.fill(); ctx.strokeStyle = dk ? 'rgba(143,208,198,.35)' : 'rgba(31,122,112,.35)'; ctx.lineWidth = 1.2; ctx.stroke();
+        var S = [[.2, .5], [.34, .36], [.5, .3], [.62, .45], [.78, .3], [.44, .62], [.58, .72], [.28, .66], [.7, .58], [.85, .4]], cyc4 = (t % 10) / 10, done = 0;
+        S.forEach(function (p, i) {
+          var x = mx0 + p[0] * mw, y = my0 + p[1] * mh, on = cyc4 > i * .07 + .05; if (on) done++;
+          if (on) { var ph = ((t * 1.2 + i * .37) % 1.6) / 1.6; ctx.strokeStyle = 'rgba(42,157,143,' + (1 - ph) * .7 + ')'; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(x, y, 3 + ph * 11, 0, 6.283); ctx.stroke(); }
+          ctx.fillStyle = on ? '#2a9d8f' : (i % 3 === 0 ? '#e76f51' : '#e9c46a'); ctx.beginPath(); ctx.arc(x, y, 3.6, 0, 6.283); ctx.fill(); });
+        ctx.fillStyle = txt; ctx.font = '800 15px Inter, system-ui, sans-serif'; ctx.textAlign = 'right'; ctx.fillText(done + '/' + S.length, rx + pw - 14, y4 + 26); ctx.textAlign = 'start';
+        ctx.font = '600 9.5px Inter, system-ui, sans-serif'; var ly = y4 + h4 - 14;
+        [['#2a9d8f', 'Verified'], ['#e9c46a', 'Planned'], ['#e76f51', 'Flagged']].forEach(function (l, i) { var x = rx + 14 + i * ((pw - 28) / 3); ctx.fillStyle = l[0]; ctx.beginPath(); ctx.arc(x + 4, ly - 3, 4, 0, 6.283); ctx.fill(); ctx.fillStyle = mute; ctx.fillText(l[1], x + 12, ly); });
+      }
+      ctx.restore();
     }
     function frame(now) {
       if (--qt <= 0) { zones(); qt = 20; }
