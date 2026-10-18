@@ -358,15 +358,21 @@
 
 
   function backgroundGrid() {
+    // A fixed backdrop that stays still while the page scrolls. It tells the M&E story:
+    // field sites (squares) send data along the network to hubs (circles), small pulses show
+    // data flowing; in the side margins a trend line draws itself through baseline, midline
+    // and endline, bars rise like a dashboard, and an indicator gauge fills toward its target.
     var c = document.createElement('canvas'); c.className = 'bg-plexus'; c.setAttribute('aria-hidden', 'true');
     document.body.insertBefore(c, document.body.firstChild);
-    var ctx = c.getContext('2d'), dpr = Math.min(2, window.devicePixelRatio || 1), W, H, nodes = [], LINK = 150;
+    var ctx = c.getContext('2d'), dpr = Math.min(2, window.devicePixelRatio || 1), W, H, nodes = [], links = [], pulses = [], LINK = 150, born = performance.now();
     function dark() { var t = document.documentElement.getAttribute('data-theme'); return t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; }
     function size() {
       W = innerWidth; H = innerHeight; c.width = W * dpr; c.height = H * dpr; c.style.width = W + 'px'; c.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      LINK = W < 700 ? 110 : 150;
-      var n = Math.round(Math.max(30, Math.min(110, W * H / 11000))); nodes = [];
-      for (var i = 0; i < n; i++) nodes.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .22, vy: (Math.random() - .5) * .22, r: 1.1 + Math.random() * 1.8, z: .5 + Math.random() * .5 });
+      LINK = W < 700 ? 115 : 160;
+      var n = Math.round(Math.max(26, Math.min(80, W * H / 15000))); nodes = [];
+      for (var i = 0; i < n; i++) nodes.push({ hx: Math.random() * W, hy: Math.random() * H, x: 0, y: 0, ph: Math.random() * 6.28, amp: 6 + Math.random() * 10, site: Math.random() < .55, hub: false, r: 1.6 + Math.random() * 1.6, delay: Math.random() * 1400 });
+      for (var i = 0; i < n; i += 7) { nodes[i].hub = true; nodes[i].site = false; nodes[i].r = 3.2; }
+      pulses = [];
     }
     var Q = [], qt = 0;
     function zones() {
@@ -379,30 +385,77 @@
     }
     function q(x, y) { for (var i = 0; i < Q.length; i++) { var z = Q[i]; if (x > z[0] && x < z[2] && y > z[1] && y < z[3]) return z[4]; } return 1; }
     window.addEventListener('scroll', function () { qt = 0; }, { passive: true });
-    var sy = scrollY, py = 0;
-    function frame() {
+    var ease = function (k) { k = Math.max(0, Math.min(1, k)); return 1 - Math.pow(1 - k, 3); };
+    function gutter() { var m = document.querySelector('main, section .wrap'); var w = m ? Math.min(1180, m.getBoundingClientRect().width) : 1180; return Math.max(0, (W - w) / 2 - 24); }
+    function charts(now, dk, ink, acc) {
+      var g = gutter(); if (g < 120 || H < 520) return;
+      var t = (now - born) / 1000, wide = Math.min(g - 20, 210), x0 = 22;
+      ctx.lineWidth = 1.4; ctx.font = '600 10px Inter, system-ui, sans-serif';
+      // 1) trend line with baseline, midline, endline checkpoints (left margin, upper)
+      var cy = H * .28, ch = 110, cyc = (t % 14) / 9, pts = [0, .22, .18, .42, .38, .6, .55, .78, .74, .92];
+      ctx.globalAlpha = .55 * ease(t / 1.6) * q(x0 + wide / 2, cy);
+      ctx.strokeStyle = ink; ctx.beginPath(); ctx.moveTo(x0, cy + ch); ctx.lineTo(x0 + wide, cy + ch); ctx.moveTo(x0, cy); ctx.lineTo(x0, cy + ch); ctx.stroke();
+      var drawn = ease(cyc) * (pts.length - 1);
+      ctx.strokeStyle = acc; ctx.lineWidth = 2; ctx.beginPath();
+      for (var i = 0; i <= Math.floor(drawn); i++) { var px = x0 + i / (pts.length - 1) * wide, py = cy + ch - pts[i] * ch; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+      var f = drawn - Math.floor(drawn), k = Math.floor(drawn); if (k < pts.length - 1) { var ax = x0 + k / (pts.length - 1) * wide, ay = cy + ch - pts[k] * ch, bx = x0 + (k + 1) / (pts.length - 1) * wide, by = cy + ch - pts[k + 1] * ch; ctx.lineTo(ax + (bx - ax) * f, ay + (by - ay) * f); }
+      ctx.stroke();
+      [[0, 'Baseline'], [4, 'Midline'], [9, 'Endline']].forEach(function (m) { if (drawn + .01 < m[0]) return; var px = x0 + m[0] / (pts.length - 1) * wide, py = cy + ch - pts[m[0]] * ch;
+        ctx.fillStyle = '#e76f51'; ctx.beginPath(); ctx.arc(px, py, 3.6, 0, 6.283); ctx.fill(); ctx.fillStyle = ink; ctx.fillText(m[1], Math.min(px - 4, x0 + wide - 44), py - 9); });
+      // 2) dashboard bars rising (left margin, lower)
+      var by0 = H * .78, bh = 90, vals = [.45, .7, .55, .85, .65, .95], bw = wide / vals.length - 6;
+      ctx.globalAlpha = .55 * ease((t - .4) / 1.6) * q(x0 + wide / 2, by0 - bh / 2);
+      ctx.strokeStyle = ink; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(x0, by0); ctx.lineTo(x0 + wide, by0); ctx.stroke();
+      vals.forEach(function (v, i) { var hgt = bh * v * (.75 + .25 * Math.sin(t * .6 + i)) * ease((t - .4 - i * .12) / 1.2);
+        ctx.fillStyle = i % 2 ? acc : '#e9c46a'; ctx.fillRect(x0 + i * (bw + 6), by0 - hgt, bw, hgt); });
+      // 3) indicator gauge filling toward a target (right margin)
+      var gx = W - g / 2 - 10, gy = H * .34, R = Math.min(52, g / 2 - 18), prog = .2 + .7 * ease(((t % 12) / 8));
+      ctx.globalAlpha = .6 * ease((t - .8) / 1.6) * q(gx, gy);
+      ctx.lineWidth = 8; ctx.strokeStyle = dk ? 'rgba(255,255,255,.12)' : 'rgba(38,70,83,.12)'; ctx.beginPath(); ctx.arc(gx, gy, R, Math.PI * .75, Math.PI * 2.25); ctx.stroke();
+      ctx.strokeStyle = acc; ctx.beginPath(); ctx.arc(gx, gy, R, Math.PI * .75, Math.PI * (.75 + 1.5 * prog)); ctx.stroke();
+      var ta = Math.PI * (.75 + 1.5 * .9); ctx.strokeStyle = '#e76f51'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(gx + Math.cos(ta) * (R - 9), gy + Math.sin(ta) * (R - 9)); ctx.lineTo(gx + Math.cos(ta) * (R + 9), gy + Math.sin(ta) * (R + 9)); ctx.stroke();
+      ctx.fillStyle = ink; ctx.font = '700 16px Inter, system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillText(Math.round(prog * 100) + '%', gx, gy + 6);
+      ctx.font = '600 10px Inter, system-ui, sans-serif'; ctx.fillText('Indicator vs target', gx, gy + R + 16); ctx.textAlign = 'start';
+      // 4) a map pin for site visits (right margin, lower)
+      var px = W - g / 2 - 10, py = H * .74, bob = Math.sin(t * 1.6) * 4;
+      ctx.globalAlpha = .6 * ease((t - 1.2) / 1.6) * q(px, py);
+      ctx.fillStyle = '#e76f51'; ctx.beginPath(); ctx.arc(px, py - 22 + bob, 11, Math.PI, 0); ctx.lineTo(px, py + bob); ctx.closePath(); ctx.fill();
+      ctx.fillStyle = dk ? '#1b3038' : '#ffffff'; ctx.beginPath(); ctx.arc(px, py - 22 + bob, 4.5, 0, 6.283); ctx.fill();
+      var rr = (t * 26) % 40; ctx.strokeStyle = 'rgba(231,111,81,' + (1 - rr / 40) * .8 + ')'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.ellipse(px, py + 4, rr, rr * .35, 0, 0, 6.283); ctx.stroke();
+      ctx.fillStyle = ink; ctx.font = '600 10px Inter, system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('Site visit verified', px, py + 30); ctx.textAlign = 'start';
+      ctx.globalAlpha = 1;
+    }
+    function frame(now) {
       if (--qt <= 0) { zones(); qt = 20; }
       ctx.clearRect(0, 0, W, H);
       var lb = document.getElementById('lightbox'); if (lb && !lb.hidden) { requestAnimationFrame(frame); return; }
-      var dk = dark(), line = dk ? '143,208,198' : '31,122,112', dot = dk ? '214,236,232' : '38,70,83';
-      // scrolling gently drifts the field, deeper points move less
-      var dS = scrollY - sy; sy = scrollY; py += dS;
-      var mx = mouse.x, my = mouse.y;
-      for (var i = 0; i < nodes.length; i++) { var n = nodes[i];
-        n.x += n.vx; n.y += n.vy - dS * .15 * n.z;
-        var dx = mx - n.x, dy = my - n.y, d = Math.sqrt(dx * dx + dy * dy); if (d < 160 && d > 40) { n.x += dx / d * .25; n.y += dy / d * .25; }
-        if (n.x < -40) n.x = W + 40; if (n.x > W + 40) n.x = -40; if (n.y < -40) n.y = H + 40; if (n.y > H + 40) n.y = -40; }
-      ctx.lineWidth = 1; var L2 = LINK * LINK;
+      var dk = dark(), line = dk ? '143,208,198' : '31,122,112', dot = dk ? '214,236,232' : '38,70,83', ink = dk ? 'rgba(214,236,232,.85)' : '#264653', acc = dk ? '#6fd1c3' : '#2a9d8f';
+      var age = now - born, mx = mouse.x, my = mouse.y;
+      // points stay anchored to the screen and only sway gently around home; they do not follow the scroll
+      for (var i = 0; i < nodes.length; i++) { var n = nodes[i]; n.a = ease((age - n.delay) / 900);
+        n.x = n.hx + Math.sin(now * .0004 + n.ph) * n.amp; n.y = n.hy + Math.cos(now * .00033 + n.ph) * n.amp;
+        var dx = mx - n.x, dy = my - n.y, d = Math.sqrt(dx * dx + dy * dy); if (d < 160 && d > 20) { var pull = (160 - d) / 160 * 18; n.x += dx / d * pull; n.y += dy / d * pull; } }
+      ctx.lineWidth = 1; var L2 = LINK * LINK; links = [];
       for (var i = 0; i < nodes.length; i++) { var a = nodes[i];
         for (var j = i + 1; j < nodes.length; j++) { var b = nodes[j], dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
-          if (d2 < L2) { var o = (1 - d2 / L2) * (dk ? .4 : .42);
-            var cx = (a.x + b.x) / 2 - mx, cy = (a.y + b.y) / 2 - my, cd = cx * cx + cy * cy; if (cd < 32000) o += (1 - cd / 32000) * .35;
+          if (d2 < L2) { links.push([i, j]); var o = (1 - d2 / L2) * (dk ? .4 : .42) * Math.min(a.a, b.a);
+            var cx = (a.x + b.x) / 2 - mx, cy = (a.y + b.y) / 2 - my, cd = cx * cx + cy * cy; if (cd < 32000) o += (1 - cd / 32000) * .35 * Math.min(a.a, b.a);
             o *= q((a.x + b.x) / 2, (a.y + b.y) / 2);
             ctx.strokeStyle = 'rgba(' + line + ',' + o.toFixed(3) + ')'; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); } } }
-      for (var i = 0; i < nodes.length; i++) { var n = nodes[i], dx = n.x - mx, dy = n.y - my, d = Math.sqrt(dx * dx + dy * dy);
-        var qn = q(n.x, n.y);
-        if (d < 170) { ctx.strokeStyle = 'rgba(231,111,81,' + ((1 - d / 170) * .6 * q((n.x + mx) / 2, (n.y + my) / 2)).toFixed(3) + ')'; ctx.beginPath(); ctx.moveTo(mx, my); ctx.lineTo(n.x, n.y); ctx.stroke(); }
-        ctx.fillStyle = 'rgba(' + dot + ',' + ((.55 * n.z + (d < 170 ? .3 : 0)) * qn).toFixed(3) + ')'; ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, 6.283); ctx.fill(); }
+      // data pulses travel from field sites toward hubs
+      if (age > 1200 && links.length && pulses.length < 14 && Math.random() < .08) { var L = links[(Math.random() * links.length) | 0], s0 = nodes[L[0]].site ? L[0] : L[1]; pulses.push({ a: s0, b: s0 === L[0] ? L[1] : L[0], t: 0 }); }
+      for (var k = pulses.length - 1; k >= 0; k--) { var p = pulses[k], A = nodes[p.a], B = nodes[p.b]; p.t += .012;
+        if (p.t >= 1) { pulses.splice(k, 1); continue; }
+        var x = A.x + (B.x - A.x) * p.t, y = A.y + (B.y - A.y) * p.t, qq = q(x, y);
+        ctx.fillStyle = 'rgba(233,196,106,' + (.95 * qq).toFixed(3) + ')'; ctx.beginPath(); ctx.arc(x, y, 2.6, 0, 6.283); ctx.fill(); }
+      for (var i = 0; i < nodes.length; i++) { var n = nodes[i], dx = n.x - mx, dy = n.y - my, d = Math.sqrt(dx * dx + dy * dy), qn = q(n.x, n.y);
+        if (d < 170) { ctx.strokeStyle = 'rgba(231,111,81,' + ((1 - d / 170) * .6 * n.a * q((n.x + mx) / 2, (n.y + my) / 2)).toFixed(3) + ')'; ctx.beginPath(); ctx.moveTo(mx, my); ctx.lineTo(n.x, n.y); ctx.stroke(); }
+        var al = ((n.hub ? .75 : .55) + (d < 170 ? .3 : 0)) * qn * n.a;
+        if (n.hub) { ctx.fillStyle = 'rgba(42,157,143,' + al.toFixed(3) + ')'; ctx.beginPath(); ctx.arc(n.x, n.y, n.r + Math.sin(now * .003 + n.ph), 0, 6.283); ctx.fill();
+          ctx.strokeStyle = 'rgba(42,157,143,' + (al * .4).toFixed(3) + ')'; ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 5 + 3 * Math.sin(now * .002 + n.ph), 0, 6.283); ctx.stroke(); }
+        else if (n.site) { ctx.fillStyle = 'rgba(' + dot + ',' + al.toFixed(3) + ')'; ctx.fillRect(n.x - n.r, n.y - n.r, n.r * 2, n.r * 2); }
+        else { ctx.fillStyle = 'rgba(' + dot + ',' + al.toFixed(3) + ')'; ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, 6.283); ctx.fill(); } }
+      charts(now, dk, ink, acc);
       requestAnimationFrame(frame);
     }
     size(); window.addEventListener('resize', size); requestAnimationFrame(frame);
