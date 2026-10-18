@@ -361,7 +361,7 @@
     var path = location.pathname;
     // Allow-list: the backdrop only appears where it was asked for. Every other page,
     // including any page added later, keeps a clean white background.
-    var full = /^\/contact(\/|\.html|$)/.test(path), noNet = /^\/expertise(\/|$)/.test(path);
+    var full = false, noNet = /^\/expertise(\/|$)/.test(path);
     if (!full && !noNet) return;
     // A fixed backdrop that stays still while the page scrolls. It tells the M&E story:
     // field sites (squares) send data along the network to hubs (circles), small pulses show
