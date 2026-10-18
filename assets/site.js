@@ -358,6 +358,11 @@
 
 
   function backgroundGrid() {
+    var path = location.pathname;
+    // Dashboards, Evaluations and TPM pages: no backdrop at all
+    if (/^\/(dashboards|projects|case-studies)(\/|$)/.test(path)) return;
+    // Expertise pages: keep the M&E charts in the margins, but no network lines or points
+    var noNet = /^\/expertise(\/|$)/.test(path);
     // A fixed backdrop that stays still while the page scrolls. It tells the M&E story:
     // field sites (squares) send data along the network to hubs (circles), small pulses show
     // data flowing; in the side margins a trend line draws itself through baseline, midline
@@ -431,6 +436,7 @@
       var lb = document.getElementById('lightbox'); if (lb && !lb.hidden) { requestAnimationFrame(frame); return; }
       var dk = dark(), line = dk ? '143,208,198' : '31,122,112', dot = dk ? '214,236,232' : '38,70,83', ink = dk ? 'rgba(214,236,232,.85)' : '#264653', acc = dk ? '#6fd1c3' : '#2a9d8f';
       var age = now - born, mx = mouse.x, my = mouse.y;
+      if (noNet) { charts(now, dk, ink, acc); requestAnimationFrame(frame); return; }
       // points stay anchored to the screen and only sway gently around home; they do not follow the scroll
       for (var i = 0; i < nodes.length; i++) { var n = nodes[i]; n.a = ease((age - n.delay) / 900);
         n.x = n.hx + Math.sin(now * .0004 + n.ph) * n.amp; n.y = n.hy + Math.cos(now * .00033 + n.ph) * n.amp;
