@@ -648,3 +648,6 @@ canvas.atmo-trail{position:fixed;inset:0;z-index:9999;pointer-events:none}
 .jumps.quick a:hover .ji{background:var(--leaf);color:var(--navy)}
 .hero2 .credit{bottom:62px;z-index:2}
 @media (max-width:640px){.jumps.quick{grid-template-columns:1fr 1fr 1fr;margin:16px 16px 0}.jumps.quick a{padding:14px 6px;font-size:13px}.jumps.quick a:nth-child(-n+3){border-top:0}.jumps.quick a:nth-child(even){border-left:0}.jumps.quick a:not(:nth-child(3n+1)){border-left:1px solid var(--line)}.jumps.quick .ji{width:38px;height:38px}}
+section.cta{position:relative;overflow:hidden}
+section.cta > .wrap{position:relative;z-index:2}
+.phero canvas.atmo{z-index:3}
