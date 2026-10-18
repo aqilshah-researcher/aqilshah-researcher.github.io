@@ -686,3 +686,6 @@ body > section, body > main, body > footer, body > nav.jumps, body > .statband, 
   .hero2::after{background:linear-gradient(90deg,rgba(15,34,42,.55) 0%,rgba(15,34,42,.35) 45%,rgba(15,34,42,0) 52%),linear-gradient(0deg,rgba(15,34,42,.45),transparent 25%)}
 }
 @media (min-width:1000px){.hero2 .hero-inner > .role{max-width:calc(50vw - max(24px, (100vw - 1180px) / 2 + 24px) - 36px)}}
+/* full-width photo as before; text kept to the left so it never covers the face */
+.hero2 .hero-bg{left:0;right:auto;width:100%;opacity:1;filter:none;object-position:62% 35%;-webkit-mask-image:none;mask-image:none}
+.hero2::after{background:linear-gradient(90deg,rgba(15,34,42,.9) 0%,rgba(15,34,42,.72) 35%,rgba(15,34,42,.25) 52%,rgba(15,34,42,0) 62%),linear-gradient(0deg,rgba(15,34,42,.5),transparent 28%)}

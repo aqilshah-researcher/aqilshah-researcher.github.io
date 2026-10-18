@@ -261,7 +261,7 @@
         Z.push([b.left - hr.left - 18, b.top - hr.top - 14, b.right - hr.left + 18, b.bottom - hr.top + 14, .14]);
       });
       host.querySelectorAll('.phero-img').forEach(function (el) { var b = el.getBoundingClientRect(); Z.push([b.left - hr.left, b.top - hr.top, b.right - hr.left, b.bottom - hr.top, .08]); });
-      if (dense) { var hb = host.querySelector('.hero-bg'); if (hb) { var ib = hb.getBoundingClientRect(); Z.push([ib.left - hr.left + ib.width * .2, 0, W, H, .06]); } }          // the photo on the right of the home banner
+      if (dense) Z.push([W * .5, 0, W, H, .06]);          // the photo on the right of the home banner
       if (host.matches('section.cta')) Z.push([0, 0, W, H, .3]);
     }
     function q(x, y) { var f = 1; for (var i = 0; i < Z.length; i++) { var z = Z[i]; if (x > z[0] && x < z[2] && y > z[1] && y < z[3] && z[4] < f) f = z[4]; } return f; }
