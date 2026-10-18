@@ -651,3 +651,8 @@ canvas.atmo-trail{position:fixed;inset:0;z-index:9999;pointer-events:none}
 section.cta{position:relative;overflow:hidden}
 section.cta > .wrap{position:relative;z-index:2}
 .phero canvas.atmo{z-index:3}
+/* plexus hero: deep charcoal-blue field with the photo fading in on the right */
+.hero2{background:radial-gradient(120% 90% at 80% 10%,#1f3d49 0%,#16303a 45%,#0f222a 100%)}
+.hero2 .hero-bg{opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent 18%,#000 75%);mask-image:linear-gradient(90deg,transparent 18%,#000 75%);filter:saturate(.75)}
+.hero2::after{background:linear-gradient(90deg,rgba(15,34,42,.92) 0%,rgba(15,34,42,.55) 50%,rgba(15,34,42,.25) 100%),linear-gradient(0deg,rgba(15,34,42,.7),transparent 40%)}
+.hero2 canvas.atmo{mix-blend-mode:normal}
