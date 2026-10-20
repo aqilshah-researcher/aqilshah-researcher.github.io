@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.707
+Real rules often have more than one condition.
+
+2
+00:00:03.707 --> 00:00:08.795
+In this lesson, you will learn to combine conditions with OR, fix a common
+
+3
+00:00:08.795 --> 00:00:13.156
+type error, and check your new column with filters, row by row.
+
+4
+00:00:13.156 --> 00:00:15.700
+Let's make sure our logic is right!
+
+5
+00:00:17.600 --> 00:00:25.120
+In Table view, I click New column, and name it SP01 and SP02 Cancelled. The goal:
+
+6
+00:00:25.120 --> 00:00:27.940
+flag cancelled orders for two salespeople.
+
+7
+00:00:39.100 --> 00:00:40.763
+I type IF, then OR.
+
+8
+00:00:40.763 --> 00:00:45.418
+The tooltip says OR returns true if any of its arguments are true, and
+
+9
+00:00:45.418 --> 00:00:47.080
+false if all are false.
+
+10
+00:01:02.100 --> 00:01:03.353
+The first condition:
+
+11
+00:01:03.353 --> 00:01:05.024
+Order Status equals Cancelled.
+
+12
+00:01:05.024 --> 00:01:09.620
+Then a comma, and the second condition about the salesperson ID.
+
+13
+00:01:42.100 --> 00:01:43.439
+I add the results:
+
+14
+00:01:43.439 --> 00:01:45.447
+Ask the reason, or Leave it.
+
+15
+00:01:45.447 --> 00:01:47.120
+But the column shows errors.
+
+16
+00:01:52.100 --> 00:01:53.257
+The message says:
+
+17
+00:01:53.257 --> 00:01:57.887
+cannot convert value SP02 of type text to type true or false.
+
+18
+00:01:57.887 --> 00:02:04.059
+Here the second ID was written as text on its own, not as a full test.
+
+19
+00:02:04.059 --> 00:02:06.760
+Every condition must be a complete comparison.
+
+20
+00:02:17.100 --> 00:02:19.162
+After the fix, the column works:
+
+21
+00:02:19.162 --> 00:02:20.880
+Leave it for most rows.
+
+22
+00:02:29.100 --> 00:02:30.255
+Now let's check.
+
+23
+00:02:30.255 --> 00:02:35.645
+I filter the salesperson column to one ID, and the order status to Cancelled.
+
+24
+00:02:35.645 --> 00:02:38.340
+Every row shows Ask the reason. Correct!
+
+25
+00:02:47.100 --> 00:02:49.721
+Then I filter Order Status to Delivered.
+
+26
+00:02:49.721 --> 00:02:51.968
+Now every row shows Leave it.
+
+27
+00:02:51.968 --> 00:02:53.840
+The logic works both ways.
+
+28
+00:03:02.100 --> 00:03:08.220
+Always test a new column with filters before you use it in a report. Trust, but verify!
+

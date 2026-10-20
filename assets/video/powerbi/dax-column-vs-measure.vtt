@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.221
+Calculated column or measure?
+
+2
+00:00:02.221 --> 00:00:06.128
+It is the most common question new Power BI users ask.
+
+3
+00:00:06.128 --> 00:00:11.101
+In this lesson, you will learn how each one behaves in a visual, how
+
+4
+00:00:11.101 --> 00:00:15.719
+to change the way a column is summarized, and when to use which.
+
+5
+00:00:15.719 --> 00:00:17.140
+Let's clear it up!
+
+6
+00:00:19.000 --> 00:00:24.926
+In Table view, here is our calculated column, Total Amount, at the end of the Shipments table.
+
+7
+00:00:24.926 --> 00:00:28.760
+It has a value on every row, stored in the table.
+
+8
+00:00:53.500 --> 00:00:58.860
+On the report, I add a table visual, and drag in Amount, Boxes, and Total Amount.
+
+9
+00:01:18.500 --> 00:01:21.043
+Power BI adds up the columns automatically.
+
+10
+00:01:21.043 --> 00:01:27.220
+The visual shows the sum of Total Amount, the sum of Amount, and the sum of Boxes.
+
+11
+00:01:53.500 --> 00:01:58.913
+Right click a field in the Columns box to change how it is summarized:
+
+12
+00:01:58.913 --> 00:02:01.620
+Sum, Average, Minimum, Maximum, Count, and more.
+
+13
+00:02:08.500 --> 00:02:12.741
+Here I choose Average for Amount and Minimum for another field.
+
+14
+00:02:12.741 --> 00:02:15.440
+Same column, different summary, in one click.
+
+15
+00:02:23.500 --> 00:02:25.450
+So what is the difference?
+
+16
+00:02:25.450 --> 00:02:29.740
+A calculated column is computed once, for each row, and stored.
+
+17
+00:02:29.740 --> 00:02:33.250
+It is great for labels, groups, and row-level math.
+
+18
+00:02:33.250 --> 00:02:37.540
+A measure is calculated on the fly, for whatever is selected.
+
+19
+00:02:37.540 --> 00:02:40.660
+It is best for totals, averages, and ratios.
+
+20
+00:02:53.500 --> 00:02:59.740
+Back in Table view, the Total Amount column formula is Amount times Boxes, row by row.
+
+21
+00:03:10.500 --> 00:03:11.047
+Simple rule:
+
+22
+00:03:11.047 --> 00:03:13.507
+if you need it per row, use a column.
+
+23
+00:03:13.507 --> 00:03:17.060
+If you need it as a summary, use a measure. You've got it!
+

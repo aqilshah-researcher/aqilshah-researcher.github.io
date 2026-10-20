@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.136
+How many days did each order take to ship?
+
+2
+00:00:04.136 --> 00:00:06.360
+DATEDIFF answers that for every row.
+
+3
+00:00:06.360 --> 00:00:11.549
+In this lesson, you will learn to write DATEDIFF in a calculated column, fix
+
+4
+00:00:11.549 --> 00:00:17.480
+the errors caused by wrong columns or missing arguments, and check the result. Let's measure time!
+
+5
+00:00:19.400 --> 00:00:24.740
+In Table view, on the Orders table, I click New column, and name it Dated Interval.
+
+6
+00:00:30.900 --> 00:00:31.987
+I type DATEDIFF.
+
+7
+00:00:31.987 --> 00:00:33.436
+It needs three things:
+
+8
+00:00:33.436 --> 00:00:37.420
+the first date, the second date, and the interval, like DAY.
+
+9
+00:00:40.900 --> 00:00:44.807
+I choose Orders, Date, then Orders, Shipped Date, then DAY.
+
+10
+00:00:44.807 --> 00:00:46.760
+But the column shows errors.
+
+11
+00:00:58.900 --> 00:00:59.725
+The message:
+
+12
+00:00:59.725 --> 00:01:03.851
+cannot convert value July, of type text, to type date.
+
+13
+00:01:03.851 --> 00:01:08.390
+The Date column holds month names as text, not real dates.
+
+14
+00:01:08.390 --> 00:01:10.040
+DATEDIFF needs real dates.
+
+15
+00:01:28.900 --> 00:01:32.339
+When I rebuild the formula, a new message appears:
+
+16
+00:01:32.339 --> 00:01:34.249
+too few arguments were passed.
+
+17
+00:01:34.249 --> 00:01:36.160
+One argument is still missing.
+
+18
+00:01:58.900 --> 00:01:59.663
+The fix:
+
+19
+00:01:59.663 --> 00:02:01.569
+use the real date columns.
+
+20
+00:02:01.569 --> 00:02:05.000
+Orders, Order Date, then Orders, Shipped Date, then DAY.
+
+21
+00:02:08.900 --> 00:02:10.966
+Now the column fills with numbers:
+
+22
+00:02:10.966 --> 00:02:13.377
+ten, twelve, seven days, and so on.
+
+23
+00:02:13.377 --> 00:02:16.820
+Each row shows how long that order took to ship.
+
+24
+00:02:28.900 --> 00:02:32.638
+To check, I look at Order Date and Shipped Date for a few rows,
+
+25
+00:02:32.638 --> 00:02:34.240
+and count the days. They match!
+
+26
+00:02:38.900 --> 00:02:43.420
+DATEDIFF is perfect for delays, ages, and durations. Well done!
+

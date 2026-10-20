@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.377
+Every good report needs a calendar table.
+
+2
+00:00:03.377 --> 00:00:08.530
+In this lesson, you will learn to build one with a single DAX formula,
+
+3
+00:00:08.530 --> 00:00:14.788
+set the start and end dates with DATE and NOW, and see the date hierarchy appear automatically.
+
+4
+00:00:14.788 --> 00:00:16.260
+Let's build our calendar!
+
+5
+00:00:18.200 --> 00:00:20.909
+We are on the Date and Time page.
+
+6
+00:00:20.909 --> 00:00:23.279
+On the Modeling tab, click New table.
+
+7
+00:00:23.279 --> 00:00:27.680
+A table can be created with DAX, not just loaded from a file.
+
+8
+00:00:35.700 --> 00:00:37.766
+I type CALENDAR. The tooltip says:
+
+9
+00:00:37.766 --> 00:00:43.620
+returns a table with one column of all dates between a start date and an end date.
+
+10
+00:00:57.700 --> 00:00:58.942
+My first try:
+
+11
+00:00:58.942 --> 00:01:03.081
+CALENDAR, from January first, two thousand twenty five, to NOW.
+
+12
+00:01:03.081 --> 00:01:07.220
+NOW gives today's date, so the calendar always reaches today.
+
+13
+00:01:27.700 --> 00:01:34.289
+Press Enter, and the new table, Calendar two, appears in the Data pane, with one column: Date.
+
+14
+00:01:34.289 --> 00:01:37.002
+Power BI also builds a date hierarchy:
+
+15
+00:01:37.002 --> 00:01:38.940
+Year, Quarter, Month, and Day.
+
+16
+00:01:39.700 --> 00:01:44.020
+I show the dates in a table visual, so we can see every day listed.
+
+17
+00:02:12.700 --> 00:02:16.849
+Text dates can be risky, so I use the DATE function instead:
+
+18
+00:02:16.849 --> 00:02:19.269
+DATE, two thousand twenty five, one, one.
+
+19
+00:02:19.269 --> 00:02:22.380
+DATE takes the year, the month, and the day.
+
+20
+00:02:47.700 --> 00:02:51.365
+For a fixed range, use DATE for both ends.
+
+21
+00:02:51.365 --> 00:02:57.880
+Here, a second calendar runs from January first to January thirty first, two thousand twenty five.
+
+22
+00:03:22.700 --> 00:03:25.985
+The new table appears with its own date hierarchy.
+
+23
+00:03:25.985 --> 00:03:30.000
+One line of DAX, and you have a full calendar. Fantastic!
+
