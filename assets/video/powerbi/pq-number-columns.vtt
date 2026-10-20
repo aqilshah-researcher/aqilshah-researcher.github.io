@@ -1,82 +1,110 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:08.300
-In this lesson we work with number columns in Power Query, using the Financial Sample table.
+00:00:00.800 --> 00:00:04.180
+Numbers tell the story, so let's learn to shape them.
 
 2
-00:00:08.300 --> 00:00:16.100
-When a number column is selected, the Transform tab offers Statistics, Standard, Scientific, Trigonometry, and Rounding.
+00:00:04.180 --> 00:00:08.911
+In this lesson, you will learn to summarize a column with Statistics, calculate with
 
 3
-00:00:22.000 --> 00:00:28.070
-Statistics returns one summary value for the whole column, such as the sum, the
+00:00:08.911 --> 00:00:10.939
+the Standard tools, and round values.
 
 4
-00:00:28.070 --> 00:00:32.840
-minimum, the maximum, the median, the average, or the standard deviation.
+00:00:10.939 --> 00:00:17.360
+You will also learn when to change a column and when to add a new one. Let's dive in!
 
 5
-00:00:38.000 --> 00:00:44.760
-Before we use these tools, it helps to scroll through the data and understand each column:
+00:00:19.300 --> 00:00:23.759
+We are in Power Query with the Financial Sample table.
 
 6
-00:00:44.760 --> 00:00:48.140
-segment, country, product, discount band, and units sold.
+00:00:23.759 --> 00:00:31.340
+Select a number column, and the Transform tab lights up with Statistics, Standard, Scientific, Trigonometry, and Rounding.
 
 7
-00:01:04.000 --> 00:01:07.103
-Here I chose Standard Deviation on Units Sold.
+00:00:40.800 --> 00:00:45.453
+Statistics gives you one summary value for the whole column:
 
 8
-00:01:07.103 --> 00:01:11.370
-The result is a single number, about eight hundred sixty seven.
+00:00:45.453 --> 00:00:49.640
+the sum, minimum, maximum, median, average, or standard deviation.
 
 9
-00:01:11.370 --> 00:01:16.801
-Power Query replaced the whole table with this value, so we remove that step
+00:00:56.800 --> 00:01:01.358
+But first, take a moment to scroll and understand each column:
 
 10
-00:01:16.801 --> 00:01:18.740
-to get the table back.
+00:01:01.358 --> 00:01:04.674
+segment, country, product, discount band, and units sold.
 
 11
-00:01:30.000 --> 00:01:31.656
-Next, the Standard menu.
+00:01:04.674 --> 00:01:07.160
+Knowing your data always pays off.
 
 12
-00:01:31.656 --> 00:01:37.038
-Add, Multiply, Subtract, Divide, and Percent Of change every value in the column.
+00:01:22.800 --> 00:01:25.731
+Here I chose Standard Deviation on Units Sold.
 
 13
-00:01:37.038 --> 00:01:42.420
-For example, Add asks for a number and adds it to each row.
+00:01:25.731 --> 00:01:29.394
+The answer is about eight hundred sixty seven. But notice:
 
 14
-00:01:58.000 --> 00:02:01.911
-On the Transform tab, these tools change the existing column.
+00:01:29.394 --> 00:01:33.057
+Power Query replaced the whole table with this one number!
 
 15
-00:02:01.911 --> 00:02:07.387
-On the Add Column tab, the same tools create a new column and keep
+00:01:33.057 --> 00:01:36.720
+So we remove that step, and the table comes back.
 
 16
-00:02:07.387 --> 00:02:12.080
-the original, which is safer when you still need the raw values.
+00:01:48.800 --> 00:01:50.357
+Next, the Standard menu.
 
 17
-00:02:30.000 --> 00:02:30.791
-Finally, Rounding.
+00:01:50.357 --> 00:01:55.419
+Add, Multiply, Subtract, Divide, and Percent Of change every value in the column.
 
 18
-00:02:30.791 --> 00:02:36.329
-Round Up moves each value to the next whole number, Round Down to the
+00:01:55.419 --> 00:02:00.480
+Add, for example, asks for a number and adds it to each row.
 
 19
-00:02:36.329 --> 00:02:40.284
-previous one, and Round lets you choose the decimal places.
+00:02:16.800 --> 00:02:18.500
+Here is a key tip.
 
 20
-00:02:40.284 --> 00:02:44.240
-Each change appears as a new step under Applied Steps.
+00:02:18.500 --> 00:02:21.900
+On the Transform tab, these tools change the column itself.
+
+21
+00:02:21.900 --> 00:02:26.660
+On the Add Column tab, they create a new column and keep the original.
+
+22
+00:02:26.660 --> 00:02:30.060
+When you still need the raw values, add a column.
+
+23
+00:02:48.800 --> 00:02:49.505
+Finally, Rounding.
+
+24
+00:02:49.505 --> 00:02:54.437
+Round Up goes to the next whole number, Round Down to the one before,
+
+25
+00:02:54.437 --> 00:02:57.255
+and Round lets you choose the decimal places.
+
+26
+00:02:57.255 --> 00:03:00.074
+Every change becomes a step you can undo.
+
+27
+00:03:00.074 --> 00:03:02.540
+Now try it with your own data!
 

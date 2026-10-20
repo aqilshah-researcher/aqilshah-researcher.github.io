@@ -1,94 +1,118 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:03.913
-In this lesson we add a conditional column.
+00:00:00.800 --> 00:00:03.793
+What if your data could make decisions for you?
 
 2
-00:00:03.913 --> 00:00:07.327
-On the Add Column tab, choose Conditional Column.
+00:00:03.793 --> 00:00:08.450
+In this lesson, you will learn to build an if, then, else rule with
 
 3
-00:00:07.327 --> 00:00:09.887
-It works like an IF statement:
+00:00:08.450 --> 00:00:13.107
+a conditional column, edit it to give clearer results, and fix a common error
 
 4
-00:00:09.887 --> 00:00:14.580
-if a condition is true, return one value, otherwise return another.
+00:00:13.107 --> 00:00:16.100
+that appears when a column goes missing. Let's go!
 
 5
-00:00:18.000 --> 00:00:20.317
-I name the new column Planning.
+00:00:18.000 --> 00:00:21.237
+On the Add Column tab, choose Conditional Column.
 
 6
-00:00:20.317 --> 00:00:21.475
-The rule is:
+00:00:21.237 --> 00:00:24.069
+It works just like an IF statement:
 
 7
-00:00:21.475 --> 00:00:26.880
-if Units Sold is less than or equal to one thousand, then output zero.
+00:00:24.069 --> 00:00:28.520
+if a condition is true, return one value. Otherwise, return another.
 
 8
-00:00:35.000 --> 00:00:37.131
-In the Else box I type:
+00:00:35.500 --> 00:00:38.278
+I name the new column Planning. The rule:
 
 9
-00:00:37.131 --> 00:00:39.618
-We will sell this product next year.
+00:00:38.278 --> 00:00:43.140
+if Units Sold is less than or equal to one thousand, then output zero.
 
 10
-00:00:39.618 --> 00:00:43.880
-So products that sold more than one thousand units get this message.
+00:00:52.500 --> 00:00:54.577
+In the Else box, I type:
 
 11
-00:01:02.000 --> 00:01:06.223
-Click OK, and the Planning column appears at the end of the table.
+00:00:54.577 --> 00:00:57.000
+We will sell this product next year.
 
 12
-00:01:06.223 --> 00:01:11.420
-I move it next to Units Sold, so we can check the rule row by row.
+00:00:57.000 --> 00:01:01.500
+So every product that sold more than one thousand units gets this message.
 
 13
-00:01:35.000 --> 00:01:40.652
-Rows with one thousand units or fewer show zero, and the rest show our message.
+00:01:19.500 --> 00:01:21.242
+Click OK, and there it is:
 
 14
-00:01:40.652 --> 00:01:46.680
-A number and text in the same column is not ideal, so let's improve the output.
+00:01:21.242 --> 00:01:23.855
+the Planning column, at the end of the table.
 
 15
-00:01:52.000 --> 00:01:57.164
-I open the step again with the gear icon in Applied Steps, and change
+00:01:23.855 --> 00:01:28.500
+I move it next to Units Sold, so we can check the rule row by row.
 
 16
-00:01:57.164 --> 00:01:59.378
-the zero to a clear label:
+00:01:52.500 --> 00:01:53.190
+It works!
 
 17
-00:01:59.378 --> 00:02:00.116
-STOP SELLING.
+00:01:53.190 --> 00:01:56.642
+Small sellers show zero, and the rest show our message.
 
 18
-00:02:00.116 --> 00:02:01.960
-Now both results are text.
+00:01:56.642 --> 00:02:00.439
+But mixing numbers and text in one column is not ideal.
 
 19
-00:02:20.000 --> 00:02:22.227
-Be careful when you delete steps.
+00:02:00.439 --> 00:02:01.820
+Let's make it better.
 
 20
-00:02:22.227 --> 00:02:27.424
-Here a later step still refers to Planning, so once that column is gone,
+00:02:09.500 --> 00:02:14.522
+I open the step again with the gear icon in Applied Steps, and change
 
 21
-00:02:27.424 --> 00:02:29.279
-Power Query shows an error:
+00:02:14.522 --> 00:02:17.033
+zero to a clear label: STOP SELLING.
 
 22
-00:02:29.279 --> 00:02:32.620
-the column Planning of the table was not found.
+00:02:17.033 --> 00:02:20.620
+Now both results are text, and anyone can read them.
 
 23
-00:02:43.000 --> 00:02:47.760
-The fix is to delete or edit the step that depends on the missing column.
+00:02:37.500 --> 00:02:38.966
+Now, a common trap.
+
+24
+00:02:38.966 --> 00:02:41.897
+Here a later step still refers to Planning.
+
+25
+00:02:41.897 --> 00:02:45.561
+Once that column is gone, Power Query shows an error:
+
+26
+00:02:45.561 --> 00:02:47.760
+the column Planning was not found.
+
+27
+00:03:00.500 --> 00:03:01.836
+The fix is simple:
+
+28
+00:03:01.836 --> 00:03:05.509
+delete or edit the step that depends on the missing column.
+
+29
+00:03:05.509 --> 00:03:08.180
+Now you can solve this error in seconds!
 

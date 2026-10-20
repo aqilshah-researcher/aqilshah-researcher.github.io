@@ -1,118 +1,110 @@
 WEBVTT
 
 1
-00:00:00.400 --> 00:00:00.795
-Welcome.
+00:00:00.800 --> 00:00:02.191
+Welcome to Power Query!
 
 2
-00:00:00.795 --> 00:00:06.323
-In this lesson we explore the Power Query Editor, where we clean and prepare
+00:00:02.191 --> 00:00:07.409
+Clean data is the secret behind every great report, and this is where it happens.
 
 3
-00:00:06.323 --> 00:00:07.903
-data in Power BI.
+00:00:07.409 --> 00:00:12.279
+In this lesson, you will learn to find your way around the Power Query
 
 4
-00:00:07.903 --> 00:00:11.062
-Here we have loaded the Financial Sample workbook.
+00:00:12.279 --> 00:00:18.540
+Editor, check the quality of every column, and profile your data before you clean it. Let's get started!
 
 5
-00:00:11.062 --> 00:00:16.591
-In Query Settings on the right, I rename the query to Financial Sample, so
+00:00:20.300 --> 00:00:24.743
+Here is the Power Query Editor, with the Financial Sample workbook loaded.
 
 6
-00:00:16.591 --> 00:00:18.960
-it is easy to find later.
+00:00:24.743 --> 00:00:26.224
+First, a quick habit:
 
 7
-00:00:19.360 --> 00:00:24.042
-When we close and apply, the queries appear in the Data pane of the
+00:00:26.224 --> 00:00:29.557
+in Query Settings, give your query a clear name.
 
 8
-00:00:24.042 --> 00:00:25.380
-report, ready to use.
+00:00:29.557 --> 00:00:34.000
+I call it Financial Sample, so it is easy to find later.
 
 9
-00:00:36.000 --> 00:00:41.600
-Back in the Power Query Editor, the Queries pane on the left lists every
+00:00:38.900 --> 00:00:44.180
+Click Close and Apply, and your queries appear in the Data pane, ready for the report.
 
 10
-00:00:41.600 --> 00:00:42.800
-table we loaded.
+00:00:55.900 --> 00:01:01.435
+Back in the editor, the Queries pane on the left lists every table you loaded.
 
 11
-00:00:42.800 --> 00:00:45.600
-Let's open the Financial Sample query again.
+00:01:01.435 --> 00:01:03.280
+Let's open Financial Sample again.
 
 12
-00:00:50.000 --> 00:00:53.266
-Under each column header there is a thin bar.
+00:01:09.900 --> 00:01:12.992
+Look at the thin bar under each column header.
 
 13
-00:00:53.266 --> 00:00:55.807
-Hover over it to see column quality:
+00:01:12.992 --> 00:01:15.740
+Hover over it, and you see column quality:
 
 14
-00:00:55.807 --> 00:01:00.888
-the share of values that are valid, that have errors, and that are empty.
+00:01:15.740 --> 00:01:20.549
+how many values are valid, how many have errors, and how many are empty.
 
 15
-00:01:00.888 --> 00:01:04.880
-Here every value is valid, with no errors and nothing empty.
+00:01:20.549 --> 00:01:21.922
+Here, everything is valid.
 
 16
-00:01:08.000 --> 00:01:11.795
-On the right, Applied Steps records each change in order:
+00:01:21.922 --> 00:01:23.640
+That is what we want!
 
 17
-00:01:11.795 --> 00:01:15.210
-the source, the navigation, promoted headers, and changed type.
+00:01:27.900 --> 00:01:31.597
+On the right, Applied Steps records every change, in order:
 
 18
-00:01:15.210 --> 00:01:20.523
-You can click any step to see the data at that point, or remove
+00:01:31.597 --> 00:01:34.555
+the source, navigation, promoted headers, and changed type.
 
 19
-00:01:20.523 --> 00:01:22.800
-a step you do not need.
+00:01:34.555 --> 00:01:40.100
+Click any step to go back in time and see your data at that point.
 
 20
-00:01:40.000 --> 00:01:44.236
-Before we clean anything, it pays to understand the data.
+00:01:59.900 --> 00:02:03.788
+Now, before you clean anything, get to know your data.
 
 21
-00:01:44.236 --> 00:01:48.895
-On the View tab, we can switch on three helpful options:
+00:02:03.788 --> 00:02:06.898
+On the View tab, switch on three helpers:
 
 22
-00:01:48.895 --> 00:01:51.860
+00:02:06.898 --> 00:02:09.620
 column quality, column distribution, and column profile.
 
 23
-00:02:01.000 --> 00:02:04.993
-Column distribution adds a small chart under each header.
+00:02:20.900 --> 00:02:28.103
+Column distribution adds a mini chart under each header, with the number of distinct and unique values.
 
 24
-00:02:04.993 --> 00:02:09.874
-It shows how many distinct and unique values each column has.
+00:02:28.103 --> 00:02:32.340
+Segment, for example, has only five distinct values. Useful, right?
 
 25
-00:02:09.874 --> 00:02:13.423
-Segment, for example, has only five distinct values.
+00:02:45.900 --> 00:02:49.968
+Column profile gives you full statistics for the selected column:
 
 26
-00:02:13.423 --> 00:02:17.860
-From here you can also remove duplicates in one click.
+00:02:49.968 --> 00:02:56.071
+count, errors, empty values, distinct values, and a chart of how often each value appears.
 
 27
-00:02:26.000 --> 00:02:32.136
-Column profile shows full statistics for the selected column at the bottom of the screen:
-
-28
-00:02:32.136 --> 00:02:38.682
-the count, errors, empty values, distinct values, and a chart of how often each value appears.
-
-29
-00:02:38.682 --> 00:02:44.000
-This is a quick way to spot problems before you build your report.
+00:02:56.071 --> 00:03:01.360
+Use it every time, and you will catch problems before your report does.
 

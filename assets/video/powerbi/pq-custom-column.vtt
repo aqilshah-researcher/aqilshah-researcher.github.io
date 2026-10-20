@@ -1,78 +1,94 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:03.892
-A custom column lets you write your own formula.
+00:00:00.800 --> 00:00:05.112
+Sometimes the column you need does not exist yet, so you build it.
 
 2
-00:00:03.892 --> 00:00:06.906
-On the Add Column tab, click Custom Column.
+00:00:05.112 --> 00:00:09.755
+In this lesson, you will learn to write a custom column formula, read the
 
 3
-00:00:06.906 --> 00:00:10.298
-On the right is the list of available columns.
+00:00:09.755 --> 00:00:15.393
+messages that help you fix it, set the right data type, and keep your applied steps tidy.
 
 4
-00:00:10.298 --> 00:00:14.820
-Select a column and click Insert to add it to the formula.
+00:00:15.393 --> 00:00:16.720
+Let's build it together!
 
 5
-00:00:27.000 --> 00:00:29.463
-Column names go inside square brackets.
+00:00:18.600 --> 00:00:21.554
+On the Add Column tab, click Custom Column.
 
 6
-00:00:29.463 --> 00:00:35.620
-If a bracket is missing, Power Query warns you that a closing bracket is expected.
+00:00:21.554 --> 00:00:24.509
+On the right, you see all available columns.
 
 7
-00:00:48.000 --> 00:00:53.206
-Here I multiply Units Sold by Manufacturing Price and by Sale Price.
+00:00:24.509 --> 00:00:28.940
+Select one and click Insert, and it goes straight into your formula.
 
 8
-00:00:53.206 --> 00:00:59.280
-When the message says no syntax errors have been detected, the formula is ready.
+00:00:45.100 --> 00:00:47.531
+Column names live inside square brackets.
 
 9
-00:01:06.000 --> 00:01:08.835
-I name the column Total Sale and click OK.
+00:00:47.531 --> 00:00:54.420
+Miss a bracket, and Power Query tells you right away that a closing bracket is expected. Helpful!
 
 10
-00:01:08.835 --> 00:01:12.300
-The new column is added at the end of the table.
+00:01:06.100 --> 00:01:11.812
+Here I multiply Units Sold by Manufacturing Price and by Sale Price. When you see:
 
 11
-00:01:28.000 --> 00:01:32.921
-A new custom column often has the type Any, so I set its data
+00:01:11.812 --> 00:01:16.000
+no syntax errors have been detected, you are good to go.
 
 12
-00:01:32.921 --> 00:01:34.327
-type to Decimal Number.
+00:01:24.100 --> 00:01:26.866
+I name the column Total Sale and click OK.
 
 13
-00:01:34.327 --> 00:01:39.600
-Then I move Total Sale next to Sale Price, where it is easy to compare.
+00:01:26.866 --> 00:01:29.940
+Our new column appears at the end of the table.
 
 14
-00:02:08.000 --> 00:02:10.562
-Every change is saved in Applied Steps.
+00:01:46.100 --> 00:01:51.021
+New custom columns often have the type Any, so always set the data type.
 
 15
-00:02:10.562 --> 00:02:15.686
-Right click a step to rename it, delete it, delete until the end, insert
+00:01:51.021 --> 00:01:52.427
+I choose Decimal Number.
 
 16
-00:02:15.686 --> 00:02:18.248
-a step after it, or move it.
+00:01:52.427 --> 00:01:57.700
+Then I move Total Sale next to Sale Price, where it is easy to compare.
 
 17
-00:02:18.248 --> 00:02:22.640
-Give important steps clear names, so your teammates can follow your work.
+00:02:26.100 --> 00:02:28.085
+Every change lives in Applied Steps.
 
 18
-00:02:38.000 --> 00:02:43.709
-Each time the data refreshes, Power Query runs these steps again in order, so
+00:02:28.085 --> 00:02:32.716
+Right click a step, and you can rename it, delete it, insert a step
 
 19
-00:02:43.709 --> 00:02:45.340
-your cleaning is repeatable.
+00:02:32.716 --> 00:02:34.370
+after it, or move it.
+
+20
+00:02:34.370 --> 00:02:38.340
+Give important steps clear names, so your team can follow your work.
+
+21
+00:02:56.100 --> 00:02:57.519
+And the best part:
+
+22
+00:02:57.519 --> 00:03:00.357
+every refresh runs these steps again, in order.
+
+23
+00:03:00.357 --> 00:03:02.840
+Clean once, and reuse it every time!
 
