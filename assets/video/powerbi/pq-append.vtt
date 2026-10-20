@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:06.155
+Data often arrives in pieces, for example one file per enumerator or per month.
+
+2
+00:00:06.155 --> 00:00:11.510
+In this lesson, you will learn to stack those pieces into one table with
+
+3
+00:00:11.510 --> 00:00:16.100
+Append, and check that nothing is lost by counting rows. Let's combine!
+
+4
+00:00:18.000 --> 00:00:20.384
+Here is a query called All.
+
+5
+00:00:20.384 --> 00:00:26.344
+It combines two smaller queries, Ahmad and Mahmood, each holding part of the same survey.
+
+6
+00:00:26.344 --> 00:00:29.920
+Column profile shows the values in the selected column.
+
+7
+00:00:47.500 --> 00:00:53.857
+To check the total, select the query, and on the Transform tab choose Count Rows. The answer:
+
+8
+00:00:53.857 --> 00:00:56.100
+two thousand one hundred nine rows.
+
+9
+00:00:59.500 --> 00:01:01.506
+Now let's build an append ourselves.
+
+10
+00:01:01.506 --> 00:01:06.186
+The two source queries each had rows removed from the top and bottom, so
+
+11
+00:01:06.186 --> 00:01:08.860
+each holds a different part of the data.
+
+12
+00:01:19.500 --> 00:01:22.526
+Count Rows on one part gives a smaller number.
+
+13
+00:01:22.526 --> 00:01:26.560
+Write down each count, so you can check the combined total later.
+
+14
+00:01:57.500 --> 00:02:01.155
+On the Home tab, open Combine and choose Append Queries.
+
+15
+00:02:01.155 --> 00:02:05.540
+Choose Two tables, then pick the table to append from the list.
+
+16
+00:02:15.500 --> 00:02:18.591
+Click OK, and a new step appears: Appended Query.
+
+17
+00:02:18.591 --> 00:02:23.400
+The rows of the second table now sit under the rows of the first.
+
+18
+00:02:47.500 --> 00:02:48.491
+Count Rows again.
+
+19
+00:02:48.491 --> 00:02:51.796
+The total should equal the sum of the two parts.
+
+20
+00:02:51.796 --> 00:02:54.440
+If it does, nothing was lost. Great habit!
+
+21
+00:03:00.500 --> 00:03:00.886
+Remember:
+
+22
+00:03:00.886 --> 00:03:05.898
+append works best when both tables have the same column names and types.
+
+23
+00:03:05.898 --> 00:03:07.440
+Clean first, then append.
+

@@ -1,0 +1,102 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.464
+A function is only useful if it works.
+
+2
+00:00:03.464 --> 00:00:08.125
+In this lesson, you will learn to write functions with one or two inputs,
+
+3
+00:00:08.125 --> 00:00:13.120
+test them with the Invoke button, and apply them to a whole table. Let's practice!
+
+4
+00:00:15.000 --> 00:00:18.747
+I start a new blank query and call it Sum.
+
+5
+00:00:18.747 --> 00:00:22.868
+The function begins with its inputs in brackets, then the arrow.
+
+6
+00:00:22.868 --> 00:00:26.240
+As you type, IntelliSense suggests functions you can use.
+
+7
+00:00:39.500 --> 00:00:43.738
+Here is our earlier function at work in the Financial Sample:
+
+8
+00:00:43.738 --> 00:00:46.820
+a new column, Amin, calculated for every row.
+
+9
+00:00:57.500 --> 00:01:02.142
+In Invoke Custom Function, you name the new column, choose the function, and pick
+
+10
+00:01:02.142 --> 00:01:03.800
+a column for each input.
+
+11
+00:01:09.500 --> 00:01:13.086
+Now a function with one input: Amin, arrow, Amin.
+
+12
+00:01:13.086 --> 00:01:15.874
+Power Query shows an Enter Parameters form.
+
+13
+00:01:15.874 --> 00:01:19.460
+Type a value, click Invoke, and see the result.
+
+14
+00:01:24.500 --> 00:01:29.400
+With two inputs, Amin and Ali, the function can add them: Amin plus Ali.
+
+15
+00:01:29.400 --> 00:01:31.500
+The form now has two boxes.
+
+16
+00:01:39.500 --> 00:01:44.034
+Here I test it with ten and two, and the answer appears as a
+
+17
+00:01:44.034 --> 00:01:45.653
+new query called Invoked Function.
+
+18
+00:01:45.653 --> 00:01:47.920
+Testing like this is quick and safe.
+
+19
+00:02:19.500 --> 00:02:23.159
+Back in the table, I invoke a function on two columns.
+
+20
+00:02:23.159 --> 00:02:27.150
+If the inputs do not match the column types, you get errors.
+
+21
+00:02:27.150 --> 00:02:28.480
+Check your types first.
+
+22
+00:02:59.500 --> 00:03:03.380
+I test another version with the values twenty three and thirty two.
+
+23
+00:03:19.500 --> 00:03:21.909
+Functions can do text work too.
+
+24
+00:03:21.909 --> 00:03:25.925
+Here, Text dot Lower turns any text into lower case.
+
+25
+00:03:25.925 --> 00:03:29.940
+Small tools like these save hours of cleaning. Excellent work!
+

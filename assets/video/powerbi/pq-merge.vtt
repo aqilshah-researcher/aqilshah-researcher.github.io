@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.564
+If you have used VLOOKUP in Excel, you will love Merge.
+
+2
+00:00:04.564 --> 00:00:09.356
+In this lesson, you will learn to join two tables on a matching column,
+
+3
+00:00:09.356 --> 00:00:14.831
+choose the right join kind, and expand the result to bring in the columns you need.
+
+4
+00:00:14.831 --> 00:00:16.200
+Let's connect our tables!
+
+5
+00:00:18.100 --> 00:00:19.501
+We have two queries.
+
+6
+00:00:19.501 --> 00:00:24.757
+The main Financial Sample table, and a smaller one with only Segment and Total Sale.
+
+7
+00:00:24.757 --> 00:00:28.260
+We want to bring Total Sale into the main table.
+
+8
+00:00:59.600 --> 00:01:03.123
+On the Home tab, open Combine and choose Merge Queries.
+
+9
+00:01:03.123 --> 00:01:05.942
+The window shows the first table on top.
+
+10
+00:01:05.942 --> 00:01:08.760
+In the list, I choose the second table.
+
+11
+00:01:29.600 --> 00:01:32.521
+Now click the matching column in both tables.
+
+12
+00:01:32.521 --> 00:01:33.982
+Here it is Segment.
+
+13
+00:01:33.982 --> 00:01:39.460
+Power BI warns you until both tables have a selected column of the same type.
+
+14
+00:01:47.600 --> 00:01:49.820
+The Join Kind is Left Outer:
+
+15
+00:01:49.820 --> 00:01:54.260
+all rows from the first table, and matching rows from the second.
+
+16
+00:01:54.260 --> 00:01:58.330
+At the bottom, Power BI tells you how many rows match.
+
+17
+00:01:58.330 --> 00:02:01.660
+Here, seven hundred of seven hundred. A perfect match!
+
+18
+00:02:02.060 --> 00:02:02.762
+Click OK.
+
+19
+00:02:02.762 --> 00:02:05.921
+A new column appears, and each cell says Table.
+
+20
+00:02:05.921 --> 00:02:09.080
+That is the matched data, waiting to be opened.
+
+21
+00:02:09.600 --> 00:02:15.034
+Click the expand icon on the column header, tick the columns you want, here
+
+22
+00:02:15.034 --> 00:02:20.080
+Total Sale, and untick Use original column name as prefix. Then click OK.
+
+23
+00:02:22.600 --> 00:02:26.803
+Now Total Sale sits inside our main table, row by row.
+
+24
+00:02:26.803 --> 00:02:29.860
+One merge replaced a lot of manual lookups!
+
+25
+00:02:59.600 --> 00:03:03.191
+Finally, Close and Apply loads every query into the report.
+
+26
+00:03:03.191 --> 00:03:07.860
+Merge is one of the most powerful tools you have. Use it well!
+
