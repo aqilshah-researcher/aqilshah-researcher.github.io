@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.602
+Readers always want to know:
+
+2
+00:00:02.602 --> 00:00:04.765
+what period does this report cover?
+
+3
+00:00:04.765 --> 00:00:09.811
+In this lesson, you will learn to show the earliest and latest dates in
+
+4
+00:00:09.811 --> 00:00:14.857
+cards, switch between different date views, format them nicely, and start a date slicer.
+
+5
+00:00:14.857 --> 00:00:17.020
+Let's put time on the page!
+
+6
+00:00:18.900 --> 00:00:23.032
+On the Date and Time page, a card already shows the current time.
+
+7
+00:00:23.032 --> 00:00:27.800
+I add a new card, and drop in the Date field from our calendar table.
+
+8
+00:00:38.400 --> 00:00:42.494
+The card shows January first, two thousand twenty five, at midnight.
+
+9
+00:00:42.494 --> 00:00:46.960
+For a date field, the card shows the Earliest date by default.
+
+10
+00:00:58.400 --> 00:01:03.480
+I resize the card and move it next to the time card, so the page stays tidy.
+
+11
+00:01:10.400 --> 00:01:14.353
+Right click the field in the visual to change the summary:
+
+12
+00:01:14.353 --> 00:01:16.509
+Earliest, Latest, Count, or Count Distinct.
+
+13
+00:01:16.509 --> 00:01:21.180
+You can also choose to show the Date, Year, Quarter, Month, or Day.
+
+14
+00:01:48.400 --> 00:01:52.226
+Now I use the Ship date from the Shipments table.
+
+15
+00:01:52.226 --> 00:01:56.052
+The card shows Monday, January second, two thousand twenty three:
+
+16
+00:01:56.052 --> 00:01:57.582
+the earliest ship date.
+
+17
+00:01:57.582 --> 00:02:00.260
+That tells readers where the data begins.
+
+18
+00:02:08.400 --> 00:02:12.866
+In the Format pane, I adjust the callout value and the category label, so
+
+19
+00:02:12.866 --> 00:02:14.780
+the date is easy to read.
+
+20
+00:02:28.400 --> 00:02:32.379
+Next, I turn a visual into a slicer with the Ship date field.
+
+21
+00:02:32.379 --> 00:02:35.440
+Readers will be able to pick their own date range.
+
+22
+00:02:53.400 --> 00:02:58.742
+In the slicer's format settings, I set the font and size for the values.
+
+23
+00:02:58.742 --> 00:03:02.940
+Dates in cards and slicers make every report clearer. Nice job!
+
