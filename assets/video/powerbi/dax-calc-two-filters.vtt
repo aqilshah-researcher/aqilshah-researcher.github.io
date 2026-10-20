@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.824
+One filter is good, two filters are powerful.
+
+2
+00:00:03.824 --> 00:00:09.116
+In this lesson, you will learn to extend a CALCULATE measure with a second
+
+3
+00:00:09.116 --> 00:00:14.408
+filter, so you get the shipment amount for one salesperson and only delivered orders.
+
+4
+00:00:14.408 --> 00:00:15.920
+Let's sharpen our numbers!
+
+5
+00:00:17.800 --> 00:00:22.863
+On this page we have the overall shipment amount, forty four point seven million,
+
+6
+00:00:22.863 --> 00:00:27.925
+and the total for salesperson S P zero one, three point six six million.
+
+7
+00:00:27.925 --> 00:00:31.180
+I add a clear title for the next card.
+
+8
+00:00:47.300 --> 00:00:53.294
+I copy the formula of SP01 Total Amount, and create a new measure:
+
+9
+00:00:53.294 --> 00:00:56.060
+SP01 Total Amount That are Delivered.
+
+10
+00:01:05.300 --> 00:01:10.155
+After the first FILTER, I add a comma and a second FILTER:
+
+11
+00:01:10.155 --> 00:01:13.392
+the Shipments table, where Order Status equals Delivered.
+
+12
+00:01:13.392 --> 00:01:15.820
+IntelliSense helps with every function name.
+
+13
+00:01:25.300 --> 00:01:27.631
+CALCULATE now applies both filters together.
+
+14
+00:01:27.631 --> 00:01:32.680
+Only rows for S P zero one that are delivered are added up.
+
+15
+00:01:42.300 --> 00:01:45.867
+I put the new measure in a card. The result:
+
+16
+00:01:45.867 --> 00:01:47.650
+two point eight seven million.
+
+17
+00:01:47.650 --> 00:01:53.000
+Lower than three point six six, because some orders were not delivered. That makes sense!
+
+18
+00:02:17.300 --> 00:02:20.786
+To check, I look at the tables in Table view:
+
+19
+00:02:20.786 --> 00:02:24.620
+Shipments, with salesperson and order status, and Product, with its category.
+
+20
+00:02:57.300 --> 00:03:03.458
+Next, I start a measure with three filters, adding a product, Milk Bars, from the Product table.
+
+21
+00:03:03.458 --> 00:03:07.080
+Each filter narrows the result a little more. Great work!
+

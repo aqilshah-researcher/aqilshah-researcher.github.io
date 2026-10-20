@@ -1,0 +1,102 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.718
+IF works in columns, but measures need a little more care.
+
+2
+00:00:04.718 --> 00:00:09.704
+In this lesson, you will learn to put IF inside a measure, see why
+
+3
+00:00:09.704 --> 00:00:14.691
+measures need an aggregation like COUNTROWS or SUMX, and read the error messages that
+
+4
+00:00:14.691 --> 00:00:17.540
+guide you to the fix. Let's debug together!
+
+5
+00:00:19.400 --> 00:00:21.866
+Here is a measure called Reason.
+
+6
+00:00:21.866 --> 00:00:25.154
+It checks if there are any cancelled shipments.
+
+7
+00:00:25.154 --> 00:00:31.320
+Inside IF, CALCULATE with COUNTROWS counts the cancelled rows, and compares the result to zero.
+
+8
+00:00:32.900 --> 00:00:36.490
+If the count is more than zero, the card says:
+
+9
+00:00:36.490 --> 00:00:40.080
+Ask Reason for the Cancelled Shipment. Otherwise: It is okay.
+
+10
+00:00:40.900 --> 00:00:44.954
+Why not just write Order Status equals Cancelled, like in our column?
+
+11
+00:00:44.954 --> 00:00:47.319
+Because a measure has no single row.
+
+12
+00:00:47.319 --> 00:00:52.049
+It looks at many rows at once, so it needs an aggregation to turn
+
+13
+00:00:52.049 --> 00:00:53.400
+them into one value.
+
+14
+00:01:00.900 --> 00:01:03.975
+Here I try SUMX instead. The warning appears:
+
+15
+00:01:03.975 --> 00:01:07.434
+too few arguments were passed to the SUMX function.
+
+16
+00:01:07.434 --> 00:01:09.740
+The minimum argument count is two.
+
+17
+00:01:23.900 --> 00:01:26.338
+SUMX needs a table and an expression.
+
+18
+00:01:26.338 --> 00:01:29.820
+When one is missing, the visual cannot show a result.
+
+19
+00:01:53.900 --> 00:01:57.140
+Hover over the warning to read the full message.
+
+20
+00:01:57.140 --> 00:02:02.180
+It tells you exactly which function needs fixing, and how many arguments it expects.
+
+21
+00:02:28.900 --> 00:02:31.272
+I check each bracket and each comma.
+
+22
+00:02:31.272 --> 00:02:35.000
+Many DAX errors come from a bracket in the wrong place.
+
+23
+00:02:48.900 --> 00:02:52.095
+Finally, I start again with IF, step by step.
+
+24
+00:02:52.095 --> 00:02:57.065
+Read the tooltip, add one argument at a time, and test as you go.
+
+25
+00:02:57.065 --> 00:02:58.840
+That is how professionals debug!
+
