@@ -1,0 +1,78 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:03.892
+A custom column lets you write your own formula.
+
+2
+00:00:03.892 --> 00:00:06.906
+On the Add Column tab, click Custom Column.
+
+3
+00:00:06.906 --> 00:00:10.298
+On the right is the list of available columns.
+
+4
+00:00:10.298 --> 00:00:14.820
+Select a column and click Insert to add it to the formula.
+
+5
+00:00:27.000 --> 00:00:29.463
+Column names go inside square brackets.
+
+6
+00:00:29.463 --> 00:00:35.620
+If a bracket is missing, Power Query warns you that a closing bracket is expected.
+
+7
+00:00:48.000 --> 00:00:53.206
+Here I multiply Units Sold by Manufacturing Price and by Sale Price.
+
+8
+00:00:53.206 --> 00:00:59.280
+When the message says no syntax errors have been detected, the formula is ready.
+
+9
+00:01:06.000 --> 00:01:08.835
+I name the column Total Sale and click OK.
+
+10
+00:01:08.835 --> 00:01:12.300
+The new column is added at the end of the table.
+
+11
+00:01:28.000 --> 00:01:32.921
+A new custom column often has the type Any, so I set its data
+
+12
+00:01:32.921 --> 00:01:34.327
+type to Decimal Number.
+
+13
+00:01:34.327 --> 00:01:39.600
+Then I move Total Sale next to Sale Price, where it is easy to compare.
+
+14
+00:02:08.000 --> 00:02:10.562
+Every change is saved in Applied Steps.
+
+15
+00:02:10.562 --> 00:02:15.686
+Right click a step to rename it, delete it, delete until the end, insert
+
+16
+00:02:15.686 --> 00:02:18.248
+a step after it, or move it.
+
+17
+00:02:18.248 --> 00:02:22.640
+Give important steps clear names, so your teammates can follow your work.
+
+18
+00:02:38.000 --> 00:02:43.709
+Each time the data refreshes, Power Query runs these steps again in order, so
+
+19
+00:02:43.709 --> 00:02:45.340
+your cleaning is repeatable.
+

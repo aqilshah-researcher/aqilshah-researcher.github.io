@@ -1,122 +1,118 @@
 WEBVTT
 
 1
-00:00:00.400 --> 00:00:00.781
+00:00:00.400 --> 00:00:00.795
 Welcome.
 
 2
-00:00:00.781 --> 00:00:06.113
+00:00:00.795 --> 00:00:06.323
 In this lesson we explore the Power Query Editor, where we clean and prepare
 
 3
-00:00:06.113 --> 00:00:07.636
+00:00:06.323 --> 00:00:07.903
 data in Power BI.
 
 4
-00:00:07.636 --> 00:00:10.683
+00:00:07.903 --> 00:00:11.062
 Here we have loaded the Financial Sample workbook.
 
 5
-00:00:10.683 --> 00:00:16.015
+00:00:11.062 --> 00:00:16.591
 In Query Settings on the right, I rename the query to Financial Sample, so
 
 6
-00:00:16.015 --> 00:00:18.300
+00:00:16.591 --> 00:00:18.960
 it is easy to find later.
 
 7
-00:00:19.000 --> 00:00:23.667
+00:00:19.360 --> 00:00:24.042
 When we close and apply, the queries appear in the Data pane of the
 
 8
-00:00:23.667 --> 00:00:25.000
+00:00:24.042 --> 00:00:25.380
 report, ready to use.
 
 9
-00:00:36.000 --> 00:00:41.483
+00:00:36.000 --> 00:00:41.600
 Back in the Power Query Editor, the Queries pane on the left lists every
 
 10
-00:00:41.483 --> 00:00:42.658
+00:00:41.600 --> 00:00:42.800
 table we loaded.
 
 11
-00:00:42.658 --> 00:00:45.400
+00:00:42.800 --> 00:00:45.600
 Let's open the Financial Sample query again.
 
 12
-00:00:50.000 --> 00:00:53.183
+00:00:50.000 --> 00:00:53.266
 Under each column header there is a thin bar.
 
 13
-00:00:53.183 --> 00:00:58.134
-Hover over it to see column quality: the share of values that are valid,
+00:00:53.266 --> 00:00:55.807
+Hover over it to see column quality:
 
 14
-00:00:58.134 --> 00:01:00.610
-that have errors, and that are empty.
+00:00:55.807 --> 00:01:00.888
+the share of values that are valid, that have errors, and that are empty.
 
 15
-00:01:00.610 --> 00:01:04.500
+00:01:00.888 --> 00:01:04.880
 Here every value is valid, with no errors and nothing empty.
 
 16
-00:01:08.000 --> 00:01:13.133
-On the right, Applied Steps records each change in order: the source, the navigation,
+00:01:08.000 --> 00:01:11.795
+On the right, Applied Steps records each change in order:
 
 17
-00:01:13.133 --> 00:01:14.967
-promoted headers, and changed type.
+00:01:11.795 --> 00:01:15.210
+the source, the navigation, promoted headers, and changed type.
 
 18
-00:01:14.967 --> 00:01:20.100
+00:01:15.210 --> 00:01:20.523
 You can click any step to see the data at that point, or remove
 
 19
-00:01:20.100 --> 00:01:22.300
+00:01:20.523 --> 00:01:22.800
 a step you do not need.
 
 20
-00:01:40.000 --> 00:01:44.107
+00:01:40.000 --> 00:01:44.236
 Before we clean anything, it pays to understand the data.
 
 21
-00:01:44.107 --> 00:01:49.857
-On the View tab, we can switch on three helpful options: column quality, column
+00:01:44.236 --> 00:01:48.895
+On the View tab, we can switch on three helpful options:
 
 22
-00:01:49.857 --> 00:01:51.500
-distribution, and column profile.
+00:01:48.895 --> 00:01:51.860
+column quality, column distribution, and column profile.
 
 23
-00:02:01.000 --> 00:02:04.813
+00:02:01.000 --> 00:02:04.993
 Column distribution adds a small chart under each header.
 
 24
-00:02:04.813 --> 00:02:09.474
+00:02:04.993 --> 00:02:09.874
 It shows how many distinct and unique values each column has.
 
 25
-00:02:09.474 --> 00:02:12.863
+00:02:09.874 --> 00:02:13.423
 Segment, for example, has only five distinct values.
 
 26
-00:02:12.863 --> 00:02:17.100
+00:02:13.423 --> 00:02:17.860
 From here you can also remove duplicates in one click.
 
 27
-00:02:26.000 --> 00:02:31.568
-Column profile shows full statistics for the selected column at the bottom of the
+00:02:26.000 --> 00:02:32.136
+Column profile shows full statistics for the selected column at the bottom of the screen:
 
 28
-00:02:31.568 --> 00:02:37.136
-screen: the count, errors, empty values, distinct values, and a chart of how often
+00:02:32.136 --> 00:02:38.682
+the count, errors, empty values, distinct values, and a chart of how often each value appears.
 
 29
-00:02:37.136 --> 00:02:38.330
-each value appears.
-
-30
-00:02:38.330 --> 00:02:43.500
+00:02:38.682 --> 00:02:44.000
 This is a quick way to spot problems before you build your report.
 
