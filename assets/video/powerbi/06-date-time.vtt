@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:03.129
+In this lesson we work with dates and time.
+
+2
+00:00:03.129 --> 00:00:06.768
+On this page there is a date slicer built from the calendar.
+
+3
+00:00:06.768 --> 00:00:09.800
+I format it so the dates are easy to read.
+
+4
+00:00:12.000 --> 00:00:16.789
+When I change the start and end dates, every visual on the page updates
+
+5
+00:00:16.789 --> 00:00:18.500
+to show only that period.
+
+6
+00:00:25.000 --> 00:00:30.280
+The card on the right shows the current date and time, using the NOW function.
+
+7
+00:00:30.280 --> 00:00:33.800
+TODAY works the same way, but returns only the date.
+
+8
+00:00:38.000 --> 00:00:41.300
+Here in Model view we see the tables we will use.
+
+9
+00:00:48.000 --> 00:00:51.300
+The Customers table holds the customer details.
+
+10
+00:00:58.000 --> 00:01:02.822
+And the Orders table has three important dates: the order date, the required date,
+
+11
+00:01:02.822 --> 00:01:04.200
+and the shipped date.
+
+12
+00:01:10.000 --> 00:01:15.150
+On the report page, a card uses NOW to show when the report was refreshed.
+
+13
+00:01:15.150 --> 00:01:20.300
+Our goal now is to calculate the number of days between two dates with DATEDIFF.
+
+14
+00:01:48.000 --> 00:01:52.568
+I create a new measure called Date Interval, and start typing DATEDIFF.
+
+15
+00:01:52.568 --> 00:01:57.897
+It needs three arguments: the first date, the second date, and the unit, such
+
+16
+00:01:57.897 --> 00:01:59.800
+as DAY, MONTH, or YEAR.
+
+17
+00:02:10.000 --> 00:02:15.409
+If we leave out an argument, Power BI warns us: too few arguments were
+
+18
+00:02:15.409 --> 00:02:16.568
+passed to DATEDIFF.
+
+19
+00:02:16.568 --> 00:02:18.500
+So we provide all three.
+
+20
+00:02:30.000 --> 00:02:34.760
+Because we want the difference for each order, we will calculate it row by
+
+21
+00:02:34.760 --> 00:02:39.180
+row in the Orders table, between the order date and the required date.
+
+22
+00:02:39.180 --> 00:02:43.600
+This shows how much time each order had, and which orders were late.
+

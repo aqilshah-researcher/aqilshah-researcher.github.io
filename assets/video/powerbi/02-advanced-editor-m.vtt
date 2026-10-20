@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:05.057
+Every step we take in Power Query is written in a language called M.
+
+2
+00:00:05.057 --> 00:00:09.048
+In this lesson we work with that code in the Advanced Editor.
+
+3
+00:00:09.048 --> 00:00:13.372
+Here is the code for a second copy of our Financial Sample query.
+
+4
+00:00:13.372 --> 00:00:15.700
+It only has two steps so far.
+
+5
+00:00:22.000 --> 00:00:24.422
+This copy has the raw data.
+
+6
+00:00:24.422 --> 00:00:28.459
+The original Financial Sample query already has several cleaning steps.
+
+7
+00:00:28.459 --> 00:00:32.900
+Instead of repeating them by hand, we can copy the code.
+
+8
+00:00:38.000 --> 00:00:43.900
+I open the Advanced Editor for the original query, select the cleaning steps, and copy them.
+
+9
+00:00:50.000 --> 00:00:55.700
+Then I paste them into the Advanced Editor of the second query, after its existing steps.
+
+10
+00:01:08.000 --> 00:01:11.332
+Notice the message at the bottom: Token Identifier expected.
+
+11
+00:01:11.332 --> 00:01:12.443
+M is strict.
+
+12
+00:01:12.443 --> 00:01:17.627
+Each step must end with a comma, except the last one, and the word
+
+13
+00:01:17.627 --> 00:01:21.700
+in must be followed by the name of the final step.
+
+14
+00:01:32.000 --> 00:01:35.800
+So I correct the step names and make sure the line after in points
+
+15
+00:01:35.800 --> 00:01:37.700
+to the last step of the query.
+
+16
+00:02:05.000 --> 00:02:07.692
+Another common message is Token Eof expected.
+
+17
+00:02:07.692 --> 00:02:13.077
+It usually means there is extra text after the final step name, or a
+
+18
+00:02:13.077 --> 00:02:15.385
+missing comma earlier in the code.
+
+19
+00:02:15.385 --> 00:02:20.000
+Read the message, check the line it points to, and fix it.
+
+20
+00:02:28.000 --> 00:02:33.057
+When the code is correct, the editor says no syntax errors have been detected.
+
+21
+00:02:33.057 --> 00:02:37.753
+Click Done, and the same cleaning steps are now applied to both queries.
+
+22
+00:02:37.753 --> 00:02:42.810
+Tip: always copy the original code into a text file before you edit it,
+
+23
+00:02:42.810 --> 00:02:45.700
+so you can go back if something breaks.
+
