@@ -1,0 +1,78 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:03.600
+In this lesson we use SUM and CALCULATE.
+
+2
+00:00:03.600 --> 00:00:08.800
+The card shows the overall shipment amount, about forty four point seven million.
+
+3
+00:00:08.800 --> 00:00:15.200
+It comes from a simple measure: the SUM of the Amount column in the Shipments table.
+
+4
+00:00:20.000 --> 00:00:26.640
+Now we want the amount for only one salesperson, with the code S P zero one.
+
+5
+00:00:26.640 --> 00:00:30.375
+I create a new measure called SP01 Total Amount.
+
+6
+00:00:30.375 --> 00:00:31.620
+It uses CALCULATE.
+
+7
+00:00:31.620 --> 00:00:36.600
+The first argument is the expression we want, the SUM of Amount.
+
+8
+00:00:55.000 --> 00:00:57.327
+The second argument is the filter.
+
+9
+00:00:57.327 --> 00:01:02.756
+I use the FILTER function: first the table, Shipments, and then the condition, the
+
+10
+00:01:02.756 --> 00:01:05.471
+salesperson ID equals S P zero one.
+
+11
+00:01:05.471 --> 00:01:10.900
+CALCULATE then works out the sum only for the rows that pass the filter.
+
+12
+00:01:30.000 --> 00:01:35.056
+I add the new measure to a card, and add text boxes as titles,
+
+13
+00:01:35.056 --> 00:01:37.944
+so readers know exactly what each number means.
+
+14
+00:01:37.944 --> 00:01:43.000
+The total for S P zero one is about three point six six million.
+
+15
+00:02:20.000 --> 00:02:25.133
+Let's look at the Shipments table in Table view to see the columns we
+
+16
+00:02:25.133 --> 00:02:30.267
+used: the shipment ID, the salesperson ID, the product, the ship date, the amount,
+
+17
+00:02:30.267 --> 00:02:33.200
+the number of boxes, and the order status.
+
+18
+00:02:38.000 --> 00:02:41.345
+CALCULATE is the most important function in DAX.
+
+19
+00:02:41.345 --> 00:02:47.200
+With the same SUM and a different filter, one measure can answer many questions.
+

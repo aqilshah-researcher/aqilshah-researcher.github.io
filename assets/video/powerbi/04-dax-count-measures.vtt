@@ -1,0 +1,66 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:03.575
+DAX is the formula language of Power BI.
+
+2
+00:00:03.575 --> 00:00:07.147
+On this page we compare two ways of counting.
+
+3
+00:00:07.147 --> 00:00:13.100
+The first card uses COUNT, and it shows twenty two products and twenty two categories.
+
+4
+00:00:14.000 --> 00:00:19.360
+Now I create a new measure, called Number of Products, Remove Duplicates.
+
+5
+00:00:19.360 --> 00:00:24.720
+The formula uses DISTINCTCOUNT on the Product column of the Product table.
+
+6
+00:00:24.720 --> 00:00:27.400
+DISTINCTCOUNT counts each value only once.
+
+7
+00:00:38.000 --> 00:00:42.850
+I copy the card visual, paste it, and place the new measure in it.
+
+8
+00:00:42.850 --> 00:00:47.700
+For products, the result is still twenty two, because every product name is different.
+
+9
+00:01:26.000 --> 00:01:33.100
+Next, a second measure: Number of Category, Remove Duplicates, using DISTINCTCOUNT on the Category column.
+
+10
+00:01:55.000 --> 00:01:57.140
+Now the difference is clear.
+
+11
+00:01:57.140 --> 00:02:03.132
+COUNT gave twenty two categories, one for every row, but DISTINCTCOUNT gives three, because
+
+12
+00:02:03.132 --> 00:02:05.700
+there are only three unique categories.
+
+13
+00:02:08.000 --> 00:02:12.642
+In the Format pane I adjust the canvas settings, so the page has enough
+
+14
+00:02:12.642 --> 00:02:14.300
+room for all the cards.
+
+15
+00:02:30.000 --> 00:02:35.600
+So remember: use COUNT when you want every row, and DISTINCTCOUNT when you want
+
+16
+00:02:35.600 --> 00:02:40.400
+unique values, such as the number of different sites, villages, or beneficiaries.
+

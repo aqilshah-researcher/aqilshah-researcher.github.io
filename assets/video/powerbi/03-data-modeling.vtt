@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:03.340
+In this lesson we build the data model.
+
+2
+00:00:03.340 --> 00:00:09.219
+Here in Model view, each box is a table, such as Customers, Orders, Products, and Categories.
+
+3
+00:00:09.219 --> 00:00:14.363
+Right now the tables are not connected, so Power BI does not know how
+
+4
+00:00:14.363 --> 00:00:16.200
+they relate to each other.
+
+5
+00:00:27.000 --> 00:00:31.871
+On the Home tab, I open Manage relationships and click Autodetect.
+
+6
+00:00:31.871 --> 00:00:38.071
+Power BI compares the column names and data in each table, and finds thirteen
+
+7
+00:00:38.071 --> 00:00:39.400
+relationships for us.
+
+8
+00:00:52.000 --> 00:00:55.450
+Autodetect is a good start, but it only guesses.
+
+9
+00:00:55.450 --> 00:01:01.583
+It matches columns that look alike, such as Customer ID in the Customers and Orders tables.
+
+10
+00:01:01.583 --> 00:01:05.800
+It can miss a relationship, or create one that is wrong.
+
+11
+00:01:05.800 --> 00:01:08.100
+So we always check the result.
+
+12
+00:01:36.000 --> 00:01:38.471
+Here is the list of relationships.
+
+13
+00:01:38.471 --> 00:01:44.235
+For each one we see the two tables, the columns that connect them, and
+
+14
+00:01:44.235 --> 00:01:47.118
+whether the relationship is active or inactive.
+
+15
+00:01:47.118 --> 00:01:50.000
+Running Autodetect again finds no new relationships.
+
+16
+00:01:50.400 --> 00:01:53.797
+Back in Model view, lines now connect the tables.
+
+17
+00:01:53.797 --> 00:01:59.081
+The numbers and arrows on each line show the cardinality, for example one to
+
+18
+00:01:59.081 --> 00:02:02.100
+many, and the direction in which filters flow.
+
+19
+00:02:19.000 --> 00:02:24.697
+To start again, or to remove relationships that are wrong, select them in Manage
+
+20
+00:02:24.697 --> 00:02:26.324
+relationships and click Delete.
+
+21
+00:02:26.324 --> 00:02:30.800
+Then you can create the correct ones yourself with New relationship.
+
+22
+00:02:40.000 --> 00:02:45.722
+A clean model, with clear relationships between your fact tables and your lookup tables,
+
+23
+00:02:45.722 --> 00:02:49.400
+makes every report faster and every number more reliable.
+
