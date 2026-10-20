@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.281
+In this lesson we use IF in a calculated column.
+
+2
+00:00:04.281 --> 00:00:08.440
+In Table view, on the Shipments table, I click New column.
+
+3
+00:00:12.000 --> 00:00:14.627
+The column is called SP01 Cancelled.
+
+4
+00:00:14.627 --> 00:00:16.378
+IF has three parts:
+
+5
+00:00:16.378 --> 00:00:21.631
+a logical test, the value if true, and the value if false.
+
+6
+00:00:21.631 --> 00:00:26.009
+If the order status is Cancelled, return Ask the Reason.
+
+7
+00:00:26.009 --> 00:00:27.760
+Otherwise, return Leave It.
+
+8
+00:00:40.000 --> 00:00:42.220
+Now we add a second condition:
+
+9
+00:00:42.220 --> 00:00:45.180
+the salesperson must be S P zero one.
+
+10
+00:00:45.180 --> 00:00:48.510
+To test two things at once, we use AND.
+
+11
+00:00:48.510 --> 00:00:51.840
+AND checks whether all of its arguments are true.
+
+12
+00:01:06.000 --> 00:01:11.194
+The AND function accepts only two arguments, and it must sit inside the IF
+
+13
+00:01:11.194 --> 00:01:13.050
+test, before the first comma.
+
+14
+00:01:13.050 --> 00:01:16.760
+Putting it in the wrong place is a common error.
+
+15
+00:01:32.000 --> 00:01:36.397
+Instead of the AND function, you can use the double ampersand operator.
+
+16
+00:01:36.397 --> 00:01:41.160
+It means the same thing, and it can join more than two conditions.
+
+17
+00:01:58.000 --> 00:02:02.253
+For OR, use the double pipe operator, or the OR function.
+
+18
+00:02:02.253 --> 00:02:06.120
+OR returns true when at least one condition is true.
+
+19
+00:02:28.000 --> 00:02:34.169
+Calculated columns like this are a simple way to flag rows that need follow up.
+
+20
+00:02:34.169 --> 00:02:39.926
+In monitoring work, the same idea flags late reports, missing data, or sites that
+
+21
+00:02:39.926 --> 00:02:41.160
+need a visit.
+

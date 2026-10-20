@@ -1,0 +1,82 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.726
+Here I edit the relationship between Shipments and Sales Person.
+
+2
+00:00:04.726 --> 00:00:10.220
+They connect on the salesperson ID, and the cardinality is many to one.
+
+3
+00:00:13.000 --> 00:00:19.137
+On the report page, slicers for salesperson and date all filter the same Shipments table.
+
+4
+00:00:19.137 --> 00:00:22.820
+This works because of the model behind the page.
+
+5
+00:00:34.000 --> 00:00:36.747
+In Model view, Shipments sits in the middle.
+
+6
+00:00:36.747 --> 00:00:38.465
+It is the fact table.
+
+7
+00:00:38.465 --> 00:00:43.273
+It holds the numbers we measure, such as the amount and the number of
+
+8
+00:00:43.273 --> 00:00:46.020
+boxes, and an ID for each related table.
+
+9
+00:01:00.000 --> 00:01:04.539
+Around it are the lookup tables, also called dimension tables:
+
+10
+00:01:04.539 --> 00:01:07.263
+Sales Person, Product, Geography, and Calendar.
+
+11
+00:01:07.263 --> 00:01:10.440
+They describe who, what, where, and when.
+
+12
+00:01:24.000 --> 00:01:26.488
+This shape is called a star schema.
+
+13
+00:01:26.488 --> 00:01:31.465
+Every lookup table connects to the fact table with a one to many relationship,
+
+14
+00:01:31.465 --> 00:01:35.020
+and filters flow from the lookup tables to the facts.
+
+15
+00:01:48.000 --> 00:01:50.790
+Manage relationships confirms the four links:
+
+16
+00:01:50.790 --> 00:01:55.440
+Geography, Product, Calendar on the ship date, and Sales Person.
+
+17
+00:01:55.440 --> 00:01:57.300
+All four are active.
+
+18
+00:02:15.000 --> 00:02:19.673
+A star schema keeps your model simple, fast, and easy to explain.
+
+19
+00:02:19.673 --> 00:02:25.124
+When you design your own reports, aim for one fact table in the middle,
+
+20
+00:02:25.124 --> 00:02:27.460
+with clean lookup tables around it.
+

@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:03.913
+In this lesson we add a conditional column.
+
+2
+00:00:03.913 --> 00:00:07.327
+On the Add Column tab, choose Conditional Column.
+
+3
+00:00:07.327 --> 00:00:09.887
+It works like an IF statement:
+
+4
+00:00:09.887 --> 00:00:14.580
+if a condition is true, return one value, otherwise return another.
+
+5
+00:00:18.000 --> 00:00:20.317
+I name the new column Planning.
+
+6
+00:00:20.317 --> 00:00:21.475
+The rule is:
+
+7
+00:00:21.475 --> 00:00:26.880
+if Units Sold is less than or equal to one thousand, then output zero.
+
+8
+00:00:35.000 --> 00:00:37.131
+In the Else box I type:
+
+9
+00:00:37.131 --> 00:00:39.618
+We will sell this product next year.
+
+10
+00:00:39.618 --> 00:00:43.880
+So products that sold more than one thousand units get this message.
+
+11
+00:01:02.000 --> 00:01:06.223
+Click OK, and the Planning column appears at the end of the table.
+
+12
+00:01:06.223 --> 00:01:11.420
+I move it next to Units Sold, so we can check the rule row by row.
+
+13
+00:01:35.000 --> 00:01:40.652
+Rows with one thousand units or fewer show zero, and the rest show our message.
+
+14
+00:01:40.652 --> 00:01:46.680
+A number and text in the same column is not ideal, so let's improve the output.
+
+15
+00:01:52.000 --> 00:01:57.164
+I open the step again with the gear icon in Applied Steps, and change
+
+16
+00:01:57.164 --> 00:01:59.378
+the zero to a clear label:
+
+17
+00:01:59.378 --> 00:02:00.116
+STOP SELLING.
+
+18
+00:02:00.116 --> 00:02:01.960
+Now both results are text.
+
+19
+00:02:20.000 --> 00:02:22.227
+Be careful when you delete steps.
+
+20
+00:02:22.227 --> 00:02:27.424
+Here a later step still refers to Planning, so once that column is gone,
+
+21
+00:02:27.424 --> 00:02:29.279
+Power Query shows an error:
+
+22
+00:02:29.279 --> 00:02:32.620
+the column Planning of the table was not found.
+
+23
+00:02:43.000 --> 00:02:47.760
+The fix is to delete or edit the step that depends on the missing column.
+

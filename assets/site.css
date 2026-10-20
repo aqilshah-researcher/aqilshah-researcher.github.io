@@ -699,3 +699,11 @@ body > section, body > main, body > footer, body > nav.jumps, body > .statband, 
 .pbi .pbody p{font-size:15px;color:var(--ink-2);margin:0}
 .pbi .pbody .dl{margin-top:auto;padding-top:8px;font-weight:700;font-size:14px}
 .pbinote{margin-top:18px;font-size:15px}
+.pbinav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 8px}
+.pbinav a{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;background:var(--surface)}
+.pbinav a:hover{border-color:var(--teal);color:var(--accent)}
+.pbinav a span{font-size:12px;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:1px 8px}
+.pbigroup{padding-top:30px;scroll-margin-top:90px}
+.pbih{font-family:var(--serif);font-size:30px;margin:0 0 2px;color:var(--head);display:flex;align-items:center;gap:12px}
+.pbih::after{content:"";flex:1;height:2px;background:var(--grad);opacity:.5}
+.pbisub{margin:0 0 16px;font-size:15px}

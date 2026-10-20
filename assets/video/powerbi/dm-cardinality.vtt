@@ -1,0 +1,78 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:03.801
+Relationships decide how filters move between tables.
+
+2
+00:00:03.801 --> 00:00:08.045
+On this report page there are two table visuals:
+
+3
+00:00:08.045 --> 00:00:12.760
+Order IDs from Order Details, and Product Names from Products.
+
+4
+00:00:22.000 --> 00:00:27.040
+In Model view, Products and Order Details are joined on Product ID.
+
+5
+00:00:27.040 --> 00:00:29.140
+It is many to one:
+
+6
+00:00:29.140 --> 00:00:34.600
+each product appears many times in Order Details, but only once in Products.
+
+7
+00:00:48.000 --> 00:00:52.970
+Back on the report, when I select a product name, the Order ID table
+
+8
+00:00:52.970 --> 00:00:55.455
+shows only the orders for that product.
+
+9
+00:00:55.455 --> 00:00:59.360
+The filter flows from the one side to the many side.
+
+10
+00:01:16.000 --> 00:01:19.438
+With a Single direction, filters flow only one way.
+
+11
+00:01:19.438 --> 00:01:24.786
+You can set the direction to Both, but use it carefully, because it can
+
+12
+00:01:24.786 --> 00:01:27.460
+slow the model and give confusing results.
+
+13
+00:01:50.000 --> 00:01:52.531
+A large model can be hard to read.
+
+14
+00:01:52.531 --> 00:01:56.960
+Click the plus sign at the bottom of Model view to add a new
+
+15
+00:01:56.960 --> 00:02:00.440
+layout, then drag in only the tables you want to study.
+
+16
+00:02:25.000 --> 00:02:28.313
+Here I add All Customers and North Customers.
+
+17
+00:02:28.313 --> 00:02:32.040
+Customer ID appears more than once in both tables.
+
+18
+00:02:40.000 --> 00:02:45.561
+So Power BI sets the relationship to many to many and shows a warning.
+
+19
+00:02:45.561 --> 00:02:51.520
+Many to many is allowed, but duplicated keys often mean the data needs cleaning first.
+

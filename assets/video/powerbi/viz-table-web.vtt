@@ -1,0 +1,82 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:05.418
+In this lesson we load a small table of currency exchange rates from a
+
+2
+00:00:05.418 --> 00:00:08.580
+web page, and format it as a table visual.
+
+3
+00:00:16.000 --> 00:00:21.407
+With Get data from the Web, Power BI reads the page, lists the tables
+
+4
+00:00:21.407 --> 00:00:24.497
+it finds, and loads the one we choose.
+
+5
+00:00:24.497 --> 00:00:27.200
+While it loads, the window says Evaluating.
+
+6
+00:00:45.000 --> 00:00:47.790
+The new table appears in the Data pane.
+
+7
+00:00:47.790 --> 00:00:52.674
+I add a Table visual to the canvas and tick the currency column and
+
+8
+00:00:52.674 --> 00:00:53.720
+the rate column.
+
+9
+00:01:06.000 --> 00:01:07.344
+Now the formatting.
+
+10
+00:01:07.344 --> 00:01:14.515
+Select the visual, open the Format pane with the paintbrush icon, and work through the sections:
+
+11
+00:01:14.515 --> 00:01:18.100
+style presets, grid, values, column headers, and totals.
+
+12
+00:01:35.000 --> 00:01:40.180
+Under Values, I increase the font size and choose a clear font, so the
+
+13
+00:01:40.180 --> 00:01:42.030
+numbers are easy to read.
+
+14
+00:01:42.030 --> 00:01:45.360
+I also make the visual larger on the canvas.
+
+15
+00:02:02.000 --> 00:02:06.229
+It is good practice to check the numbers against the source, so I compare
+
+16
+00:02:06.229 --> 00:02:07.740
+the rates with the website.
+
+17
+00:02:20.000 --> 00:02:24.604
+Back in Power BI, I sort the table by clicking a column header.
+
+18
+00:02:24.604 --> 00:02:28.500
+Now the currencies with the highest rates are at the top.
+
+19
+00:02:38.000 --> 00:02:43.813
+Small touches like a readable font, a sorted order, and clear headers make even
+
+20
+00:02:43.813 --> 00:02:46.720
+a simple table much easier to understand.
+

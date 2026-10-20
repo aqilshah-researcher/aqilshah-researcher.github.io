@@ -1,0 +1,98 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:08.209
+Autodetect does not always find every relationship, so in this lesson we create one by hand.
+
+2
+00:00:08.209 --> 00:00:11.100
+In Manage relationships, click New relationship.
+
+3
+00:00:14.000 --> 00:00:14.837
+From table:
+
+4
+00:00:14.837 --> 00:00:15.256
+Orders.
+
+5
+00:00:15.256 --> 00:00:16.093
+To table:
+
+6
+00:00:16.093 --> 00:00:16.930
+Order Details.
+
+7
+00:00:16.930 --> 00:00:21.115
+Then click the column that links them in both tables.
+
+8
+00:00:21.115 --> 00:00:25.300
+Here it is Order ID, and Power BI highlights it.
+
+9
+00:00:36.000 --> 00:00:38.609
+Power BI suggests one to many.
+
+10
+00:00:38.609 --> 00:00:44.696
+Each order appears once in the Orders table, but many times in Order Details,
+
+11
+00:00:44.696 --> 00:00:47.740
+because one order can contain many products.
+
+12
+00:01:00.000 --> 00:01:05.791
+The cross filter direction is Single, so filters flow from Orders to Order Details.
+
+13
+00:01:05.791 --> 00:01:09.100
+Make sure Make this relationship active is ticked.
+
+14
+00:01:24.000 --> 00:01:26.206
+The cardinality list has four options:
+
+15
+00:01:26.206 --> 00:01:30.986
+many to one, one to one, one to many, and many to many.
+
+16
+00:01:30.986 --> 00:01:33.560
+Choose the one that matches your data.
+
+17
+00:01:39.000 --> 00:01:42.960
+Click Save, and the relationship appears in the list as Active.
+
+18
+00:01:50.000 --> 00:01:54.000
+In Model view, a line now joins Orders and Order Details.
+
+19
+00:01:54.000 --> 00:01:58.000
+The one and the star at each end show the cardinality.
+
+20
+00:02:18.000 --> 00:02:20.363
+Now a one to one example.
+
+21
+00:02:20.363 --> 00:02:23.909
+On this layout we have Customers and South Customers.
+
+22
+00:02:23.909 --> 00:02:27.060
+Each customer appears only once in each table.
+
+23
+00:02:38.000 --> 00:02:43.105
+I create a relationship from Customers to South Customers on Customer ID.
+
+24
+00:02:43.105 --> 00:02:49.060
+Power BI sets it to one to one, with the cross filter direction Both.
+

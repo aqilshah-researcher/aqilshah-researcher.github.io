@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:05.559
+In this lesson we try to count the products in the Bars category.
+
+2
+00:00:05.559 --> 00:00:08.283
+I create a measure called Bars Category.
+
+3
+00:00:08.283 --> 00:00:14.120
+My first attempt uses COUNTX on the Product table, with the test Category equals Bars.
+
+4
+00:00:24.000 --> 00:00:26.618
+But the card cannot show a result.
+
+5
+00:00:26.618 --> 00:00:28.488
+COUNTX is not a filter.
+
+6
+00:00:28.488 --> 00:00:33.724
+It evaluates an expression for each row and counts the results, so it cannot
+
+7
+00:00:33.724 --> 00:00:35.220
+keep only the Bars.
+
+8
+00:00:48.000 --> 00:00:51.025
+Let's look at the counting functions.
+
+9
+00:00:51.025 --> 00:00:54.051
+IntelliSense lists them as I type:
+
+10
+00:00:54.051 --> 00:00:57.580
+COUNT, COUNTA, COUNTBLANK, COUNTROWS, COUNTX, and DISTINCTCOUNT.
+
+11
+00:01:10.000 --> 00:01:13.053
+COUNTROWS counts the number of rows in a table.
+
+12
+00:01:13.053 --> 00:01:17.802
+That is what we need, but first we must give it a table that
+
+13
+00:01:17.802 --> 00:01:18.820
+contains only Bars.
+
+14
+00:01:35.000 --> 00:01:37.494
+That is the job of FILTER.
+
+15
+00:01:37.494 --> 00:01:43.312
+FILTER takes a table and a condition, and returns only the rows that pass.
+
+16
+00:01:43.312 --> 00:01:44.975
+So the pattern is:
+
+17
+00:01:44.975 --> 00:01:48.300
+COUNTROWS of FILTER, Product table, Category equals Bars.
+
+18
+00:02:02.000 --> 00:02:07.358
+Reading the tooltip for each function, and the message under the formula bar, is
+
+19
+00:02:07.358 --> 00:02:10.420
+the fastest way to fix a DAX formula.
+
+20
+00:02:25.000 --> 00:02:26.315
+Remember this pattern.
+
+21
+00:02:26.315 --> 00:02:32.452
+COUNTROWS of FILTER answers many questions, such as how many projects are in one
+
+22
+00:02:32.452 --> 00:02:35.520
+province, or how many participants are women.
+
