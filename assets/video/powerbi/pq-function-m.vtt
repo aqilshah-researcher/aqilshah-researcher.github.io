@@ -1,0 +1,110 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.774
+What if you could clean any table with one click?
+
+2
+00:00:03.774 --> 00:00:07.937
+In this lesson, you will learn to turn a set of query steps into
+
+3
+00:00:07.937 --> 00:00:12.101
+a function that takes a whole table as input, and to read the errors
+
+4
+00:00:12.101 --> 00:00:14.480
+you meet along the way. Let's level up!
+
+5
+00:00:16.400 --> 00:00:20.983
+I create a blank query called Formula, and open the Advanced Editor.
+
+6
+00:00:20.983 --> 00:00:24.420
+A blank query starts with let, Source, in, Source.
+
+7
+00:00:35.900 --> 00:00:39.186
+As I type, IntelliSense suggests matching functions.
+
+8
+00:00:39.186 --> 00:00:44.820
+Each red message, like Token equals expected, tells me what is missing.
+
+9
+00:00:55.900 --> 00:00:56.732
+I write:
+
+10
+00:00:56.732 --> 00:01:02.559
+Formula equals, open bracket, input as table, close bracket, then the arrow. This says:
+
+11
+00:01:02.559 --> 00:01:04.640
+the function receives a table.
+
+12
+00:01:10.900 --> 00:01:14.166
+Then I paste the steps copied from another query:
+
+13
+00:01:14.166 --> 00:01:17.431
+changed type, demoted headers, renamed columns, and a pivot.
+
+14
+00:01:17.431 --> 00:01:21.060
+These steps will run on any table we pass in.
+
+15
+00:01:21.460 --> 00:01:26.111
+Messages like Token Eof expected mean the structure is not complete yet.
+
+16
+00:01:26.111 --> 00:01:29.600
+The function body needs its own let and in.
+
+17
+00:02:05.900 --> 00:02:08.379
+After a few fixes, the editor says:
+
+18
+00:02:08.379 --> 00:02:10.505
+no syntax errors have been detected.
+
+19
+00:02:10.505 --> 00:02:14.755
+But the first step still points to Source, which no longer exists.
+
+20
+00:02:14.755 --> 00:02:16.880
+So I change it to input.
+
+21
+00:02:20.900 --> 00:02:23.500
+If you forget, Power Query tells you:
+
+22
+00:02:23.500 --> 00:02:25.729
+the name Source was not recognized.
+
+23
+00:02:25.729 --> 00:02:28.700
+Every step must point to something that exists.
+
+24
+00:03:05.900 --> 00:03:08.950
+When the function calls itself, Power BI shows:
+
+25
+00:03:08.950 --> 00:03:10.856
+a cyclic reference was encountered.
+
+26
+00:03:10.856 --> 00:03:13.905
+A function should never call its own query.
+
+27
+00:03:13.905 --> 00:03:18.480
+Fix the reference, and you are ready to reuse your steps anywhere!
+

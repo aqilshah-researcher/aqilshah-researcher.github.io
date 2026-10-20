@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.943
+Before we build a model, let's understand the ideas behind it.
+
+2
+00:00:04.943 --> 00:00:10.217
+In this lesson, you will learn why we connect tables, the four kinds of
+
+3
+00:00:10.217 --> 00:00:14.737
+cardinality, how filters flow, and the difference between dimension and fact tables.
+
+4
+00:00:14.737 --> 00:00:16.620
+Let's get the basics right!
+
+5
+00:00:18.500 --> 00:00:22.509
+On this report page, I wrote the key ideas as notes.
+
+6
+00:00:22.509 --> 00:00:27.611
+A relationship joins one table with another, so we can work with them as
+
+7
+00:00:27.611 --> 00:00:29.069
+if they were one.
+
+8
+00:00:29.069 --> 00:00:31.620
+It reduces repeated data, and connects everything.
+
+9
+00:00:32.020 --> 00:00:36.820
+Cardinality describes how many matching values each side has. One to one:
+
+10
+00:00:36.820 --> 00:00:41.220
+both tables have one instance of each value. Many to one:
+
+11
+00:00:41.220 --> 00:00:44.020
+one table repeats the value many times.
+
+12
+00:00:44.020 --> 00:00:46.420
+One to many is the opposite.
+
+13
+00:00:46.420 --> 00:00:48.020
+And many to many:
+
+14
+00:00:48.020 --> 00:00:49.620
+both tables repeat values.
+
+15
+00:01:00.000 --> 00:01:04.352
+In Model view, Products and Order Details show many to one.
+
+16
+00:01:04.352 --> 00:01:09.100
+Each product appears once in Products, but many times in Order Details.
+
+17
+00:01:09.500 --> 00:01:15.900
+Manage relationships lists every link, with its tables, columns, and status: active or inactive.
+
+18
+00:01:16.300 --> 00:01:19.471
+Cross filter direction decides how filters travel.
+
+19
+00:01:19.471 --> 00:01:22.643
+Both means filters work in both directions.
+
+20
+00:01:22.643 --> 00:01:26.720
+Single means filters only flow from the dimension table.
+
+21
+00:01:27.120 --> 00:01:29.447
+There are two kinds of tables.
+
+22
+00:01:29.447 --> 00:01:30.998
+Dimension tables describe things:
+
+23
+00:01:30.998 --> 00:01:33.325
+who, what, when, where, and why.
+
+24
+00:01:33.325 --> 00:01:36.040
+Fact tables hold the numbers: what happened.
+
+25
+00:01:43.000 --> 00:01:46.960
+To see a relationship in action, I add table visuals:
+
+26
+00:01:46.960 --> 00:01:50.920
+product IDs from one table, and region names from another.
+
+27
+00:02:23.000 --> 00:02:27.356
+Then I add a text box to label each visual, so readers understand what
+
+28
+00:02:27.356 --> 00:02:28.600
+they are looking at.
+
+29
+00:02:43.000 --> 00:02:46.233
+Back in Model view, here is the full model:
+
+30
+00:02:46.233 --> 00:02:48.388
+customers, orders, products, regions, and more.
+
+31
+00:02:48.388 --> 00:02:51.980
+In the next lessons, we connect them step by step.
+

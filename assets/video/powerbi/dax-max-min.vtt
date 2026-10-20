@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.224
+What is the most expensive product, and the cheapest?
+
+2
+00:00:04.224 --> 00:00:07.268
+MAX and MIN answer that in one line.
+
+3
+00:00:07.268 --> 00:00:12.595
+In this lesson, you will learn to write MAX and MIN measures, show them
+
+4
+00:00:12.595 --> 00:00:15.258
+in cards, and give them clear titles.
+
+5
+00:00:15.258 --> 00:00:16.780
+Let's find the extremes!
+
+6
+00:00:18.700 --> 00:00:23.563
+I click New measure and name it Minimum Cost per Box.
+
+7
+00:00:23.563 --> 00:00:27.983
+Typing MIN, IntelliSense lists matching functions and explains each one.
+
+8
+00:00:27.983 --> 00:00:31.520
+MIN returns the smallest value in a column.
+
+9
+00:00:38.200 --> 00:00:39.080
+The formula:
+
+10
+00:00:39.080 --> 00:00:43.920
+MIN, open bracket, Product, Cost per box, close bracket. Press Enter.
+
+11
+00:00:51.200 --> 00:00:54.457
+Next, Maximum Cost per Box, with MAX.
+
+12
+00:00:54.457 --> 00:00:56.783
+MAX returns the largest value.
+
+13
+00:00:56.783 --> 00:01:00.040
+IntelliSense helps you pick the right column.
+
+14
+00:01:13.200 --> 00:01:15.235
+I add both measures to cards.
+
+15
+00:01:15.235 --> 00:01:19.983
+The maximum cost per box is twelve point four one, and the minimum is
+
+16
+00:01:19.983 --> 00:01:21.340
+two point six five.
+
+17
+00:01:33.200 --> 00:01:38.500
+I copy a text box title, paste it above each card, and edit the text:
+
+18
+00:01:38.500 --> 00:01:41.680
+Maximum Cost Per Box, and Minimum Cost per Box.
+
+19
+00:02:26.200 --> 00:02:29.680
+Now the page shows a clean row of results:
+
+20
+00:02:29.680 --> 00:02:32.000
+COUNTROWS with FILTER, maximum, and minimum.
+
+21
+00:02:32.000 --> 00:02:34.320
+Each number has a clear label.
+
+22
+00:02:58.200 --> 00:03:02.060
+Here is another page with more statistical measures:
+
+23
+00:03:02.060 --> 00:03:09.780
+total products, total countries, the maximum and minimum, and even text results like Argentina and Venezuela.
+
+24
+00:03:09.780 --> 00:03:13.640
+MIN and MAX work on text too, alphabetically!
+
+25
+00:03:16.200 --> 00:03:17.098
+Great work.
+
+26
+00:03:17.098 --> 00:03:20.240
+These simple measures answer real questions fast.
+
