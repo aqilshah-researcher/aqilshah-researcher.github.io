@@ -1,0 +1,98 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.011
+Why repeat the same cleaning twice?
+
+2
+00:00:03.011 --> 00:00:08.171
+In this lesson, you will learn to replace several values in a text column,
+
+3
+00:00:08.171 --> 00:00:13.331
+find those steps in the Advanced Editor, and paste them into another query, fixing
+
+4
+00:00:13.331 --> 00:00:16.280
+the errors along the way. Let's work smarter!
+
+5
+00:00:18.200 --> 00:00:21.749
+Here we have two copies of the Financial Sample.
+
+6
+00:00:21.749 --> 00:00:26.480
+The second copy, Financial Sample two, has a few cleaning steps already.
+
+7
+00:01:02.700 --> 00:01:06.667
+In the Product column, I replace product names with short labels.
+
+8
+00:01:06.667 --> 00:01:09.552
+Right click a value and choose Replace Values.
+
+9
+00:01:09.552 --> 00:01:13.880
+Type the value to find, and the value to replace it with.
+
+10
+00:01:37.700 --> 00:01:40.780
+I replace three products, one by one.
+
+11
+00:01:40.780 --> 00:01:43.420
+Each replacement becomes its own step:
+
+12
+00:01:43.420 --> 00:01:47.380
+Replaced Value, Replaced Value one, and Replaced Value two.
+
+13
+00:02:00.700 --> 00:02:02.447
+Now open the Advanced Editor.
+
+14
+00:02:02.447 --> 00:02:05.593
+Here are the three replace steps, written in M.
+
+15
+00:02:05.593 --> 00:02:07.340
+I select and copy them.
+
+16
+00:02:22.700 --> 00:02:29.488
+In the other query, I open the Advanced Editor and paste the lines. Notice the error: Token comma expected.
+
+17
+00:02:29.488 --> 00:02:33.060
+The new lines must connect to the steps around them.
+
+18
+00:02:47.700 --> 00:02:51.975
+Each step must refer to the step before it by name, and every line
+
+19
+00:02:51.975 --> 00:02:55.640
+needs a comma at the end, except the last one before in.
+
+20
+00:03:09.700 --> 00:03:10.379
+Another message:
+
+21
+00:03:10.379 --> 00:03:12.076
+a comma cannot precede in.
+
+22
+00:03:12.076 --> 00:03:16.149
+So I remove the extra comma, and the code is valid again.
+
+23
+00:03:16.149 --> 00:03:19.882
+Read each message carefully, and fix one thing at a time.
+
+24
+00:03:19.882 --> 00:03:21.240
+You can do it!
+

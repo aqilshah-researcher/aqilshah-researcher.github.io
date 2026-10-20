@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.880
+Power Query has hundreds of functions, but sometimes you need your own.
+
+2
+00:00:04.880 --> 00:00:09.640
+In this lesson, you will learn to write a simple function in a blank
+
+3
+00:00:09.640 --> 00:00:15.080
+query, fix its syntax errors, and use it to create a new column for every row.
+
+4
+00:00:15.080 --> 00:00:16.440
+Let's build a tool!
+
+5
+00:00:18.300 --> 00:00:21.911
+On the Home tab, open New Source and choose Blank Query.
+
+6
+00:00:21.911 --> 00:00:25.194
+We get an empty query with just a formula bar.
+
+7
+00:00:25.194 --> 00:00:27.820
+This is where we will write our function.
+
+8
+00:01:00.800 --> 00:01:03.151
+First, I check the Financial Sample.
+
+9
+00:01:03.151 --> 00:01:07.460
+I want a function that multiplies Units Sold by Sale Price.
+
+10
+00:01:39.800 --> 00:01:43.541
+In the blank query, I type the inputs in brackets:
+
+11
+00:01:43.541 --> 00:01:49.525
+Units Sold and Sale Price, then the arrow, an equals sign and a greater than sign.
+
+12
+00:01:49.525 --> 00:01:51.770
+After the arrow comes the calculation:
+
+13
+00:01:51.770 --> 00:01:53.640
+Units Sold times Sale Price.
+
+14
+00:02:17.800 --> 00:02:20.591
+An error appears: Token comma expected.
+
+15
+00:02:20.591 --> 00:02:25.243
+Spaces in names confuse M, so I use an underscore:
+
+16
+00:02:25.243 --> 00:02:28.500
+Units underscore Sold, and Sale underscore Price.
+
+17
+00:02:42.800 --> 00:02:48.179
+Now the function is valid, and Power Query shows a small form to test it.
+
+18
+00:02:48.179 --> 00:02:52.840
+In the Financial Sample, I rename the columns to match the function inputs.
+
+19
+00:03:07.800 --> 00:03:11.493
+On the Add Column tab, I choose Invoke Custom Function.
+
+20
+00:03:11.493 --> 00:03:18.140
+I name the new column, pick the function, and choose which column goes into each input. Click OK.
+
+21
+00:03:27.800 --> 00:03:31.136
+Now every row is calculated by our own function.
+
+22
+00:03:31.136 --> 00:03:33.360
+Write it once, use it everywhere!
+

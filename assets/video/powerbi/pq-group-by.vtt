@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.709
+Thousands of rows, but you only need the totals?
+
+2
+00:00:03.709 --> 00:00:05.972
+Group By does it in one step.
+
+3
+00:00:05.972 --> 00:00:10.498
+In this lesson, you will learn to group a table by a column, count
+
+4
+00:00:10.498 --> 00:00:14.700
+the rows in each group, and get a clean summary table. Let's summarize!
+
+5
+00:00:16.600 --> 00:00:19.171
+On the Transform tab, click Group By.
+
+6
+00:00:19.171 --> 00:00:21.375
+Choose the column to group by.
+
+7
+00:00:21.375 --> 00:00:22.844
+Here I choose Province.
+
+8
+00:00:22.844 --> 00:00:28.720
+Then give the new column a name, Number of Surveys, and choose the operation: Count Rows.
+
+9
+00:00:30.100 --> 00:00:30.859
+Click OK.
+
+10
+00:00:30.859 --> 00:00:33.513
+The whole table becomes a short summary:
+
+11
+00:00:33.513 --> 00:00:38.064
+one row for each province, with the number of surveys done there.
+
+12
+00:00:38.064 --> 00:00:40.340
+Perfect for checking your field progress!
+
+13
+00:00:51.100 --> 00:00:53.693
+Let's try it on the Financial Sample.
+
+14
+00:00:53.693 --> 00:00:59.620
+I group by Product, name the new column Most Product Sales, and again choose Count Rows.
+
+15
+00:01:11.100 --> 00:01:16.140
+Now we see how many rows, or sales records, each product has.
+
+16
+00:01:16.140 --> 00:01:19.920
+Other operations include Sum, Average, Median, Min, and Max.
+
+17
+00:01:26.100 --> 00:01:26.492
+Remember:
+
+18
+00:01:26.492 --> 00:01:28.847
+Group By replaces your detailed table.
+
+19
+00:01:28.847 --> 00:01:34.340
+If you still need the details, duplicate the query first, and group the copy.
+
+20
+00:01:44.100 --> 00:01:48.792
+Next, I open Enter data to build a small table for our next lesson
+
+21
+00:01:48.792 --> 00:01:50.133
+on pivot and unpivot.
+
+22
+00:01:50.133 --> 00:01:55.160
+Group By is one of the most useful buttons in Power Query. Use it often!
+

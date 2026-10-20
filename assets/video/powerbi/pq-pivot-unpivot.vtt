@@ -1,0 +1,98 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.545
+Many Excel sheets are wide, with one column per month.
+
+2
+00:00:04.545 --> 00:00:07.167
+Power BI works best with long tables.
+
+3
+00:00:07.167 --> 00:00:12.411
+In this lesson, you will learn to unpivot month columns into rows, rename the
+
+4
+00:00:12.411 --> 00:00:15.782
+results, and pivot them back when you need to.
+
+5
+00:00:15.782 --> 00:00:17.280
+Let's reshape some data!
+
+6
+00:00:19.200 --> 00:00:22.543
+With Enter data, I build a small payroll table:
+
+7
+00:00:22.543 --> 00:00:27.743
+a Name column, and one column for each month, August, September, and October, with
+
+8
+00:00:27.743 --> 00:00:29.600
+a salary for each person.
+
+9
+00:01:03.700 --> 00:01:06.935
+I fill in the salaries for all three months. Notice:
+
+10
+00:01:06.935 --> 00:01:08.552
+this is a wide table.
+
+11
+00:01:08.552 --> 00:01:11.140
+Each new month would need a new column.
+
+12
+00:01:53.700 --> 00:01:56.353
+I name the table Payroll and click OK.
+
+13
+00:01:56.353 --> 00:01:57.680
+Now let's reshape it.
+
+14
+00:02:23.700 --> 00:02:29.571
+Select the Name column, then on the Transform tab, choose Unpivot Other Columns.
+
+15
+00:02:29.571 --> 00:02:32.280
+Everything except Name turns into rows.
+
+16
+00:02:50.700 --> 00:02:52.733
+Now we have three columns:
+
+17
+00:02:52.733 --> 00:02:54.360
+Name, Attribute, and Value.
+
+18
+00:02:54.360 --> 00:02:58.020
+Each person appears three times, once for each month.
+
+19
+00:02:58.020 --> 00:03:01.680
+This long shape is perfect for charts and DAX.
+
+20
+00:03:13.700 --> 00:03:19.000
+I rename Attribute to Month, and Value to Salary, so the table is easy to read.
+
+21
+00:03:28.700 --> 00:03:30.247
+And to go back?
+
+22
+00:03:30.247 --> 00:03:32.567
+Select Month, and choose Pivot Column.
+
+23
+00:03:32.567 --> 00:03:37.207
+Pick Salary as the values column, and the months become columns again.
+
+24
+00:03:37.207 --> 00:03:39.140
+Two clicks, two shapes. Brilliant!
+
