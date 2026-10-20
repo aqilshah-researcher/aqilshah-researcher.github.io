@@ -1,78 +1,106 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:03.801
-Relationships decide how filters move between tables.
+00:00:00.800 --> 00:00:04.870
+Have you ever clicked a chart and watched the whole page change?
 
 2
-00:00:03.801 --> 00:00:08.045
-On this report page there are two table visuals:
+00:00:04.870 --> 00:00:06.226
+That is filter flow.
 
 3
-00:00:08.045 --> 00:00:12.760
-Order IDs from Order Details, and Product Names from Products.
+00:00:06.226 --> 00:00:10.974
+In this lesson, you will learn how filters move across relationships, when to use
 
 4
-00:00:22.000 --> 00:00:27.040
-In Model view, Products and Order Details are joined on Product ID.
+00:00:10.974 --> 00:00:14.704
+single or both directions, and how to handle many to many.
 
 5
-00:00:27.040 --> 00:00:29.140
-It is many to one:
+00:00:14.704 --> 00:00:16.400
+Let's see it in action!
 
 6
-00:00:29.140 --> 00:00:34.600
-each product appears many times in Order Details, but only once in Products.
+00:00:18.300 --> 00:00:20.491
+Relationships decide how filters move.
 
 7
-00:00:48.000 --> 00:00:52.970
-Back on the report, when I select a product name, the Order ID table
+00:00:20.491 --> 00:00:23.997
+On this page, we have two table visuals:
 
 8
-00:00:52.970 --> 00:00:55.455
-shows only the orders for that product.
+00:00:23.997 --> 00:00:28.380
+Order IDs from Order Details, and Product Names from Products.
 
 9
-00:00:55.455 --> 00:00:59.360
-The filter flows from the one side to the many side.
+00:00:39.800 --> 00:00:44.544
+In Model view, Products and Order Details are joined on Product ID.
 
 10
-00:01:16.000 --> 00:01:19.438
-With a Single direction, filters flow only one way.
+00:00:44.544 --> 00:00:46.521
+It is many to one:
 
 11
-00:01:19.438 --> 00:01:24.786
-You can set the direction to Both, but use it carefully, because it can
+00:00:46.521 --> 00:00:51.660
+each product appears many times in Order Details, but only once in Products.
 
 12
-00:01:24.786 --> 00:01:27.460
-slow the model and give confusing results.
+00:01:05.800 --> 00:01:07.852
+Back on the report, watch this.
 
 13
-00:01:50.000 --> 00:01:52.531
-A large model can be hard to read.
+00:01:07.852 --> 00:01:12.982
+I select a product name, and the Order ID table shows only that product's orders.
 
 14
-00:01:52.531 --> 00:01:56.960
-Click the plus sign at the bottom of Model view to add a new
+00:01:12.982 --> 00:01:16.744
+The filter flows from the one side to the many side.
 
 15
-00:01:56.960 --> 00:02:00.440
-layout, then drag in only the tables you want to study.
+00:01:16.744 --> 00:01:19.480
+That is the magic of a good model!
 
 16
-00:02:25.000 --> 00:02:28.313
-Here I add All Customers and North Customers.
+00:01:33.800 --> 00:01:36.937
+With a Single direction, filters flow only one way.
 
 17
-00:02:28.313 --> 00:02:32.040
-Customer ID appears more than once in both tables.
+00:01:36.937 --> 00:01:41.817
+You can choose Both, but use it with care, because it can slow your
 
 18
-00:02:40.000 --> 00:02:45.561
-So Power BI sets the relationship to many to many and shows a warning.
+00:01:41.817 --> 00:01:43.560
+model and give confusing results.
 
 19
-00:02:45.561 --> 00:02:51.520
-Many to many is allowed, but duplicated keys often mean the data needs cleaning first.
+00:02:07.800 --> 00:02:09.931
+Big models get busy. Here's a tip:
+
+20
+00:02:09.931 --> 00:02:14.192
+click the plus sign at the bottom of Model view to add a new
+
+21
+00:02:14.192 --> 00:02:17.540
+layout, and drag in only the tables you want to study.
+
+22
+00:02:42.800 --> 00:02:45.925
+Here I add All Customers and North Customers.
+
+23
+00:02:45.925 --> 00:02:49.440
+Customer ID appears more than once in both tables.
+
+24
+00:02:57.800 --> 00:03:01.625
+So Power BI sets many to many, and shows a warning.
+
+25
+00:03:01.625 --> 00:03:06.146
+It is allowed, but duplicate keys often mean your data needs cleaning first.
+
+26
+00:03:06.146 --> 00:03:08.580
+Now you know what to look for!
 

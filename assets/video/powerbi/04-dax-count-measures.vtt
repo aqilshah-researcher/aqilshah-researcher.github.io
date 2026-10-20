@@ -1,74 +1,90 @@
 WEBVTT
 
 1
-00:00:00.400 --> 00:00:03.675
-DAX is the formula language of Power BI.
+00:00:00.800 --> 00:00:01.468
+How many?
 
 2
-00:00:03.675 --> 00:00:07.359
-On this page we compare two ways of counting.
+00:00:01.468 --> 00:00:04.475
+It is the most common question in any report.
 
 3
-00:00:07.359 --> 00:00:13.500
-The first card uses COUNT, and it shows twenty two products and twenty two categories.
+00:00:04.475 --> 00:00:09.151
+In this lesson, you will learn to write COUNT and DISTINCTCOUNT measures, show them
 
 4
-00:00:14.000 --> 00:00:19.552
-Now I create a new measure, called Number of Products, Remove Duplicates.
+00:00:09.151 --> 00:00:13.160
+in cards, and choose the right one for your question. Let's count!
 
 5
-00:00:19.552 --> 00:00:25.104
-The formula uses DISTINCTCOUNT on the Product column of the Product table.
+00:00:15.000 --> 00:00:18.244
+DAX is the formula language of Power BI.
 
 6
-00:00:25.104 --> 00:00:27.880
-DISTINCTCOUNT counts each value only once.
+00:00:18.244 --> 00:00:21.894
+On this page, we compare two ways of counting.
 
 7
-00:00:38.000 --> 00:00:43.050
-I copy the card visual, paste it, and place the new measure in it.
+00:00:21.894 --> 00:00:23.921
+The first card uses COUNT:
 
 8
-00:00:43.050 --> 00:00:48.100
-For products, the result is still twenty two, because every product name is different.
+00:00:23.921 --> 00:00:26.760
+twenty two products, and twenty two categories.
 
 9
-00:01:26.000 --> 00:01:27.973
-Next, a second measure:
+00:00:28.600 --> 00:00:30.400
+Now a new measure:
 
 10
-00:01:27.973 --> 00:01:33.400
-Number of Category, Remove Duplicates, using DISTINCTCOUNT on the Category column.
+00:00:30.400 --> 00:00:32.650
+Number of Products, Remove Duplicates.
 
 11
-00:01:55.000 --> 00:01:57.212
-Now the difference is clear.
+00:00:32.650 --> 00:00:35.800
+It uses DISTINCTCOUNT on the Product column.
 
 12
-00:01:57.212 --> 00:02:03.406
-COUNT gave twenty two categories, one for every row, but DISTINCTCOUNT gives three, because
+00:00:35.800 --> 00:00:38.500
+DISTINCTCOUNT counts each value only once.
 
 13
-00:02:03.406 --> 00:02:06.060
-there are only three unique categories.
+00:00:52.600 --> 00:00:56.642
+I copy the card, paste it, and drop in the new measure.
 
 14
-00:02:08.000 --> 00:02:12.907
-In the Format pane I adjust the canvas settings, so the page has enough
+00:00:56.642 --> 00:01:01.020
+For products, we still get twenty two, because every product name is different.
 
 15
-00:02:12.907 --> 00:02:14.660
-room for all the cards.
+00:01:40.600 --> 00:01:41.093
+Next:
 
 16
-00:02:30.000 --> 00:02:30.831
-So remember:
+00:01:41.093 --> 00:01:46.520
+Number of Category, Remove Duplicates, using DISTINCTCOUNT on the Category column.
 
 17
-00:02:30.831 --> 00:02:36.646
-use COUNT when you want every row, and DISTINCTCOUNT when you want unique values,
+00:02:09.600 --> 00:02:12.357
+And now you can see the difference!
 
 18
-00:02:36.646 --> 00:02:40.800
-such as the number of different sites, villages, or beneficiaries.
+00:02:12.357 --> 00:02:15.902
+COUNT gave twenty two categories, one for every row.
+
+19
+00:02:15.902 --> 00:02:19.840
+DISTINCTCOUNT gives three, because there are only three unique categories.
+
+20
+00:02:22.600 --> 00:02:26.700
+In the Format pane, I adjust the canvas, so every card has room.
+
+21
+00:02:44.600 --> 00:02:45.484
+So remember:
+
+22
+00:02:45.484 --> 00:02:54.320
+COUNT for every row, DISTINCTCOUNT for unique values, like the number of different sites, villages, or participants. Simple and powerful!
 

@@ -1,86 +1,102 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:04.281
-In this lesson we use IF in a calculated column.
+00:00:00.800 --> 00:00:03.978
+Imagine your data flagging problems for you, automatically.
 
 2
-00:00:04.281 --> 00:00:08.440
-In Table view, on the Shipments table, I click New column.
+00:00:03.978 --> 00:00:09.541
+In this lesson, you will learn to write IF in a calculated column, combine
 
 3
-00:00:12.000 --> 00:00:14.627
-The column is called SP01 Cancelled.
+00:00:09.541 --> 00:00:13.116
+conditions with AND, and use OR for either-or rules.
 
 4
-00:00:14.627 --> 00:00:16.378
-IF has three parts:
+00:00:13.116 --> 00:00:15.500
+Let's put your data to work!
 
 5
-00:00:16.378 --> 00:00:21.631
-a logical test, the value if true, and the value if false.
+00:00:17.400 --> 00:00:20.960
+In Table view, on the Shipments table, I click New column.
 
 6
-00:00:21.631 --> 00:00:26.009
-If the order status is Cancelled, return Ask the Reason.
+00:00:28.900 --> 00:00:30.926
+The column is SP01 Cancelled.
 
 7
-00:00:26.009 --> 00:00:27.760
-Otherwise, return Leave It.
+00:00:30.926 --> 00:00:32.548
+IF has three parts:
 
 8
-00:00:40.000 --> 00:00:42.220
-Now we add a second condition:
+00:00:32.548 --> 00:00:37.006
+a test, the value if true, and the value if false.
 
 9
-00:00:42.220 --> 00:00:45.180
-the salesperson must be S P zero one.
+00:00:37.006 --> 00:00:41.059
+If the order status is Cancelled, return Ask the Reason.
 
 10
-00:00:45.180 --> 00:00:48.510
-To test two things at once, we use AND.
+00:00:41.059 --> 00:00:42.680
+Otherwise, return Leave It.
 
 11
-00:00:48.510 --> 00:00:51.840
-AND checks whether all of its arguments are true.
+00:00:56.900 --> 00:00:58.973
+Now let's add a second condition:
 
 12
-00:01:06.000 --> 00:01:11.194
-The AND function accepts only two arguments, and it must sit inside the IF
+00:00:58.973 --> 00:01:01.736
+the salesperson must be S P zero one.
 
 13
-00:01:11.194 --> 00:01:13.050
-test, before the first comma.
+00:01:01.736 --> 00:01:04.845
+To test two things at once, we use AND.
 
 14
-00:01:13.050 --> 00:01:16.760
-Putting it in the wrong place is a common error.
+00:01:04.845 --> 00:01:08.300
+AND is true only when all its conditions are true.
 
 15
-00:01:32.000 --> 00:01:36.397
-Instead of the AND function, you can use the double ampersand operator.
+00:01:22.900 --> 00:01:23.596
+Careful here:
 
 16
-00:01:36.397 --> 00:01:41.160
-It means the same thing, and it can join more than two conditions.
+00:01:23.596 --> 00:01:28.470
+the AND function takes only two arguments, and it must sit inside the IF
 
 17
-00:01:58.000 --> 00:02:02.253
-For OR, use the double pipe operator, or the OR function.
+00:01:28.470 --> 00:01:30.211
+test, before the first comma.
 
 18
-00:02:02.253 --> 00:02:06.120
-OR returns true when at least one condition is true.
+00:01:30.211 --> 00:01:34.040
+Putting it in the wrong place is a very common error.
 
 19
-00:02:28.000 --> 00:02:34.169
-Calculated columns like this are a simple way to flag rows that need follow up.
+00:01:48.900 --> 00:01:50.958
+Here's a shortcut: the double ampersand.
 
 20
-00:02:34.169 --> 00:02:39.926
-In monitoring work, the same idea flags late reports, missing data, or sites that
+00:01:50.958 --> 00:01:55.760
+It means the same as AND, and it can join more than two conditions.
 
 21
-00:02:39.926 --> 00:02:41.160
-need a visit.
+00:02:14.900 --> 00:02:17.913
+For either-or rules, use OR, or the double pipe.
+
+22
+00:02:17.913 --> 00:02:21.260
+OR is true when at least one condition is true.
+
+23
+00:02:44.900 --> 00:02:46.862
+Flags like this save hours.
+
+24
+00:02:46.862 --> 00:02:53.533
+In monitoring work, the same idea catches late reports, missing data, or sites that need a visit.
+
+25
+00:02:53.533 --> 00:02:56.280
+Now try one with your own data!
 
