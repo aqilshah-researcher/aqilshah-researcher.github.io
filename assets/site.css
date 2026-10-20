@@ -707,3 +707,7 @@ body > section, body > main, body > footer, body > nav.jumps, body > .statband, 
 .pbih{font-family:var(--serif);font-size:30px;margin:0 0 2px;color:var(--head);display:flex;align-items:center;gap:12px}
 .pbih::after{content:"";flex:1;height:2px;background:var(--grad);opacity:.5}
 .pbisub{margin:0 0 16px;font-size:15px}
+.pbi .pblearn{margin-top:6px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.pbi .pbgoals{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+.pbi .pbgoals li{font-size:14.5px;color:var(--ink-2);padding-left:22px;position:relative;line-height:1.4}
+.pbi .pbgoals li::before{content:"";position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--teal)}

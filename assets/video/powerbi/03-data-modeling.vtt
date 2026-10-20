@@ -1,94 +1,90 @@
 WEBVTT
 
 1
-00:00:00.400 --> 00:00:03.433
-In this lesson we build the data model.
+00:00:00.800 --> 00:00:04.760
+A report is only as strong as the model behind it.
 
 2
-00:00:03.433 --> 00:00:09.498
-Here in Model view, each box is a table, such as Customers, Orders, Products, and Categories.
+00:00:04.760 --> 00:00:09.800
+In this lesson, you will learn to read Model view, let Power BI find
 
 3
-00:00:09.498 --> 00:00:14.805
-Right now the tables are not connected, so Power BI does not know how
+00:00:09.800 --> 00:00:16.280
+relationships with Autodetect, and then check its work, so every number you show is right. Let's start building!
 
 4
-00:00:14.805 --> 00:00:16.700
-they relate to each other.
+00:00:18.100 --> 00:00:19.706
+Welcome to Model view.
 
 5
-00:00:27.000 --> 00:00:31.966
-On the Home tab, I open Manage relationships and click Autodetect.
+00:00:19.706 --> 00:00:21.713
+Each box is a table:
 
 6
-00:00:31.966 --> 00:00:38.286
-Power BI compares the column names and data in each table, and finds thirteen
+00:00:21.713 --> 00:00:23.319
+Customers, Orders, Products, Categories.
 
 7
-00:00:38.286 --> 00:00:39.640
-relationships for us.
+00:00:23.319 --> 00:00:29.340
+Right now they are not connected, so Power BI does not know how they relate.
 
 8
-00:00:52.000 --> 00:00:55.531
-Autodetect is a good start, but it only guesses.
+00:00:44.700 --> 00:00:49.428
+On the Home tab, open Manage relationships and click Autodetect.
 
 9
-00:00:55.531 --> 00:01:01.810
-It matches columns that look alike, such as Customer ID in the Customers and Orders tables.
+00:00:49.428 --> 00:00:56.520
+Power BI compares names and data across tables, and finds thirteen relationships for us. Nice!
 
 10
-00:01:01.810 --> 00:01:06.126
-It can miss a relationship, or create one that is wrong.
+00:01:09.700 --> 00:01:11.615
+But remember: Autodetect only guesses.
 
 11
-00:01:06.126 --> 00:01:08.480
-So we always check the result.
+00:01:11.615 --> 00:01:16.595
+It matches columns that look alike, like Customer ID in Customers and Orders.
 
 12
-00:01:36.000 --> 00:01:38.541
-Here is the list of relationships.
+00:01:16.595 --> 00:01:20.425
+It can miss a link, or create a wrong one.
 
 13
-00:01:38.541 --> 00:01:44.471
-For each one we see the two tables, the columns that connect them, and
+00:01:20.425 --> 00:01:22.340
+So always check its work.
 
 14
-00:01:44.471 --> 00:01:47.435
-whether the relationship is active or inactive.
+00:01:53.700 --> 00:01:55.214
+Here is the list.
 
 15
-00:01:47.435 --> 00:01:50.400
-Running Autodetect again finds no new relationships.
+00:01:55.214 --> 00:02:01.269
+For each relationship, you see the two tables, the linking columns, and whether it is active.
 
 16
-00:01:50.800 --> 00:01:54.290
-Back in Model view, lines now connect the tables.
+00:02:01.269 --> 00:02:03.540
+Running Autodetect again finds nothing new.
 
 17
-00:01:54.290 --> 00:01:59.718
-The numbers and arrows on each line show the cardinality, for example one to
+00:02:07.700 --> 00:02:11.016
+Back in Model view, lines now connect the tables.
 
 18
-00:01:59.718 --> 00:02:02.820
-many, and the direction in which filters flow.
+00:02:11.016 --> 00:02:17.280
+The marks on each line show the cardinality, like one to many, and the direction filters flow.
 
 19
-00:02:19.000 --> 00:02:24.880
-To start again, or to remove relationships that are wrong, select them in Manage
+00:02:36.700 --> 00:02:40.077
+Want to start over, or remove a wrong link?
 
 20
-00:02:24.880 --> 00:02:26.560
-relationships and click Delete.
+00:02:40.077 --> 00:02:43.078
+Select it in Manage relationships and click Delete.
 
 21
-00:02:26.560 --> 00:02:31.180
-Then you can create the correct ones yourself with New relationship.
+00:02:43.078 --> 00:02:46.080
+Then create the right one with New relationship.
 
 22
-00:02:40.000 --> 00:02:45.892
-A clean model, with clear relationships between your fact tables and your lookup tables,
-
-23
-00:02:45.892 --> 00:02:49.680
-makes every report faster and every number more reliable.
+00:02:57.700 --> 00:03:03.300
+A clean model makes every report faster and every number more reliable. Great work!
 
