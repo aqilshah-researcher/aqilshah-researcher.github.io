@@ -1,98 +1,114 @@
 WEBVTT
 
 1
-00:00:00.500 --> 00:00:08.209
-Autodetect does not always find every relationship, so in this lesson we create one by hand.
+00:00:00.800 --> 00:00:03.787
+When Autodetect misses a link, you take control.
 
 2
-00:00:08.209 --> 00:00:11.100
-In Manage relationships, click New relationship.
+00:00:03.787 --> 00:00:09.013
+In this lesson, you will learn to create a relationship by hand, choose the
 
 3
-00:00:14.000 --> 00:00:14.837
-From table:
+00:00:09.013 --> 00:00:14.240
+right cardinality, such as one to many or one to one, and read the
 
 4
-00:00:14.837 --> 00:00:15.256
-Orders.
+00:00:14.240 --> 00:00:16.107
+relationship lines in Model view.
 
 5
-00:00:15.256 --> 00:00:16.093
-To table:
+00:00:16.107 --> 00:00:17.600
+Let's connect some tables!
 
 6
-00:00:16.093 --> 00:00:16.930
-Order Details.
+00:00:19.500 --> 00:00:25.220
+Autodetect does not always find every link, so let's create one ourselves.
 
 7
-00:00:16.930 --> 00:00:21.115
-Then click the column that links them in both tables.
+00:00:25.220 --> 00:00:28.080
+In Manage relationships, click New relationship.
 
 8
-00:00:21.115 --> 00:00:25.300
-Here it is Order ID, and Power BI highlights it.
+00:00:33.000 --> 00:00:35.816
+From table: Orders. To table: Order Details.
 
 9
-00:00:36.000 --> 00:00:38.609
-Power BI suggests one to many.
+00:00:35.816 --> 00:00:39.838
+Now click the column that links them in both tables.
 
 10
-00:00:38.609 --> 00:00:44.696
-Each order appears once in the Orders table, but many times in Order Details,
+00:00:39.838 --> 00:00:43.860
+Here, it is Order ID, and Power BI highlights it.
 
 11
-00:00:44.696 --> 00:00:47.740
-because one order can contain many products.
+00:00:55.000 --> 00:00:57.805
+Power BI suggests one to many. Why?
 
 12
-00:01:00.000 --> 00:01:05.791
-The cross filter direction is Single, so filters flow from Orders to Order Details.
+00:00:57.805 --> 00:01:03.416
+Each order appears once in Orders, but many times in Order Details, because one
 
 13
-00:01:05.791 --> 00:01:09.100
-Make sure Make this relationship active is ticked.
+00:01:03.416 --> 00:01:05.420
+order can hold many products.
 
 14
-00:01:24.000 --> 00:01:26.206
-The cardinality list has four options:
+00:01:19.000 --> 00:01:24.480
+The cross filter direction is Single, so filters flow from Orders to Order Details.
 
 15
-00:01:26.206 --> 00:01:30.986
-many to one, one to one, one to many, and many to many.
+00:01:24.480 --> 00:01:27.220
+And make sure this relationship is active.
 
 16
-00:01:30.986 --> 00:01:33.560
-Choose the one that matches your data.
+00:01:43.000 --> 00:01:45.053
+The cardinality list has four options:
 
 17
-00:01:39.000 --> 00:01:42.960
-Click Save, and the relationship appears in the list as Active.
+00:01:45.053 --> 00:01:49.502
+many to one, one to one, one to many, and many to many.
 
 18
-00:01:50.000 --> 00:01:54.000
-In Model view, a line now joins Orders and Order Details.
+00:01:49.502 --> 00:01:52.240
+Always pick the one that matches your data.
 
 19
-00:01:54.000 --> 00:01:58.000
-The one and the star at each end show the cardinality.
+00:01:58.000 --> 00:01:58.618
+Click Save.
 
 20
-00:02:18.000 --> 00:02:20.363
-Now a one to one example.
+00:01:58.618 --> 00:02:00.780
+There it is, active in the list!
 
 21
-00:02:20.363 --> 00:02:23.909
-On this layout we have Customers and South Customers.
+00:02:09.000 --> 00:02:12.588
+In Model view, a line now joins Orders and Order Details.
 
 22
-00:02:23.909 --> 00:02:27.060
-Each customer appears only once in each table.
+00:02:12.588 --> 00:02:17.480
+The one and the star at each end tell you the cardinality at a glance.
 
 23
-00:02:38.000 --> 00:02:43.105
-I create a relationship from Customers to South Customers on Customer ID.
+00:02:37.000 --> 00:02:39.251
+Now, a one to one example.
 
 24
-00:02:43.105 --> 00:02:49.060
-Power BI sets it to one to one, with the cross filter direction Both.
+00:02:39.251 --> 00:02:41.878
+Here we have Customers and South Customers.
+
+25
+00:02:41.878 --> 00:02:44.880
+Each customer appears only once in each table.
+
+26
+00:02:57.000 --> 00:03:02.413
+I link them on Customer ID, and Power BI sets one to one, with
+
+27
+00:03:02.413 --> 00:03:03.960
+filters in both directions.
+
+28
+00:03:03.960 --> 00:03:07.440
+You just built two relationships by hand. Well done!
 

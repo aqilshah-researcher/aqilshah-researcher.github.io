@@ -1,90 +1,94 @@
 WEBVTT
 
 1
-00:00:00.400 --> 00:00:03.263
-In this lesson we work with dates and time.
+00:00:00.800 --> 00:00:02.136
+Almost every report asks:
 
 2
-00:00:03.263 --> 00:00:07.079
-On this page there is a date slicer built from the calendar.
+00:00:02.136 --> 00:00:03.473
+when, and how long?
 
 3
-00:00:07.079 --> 00:00:10.260
-I format it so the dates are easy to read.
+00:00:03.473 --> 00:00:08.150
+In this lesson, you will learn to filter a page with a date slicer,
 
 4
-00:00:12.000 --> 00:00:16.922
-When I change the start and end dates, every visual on the page updates
+00:00:08.150 --> 00:00:13.830
+show the current date with NOW and TODAY, and measure the days between two dates with DATEDIFF.
 
 5
-00:00:16.922 --> 00:00:18.680
-to show only that period.
+00:00:13.830 --> 00:00:15.500
+Let's get on the clock!
 
 6
-00:00:25.000 --> 00:00:30.388
-The card on the right shows the current date and time, using the NOW function.
+00:00:17.300 --> 00:00:20.631
+On this page, a date slicer is built from the calendar.
 
 7
-00:00:30.388 --> 00:00:33.980
-TODAY works the same way, but returns only the date.
+00:00:20.631 --> 00:00:23.660
+I format it so the dates are easy to read.
 
 8
-00:00:38.000 --> 00:00:41.320
-Here in Model view we see the tables we will use.
+00:00:28.900 --> 00:00:34.020
+Change the start and end dates, and every visual on the page updates. Try it!
 
 9
-00:00:48.000 --> 00:00:51.300
-The Customers table holds the customer details.
+00:00:41.900 --> 00:00:46.117
+The card on the right shows the current date and time with NOW.
 
 10
-00:00:58.000 --> 00:01:00.800
-And the Orders table has three important dates:
+00:00:46.117 --> 00:00:49.360
+TODAY works the same way, but returns only the date.
 
 11
-00:01:00.800 --> 00:01:04.300
-the order date, the required date, and the shipped date.
+00:00:54.900 --> 00:00:57.860
+In Model view, here are the tables we will use.
 
 12
-00:01:10.000 --> 00:01:15.260
-On the report page, a card uses NOW to show when the report was refreshed.
+00:01:04.900 --> 00:01:07.720
+The Customers table holds customer details.
 
 13
-00:01:15.260 --> 00:01:20.520
-Our goal now is to calculate the number of days between two dates with DATEDIFF.
+00:01:14.900 --> 00:01:17.620
+And the Orders table has three key dates:
 
 14
-00:01:48.000 --> 00:01:52.746
-I create a new measure called Date Interval, and start typing DATEDIFF.
+00:01:17.620 --> 00:01:20.000
+order date, required date, and shipped date.
 
 15
-00:01:52.746 --> 00:01:54.328
-It needs three arguments:
+00:01:26.900 --> 00:01:31.419
+A card with NOW shows when the report was refreshed. Now our goal:
 
 16
-00:01:54.328 --> 00:02:00.260
-the first date, the second date, and the unit, such as DAY, MONTH, or YEAR.
+00:01:31.419 --> 00:01:34.200
+count the days between two dates, with DATEDIFF.
 
 17
-00:02:10.000 --> 00:02:14.009
-If we leave out an argument, Power BI warns us:
+00:02:04.900 --> 00:02:08.493
+I create a measure called Date Interval, and type DATEDIFF.
 
 18
-00:02:14.009 --> 00:02:16.815
-too few arguments were passed to DATEDIFF.
+00:02:08.493 --> 00:02:09.930
+It needs three arguments:
 
 19
-00:02:16.815 --> 00:02:18.820
-So we provide all three.
+00:02:09.930 --> 00:02:14.960
+the first date, the second date, and the unit, like DAY, MONTH, or YEAR.
 
 20
-00:02:30.000 --> 00:02:34.879
-Because we want the difference for each order, we will calculate it row by
+00:02:26.900 --> 00:02:30.951
+Leave one out, and Power BI warns you: too few arguments.
 
 21
-00:02:34.879 --> 00:02:39.409
-row in the Orders table, between the order date and the required date.
+00:02:30.951 --> 00:02:33.160
+So we always give all three.
 
 22
-00:02:39.409 --> 00:02:43.940
-This shows how much time each order had, and which orders were late.
+00:02:46.900 --> 00:02:51.855
+We want the difference for each order, between the order date and the required date.
+
+23
+00:02:51.855 --> 00:02:57.140
+This shows how much time each order had, and which ones were late. Great job today!
 
