@@ -1,0 +1,98 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:05.007
+When did your team start each interview, and how long ago was it?
+
+2
+00:00:05.007 --> 00:00:09.538
+In this lesson, you will learn to extract the time, hour, minute and second,
+
+3
+00:00:09.538 --> 00:00:13.422
+find the earliest and latest time, and calculate age from a date.
+
+4
+00:00:13.422 --> 00:00:15.040
+Let's look at the clock!
+
+5
+00:00:16.900 --> 00:00:19.965
+On the Transform tab, open the Time menu.
+
+6
+00:00:19.965 --> 00:00:24.562
+Time Only keeps just the time part of a date time value.
+
+7
+00:00:24.562 --> 00:00:29.160
+Here, the end column now shows only times like nine twenty AM.
+
+8
+00:00:30.400 --> 00:00:33.074
+Hour pulls out the hour as a number.
+
+9
+00:00:33.074 --> 00:00:35.414
+Minute and Second work the same way.
+
+10
+00:00:35.414 --> 00:00:39.760
+Use them to see, for example, which hours of the day interviews ended.
+
+11
+00:01:11.400 --> 00:01:14.476
+The Time menu also offers Earliest and Latest.
+
+12
+00:01:14.476 --> 00:01:19.858
+Earliest returns the first time in the column, and Latest returns the last one,
+
+13
+00:01:19.858 --> 00:01:21.780
+here twenty three fifty nine.
+
+14
+00:01:46.400 --> 00:01:50.880
+Both return a single value and replace the table, so I delete those steps
+
+15
+00:01:50.880 --> 00:01:52.480
+to get the table back.
+
+16
+00:02:11.400 --> 00:02:12.207
+Now, Age.
+
+17
+00:02:12.207 --> 00:02:15.837
+Select the start column, open Date, and choose Age.
+
+18
+00:02:15.837 --> 00:02:21.080
+Power Query calculates how much time has passed between each date and today.
+
+19
+00:02:26.400 --> 00:02:31.580
+The result is a duration, which looks like days, hours, minutes and seconds.
+
+20
+00:02:31.580 --> 00:02:36.760
+To make it readable, open Duration and choose Total Days, or Total Years.
+
+21
+00:02:46.400 --> 00:02:50.695
+Now each row shows the number of days since the interview.
+
+22
+00:02:50.695 --> 00:02:55.380
+The Duration menu also has Days, Hours, Minutes, Total Hours, and more.
+
+23
+00:03:01.400 --> 00:03:06.280
+Age is great for checking how old your data is, or how many days
+
+24
+00:03:06.280 --> 00:03:08.720
+a case has stayed open. Keep practicing!
+

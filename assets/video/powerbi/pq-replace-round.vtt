@@ -1,0 +1,118 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.728
+One wrong number can spoil a whole report.
+
+2
+00:00:03.728 --> 00:00:08.851
+In this lesson, you will learn to replace wrong values, round numbers the way
+
+3
+00:00:08.851 --> 00:00:12.876
+you need, and use the Information tools to test your numbers.
+
+4
+00:00:12.876 --> 00:00:14.340
+Let's fix some data!
+
+5
+00:00:16.200 --> 00:00:20.373
+Here is the Units Sold column in the Financial Sample table.
+
+6
+00:00:20.373 --> 00:00:25.305
+Some values have decimals, like two thousand one hundred eighty three point five.
+
+7
+00:00:25.305 --> 00:00:28.720
+Units should be whole numbers, so let's fix that.
+
+8
+00:00:45.700 --> 00:00:46.862
+First, Replace Values.
+
+9
+00:00:46.862 --> 00:00:50.348
+Right click a value, or use the Transform tab.
+
+10
+00:00:50.348 --> 00:00:53.447
+In Value To Find, type the wrong value.
+
+11
+00:00:53.447 --> 00:00:57.320
+In Replace With, type the correct one. Then click OK.
+
+12
+00:01:10.700 --> 00:01:12.789
+Each replacement becomes a new step:
+
+13
+00:01:12.789 --> 00:01:15.575
+Replaced Value, Replaced Value one, and so on.
+
+14
+00:01:15.575 --> 00:01:18.360
+You can click any step to check it.
+
+15
+00:01:27.700 --> 00:01:28.437
+Now, Rounding.
+
+16
+00:01:28.437 --> 00:01:30.648
+On the Transform tab, open Rounding.
+
+17
+00:01:30.648 --> 00:01:33.596
+Round Up goes to the next whole number.
+
+18
+00:01:33.596 --> 00:01:36.175
+Round Down goes to the one before.
+
+19
+00:01:36.175 --> 00:01:39.860
+And Round lets you choose the number of decimal places.
+
+20
+00:01:55.700 --> 00:01:57.836
+I choose Round, with zero decimals.
+
+21
+00:01:57.836 --> 00:02:01.040
+In the formula bar, you see Number dot Round.
+
+22
+00:02:01.040 --> 00:02:04.600
+Every value in Units Sold is now a whole number.
+
+23
+00:02:07.700 --> 00:02:09.532
+Next to Rounding is Information.
+
+24
+00:02:09.532 --> 00:02:12.830
+Is Even returns true or false for each value.
+
+25
+00:02:12.830 --> 00:02:19.060
+You also have Is Odd and Sign, which tells you if a number is positive or negative.
+
+26
+00:02:25.700 --> 00:02:28.804
+But Is Even replaced our numbers with true and false!
+
+27
+00:02:28.804 --> 00:02:33.460
+That is not what we want here, so I delete that step in Applied Steps.
+
+28
+00:02:47.700 --> 00:02:52.496
+The Standard menu is right beside it, with Add, Multiply, Divide, and more.
+
+29
+00:02:52.496 --> 00:02:57.660
+Practice each tool, and always check the result before you move on. Well done!
+

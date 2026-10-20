@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.103
+Dates hold a lot of hidden information:
+
+2
+00:00:03.103 --> 00:00:07.050
+the year, the month, the quarter, even the day of the week.
+
+3
+00:00:07.050 --> 00:00:11.655
+In this lesson, you will learn to extract each part from a date column,
+
+4
+00:00:11.655 --> 00:00:14.944
+and to find the earliest and latest dates in seconds.
+
+5
+00:00:14.944 --> 00:00:16.260
+Let's unpack some dates!
+
+6
+00:00:18.200 --> 00:00:21.404
+We are working with survey start and end times.
+
+7
+00:00:21.404 --> 00:00:25.320
+Select the end column, and on the Transform tab, open Date.
+
+8
+00:00:25.320 --> 00:00:30.660
+Here I choose Year, and the column now shows only the year: twenty twenty two.
+
+9
+00:00:32.700 --> 00:00:33.338
+Next, Month.
+
+10
+00:00:33.338 --> 00:00:37.807
+The same menu gives you the month number, and also Start of Month, End
+
+11
+00:00:37.807 --> 00:00:40.680
+of Month, Days in Month, and Name of Month.
+
+12
+00:00:49.700 --> 00:00:54.472
+Quarter tells you which quarter each date falls in, from one to four.
+
+13
+00:00:54.472 --> 00:00:55.940
+Perfect for quarterly reports.
+
+14
+00:00:59.700 --> 00:01:02.314
+The Date menu also has Week and Day options:
+
+15
+00:01:02.314 --> 00:01:06.960
+day of week, day of year, start of week, end of week, and Name of Day.
+
+16
+00:01:25.700 --> 00:01:26.075
+Remember:
+
+17
+00:01:26.075 --> 00:01:29.448
+on the Transform tab, these tools replace the column.
+
+18
+00:01:29.448 --> 00:01:35.820
+If you still need the full date, use the same tools from the Add Column tab instead.
+
+19
+00:01:57.700 --> 00:02:01.200
+Here I add Name of Day on the today column.
+
+20
+00:02:01.200 --> 00:02:04.350
+Now every row shows Monday, Tuesday, and so on.
+
+21
+00:02:04.350 --> 00:02:07.500
+Great for seeing which days your team collected data.
+
+22
+00:02:15.700 --> 00:02:19.653
+The Date menu can also find the Earliest and Latest date.
+
+23
+00:02:19.653 --> 00:02:21.090
+Earliest returns one value:
+
+24
+00:02:21.090 --> 00:02:23.246
+the first date in the column.
+
+25
+00:02:23.246 --> 00:02:26.840
+Here it is the eighteenth of February, twenty twenty two.
+
+26
+00:02:35.700 --> 00:02:40.720
+That single value replaced the table, so I delete the step to bring the table back.
+
+27
+00:02:57.700 --> 00:03:02.145
+Finally, the Time menu works the same way for hours, minutes and seconds.
+
+28
+00:03:02.145 --> 00:03:04.880
+We will explore it in the next lesson!
+

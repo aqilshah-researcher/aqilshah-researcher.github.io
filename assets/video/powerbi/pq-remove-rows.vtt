@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.655
+Real data often comes with extra rows you do not need:
+
+2
+00:00:04.655 --> 00:00:06.056
+titles, notes, test entries.
+
+3
+00:00:06.056 --> 00:00:10.962
+In this lesson, you will learn to remove rows from the top, from the
+
+4
+00:00:10.962 --> 00:00:17.620
+bottom, and in a repeating pattern, and how to recover when a step removes too much. Let's tidy up!
+
+5
+00:00:19.500 --> 00:00:23.253
+Here we have a table with survey start and end times.
+
+6
+00:00:23.253 --> 00:00:24.617
+Look at Applied Steps:
+
+7
+00:00:24.617 --> 00:00:27.687
+I have already removed some rows from the bottom.
+
+8
+00:00:27.687 --> 00:00:31.440
+Every row step is recorded, so you can always check it.
+
+9
+00:00:49.000 --> 00:00:50.479
+Now, Remove Alternate Rows.
+
+10
+00:00:50.479 --> 00:00:53.066
+It removes rows in a repeating pattern.
+
+11
+00:00:53.066 --> 00:00:54.545
+You set three numbers:
+
+12
+00:00:54.545 --> 00:01:00.460
+the first row to remove, how many rows to remove, and how many rows to keep.
+
+13
+00:01:09.000 --> 00:01:13.964
+Click OK, and Power Query applies the pattern down the whole table.
+
+14
+00:01:13.964 --> 00:01:18.100
+Notice the step name in Applied Steps: Removed Alternate Rows.
+
+15
+00:01:39.000 --> 00:01:39.363
+Oops!
+
+16
+00:01:39.363 --> 00:01:40.815
+This table is empty.
+
+17
+00:01:40.815 --> 00:01:44.809
+The pattern removed far more rows than we wanted. Don't worry.
+
+18
+00:01:44.809 --> 00:01:48.440
+Just open the step, change the numbers, or delete it.
+
+19
+00:01:59.000 --> 00:02:00.586
+Next, Remove Bottom Rows.
+
+20
+00:02:00.586 --> 00:02:04.550
+On the Home tab, open Reduce Rows, then Remove Rows.
+
+21
+00:02:04.550 --> 00:02:10.100
+Type how many rows to remove from the bottom, for example one hundred fifty.
+
+22
+00:02:27.000 --> 00:02:29.137
+This menu has more helpers:
+
+23
+00:02:29.137 --> 00:02:33.840
+Remove Top Rows, Remove Duplicates, Remove Blank Rows, and Remove Errors.
+
+24
+00:02:33.840 --> 00:02:37.260
+Keep them in mind for every cleaning job.
+
+25
+00:02:44.000 --> 00:02:47.376
+In this second query, I remove rows from the top.
+
+26
+00:02:47.376 --> 00:02:52.440
+In the formula bar, you can see Power Query writes it as Table dot Skip.
+
+27
+00:03:04.000 --> 00:03:04.390
+Tip:
+
+28
+00:03:04.390 --> 00:03:12.200
+remove rows by rules, not by hand, so your cleaning works again every time the data refreshes. Nice and clean!
+

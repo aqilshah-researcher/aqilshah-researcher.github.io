@@ -1,0 +1,110 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.969
+Percentages make numbers easy to compare.
+
+2
+00:00:02.969 --> 00:00:08.031
+In this lesson, you will learn to add a Percent Of column, add a
+
+3
+00:00:08.031 --> 00:00:12.369
+Percentage column, and keep your table tidy by moving and removing columns.
+
+4
+00:00:12.369 --> 00:00:14.900
+Let's do the math, without the math!
+
+5
+00:00:16.800 --> 00:00:20.609
+We start on the Add Column tab, with Units Sold selected.
+
+6
+00:00:20.609 --> 00:00:22.686
+Open Standard, and choose Percent Of.
+
+7
+00:00:22.686 --> 00:00:27.880
+It asks for a value, and shows each row as a percentage of that value.
+
+8
+00:00:36.300 --> 00:00:38.623
+I type a value and click OK.
+
+9
+00:00:38.623 --> 00:00:40.614
+A new column, Percent Of, appears.
+
+10
+00:00:40.614 --> 00:00:45.260
+Each row now shows units sold as a share of the number we entered.
+
+11
+00:00:54.300 --> 00:01:00.525
+I move the new column next to Units Sold, so we can compare them side by side.
+
+12
+00:01:00.525 --> 00:01:01.989
+Keep related columns together.
+
+13
+00:01:01.989 --> 00:01:03.820
+It makes checking much easier.
+
+14
+00:01:11.300 --> 00:01:18.660
+The Scientific menu sits right beside Standard, with tools like Square Root, Power, Exponent, and Logarithm.
+
+15
+00:01:19.060 --> 00:01:19.795
+Now, Percentage.
+
+16
+00:01:19.795 --> 00:01:24.204
+It takes a percentage you enter and applies it to each value.
+
+17
+00:01:24.204 --> 00:01:28.980
+For example, enter ten, and each row shows ten percent of its value.
+
+18
+00:01:31.300 --> 00:01:32.397
+Changed your mind?
+
+19
+00:01:32.397 --> 00:01:35.321
+Right click the column header and choose Remove.
+
+20
+00:01:35.321 --> 00:01:37.880
+Or delete the step in Applied Steps.
+
+21
+00:01:56.300 --> 00:02:01.453
+Here I clean up the Percent Of column and check the remaining columns:
+
+22
+00:02:01.453 --> 00:02:05.020
+Units Sold, Manufacturing Price, Sale Price, and Gross Sales.
+
+23
+00:02:21.300 --> 00:02:23.897
+Next, I try Percentage on Profit.
+
+24
+00:02:23.897 --> 00:02:27.360
+I select Profit, open Standard, and choose Percentage.
+
+25
+00:02:56.300 --> 00:02:59.941
+Percent Of can also use another column as the base.
+
+26
+00:02:59.941 --> 00:03:05.767
+Click the small icon next to Value, and pick a column from the list, like Sales.
+
+27
+00:03:05.767 --> 00:03:08.680
+Now each row compares two columns. Very powerful!
+
