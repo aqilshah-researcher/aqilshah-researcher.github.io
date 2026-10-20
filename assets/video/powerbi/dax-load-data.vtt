@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.782
+Good DAX starts with good data.
+
+2
+00:00:02.782 --> 00:00:07.405
+In this lesson, you will learn to load the right tables from a workbook,
+
+3
+00:00:07.405 --> 00:00:12.359
+give them clear names, and check the model, so your measures work the first time.
+
+4
+00:00:12.359 --> 00:00:13.680
+Let's set the stage!
+
+5
+00:00:15.600 --> 00:00:20.280
+On the Home tab, choose Excel workbook, and open the chocolate sales sample.
+
+6
+00:00:20.280 --> 00:00:23.880
+The Navigator lists every table and sheet in the file.
+
+7
+00:00:23.880 --> 00:00:25.680
+Click one to preview it.
+
+8
+00:00:35.100 --> 00:00:38.404
+Some tables, like Dimension Data, are messy sheets.
+
+9
+00:00:38.404 --> 00:00:42.535
+Others, like Table one to Table five, are clean tables.
+
+10
+00:00:42.535 --> 00:00:44.600
+Always prefer the clean tables.
+
+11
+00:00:55.100 --> 00:00:57.729
+I tick the tables I need:
+
+12
+00:00:57.729 --> 00:01:00.357
+shipments, calendar, salespeople, geography, and products.
+
+13
+00:01:00.357 --> 00:01:04.300
+Then I click Transform Data, to check them first.
+
+14
+00:01:17.100 --> 00:01:21.735
+In Power Query, the names Table one, Table two, mean nothing.
+
+15
+00:01:21.735 --> 00:01:23.841
+So I rename each query:
+
+16
+00:01:23.841 --> 00:01:26.369
+Calendar, Sales Person, Geo, and Product.
+
+17
+00:01:26.369 --> 00:01:29.740
+Clear names make DAX much easier to read.
+
+18
+00:01:55.100 --> 00:01:56.284
+I check each table:
+
+19
+00:01:56.284 --> 00:01:59.540
+the data types, the headers, and a few rows of data.
+
+20
+00:02:10.100 --> 00:02:11.607
+Then Close and Apply.
+
+21
+00:02:11.607 --> 00:02:14.620
+Power BI loads each table into the model.
+
+22
+00:02:45.100 --> 00:02:47.361
+In Model view, the tables appear:
+
+23
+00:02:47.361 --> 00:02:52.260
+Shipments in the middle, with Geo, Sales Person, Calendar, and Product around it.
+
+24
+00:03:00.100 --> 00:03:03.087
+Power BI has already found most relationships.
+
+25
+00:03:03.087 --> 00:03:07.780
+Check them now, because every DAX measure depends on this model.
+
+26
+00:03:07.780 --> 00:03:10.340
+Now we are ready for DAX!
+

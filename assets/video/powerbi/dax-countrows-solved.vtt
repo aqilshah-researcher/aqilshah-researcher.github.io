@@ -1,0 +1,98 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.216
+Last time, we found the right pattern.
+
+2
+00:00:03.216 --> 00:00:04.942
+Now let's finish the job.
+
+3
+00:00:04.942 --> 00:00:09.773
+In this lesson, you will learn to complete a COUNTROWS of FILTER measure, label
+
+4
+00:00:09.773 --> 00:00:14.260
+the result clearly, and check the answer against the data. Let's solve it!
+
+5
+00:00:16.200 --> 00:00:18.705
+Here is our measure, Bars Category.
+
+6
+00:00:18.705 --> 00:00:23.715
+COUNTROWS, then FILTER, then the Product table, a comma, and the condition:
+
+7
+00:00:23.715 --> 00:00:26.220
+Product, Category, equals Bars, in quotes.
+
+8
+00:00:27.700 --> 00:00:30.094
+Close both brackets and press Enter.
+
+9
+00:00:30.094 --> 00:00:32.487
+The card shows the answer: eleven.
+
+10
+00:00:32.487 --> 00:00:35.280
+Eleven products are in the Bars category.
+
+11
+00:00:47.700 --> 00:00:48.819
+Now a title.
+
+12
+00:00:48.819 --> 00:00:54.788
+I add a text box above the card, and type: COUNTROWS with Filter. Then a subtitle:
+
+13
+00:00:54.788 --> 00:00:56.280
+Number of Bars Category.
+
+14
+00:01:15.700 --> 00:01:18.200
+Our page now has three groups:
+
+15
+00:01:18.200 --> 00:01:20.700
+COUNT, DISTINCTCOUNT, and COUNTROWS with FILTER.
+
+16
+00:01:20.700 --> 00:01:23.200
+Each one answers a different question.
+
+17
+00:01:40.700 --> 00:01:42.848
+But is eleven correct? Always check.
+
+18
+00:01:42.848 --> 00:01:47.860
+I open Table view and look at the Product table, with its Category column.
+
+19
+00:02:05.700 --> 00:02:10.193
+Count the Bars in the Category column, or sort the column to group them.
+
+20
+00:02:10.193 --> 00:02:11.476
+Yes, there are eleven.
+
+21
+00:02:11.476 --> 00:02:12.760
+Our measure is right!
+
+22
+00:02:55.700 --> 00:02:59.991
+Next, I start a new measure for the total cost per box.
+
+23
+00:02:59.991 --> 00:03:02.137
+Every measure follows the same steps:
+
+24
+00:03:02.137 --> 00:03:04.640
+write, show, label, and check. Well done!
+

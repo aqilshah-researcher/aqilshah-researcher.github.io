@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.342
+How many people are in the Delish team?
+
+2
+00:00:03.342 --> 00:00:07.790
+In this lesson, you will learn to count rows in a filtered table with
+
+3
+00:00:07.790 --> 00:00:12.238
+COUNTX and FILTER, give the measure a clear name, and add it to your
+
+4
+00:00:12.238 --> 00:00:13.509
+report with a title.
+
+5
+00:00:13.509 --> 00:00:14.780
+Let's count a team!
+
+6
+00:00:16.700 --> 00:00:19.702
+Here is our measure from before, Bars Category.
+
+7
+00:00:19.702 --> 00:00:23.080
+Now I create a new measure called Delish Category.
+
+8
+00:00:36.200 --> 00:00:37.337
+I type COUNTX.
+
+9
+00:00:37.337 --> 00:00:39.990
+COUNTX needs a table and an expression.
+
+10
+00:00:39.990 --> 00:00:44.160
+For the table, I use FILTER on the Sales Person table.
+
+11
+00:00:56.200 --> 00:00:56.964
+The condition:
+
+12
+00:00:56.964 --> 00:00:59.637
+Sales Person, Team, equals Delish, in quotes.
+
+13
+00:00:59.637 --> 00:01:02.692
+Then a comma, and the expression to count:
+
+14
+00:01:02.692 --> 00:01:04.220
+one, for each row.
+
+15
+00:01:16.200 --> 00:01:20.596
+Press Enter, and add the measure to a card. The answer: seven.
+
+16
+00:01:20.596 --> 00:01:23.160
+Seven salespeople belong to the Delish team.
+
+17
+00:01:38.200 --> 00:01:41.210
+The name Delish Category is not quite right.
+
+18
+00:01:41.210 --> 00:01:43.844
+It counts a team, not a category.
+
+19
+00:01:43.844 --> 00:01:46.479
+So I rename the measure Delish Team.
+
+20
+00:01:46.479 --> 00:01:48.360
+Clear names save confusion later.
+
+21
+00:02:36.200 --> 00:02:38.480
+I add a text box title:
+
+22
+00:02:38.480 --> 00:02:40.000
+COUNTX, and a subtitle:
+
+23
+00:02:40.000 --> 00:02:41.520
+Number of Delish Team.
+
+24
+00:02:56.200 --> 00:02:58.582
+Now the page has four groups:
+
+25
+00:02:58.582 --> 00:03:01.361
+COUNT, DISTINCTCOUNT, COUNTROWS with FILTER, and COUNTX.
+
+26
+00:03:01.361 --> 00:03:04.140
+Each one counts in its own way.
+
+27
+00:03:14.200 --> 00:03:16.037
+Next, I start a new measure.
+
+28
+00:03:16.037 --> 00:03:18.180
+Keep building, one measure at a time!
+
