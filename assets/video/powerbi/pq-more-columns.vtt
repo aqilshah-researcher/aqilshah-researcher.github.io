@@ -1,0 +1,118 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.680
+Before you calculate anything, understand where each number comes from.
+
+2
+00:00:04.680 --> 00:00:10.112
+In this lesson, you will learn to read how sales, discounts, costs and profit
+
+3
+00:00:10.112 --> 00:00:16.320
+connect, check a calculation by hand, and then build a custom column from two existing columns.
+
+4
+00:00:16.320 --> 00:00:18.260
+Let's think like an analyst!
+
+5
+00:00:20.200 --> 00:00:24.538
+Let's study the Financial Sample columns one by one:
+
+6
+00:00:24.538 --> 00:00:29.840
+Manufacturing Price, Sale Price, Gross Sales, Discounts, Sales, COGS, and Profit.
+
+7
+00:00:31.700 --> 00:00:34.224
+Gross Sales is units sold times sale price.
+
+8
+00:00:34.224 --> 00:00:38.642
+Click a value, and Power Query shows it at the bottom of the screen,
+
+9
+00:00:38.642 --> 00:00:40.220
+so you can check it.
+
+10
+00:00:51.700 --> 00:00:53.938
+Sales is Gross Sales minus Discounts.
+
+11
+00:00:53.938 --> 00:00:58.040
+When the discount is zero, the two values are the same.
+
+12
+00:01:01.700 --> 00:01:04.243
+COGS means cost of goods sold.
+
+13
+00:01:04.243 --> 00:01:07.210
+And Profit is Sales minus COGS. Watch:
+
+14
+00:01:07.210 --> 00:01:08.905
+some profits are negative.
+
+15
+00:01:08.905 --> 00:01:10.600
+Those products lost money.
+
+16
+00:01:29.700 --> 00:01:33.321
+Checking a few rows by hand builds trust in your data.
+
+17
+00:01:33.321 --> 00:01:37.600
+If the numbers don't match, find out why before you build any report.
+
+18
+00:01:54.700 --> 00:01:56.355
+Now, a new calculation.
+
+19
+00:01:56.355 --> 00:01:59.666
+On the Add Column tab, click Custom Column.
+
+20
+00:01:59.666 --> 00:02:03.805
+If the formula box is empty, Power Query tells you:
+
+21
+00:02:03.805 --> 00:02:05.460
+the formula is incomplete.
+
+22
+00:02:14.700 --> 00:02:17.932
+I name the column Profit one, and write:
+
+23
+00:02:17.932 --> 00:02:19.952
+Profit divided by Manufacturing Price.
+
+24
+00:02:19.952 --> 00:02:24.800
+Use the Insert button, so the column names are spelled exactly right.
+
+25
+00:02:29.700 --> 00:02:31.112
+No syntax errors detected.
+
+26
+00:02:31.112 --> 00:02:35.700
+Click OK, and the new column appears at the end of the table.
+
+27
+00:02:49.700 --> 00:02:53.495
+I move it next to Profit, and check a few rows.
+
+28
+00:02:53.495 --> 00:02:54.875
+Read, check, then calculate.
+
+29
+00:02:54.875 --> 00:02:56.600
+That is the analyst's way!
+

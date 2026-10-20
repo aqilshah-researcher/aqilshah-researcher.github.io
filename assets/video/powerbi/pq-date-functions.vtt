@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.585
+Need a due date, a follow up date, or last year's date?
+
+2
+00:00:04.585 --> 00:00:06.477
+M functions do it for you.
+
+3
+00:00:06.477 --> 00:00:10.892
+In this lesson, you will learn to add years, months and days to a
+
+4
+00:00:10.892 --> 00:00:15.308
+date in a custom column, read the hints Power Query gives you, and fix
+
+5
+00:00:15.308 --> 00:00:17.200
+the most common errors. Let's go!
+
+6
+00:00:19.100 --> 00:00:22.045
+On the Add Column tab, open Custom Column.
+
+7
+00:00:22.045 --> 00:00:27.200
+I name the new column twenty twenty three, and start typing Date dot Add.
+
+8
+00:00:33.600 --> 00:00:36.638
+IntelliSense lists every function that matches:
+
+9
+00:00:36.638 --> 00:00:40.688
+Date dot AddDays, AddMonths, AddQuarters, AddWeeks, and AddYears.
+
+10
+00:00:40.688 --> 00:00:43.220
+Pick the one you need.
+
+11
+00:00:58.600 --> 00:01:00.304
+I choose Date dot AddYears.
+
+12
+00:01:00.304 --> 00:01:01.668
+It needs two things:
+
+13
+00:01:01.668 --> 00:01:04.736
+a date, and the number of years to add.
+
+14
+00:01:04.736 --> 00:01:06.440
+I insert the today column.
+
+15
+00:01:13.600 --> 00:01:16.100
+Notice the message: Token Eof expected.
+
+16
+00:01:16.100 --> 00:01:18.600
+The formula is not finished yet.
+
+17
+00:01:18.600 --> 00:01:21.100
+We still need the second argument.
+
+18
+00:01:21.500 --> 00:01:25.635
+When I click OK too early, the new column fills with errors.
+
+19
+00:01:25.635 --> 00:01:29.080
+Each error tells us something is missing in the formula.
+
+20
+00:01:38.600 --> 00:01:40.404
+Let's try Date dot AddMonths.
+
+21
+00:01:40.404 --> 00:01:42.209
+I name the column April.
+
+22
+00:01:42.209 --> 00:01:44.013
+The hint shows the arguments:
+
+23
+00:01:44.013 --> 00:01:46.900
+a date time, and the number of months.
+
+24
+00:02:10.600 --> 00:02:13.522
+I add the today column and the number one.
+
+25
+00:02:13.522 --> 00:02:16.120
+Now each date moves forward by one month.
+
+26
+00:02:23.600 --> 00:02:25.991
+Back to AddYears, this time done right:
+
+27
+00:02:25.991 --> 00:02:29.407
+the today column, a comma, and the number of years.
+
+28
+00:02:29.407 --> 00:02:32.140
+Now the new column shows the correct dates.
+
+29
+00:02:48.600 --> 00:02:50.036
+The rule is simple:
+
+30
+00:02:50.036 --> 00:02:53.625
+read the hint, give every argument, and close every bracket.
+
+31
+00:02:53.625 --> 00:02:55.420
+Practice with your own dates!
+
