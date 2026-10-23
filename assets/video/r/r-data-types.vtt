@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.275
+Every value in R has a type.
+
+2
+00:00:03.275 --> 00:00:07.165
+In this lesson, you will meet the three most common ones:
+
+3
+00:00:07.165 --> 00:00:09.287
+text, numbers, and TRUE or FALSE.
+
+4
+00:00:09.287 --> 00:00:14.237
+You will also see a small mistake that almost everyone makes at the start,
+
+5
+00:00:14.237 --> 00:00:16.006
+and how to fix it.
+
+6
+00:00:16.006 --> 00:00:17.420
+Let's take it slowly.
+
+7
+00:00:19.300 --> 00:00:21.908
+Here are our three notes from before:
+
+8
+00:00:21.908 --> 00:00:23.398
+character, numeric, and logical.
+
+9
+00:00:23.398 --> 00:00:25.260
+Let's look at each one.
+
+10
+00:00:28.800 --> 00:00:29.541
+First, character.
+
+11
+00:00:29.541 --> 00:00:33.244
+Under the note, I wrote a name inside quotation marks.
+
+12
+00:00:33.244 --> 00:00:35.836
+The quotes tell R: this is text.
+
+13
+00:00:35.836 --> 00:00:40.280
+Without quotes, R would think it is the name of something else.
+
+14
+00:01:13.800 --> 00:01:14.442
+Next, numeric.
+
+15
+00:01:14.442 --> 00:01:17.650
+A number, like thirty for an age, needs no quotes.
+
+16
+00:01:17.650 --> 00:01:21.820
+R knows it is a number, and you can do math with it.
+
+17
+00:01:53.800 --> 00:01:55.341
+Now the logical type.
+
+18
+00:01:55.341 --> 00:01:58.037
+Logical values are only TRUE or FALSE.
+
+19
+00:01:58.037 --> 00:02:01.889
+We get them when we ask R a question, like:
+
+20
+00:02:01.889 --> 00:02:04.200
+is twenty five equal to fifty?
+
+21
+00:02:10.800 --> 00:02:13.548
+I typed twenty five, one equals sign, fifty.
+
+22
+00:02:13.548 --> 00:02:15.952
+And R shows an error in red.
+
+23
+00:02:15.952 --> 00:02:18.356
+Please don't worry when you see red.
+
+24
+00:02:18.356 --> 00:02:20.760
+It is R's way of helping us.
+
+25
+00:02:26.800 --> 00:02:29.533
+The problem is the single equals sign.
+
+26
+00:02:29.533 --> 00:02:33.046
+In R, one equals sign means assign a value.
+
+27
+00:02:33.046 --> 00:02:36.560
+To compare two values, we need two equals signs.
+
+28
+00:02:43.800 --> 00:02:46.663
+So I write fifty, two equals signs, fifty.
+
+29
+00:02:46.663 --> 00:02:48.811
+Run it, and R says TRUE.
+
+30
+00:02:48.811 --> 00:02:50.600
+Fifty is equal to fifty.
+
+31
+00:02:58.800 --> 00:03:02.814
+Then fifty, two equals signs, twenty five. R says FALSE.
+
+32
+00:03:02.814 --> 00:03:04.420
+They are not equal.
+
+33
+00:03:13.800 --> 00:03:14.600
+So remember:
+
+34
+00:03:14.600 --> 00:03:20.600
+text in quotes, numbers without quotes, and two equals signs to compare. Very well done.
+

@@ -711,3 +711,5 @@ body > section, body > main, body > footer, body > nav.jumps, body > .statband, 
 .pbi .pbgoals{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px}
 .pbi .pbgoals li{font-size:14.5px;color:var(--ink-2);padding-left:22px;position:relative;line-height:1.4}
 .pbi .pbgoals li::before{content:"";position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--teal)}
+.pbi .rdl{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.pbi .rdl .dl{margin-top:0;padding-top:0}

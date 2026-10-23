@@ -1,0 +1,166 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.889
+Welcome to your first R lesson.
+
+2
+00:00:02.889 --> 00:00:05.673
+Take a deep breath, there is no rush.
+
+3
+00:00:05.673 --> 00:00:10.547
+In this lesson, you will meet RStudio, write your very first lines of code,
+
+4
+00:00:10.547 --> 00:00:12.983
+and see R give you the answers.
+
+5
+00:00:12.983 --> 00:00:15.420
+We will go step by step, together.
+
+6
+00:00:17.300 --> 00:00:18.368
+This is RStudio.
+
+7
+00:00:18.368 --> 00:00:22.640
+On the top left is the script, where we write our code.
+
+8
+00:00:22.640 --> 00:00:26.200
+Below it is the console, where R shows the results.
+
+9
+00:00:26.200 --> 00:00:29.760
+On the right, you see the environment, and your files.
+
+10
+00:00:31.800 --> 00:00:33.619
+Let's start with something simple.
+
+11
+00:00:33.619 --> 00:00:37.984
+I write a small note first, with a hash sign: Basic Calculation.
+
+12
+00:00:37.984 --> 00:00:40.531
+Anything after a hash is a comment.
+
+13
+00:00:40.531 --> 00:00:42.350
+R does not run it.
+
+14
+00:00:42.350 --> 00:00:45.260
+It is only there to help us remember.
+
+15
+00:00:48.800 --> 00:00:51.196
+Now our first line: two plus five.
+
+16
+00:00:51.196 --> 00:00:54.962
+Put your cursor on the line, and press Control and Enter.
+
+17
+00:00:54.962 --> 00:00:57.700
+On a Mac, it is Command and Enter.
+
+18
+00:00:59.800 --> 00:01:02.276
+Look at the console. R says seven.
+
+19
+00:01:02.276 --> 00:01:05.460
+Wonderful, you just ran your first piece of code!
+
+20
+00:01:06.800 --> 00:01:07.562
+Next line:
+
+21
+00:01:07.562 --> 00:01:09.848
+five hundred seventy four minus four.
+
+22
+00:01:09.848 --> 00:01:11.754
+Run it the same way.
+
+23
+00:01:11.754 --> 00:01:14.040
+The answer is five hundred seventy.
+
+24
+00:01:14.800 --> 00:01:16.490
+Now a longer one:
+
+25
+00:01:16.490 --> 00:01:21.561
+two plus five divided by three, plus ten times eight, minus nine.
+
+26
+00:01:21.561 --> 00:01:24.096
+R follows the usual math order.
+
+27
+00:01:24.096 --> 00:01:27.899
+It divides and multiplies first, then adds and subtracts.
+
+28
+00:01:27.899 --> 00:01:31.280
+The answer is seventy four point six six.
+
+29
+00:01:41.800 --> 00:01:46.304
+Notice how every result in the console starts with a one in brackets.
+
+30
+00:01:46.304 --> 00:01:50.114
+That just means this is the first value of the answer.
+
+31
+00:01:50.114 --> 00:01:51.500
+Nothing to worry about.
+
+32
+00:01:51.900 --> 00:01:55.277
+Next, I add a new heading: R Data Types.
+
+33
+00:01:55.277 --> 00:01:57.152
+Under it, three more notes:
+
+34
+00:01:57.152 --> 00:01:58.653
+character, numeric, and logical.
+
+35
+00:01:58.653 --> 00:02:02.780
+These are the three kinds of values we will meet first.
+
+36
+00:02:26.800 --> 00:02:29.287
+Let's begin with the character type.
+
+37
+00:02:29.287 --> 00:02:32.604
+A character is simply text, like a name.
+
+38
+00:02:32.604 --> 00:02:35.920
+Text in R always goes inside quotation marks.
+
+39
+00:02:39.800 --> 00:02:43.638
+Here I type a name inside quotes, as our first example.
+
+40
+00:02:43.638 --> 00:02:47.824
+In the next lesson, we will look at each data type closely.
+
+41
+00:02:47.824 --> 00:02:49.220
+You did great today!
+
