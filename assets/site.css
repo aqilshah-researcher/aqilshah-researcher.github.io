@@ -713,3 +713,17 @@ body > section, body > main, body > footer, body > nav.jumps, body > .statband, 
 .pbi .pbgoals li::before{content:"";position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--teal)}
 .pbi .rdl{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px}
 .pbi .rdl .dl{margin-top:0;padding-top:0}
+.tstate{margin-top:24px;padding:22px 26px}
+.tstate h3{margin:0 0 8px;font-size:22px}
+.tstate p{margin:0;color:var(--ink-2)}
+.vcourses{gap:24px}
+a.vcourse{display:flex;flex-direction:column;padding:0;overflow:hidden;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+a.vcourse:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.vcourse .vc-img{aspect-ratio:16/10;background:#0f1d23}
+.vcourse .vc-img img{width:100%;height:100%;object-fit:cover;display:block}
+.vcourse .vc-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.vcourse small{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.vcourse h3{margin:0;font-size:26px}
+.vcourse p{margin:0;color:var(--ink-2)}
+.vcourse .btn{align-self:flex-start;margin-top:auto}
+.vback{margin-top:22px;font-weight:700}
