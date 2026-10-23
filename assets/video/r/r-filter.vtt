@@ -1,0 +1,134 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.716
+Filtering is one of the most important skills in data analysis.
+
+2
+00:00:04.716 --> 00:00:09.700
+In this lesson, you will learn to keep only the rows you need with
+
+3
+00:00:09.700 --> 00:00:16.820
+filter, and you will see a very common mistake and how R kindly tells you the fix. Let's filter together.
+
+4
+00:00:18.700 --> 00:00:20.131
+I write a note:
+
+5
+00:00:20.131 --> 00:00:21.562
+filtering a data frame.
+
+6
+00:00:21.562 --> 00:00:25.140
+Our goal is a table with only male household heads.
+
+7
+00:00:28.200 --> 00:00:32.015
+Male Only Demographic, arrow, demographic, pipe, filter.
+
+8
+00:00:32.015 --> 00:00:34.195
+Inside filter, the condition:
+
+9
+00:00:34.195 --> 00:00:36.920
+Gender equals Male, in quotes.
+
+10
+00:00:48.200 --> 00:00:48.963
+Run it.
+
+11
+00:00:48.963 --> 00:00:50.870
+And here is an error.
+
+12
+00:00:50.870 --> 00:00:55.067
+But read it slowly, because R is helping us. It says:
+
+13
+00:00:55.067 --> 00:00:56.974
+we detected a named input.
+
+14
+00:00:56.974 --> 00:01:00.789
+This usually means you used equals instead of double equals.
+
+15
+00:01:00.789 --> 00:01:03.460
+Did you mean Gender, double equals, Male?
+
+16
+00:01:13.200 --> 00:01:14.988
+Remember our comparison lesson?
+
+17
+00:01:14.988 --> 00:01:16.776
+One equals sign assigns.
+
+18
+00:01:16.776 --> 00:01:18.563
+Two equals signs compare.
+
+19
+00:01:18.563 --> 00:01:23.480
+Inside filter, we are asking a question, so we need two.
+
+20
+00:01:43.200 --> 00:01:47.897
+I add the second equals sign, and run it again. It works!
+
+21
+00:01:47.897 --> 00:01:50.637
+A new table appears in the Environment:
+
+22
+00:01:50.637 --> 00:01:52.594
+one hundred thirty three rows.
+
+23
+00:01:52.594 --> 00:01:54.160
+Only male household heads.
+
+24
+00:01:58.200 --> 00:02:01.880
+Let's open it with View, and check the Gender column.
+
+25
+00:02:01.880 --> 00:02:03.720
+Every row says Male. Perfect.
+
+26
+00:02:28.200 --> 00:02:30.100
+Now the same for women.
+
+27
+00:02:30.100 --> 00:02:36.180
+I copy the line, change the name to Female Only Demographic, and the value to Female.
+
+28
+00:02:43.200 --> 00:02:43.985
+Run it.
+
+29
+00:02:43.985 --> 00:02:45.947
+This table has two rows.
+
+30
+00:02:45.947 --> 00:02:49.872
+So in this sample, two households are headed by women.
+
+31
+00:02:49.872 --> 00:02:52.620
+Filtering helps us find these answers quickly.
+
+32
+00:03:03.200 --> 00:03:05.840
+Next, I write a note: complex filter.
+
+33
+00:03:05.840 --> 00:03:11.120
+In the next lesson, we will filter with several conditions at once. Well done!
+

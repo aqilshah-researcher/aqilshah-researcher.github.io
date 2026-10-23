@@ -1,0 +1,102 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.177
+A sorted table is much easier to read and check.
+
+2
+00:00:04.177 --> 00:00:08.904
+In this lesson, you will learn to sort your rows with arrange, from A
+
+3
+00:00:08.904 --> 00:00:11.268
+to Z, and from Z to A.
+
+4
+00:00:11.268 --> 00:00:13.294
+It only takes one short line.
+
+5
+00:00:13.294 --> 00:00:15.320
+Let's put our data in order.
+
+6
+00:00:17.200 --> 00:00:20.400
+Here is our table, with the new short column names.
+
+7
+00:00:20.400 --> 00:00:24.560
+Right now, the rows are in the order they came from the survey.
+
+8
+00:00:41.700 --> 00:00:43.253
+I write a note:
+
+9
+00:00:43.253 --> 00:00:46.746
+arranging rows, we can ascend or descend the rows.
+
+10
+00:00:46.746 --> 00:00:50.627
+Ascend means from small to big, or A to Z.
+
+11
+00:00:50.627 --> 00:00:52.180
+Descend means the opposite.
+
+12
+00:01:01.700 --> 00:01:07.460
+Demographic, pipe, arrange, and inside the brackets, the column to sort by: Province.
+
+13
+00:01:26.700 --> 00:01:27.538
+Run it.
+
+14
+00:01:27.538 --> 00:01:30.469
+Now the provinces are in alphabetical order:
+
+15
+00:01:30.469 --> 00:01:33.400
+Badakhshan first, then Farah, and so on.
+
+16
+00:01:41.700 --> 00:01:43.318
+Next, arrange by Gender.
+
+17
+00:01:43.318 --> 00:01:45.745
+Run it, and open the table.
+
+18
+00:01:45.745 --> 00:01:50.600
+Female rows come first, because F comes before M in the alphabet.
+
+19
+00:02:06.700 --> 00:02:12.800
+To reverse the order, wrap the column in desc, short for descending. Arrange, desc, Gender.
+
+20
+00:02:36.700 --> 00:02:39.640
+Run it, and now Male comes first.
+
+21
+00:02:39.640 --> 00:02:41.740
+The same works for numbers:
+
+22
+00:02:41.740 --> 00:02:45.520
+arrange household size, and the smallest families come first.
+
+23
+00:02:45.520 --> 00:02:48.040
+With desc, the largest come first.
+
+24
+00:03:01.700 --> 00:03:03.624
+Arrange, and desc for reverse.
+
+25
+00:03:03.624 --> 00:03:08.240
+Simple, and very useful when you check your data. Great job today!
+

@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.146
+Now the exciting part: real data!
+
+2
+00:00:03.146 --> 00:00:08.620
+In this lesson, you will learn to open an Excel file in R, and
+
+3
+00:00:08.620 --> 00:00:14.485
+then look at it from different angles, so you truly understand it before any analysis.
+
+4
+00:00:14.485 --> 00:00:16.440
+Let's open our first dataset.
+
+5
+00:00:18.300 --> 00:00:20.447
+Our working directory is set.
+
+6
+00:00:20.447 --> 00:00:22.594
+Now I write a note:
+
+7
+00:00:22.594 --> 00:00:25.601
+opening an Excel file. The line is:
+
+8
+00:00:25.601 --> 00:00:30.324
+Dataset, arrow, read underscore excel, and the file name in quotes:
+
+9
+00:00:30.324 --> 00:00:33.760
+Clean underscore Dataset dot x l s x.
+
+10
+00:00:34.160 --> 00:00:35.016
+Run it.
+
+11
+00:00:35.016 --> 00:00:38.441
+In the Environment pane, a new item appears:
+
+12
+00:00:38.441 --> 00:00:43.151
+Dataset, with one hundred thirty five observations of twenty four variables.
+
+13
+00:00:43.151 --> 00:00:47.860
+That means one hundred thirty five rows, and twenty four columns.
+
+14
+00:00:48.260 --> 00:00:50.928
+Now let's look inside. First, head.
+
+15
+00:00:50.928 --> 00:00:54.929
+Head shows the first six rows in the console:
+
+16
+00:00:54.929 --> 00:00:59.820
+province, district, sex, marital status, household size, and the survey answers.
+
+17
+00:01:02.800 --> 00:01:04.335
+Next, str, for structure.
+
+18
+00:01:04.335 --> 00:01:07.021
+It lists every column, and its type:
+
+19
+00:01:07.021 --> 00:01:09.707
+chr for text, and num for numbers.
+
+20
+00:01:09.707 --> 00:01:15.080
+This is the best way to check that each column has the right type.
+
+21
+00:01:32.800 --> 00:01:38.080
+Unique shows the unique rows, and summary gives quick statistics for each column.
+
+22
+00:01:52.800 --> 00:01:58.820
+For number columns, summary shows the minimum, the first quartile, the median, the mean,
+
+23
+00:01:58.820 --> 00:02:01.400
+the third quartile, and the maximum.
+
+24
+00:02:01.400 --> 00:02:04.840
+For household size, the average is about nineteen.
+
+25
+00:02:27.800 --> 00:02:30.980
+Then colnames, which lists all the column names.
+
+26
+00:02:30.980 --> 00:02:37.340
+Here we see the long survey question names, like, did you receive fifty kilograms of urea?
+
+27
+00:02:52.800 --> 00:02:56.789
+And finally print, which prints the table in the console.
+
+28
+00:02:56.789 --> 00:03:00.380
+I add a note above these lines: inspecting dataset.
+
+29
+00:03:07.800 --> 00:03:09.800
+Head, str, summary, and colnames.
+
+30
+00:03:09.800 --> 00:03:13.000
+Use them every time you open new data.
+
+31
+00:03:13.000 --> 00:03:17.400
+They are your first look, and your first check. Wonderful work!
+
