@@ -1,0 +1,134 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:01.520
+Welcome back!
+
+2
+00:00:01.520 --> 00:00:05.120
+Before we start new work, it helps to clean up.
+
+3
+00:00:05.120 --> 00:00:10.160
+In this lesson, you will learn to clear the console, and to remove old
+
+4
+00:00:10.160 --> 00:00:14.480
+values from the environment, one at a time or many at once.
+
+5
+00:00:14.480 --> 00:00:17.000
+A clean workspace is a calm workspace.
+
+6
+00:00:18.900 --> 00:00:20.681
+This is our new session.
+
+7
+00:00:20.681 --> 00:00:24.955
+On the right, the environment still holds the values from last time.
+
+8
+00:00:24.955 --> 00:00:28.160
+In the console, we see our old results too.
+
+9
+00:00:31.400 --> 00:00:32.524
+First, the console.
+
+10
+00:00:32.524 --> 00:00:34.023
+I write a note:
+
+11
+00:00:34.023 --> 00:00:36.272
+to remove history from the console.
+
+12
+00:00:36.272 --> 00:00:38.520
+The shortcut is Control and L.
+
+13
+00:00:51.400 --> 00:00:52.162
+Careful here:
+
+14
+00:00:52.162 --> 00:00:57.496
+I typed Control L as code and ran it. R says: object not found.
+
+15
+00:00:57.496 --> 00:01:00.545
+That is because Control L is not code.
+
+16
+00:01:00.545 --> 00:01:02.450
+It is a keyboard shortcut.
+
+17
+00:01:02.450 --> 00:01:06.260
+Just click in the console, and press Control and L.
+
+18
+00:01:06.660 --> 00:01:07.037
+See?
+
+19
+00:01:07.037 --> 00:01:08.922
+The console is clean now.
+
+20
+00:01:08.922 --> 00:01:11.560
+The script and the environment are untouched.
+
+21
+00:01:13.400 --> 00:01:14.605
+Next, the environment.
+
+22
+00:01:14.605 --> 00:01:16.213
+I write a note:
+
+23
+00:01:16.213 --> 00:01:20.231
+to remove a data or value from the Global Environment.
+
+24
+00:01:20.231 --> 00:01:22.240
+The function is called remove.
+
+25
+00:01:38.400 --> 00:01:43.020
+Inside the brackets, I write the name of the value. Remove age.
+
+26
+00:01:43.020 --> 00:01:46.100
+Run it, and age disappears from the environment.
+
+27
+00:01:58.400 --> 00:02:00.428
+Then remove Black, the next value.
+
+28
+00:02:00.428 --> 00:02:01.780
+It is gone too.
+
+29
+00:02:13.400 --> 00:02:19.994
+To remove many values at once, list them inside the brackets, separated by commas:
+
+30
+00:02:19.994 --> 00:02:22.820
+City, demographic, Detail, location, and name.
+
+31
+00:02:33.400 --> 00:02:38.360
+Run it, and the environment says: Environment is empty. A fresh start!
+
+32
+00:02:48.400 --> 00:02:53.283
+I add a line of hash signs, to separate this part of the script.
+
+33
+00:02:53.283 --> 00:02:57.120
+Next, we will install the packages we need. Nice and tidy!
+

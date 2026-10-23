@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.886
+Now we will teach R to remember things.
+
+2
+00:00:03.886 --> 00:00:09.287
+In this lesson, you will learn to save values in variables with the assignment
+
+3
+00:00:09.287 --> 00:00:15.074
+arrow, find them in the Environment pane, and group related values together in a vector.
+
+4
+00:00:15.074 --> 00:00:18.160
+Let's go gently, one line at a time.
+
+5
+00:00:20.100 --> 00:00:22.453
+I add a note: assigning a variable.
+
+6
+00:00:22.453 --> 00:00:24.806
+For this, we use the assignment operator.
+
+7
+00:00:24.806 --> 00:00:26.487
+It is a small arrow:
+
+8
+00:00:26.487 --> 00:00:28.840
+a less than sign, and a dash.
+
+9
+00:00:31.600 --> 00:00:32.356
+First line:
+
+10
+00:00:32.356 --> 00:00:35.757
+name, arrow, and a name in quotes. Run it.
+
+11
+00:00:35.757 --> 00:00:38.781
+Look at the Environment pane on the right.
+
+12
+00:00:38.781 --> 00:00:41.048
+A new variable, name, has appeared.
+
+13
+00:00:41.048 --> 00:00:42.560
+R remembers it now.
+
+14
+00:00:42.960 --> 00:00:45.030
+Next, age, arrow, thirty.
+
+15
+00:00:45.030 --> 00:00:47.100
+And location, arrow, USA.
+
+16
+00:00:49.600 --> 00:00:51.546
+Oh, look at the console:
+
+17
+00:00:51.546 --> 00:00:53.102
+object USA not found.
+
+18
+00:00:53.102 --> 00:00:55.048
+I forgot the quotation marks.
+
+19
+00:00:55.048 --> 00:00:58.550
+Without quotes, R looks for a variable called USA.
+
+20
+00:00:58.550 --> 00:01:03.220
+So I add the quotes, run it again, and now it works.
+
+21
+00:01:09.600 --> 00:01:14.335
+To see a value, just type the variable name and run it.
+
+22
+00:01:14.335 --> 00:01:18.280
+Name gives the name. Age gives thirty. Location gives USA.
+
+23
+00:01:39.600 --> 00:01:41.826
+Now, a new idea: the vector.
+
+24
+00:01:41.826 --> 00:01:45.166
+A vector keeps related values together in one place.
+
+25
+00:01:45.166 --> 00:01:48.505
+We make it with the letter c and brackets.
+
+26
+00:01:48.505 --> 00:01:50.360
+The c stands for combine.
+
+27
+00:02:17.600 --> 00:02:18.582
+I write:
+
+28
+00:02:18.582 --> 00:02:25.460
+demographic, arrow, c, and inside the brackets, name, age, and location, separated by commas.
+
+29
+00:02:49.600 --> 00:02:54.551
+Run it, and in the Environment pane you see demographic, with three values.
+
+30
+00:02:54.551 --> 00:02:58.740
+R even tells us it is character, because it holds text.
+
+31
+00:03:09.600 --> 00:03:11.027
+One thing to notice:
+
+32
+00:03:11.027 --> 00:03:12.811
+thirty now appears in quotes.
+
+33
+00:03:12.811 --> 00:03:18.876
+A vector keeps one type, so R turned the number into text to match. Good to remember!
+
+34
+00:03:18.876 --> 00:03:20.660
+You are doing really well.
+

@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.186
+Functions are the heart of R.
+
+2
+00:00:03.186 --> 00:00:08.754
+In this lesson, you will use five friendly functions to sort and summarize numbers,
+
+3
+00:00:08.754 --> 00:00:12.731
+and you will see one function that does something surprising.
+
+4
+00:00:12.731 --> 00:00:14.720
+Let's explore them together, slowly.
+
+5
+00:00:16.600 --> 00:00:19.768
+Here are the functions from our list. First, sort.
+
+6
+00:00:19.768 --> 00:00:23.992
+It puts our numbers in order, from the smallest to the largest.
+
+7
+00:00:23.992 --> 00:00:28.920
+In the console, we see one, three, three, all the way up to five
+
+8
+00:00:28.920 --> 00:00:30.680
+thousand four hundred thirty three.
+
+9
+00:00:31.100 --> 00:00:31.852
+Next, sum.
+
+10
+00:00:31.852 --> 00:00:34.484
+Notice, sum does not even need c.
+
+11
+00:00:34.484 --> 00:00:37.116
+You can give it the numbers directly.
+
+12
+00:00:37.116 --> 00:00:40.500
+The total is five thousand five hundred ninety four.
+
+13
+00:00:46.100 --> 00:00:46.851
+Now length.
+
+14
+00:00:46.851 --> 00:00:49.479
+Length counts how many values we have.
+
+15
+00:00:49.479 --> 00:00:54.360
+I type length, open the brackets, and inside, c with the same numbers.
+
+16
+00:01:16.100 --> 00:01:16.788
+Run it.
+
+17
+00:01:16.788 --> 00:01:18.164
+The answer is fifteen.
+
+18
+00:01:18.164 --> 00:01:19.540
+We have fifteen numbers.
+
+19
+00:01:36.100 --> 00:01:38.200
+Next, mean, which is the average.
+
+20
+00:01:38.200 --> 00:01:41.700
+And median, the middle value when the numbers are sorted.
+
+21
+00:01:51.100 --> 00:01:55.091
+When I first ran mode, I got an error: unused arguments.
+
+22
+00:01:55.091 --> 00:01:58.357
+That is because I forgot c around the numbers.
+
+23
+00:01:58.357 --> 00:02:01.260
+So I add c, and run it again.
+
+24
+00:02:21.100 --> 00:02:24.946
+The mean is three hundred seventy two point nine three.
+
+25
+00:02:24.946 --> 00:02:31.100
+That is high, because one number, five thousand four hundred thirty three, pulls the average up.
+
+26
+00:02:36.100 --> 00:02:37.826
+The median is only five.
+
+27
+00:02:37.826 --> 00:02:43.694
+When a few values are very big, the median gives a better picture of the typical value.
+
+28
+00:02:43.694 --> 00:02:46.800
+That is a useful lesson for any data work.
+
+29
+00:02:47.200 --> 00:02:48.962
+And mode? It says numeric.
+
+30
+00:02:48.962 --> 00:02:54.248
+In R, mode tells you the type of the data, not the most common value.
+
+31
+00:02:54.248 --> 00:02:57.420
+A small surprise, and a good one to remember.
+
+32
+00:03:04.100 --> 00:03:08.569
+Finally, I scroll back to the top of our script.
+
+33
+00:03:08.569 --> 00:03:11.251
+Look how much we wrote today.
+
+34
+00:03:11.251 --> 00:03:15.720
+Calculations, data types, variables, vectors, comparisons, and functions. Excellent work!
+
