@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:05.037
+Before R can open a file, it needs to know where to look.
+
+2
+00:00:05.037 --> 00:00:09.601
+In this lesson, you will learn to check your working directory, set a new
+
+3
+00:00:09.601 --> 00:00:14.490
+one, and calmly fix the error that appears when the path is not quite right.
+
+4
+00:00:14.490 --> 00:00:16.120
+Let's find our folder together.
+
+5
+00:00:18.000 --> 00:00:19.503
+We start with getwd.
+
+6
+00:00:19.503 --> 00:00:22.509
+It shows the folder R is using now:
+
+7
+00:00:22.509 --> 00:00:25.140
+the R Teaching folder on the desktop.
+
+8
+00:00:27.500 --> 00:00:31.093
+But our data file is inside the Session Two folder.
+
+9
+00:00:31.093 --> 00:00:36.123
+So we use setwd, and inside the brackets, in quotes, we write the full
+
+10
+00:00:36.123 --> 00:00:37.560
+path to that folder.
+
+11
+00:00:42.500 --> 00:00:44.527
+I type the path carefully:
+
+12
+00:00:44.527 --> 00:00:48.580
+Users, my user name, Desktop, R Teaching, and Session Two.
+
+13
+00:01:02.500 --> 00:01:04.497
+Run it, and R says:
+
+14
+00:01:04.497 --> 00:01:06.494
+Error, cannot change working directory.
+
+15
+00:01:06.494 --> 00:01:10.887
+That means the path does not match a real folder exactly.
+
+16
+00:01:10.887 --> 00:01:15.280
+Even one wrong character, or a missing space, will cause this.
+
+17
+00:01:29.500 --> 00:01:34.637
+Here I open the folder on the computer to check the exact folder name.
+
+18
+00:01:34.637 --> 00:01:37.940
+The folder is called two, dot, space, Session Two.
+
+19
+00:01:42.500 --> 00:01:46.552
+I try again with double slashes, and a few small changes.
+
+20
+00:01:46.552 --> 00:01:51.340
+Each time, I read the message, compare the path, and fix one thing.
+
+21
+00:02:07.500 --> 00:02:09.221
+And this time it works.
+
+22
+00:02:09.221 --> 00:02:11.630
+getwd now shows the Session Two folder.
+
+23
+00:02:11.630 --> 00:02:15.760
+In the Files pane, we can see our data file inside it.
+
+24
+00:02:47.500 --> 00:02:50.240
+I add clear notes in the script:
+
+25
+00:02:50.240 --> 00:02:53.763
+understanding the working directory, and setting the working directory.
+
+26
+00:02:53.763 --> 00:02:58.460
+Notes like these help you, and anyone who reads your script later.
+
+27
+00:03:07.500 --> 00:03:07.879
+Tip:
+
+28
+00:03:07.879 --> 00:03:12.423
+if typing the path is hard, RStudio can do it for you.
+
+29
+00:03:12.423 --> 00:03:15.452
+Use the Session menu, then Set Working Directory.
+
+30
+00:03:15.452 --> 00:03:18.860
+Next, we will open our Excel file. Well done!
+

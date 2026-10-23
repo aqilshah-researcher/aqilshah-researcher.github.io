@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.433
+Data analysis is full of small questions:
+
+2
+00:00:03.433 --> 00:00:07.195
+is this bigger, is this smaller, are these the same?
+
+3
+00:00:07.195 --> 00:00:12.461
+In this lesson, you will learn the six comparison operators in R, and how
+
+4
+00:00:12.461 --> 00:00:15.471
+R answers each question with TRUE or FALSE.
+
+5
+00:00:15.471 --> 00:00:18.480
+It is easier than it sounds. Let's begin.
+
+6
+00:00:20.400 --> 00:00:25.857
+Here I wrote a short list of notes, so we can see all six operators together.
+
+7
+00:00:25.857 --> 00:00:30.632
+Less than, greater than, less than or equal to, greater than or equal to,
+
+8
+00:00:30.632 --> 00:00:33.360
+is equal to, and is not equal to.
+
+9
+00:00:39.900 --> 00:00:43.435
+Let's try them one by one, with the same two numbers:
+
+10
+00:00:43.435 --> 00:00:44.720
+twenty five and fifty.
+
+11
+00:00:45.900 --> 00:00:49.529
+Twenty five, less than, fifty. Run it. R says TRUE.
+
+12
+00:00:49.529 --> 00:00:50.980
+Twenty five is smaller.
+
+13
+00:00:51.900 --> 00:00:54.180
+Twenty five, greater than, fifty. FALSE.
+
+14
+00:00:54.180 --> 00:00:56.460
+Of course, it is not bigger.
+
+15
+00:00:59.900 --> 00:01:02.041
+Now less than or equal to.
+
+16
+00:01:02.041 --> 00:01:05.609
+We write the less than sign, then the equals sign.
+
+17
+00:01:05.609 --> 00:01:08.820
+Twenty five, less than or equal to, fifty: TRUE.
+
+18
+00:01:09.220 --> 00:01:11.360
+Greater than or equal to: FALSE.
+
+19
+00:01:14.900 --> 00:01:17.560
+Is equal to, with two equals signs:
+
+20
+00:01:17.560 --> 00:01:19.840
+FALSE, because the numbers are different.
+
+21
+00:01:21.900 --> 00:01:26.815
+And is not equal to, with an exclamation mark and an equals sign.
+
+22
+00:01:26.815 --> 00:01:29.840
+Twenty five is not equal to fifty: TRUE.
+
+23
+00:01:34.900 --> 00:01:38.386
+Take a moment to read the answers in the console.
+
+24
+00:01:38.386 --> 00:01:40.477
+Every question gives TRUE or FALSE.
+
+25
+00:01:40.477 --> 00:01:44.660
+We will use these questions a lot later, when we filter data.
+
+26
+00:01:49.900 --> 00:01:52.650
+Next, I add a new note: calling a function.
+
+27
+00:01:52.650 --> 00:01:55.094
+A function is a ready-made tool in R.
+
+28
+00:01:55.094 --> 00:01:58.760
+You give it some values, and it does the work for you.
+
+29
+00:02:09.900 --> 00:02:11.681
+Our first function is sort.
+
+30
+00:02:11.681 --> 00:02:15.601
+Inside the brackets, I put a vector of numbers with c.
+
+31
+00:02:15.601 --> 00:02:19.520
+Run it, and R lists the numbers from smallest to largest.
+
+32
+00:02:39.900 --> 00:02:42.399
+Then sum, which adds them all up.
+
+33
+00:02:42.399 --> 00:02:45.613
+The answer is five thousand five hundred ninety four.
+
+34
+00:02:45.613 --> 00:02:49.540
+We will meet more functions in the next lesson. Well done!
+

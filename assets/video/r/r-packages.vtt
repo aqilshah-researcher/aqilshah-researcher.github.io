@@ -1,0 +1,134 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:06.685
+R comes with many tools, but the best ones live in packages that we add ourselves.
+
+2
+00:00:06.685 --> 00:00:11.835
+In this lesson, you will learn to install packages, load them each time you
+
+3
+00:00:11.835 --> 00:00:15.881
+work, and read the messages R shows you along the way.
+
+4
+00:00:15.881 --> 00:00:17.720
+Let's set up our toolbox.
+
+5
+00:00:19.600 --> 00:00:24.568
+Here is our list. First, a note: installing a package.
+
+6
+00:00:24.568 --> 00:00:30.032
+Under it, install dot packages, with the package name in quotes:
+
+7
+00:00:30.032 --> 00:00:35.000
+tidyverse, Hmisc, corrplot, readxl, openxlsx, stargazer, dplyr, expss, and formattable.
+
+8
+00:00:41.100 --> 00:00:44.609
+You only need to install a package once on your computer.
+
+9
+00:00:44.609 --> 00:00:47.480
+It is like installing an app on your phone.
+
+10
+00:00:51.100 --> 00:00:56.762
+But each time you open R, you need to load the packages you want to use.
+
+11
+00:00:56.762 --> 00:01:00.300
+For that, we use library, with the package name inside.
+
+12
+00:01:04.100 --> 00:01:07.377
+I run the library lines one by one.
+
+13
+00:01:07.377 --> 00:01:11.064
+The console fills with red text. Please don't panic.
+
+14
+00:01:11.064 --> 00:01:13.932
+Most of it is just information, like:
+
+15
+00:01:13.932 --> 00:01:15.980
+the following objects are masked.
+
+16
+00:01:19.100 --> 00:01:23.524
+Masked means two packages have a function with the same name, so R tells
+
+17
+00:01:23.524 --> 00:01:25.420
+you which one it will use.
+
+18
+00:01:25.420 --> 00:01:27.000
+It is not an error.
+
+19
+00:01:34.100 --> 00:01:36.204
+One message did say error:
+
+20
+00:01:36.204 --> 00:01:38.729
+there is no package called colorspace.
+
+21
+00:01:38.729 --> 00:01:41.675
+That means one package needs another one.
+
+22
+00:01:41.675 --> 00:01:44.200
+Installing the missing package fixes it.
+
+23
+00:01:59.100 --> 00:01:59.778
+So remember:
+
+24
+00:01:59.778 --> 00:02:02.150
+red text is not always an error.
+
+25
+00:02:02.150 --> 00:02:05.200
+Read it calmly, and look for the word Error.
+
+26
+00:02:27.100 --> 00:02:28.537
+Now, a new question:
+
+27
+00:02:28.537 --> 00:02:31.052
+where does R look for our files?
+
+28
+00:02:31.052 --> 00:02:33.926
+The function getwd, get working directory, tells us.
+
+29
+00:02:33.926 --> 00:02:36.800
+Run it, and R shows the folder path.
+
+30
+00:02:42.100 --> 00:02:46.720
+Here I open the folder on the computer, to see the session folders where
+
+31
+00:02:46.720 --> 00:02:48.040
+our files are saved.
+
+32
+00:03:01.100 --> 00:03:05.430
+Next, setwd, set working directory, tells R which folder to use.
+
+33
+00:03:05.430 --> 00:03:09.760
+We will do that carefully in the next lesson. Great progress!
+
