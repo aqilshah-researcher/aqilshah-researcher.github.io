@@ -1,0 +1,130 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.463
+Typing long column names can be tiring.
+
+2
+00:00:03.463 --> 00:00:06.507
+In this lesson, you will learn a shortcut:
+
+3
+00:00:06.507 --> 00:00:09.932
+selecting columns by their position number, with square brackets.
+
+4
+00:00:09.932 --> 00:00:16.020
+You will also learn the colon, which picks a whole range at once. Let's try it.
+
+5
+00:00:17.900 --> 00:00:20.376
+Here is the dataset in View.
+
+6
+00:00:20.376 --> 00:00:26.152
+Column one is Single Response, column two is Province Name, three is Sex of
+
+7
+00:00:26.152 --> 00:00:29.040
+household head, and four is Marital Status.
+
+8
+00:00:37.400 --> 00:00:39.583
+Square brackets work like an address:
+
+9
+00:00:39.583 --> 00:00:42.858
+first the rows, then a comma, then the columns.
+
+10
+00:00:42.858 --> 00:00:46.860
+If we leave the rows empty, R takes all the rows.
+
+11
+00:00:52.400 --> 00:00:52.892
+So:
+
+12
+00:00:52.892 --> 00:01:00.280
+Demographic underscore one, arrow, Dataset, open square bracket, comma, c, two, three, four, close bracket.
+
+13
+00:01:12.400 --> 00:01:18.297
+Run it, and the new table has three hundred fifty two rows, and three columns:
+
+14
+00:01:18.297 --> 00:01:20.262
+province, sex, and marital status.
+
+15
+00:01:20.262 --> 00:01:23.800
+The same result as select, with much less typing.
+
+16
+00:01:32.400 --> 00:01:34.631
+Now a second table, called Main.
+
+17
+00:01:34.631 --> 00:01:38.720
+Inside c, I write two, three, and then six, colon, ten.
+
+18
+00:01:52.400 --> 00:01:53.474
+The colon means:
+
+19
+00:01:53.474 --> 00:01:54.907
+from six to ten.
+
+20
+00:01:54.907 --> 00:01:59.920
+So we get columns six, seven, eight, nine, and ten, without typing each one.
+
+21
+00:02:07.400 --> 00:02:08.178
+Run it.
+
+22
+00:02:08.178 --> 00:02:09.735
+Main has seven columns.
+
+23
+00:02:09.735 --> 00:02:12.069
+Open it, and there they are:
+
+24
+00:02:12.069 --> 00:02:15.960
+province, sex, the land questions, and the wage labor answers.
+
+25
+00:02:47.400 --> 00:02:48.686
+A small warning:
+
+26
+00:02:48.686 --> 00:02:52.117
+positions change if columns are added or removed.
+
+27
+00:02:52.117 --> 00:02:55.547
+Names are safer for scripts you will reuse.
+
+28
+00:02:55.547 --> 00:02:58.120
+Positions are great for quick looks.
+
+29
+00:03:07.400 --> 00:03:08.931
+Next, a new note:
+
+30
+00:03:08.931 --> 00:03:13.143
+to bring changes in a single or more values or cells.
+
+31
+00:03:13.143 --> 00:03:18.503
+Before we change anything, I use table to count the values in the Sex
+
+32
+00:03:18.503 --> 00:03:20.800
+of household head column. Nice work!
+

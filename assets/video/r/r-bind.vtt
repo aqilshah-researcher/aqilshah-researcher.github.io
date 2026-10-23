@@ -1,0 +1,142 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.743
+Data often comes in pieces.
+
+2
+00:00:02.743 --> 00:00:07.016
+In this lesson, you will learn to put the pieces together:
+
+3
+00:00:07.016 --> 00:00:12.067
+side by side with bind columns, or one under another with bind rows.
+
+4
+00:00:12.067 --> 00:00:17.117
+You will also see what NA means when the pieces don't match perfectly.
+
+5
+00:00:17.117 --> 00:00:19.060
+Let's build a bigger picture.
+
+6
+00:00:21.000 --> 00:00:23.564
+We have three tables now.
+
+7
+00:00:23.564 --> 00:00:25.616
+Demographic, with five columns.
+
+8
+00:00:25.616 --> 00:00:28.693
+Initial Information, also with five columns.
+
+9
+00:00:28.693 --> 00:00:32.283
+And Main Question, with three survey questions:
+
+10
+00:00:32.283 --> 00:00:35.360
+urea, kilograms received, and seed quality.
+
+11
+00:00:40.500 --> 00:00:42.567
+Let's look at demographic first.
+
+12
+00:00:42.567 --> 00:00:45.460
+One hundred thirty five rows, five columns.
+
+13
+00:00:56.500 --> 00:00:58.205
+I write a note:
+
+14
+00:00:58.205 --> 00:00:59.909
+combining data frames, column-wise.
+
+15
+00:00:59.909 --> 00:01:02.040
+That means side by side.
+
+16
+00:01:20.500 --> 00:01:26.073
+Demographic, arrow, bind underscore cols, and inside, demographic and Main Question.
+
+17
+00:01:26.073 --> 00:01:29.620
+The tooltip helps us with the arguments.
+
+18
+00:01:32.500 --> 00:01:33.323
+Run it.
+
+19
+00:01:33.323 --> 00:01:35.382
+Demographic now has eight variables.
+
+20
+00:01:35.382 --> 00:01:40.733
+Open it, and you see the three question columns added on the right.
+
+21
+00:01:40.733 --> 00:01:42.380
+Same rows, more columns.
+
+22
+00:02:00.500 --> 00:02:06.506
+Bind columns only works well when both tables have the same rows, in the same order.
+
+23
+00:02:06.506 --> 00:02:10.260
+Here, both come from the same dataset, so they match.
+
+24
+00:02:12.500 --> 00:02:13.697
+Now row-wise.
+
+25
+00:02:13.697 --> 00:02:19.680
+Demographic, arrow, bind underscore rows, with demographic and Initial Information.
+
+26
+00:02:25.500 --> 00:02:26.217
+Run it.
+
+27
+00:02:26.217 --> 00:02:28.728
+Now we have two hundred seventy rows.
+
+28
+00:02:28.728 --> 00:02:30.880
+The second table was stacked underneath.
+
+29
+00:02:45.500 --> 00:02:48.762
+Scroll down, and look at the question columns.
+
+30
+00:02:48.762 --> 00:02:51.616
+In the lower rows, they say NA.
+
+31
+00:02:51.616 --> 00:02:53.247
+NA means not available.
+
+32
+00:02:53.247 --> 00:02:58.140
+Initial Information did not have those columns, so R leaves them empty.
+
+33
+00:03:15.500 --> 00:03:18.791
+Bind columns adds columns, bind rows adds rows.
+
+34
+00:03:18.791 --> 00:03:21.671
+And when you see NA, ask yourself:
+
+35
+00:03:21.671 --> 00:03:27.020
+is something missing, or did the tables just not match? Very well done!
+

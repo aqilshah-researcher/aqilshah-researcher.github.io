@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.872
+Before we change any data, we should always check it first.
+
+2
+00:00:04.872 --> 00:00:10.055
+In this lesson, you will learn to count values with table, remove rows safely,
+
+3
+00:00:10.055 --> 00:00:15.238
+and avoid one tiny mistake, a missing comma, that can change your data in
+
+4
+00:00:15.238 --> 00:00:17.459
+a way you did not expect.
+
+5
+00:00:17.459 --> 00:00:18.940
+Let's be careful together.
+
+6
+00:00:20.800 --> 00:00:22.085
+First, some tidying.
+
+7
+00:00:22.085 --> 00:00:28.940
+I remove the extra tables we made, Demographic one and Main, so the Environment is clear.
+
+8
+00:00:35.300 --> 00:00:41.790
+Under the note, to bring changes in a single or more cells, I start with table.
+
+9
+00:00:41.790 --> 00:00:45.440
+Table of Demographic, dollar sign, Sex of household head.
+
+10
+00:00:45.840 --> 00:00:49.309
+The dollar sign picks one column from a table.
+
+11
+00:00:49.309 --> 00:00:51.622
+Run it, and the console shows:
+
+12
+00:00:51.622 --> 00:00:54.320
+Female one, Male three hundred fifty one.
+
+13
+00:01:15.300 --> 00:01:16.877
+Let's view the table.
+
+14
+00:01:16.877 --> 00:01:21.609
+In row one, the household head is female, a widow from Khost.
+
+15
+00:01:21.609 --> 00:01:23.580
+Let's practice removing that row.
+
+16
+00:01:35.300 --> 00:01:40.420
+I type Demographic, open square bracket, minus one, close bracket. But look:
+
+17
+00:01:40.420 --> 00:01:42.127
+I forgot the comma!
+
+18
+00:01:42.127 --> 00:01:47.247
+Without the comma, R removed the first column, not the first row.
+
+19
+00:01:47.247 --> 00:01:51.940
+Only one observation of three variables is shown. Something is wrong.
+
+20
+00:02:00.300 --> 00:02:05.230
+So I recreate the table, and this time I write minus one, then a comma.
+
+21
+00:02:05.230 --> 00:02:07.860
+Now R knows the one is a row.
+
+22
+00:02:25.300 --> 00:02:29.472
+Run it, and the table has three hundred fifty one rows.
+
+23
+00:02:29.472 --> 00:02:33.264
+Table now shows Male three hundred fifty, and no female.
+
+24
+00:02:33.264 --> 00:02:35.160
+Exactly one row is gone.
+
+25
+00:02:50.300 --> 00:02:55.443
+Every time you remove a row, run table again, and check that the numbers
+
+26
+00:02:55.443 --> 00:02:57.280
+changed the way you expected.
+
+27
+00:03:10.300 --> 00:03:12.955
+Here I remove row one hundred twelve.
+
+28
+00:03:12.955 --> 00:03:15.609
+Three hundred forty eight rows are left.
+
+29
+00:03:15.609 --> 00:03:17.126
+Check, change, check again.
+
+30
+00:03:17.126 --> 00:03:20.160
+That is a very good habit. Well done!
+

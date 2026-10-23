@@ -1,0 +1,134 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.087
+Today we start with a new dataset.
+
+2
+00:00:03.087 --> 00:00:07.660
+In this lesson, you will see how to begin a script the right way,
+
+3
+00:00:07.660 --> 00:00:12.233
+load the data, view it like a spreadsheet, and select the columns you need.
+
+4
+00:00:12.233 --> 00:00:17.460
+It is a review of earlier skills, so you can feel how much you already know.
+
+5
+00:00:19.400 --> 00:00:22.956
+A good script starts with three things at the top:
+
+6
+00:00:22.956 --> 00:00:27.935
+setwd, to set the folder; the library lines, to load our packages; and read
+
+7
+00:00:27.935 --> 00:00:30.780
+excel, to load the data. Here they are.
+
+8
+00:00:31.180 --> 00:00:34.470
+Run them, and the Environment shows Dataset:
+
+9
+00:00:34.470 --> 00:00:38.230
+three hundred fifty two observations, of twenty variables.
+
+10
+00:00:38.230 --> 00:00:40.580
+A bigger dataset than before.
+
+11
+00:00:43.900 --> 00:00:45.256
+I write a note:
+
+12
+00:00:45.256 --> 00:00:46.612
+to view a dataset.
+
+13
+00:00:46.612 --> 00:00:50.340
+Then View, with a capital V, and the dataset name inside.
+
+14
+00:00:58.900 --> 00:01:02.519
+View opens the data in a new tab, like a spreadsheet.
+
+15
+00:01:02.519 --> 00:01:05.480
+You can scroll, sort, and look at every column.
+
+16
+00:01:28.900 --> 00:01:29.634
+Next note:
+
+17
+00:01:29.634 --> 00:01:35.140
+to select a column or columns from a dataset, or to create a data frame.
+
+18
+00:01:58.900 --> 00:02:03.050
+When I reload the packages, some red messages appear, like:
+
+19
+00:02:03.050 --> 00:02:05.540
+there is no package called colorspace.
+
+20
+00:02:05.540 --> 00:02:12.180
+As we learned, this means a supporting package is missing, and installing it fixes the problem.
+
+21
+00:02:23.900 --> 00:02:25.813
+Now the select line.
+
+22
+00:02:25.813 --> 00:02:28.204
+Demographic, arrow, Dataset, pipe, select.
+
+23
+00:02:28.204 --> 00:02:31.073
+Inside, the column names in quotes:
+
+24
+00:02:31.073 --> 00:02:34.420
+Province Name, and Sex of household head.
+
+25
+00:02:43.900 --> 00:02:50.473
+In the Environment, click the small arrow next to Dataset, and you can see every column name.
+
+26
+00:02:50.473 --> 00:02:53.180
+This helps you copy the names exactly.
+
+27
+00:02:58.900 --> 00:03:01.061
+I add a third column:
+
+28
+00:03:01.061 --> 00:03:03.222
+Marital Status of household head.
+
+29
+00:03:03.222 --> 00:03:05.383
+Run it, and Demographic appears:
+
+30
+00:03:05.383 --> 00:03:08.840
+three hundred fifty two rows, and three columns.
+
+31
+00:03:16.900 --> 00:03:18.559
+Setup, view, and select.
+
+32
+00:03:18.559 --> 00:03:21.461
+That is how almost every analysis begins.
+
+33
+00:03:21.461 --> 00:03:23.120
+You are getting faster!
+
