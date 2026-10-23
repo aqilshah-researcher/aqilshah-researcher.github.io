@@ -1,0 +1,130 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:05.115
+Sometimes the easiest way to clean data is to take things away.
+
+2
+00:00:05.115 --> 00:00:10.148
+In this lesson, you will learn to remove columns with a simple minus sign,
+
+3
+00:00:10.148 --> 00:00:14.822
+and to remove rows by their number, one or several at a time.
+
+4
+00:00:14.822 --> 00:00:16.620
+Let's tidy up our table.
+
+5
+00:00:18.500 --> 00:00:20.784
+Our demographic table has five columns.
+
+6
+00:00:20.784 --> 00:00:26.113
+Under the note, to remove a column from a data frame, we use select
+
+7
+00:00:26.113 --> 00:00:29.920
+again, but with a minus sign before the column name.
+
+8
+00:00:40.000 --> 00:00:44.597
+Demographic, pipe, select, minus, district name. The minus means:
+
+9
+00:00:44.597 --> 00:00:46.640
+everything except this column.
+
+10
+00:01:01.000 --> 00:01:01.853
+Run it.
+
+11
+00:01:01.853 --> 00:01:05.267
+In the Environment, demographic now has four variables.
+
+12
+00:01:05.267 --> 00:01:07.400
+The district column is gone.
+
+13
+00:01:22.000 --> 00:01:26.419
+Next, I remove the sex of household head column the same way.
+
+14
+00:01:26.419 --> 00:01:28.260
+Now we have three variables.
+
+15
+00:01:43.000 --> 00:01:48.419
+To remove two columns at once, put both inside select, each with a minus
+
+16
+00:01:48.419 --> 00:01:50.355
+sign, separated by a comma.
+
+17
+00:01:50.355 --> 00:01:55.000
+First, I recreate the full table, so we can try it again.
+
+18
+00:02:08.000 --> 00:02:08.903
+Now rows.
+
+19
+00:02:08.903 --> 00:02:11.611
+Rows are removed with square brackets.
+
+20
+00:02:11.611 --> 00:02:16.577
+Demographic, open bracket, minus one hundred thirty five, comma, close bracket.
+
+21
+00:02:16.577 --> 00:02:20.189
+The number before the comma is the row.
+
+22
+00:02:20.189 --> 00:02:23.800
+Nothing after the comma means: keep all columns.
+
+23
+00:02:24.200 --> 00:02:26.779
+Before running it, let's look at the table.
+
+24
+00:02:26.779 --> 00:02:29.680
+The last row is number one hundred thirty five.
+
+25
+00:02:38.000 --> 00:02:42.388
+Run it, and the Environment shows one hundred thirty four observations.
+
+26
+00:02:42.388 --> 00:02:45.180
+Row one hundred thirty five is gone.
+
+27
+00:03:03.000 --> 00:03:06.058
+For several rows, use c inside the brackets:
+
+28
+00:03:06.058 --> 00:03:11.027
+minus c, one hundred thirty one, one hundred thirty two, and so on.
+
+29
+00:03:11.027 --> 00:03:13.320
+Be careful to close every bracket.
+
+30
+00:03:23.000 --> 00:03:24.464
+Minus means remove.
+
+31
+00:03:24.464 --> 00:03:26.416
+For columns, inside select.
+
+32
+00:03:26.416 --> 00:03:30.320
+For rows, inside square brackets. You've got this!
+

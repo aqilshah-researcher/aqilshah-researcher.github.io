@@ -1,0 +1,130 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.614
+Big datasets can feel overwhelming.
+
+2
+00:00:02.614 --> 00:00:05.878
+The trick is to keep only what you need.
+
+3
+00:00:05.878 --> 00:00:10.956
+In this lesson, you will meet the pipe, one of the most loved tools
+
+4
+00:00:10.956 --> 00:00:14.946
+in R, and use select to build a smaller, focused table.
+
+5
+00:00:14.946 --> 00:00:16.760
+Let's make our data friendlier.
+
+6
+00:00:18.700 --> 00:00:21.880
+Here are two helpful shortcuts, written as notes.
+
+7
+00:00:21.880 --> 00:00:25.855
+The pipe operator, percent, greater than, percent, has a shortcut:
+
+8
+00:00:25.855 --> 00:00:27.445
+Control, Shift and M.
+
+9
+00:00:27.445 --> 00:00:31.420
+And Shift and Enter helps when a command is long.
+
+10
+00:00:38.200 --> 00:00:39.373
+The pipe means:
+
+11
+00:00:39.373 --> 00:00:41.718
+take this, and then do that.
+
+12
+00:00:41.718 --> 00:00:43.673
+So Dataset, pipe, select, means:
+
+13
+00:00:43.673 --> 00:00:46.800
+take the Dataset, and then select some columns.
+
+14
+00:00:58.200 --> 00:01:02.939
+Inside select, I list the columns I want, each in quotes:
+
+15
+00:01:02.939 --> 00:01:08.540
+province name, district name, sex of household head, marital status, and household size.
+
+16
+00:01:20.200 --> 00:01:22.484
+Long lines are hard to read.
+
+17
+00:01:22.484 --> 00:01:28.195
+So I press Enter after each comma, and RStudio keeps the code neatly lined up.
+
+18
+00:01:28.195 --> 00:01:30.860
+R still reads it as one command.
+
+19
+00:01:43.200 --> 00:01:45.875
+At the front, I write: demographic, arrow.
+
+20
+00:01:45.875 --> 00:01:50.460
+So the result is saved as a new data frame, called demographic.
+
+21
+00:02:03.200 --> 00:02:04.122
+Run it.
+
+22
+00:02:04.122 --> 00:02:10.576
+In the Environment, demographic appears, with one hundred thirty five rows, and five columns.
+
+23
+00:02:10.576 --> 00:02:12.420
+Same people, fewer columns.
+
+24
+00:02:12.820 --> 00:02:17.668
+Click on it, or use View, to open it like a spreadsheet.
+
+25
+00:02:17.668 --> 00:02:19.688
+Here are our five columns:
+
+26
+00:02:19.688 --> 00:02:22.920
+province, district, sex, marital status, and household size.
+
+27
+00:02:28.200 --> 00:02:32.803
+Look how much easier this is to read than the full dataset.
+
+28
+00:02:32.803 --> 00:02:37.022
+Below in the script, I have also prepared the next steps:
+
+29
+00:02:37.022 --> 00:02:38.940
+removing columns, and removing rows.
+
+30
+00:02:58.200 --> 00:02:59.309
+Take, and then do.
+
+31
+00:02:59.309 --> 00:03:00.418
+That is the pipe.
+
+32
+00:03:00.418 --> 00:03:04.300
+Once you get used to it, you will use it every day. Well done!
+

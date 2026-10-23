@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:05.996
+Long column names like zero point eleven, sex of household head, are hard to
+
+2
+00:00:05.996 --> 00:00:08.223
+type and easy to get wrong.
+
+3
+00:00:08.223 --> 00:00:13.791
+In this lesson, you will learn two ways to give your columns short, clear names.
+
+4
+00:00:13.791 --> 00:00:16.760
+Let's make our table easier to work with.
+
+5
+00:00:18.700 --> 00:00:24.215
+Under the note, to rename a column name, the first way uses the names function.
+
+6
+00:00:24.215 --> 00:00:29.362
+Names of demographic, arrow, c, and then the new names in quotes, in the
+
+7
+00:00:29.362 --> 00:00:31.200
+same order as the columns.
+
+8
+00:00:33.200 --> 00:00:38.643
+Province, District, Gender, Marital underscore Status, and H H underscore Size.
+
+9
+00:00:38.643 --> 00:00:41.612
+We use underscores instead of spaces.
+
+10
+00:00:41.612 --> 00:00:46.560
+Names without spaces are much easier to use in R.
+
+11
+00:00:51.200 --> 00:00:53.634
+Run it, and open the table.
+
+12
+00:00:53.634 --> 00:00:55.257
+Look at the headers:
+
+13
+00:00:55.257 --> 00:00:59.720
+Province, District, Gender, Marital Status, H H Size. Clean and short!
+
+14
+00:01:08.200 --> 00:01:09.203
+But be careful:
+
+15
+00:01:09.203 --> 00:01:11.542
+names replaces all the names in order.
+
+16
+00:01:11.542 --> 00:01:16.220
+If you get the order wrong, the names will be on the wrong columns.
+
+17
+00:01:33.200 --> 00:01:37.880
+So here is the second way, which I often prefer. I write: Or.
+
+18
+00:01:37.880 --> 00:01:42.920
+Then I recreate the table, so we start again from the original long names.
+
+19
+00:01:58.200 --> 00:01:59.390
+Demographic, pipe, rename.
+
+20
+00:01:59.390 --> 00:02:05.340
+Inside rename, we write the new name, an equals sign, and then the old name.
+
+21
+00:02:05.340 --> 00:02:07.720
+New name first, old name second.
+
+22
+00:02:28.200 --> 00:02:31.483
+Province equals zero point one province name.
+
+23
+00:02:31.483 --> 00:02:34.766
+District equals zero point two district name.
+
+24
+00:02:34.766 --> 00:02:37.580
+Gender equals sex of household head.
+
+25
+00:02:48.200 --> 00:02:51.705
+Marital status, and household size, the same way.
+
+26
+00:02:51.705 --> 00:02:57.840
+IntelliSense helps me pick each column, so the old names are spelled exactly right.
+
+27
+00:03:18.200 --> 00:03:22.663
+Rename only touches the columns you list, so it is safer.
+
+28
+00:03:22.663 --> 00:03:26.720
+And the code tells everyone exactly what changed. Excellent work!
+

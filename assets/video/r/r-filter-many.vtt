@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.833
+Real questions often have more than one part.
+
+2
+00:00:03.833 --> 00:00:09.141
+In this lesson, you will learn to filter with several conditions at once, such
+
+3
+00:00:09.141 --> 00:00:14.449
+as gender, province and marital status together, and you will learn what it means
+
+4
+00:00:14.449 --> 00:00:16.724
+when a filter returns no rows.
+
+5
+00:00:16.724 --> 00:00:18.620
+Let's dig a little deeper.
+
+6
+00:00:20.500 --> 00:00:25.440
+Under the note, complex filter, I start a new table called Deep Filter.
+
+7
+00:00:35.000 --> 00:00:38.072
+Demographic, pipe, filter. The first condition:
+
+8
+00:00:38.072 --> 00:00:40.120
+Gender, double equals, Male.
+
+9
+00:00:52.000 --> 00:00:54.910
+Then a comma, and the second condition:
+
+10
+00:00:54.910 --> 00:00:56.572
+Province, double equals, Badakhshan.
+
+11
+00:00:56.572 --> 00:00:59.482
+In a filter, a comma means and.
+
+12
+00:00:59.482 --> 00:01:01.560
+Every condition must be true.
+
+13
+00:01:12.000 --> 00:01:14.788
+A third condition on a new line:
+
+14
+00:01:14.788 --> 00:01:16.780
+Marital Status, double equals, Single.
+
+15
+00:01:35.000 --> 00:01:37.649
+Run it, and look at the Environment:
+
+16
+00:01:37.649 --> 00:01:39.162
+Deep Filter, zero observations.
+
+17
+00:01:39.162 --> 00:01:41.054
+Is that an error? No!
+
+18
+00:01:41.054 --> 00:01:42.568
+It is an answer.
+
+19
+00:01:42.568 --> 00:01:49.000
+In this data, there is no row that matches all three conditions as I first typed them.
+
+20
+00:01:55.000 --> 00:01:59.403
+Let's change one condition, from Single to Married, and run it again.
+
+21
+00:01:59.403 --> 00:02:01.604
+Now we get a different result.
+
+22
+00:02:01.604 --> 00:02:06.740
+Changing one condition at a time is a great way to explore your data.
+
+23
+00:02:12.000 --> 00:02:14.923
+And here, with Single, three rows match:
+
+24
+00:02:14.923 --> 00:02:17.010
+three single men in Badakhshan.
+
+25
+00:02:17.010 --> 00:02:18.680
+View shows them clearly.
+
+26
+00:02:40.000 --> 00:02:45.614
+Notice how each condition narrows the table a little more. First, all men.
+
+27
+00:02:45.614 --> 00:02:47.341
+Then, men in Badakhshan.
+
+28
+00:02:47.341 --> 00:02:49.500
+Then, single men in Badakhshan.
+
+29
+00:03:08.000 --> 00:03:10.600
+Next, I add a new note:
+
+30
+00:03:10.600 --> 00:03:12.767
+converting numerical values to numeric.
+
+31
+00:03:12.767 --> 00:03:17.100
+We will learn about converting data types soon. Excellent work!
+
