@@ -1,0 +1,130 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.471
+Typing long column names exactly right can be hard.
+
+2
+00:00:04.471 --> 00:00:10.998
+In this lesson, you will learn attach, which lets RStudio suggest column names as you type.
+
+3
+00:00:10.998 --> 00:00:16.708
+You will also learn what the masking messages mean, so they never worry you.
+
+4
+00:00:16.708 --> 00:00:18.340
+Let's make typing easier.
+
+5
+00:00:20.200 --> 00:00:22.480
+Here is our script so far.
+
+6
+00:00:22.480 --> 00:00:25.520
+I add a new note: attaching a dataset.
+
+7
+00:00:25.520 --> 00:00:27.420
+It eases selecting column names.
+
+8
+00:00:31.700 --> 00:00:33.548
+The function is attach.
+
+9
+00:00:33.548 --> 00:00:36.320
+Attach Dataset, and then attach Demographic.
+
+10
+00:00:44.700 --> 00:00:45.476
+Run them.
+
+11
+00:00:45.476 --> 00:00:47.803
+The console shows some red text:
+
+12
+00:00:47.803 --> 00:00:50.518
+the following objects are masked. Don't worry.
+
+13
+00:00:50.518 --> 00:00:55.948
+It means both tables have columns with the same names, so R tells us
+
+14
+00:00:55.948 --> 00:00:57.500
+which one comes first.
+
+15
+00:01:04.700 --> 00:01:07.321
+Now let's see why attach helps.
+
+16
+00:01:07.321 --> 00:01:09.942
+I write a new select line:
+
+17
+00:01:09.942 --> 00:01:13.000
+Demographic underscore one, arrow, Dataset, pipe, select.
+
+18
+00:01:39.700 --> 00:01:42.220
+Inside select, I start typing: provin.
+
+19
+00:01:42.220 --> 00:01:43.900
+RStudio shows a list:
+
+20
+00:01:43.900 --> 00:01:45.580
+Province Name, from Dataset.
+
+21
+00:01:45.580 --> 00:01:50.620
+I just press Enter, and the full name is written for me.
+
+22
+00:02:09.700 --> 00:02:12.164
+No spelling mistakes, no missing spaces.
+
+23
+00:02:12.164 --> 00:02:16.680
+This saves a lot of time with long survey column names.
+
+24
+00:02:24.700 --> 00:02:30.320
+I add Sex of household head, and Marital Status of household head, the same way.
+
+25
+00:02:59.700 --> 00:03:03.491
+Run it, and Demographic one appears in the Environment:
+
+26
+00:03:03.491 --> 00:03:06.440
+three hundred fifty two rows, three columns.
+
+27
+00:03:07.700 --> 00:03:08.171
+One tip:
+
+28
+00:03:08.171 --> 00:03:11.941
+attach is helpful while you explore, but it can cause confusion if you attach many tables.
+
+29
+00:03:11.941 --> 00:03:13.355
+When you are done, use detach.
+
+30
+00:03:13.355 --> 00:03:15.711
+That brings us to the end of our R sessions.
+
+31
+00:03:15.711 --> 00:03:16.889
+You have learned so much.
+
+32
+00:03:16.889 --> 00:03:18.067
+Thank you, and keep practicing!
+
