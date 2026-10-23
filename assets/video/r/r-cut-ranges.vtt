@@ -1,0 +1,130 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:04.091
+A long list of numbers is hard to read.
+
+2
+00:00:04.091 --> 00:00:05.554
+Groups are much easier:
+
+3
+00:00:05.554 --> 00:00:08.114
+small, medium, and large families, for example.
+
+4
+00:00:08.114 --> 00:00:13.234
+In this lesson, you will learn to group numbers into ranges with cut, and
+
+5
+00:00:13.234 --> 00:00:16.160
+then count each group in a neat table.
+
+6
+00:00:16.160 --> 00:00:18.720
+Let's make our numbers tell a story.
+
+7
+00:00:20.600 --> 00:00:25.189
+On the right, the Viewer shows a frequency table of household size.
+
+8
+00:00:25.189 --> 00:00:27.866
+Every single size has its own row:
+
+9
+00:00:27.866 --> 00:00:30.543
+three, four, five, seven, and so on.
+
+10
+00:00:30.543 --> 00:00:33.220
+It is long and hard to read.
+
+11
+00:00:33.620 --> 00:00:35.079
+I write a note:
+
+12
+00:00:35.079 --> 00:00:38.361
+to make a range of column in a dataset.
+
+13
+00:00:38.361 --> 00:00:39.820
+Then demographic, pipe, mutate.
+
+14
+00:00:50.100 --> 00:00:50.931
+Inside mutate:
+
+15
+00:00:50.931 --> 00:00:53.007
+H H Size equals cut.
+
+16
+00:00:53.007 --> 00:00:57.160
+Cut takes the number column, and cuts it into pieces.
+
+17
+00:01:05.100 --> 00:01:05.884
+First, breaks.
+
+18
+00:01:05.884 --> 00:01:09.018
+The breaks are the edges of each group:
+
+19
+00:01:09.018 --> 00:01:11.760
+one, five, ten, fifteen, twenty, and Inf.
+
+20
+00:01:20.100 --> 00:01:21.262
+Inf means infinity.
+
+21
+00:01:21.262 --> 00:01:26.684
+It makes the last group open at the top, so every big family is
+
+22
+00:01:26.684 --> 00:01:28.620
+included, no matter how large.
+
+23
+00:01:35.100 --> 00:01:38.033
+Then labels, one for each group, in quotes:
+
+24
+00:01:38.033 --> 00:01:43.900
+one to five, five to ten, ten to fifteen, fifteen to twenty, and more than twenty.
+
+25
+00:02:05.100 --> 00:02:06.773
+Be careful with the brackets.
+
+26
+00:02:06.773 --> 00:02:10.120
+There are several levels here, so close each one, slowly.
+
+27
+00:03:00.100 --> 00:03:02.313
+Run it, and open the table.
+
+28
+00:03:02.313 --> 00:03:06.740
+The household size column now shows the group names instead of numbers.
+
+29
+00:03:15.100 --> 00:03:16.771
+Now let's count them.
+
+30
+00:03:16.771 --> 00:03:22.620
+Cross underscore cases, from the expss package, with cell vars equals H H Size.
+
+31
+00:03:32.100 --> 00:03:34.409
+And here is our new table.
+
+32
+00:03:34.409 --> 00:03:41.720
+Twenty four households have one to five members, and fifty seven have more than twenty. Much clearer! Wonderful work.
+

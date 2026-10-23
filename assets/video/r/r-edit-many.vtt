@@ -1,0 +1,118 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:05.900
+Sometimes you need to correct a value, like a typing mistake from the field.
+
+2
+00:00:05.900 --> 00:00:10.999
+In this lesson, you will learn to change one cell, or many cells at
+
+3
+00:00:10.999 --> 00:00:16.099
+once, using the row and column address, and to check every change with table.
+
+4
+00:00:16.099 --> 00:00:17.920
+Let's correct some data carefully.
+
+5
+00:00:19.800 --> 00:00:23.014
+We start again from the full Demographic table:
+
+6
+00:00:23.014 --> 00:00:25.023
+three hundred fifty two rows.
+
+7
+00:00:25.023 --> 00:00:29.040
+Table shows one female and three hundred fifty one males.
+
+8
+00:00:31.300 --> 00:00:34.477
+To change one cell, we use its address:
+
+9
+00:00:34.477 --> 00:00:38.449
+Demographic, square brackets, row one hundred fifteen, comma, column two.
+
+10
+00:00:38.449 --> 00:00:42.420
+Then the arrow, and the new value: Male, in quotes.
+
+11
+00:00:49.300 --> 00:00:51.562
+Run it, then run table again.
+
+12
+00:00:51.562 --> 00:00:54.578
+Now it says Male, three hundred fifty two.
+
+13
+00:00:54.578 --> 00:00:56.840
+The one female value has changed.
+
+14
+00:01:04.300 --> 00:01:08.137
+To change many cells, use a range of rows.
+
+15
+00:01:08.137 --> 00:01:12.400
+Demographic, rows one colon two hundred, column two, arrow, Female.
+
+16
+00:01:19.300 --> 00:01:21.450
+Run it, and view the table.
+
+17
+00:01:21.450 --> 00:01:24.318
+The first two hundred rows now say Female.
+
+18
+00:01:24.318 --> 00:01:28.260
+Table shows two hundred female, and one hundred fifty two male.
+
+19
+00:01:39.300 --> 00:01:41.577
+This is just for practice, of course.
+
+20
+00:01:41.577 --> 00:01:46.132
+In real work, you would only change a value when you know it is
+
+21
+00:01:46.132 --> 00:01:49.060
+wrong, for example after checking with the field team.
+
+22
+00:01:54.300 --> 00:01:55.702
+Let's set them back:
+
+23
+00:01:55.702 --> 00:01:58.507
+rows one to two hundred, column two, Male.
+
+24
+00:01:58.507 --> 00:02:00.260
+Run table again to check.
+
+25
+00:02:24.300 --> 00:02:29.396
+And here I change the single cell, row one hundred fifteen, back to Female.
+
+26
+00:02:29.396 --> 00:02:35.220
+Table shows one female and three hundred fifty one male again, just like at the start.
+
+27
+00:03:04.300 --> 00:03:08.531
+Finally, rows one to three hundred fifty two: every row.
+
+28
+00:03:08.531 --> 00:03:11.069
+Use ranges like this with care.
+
+29
+00:03:11.069 --> 00:03:15.300
+Always check with table after each change. Excellent work today!
+
