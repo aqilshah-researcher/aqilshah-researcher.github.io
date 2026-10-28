@@ -783,3 +783,10 @@ a.vcourse:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .pron{margin:14px 0 18px;padding:10px 14px;border-left:3px solid var(--teal);background:var(--surface-2);border-radius:0 8px 8px 0;font-size:15px;line-height:1.55;color:var(--ink)}
 .pron-k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:2px}
 .pron-ph{color:var(--ink-3);white-space:nowrap}
+.say-btn{display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 10px;border-radius:999px;border:1px solid var(--teal);background:transparent;color:var(--teal);font:600 13px/1 var(--sans);cursor:pointer;vertical-align:middle;margin-right:8px}
+.say-btn:hover,.say-btn:focus-visible{background:var(--teal);color:#fff}
+.pron .say-btn{float:right;margin:0 0 6px 10px}
+.hero-pron{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:-4px 0 10px;color:rgba(255,255,255,.88);font-size:15px}
+.hero-pron b{color:#fff}
+.hero-pron .say-btn{border-color:rgba(255,255,255,.7);color:#fff}
+.hero-pron .say-btn:hover{background:#fff;color:var(--ink)}
