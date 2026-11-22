@@ -4,7 +4,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Job Intelligence Portal · Demo</title>
+  <title>Job Intelligence Portal · Live feed</title>
   <style>
   :root {
     --bg: #f6f7f9; --panel: #ffffff; --ink: #1f2933; --muted: #5f6b7a; --line: #e3e7ec;
@@ -194,7 +194,13 @@
     <div id="toast" class="toast" role="status" hidden></div>
   </div>
   <div class="demo-bar" role="note"><b>Demo with sample data.</b> Organizations and jobs are fictional, and nothing you change is saved. <a href="/projects/job-intelligence/">Back to the case study</a></div>
-<style>.demo-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff4e0;color:#5c3b00;border-top:1px solid #f3d19c;padding:8px 14px;font-size:13px;text-align:center}.demo-bar a{color:#1d4ed8;font-weight:600;margin-left:6px}.side-foot{padding-bottom:48px}#content{padding-bottom:60px}.toast{bottom:56px}</style>
+<style>.demo-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff4e0;color:#5c3b00;border-top:1px solid #f3d19c;padding:8px 14px;font-size:13px;text-align:center}.demo-bar a{color:#1d4ed8;font-weight:600;margin-left:6px}.side-foot{padding-bottom:48px}#content{padding-bottom:60px}.toast{bottom:56px}
+.live-feed .demo-bar{background:#e6f4ea;color:#0d4a22;border-top-color:#b7dfc3}
+.live-feed .nav-item[data-view="saved"],.live-feed .nav-item[data-view="applied"],.live-feed .nav-item[data-view="interviews"],.live-feed .nav-item[data-view="closed"],.live-feed .nav-item[data-view="skipped"],.live-feed .nav-item[data-view="rules"],.live-feed .nav-item[data-view="settings"],.live-feed .nav-group:nth-of-type(n+2),
+.live-feed .tile[data-view="saved"],.live-feed .tile[data-view="applied"],.live-feed .tile[data-view="interviews"],.live-feed #runNow,
+.live-feed #editForm,.live-feed #quickSave,.live-feed #quickApplied,.live-feed #quickSkip,.live-feed [data-save],.live-feed [data-skip],.live-feed .card-side .chip.info,.live-feed .drawer .chip.info,
+.live-feed .grid2 .panel:nth-child(2),.live-feed .grid2 .panel:nth-child(3),.live-feed .side-foot a{display:none!important}</style>
+<script src="feed-config.js"></script>
 <script>
 /* Demo backend for the Job Intelligence Portal.
  * Replaces google.script.run with an in-browser copy of the Apps Script API (Portal.gs),
@@ -276,6 +282,70 @@
   ];
   var settings = { alertMode: 'daily', dailyHour: 19, interval: 60, recipient: 'you@example.com', minScore: 3, maxAge: 45, allowUnknown: true, instantMinScore: 6, sendAlerts: true };
 
+
+  // ---------------------------------------------------------------- live feed
+  var META = { live: false, orgsTotal: 638, orgsEnabled: 172, lastRun: iso(NOW - 40 * 60e3) };
+  function parseCSV(text) {
+    var rows = [], row = [], f = '', q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ',') { row.push(f); f = ''; }
+      else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(f); rows.push(row); row = []; f = ''; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  }
+  function when(v) {
+    v = String(v || '').trim(); if (!v) return '';
+    var m = v.match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{1,2}):(\d{2}))?/);
+    if (m) return iso(new Date(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0)).getTime());
+    m = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s+(\d{1,2}):(\d{2}))?/);
+    if (m) return iso(new Date(+m[3], +m[1] - 1, +m[2], +(m[4] || 0), +(m[5] || 0)).getTime());
+    var t = Date.parse(v); return isNaN(t) ? '' : iso(t);
+  }
+  function money(sal) {
+    var n = String(sal || '').match(/\$\s?([\d,]+(?:\.\d+)?)/g); if (!n) return [0, 0];
+    var a = n.map(function (x) { return Number(x.replace(/[^\d.]/g, '')); });
+    if (/hour|hr/i.test(sal)) a = a.map(function (x) { return x * 2080; });
+    return [a[0] || 0, a[1] || a[0] || 0];
+  }
+  function loadLive(text) {
+    var rows = parseCSV(text).filter(function (r) { return r.some(function (x) { return String(x).trim(); }); });
+    if (rows.length < 2) return;
+    var H = rows[0].map(function (h) { return String(h).trim(); }), at = function (r, h) { var i = H.indexOf(h); return i < 0 ? '' : String(r[i] || '').trim(); };
+    var meta = rows[1], live = [];
+    rows.slice(1).forEach(function (r, n) {
+      var title = at(r, 'Job Title'); if (!title) return;
+      var el = at(r, 'Eligibility'), sal = at(r, 'Salary'), mm = money(sal);
+      var group = /^Blocked/.test(el) ? 'Blocked' : (/^OK/.test(el) ? 'Eligible' : 'Needs Review');
+      var loc = at(r, 'Location'), wm = at(r, 'Work Mode') || (/remote/i.test(loc) ? 'Remote' : /hybrid/i.test(loc) ? 'Hybrid' : 'On-site');
+      live.push({
+        id: at(r, 'Job ID') || ('L' + n), key: 'live|' + n, title: title, company: at(r, 'Organization'), location: loc, url: at(r, 'Job URL'),
+        posted: when(at(r, 'Posted')), firstSeen: when(at(r, 'First Seen')), lastSeen: when(at(r, 'First Seen')), status: 'New',
+        eligibility: el || 'Needs Review', eligGroup: group,
+        evidence: group === 'Eligible' ? 'No citizenship or clearance requirement found in the description.' : (group === 'Blocked' ? 'The description requires a clearance or US citizenship.' : 'Not confirmed yet: the description has unclear wording or has not been read.'),
+        match: 'Match', score: Number(at(r, 'Score')) || 0, terms: '', salary: sal, salaryMin: mm[0], salaryMax: mm[1], workMode: wm,
+        platform: at(r, 'Source') || '', sourceFeed: at(r, 'Organization'), category: at(r, 'Category'), priority: '', stillOpen: 'Yes', closing: '',
+        type: '', applicationDate: '', followUp: '', notes: '', skipReason: '', remarks: '', feedbackRule: '', alert: '', decisionDate: '', updatedAt: when(at(r, 'First Seen')),
+        description: 'Open the job posting for the full description.', history: []
+      });
+    });
+    if (!live.length) return;
+    jobs = live; META.live = true;
+    var ot = Number(at(meta, 'Orgs Tracked')), oe = Number(at(meta, 'Orgs Monitored')), up = at(meta, 'Last Updated');
+    if (ot) META.orgsTotal = ot; if (oe) META.orgsEnabled = oe;
+    var u = up.match(/(\d{4}-\d{2}-\d{2} \d{1,2}:\d{2})/); if (u) META.lastRun = when(u[1]);
+    document.documentElement.classList.add('live-feed');
+    var bar = document.querySelector('.demo-bar');
+    if (bar) bar.innerHTML = '<b>Live feed.</b> These are real jobs my system found on employers’ websites, refreshed through the day. My own application records stay private. <a href="/projects/job-intelligence/">Back to the case study</a>';
+  }
+  var READY = (window.JOB_FEED_URL ? fetch(window.JOB_FEED_URL, { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('feed ' + r.status); return r.text(); }).then(loadLive)
+    .catch(function (e) { if (window.console) console.warn('Live feed unavailable, showing sample data.', e); }) : Promise.resolve());
+
   function isMatch(it) { return /^(Match|Location unknown|Possible duplicate)$/.test(it.match); }
   function viewTest(v, it) {
     var t = Date.parse(it.firstSeen) || 0;
@@ -318,12 +388,12 @@
       var matches = jobs.filter(function (it) { return isMatch(it) && it.eligGroup !== 'Blocked'; });
       var perDay = [];
       for (var i = 29; i >= 0; i--) { var ds = day(NOW - i * DAY); perDay.push({ d: fmtD(ds), all: 0, matches: 0, s: ds }); }
-      jobs.forEach(function (it) { var s = day(Date.parse(it.firstSeen)); perDay.forEach(function (p) { if (p.s === s) { p.all += 2 + (it.id.charCodeAt(5) % 3); if (isMatch(it) && it.eligGroup !== 'Blocked') p.matches++; } }); });
+      jobs.forEach(function (it) { var s = day(Date.parse(it.firstSeen)); perDay.forEach(function (p) { if (p.s === s) { p.all += META.live ? 1 : 2 + (it.id.charCodeAt(5) % 3); if (isMatch(it) && it.eligGroup !== 'Blocked') p.matches++; } }); });
       var perWeek = [];
       for (var w = 11; w >= 0; w--) perWeek.push({ start: NOW - (w + 1) * 7 * DAY, end: NOW - w * 7 * DAY, n: w > 4 ? [1, 2, 0, 3, 2, 4, 3][w - 5] : 0 });
       jobs.forEach(function (it) { var t = Date.parse(it.applicationDate); if (t) perWeek.forEach(function (p) { if (t > p.start && t <= p.end) p.n++; }); });
       return {
-        version: '3.1 (demo)', sheetUrl: '#', portalUrl: '', tz: 'America/New_York', counts: counts, total: jobs.length,
+        version: META.live ? '3.1 (live feed)' : '3.1 (demo)', sheetUrl: '#', portalUrl: '', tz: 'America/New_York', counts: counts, total: jobs.length,
         stats: { matchesAll: matches.length, openMatches: matches.filter(function (it) { return it.stillOpen === 'Yes' && it.status === 'New'; }).length,
           applied: jobs.filter(function (it) { return it.status === 'Applied'; }).length,
           interviews: jobs.filter(function (it) { return it.status === 'Interview' || it.status === 'Offer'; }).length,
@@ -335,8 +405,8 @@
         facets: { companies: Object.keys(tally(jobs, function (it) { return it.company; })).sort(), platforms: Object.keys(tally(jobs, function (it) { return it.platform; })).sort(),
           categories: Object.keys(tally(jobs, function (it) { return it.category; })).sort(), statuses: STATUS, skipReasons: SKIP,
           eligibility: ['Eligible', 'Needs Review', 'Blocked'], workModes: ['Remote', 'Hybrid', 'On-site'] },
-        health: { orgsTotal: 638, orgsEnabled: 172, orgsWithErrors: 3, lastRun: { at: iso(NOW - 40 * 60e3), checked: '42 organizations', result: '3 new matches', errors: '0' },
-          recentErrors: [{ at: iso(NOW - 26 * 36e5), company: 'Example County Careers', error: 'The site loads jobs with JavaScript only. Switched to Page Watch.' }] },
+        health: { orgsTotal: META.orgsTotal, orgsEnabled: META.orgsEnabled, orgsWithErrors: META.live ? 0 : 3, lastRun: { at: META.lastRun, checked: META.orgsEnabled + ' organizations', result: META.live ? 'live feed' : '3 new matches', errors: '0' },
+          recentErrors: META.live ? [] : [{ at: iso(NOW - 26 * 36e5), company: 'Example County Careers', error: 'The site loads jobs with JavaScript only. Switched to Page Watch.' }] },
         settings: settings, pendingRules: rules.filter(function (r) { return r.status === 'Proposed'; }).length
       };
     },
@@ -414,10 +484,10 @@
     Object.keys(API).forEach(function (name) {
       r[name] = function () {
         var args = arguments;
-        setTimeout(function () {
+        READY.then(function () { setTimeout(function () {
           try { var res = API[name].apply(null, args); ok && ok(JSON.parse(JSON.stringify(res))); }
           catch (e) { fail && fail(e); }
-        }, 120 + Math.random() * 180);
+        }, 60 + Math.random() * 120); });
       };
     });
     return r;
