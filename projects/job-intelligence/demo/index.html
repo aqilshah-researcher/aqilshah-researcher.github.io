@@ -335,7 +335,7 @@
         facets: { companies: Object.keys(tally(jobs, function (it) { return it.company; })).sort(), platforms: Object.keys(tally(jobs, function (it) { return it.platform; })).sort(),
           categories: Object.keys(tally(jobs, function (it) { return it.category; })).sort(), statuses: STATUS, skipReasons: SKIP,
           eligibility: ['Eligible', 'Needs Review', 'Blocked'], workModes: ['Remote', 'Hybrid', 'On-site'] },
-        health: { orgsTotal: 177, orgsEnabled: 168, orgsWithErrors: 3, lastRun: { at: iso(NOW - 40 * 60e3), checked: '42 organizations', result: '3 new matches', errors: '0' },
+        health: { orgsTotal: 638, orgsEnabled: 172, orgsWithErrors: 3, lastRun: { at: iso(NOW - 40 * 60e3), checked: '42 organizations', result: '3 new matches', errors: '0' },
           recentErrors: [{ at: iso(NOW - 26 * 36e5), company: 'Example County Careers', error: 'The site loads jobs with JavaScript only. Switched to Page Watch.' }] },
         settings: settings, pendingRules: rules.filter(function (r) { return r.status === 'Proposed'; }).length
       };

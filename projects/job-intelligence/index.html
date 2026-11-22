@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Job Intelligence Portal: how I automated my own job search · Aqil Shah Ayaz</title>
-<meta name="description" content="An automation system I designed and built in Google Apps Script. It watches 177 employers in the DC, Maryland and Virginia area, screens each new job for fit and eligibility, emails me a summary at 7 p.m. and tracks every application in one portal.">
+<meta name="description" content="An automation system I designed and built in Google Apps Script. It tracks 638 organizations in the DC, Maryland and Virginia area and beyond, screens each new job for fit and eligibility, emails me a summary at 7 p.m. and tracks every application in one portal.">
 <meta property="og:title" content="Job Intelligence Portal: how I automated my own job search · Aqil Shah Ayaz">
-<meta property="og:description" content="An automation system I designed and built in Google Apps Script. It watches 177 employers in the DC, Maryland and Virginia area, screens each new job for fit and eligibility, emails me a summary at 7 p.m. and tracks every application in one portal.">
+<meta property="og:description" content="An automation system I designed and built in Google Apps Script. It tracks 638 organizations in the DC, Maryland and Virginia area and beyond, screens each new job for fit and eligibility, emails me a summary at 7 p.m. and tracks every application in one portal.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/job-intel-overview.png">
+<meta property="og:image" content="https://aqilshah-researcher.github.io/assets/img/job-intel-overview.png?v=2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23264653'/><text x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'>AS</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
 <script>(function(){var B='a29bef65c9817ced';try{fetch('/assets/build.txt',{cache:'no-store'}).then(function(r){return r.ok?r.text():''}).then(function(t){t=(t||'').trim();if(!t||t===B)return;var k='rb-'+t;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){}location.reload()})['catch'](function(){})}catch(e){}})()</script>
 <link rel="stylesheet" href="/assets/site.css?v=bbd1bbdf">
 <script src="/assets/site.js?v=1c693c02"></script>
-<script>window.AQ_CHAT_V="5b0b4e54";</script><script src="/assets/chat.js?v=df77dcf4" defer></script>
+<script>window.AQ_CHAT_V="e6549051";</script><script src="/assets/chat.js?v=df77dcf4" defer></script>
 <script data-goatcounter="https://aqilshah.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <style>
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:24px 0 8px}
@@ -68,9 +68,9 @@
   <header class="p-head">
     <div class="eyebrow">Personal project · Automation and solution design · 2026</div>
     <h1>Job Intelligence Portal: how I automated my own job search</h1>
-    <p class="lede">I designed and built a system that watches the career pages of 177 employers in the DC, Maryland and Virginia area, screens every new job for fit and eligibility, emails me a summary each evening at 7 p.m., and tracks every application in one private web portal.</p>
+    <p class="lede">I designed and built a system that tracks 638 organizations, mostly in the DC, Maryland and Virginia area, checks their career pages automatically, screens every new job for fit and eligibility, emails me a summary each evening at 7 p.m., and tracks every application in one private web portal.</p>
   </header>
-  <dl class="facts"><div><dt>Built</dt><dd>November 2026</dd></div><div><dt>Monitors</dt><dd>177 employers in 17 sectors</dd></div><div><dt>Reads</dt><dd>20+ hiring systems and job feeds</dd></div><div><dt>Alerts</dt><dd>Daily email at 7 p.m.</dd></div><div><dt>Built with</dt><dd>Google Apps Script, Sheets, Gmail</dd></div></dl>
+  <dl class="facts"><div><dt>Built</dt><dd>November 2026</dd></div><div><dt>Tracks</dt><dd>638 organizations</dd></div><div><dt>Read so far</dt><dd>About 11,000 job postings</dd></div><div><dt>Alerts</dt><dd>Daily email at 7 p.m.</dd></div><div><dt>Built with</dt><dd>Google Apps Script, Sheets, Gmail</dd></div></dl>
   <div class="case-grid">
     <div class="prose">
       <h2>Why I built it</h2>
@@ -81,8 +81,8 @@
       </div>
       <h2>What it does</h2>
       <ol class="steps">
-        <li><b class="n">1</b><span><b>Keeps a watch list.</b> A Google Sheet lists 177 employers I want to work for: Maryland, county and DC government, nonprofits, international development organizations, research institutes, universities and consulting firms.</span></li>
-        <li><b class="n">2</b><span><b>Finds each job feed.</b> The script detects the hiring system behind each career page (Workday, Oracle, ADP, iCIMS, Greenhouse, Lever, GovernmentJobs, Maryland JobAps, USAJOBS, ReliefWeb and more) and tests it. Plain career pages are watched for changes.</span></li>
+        <li><b class="n">1</b><span><b>Keeps a watch list.</b> A Google Sheet lists 638 organizations I want to work for: Maryland, county and DC government, nonprofits, international development organizations, research institutes, universities and consulting firms.</span></li>
+        <li><b class="n">2</b><span><b>Finds each job feed.</b> The script detects the hiring system behind each career page (Workday, Oracle, ADP, iCIMS, Greenhouse, Lever, GovernmentJobs, Maryland JobAps, USAJOBS, ReliefWeb and more) and tests it. Plain career pages are watched for changes. 172 career sites are connected so far, and more are added as their feeds are found. Some sites block automated checks, and the sheet notes which ones.</span></li>
         <li><b class="n">3</b><span><b>Checks on a schedule.</b> High priority employers are checked every run and others less often, so it stays within Google's free limits.</span></li>
         <li><b class="n">4</b><span><b>Scores each title.</b> Weighted patterns score titles such as data analyst, MEL, evaluation, research and assessment, and drop internships and unrelated roles.</span></li>
         <li><b class="n">5</b><span><b>Screens eligibility.</b> It reads the job description and blocks jobs that require a security clearance or US citizenship, while keeping Public Trust positions. When the wording is unclear, it marks the job "Needs review" and shows the exact sentence instead of guessing.</span></li>
@@ -90,7 +90,7 @@
         <li><b class="n">7</b><span><b>Emails me at 7 p.m.</b> with the day's new matches, each linked to its page in the portal.</span></li>
         <li><b class="n">8</b><span><b>Tracks my applications.</b> In the portal I save, skip or mark jobs as applied, set follow-up dates and keep notes. Every change is logged.</span></li>
       </ol>
-      <figure class="shot"><a href="demo/" target="_blank" rel="noopener"><img src="/assets/img/job-intel-overview.png" alt="Overview page of the Job Intelligence Portal with tiles for new matches, applications and follow-ups, and charts of jobs found per day" loading="lazy"></a><figcaption>The portal overview, shown with fictional sample data. <a href="demo/" target="_blank" rel="noopener">Open the live demo</a></figcaption></figure>
+      <figure class="shot"><a href="demo/" target="_blank" rel="noopener"><img src="/assets/img/job-intel-overview.png?v=2" alt="Overview page of the Job Intelligence Portal with tiles for new matches, applications and follow-ups, and charts of jobs found per day" loading="lazy"></a><figcaption>The portal overview, shown with fictional sample data. <a href="demo/" target="_blank" rel="noopener">Open the live demo</a></figcaption></figure>
       <h2>How I designed it</h2>
       <p>I designed it the way I design monitoring systems for programs: one trusted source of data, clear rules, an audit trail and a person making the final call.</p>
       <div class="dgrid">
@@ -101,9 +101,10 @@
         <div><h3>Built to run for free</h3><p>Priority tiers, batching and a runtime limit keep it inside free Gmail and Apps Script quotas. A health panel shows which sites failed and why.</p></div>
         <div><h3>Tested</h3><p>About 30 automated tests use fake job sites and a fake mailer to check matching, eligibility, duplicates, alerts and the portal, without touching real data.</p></div>
       </div>
-      <figure class="shot"><a href="demo/" target="_blank" rel="noopener"><img src="/assets/img/job-intel-job.png" alt="A job opened in the portal, with status, application date, follow-up, notes and eligibility evidence" loading="lazy"></a><figcaption>Each job opens with its status, follow-up date, notes, eligibility evidence and full history (sample data).</figcaption></figure>
+      <figure class="shot"><a href="demo/" target="_blank" rel="noopener"><img src="/assets/img/job-intel-job.png?v=2" alt="A job opened in the portal, with status, application date, follow-up, notes and eligibility evidence" loading="lazy"></a><figcaption>Each job opens with its status, follow-up date, notes, eligibility evidence and full history (sample data).</figcaption></figure>
       <h2>What changed for me</h2>
       <ul>
+        <li>In its first day, it read about 11,000 job postings and saved about 550 that fit my profile for review.</li>
         <li>I now see relevant jobs on the day they are posted, instead of two or three weeks later on job boards.</li>
         <li>One email at 7 p.m. replaces hours of checking career pages by hand.</li>
         <li>Jobs I cannot apply for, such as those that require a security clearance, are filtered out before I spend time on them.</li>
@@ -116,7 +117,7 @@
     </div>
     <aside class="side">
       <a class="card dash-card" href="demo/" target="_blank" rel="noopener">
-        <div class="thumb"><img src="/assets/img/thumbs/job-intelligence.png" alt="Screenshot of the Job Intelligence Portal demo" loading="lazy"></div>
+        <div class="thumb"><img src="/assets/img/thumbs/job-intelligence.png?v=2" alt="Screenshot of the Job Intelligence Portal demo" loading="lazy"></div>
         <div class="body"><div class="tool">Interactive demo</div><h3 style="font-size:16px">Try the portal with sample data</h3><span class="go">Open demo →</span></div>
       </a>
       <div class="card" style="padding:16px 18px">
