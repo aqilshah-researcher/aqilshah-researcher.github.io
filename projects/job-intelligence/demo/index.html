@@ -367,9 +367,18 @@ html.live-feed body .demo-bar{background:#e1f1ee;color:#264653;border-top-color:
     var bar = document.querySelector('.demo-bar');
     if (bar) bar.innerHTML = '<b>Live feed.</b> These are real jobs my system found on employers’ websites, refreshed through the day. My own application records stay private. <a href="/projects/job-intelligence/">Back to the case study</a>';
   }
+  if (window.JOB_FEED_URL) {
+    document.documentElement.classList.add('live-feed');
+    var lb = document.querySelector('.demo-bar'); if (lb) lb.innerHTML = '<b>Loading today\u2019s live jobs\u2026</b>';
+  }
+  function fallback() {
+    document.documentElement.classList.remove('live-feed');
+    var fb = document.querySelector('.demo-bar');
+    if (fb) fb.innerHTML = '<b>Demo with sample data.</b> The live feed could not load right now, so fictional sample jobs are shown. <a href="/projects/job-intelligence/">Back to the case study</a>';
+  }
   var READY = (window.JOB_FEED_URL ? fetch(window.JOB_FEED_URL, { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('feed ' + r.status); return r.text(); }).then(loadLive)
-    .catch(function (e) { if (window.console) console.warn('Live feed unavailable, showing sample data.', e); }) : Promise.resolve());
+    .then(function () { if (!META.live) fallback(); }).catch(function (e) { fallback(); if (window.console) console.warn('Live feed unavailable, showing sample data.', e); }) : Promise.resolve());
 
   function isMatch(it) { return /^(Match|Location unknown|Possible duplicate)$/.test(it.match); }
   function viewTest(v, it) {
