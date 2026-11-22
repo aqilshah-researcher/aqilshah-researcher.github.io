@@ -805,3 +805,6 @@ a.vcourse:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .xgrid .xcard:nth-child(5) img{object-position:0 0}
 .xgrid .xcard:nth-child(5)::after{background:linear-gradient(90deg,rgba(38,70,83,.97) 0%,rgba(38,70,83,.88) 48%,rgba(38,70,83,.35) 100%)}
 @media (max-width:600px){.xgrid .xcard:nth-child(5)::after{background:linear-gradient(0deg,rgba(38,70,83,.97) 0%,rgba(38,70,83,.8) 60%,rgba(38,70,83,.3) 100%)}}
+@media (min-width:1101px) and (max-width:1320px){.mtop{padding:10px 8px;font-size:15px}.mlist .mcta{margin-left:4px}}
+@media (min-width:1101px) and (max-width:1200px){.bname small{display:none}}
+@media (min-width:1101px) and (max-width:1150px){.mtop{padding:10px 6px;font-size:14.5px}}
