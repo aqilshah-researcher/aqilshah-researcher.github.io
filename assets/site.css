@@ -800,3 +800,8 @@ a.vcourse:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 @media (max-width:720px){.lead-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .consult-lead{margin:0 0 12px;font-size:15px;color:var(--ink-2)}
 .consult-lead b{color:var(--teal)}
+.xgrid .xcard:nth-child(5){grid-column:1/-1;min-height:320px}
+.xgrid .xcard:nth-child(5) .t{max-width:640px}
+.xgrid .xcard:nth-child(5) img{object-position:0 0}
+.xgrid .xcard:nth-child(5)::after{background:linear-gradient(90deg,rgba(38,70,83,.97) 0%,rgba(38,70,83,.88) 48%,rgba(38,70,83,.35) 100%)}
+@media (max-width:600px){.xgrid .xcard:nth-child(5)::after{background:linear-gradient(0deg,rgba(38,70,83,.97) 0%,rgba(38,70,83,.8) 60%,rgba(38,70,83,.3) 100%)}}

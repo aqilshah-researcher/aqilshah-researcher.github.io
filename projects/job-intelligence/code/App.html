@@ -1,0 +1,490 @@
+<script>
+(function () {
+  'use strict';
+
+  // ------------------------------------------------------------------ state
+  var S = {
+    boot: null, view: 'overview', items: [], total: 0, page: 0, hasMore: false, loading: false,
+    filters: { text: '', inDesc: false, org: '', location: '', workMode: '', discFrom: '', discTo: '', postFrom: '', postTo: '',
+               salaryMin: '', eligibility: '', status: '', source: '', category: '', showAll: false, sort: 'discovered' },
+    showFilters: false, current: null, reqId: 0
+  };
+  var VIEWS = [
+    { group: 'Discover' },
+    { id: 'overview', label: 'Overview' },
+    { id: 'today', label: "Today's new jobs" },
+    { id: 'week', label: 'Last 7 days' },
+    { id: 'month', label: 'Last 30 days' },
+    { id: 'all', label: 'All opportunities' },
+    { id: 'review', label: 'Needs review', alert: true },
+    { group: 'My applications' },
+    { id: 'saved', label: 'Saved' },
+    { id: 'applied', label: 'Applied' },
+    { id: 'interviews', label: 'Interviews and offers' },
+    { id: 'closed', label: 'Rejected or closed' },
+    { id: 'skipped', label: 'Skipped' },
+    { group: 'Manage' },
+    { id: 'rules', label: 'Feedback rules' },
+    { id: 'settings', label: 'Settings and health' }
+  ];
+  var TITLES = {}; VIEWS.forEach(function (v) { if (v.id) TITLES[v.id] = v.label; });
+
+  // ------------------------------------------------------------------ helpers
+  function $(id) { return document.getElementById(id); }
+  function esc(v) { return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function api(fn) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    return new Promise(function (resolve, reject) {
+      var r = google.script.run.withSuccessHandler(resolve).withFailureHandler(function (e) { reject(e && e.message ? e : new Error(String(e))); });
+      r[fn].apply(r, args);
+    });
+  }
+  function fmtDate(iso) {
+    if (!iso) return '';
+    var t = Date.parse(iso); if (isNaN(t)) return esc(iso);
+    return new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  function dayInput(iso) {
+    if (!iso) return ''; var t = Date.parse(iso); if (isNaN(t)) return '';
+    var d = new Date(t); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  }
+  function ago(iso) {
+    var t = Date.parse(iso); if (!t) return '';
+    var d = Math.floor((Date.now() - t) / 864e5);
+    if (d <= 0) { var h = Math.floor((Date.now() - t) / 36e5); return h <= 0 ? 'just now' : h + 'h ago'; }
+    return d === 1 ? 'yesterday' : d + ' days ago';
+  }
+  function money(n) { return n ? '$' + Math.round(n).toLocaleString('en-US') : ''; }
+  function toast(msg, isErr) {
+    var t = $('toast'); t.textContent = msg; t.className = 'toast' + (isErr ? ' err' : ''); t.hidden = false;
+    clearTimeout(toast._t); toast._t = setTimeout(function () { t.hidden = true; }, isErr ? 6000 : 3200);
+  }
+  function fail(e) { toast((e && e.message) || 'Something went wrong', true); }
+  function debounce(fn, ms) { var t; return function () { var a = arguments; clearTimeout(t); t = setTimeout(function () { fn.apply(null, a); }, ms); }; }
+  function eligChip(it) {
+    var g = it.eligGroup, cls = g === 'Eligible' ? 'ok' : (g === 'Blocked' ? 'bad' : 'warn');
+    return '<span class="chip ' + cls + '" title="' + esc(it.eligibility) + '">' + esc(g === 'Eligible' ? 'Eligible' : g) + '</span>';
+  }
+  function statusChip(s) {
+    var cls = { New: 'info', Saved: 'brand', Applied: 'ok', Interview: 'ok', Offer: 'ok', Rejected: 'bad', Closed: '', Skipped: '' }[s] || '';
+    return '<span class="chip ' + cls + '">' + esc(s) + '</span>';
+  }
+
+  // ------------------------------------------------------------------ navigation
+  function renderNav() {
+    var c = (S.boot && S.boot.counts) || {};
+    var html = VIEWS.map(function (v) {
+      if (v.group) return '<div class="nav-group">' + esc(v.group) + '</div>';
+      var n = v.id === 'rules' ? (S.boot ? S.boot.pendingRules : 0) : c[v.id];
+      var badge = (n != null && n !== 0) || (n === 0 && v.id !== 'rules' && v.id !== 'overview' && v.id !== 'settings')
+        ? '<span class="nav-count' + ((v.alert || v.id === 'rules') && n ? ' alert' : '') + '">' + (n == null ? '' : n) + '</span>' : '';
+      return '<button class="nav-item' + (S.view === v.id ? ' active' : '') + '" data-view="' + v.id + '"><span>' + esc(v.label) + '</span>' + (v.id === 'overview' || v.id === 'settings' ? '' : badge) + '</button>';
+    }).join('');
+    $('nav').innerHTML = html;
+    var b = S.boot;
+    $('sideFoot').innerHTML = b ? ('v' + esc(b.version) + ' &middot; <a href="' + esc(b.sheetUrl) + '" target="_blank" rel="noopener">Open sheet</a>' +
+      (b.health && b.health.lastRun ? '<br>Last check ' + esc(ago(b.health.lastRun.at)) : '')) : '';
+  }
+  function go(view) {
+    S.view = view; S.page = 0; S.items = [];
+    closeSidebar(); renderNav(); render();
+    $('content').focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }
+  function openSidebar() { $('sidebar').classList.add('open'); $('scrim').hidden = false; }
+  function closeSidebar() { $('sidebar').classList.remove('open'); $('scrim').hidden = true; }
+
+  // ------------------------------------------------------------------ rendering
+  function render() {
+    var v = S.view;
+    if (v === 'overview') return renderOverview();
+    if (v === 'rules') return renderRules();
+    if (v === 'settings') return renderSettings();
+    renderList(true);
+  }
+
+  function activeFilterCount() {
+    var f = S.filters, n = 0;
+    ['org', 'location', 'workMode', 'discFrom', 'discTo', 'postFrom', 'postTo', 'salaryMin', 'eligibility', 'status', 'source', 'category'].forEach(function (k) { if (f[k]) n++; });
+    if (f.showAll) n++; if (f.inDesc) n++;
+    return n;
+  }
+  function syncFilterBadge() {
+    var n = activeFilterCount(), el = $('filterCount');
+    el.textContent = n; el.hidden = !n;
+    $('filterBtn').setAttribute('aria-expanded', S.showFilters ? 'true' : 'false');
+  }
+
+  function filtersHtml() {
+    var f = S.filters, fc = (S.boot && S.boot.facets) || {};
+    function opts(list, cur, any) { return '<option value="">' + esc(any || 'Any') + '</option>' + (list || []).map(function (x) { return '<option' + (x === cur ? ' selected' : '') + '>' + esc(x) + '</option>'; }).join(''); }
+    return '<form class="filters" id="filters">' +
+      '<label class="f">Organization<select name="org">' + opts(fc.companies, f.org) + '</select></label>' +
+      '<label class="f">Location contains<input type="text" name="location" value="' + esc(f.location) + '" placeholder="e.g. Rockville"></label>' +
+      '<label class="f">Remote or hybrid<select name="workMode">' + opts(fc.workModes, f.workMode) + '</select></label>' +
+      '<label class="f">Eligibility<select name="eligibility">' + opts(fc.eligibility, f.eligibility) + '</select></label>' +
+      '<label class="f">Application status<select name="status">' + opts(fc.statuses, f.status) + '</select></label>' +
+      '<label class="f">Source website<select name="source">' + opts(fc.platforms, f.source) + '</select></label>' +
+      '<label class="f">Category<select name="category">' + opts(fc.categories, f.category) + '</select></label>' +
+      '<label class="f">Minimum salary (per year)<input type="number" name="salaryMin" min="0" step="5000" value="' + esc(f.salaryMin) + '" placeholder="e.g. 80000"></label>' +
+      '<label class="f">Discovered from<input type="date" name="discFrom" value="' + esc(f.discFrom) + '"></label>' +
+      '<label class="f">Discovered to<input type="date" name="discTo" value="' + esc(f.discTo) + '"></label>' +
+      '<label class="f">Posted from<input type="date" name="postFrom" value="' + esc(f.postFrom) + '"></label>' +
+      '<label class="f">Posted to<input type="date" name="postTo" value="' + esc(f.postTo) + '"></label>' +
+      '<label class="chk"><input type="checkbox" name="inDesc"' + (f.inDesc ? ' checked' : '') + '> Search inside descriptions</label>' +
+      '<label class="chk"><input type="checkbox" name="showAll"' + (f.showAll ? ' checked' : '') + '> Include non-matches and blocked jobs</label>' +
+      '<div class="actions"><button type="button" class="btn ghost" id="clearFilters">Clear</button><button type="submit" class="btn">Apply filters</button></div>' +
+      '</form>';
+  }
+
+  function renderList(reset) {
+    if (reset) { S.page = 0; S.items = []; }
+    var c = $('content');
+    var head = '<div class="view-head"><div><h1>' + esc(TITLES[S.view]) + '</h1><div class="view-sub" id="listSub">Loading...</div></div>' +
+      '<div class="row"><label class="f" style="flex-direction:row;align-items:center;gap:6px">Sort <select id="sortSel">' +
+      [['discovered', 'Newest discovered'], ['posted', 'Newest posting date'], ['score', 'Best match'], ['salary', 'Highest salary'], ['followUp', 'Next follow-up']]
+        .map(function (o) { return '<option value="' + o[0] + '"' + (S.filters.sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') +
+      '</select></label></div></div>';
+    if (reset) c.innerHTML = head + (S.showFilters ? filtersHtml() : '') + '<div class="cards" id="cards"><div class="loading">Loading jobs...</div></div><div class="more" id="more"></div>';
+    syncFilterBadge();
+    loadPage();
+  }
+
+  function loadPage() {
+    var my = ++S.reqId; S.loading = true;
+    var q = Object.assign({}, S.filters, { view: S.view, page: S.page });
+    api('api_search', q).then(function (res) {
+      if (my !== S.reqId) return;
+      S.loading = false; S.total = res.total; S.hasMore = res.hasMore;
+      S.items = S.page === 0 ? res.items : S.items.concat(res.items);
+      drawCards();
+    }).catch(function (e) { S.loading = false; fail(e); var cs = $('cards'); if (cs) cs.innerHTML = '<div class="empty">Could not load jobs. ' + esc(e.message) + '</div>'; });
+  }
+
+  function cardHtml(it) {
+    var meta = [];
+    if (it.location) meta.push('&#128205; ' + esc(it.location));
+    if (it.workMode) meta.push(esc(it.workMode));
+    meta.push('Found ' + esc(ago(it.firstSeen)));
+    if (it.posted) meta.push('Posted ' + esc(fmtDate(it.posted)));
+    if (it.salaryMin || it.salaryMax) meta.push(esc(it.salaryMin && it.salaryMax && it.salaryMin !== it.salaryMax ? money(it.salaryMin) + ' - ' + money(it.salaryMax) : money(it.salaryMax || it.salaryMin)));
+    else if (it.salary) meta.push(esc(it.salary.slice(0, 60)));
+    if (it.closing && Date.parse(it.closing)) meta.push('Closes ' + esc(fmtDate(it.closing)));
+    if (it.followUp) meta.push('Follow up ' + esc(fmtDate(it.followUp)));
+    var saved = it.status === 'Saved';
+    return '<article class="card" data-id="' + esc(it.id) + '">' +
+      '<div><button class="card-title" data-open="' + esc(it.id) + '">' + esc(it.title) + '</button>' +
+      '<div class="card-org">' + esc(it.company) + (/^high$/i.test(it.priority) ? ' <span class="star" title="High priority organization">&#9733;</span>' : '') +
+      (it.category ? ' &middot; <span class="small">' + esc(it.category) + '</span>' : '') + '</div>' +
+      '<div class="card-meta">' + meta.map(function (m) { return '<span>' + m + '</span>'; }).join('') + '</div></div>' +
+      '<div class="card-side"><div class="row">' + statusChip(it.status) + eligChip(it) +
+      (it.stillOpen && /^No/.test(it.stillOpen) ? '<span class="chip">Posting removed</span>' : '') +
+      (it.match === 'Location unknown' ? '<span class="chip warn">Check location</span>' : '') +
+      (it.match === 'Possible duplicate' ? '<span class="chip" title="The same job was also found through another source">Possible duplicate</span>' : '') +
+      '<span class="chip" title="Match score">Score <span class="score">&nbsp;' + esc(it.score) + '</span></span></div>' +
+      '<div class="card-actions">' +
+      '<button class="btn ghost small" data-save="' + esc(it.id) + '" aria-pressed="' + saved + '">' + (saved ? '&#9733; Saved' : '&#9734; Save') + '</button>' +
+      (it.status !== 'Skipped' ? '<button class="btn ghost small" data-skip="' + esc(it.id) + '">Skip</button>' : '') +
+      (it.url ? '<a class="btn small" href="' + esc(it.url) + '" target="_blank" rel="noopener">View posting</a>' : '') +
+      '</div></div></article>';
+  }
+
+  function drawCards() {
+    var cs = $('cards'); if (!cs) return;
+    $('listSub').textContent = S.total + (S.total === 1 ? ' job' : ' jobs') + (S.filters.text ? ' matching "' + S.filters.text + '"' : '') + (activeFilterCount() ? ' with filters' : '');
+    if (!S.items.length) {
+      cs.innerHTML = '<div class="empty">No jobs here yet.' + (S.view === 'today' ? '<br>New matches appear after the next scheduled check.' : '') +
+        (activeFilterCount() || S.filters.text ? '<br><button class="btn ghost small" id="clearAll" style="margin-top:10px">Clear search and filters</button>' : '') + '</div>';
+    } else cs.innerHTML = S.items.map(cardHtml).join('');
+    $('more').innerHTML = S.hasMore ? '<button class="btn ghost" id="loadMore">Load more (' + (S.total - S.items.length) + ' left)</button>' : '';
+  }
+
+  // ------------------------------------------------------------------ overview
+  function bars(data, opts) {
+    opts = opts || {}; var w = 640, h = 180, pad = 24, n = data.length || 1;
+    var max = Math.max.apply(null, data.map(function (d) { return Math.max(d.a || 0, d.b || 0); }).concat([1]));
+    var bw = (w - pad) / n, out = '';
+    data.forEach(function (d, i) {
+      var x = pad + i * bw, ha = (d.a || 0) / max * (h - 30), hb = (d.b || 0) / max * (h - 30);
+      out += '<rect x="' + (x + 1) + '" y="' + (h - 20 - ha) + '" width="' + Math.max(1, bw - 3) + '" height="' + ha + '" fill="#c7d2fe"><title>' + esc(d.label + ': ' + (d.a || 0) + (opts.aName ? ' ' + opts.aName : '')) + '</title></rect>';
+      if (opts.two) out += '<rect x="' + (x + 1) + '" y="' + (h - 20 - hb) + '" width="' + Math.max(1, bw - 3) + '" height="' + hb + '" fill="#1d4ed8"><title>' + esc(d.label + ': ' + (d.b || 0) + ' ' + (opts.bName || '')) + '</title></rect>';
+      if (i % Math.ceil(n / 6) === 0) out += '<text x="' + (x + bw / 2) + '" y="' + (h - 5) + '" font-size="10" text-anchor="middle" fill="#5f6b7a">' + esc(d.short || d.label) + '</text>';
+    });
+    out += '<text x="0" y="12" font-size="10" fill="#5f6b7a">' + max + '</text><line x1="' + pad + '" x2="' + w + '" y1="' + (h - 20) + '" y2="' + (h - 20) + '" stroke="#e3e7ec"/>';
+    return '<div class="chart"><svg viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + esc(opts.label || 'chart') + '">' + out + '</svg></div>';
+  }
+  function hbars(list, total) {
+    if (!list || !list.length) return '<div class="muted small">No data yet.</div>';
+    var max = Math.max.apply(null, list.map(function (x) { return x.n; }).concat([1]));
+    return list.map(function (x) {
+      return '<div class="hbar"><span class="name" title="' + esc(x.k) + '">' + esc(x.k) + '</span><span class="track"><span class="fill" style="width:' + (x.n / max * 100).toFixed(1) + '%;display:block"></span></span><span class="v">' + x.n + '</span></div>';
+    }).join('');
+  }
+  function renderOverview() {
+    var b = S.boot, c = $('content');
+    if (!b) { c.innerHTML = '<div class="loading">Loading...</div>'; return; }
+    var st = b.stats, h = b.health;
+    var tiles = [
+      ['today', b.counts.today, "Today's new matches"], ['week', b.counts.week, 'Matches, last 7 days'], ['all', st.openMatches, 'Open matches not yet acted on'],
+      ['review', b.counts.review, 'Need eligibility review'], ['saved', b.counts.saved, 'Saved'], ['applied', st.applied, 'Applied'],
+      ['interviews', st.interviews, 'Interviews and offers'], ['applied', st.followUpsDue, 'Follow-ups due']
+    ];
+    var perDay = b.charts.perDay.map(function (d) { return { label: d.d, short: d.d.slice(5), a: d.all, b: d.matches }; });
+    var perWeek = b.charts.perWeek.map(function (d) { return { label: 'Week ending ' + d.d, short: d.d, a: d.n }; });
+    c.innerHTML =
+      '<div class="view-head"><div><h1>Overview</h1><div class="view-sub">' + b.total + ' jobs in your tracker &middot; ' + h.orgsEnabled + ' of ' + h.orgsTotal + ' organizations monitored</div></div>' +
+      '<div class="row"><button class="btn ghost" id="runNow">Run a check now</button></div></div>' +
+      '<div class="tiles">' + tiles.map(function (t) { return '<button class="tile" data-view="' + t[0] + '"><div class="n">' + (t[1] || 0) + '</div><div class="l">' + esc(t[2]) + '</div></button>'; }).join('') + '</div>' +
+      '<div class="grid2">' +
+      '<div class="panel"><h2>Jobs discovered per day (30 days)</h2>' + bars(perDay, { two: true, aName: 'saved', bName: 'matches', label: 'Jobs discovered per day' }) +
+      '<div class="legend"><span><i style="background:#c7d2fe"></i>All saved</span><span><i style="background:#1d4ed8"></i>Matches</span></div></div>' +
+      '<div class="panel"><h2>Applications per week (12 weeks)</h2>' + bars(perWeek, { aName: 'applications', label: 'Applications per week' }) + '</div>' +
+      '<div class="panel"><h2>Application status</h2>' + hbars(b.charts.status) + '</div>' +
+      '<div class="panel"><h2>Eligibility of matches</h2>' + hbars(b.charts.eligibility) + '<p class="small muted">Blocked = explicit citizenship or clearance requirement. Needs Review = unclear wording or description not read.</p></div>' +
+      '<div class="panel"><h2>Top organizations (matches)</h2>' + hbars(b.charts.topOrgs) + '</div>' +
+      '<div class="panel"><h2>Matches by category</h2>' + hbars(b.charts.categories) + '</div>' +
+      '</div>' +
+      '<div class="panel" style="margin-top:14px"><h2>Monitoring health</h2>' +
+      '<div class="row small"><span class="chip ' + (h.orgsWithErrors ? 'warn' : 'ok') + '">' + h.orgsWithErrors + ' organizations with errors</span>' +
+      (h.lastRun ? '<span class="muted">Last check ' + esc(fmtDate(h.lastRun.at)) + ' (' + esc(ago(h.lastRun.at)) + '): ' + esc(h.lastRun.checked) + ', ' + esc(h.lastRun.result) + '</span>' : '<span class="muted">No checks have run yet.</span>') + '</div>' +
+      (h.recentErrors.length ? '<ul class="plain small" style="margin-top:8px">' + h.recentErrors.map(function (e) { return '<li><b>' + esc(e.company) + '</b> <span class="muted">' + esc(ago(e.at)) + '</span><br>' + esc(e.error) + '</li>'; }).join('') + '</ul>' : '') +
+      '</div>';
+  }
+
+  // ------------------------------------------------------------------ job detail
+  function openJob(id) {
+    var d = $('drawer'); d.hidden = false; d.innerHTML = '<div class="drawer-body"><div class="loading">Loading job...</div></div>';
+    api('api_getJob', id).then(function (job) {
+      if (job.notFound) { d.innerHTML = '<div class="drawer-body"><p>This job was not found. It may have been removed from the sheet.</p><button class="btn ghost" data-close>Close</button></div>'; return; }
+      S.current = job; drawJob(job);
+    }).catch(function (e) { fail(e); d.hidden = true; });
+  }
+  function drawJob(j) {
+    var d = $('drawer');
+    function opt(list, cur) { return list.map(function (x) { return '<option' + (x === cur ? ' selected' : '') + '>' + esc(x) + '</option>'; }).join(''); }
+    var fc = S.boot ? S.boot.facets : { statuses: [], skipReasons: [] };
+    var eCls = j.eligGroup === 'Eligible' ? 'ok' : (j.eligGroup === 'Blocked' ? 'bad' : '');
+    var facts = [
+      ['Organization', esc(j.company) + (/^high$/i.test(j.priority) ? ' <span class="star">&#9733; high priority</span>' : '')],
+      ['Location', esc(j.location || 'Not listed') + (j.workMode ? ' &middot; ' + esc(j.workMode) : '')],
+      ['Posted', j.posted ? esc(fmtDate(j.posted)) : 'Not listed'],
+      ['First discovered', esc(fmtDate(j.firstSeen)) + ' (' + esc(ago(j.firstSeen)) + ')'],
+      ['Last seen online', esc(fmtDate(j.lastSeen)) + (/^No/.test(j.stillOpen) ? ' <span class="chip">Posting removed</span>' : '')],
+      ['Closing date', j.closing ? esc(Date.parse(j.closing) ? fmtDate(j.closing) : j.closing) : 'Not listed'],
+      ['Salary', esc(j.salary || 'Not listed')],
+      ['Job type', esc(j.type || 'Not listed')],
+      ['Match', esc(j.match) + ' &middot; score ' + esc(j.score) + (j.terms ? '<br><span class="small muted">Matched: ' + esc(j.terms) + '</span>' : '')],
+      ['Source', esc(j.platform) + (j.sourceFeed && j.sourceFeed !== j.company ? ' via ' + esc(j.sourceFeed) : '')],
+      ['Alert', esc(j.alert || '')],
+      ['Job ID', '<code>' + esc(j.id) + '</code>']
+    ];
+    d.innerHTML =
+      '<div class="drawer-head"><div style="flex:1"><h2 id="drawerTitle">' + esc(j.title) + '</h2><div class="muted">' + esc(j.company) + '</div>' +
+      '<div class="row" style="margin-top:8px">' + statusChip(j.status) + eligChip(j) + '</div></div>' +
+      '<button class="icon-btn" data-close aria-label="Close">&times;</button></div>' +
+      '<div class="drawer-body">' +
+      '<div class="row" style="margin-bottom:12px">' + (j.url ? '<a class="btn" href="' + esc(j.url) + '" target="_blank" rel="noopener">Open job posting</a>' : '') +
+      '<button class="btn ghost" id="quickSave">' + (j.status === 'Saved' ? '&#9733; Saved' : '&#9734; Save') + '</button>' +
+      '<button class="btn ghost" id="quickApplied">Mark applied</button>' +
+      (j.status !== 'Skipped' ? '<button class="btn ghost" id="quickSkip">Skip</button>' : '') + '</div>' +
+      '<form class="editbox" id="editForm">' +
+      '<label class="f">Status<select name="status">' + opt(fc.statuses, j.status) + '</select></label>' +
+      '<label class="f">Application date<input type="date" name="applicationDate" value="' + dayInput(j.applicationDate) + '"></label>' +
+      '<label class="f">Next follow-up<input type="date" name="followUp" value="' + dayInput(j.followUp) + '"></label>' +
+      '<label class="f">Skip reason<select name="skipReason"><option value=""></option>' + opt(fc.skipReasons, j.skipReason) + '</select></label>' +
+      '<label class="f full">Notes<textarea name="notes" rows="3" placeholder="Contacts, referral, interview prep...">' + esc(j.notes) + '</textarea></label>' +
+      '<label class="f full">Skip remarks<input type="text" name="remarks" value="' + esc(j.remarks) + '" placeholder="Optional. Use: avoid title: senior director"></label>' +
+      '<div class="full row" style="justify-content:space-between"><span class="small muted" id="saveState">' + (j.updatedAt ? 'Last updated ' + esc(ago(j.updatedAt)) : '') + '</span><button class="btn" type="submit">Save changes</button></div>' +
+      '</form>' +
+      (j.feedbackRule ? '<p class="small muted">Feedback: ' + esc(j.feedbackRule) + (/^Proposed/.test(j.feedbackRule) ? ' (review it under Feedback rules)' : '') + '</p>' : '') +
+      '<div class="section-title">Eligibility</div>' +
+      '<div class="evidence ' + eCls + '"><b>' + esc(j.eligibility) + '</b><br>' + esc(j.evidence || 'No evidence recorded') + '</div>' +
+      '<dl class="facts">' + facts.map(function (f) { return '<dt>' + f[0] + '</dt><dd>' + f[1] + '</dd>'; }).join('') + '</dl>' +
+      '<div class="section-title">Job description</div>' +
+      '<div class="desc">' + (j.description ? esc(j.description) : '<span class="muted">The description has not been read yet. Open the job posting for full details.</span>') + '</div>' +
+      '<div class="section-title">History</div>' +
+      (j.history && j.history.length ? '<ul class="plain timeline">' + j.history.map(function (h) {
+        return '<li><span class="muted">' + esc(fmtDate(h.at)) + '</span><span><b>' + esc(h.field) + '</b>: ' + esc(h.from ? (Date.parse(h.from) && /T\d/.test(h.from) ? fmtDate(h.from) : h.from) : '(blank)') +
+          ' &rarr; ' + esc(h.to ? (Date.parse(h.to) && /T\d/.test(h.to) ? fmtDate(h.to) : h.to) : '(blank)') + ' <span class="small muted">' + esc(h.source) + '</span></span></li>';
+      }).join('') + '</ul>' : '<p class="muted small">No changes yet.</p>') +
+      '</div>';
+    var first = d.querySelector('[data-close]'); if (first) first.focus();
+  }
+  function closeDrawer() { $('drawer').hidden = true; S.current = null; }
+
+  function saveJob(id, changes, expected) {
+    return api('api_updateJob', id, changes, expected || null).then(function (res) {
+      if (res.notFound) { toast('This job is no longer in the sheet', true); return null; }
+      if (res.conflict) {
+        toast('This job was changed somewhere else. Showing the latest version; please re-apply your edit.', true);
+        if (S.current && S.current.id === id) { S.current = res.job; drawJob(res.job); }
+        return null;
+      }
+      var j = res.job;
+      if (S.current && S.current.id === id) { S.current = j; drawJob(j); }
+      S.items = S.items.map(function (x) { return x.id === id ? Object.assign(x, j) : x; });
+      if ($('cards')) drawCards();
+      if (res.proposal) toast('Saved. A rule was proposed (' + res.proposal.id + '). Review it under Feedback rules.');
+      else toast(res.unchanged ? 'No changes to save' : 'Saved');
+      refreshCounts();
+      return j;
+    }).catch(fail);
+  }
+  var refreshCounts = debounce(function () { api('api_bootstrap').then(function (b) { S.boot = b; renderNav(); }).catch(function () {}); }, 800);
+
+  function skipDialog(id, title) {
+    var m = $('modal'), fc = S.boot.facets;
+    m.innerHTML = '<form class="modal-card" id="skipForm"><h2>Skip this job?</h2><div class="muted">' + esc(title || '') + '</div>' +
+      '<label class="f">Reason<select name="skipReason" required><option value="">Choose a reason</option>' + fc.skipReasons.map(function (r) { return '<option>' + esc(r) + '</option>'; }).join('') + '</select></label>' +
+      '<label class="f">Remarks (optional)<input type="text" name="remarks" placeholder="e.g. avoid title: senior director"></label>' +
+      '<p class="small muted">Some reasons suggest a filtering rule. Rules are only proposals: nothing is filtered until you approve it under Feedback rules.</p>' +
+      '<div class="row" style="justify-content:flex-end"><button type="button" class="btn ghost" data-cancel>Cancel</button><button class="btn" type="submit">Skip job</button></div></form>';
+    m.hidden = false; m.dataset.id = id;
+    m.querySelector('select').focus();
+  }
+
+  // ------------------------------------------------------------------ rules
+  function renderRules() {
+    var c = $('content');
+    c.innerHTML = '<div class="view-head"><div><h1>Feedback rules</h1><div class="view-sub">Rules hide future jobs from alerts and match lists. Proposed rules do nothing until you approve them.</div></div></div><div id="rulesBox" class="cards"><div class="loading">Loading rules...</div></div>' +
+      '<div class="panel" style="margin-top:14px"><h2>Add a rule</h2>' + ruleForm({ id: '', type: 'TITLE_CONTAINS', pattern: '', scope: '', status: 'Proposed' }, true) + '</div>';
+    api('api_listRules').then(function (rules) {
+      var box = $('rulesBox');
+      if (!rules.length) { box.innerHTML = '<div class="empty">No rules yet. When you skip a job with a clear reason, a proposed rule appears here.</div>'; return; }
+      var order = { Proposed: 0, Approved: 1, Disabled: 2 };
+      rules.sort(function (a, b) { return (order[a.status] || 3) - (order[b.status] || 3); });
+      box.innerHTML = rules.map(function (r) { return '<div class="card" style="grid-template-columns:1fr">' + ruleForm(r, false) + '</div>'; }).join('');
+    }).catch(fail);
+  }
+  function ruleForm(r, isNew) {
+    var types = [['TITLE_CONTAINS', 'Title contains'], ['TEXT_CONTAINS', 'Title or description contains'], ['LOCATION_CONTAINS', 'Location contains'], ['COMPANY', 'Organization is']];
+    var cls = r.status === 'Approved' ? 'ok' : (r.status === 'Disabled' ? '' : 'warn');
+    return '<form class="rule" data-rule="' + esc(r.id) + '">' +
+      '<div>' + (isNew ? '' : '<div class="row" style="margin-bottom:8px"><b>' + esc(r.id) + '</b><span class="chip ' + cls + '">' + esc(r.status) + '</span>' +
+        '<span class="small muted">' + esc(r.reason) + '</span></div>') +
+      '<div class="inputs"><select name="type">' + types.map(function (t) { return '<option value="' + t[0] + '"' + (r.type === t[0] ? ' selected' : '') + '>' + t[1] + '</option>'; }).join('') + '</select>' +
+      '<input type="text" name="pattern" value="' + esc(r.pattern) + '" placeholder="Pattern" aria-label="Pattern" required>' +
+      '<input type="text" name="scope" value="' + esc(r.scope) + '" placeholder="Only for organization (optional)" aria-label="Scope organization"></div>' +
+      (isNew ? '' : '<div class="sample">Matches ' + r.matchesNow + ' saved job' + (r.matchesNow === 1 ? '' : 's') + ' now' + (r.sample && r.sample.length ? ': ' + esc(r.sample.join('; ')) : '') + '</div>') +
+      '<div class="sample" data-preview></div></div>' +
+      '<div class="row" style="align-items:flex-start">' +
+      '<button type="button" class="btn ghost small" data-act="preview">Preview</button>' +
+      (isNew ? '<button type="button" class="btn ghost small" data-act="save">Add as proposed</button><button type="button" class="btn small" data-act="approve">Add and approve</button>' :
+        (r.status !== 'Approved' ? '<button type="button" class="btn small" data-act="approve">Approve</button>' : '') +
+        '<button type="button" class="btn ghost small" data-act="save">Save edits</button>' +
+        (r.status !== 'Disabled' ? '<button type="button" class="btn danger small" data-act="disable">Disable</button>' : '')) +
+      '</div></form>';
+  }
+  function ruleFrom(form) {
+    return { id: form.dataset.rule, type: form.elements.namedItem('type').value, pattern: form.elements.namedItem('pattern').value, scope: form.elements.namedItem('scope').value };
+  }
+
+  // ------------------------------------------------------------------ settings
+  function renderSettings() {
+    var b = S.boot, s = b.settings, c = $('content');
+    c.innerHTML = '<div class="view-head"><div><h1>Settings and health</h1><div class="view-sub">Saved to the Settings tab of your sheet.</div></div></div>' +
+      '<form class="panel" id="settingsForm" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px">' +
+      '<label class="f">Alert mode<select name="alertMode">' + [['instant', 'Instant (every check)'], ['daily', 'Daily summary only'], ['both', 'Both: top jobs instantly, rest daily']].map(function (o) { return '<option value="' + o[0] + '"' + (s.alertMode === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></label>' +
+      '<label class="f">Daily summary hour (0 to 23)<input type="number" name="dailyHour" min="0" max="23" value="' + esc(s.dailyHour) + '"></label>' +
+      '<label class="f">Check every<select name="interval">' + [10, 15, 30, 60].map(function (m) { return '<option value="' + m + '"' + (Number(s.interval) === m ? ' selected' : '') + '>' + m + ' minutes</option>'; }).join('') + '</select></label>' +
+      '<label class="f">Instant alert minimum score (Both mode)<input type="number" name="instantMinScore" min="1" value="' + esc(s.instantMinScore) + '"></label>' +
+      '<label class="f">Recipient email<input type="email" name="recipient" value="' + esc(s.recipient) + '"></label>' +
+      '<label class="f">Minimum match score<input type="number" name="minScore" min="1" value="' + esc(s.minScore) + '"></label>' +
+      '<label class="f">Do not email postings older than (days)<input type="number" name="maxAge" min="1" value="' + esc(s.maxAge) + '"></label>' +
+      '<label class="chk"><input type="checkbox" name="sendAlerts"' + (s.sendAlerts ? ' checked' : '') + '> Send email alerts</label>' +
+      '<label class="chk"><input type="checkbox" name="allowUnknown"' + (s.allowUnknown ? ' checked' : '') + '> Email Needs Review jobs (in a separate section)</label>' +
+      '<div class="row" style="grid-column:1/-1;justify-content:flex-end"><button type="button" class="btn ghost" id="testEmail">Send test email</button><button class="btn" type="submit">Save settings</button></div>' +
+      '</form>' +
+      '<div class="panel" style="margin-top:14px"><h2>Links</h2><ul class="plain"><li><a href="' + esc(b.sheetUrl) + '" target="_blank" rel="noopener">Open the Google Sheet</a></li>' +
+      (b.portalUrl ? '<li>Portal address: <code>' + esc(b.portalUrl) + '</code></li>' : '') + '</ul></div>';
+  }
+
+  // ------------------------------------------------------------------ events
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('button, a, [data-view]'); if (!t) return;
+    if (t.dataset.view) { e.preventDefault(); return go(t.dataset.view); }
+    if (t.dataset.open) return openJob(t.dataset.open);
+    if (t.hasAttribute('data-close')) return closeDrawer();
+    if (t.hasAttribute('data-cancel')) { $('modal').hidden = true; return; }
+    if (t.dataset.save) {
+      var it = S.items.find(function (x) { return x.id === t.dataset.save; });
+      return saveJob(t.dataset.save, { status: it && it.status === 'Saved' ? 'New' : 'Saved' }, it && it.updatedAt);
+    }
+    if (t.dataset.skip) { var sk = S.items.find(function (x) { return x.id === t.dataset.skip; }); return skipDialog(t.dataset.skip, sk && sk.title); }
+    if (t.dataset.act) {
+      var form = t.closest('form'), rule = ruleFrom(form), act = t.dataset.act;
+      if (act === 'preview') return api('api_previewRule', rule).then(function (p) { form.querySelector('[data-preview]').textContent = 'Would match ' + p.count + ' saved job(s)' + (p.sample.length ? ': ' + p.sample.join('; ') : ''); }).catch(fail);
+      return api('api_saveRule', rule, act).then(function () { toast(act === 'approve' ? 'Rule approved' : act === 'disable' ? 'Rule disabled' : 'Rule saved'); refreshCounts(); renderRules(); }).catch(fail);
+    }
+    switch (t.id) {
+      case 'menuBtn': return openSidebar();
+      case 'filterBtn':
+        S.showFilters = !S.showFilters;
+        if (['overview', 'rules', 'settings'].indexOf(S.view) >= 0) { S.showFilters = true; return go('all'); }
+        return renderList(true);
+      case 'refreshBtn': return boot();
+      case 'loadMore': S.page++; t.disabled = true; t.textContent = 'Loading...'; return loadPage();
+      case 'clearFilters': case 'clearAll':
+        Object.keys(S.filters).forEach(function (k) { if (k !== 'sort') S.filters[k] = typeof S.filters[k] === 'boolean' ? false : ''; });
+        $('searchBox').value = ''; return renderList(true);
+      case 'quickSave': return saveJob(S.current.id, { status: S.current.status === 'Saved' ? 'New' : 'Saved' }, S.current.updatedAt);
+      case 'quickApplied': return saveJob(S.current.id, { status: 'Applied' }, S.current.updatedAt);
+      case 'quickSkip': return skipDialog(S.current.id, S.current.title);
+      case 'runNow':
+        t.disabled = true; t.textContent = 'Checking... (can take a few minutes)';
+        return api('api_runCheckNow').then(function (r) { toast(r ? 'Check finished: ' + r.result : 'Check finished'); boot(); }).catch(function (e2) { fail(e2); t.disabled = false; t.textContent = 'Run a check now'; });
+      case 'testEmail': return api('api_sendTestEmail').then(function () { toast('Test email sent'); }).catch(fail);
+    }
+  });
+  $('scrim').addEventListener('click', closeSidebar);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (!$('modal').hidden) $('modal').hidden = true; else if (!$('drawer').hidden) closeDrawer(); else closeSidebar(); }
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') { e.preventDefault(); $('searchBox').focus(); }
+  });
+  document.addEventListener('change', function (e) { if (e.target.id === 'sortSel') { S.filters.sort = e.target.value; renderList(true); } });
+  document.addEventListener('submit', function (e) {
+    var f = e.target; e.preventDefault();
+    if (f.id === 'filters') {
+      ['org', 'location', 'workMode', 'eligibility', 'status', 'source', 'category', 'salaryMin', 'discFrom', 'discTo', 'postFrom', 'postTo'].forEach(function (k) { S.filters[k] = f.elements.namedItem(k).value; });
+      S.filters.inDesc = f.elements.namedItem('inDesc').checked; S.filters.showAll = f.elements.namedItem('showAll').checked;
+      return renderList(true);
+    }
+    if (f.id === 'editForm') {
+      var ch = { status: f.elements.namedItem('status').value, applicationDate: f.elements.namedItem('applicationDate').value, followUp: f.elements.namedItem('followUp').value, notes: f.elements.namedItem('notes').value, skipReason: f.elements.namedItem('skipReason').value, remarks: f.elements.namedItem('remarks').value };
+      if (ch.status === 'Skipped' && !ch.skipReason) { toast('Please choose a skip reason', true); f.elements.namedItem('skipReason').focus(); return; }
+      $('saveState').textContent = 'Saving...';
+      return saveJob(S.current.id, ch, S.current.updatedAt);
+    }
+    if (f.id === 'skipForm') {
+      var m = $('modal'), id = m.dataset.id;
+      var it = S.items.find(function (x) { return x.id === id; }) || S.current || {};
+      m.hidden = true;
+      return saveJob(id, { status: 'Skipped', skipReason: f.elements.namedItem('skipReason').value, remarks: f.elements.namedItem('remarks').value }, it.updatedAt);
+    }
+    if (f.id === 'settingsForm') {
+      var v = { alertMode: f.elements.namedItem('alertMode').value, dailyHour: f.elements.namedItem('dailyHour').value, interval: f.elements.namedItem('interval').value, instantMinScore: f.elements.namedItem('instantMinScore').value, recipient: f.elements.namedItem('recipient').value,
+        minScore: f.elements.namedItem('minScore').value, maxAge: f.elements.namedItem('maxAge').value, sendAlerts: f.elements.namedItem('sendAlerts').checked, allowUnknown: f.elements.namedItem('allowUnknown').checked };
+      return api('api_saveSettings', v).then(function (r) { toast(r.scheduleUpdated ? 'Settings saved and schedule updated' : 'Settings saved'); boot(); }).catch(fail);
+    }
+  });
+  $('searchBox').addEventListener('input', debounce(function (e) {
+    S.filters.text = e.target.value.trim();
+    if (['overview', 'rules', 'settings'].indexOf(S.view) >= 0) { if (S.filters.text) go('all'); return; }
+    renderList(true);
+  }, 350));
+
+  // ------------------------------------------------------------------ start
+  function boot() {
+    return api('api_bootstrap').then(function (b) {
+      S.boot = b; renderNav(); render();
+      var deep = document.body.getAttribute('data-job');
+      if (deep) { document.body.setAttribute('data-job', ''); openJob(deep); }
+    }).catch(function (e) {
+      $('content').innerHTML = '<div class="empty"><b>The portal could not load.</b><br>' + esc(e.message) + '<br><br>Open the sheet and run Job Monitor &gt; 1. Set up sheet, then reload this page.</div>';
+    });
+  }
+  renderNav();
+  $('content').innerHTML = '<div class="loading">Loading your jobs...</div>';
+  boot();
+})();
+</script>

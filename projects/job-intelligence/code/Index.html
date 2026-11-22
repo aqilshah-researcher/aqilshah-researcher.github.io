@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Intelligence Portal</title>
+  <?!= include_('Styles'); ?>
+</head>
+<body data-job="<?= initialJob ?>">
+  <div id="app">
+    <aside id="sidebar" aria-label="Navigation">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">JI</div>
+        <div><div class="brand-title">Job Intelligence</div><div class="brand-sub">DMV data and MEL roles</div></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-foot" id="sideFoot"></div>
+    </aside>
+    <div id="scrim" class="scrim" hidden></div>
+
+    <main id="main">
+      <header class="topbar">
+        <button class="icon-btn only-mobile" id="menuBtn" aria-label="Open menu">&#9776;</button>
+        <div class="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input id="searchBox" type="search" placeholder="Search job titles, organizations, keywords" aria-label="Search jobs" autocomplete="off">
+        </div>
+        <button class="btn ghost" id="filterBtn" aria-expanded="false" aria-controls="filters">Filters <span id="filterCount" class="pill-count" hidden></span></button>
+        <button class="icon-btn" id="refreshBtn" aria-label="Refresh" title="Refresh">&#8635;</button>
+      </header>
+      <section id="content" tabindex="-1" aria-live="polite"></section>
+    </main>
+
+    <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden></aside>
+    <div id="modal" class="modal" role="dialog" aria-modal="true" hidden></div>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </div>
+  <?!= include_('App'); ?>
+</body>
+</html>
